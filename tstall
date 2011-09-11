@@ -226,7 +226,7 @@ JUMBO_FORMATS() {
   ./tstone pw po_tst.in         '-form=PO'
   ./tstone pw phps_tst.in       '-form=PHPS'
   ./tstone pw rawmd5_tst.in     '-form=raw-md5'         -form raw-md5
-  ./tstone pw rawmd5u_tst.in    '-form=raw-md5-unicode' -form raw-md5-unicode
+  ./tstone pw rawmd5u_tst.in    '-form=raw-md5u' -form raw-md5u
   ./tstone pw rawsha1_tst.in    '-form=raw-sha1'        -form raw-sha1
   ./tstone pw sha1p_tst.in      '-form=sha1-genp'       -form sha1-gen
   ./tstone pw sha1s_tst.in      '-form=sha1-gens'       -form sha1-gen
@@ -420,7 +420,7 @@ JUMBO_FORMAT_SINGLE_ENCODING() {
 	  JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $MSSQL_FILE mssql_tst_${3}.in     "-form=mssql05-${3}"     -form mssql05    $1
       JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  MSSql05_tst_${3}.in   "-form=mssql05-${3}"     -form mssql05    $1
       JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  oracle_tst_${3}.in    "-form=oracle-${3}"      -form oracle     $1
-      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  rawmd5u_tst_${3}.in   "-form=raw-md5u-${3}"    -form raw-md5-unicode $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  rawmd5u_tst_${3}.in   "-form=raw-md5u-${3}"    -form raw-md5u $1
     fi
   fi
 }
@@ -471,7 +471,7 @@ JUMBO_FORMATS_UNICODE() {
     ./tstone pw mssql_tst.in           '-form=mssql-utf8'              -form mssql      $UTF8_STR
     ./tstone pw MSSql05_tst.in         '-form=mssql05-utf8'            -form mssql05    $UTF8_STR
     ./tstone pw oracle_tst.in          '-form=oracle-utf8'             -form oracle     $UTF8_STR
-    ./tstone pw rawmd5u_tst.in         '-form=raw-md5u-utf8'           -form raw-md5-unicode $UTF8_STR
+    ./tstone pw rawmd5u_tst.in         '-form=raw-md5u-utf8'           -form raw-md5u $UTF8_STR
 
     ## NOW do the jumbo test of 'real' UTF8
     JUMBO_FORMAT_SINGLE_ENCODING "$UTF8_STR"     "utf8" "utf8"
