@@ -1,0 +1,529 @@
+#!/bin/sh
+
+# EDIT this variable to properly setup the john-test-suite script
+JOHN_PATH="../run"
+
+# NOTE, john built on Windows 'may' need this lines changed to "$JOHN_PATH/john.exe" IF the script will not run properly.
+JOHN_EXE="$JOHN_PATH/john"
+UNIQUE="$JOHN_PATH/unique"
+  
+JOHN_ARG1="$1"
+
+#-------------------------------------------------------------------
+# John, testing suite, v1.07 (early release).   Jim Fougeron.
+#
+# No copyright is claimed, and the software is hereby 
+# placed in the public domain. In case this attempt to disclaim 
+# copyright and place the software in the public domain is deemed 
+# null and void, then the software is Copyright © 2009 Jim Fougeron
+# and it is hereby released to the general public under the following
+# terms: 
+#
+# This software may be modified, redistributed, and used for any
+# purpose, in source and binary forms, with or without modification.
+#
+# Things TODO:
+#   Add am 'expected' number to match. Then if it matches, simply echo "PASS"
+#   Finish up any missing formats.
+#
+# v1.00 initial release
+# v1.01 Added: HDAA, mssql, mysql/mysql-fast, netntlm, openssha, oracle11, oracle
+#              changes some password order around in pw.dic
+#              added -utf8 to mskrb5, mssql05, mssql, oracle, netntlm
+# v1.02 Added: lotus5.
+#              added ablity to use multiple different dictionary files.
+#
+# v1.03 Totally redid all hash files.  Up'd the count to 1500.  Also simplified
+#               the results. Now the results are 'pass' 'fail' (and if 
+#               fail, the number missing is displayed.  Added 'validation' of 
+#               the data stored in john.pot, extract the passwords, and 
+#               re-run then through john again. mediawiki added.  Added code 
+#               functions and initial checking, and then detect if the john
+#               is core or jumbo, and run the 'right' code.  So now, tstall
+#               will properly work for core or jumbo builds, and auto detect.
+#
+# v1.04 Small change.  Using john's unique program, vs using the sort | uniq, since
+#               the prior had issues with our 'bad' binary data, and LC_COLLATE settings
+#               John's unique program treats data in a 'binary' manner, and will not 
+#               unique out lines that are different but setup to collate the same.
+#
+# v1.05 Small change again. Now, the UNIQUE is one of the 'top' settings in tstall script.
+#               Also, different versions of john-jumbo, to handle --utf8 or --charset=utf8
+#               until we get a 'unified' version.
+#
+# v1.06 Split up unicode into it's own function.  Added 'encoding' function also (for KOI8-R 
+#               and CP1251).  Fixed a bug in tstonebase where we were redirecting to /dev/nul
+#               Got all KOI8-R and CP1251's working. Added CP866 also. Within the 'SETUP_UNICODE'
+#               function, we do not setup CP866 to allow it to run at this time.
+#               These functions are now part of this script:
+#               CORE_JOHN_ONLY()     tests the 'core' functions, and uses fewer command line switches
+#               SETUP_UNICODE_AND_PRETESTS() figures out if old -utf8 or newer -enc=utf8 works. Sets 
+#                                            -enc=koi8r also. This also performs the 'quick' 
+#                                            -test=0's for the unicode, and other code pages.
+#               JUMBO_FORMATS()      Tests all the 'jumbo' formats including base ones.
+#               JUMBO_FORMATS_UNICODE()  Tests the unicode enabled formats.
+#               JUMBO_FORMATS_ENCODING() Tests the unicode enabled formats, using non-standard code
+#                                        page processing.
+# v1.07 More functions.  Now, easy to add code pages. Only 2 parts need small edits.  
+#               The functions allow a much smaller script file.  To add a new code page,
+#               be sure the input files are named properly (FmtName_tst_CODEPAGE.in), then in
+#               this script file search for CODE_PAGE, and add the new approprate lines.
+#--------------------------------------------------------------------
+
+if [ ! -d $JOHN_PATH ]; then
+  echo "ERROR, the JOHN_PATH variable has to be setup properly for this script file to run."
+  exit;
+fi
+
+if [ ! -f $JOHN_EXE ]; then
+  echo "Error, the JOHN_EXE variable is not setup properly, or john was not built yet"
+  exit;
+fi
+
+JOHN_SIGNATURE=`$JOHN_EXE | head -1`
+
+echo  "--------------------------------------------------------------------------------"
+echo  "- JtR Test Suite Script. Version 1.07(early release), Aug 18, 2011.  By, Jim Fougeron"
+echo  "-"
+echo  "- Testing this build of john:"
+echo  "-   $JOHN_SIGNATURE"
+echo  "-"
+echo  "- against many formats. Each test should find 1500 passwords.  A few do find a"
+echo  "- smaller count, and when this is the case, this script does list this fact."
+echo  "- If a format shows fewer than 1500 values (and .pot CHK) found, and the format"
+echo  "- is not one of them listed as the 'supposed to be less then 1500' formats, then"
+echo  "- it is very likely this format has a problem within the current build of john."
+echo  "--------------------------------------------------------------------------------"
+echo
+
+MSSQL_ORACLE_ONLY_TEST () {
+./tstone pw mssql_tst.in           '-form=mssql'
+./tstone pw mssql_tst.in           '-form=mssql-8859-1'            -form mssql -enc=iso-8859-1
+./tstone pw-gen-enc mssql_tst_iso8859-1.in '-form=mssql-8859-1'    -form mssql -enc=iso-8859-1
+
+./tstone pw-gen-enc mssql_tst_cp437.in           '-form=mssql-cp437'            -form mssql -enc=cp437
+./tstone pw-gen-enc mssql_tst_cp737.in           '-form=mssql-cp737'            -form mssql -enc=cp737
+./tstone pw-gen-enc mssql_tst_cp850.in           '-form=mssql-cp850'            -form mssql -enc=cp850
+./tstone pw-gen-enc mssql_tst_cp858.in           '-form=mssql-cp858'            -form mssql -enc=cp858
+./tstone pw-gen-enc mssql_tst_cp866_gen.in       '-form=mssql-cp866'            -form mssql -enc=cp866
+./tstone pw-gen-enc mssql_tst_cp1251_gen.in      '-form=mssql-cp1251'           -form mssql -enc=cp1251
+./tstone pw-gen-enc mssql_tst_cp1252.in          '-form=mssql-cp1252'           -form mssql -enc=cp1252
+./tstone pw-gen-enc mssql_tst_cp437.in           '-form=mssql-cp437'            -form mssql -enc=cp437
+./tstone pw-gen-enc mssql_tst_koi8r_gen.in       '-form=mssql-koi8r'            -form mssql -enc=koi8r
+./tstone pw         mssql_tst.in                 '-form=mssql-utf8 (1229)'      -form mssql -enc=utf8
+
+./tstone pw-cp866 mssql_tst_cp866.in             '-form=mssql-cp866'            -form mssql -enc=cp866
+./tstone pw-cp1251 mssql_tst_cp1251.in           '-form=mssql-cp1251'           -form mssql -enc=cp1251
+./tstone pw-koi8r mssql_tst_koi8r.in             '-form=mssql-koi8r'            -form mssql -enc=koi8r
+
+./tstone pw         oracle_tst.in             '-form=oracle'                   -form oracle
+./tstone pw         oracle_tst.in             '-form=oracle-8859-1'            -form oracle -enc=iso-8859-1
+./tstone pw-gen-enc oracle_tst_cp437.in       '-form=oracle-cp437'            -form oracle -enc=cp437
+./tstone pw-gen-enc oracle_tst_cp737.in       '-form=oracle-cp737'            -form oracle -enc=cp737
+./tstone pw-gen-enc oracle_tst_cp850.in       '-form=oracle-cp850'            -form oracle -enc=cp850
+./tstone pw-gen-enc oracle_tst_cp858.in       '-form=oracle-cp858'            -form oracle -enc=cp858
+./tstone pw-cp866   oracle_tst_cp866.in       '-form=oracle-cp866'            -form oracle -enc=cp866
+./tstone pw-cp1251  oracle_tst_cp1251.in      '-form=oracle-cp1251'           -form oracle -enc=cp1251
+./tstone pw-gen-enc oracle_tst_cp1252.in      '-form=oracle-cp1252'           -form oracle -enc=cp1252
+./tstone pw-koi8r   oracle_tst_koi8r.in       '-form=oracle-koi8r'            -form oracle -enc=koi8r
+./tstone pw-utf8    oracle_tst_utf8.in        '-form=oracle-utf8'             -form oracle -enc=utf8
+./tstone pw         oracle_tst.in             '-form=oracle-utf8 (1229)'      -form oracle -enc=utf8
+
+exit 2;
+}
+
+CORE_JOHN_ONLY() {
+  echo
+  echo "Detected John 'core' build, so only testing the core formats"
+  echo
+
+  ./tstonebase pw DES_tst.in       '-form=DES'
+  ./tstonebase pw BigCrypt_tst.in  '-form=BigCrypt_DES'
+  #
+  # we make 'smaller' dictionary files for these SLOWER hashes. This is so that if there ARE
+  # problems, that the format does not continue on, over the several thousand passwords which these
+  # slow hash input files were NOT made from.
+  #
+  head -200 pw.dic > pw-200.dic
+  ./tstonebase pw-200 BSDI_tst.in      '-form=BSDI'
+  ./tstonebase pw-200 md5_1_tst.in     '-form=md5'
+  ./tstonebase pw-200 md5_apr1_tst.in  '-form=md5_(apr1)'
+  rm pw-200.dic
+
+  echo "NOTE, prior to john 1.7.8, only BF broken will work properly, but all of the signatures will need to be changed from \$2x$ to \$2a$"
+  echo
+
+  head -40 pw.dic > pw-40.dic
+  ./tstonebase pw-40 BF_tst.in     '-form=BF'
+  ./tstonebase pw-40 BFx_tst.in    '-form=BF_broken'
+  rm pw-40.dic
+  
+  #NOTE, afs is not yet a valid format
+}
+
+JUMBO_FORMATS() {
+  echo
+  echo "Detected John 'jumbo' build, so testing all jumbo formats"
+  echo
+  
+  ./tstone pw md5_gen_0_tst.in   '-form=md5_gen(0)'
+  ./tstone pw md5_gen_1_tst.in   '-form=md5_gen(1)'
+  ./tstone pw md5_gen_2_tst.in   '-form=md5_gen(2)'
+  ./tstone pw md5_gen_3_tst.in   '-form=md5_gen(3)'
+  ./tstone pw md5_gen_4_tst.in   '-form=md5_gen(4)'
+  ./tstone pw md5_gen_5_tst.in   '-form=md5_gen(5)'
+  ./tstone pw md5_gen_6_tst.in   '-form=md5_gen(6)'
+  ./tstone pw md5_gen_6_1salt_tst.in '-form=md5_gen(6)_1-salt'
+  ./tstone pw md5_gen_7_tst.in   '-form=md5_gen(7)'     -fie '\x1F'
+  ./tstone pw md5_gen_8_tst.in   '-form=md5_gen(8)'
+  ./tstone pw md5_gen_9_tst.in   '-form=md5_gen(9)'
+  ./tstone pw md5_gen_10_tst.in  '-form=md5_gen(10)'
+  ./tstone pw md5_gen_11_tst.in  '-form=md5_gen(11)'
+  ./tstone pw md5_gen_12_tst.in  '-form=md5_gen(12)'
+  ./tstone pw md5_gen_13_tst.in  '-form=md5_gen(13)'
+  ./tstone pw md5_gen_14_tst.in  '-form=md5_gen(14)'
+  ./tstone pw md5_gen_15_tst.in  '-form=md5_gen(15)'
+  ./tstone pw md5_gen_16_tst.in  '-form=md5_gen(16)'
+  if [ "$JOHN_ARG1" != "quick" ]; then
+    head -150 pw.dic > pw-150.dic
+    ./tstone pw-150 md5_gen_17_tst.in  '-form=md5_gen(17)'
+    rm pw-150.dic
+  fi
+  ./tstone pw md5_gen_18_tst.in  '-form=md5_gen(18)'
+  ./tstone pw md5_gen_19_tst.in  '-form=md5_gen(19)'
+  ./tstone pw md5_gen_20_tst.in  '-form=md5_gen(20)'
+  ./tstone pw md5_gen_21_tst.in  '-form=md5_gen(21)'
+  ./tstone pw md5_gen_22_tst.in  '-form=md5_gen(22)'
+  ./tstone pw md5_gen_23_tst.in  '-form=md5_gen(23)'
+  ./tstone pw md5_gen_24_tst.in  '-form=md5_gen(24)'
+  ./tstone pw md5_gen_25_tst.in  '-form=md5_gen(25)'
+  ./tstone pw md5_gen_26_tst.in  '-form=md5_gen(26)'
+
+  if [ "$JOHN_ARG1" != "quick" ]; then
+    head -200 pw.dic > pw-200.dic
+    ./tstone pw-200 md5_gen_27_tst.in  '-form=md5_gen(27)'
+    ./tstone pw-200 md5_gen_28_tst.in  '-form=md5_gen(28)'
+    ./tstone pw-200 md5_1_tst.in       '-form=md5'
+    ./tstone pw-200 md5_apr1_tst.in    '-form=md5_(apr1)'
+    ./tstone pw-200 BSDI_tst.in        '-form=BSDI'
+    rm pw-200.dic
+    head -40 pw.dic > pw-40.dic
+    ./tstone pw-40 BF_tst.in       '-form=BF'
+    ./tstone pw-40 BFx_tst.in      '-form=BF_broken'
+    rm pw-40.dic
+    head -150 pw.dic > pw-150.dic
+    ./tstone pw-150 phpass_tst.in  '-form=PHPass-md5'
+    rm pw-150.dic
+  fi
+
+  head -50 pw.dic > pw-50.dic
+  ./tstone pw-50 MSCash2_tst.in '-form=mscash2'         -form mscash2
+  rm pw-50.dic
+  ./tstone pw DES_tst.in        '-form=DES'
+  ./tstone pw BigCrypt_tst.in   '-form=BigCrypt_DES'
+  ./tstone pw mediawiki_tst.in  '-form=mediawiki'       -form mediawiki
+  ./tstone pw pixMD5_tst.in     '-form=pixMD5'          -form pix-md5
+  ./tstone pw po_tst.in         '-form=PO'
+  ./tstone pw phps_tst.in       '-form=PHPS'
+  ./tstone pw rawmd5_tst.in     '-form=raw-md5'         -form raw-md5
+  ./tstone pw rawmd5u_tst.in    '-form=raw-md5-unicode' -form raw-md5-unicode
+  ./tstone pw rawsha1_tst.in    '-form=raw-sha1'        -form raw-sha1
+  ./tstone pw sha1p_tst.in      '-form=sha1-genp'       -form sha1-gen
+  ./tstone pw sha1s_tst.in      '-form=sha1-gens'       -form sha1-gen
+  ./tstone pw NT_tst.in         '-form=NT'              -form nt
+  ./tstone pw rawmd4_tst.in     '-form=raw-md4'         -form raw-md4
+  ./tstone pw md4p_tst.in       '-form=md4-genp'        -form md4-gen
+  ./tstone pw md4s_tst.in       '-form=md4-gens'        -form md4-gen
+  ./tstone pw mscash_tst.in     '-form=mscash'          -form mscash
+
+  echo NOTE, mscash 'crash' may crash, run and present 1440 or run and present 1500,
+  echo depending upon if mscash dies for user names over 19, if it can run but ignore them,
+  echo of if it can properly process user names up to 22 characters.
+  echo
+
+  ./tstone pw mscash_crash_tst.in    '-form=mscash-crash'            -form mscash
+  ./tstone pw LM_tst.in              '-form=LM'  -form lm
+
+  echo NOTE, only 986 LM tests found in this pwdump file, that is 'normal'
+  echo
+
+  ./tstone pw pwdump_tst.in          '-form=pwdump_LM'               -form lm
+  ./tstone pw pwdump_tst.in          '-form=pwdump_NT'               -form nt
+  ./tstone pw nsldap_tst.in          '-form=Netscape_LDAP_SHA'       -form nsldap
+  ./tstone pw nsldaps_tst.in         '-form=Netscape_LDAP_SSHA'      -form ssha
+  ./tstone pw nsldaps_tst.in         '-form=LDAP_SSHA-(salted-sha)'  -form salted-sha
+  ./tstone pw openssha_tst.in        '-form=OpenSSHA'                -form openssha
+  ./tstone pw ns_tst.in              '-form=Netscreen_MD5'
+  ./tstone pw XSHA_tst.in            '-form=MAC_OSX_Salted_SHA1'
+  ./tstone pw hmacMD5_tst.in         '-form=hmacMD5'
+  ./tstone pw mskrb5_tst.in          '-form=mskrb5'
+  ./tstone pw BFegg_tst.in           '-form=bfegg'                   -form bfegg
+  ./tstone pw IPB2_tst.in            '-form=IPB2'
+  ./tstone pw MSSql05_tst.in         '-form=mssql05'
+# echo mssql expected # found is 1423 without using -enc=iso-8559-1 encoding
+  ./tstone pw mssql_tst.in           '-form=mssql'
+  ./tstone pw mssql_tst.in           '-form=mssql-8859-1'            -form mssql -enc=iso-8859-1
+  ./tstone pw-gen-enc mssql_tst_iso8859-1.in '-form=mssql-8859-1-gen' -form mssql -enc=iso-8859-1
+  ./tstone pw mysqlSHA1_tst.in       '-form=mysqlSHA1'               -form mysql-SHA1
+  ./tstone pw mysql_tst.in           '-form=mysql'                   -form mysql
+  ./tstone pw mysql_tst.in           '-form=mysql-fast'              -form mysql-fast
+  ./tstone pw oracle_tst.in          '-form=oracle'                  -form oracle
+  ./tstone pw oracle11_tst.in        '-form=oracle11'                -form oracle11
+  ./tstone pw hdaa_tst.in            '-form=hdaa'
+  ./tstone pw netntlm_tst.in         '-form=netntlm'
+  ./tstone pw lotus5_tst.in          '-form=lotus5'                  -form lotus5
+  ./tstone pw l0phtcrack_tst.in      '-form=netntlm'                 -form netntlm
+
+  echo only 1351 hashes expected for NetLM in the l0phtcrack file
+  echo
+
+  ./tstone pw l0phtcrack_tst.in      '-form=netlm'                   -form netlm
+  ./tstone pw mschapv2_tst.in        '-form=mschapv2'                -form mschapv2
+  ./tstone pw netlmv2_tst.in         '-form=netlmv2'                 -form netlmv2
+  ./tstone pw netntlmv2_tst.in       '-form=netntlmv2'               -form netntlmv2
+}
+
+####################################################################################################
+# Perform a quick code page test of john.
+####################################################################################################
+DO_JOHN_TEST() {
+  ARG="$1"
+  if [ "$ARG" != "" ]; then
+    echo "testing: 'john -test=0 $ARG'"
+    #$JOHN_EXE -test=0 $ARG | grep FAILED
+  fi
+}
+
+#######################################
+# This is the first block of code to 
+# modify when adding a new CODE_PAGE
+#######################################
+JOHN_TEST_EXTRA() {
+  DO_JOHN_TEST "-enc=8859-1"
+  DO_JOHN_TEST $UTF8_STR
+  DO_JOHN_TEST $KOI8R_STR
+  DO_JOHN_TEST $CP1251_STR
+  DO_JOHN_TEST $CP866_STR
+  DO_JOHN_TEST $CP850_STR
+  DO_JOHN_TEST $CP858_STR
+  DO_JOHN_TEST $CP737_STR
+  DO_JOHN_TEST $CP437_STR
+  DO_JOHN_TEST $ISO8859_15_STR
+  DO_JOHN_TEST $CP1252_STR
+}
+
+DO_FIND_ENCODING() {
+  ARG="$1"
+  ENCODE_STR=""
+  rm -f tst.pot
+  JOHN_OUT=`$JOHN_EXE -nolog -config=$JOHN_PATH/john.conf -pot=./tst.pot -sess=./tst -w=./pw.dic -form=nt nt_in $ARG 2>&1 >/dev/null | awk '{printf("%s %s %s %s %s\n",$1,$2,$3,$4,$5);}' | grep guesses`
+  if [ "$JOHN_OUT" != "" ]; then
+	ENCODE_STR="$ARG"
+  fi
+  JOHN_OUT=
+}
+
+
+####################################################################################################
+# ok, first figure out if this build of john handles -utf8 or -charset=utf8, and if -charset=utf8, 
+# then set the other code pages.
+####################################################################################################
+SETUP_UNICODE_AND_PRETESTS() {
+  # create a tiny 'dummy' file.  This is known to find all 3.
+  echo ':$NT$37232593e515197c1576b24dc310f43b' >  nt_in
+  echo ':$NT$82a57dfc28ec4ceb407ca57e04261597' >> nt_in
+  echo ':$NT$a688f9fca9bc5f8066184e1ceb08e778' >> nt_in
+
+  UTF8_STR="-utf8"
+
+  rm -f tst.pot
+  JOHN_OUT=`$JOHN_EXE -nolog -config=$JOHN_PATH/john.conf -pot=./tst.pot -sess=./tst -w=./pw.dic -form=nt nt_in $UTF8_STR 2>&1 >/dev/null | awk '{printf("%s %s %s %s %s\n",$1,$2,$3,$4,$5);}' | grep guesses`
+  if [ "$JOHN_OUT" != "" ]; then
+	echo "using 'old' legacy --utf8 command line switch.  No 'codepage' testing will be done."
+  else
+    DO_FIND_ENCODING "-encoding=utf8"
+    UTF8_STR="$ENCODE_STR"
+    if [ "$UTF8_STR" != "" ]; then
+	  ###########################################################################################
+      # OK, we have a john new 'enough' to have the -enc= command line argument. So, lets find
+      # out just which codepages are valid. NOTE, when code pages are added, this block in
+      # the test suite will need updated.
+      #######################################
+      # This is the second block of code to 
+      # modify when adding a new CODE_PAGE
+      #######################################	  
+      DO_FIND_ENCODING "-enc=cp1251"
+	  CP1251_STR="$ENCODE_STR"
+      DO_FIND_ENCODING "-enc=koi8-r"
+	  KOI8R_STR="$ENCODE_STR"
+      DO_FIND_ENCODING "-enc=cp866"
+	  CP866_STR="$ENCODE_STR"
+      DO_FIND_ENCODING "-enc=cp850"
+	  CP850_STR="$ENCODE_STR"
+      DO_FIND_ENCODING "-enc=cp858"
+	  CP858_STR="$ENCODE_STR"
+      DO_FIND_ENCODING "-enc=cp737"
+	  CP737_STR="$ENCODE_STR"
+      DO_FIND_ENCODING "-enc=cp437"
+	  CP437_STR="$ENCODE_STR"
+      DO_FIND_ENCODING "-enc=iso8859-15"
+	  ISO8859_15_STR="$ENCODE_STR"
+      DO_FIND_ENCODING "-enc=cp1252"
+	  CP1252_STR="$ENCODE_STR"
+    else
+      echo "Can not figure out how to set UTF-8 mode in this build of john."
+      UTF8_STR=""
+    fi
+  fi
+  JOHN_OUT=
+  # remove the tiny 'test' file
+  rm nt_in
+
+  case "$JOHN_RESULTS" in
+    *Unknown*)  ;;
+            *)  JOHN_TEST_EXTRA ;;
+  esac
+  echo
+}
+
+JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS() {
+  if [ -f $2 ]; then
+    ./tstone "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8"
+  fi
+}
+
+JUMBO_FORMAT_SINGLE_ENCODING() {
+  MSSQL_FILE=pw-${2}
+  DICT_FILE=pw-${3}
+  if [ "$4" != "" ]; then
+    DICT_FILE=pw-${4}
+  fi
+  if [ "$1" != "" ]; then
+    if [ -f $DICT_FILE.dic ]; then
+      echo ----------------------------------------------------------------------------
+      echo "Testing ${3} encoded passwords."
+      echo ----------------------------------------------------------------------------
+
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE mschapv2_tst_${3}.in   "-form=mschapv2-${3}"    -form mschapv2   $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE netlmv2_tst_${3}.in    "-form=netlmv2-${3}"     -form netlmv2    $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE netntlm_tst_${3}.in    "-form=netntlm-${3}"     -form netntlm    $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE l0phtcrack_tst_${3}.in "-form=netntlm(l0phtcrack)-${3}" -form netntlm    $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE netntlmv2_tst_${3}.in  "-form=netntlmv2-${3}"   -form netntlmv2  $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE NT_tst_${3}.in         "-form=NT-${3}"          -form nt         $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE mscash_tst_${3}.in     "-form=mscash-${3}"      -form mscash     $1
+      if [ "$JOHN_ARG1" != "quick" ]; then
+        head -160 $DICT_FILE.dic > pw-160.dic
+        JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS pw-160 MSCash2_tst_${3}.in      "-form=mscash2-${3}"     -form mscash2    $1
+        rm pw-160.dic
+      fi
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $MSSQL_FILE mssql_tst_${3}.in     "-form=mssql-${3}"       -form mssql      $1
+	  JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $MSSQL_FILE mssql_tst_${3}.in     "-form=mssql05-${3}"     -form mssql05    $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  MSSql05_tst_${3}.in   "-form=mssql05-${3}"     -form mssql05    $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  oracle_tst_${3}.in    "-form=oracle-${3}"      -form oracle     $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  rawmd5u_tst_${3}.in   "-form=raw-md5u-${3}"    -form raw-md5-unicode $1
+    fi
+  fi
+}
+
+#######################################
+# This is the final block of code to 
+# modify when adding a new CODE_PAGE
+#######################################	  
+JUMBO_FORMATS_ENCODING() {
+  JUMBO_FORMAT_SINGLE_ENCODING "$CP1251_STR"     "cp1251" "cp1251"
+  JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS "pw-gen-enc" mssql_tst_cp1251_gen.in     "-form=mssql-cp1251-gen"       -form mssql      "$CP1251_STR"
+  JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS "pw-gen-enc" mssql_tst_cp1251_gen.in     "-form=mssql05-cp1251-gen"     -form mssql05    "$CP1251_STR"
+  JUMBO_FORMAT_SINGLE_ENCODING "$KOI8R_STR"      "koi8r"   "koi8r"
+  JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS "pw-gen-enc" mssql_tst_koi8r_gen.in     "-form=mssql-koi8r-gen"       -form mssql      "$KOI8R_STR"
+  JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS "pw-gen-enc" mssql_tst_koi8r_gen.in     "-form=mssql05-koi8r-gen"     -form mssql05    "$KOI8R_STR"
+  JUMBO_FORMAT_SINGLE_ENCODING "$CP866_STR"      "cp866"   "cp866"
+  JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS "pw-gen-enc" mssql_tst_cp866_gen.in     "-form=mssql-cp866-gen"       -form mssql      "$CP866_STR"
+  JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS "pw-gen-enc" mssql_tst_cp866_gen.in     "-form=mssql05-cp866-gen"     -form mssql05    "$CP866_STR"
+  
+  JUMBO_FORMAT_SINGLE_ENCODING "$CP850_STR"      "gen-enc"  "cp850"       "gen-enc"
+  JUMBO_FORMAT_SINGLE_ENCODING "$CP858_STR"      "gen-enc"  "cp858"       "gen-enc"
+  JUMBO_FORMAT_SINGLE_ENCODING "$CP737_STR"      "gen-enc"  "cp737"       "gen-enc"
+  JUMBO_FORMAT_SINGLE_ENCODING "$CP437_STR"      "gen-enc"  "cp437"       "gen-enc"
+  JUMBO_FORMAT_SINGLE_ENCODING "$ISO8859_15_STR" "gen-enc"  "iso8859-15"  "gen-enc"
+  JUMBO_FORMAT_SINGLE_ENCODING "$CP1252_STR"     "gen-enc"  "cp1252"      "gen-enc"
+}
+
+JUMBO_FORMATS_UNICODE() {
+  if [ "$UTF8_STR" != "" ]; then
+    ####################################################################################################
+    echo "Now testing 'simple' UTF-8 input file handling, but using non-utf8 data file."
+    echo "1229 is 'expected' count  (1050 for mscash2)"
+    echo
+    ####################################################################################################
+
+    ./tstone pw mschapv2_tst.in        '-form=mschapv2-utf8'           -form mschapv2   $UTF8_STR
+    ./tstone pw netlmv2_tst.in         '-form=netlmv2-utf8'            -form netlmv2    $UTF8_STR
+    ./tstone pw netntlm_tst.in         '-form=netntlm-utf8'            -form netntlm    $UTF8_STR
+    ./tstone pw netntlmv2_tst.in       '-form=netntlmv2-utf8'          -form netntlmv2  $UTF8_STR
+    ./tstone pw NT_tst.in              '-form=NT-utf8'                 -form nt         $UTF8_STR
+    ./tstone pw pwdump_tst.in          '-form=pwdump_NT-utf8'          -form nt         $UTF8_STR
+    ./tstone pw mscash_tst.in          '-form=mscash-utf8'             -form mscash     $UTF8_STR
+    if [ "$JOHN_ARG1" != "quick" ]; then
+      head -50 pw.dic > pw-50.dic
+      ./tstone pw-50 MSCash2_tst.in    '-form=mscash2-utf8'            -form mscash2    $UTF8_STR
+      rm pw-50.dic
+    fi
+    ./tstone pw mssql_tst.in           '-form=mssql-utf8'              -form mssql      $UTF8_STR
+    ./tstone pw MSSql05_tst.in         '-form=mssql05-utf8'            -form mssql05    $UTF8_STR
+    ./tstone pw oracle_tst.in          '-form=oracle-utf8'             -form oracle     $UTF8_STR
+    ./tstone pw rawmd5u_tst.in         '-form=raw-md5u-utf8'           -form raw-md5-unicode $UTF8_STR
+
+    ## NOW do the jumbo test of 'real' UTF8
+    JUMBO_FORMAT_SINGLE_ENCODING "$UTF8_STR"     "utf8" "utf8"
+  fi
+}
+
+TEST_JOHN_JUMBO() {
+  SETUP_UNICODE_AND_PRETESTS
+  JUMBO_FORMATS
+  JUMBO_FORMATS_UNICODE
+  JUMBO_FORMATS_ENCODING
+}
+
+######################################	
+# detect is 'john' is core, or jumbo.
+######################################	
+JOHN_RESULTS=`$JOHN_EXE -test=0 -format=nt 2>&1`
+
+######################################	
+# Do a 'prelim' -test=0 check. NOTE
+# we have to use john 'core' syntax
+######################################	
+echo "Running preliminary check of john, using -test=0."
+echo "Any 'FAILURE' shows a format/codepage that has a problem in this build."
+echo
+echo "testing: 'john -test=0'"
+#$JOHN_EXE -test=0 | grep FAILED
+
+######################################	
+# Now, call the 'real' test engine(s)
+######################################	
+case "$JOHN_RESULTS" in
+    *Unknown*)  CORE_JOHN_ONLY ;;
+            *)  TEST_JOHN_JUMBO ;;
+esac
+
+###################################################
+# END OF SCRIPT CODE
+###################################################
+
+
+#These formats are 'missing'.
+#md5_gen(1001) to 'max'
+#afs
+#dmd5
+#dominosec
+#epi
+#krb4
+#krb5
+#sapb
+#sapg
+#dummy
+
+# Once we get this formats handled, we should add 'normal' process, and a -utf8
+#SAP CODVN G (PASSCODE) [sapg]

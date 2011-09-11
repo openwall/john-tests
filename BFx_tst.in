@@ -1,0 +1,1501 @@
+#!comment: Built with pass_gen.pl using RAW mode, 0 to 128 characters dict file=unknown
+u0-BF:$2x$05$kfXssNyTHDdTzvZtLMeGQODfyNHlxAEQAyjq4cDgsmapjZkxO2TbC:0:0:Skippinç anä*::
+u1-BF:$2x$05$FiOmLrM2mw3S.ZNFaoqTy.jIMfB4zE5wGSOxl4Mp3ubTyU.xEi4pq:1:0:Skipping and*::
+u2-BF:$2x$05$oJfQYOARBA7uPXlAiw/x8uR0c3wSFkMyR59r.UYZ3WmdCFiqT8gke:2:0:Bert$ErîIE::
+u3-BF:$2x$05$FPLoM.Vz3NMwGGrWLwVqwuSn5M7Iqb.S2SjdIUBw8e3twG5jDxhWG:3:0:Bert$ErnIE::
+u4-BF:$2x$05$7YLIxLYoAU4fIsEHpPHto.g4wuF0/TmiSSaQjsVHYnU/9nGkqsVn2:4:0:bert*ernie::
+u5-BF:$2x$05$p/D5Yoh0I.qSlA..BkBTKOTKMa.zm3pz59BIlDkVJTygRRd1EGUBu:5:0:late*night::
+u6-BF:$2x$05$sAR7WZ8LbWi8RVlYEw4C/OBlYMAg1.tAbDO4g4Tkec4yUlUC1aLqi:6:0:::
+u7-BF:$2x$05$wudFDSlNTFtsYyB2XEkp8eZqLyX/iQ9CGviuZqsW.5OjlhCzLg1Qq:7:0: ::
+u8-BF:$2x$05$zM8ixmefWB9W.9XLH9UPMeFWK2qKuBV7VmYs0KIqYpOQYPgr3susa:8:0:1::
+u9-BF:$2x$05$a5/P5zS9sAVvncpWll3asOKISjomZlXuWwMoAmSqmf4GuhqUApmle:9:0:password::
+u10-BF:$2x$05$XKng9xoYmS4U18BLig9Pn.TQTbp2juNWcPAFkZzBdknuRFb9zOOdu:10:0:test::
+u11-BF:$2x$05$eQQ1TJhkpZVJLJxhe.rU5O/tC2Be/uxgVfNeXmy.k/CsZtNvtLufu:11:0:late*niçhô::
+u12-BF:$2x$05$ms3rCPU3elbzq4GT6EIiDO1sRsy5GEUdUe7PHUAPaYKrX.dueWYHO:12:0:hello::
+u13-BF:$2x$05$acJIOsSFF7QfInT1RG7GHuaSnuafjRhYUSzfDpDSU1lt6lgu0P6yu:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$1XhXUSfg/4RWAOFSScdo5.gYqu9El561TWDbz0zIJFWF1pLy3yGza:14:0:!!!!!!!!!::
+u15-BF:$2x$05$qok4jHVDhFgRa/4EGgASHuWWHn5UGfRaYmkHZPgRt6EmbVWSpHgJy:15:0:ttttttttttt::
+u16-BF:$2x$05$EsYQVbVEsIlKrGRDyzpFsOL1cpC3.o3W0LxxfzoojmPaAwzr/6N9S:16:0:±::
+u17-BF:$2x$05$VykkJTDlyCuRf7jsWKlNcuHePuyzPWZk0pwZWx7FtZ.0xedoYxz2C:17:0:pass÷ord::
+u18-BF:$2x$05$ifEdjnzO4GCo5a0LAK7P1.1ANaDQbt0L3oKHv.D2DUZy1UCHhVaxm:18:0:ôåst::
+u19-BF:$2x$05$VPeVjH6S4EOFGLdHkl.RYuVRYtSiw90MgaBC8mcVCzWy/46h7b8HC:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$BJ1ZB8vtwawHW0i8cZpZPegvpArvKd85w/Y1IVxtQlyQ8wGFNbRAi:0:0:Skippinç anä*::
+u1-BF:$2x$05$yz8wxVt384TlV1xuKYM29ukaW2uKBFKMAI9uNCaY9rdENDGMkhcUy:1:0:Skipping and*::
+u2-BF:$2x$05$9ndioBji8SW87qUhQmPbI.X0yFiMD4CCvcpxN.VFesb179YvJP5d2:2:0:Bert$ErîIE::
+u3-BF:$2x$05$eAxKYCtu/F6MljEIF40MiOCscNcGzoOLPdQGgKRDFosPTK.DNVX8.:3:0:Bert$ErnIE::
+u4-BF:$2x$05$LaS5/oPgGL/76/Y0vb8Pk.cjb5MfyNo1p8PLnEVLVouWc3pMUTfKy:4:0:bert*ernie::
+u5-BF:$2x$05$dWnTXO593Ii9p4vYop6x/OLmNejFj4zrotkPdnGtqU8ANniiJDG72:5:0:late*night::
+u6-BF:$2x$05$4n5/15toJKwTFZEyxPzLnenqjD.B6lkaxVsbKb5aTpcwA.JiQqKjm:6:0:::
+u7-BF:$2x$05$mINrO9uueMzlec5e/amjtORXTwbc6pIyOo1EIgnlU0iTr0xQPi/B2:7:0: ::
+u8-BF:$2x$05$P7jpk0T3CdLvizcT9aV0Xed29IfCxVdu9LqtD8vtBL3s6HgbAaG7K:8:0:1::
+u9-BF:$2x$05$vKCJfAnmruTQp7aepfX5puM49Pkfh5Hl1ATxQvmZaMi0b.nzF6Y9K:9:0:password::
+u10-BF:$2x$05$XBkvp5l0wU0KJ4eNaqu9hu5QgTzT/d2k3vo6XoAi3IxesRsjP65Qq:10:0:test::
+u11-BF:$2x$05$Nb4W4C/uBoCMKZi97WUhSuKuhb6U5gpzmsFg2aiBYwJnHvnPIQtjm:11:0:late*niçhô::
+u12-BF:$2x$05$/FmcemV/bcVt4YQMchFYNOTDATUKUdJ1SuZbB/zuYROqlicmodnUO:12:0:hello::
+u13-BF:$2x$05$BB1Hl2FrXO9NN/G7G3IDCer.xQ2QGIE4skUO93g6lEeCkuYTjJCQi:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$4hfkLB.OWEPZbumLBqXDPOgr/LTSP/e5B8Xl4Z7aSiHv812WwI32m:14:0:!!!!!!!!!::
+u15-BF:$2x$05$djIz64GQiTpzeTtdfXKDuulAfiPFXSr7xQybjPO10QceviQE8lXDa:15:0:ttttttttttt::
+u16-BF:$2x$05$gZGlhcb4V3YEW2EQ0zNniu1w2y9m4OJ3kdD1jJWFoGTjTqnVxwD7q:16:0:±::
+u17-BF:$2x$05$9QZ8Etf6aTWmR95PFipYTeds0AfdtPYELZbrAmmuM2ocEL2DY.mla:17:0:pass÷ord::
+u18-BF:$2x$05$aTql3RsDgeVf/WnWbI.LPO9ENlkgdWFbQ7rLKu3bRJMhBU8dHdc2C:18:0:ôåst::
+u19-BF:$2x$05$iSPhVTeG6S6WnPZI068JvefD.UXi/xJHNUkqMVMFFcsNFD5Mj.0Hu:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$zOI59AfkDdcgPOL5WJsCAO5j4VfCfwR7Vqh5BTywiwX1jKsq0qY6u:0:0:Skippinç anä*::
+u1-BF:$2x$05$UAc8kJzr4MuSo2FwRLMpfe9lgEd2ZlBsW.P6aTLTRNBjrHNuFVxda:1:0:Skipping and*::
+u2-BF:$2x$05$73rsaXWvApw6TGixmktKh.EOEbNIeb2INBXADYd9XbwhrXN/VXS8G:2:0:Bert$ErîIE::
+u3-BF:$2x$05$AApO8ubrazYQ8NalEb6O5OSmrvgaeiYYXAv9Wv9wvrjrQUPbAKiXC:3:0:Bert$ErnIE::
+u4-BF:$2x$05$NydZxVAv3ETkbTQLufkXpOvSX46ksKgejI01CefEGZ8fr8JUwCkPW:4:0:bert*ernie::
+u5-BF:$2x$05$Nk0nDmKlOIPDC9i9T1jal.0c/8KYa6xxB0aULvNiqJ0uu7/T43.uu:5:0:late*night::
+u6-BF:$2x$05$VtHnoKknZ4dzej0xZquMj.n86lOLimHvgrn0.CbmYhgDYGfRgmsd6:6:0:::
+u7-BF:$2x$05$EMYQ9a7ue2dcN7kHnoJbvuZFtV4zos4YtUU0TCwvBmyox75gUWf66:7:0: ::
+u8-BF:$2x$05$bBKDHUwShVw.ozcA79wu5uVd1o2YE1i68NBUoce.MI4ax//eZmaCK:8:0:1::
+u9-BF:$2x$05$iZARw47Z4CDIn9rienb6WOT3/ZDjOmXN3iCl4w.Y3qnAasa.XfhS6:9:0:password::
+u10-BF:$2x$05$IsMrF0aKNGM5RDnqrs0n/OlvbmBdJjjYpsbGfS06C8MS2U8QWhsMS:10:0:test::
+u11-BF:$2x$05$vR7ILVMUhFeIfFinyvxFv.gtDMyXolN7e/DMQ7cdE40CHbKYOnYbW:11:0:late*niçhô::
+u12-BF:$2x$05$...4Ku/QNg/zmWoL2EbESOJfOPBlaE.xRX4aOw3VYjrM4ji/s3tUW:12:0:hello::
+u13-BF:$2x$05$WjKbgAl7QZQnOIaLN79Ce..hqc0sEGi2LbSgQvrq19ViwRjee.li.:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$HE0K4HFAtksHjiJ9bN.PZ.b8My2eRIZhFqKRYV9iZMzkjIBQAisna:14:0:!!!!!!!!!::
+u15-BF:$2x$05$ldYFpEIiEXnHPvXfLRsGmu97mAyhX06VjJ3LSyk/xoyslOYy3cu.i:15:0:ttttttttttt::
+u16-BF:$2x$05$ME59qkATiFK/gdcu4gzAxuXSmPxH2WAxMXxU9hhb5X.rkD3Luz6qe:16:0:±::
+u17-BF:$2x$05$mXn6nKxSV7eqS/WyXs9dUu3fauHUDz0LuOqhDWXSFlgm1cMGAP9OO:17:0:pass÷ord::
+u18-BF:$2x$05$rwIsWn8d/D6R.KKPjIiN4OZlhmXhrg3BMk77kNAIRJUj/Wgbm2d6G:18:0:ôåst::
+u19-BF:$2x$05$qxHG1.wz8Ue.G6UfZQi1f.aaGoToFekWF0opxtHYiXsxR6JsNv.JK:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$xNB91AhJq5U3jjtML124MuArp8nStJ5ibU9hurQ9VO8TuByFnshdK:0:0:Skippinç anä*::
+u1-BF:$2x$05$99tRUmXLlCr4tify9MOLPOt51h1yTXbljbx/iYf7vOzzDpx5QRamS:1:0:Skipping and*::
+u2-BF:$2x$05$VYdQZeLEOAcr1RcgDttGfODz9i8y7NI1xZVefDqAMjKo/L8abb4/O:2:0:Bert$ErîIE::
+u3-BF:$2x$05$puuvLfzsghQ/GdWhWjfQtOPe4fPyzpcfGNWgBCotec6ZByNU/s3Hm:3:0:Bert$ErnIE::
+u4-BF:$2x$05$a6KzBGeSVf9cChNUwAn4x.iY33gpF0U/aXF66bg1bjB9bRPJvZU4G:4:0:bert*ernie::
+u5-BF:$2x$05$JcAl8BgfJchkYh/oXH1uAeu/DT3UknXMbBnbtDc5DXOuI9V.PtH72:5:0:late*night::
+u6-BF:$2x$05$mfF219mwm.0SiGhfntgCJOZGty6730318dl72I34hHdrMPJ8e6C6O:6:0:::
+u7-BF:$2x$05$Q/u1M3ZbBnHu08T0AQ/0G.6WfHo7YjpeABHKGjEu5rGSbK9yI3t0G:7:0: ::
+u8-BF:$2x$05$w2Tc.Rvr1wTlpnWjr015R.HNEShCK/efcM.5s./wvjHLYWoYZ.Zd6:8:0:1::
+u9-BF:$2x$05$j7c2t.e8aHckxK7fn4jhHeHqKEashxqHEB5j4Yef//ZkMbQGCvp4O:9:0:password::
+u10-BF:$2x$05$kPitV9wEyrPljzaqNMZTQeq5eLUt3YCIRqn8RKRV9rloFT5vx/JVi:10:0:test::
+u11-BF:$2x$05$xwOouEE16Ay4PQl2MKLEgu9OrTNuo1DwDVAY0U/lAQ40P4ENXPBsy:11:0:late*niçhô::
+u12-BF:$2x$05$3b0NMpRlZ6mA88Hn0z0UTOKFQTXKn2F4ikur0HIhl76z1ENoDkF5W:12:0:hello::
+u13-BF:$2x$05$hT3A4MGobyfxtClb22b98.AkzwBZDSQApa3G/S4BlJcIZXVnFlDNa:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$bvfOI2dxDzhIqgCFtaVuBOHsXYicalDXdiEete9HaEvQwkXxbzfH.:14:0:!!!!!!!!!::
+u15-BF:$2x$05$SR7lgBdwQ2ewJJrcBpSQmeS1/mWkM8cwko2BbmvJuUfObH5TNPjpS:15:0:ttttttttttt::
+u16-BF:$2x$05$36d1UHxVKkehxLwPmp5c4OEjiGCImWNgmv8QQpy4dETdPjE4uoNIK:16:0:±::
+u17-BF:$2x$05$QRE.nZidJsggzRUCO5XEw.Gp25lp0IE3F3cS0K4aXDw6IL5K9UOCy:17:0:pass÷ord::
+u18-BF:$2x$05$DQi26j1OijXc11D2o0pPTO0g45IyimtdWLNrZWRzrZNYPsUYXWgRW:18:0:ôåst::
+u19-BF:$2x$05$WFxM/b.zQpfBqO40lIDgmO3IqVjy4kIfwgMTgtKlK4n4cjyZu5Wv2:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$5q68dYN//aw27CiIE3bYleWS90P35LdwncCk49B9pM/by90mLNwXO:0:0:Skippinç anä*::
+u1-BF:$2x$05$iRzmTBcXiSIIIGZQ6SC9le0D/LYnM2Fu9YiDa4YtQ0u8TDzDCn.4m:1:0:Skipping and*::
+u2-BF:$2x$05$6yJZGMCVSxg4UjEi.awGhO2XOHKOGD6wxUBMtx6mS/FX6yFUMz10S:2:0:Bert$ErîIE::
+u3-BF:$2x$05$WQHTJlApnLTMS5.Dsiu9Yea7P7qASKNGl5ywbj2tqOGiZX0N3.iEK:3:0:Bert$ErnIE::
+u4-BF:$2x$05$K9xT9oNtnHe1nKmkFtIqruhkXLEptAU9sHwmybmKJ0Yt2uTmNz6Y2:4:0:bert*ernie::
+u5-BF:$2x$05$SBsyjCaRULjFaBf/ZBJenejMPf87bZ03NhN3Bms5wYUs30B0FXG5m:5:0:late*night::
+u6-BF:$2x$05$c.pe1alaAmlbGaZshKH/BumcJJ8OpHEMOwpHWJ7ud8fRRO5aFGCZe:6:0:::
+u7-BF:$2x$05$463LDs7PEHQccGxcCQIYiOdaFNS2RZ.KPnpZbXGL5XQ0zZFVpy8gm:7:0: ::
+u8-BF:$2x$05$p/2/rlM23kZLz15zKp3.3ebhIgNzJqP7thISZhxHvEF9QLp7udJFS:8:0:1::
+u9-BF:$2x$05$1uHYyMt5JLtbk2AIaeqXAO3hj.cFFksOFIFxFZYel0evt15ARgyYy:9:0:password::
+u10-BF:$2x$05$19T.PKCVNKOjMlvDxo4k/.zcG6aP8hY5.2bFDYDuTwRk2iol3QmdW:10:0:test::
+u11-BF:$2x$05$5s1GuB6i0W0NNtF9r5dF3eNUINVfn4oK0TT7w.rdHXJwlGNITIAEW:11:0:late*niçhô::
+u12-BF:$2x$05$J0ksyQjq6GDfVV9rRTAu8O.vrrFy4ouoNdKaPmDSq5Vk9gX4UBwR6:12:0:hello::
+u13-BF:$2x$05$PKONxFufBJd3KXULRNPkVeEwx1p/wcDsEgiwekdKnAhsS3sOnbKG.:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$SP09092kbWA5kXN7eqS35OQshwAtZNpGoaR5ZM1ysYEamYf9rQAsy:14:0:!!!!!!!!!::
+u15-BF:$2x$05$Y.EUTrHFZRRWF.D870fH8Oi3SaXMefD6vFALCidqkIripbfpnxeom:15:0:ttttttttttt::
+u16-BF:$2x$05$8Ndg9yNCLqyPaKcgdYPd3Ozi4xR8c.RrGAjkziQzxhqCfdvUIXH2e:16:0:±::
+u17-BF:$2x$05$rl0P.tj5PRKfNans0z9QpOnGrzMivLjDZJwAr/O8Ji1UJGVjBNI/W:17:0:pass÷ord::
+u18-BF:$2x$05$pBkY9XQQFtPqoZqdh5fY9u5UJhmXCyNeCS.YphHkAUenhigw68X86:18:0:ôåst::
+u19-BF:$2x$05$vBl/RikpDWtZBzmjCkQL.eq6z7Rf.LMVt1WIZC8hNXNiFbrStskWi:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$ttCEdXTAEYTfwEarOTDrV.C61W9qHKja6.7VMw4iqt1KZP35MUd1m:0:0:Skippinç anä*::
+u1-BF:$2x$05$uccDX6nco8t6PMqvJBkRqOc1RqcMiQLD6zbGQmwbBdlC5Mn4YC7gC:1:0:Skipping and*::
+u2-BF:$2x$05$H.Auxx9yh93cS2BDukP2K.OVfAqvRY6W/kVZGlS8FVXwTs13I5lBi:2:0:Bert$ErîIE::
+u3-BF:$2x$05$SJ2kk/sca97/ErZKzEcL4esEIYO4.xDuRZ.Z4MZOIMByJ/R12rUnm:3:0:Bert$ErnIE::
+u4-BF:$2x$05$TlM/88SwwYgg9NC6Xd11TOX20h7m06UUTEaMtVsGcPgC.qEwFW1t6:4:0:bert*ernie::
+u5-BF:$2x$05$sU/0pGxoyldSBvRZlQS0su8SYTR2rewxA3N501k103NvUv.E3R8.C:5:0:late*night::
+u6-BF:$2x$05$fy.JwtCTQoN0HxedbCotwuBg9NxIX/5T.htbPBHQO6C7vAniRHIbe:6:0:::
+u7-BF:$2x$05$oCROl8OdIsgUdf5itlbSAeZtYAF2EXTrLP540xYrJPrmEsyL2AVcS:7:0: ::
+u8-BF:$2x$05$GtIurlhijIeoKe7UpjilmOGFXAW5PSSpDGQ.QAxsKt1E9QymA1S/.:8:0:1::
+u9-BF:$2x$05$qcSewkm8vDcuNET9ck5qgOBKC2eQ9N6/RkVkiEQ/MxP1aZxxx7NOG:9:0:password::
+u10-BF:$2x$05$MLjdfW7fmWy4S4IquXvVYODstno0V/dDD5siJtXd05eFWaJw4nEpe:10:0:test::
+u11-BF:$2x$05$cCtyvTOBu.RpsYxAHHAaMex48Ml4tzYBMbh0foxmN7nnrqndiwbC.:11:0:late*niçhô::
+u12-BF:$2x$05$..Cf42nnd3XrjCed92FZZuh4BGZ6E8BouIwUiAB9cmrRH/TwLkFK2:12:0:hello::
+u13-BF:$2x$05$Ol1z2AUgop648PJR5XGVYeMJaY5fsu.GqEKttbe.eO2t814/Ejoja:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$3KzEDN2obkX0Ua414fZN/uX06J0sP8Mea.A4FcLvMC98.nLbqhDhy:14:0:!!!!!!!!!::
+u15-BF:$2x$05$hZ12pUtc/jcXzoT5z00bzeAtaUFUgMPU.gLzPImeOWZ5dhASABRnK:15:0:ttttttttttt::
+u16-BF:$2x$05$KFAz/2IPTDiuAtgo2vKHiujbAIUhs.oODrdikK7Kpyf2q8wO0o4Kq:16:0:±::
+u17-BF:$2x$05$0xTpasqy8LqfzOdRZBxBPOH8qesmWBRp4iKmlFqhTsxMN.NH7L6sa:17:0:pass÷ord::
+u18-BF:$2x$05$BOgg0/hGuqSb5cAbPS.1wuTmYYljSO2MZ6DVHlwPc4AIIiYHp1z8m:18:0:ôåst::
+u19-BF:$2x$05$g9TbRb6iNPiTy46XgBvc6eimYSduGmeJS4vws4/Qw2iBf0Pmm7ymO:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$6RFLpSrYhEN7SxgMa8Nj6OIAkLc1XlwTP42KaN4fcLYH4xLKrRrYq:0:0:Skippinç anä*::
+u1-BF:$2x$05$TTjhlxuBCIVHtwAdMZ0D1eiGw/MVZzCiFss.4/YEFP/CtW7e1T.P6:1:0:Skipping and*::
+u2-BF:$2x$05$Q9LgZ8FKdIg.Mswhh0ySLuYgTnjNfH7jbtbCs.ppLIV2cF/oStHGK:2:0:Bert$ErîIE::
+u3-BF:$2x$05$xtU2TteTuiCyRoTLvA7iOeKlW0grKT195oCoxDVEwUvLhvD25akcm:3:0:Bert$ErnIE::
+u4-BF:$2x$05$tPWf4BDgHQwFoiM88mii.eLRY7D1eaa9AiBFgXdjMsvOkL3/Y3HV.:4:0:bert*ernie::
+u5-BF:$2x$05$GCaW6VgvnCtCXXlQY6hQ5OEkJX64v3wdcH4uJNi4jSyFbaAaWPch2:5:0:late*night::
+u6-BF:$2x$05$pP75O1dVEPvqgKggA1H5m.D600iA3FU2EK4wVvXCPOxIKDPQapHpa:6:0:::
+u7-BF:$2x$05$HVbITXfNmI7TfsBaenLXX.pR3atuXv44W.l0wsND9gppCcKqbWv0C:7:0: ::
+u8-BF:$2x$05$i7a2o2UX5s47Q/gtrOvtU.elMxnk4QzxLQ2awOGpQ9ZXtFaxYnv2K:8:0:1::
+u9-BF:$2x$05$sAbyFIpQms6RKRnpaIQVl.ndcMe2g.vdjGjMmY.odLcFocNOJpmzu:9:0:password::
+u10-BF:$2x$05$AjXTSY3O7.lbont0xjcwauE/0y01wcze5VUrpe//LlTq34TBATO/6:10:0:test::
+u11-BF:$2x$05$XVM9zVKqwZQ6pyAzCd8xuOMSB2FNMUjOUhSC8/7NOt5zNuqHnb5Qm:11:0:late*niçhô::
+u12-BF:$2x$05$G7ivGod2sblsYiXFX07ppOCYjbecPpa6vTiZ8S2HCyo6R0lWpEJti:12:0:hello::
+u13-BF:$2x$05$WGR3ldWiVPmGFR6r9YSBw.fcQ971fpoLtCvOqoDR9G4kt8SPj07XK:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$asfpuzuRtke33eF.qJV3dOZnJ1i5ZDSm8t.LnqzM/OwGSMAvIFHiq:14:0:!!!!!!!!!::
+u15-BF:$2x$05$0VGgdD.Ro9n4/KXh1NQ/kukviqLNOqTykzMwNIbjhBi54oAqcwE6W:15:0:ttttttttttt::
+u16-BF:$2x$05$hKZaD40qsDTKGFP1oEB95u/V5t.eIiapX9pq4LotyXuP.kL/X3CZ6:16:0:±::
+u17-BF:$2x$05$6BL6/kqf1dDwakc13UNVDug8t/XwfqlvlmHbkIE9GWV4x0xd7J/86:17:0:pass÷ord::
+u18-BF:$2x$05$0ukKWXBKReD9FkmcStCsHeW7q6hiYZchUS3pREuf3Vqrpiu5SOR/6:18:0:ôåst::
+u19-BF:$2x$05$LS.rxHgM42/0jJce28oEIeyA2yTLtjQTPvO71q/AxtvmpSB4m9oP.:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$0C.u8.M6kLGlsQN62yGFMuU.wyZKac2UqEvuQf9auTZCEmfRWCJC.:0:0:Skippinç anä*::
+u1-BF:$2x$05$xTIcPtDmliviThIewMYJP.zNfXedBVETPevnQkUulDtrs0UK1myfu:1:0:Skipping and*::
+u2-BF:$2x$05$JhX56VVKFFDzCGwr61.ya.P273OhK416xr7TQc.REEOB3YeTf5TiG:2:0:Bert$ErîIE::
+u3-BF:$2x$05$9upHdx1x/PdfSO588mZpN.16d5N0dzdazRfzpQk0rDk.Bifzvrtxu:3:0:Bert$ErnIE::
+u4-BF:$2x$05$1EaQtHFmZvFtzcJ2ChHBy.fWCxMeBE.GTH/rEbg3QaX9/7De.wC8K:4:0:bert*ernie::
+u5-BF:$2x$05$isTUWZz51vo.dBqCf7Azc.TsRaU0KzUIoDrQZWs.1eWFkjg9Vyh9G:5:0:late*night::
+u6-BF:$2x$05$bK1aXjdo0UdncTPYjKbRX.hxLY4SaTXrhL5fT77W2sUhakshPG4cC:6:0:::
+u7-BF:$2x$05$DLkLEoeFI21xqqN6TCl/ZOVZSMu6t4Xq/PmwyqDdtDLVCCbpeWLM.:7:0: ::
+u8-BF:$2x$05$TAh855vY6YQ1pQcfa20Z7eeW7ud8xhWpsEnK8E.cH6LPhvwUwah8C:8:0:1::
+u9-BF:$2x$05$Kwwun73VJH0Ogig7UBLFBe7G0pnTA4MtzPUnDuNUSrkNw1DxP2eny:9:0:password::
+u10-BF:$2x$05$jcs7izxdNqhHppQaNlmEEeZWtBbbZblEvYEji/6Q.dSIEKVnXyuW2:10:0:test::
+u11-BF:$2x$05$UV0UBOE16DYsxaRmHTgJ.ulaNWSY9dh/QRtbviU4bOTF.VXPXZsji:11:0:late*niçhô::
+u12-BF:$2x$05$jHMzxqDs3uBFiRXcMzwsaOXHQOlySoLyKvPQ9LyPOj7.5sLnIyGv2:12:0:hello::
+u13-BF:$2x$05$CRHyzhSNDIkQPlvCqfYxb.uNMxZ/jY01P16V.f4cLzpkbYo881GH2:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$mu3EGrZmysgQ.kaypWp6/uYPxRrtiUIpFdUYQE6wEye4lz4Me5oDu:14:0:!!!!!!!!!::
+u15-BF:$2x$05$PJRELpqcEiEBJwXIf38l0O2dwm2POAGgewOYZFBeEQT6Jef303VDi:15:0:ttttttttttt::
+u16-BF:$2x$05$VV3xDl2AUG12kHj3cTp9YOBeXpqX7QbJxudRFZsb8nmxgkI4sop.q:16:0:±::
+u17-BF:$2x$05$Cd7ZL/m5/jrmeZ1GiluX7Oy9OrPG2bw/Y3ck/W5BZ44eMTFNQRCvO:17:0:pass÷ord::
+u18-BF:$2x$05$SuRqVrnTslP.lhUd2egY2uNxQY9szvcYXvW2jvduuMfFc2SNzIkLi:18:0:ôåst::
+u19-BF:$2x$05$b5sfVhOGBlaZjakRgntTK.H2HxFvLj62EStf7l2yYJa3tXy8vz2KW:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$E9tw05cvAQwoXfrOjSo69Oi8Uqg14qN5E.mgXCkhFweMKDpI85946:0:0:Skippinç anä*::
+u1-BF:$2x$05$8CSfwbQ1lpxnwu4xAvEUdOoeXwwNpWtN95X0Pw.rc/YljPSh6mLM2:1:0:Skipping and*::
+u2-BF:$2x$05$DWWlF8g8hy4WOd7ku715KOTqCBcQvBUdziJMKty0XJQxKGz9des.W:2:0:Bert$ErîIE::
+u3-BF:$2x$05$2s.FhiWZkVWFwJdJCxGZBuk/MQamCRNKf.jTMNPGCW.vpBwF21VXW:3:0:Bert$ErnIE::
+u4-BF:$2x$05$BzdfOj.BJp24aedA9gjFN.EWHIseyEtPZ7LfuT3MDFZyNPO7Nz8By:4:0:bert*ernie::
+u5-BF:$2x$05$aAjr2Yc5Weza..bQf2rjK.tOOro7cYjq1VUVPQC3QXkXuXZzwrVxm:5:0:late*night::
+u6-BF:$2x$05$Nc1fRgkVLjz9hRDm7xnkw.f9C4RNc.gqk/F6JF2d0EwPo85vDNnka:6:0:::
+u7-BF:$2x$05$yVSNE51Z00zemZKPxZ/zxuMKnIWbmySe4kaPnLs42NXRube1uq7vm:7:0: ::
+u8-BF:$2x$05$P8dFp42OHK7bOswdOv7WqOD7z4fSANIvVmW83II4o29S7.2zC7r1W:8:0:1::
+u9-BF:$2x$05$hVAM04LPkfcUR6KP2DP.J.O8xksvEYlWW3IBqxNHwO/Rp95SHyL3K:9:0:password::
+u10-BF:$2x$05$N3gU.TwZEAXB1yfinibuM.O5MpYz.6H86HxJAu2.MqVlry7GBJe9S:10:0:test::
+u11-BF:$2x$05$/UlTewt7aF2ryaBeKCT2m.SU3KUdfWeTE/gpUb4H2QDmcqejftfhq:11:0:late*niçhô::
+u12-BF:$2x$05$UG9i4twterH.igjIJRV18eo1ebr4vshly3mVKh27N.glosQrXDDku:12:0:hello::
+u13-BF:$2x$05$69P1qdFDKhOs..E6NJ6fzO/tLqKxKYHhA3MabWkZIFjGsAGiSWhky:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$yb0.tr1S1oBqwJC/zegmRu3izlag5fHP.zqdMObYtmQ42/5O0hmB2:14:0:!!!!!!!!!::
+u15-BF:$2x$05$LN0RcMZYSpJZJDs2U.RL8uyH7P/5NFS7iwpORDLCqFmkLsDtoRCv2:15:0:ttttttttttt::
+u16-BF:$2x$05$Ou1.egZbbTgU/hIemogdkuFf/Ic.EGHF1Va2bfXVUCyPoG75mCuHq:16:0:±::
+u17-BF:$2x$05$LRyYe7nrv3rVg0x0UPYOoeeXXPUWHdpBHl7wY2zQUc7qpdzWMmv1q:17:0:pass÷ord::
+u18-BF:$2x$05$zxbJRRTHgu1J.Sly9q2MhOc00uUM/kRcU/Y.f4nF92IIBO007Rnaa:18:0:ôåst::
+u19-BF:$2x$05$ag95Jf4m69s9bJafiThLKecuH5AJZhr9OwTvqgL3hlDwuUmRAEkiG:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$WrD9muVdyTffUHJGdA3lP.lp0PXt7V4Itm.eA7JitT8lPWWkINmMa:0:0:Skippinç anä*::
+u1-BF:$2x$05$jChNBOuiI6C8/7asyBOAoOt1FbjmHFPxpYUnqhGrVBIExVRGaj5/G:1:0:Skipping and*::
+u2-BF:$2x$05$SB9fZoowM/T2eQjs10rZt.rND5Tb./tXhvHQz.lUQXTejgrKxk2Y2:2:0:Bert$ErîIE::
+u3-BF:$2x$05$hChQitfzmGU/Y9VI8dyOweLIpdi1tUwGcxFzrxYjZPnSE2uGcilqS:3:0:Bert$ErnIE::
+u4-BF:$2x$05$74SENE6aTTpQuxK58rYd4.y6vJ3WJSz27Q9tXyOsGjed6pFpO9UQ.:4:0:bert*ernie::
+u5-BF:$2x$05$3LB9B.YtlhPxsTNVKLRG8uDv3n/YMwlfK6V8D31/QSpZBCgbY84tK:5:0:late*night::
+u6-BF:$2x$05$sdxYxyx8mZIdR96E56BogebbMYzyLfyYJ59cqCVqCKB9YeHoL7aeO:6:0:::
+u7-BF:$2x$05$8ON9FMiF3NpukfbgLY7goea2d7QOnVbkmWlVxILIoiCdZ7Vmhpfuu:7:0: ::
+u8-BF:$2x$05$pEQREO4pTOqJkUIxlVO6V.BqJj//luKHP4kI4EWGWUN6q5Lz7lOEy:8:0:1::
+u9-BF:$2x$05$Z12utgj1I8FzW5kqa.WMpOTovqgqZQmyKqiQkuFXBSTx2LwQnF25q:9:0:password::
+u10-BF:$2x$05$UFrW6WSN2Nz4QnhsfgtTCeH55tr7RjhE11dezPReayxMWyaWiFqOm:10:0:test::
+u11-BF:$2x$05$CcUEPWQ.itmh7KXBIWxxnuAKapsZzICD0ZRXSLad.E2h2XY0pyWLa:11:0:late*niçhô::
+u12-BF:$2x$05$prdscSKXExzxE9UvHeAVjO2dFbsl61n5PIGB/7ZQBq5Hvs3c7LZT.:12:0:hello::
+u13-BF:$2x$05$y3EyLnjlQxb2nSCndSMwQuVkOa6LkctcZpyJcr2dq1ksen4V8GLkq:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$fnEDSVeK5WrIdTsEYIow4exSjStOGt83on/Ei1FHatVi.r3JCyJdK:14:0:!!!!!!!!!::
+u15-BF:$2x$05$t6JONs8VrZDG/YRJ9l.JVOo7xw8RqoJFRzqqwr6zPErdblM1A5czG:15:0:ttttttttttt::
+u16-BF:$2x$05$OVIu1sDQkSc1EEKz7cL5gOGPeHNOsKVPC39I60iOavWXbp.v2PMlW:16:0:±::
+u17-BF:$2x$05$8Ka6vrPoP0DyfEb.c6acse3Ot9xjObMlg6roCZUV7lJal9abUwiA.:17:0:pass÷ord::
+u18-BF:$2x$05$ZD5/8mlgj8kZNhhf3EUAiuvGZQeRGkw1dVUbHBMAZkN2cAGOl7oni:18:0:ôåst::
+u19-BF:$2x$05$C2CDiMYO6JVmhe9hLGt6S.ezaBX8zmzJyTMCuXe8vkILAKB8uszGe:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$fIRv5S35NyKwSLbuVCMToOMm1DcsCx3T/pqyoHySTyd2/ZfugyAay:0:0:Skippinç anä*::
+u1-BF:$2x$05$GyWknv4HVhg9VEz.4NvaW./FJaY7nrtMuEyDXE.33s0CaVcq145Lm:1:0:Skipping and*::
+u2-BF:$2x$05$ejPAnLoCK7agZkk0W3HA7.YmdcffCGI5R783OSi4IevI.y5/zjCYK:2:0:Bert$ErîIE::
+u3-BF:$2x$05$1eVTkNOy3NurZ6fCabb4QussCXvCzFD9eHJguZjmhHraOgGIy8H4a:3:0:Bert$ErnIE::
+u4-BF:$2x$05$eiTG.TsyNzEZ.HAS2SnYcui3o7GzZHhSGDvboqlZVJ2D/cfk7NwXi:4:0:bert*ernie::
+u5-BF:$2x$05$w8OhgEL.60IXg9P4sYPaMuDMVGP3q3lscWBjwlwSdPeSQR.4Q1iiq:5:0:late*night::
+u6-BF:$2x$05$Vm5s9AnQqb5pR2rqKO39Ru2cjc6XCVWfuik.WTQrHKdzut/eZ70Z6:6:0:::
+u7-BF:$2x$05$l/r2pcJ5rHb7UMTkbNca8Or9aybsTBtVAbuDYvt.lJoG3FbNDPjIC:7:0: ::
+u8-BF:$2x$05$YP1vik2zadfZg413/uimxuEL/8dEIGXz8LDiJB0BYr.PZIKZcUyzO:8:0:1::
+u9-BF:$2x$05$WGH8ed5mq8vP4PTNBkhcTuXy1bNDeo4Xv.OFO.GxlHth6HdZosn/y:9:0:password::
+u10-BF:$2x$05$9OR4UjKqiIDxCeP5zY9G9udNeayz02HmZUK49y.1aO.jWDulVs2we:10:0:test::
+u11-BF:$2x$05$l2RA41MOBjcpfBBDCbK7xulnJi7Yb3wHxKWSCHj4u.DCLztQe/B8G:11:0:late*niçhô::
+u12-BF:$2x$05$OoeK7oyBCNz5rXPT41Cw8OP8TvwlNBfjTmdWLI4etKGFjey74Pwaa:12:0:hello::
+u13-BF:$2x$05$RG46tL16MEMJTPIUuRpScOcfWcMkT6a6j3qOD10T0ojpio1KI9TB.:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$55UnMNUPKlaVvOiHaz59besm/AqolDCJ8WNvg3z1iXVq.nDf4zL.2:14:0:!!!!!!!!!::
+u15-BF:$2x$05$rWtBJTksoh6A9h3/xYT2Bu/RU8kzobxuTTRGGzmilXsIogTAN5l.K:15:0:ttttttttttt::
+u16-BF:$2x$05$jnQi7UiRiDKsuN7u0Kaz8OI.uCUsQg/GJsE6Rbp7/d4lWNpEhFb/q:16:0:±::
+u17-BF:$2x$05$nZCkYWorFwXqQe1.jV3hFuChv/xUGvAWHrCvjl8BgiDruhGSxVAz.:17:0:pass÷ord::
+u18-BF:$2x$05$hmU/nvaOBr2Fc7mN436npuifoH.cKypnOcEmda6/Ixie4rcLddv8.:18:0:ôåst::
+u19-BF:$2x$05$bknzr7RxwO1/F8GSz7Tj1uv2rHhUr5Zuw4wpmbvaP0pvQzvpS8PDe:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$5gVTquhQ7G0wo59Yz0UeAuOLfYwZlMdMSei7Djd7eSCFSToIo4UBu:0:0:Skippinç anä*::
+u1-BF:$2x$05$0QEFYJsLdKYEqG/KGljxvO5tj79jGQAH1PM7cmhYxu.7Cgtfz8A12:1:0:Skipping and*::
+u2-BF:$2x$05$VkeyNZUv4svgqR7/CmizseJd6KorZB8xeMM3YAz37eki9pedLN1NK:2:0:Bert$ErîIE::
+u3-BF:$2x$05$9fgMs5o3pu2fCoYCRP4B/O/1GJTYsOz0lI3S2NJkhMw1dJC0K379W:3:0:Bert$ErnIE::
+u4-BF:$2x$05$zVRkoQMuFfQjrS/WjokTCOn2tqx.VaDEaw/EzVUMon2ZbYtZzo3oi:4:0:bert*ernie::
+u5-BF:$2x$05$RZUXEW7eDyWwZ4x9E79qNOBSpXTf106tnEsHiGTSQlqOqBR8eG8hS:5:0:late*night::
+u6-BF:$2x$05$IMFzLtC828pQ1AFA1P6LSu//pzGdMmqkkparQ1n.dQzST9O3k0lSa:6:0:::
+u7-BF:$2x$05$GW6RmYXt0E0W9Sur3jnP6OgPXYynNBw0aa02N6xgIyJF/ROFrxc.m:7:0: ::
+u8-BF:$2x$05$rGS82u6t1fUPHUuq8cxag.H9DAZeOQNk4gwjNSNhcp/7dk/9tA7uq:8:0:1::
+u9-BF:$2x$05$lxNYveLqNRQjPaRmut201upWxCu86T39Q6BtZ5xkFnlnzwIU0pxu6:9:0:password::
+u10-BF:$2x$05$aykyvSjl4y5B85T/9zSsmuJtQoQsLVYym6SuDscpO70Gv3INlKnl.:10:0:test::
+u11-BF:$2x$05$m5rZdj1dnGhu5TKp6Kvzwuit9/qYhLxDKiT27mNu3GstYsjGXMERa:11:0:late*niçhô::
+u12-BF:$2x$05$q/C1pkJRgbFt6XUPlEm/wOCEmZxFnTf2APwD8y.TvQr7HxNHVYhTC:12:0:hello::
+u13-BF:$2x$05$8F08qLQqFdu2iqUwcbOVf.anKf8MwKrW6z.C8t/EIvChSaontFrby:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$kbTbvyilqsSClhSrmYnEuuaZYnFcyiuy3Rjm0k66YF9K8/1AdK7iS:14:0:!!!!!!!!!::
+u15-BF:$2x$05$.WBt7T2NPVB7x67D31UnfessDaE/0p/mponAVtD0dKGoqiY7f/sNa:15:0:ttttttttttt::
+u16-BF:$2x$05$uOtYMdjGzoRszRrTmwcwI.EgISk6PrUFqUxduF3JVY0PXdbR2QdL6:16:0:±::
+u17-BF:$2x$05$S36tNWpiqsLuxTnuq5FhF.i3qIJrc5l7X8lpSOl0txmb8bHiUcKaK:17:0:pass÷ord::
+u18-BF:$2x$05$Y.KaIMAAL.Q1X/WB01qILO7q.ZGr0WB7BmwT4/HJVxPHSG2C0FrQ2:18:0:ôåst::
+u19-BF:$2x$05$HeMaCH27USteQx6iMU.65.b/uTpQUT4V4ugcO3WY9dvDkhdjF2Rya:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$rbNca0IobDzL06KPK4h/5u4wLkIDvdt4gbjFZtH.hf62VDxxZi8DG:0:0:Skippinç anä*::
+u1-BF:$2x$05$0XsCCus19I6y7Xl9p.KNDuK3nHDtVDwcfoP7kapa7HwREojisdeYi:1:0:Skipping and*::
+u2-BF:$2x$05$.Rw.7UuxYZB2bvWwdyKAH.kHdkyqZ6yqn1akw/L7vSHZ90qHpP2OK:2:0:Bert$ErîIE::
+u3-BF:$2x$05$i76foFKulytAujSetWTt9.23GghDmqngGJ/JgEVyyDuL0qOTZO1sG:3:0:Bert$ErnIE::
+u4-BF:$2x$05$511o6eSP7aSOfV9pLXHmOOE7g7FBhcf/ast6nFE3buh1iMwDcQy9a:4:0:bert*ernie::
+u5-BF:$2x$05$MjyYDkl2WG0S19xzloPB1ODrHrPDdbhl51WT2idymHNoQkdYaLkgG:5:0:late*night::
+u6-BF:$2x$05$c8T/0ij1Io2NL5IYl314i.2YbMHYGCJWzUbN8S.xV55u44fYbKEau:6:0:::
+u7-BF:$2x$05$PTc08cd4H10Q43mN6.IkYO3kDH6JPj1XRxoCrjdtWP8oElSRiZpOW:7:0: ::
+u8-BF:$2x$05$IsWpi23nXP4hcTQVWTzDEuEkqb/6x/LOix9I1rtCQUCrK9am5Q4WC:8:0:1::
+u9-BF:$2x$05$DBEl89nKljPvUd.CxFOITOn8x3SAjaC4L6srx.z/hrMMTPYAEQ8Bm:9:0:password::
+u10-BF:$2x$05$Yxi7fBmtNUPKj4G.wiNAWuMLkMkZA5mp/ec45teAlQxT3yAhpI9u.:10:0:test::
+u11-BF:$2x$05$YpLviVS8.rmEraxAQ4ODf.4pAaY3ycqppobRj.9G1EJ5SWN1fWGki:11:0:late*niçhô::
+u12-BF:$2x$05$lM6p5gbzP4f5rLaMgnjhienCU8KfS/52SZ2ErZA33RLOzJXyZmuJe:12:0:hello::
+u13-BF:$2x$05$/2nKsdtzptpcaKWsvWDs3.acTYcNbWGOJB8SUmKVkNWIjR.ULDciu:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$Njd8pqZTpRdLbJ7MvUE90u9WuMhmxJOng.Q50NbKCRIUnOSSzydgO:14:0:!!!!!!!!!::
+u15-BF:$2x$05$0qipSL.DXLYN1n0oGuPqfu6JK8odWtFrc2GeUKK0jqTShtss7lY9i:15:0:ttttttttttt::
+u16-BF:$2x$05$2VFK5JuP3vRBk6Zh/WVDjOzROP2dMOjQbT2jRsylmTCqgU/r8imH2:16:0:±::
+u17-BF:$2x$05$xylSeJO.pVAG24fKmjvuq.UbygqoyIEfmgzh6ZpVXoPrT4sRH.h6K:17:0:pass÷ord::
+u18-BF:$2x$05$U89MbsmK5J2f6N9xBKC88ufFJI02AWfVCu95/0g3IhlmZAUA0OHsS:18:0:ôåst::
+u19-BF:$2x$05$hNNr2.G1QoN1bA3x7IuEKeH/jPVoggCvu9uAEdPpXlYHhWTVdCuNy:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$UHZhZmQswmI0QuTeVf01FeHtI9Qtt/6HwNKys4knx0CBtgQ7VL976:0:0:Skippinç anä*::
+u1-BF:$2x$05$jZiZA3D6p4FztIw6ylQ2FuGR6UC962Zz3Ks4Dcr.B6MLV.EehpJyW:1:0:Skipping and*::
+u2-BF:$2x$05$ZvxvAmcukZOuzesEe3.7WOY/iuqXBEtTZrkQWKR4NdocK8FvSGPOS:2:0:Bert$ErîIE::
+u3-BF:$2x$05$isdYhCDOmGONFMjKV1HOvu2TBi.fYwAtpTJ8laPXJi6HDfLdjczeS:3:0:Bert$ErnIE::
+u4-BF:$2x$05$a61vQMtUECEvVoZKHsZZP.iIAIiw3HUbLjf.ooaMuECmanSlgbMRS:4:0:bert*ernie::
+u5-BF:$2x$05$Lq7TasYx6BBu4LT205PcauJG/9vdY9uduRVWz8VFv3U3xozVxtZ1W:5:0:late*night::
+u6-BF:$2x$05$ZtzfmRisLrmzIVF/f0TtPuy4xU1bpQwm2YB/TMTZLepzhrhOih60m:6:0:::
+u7-BF:$2x$05$s4EiwaPhuAH/yexebT7eLecesqgowEEBgDbQigCzZS25rIF6dua.u:7:0: ::
+u8-BF:$2x$05$59HgidbL3CnP4ETli4iN5eYjsxXMpk/o6OCPWhfpcq91z/f9.nFZG:8:0:1::
+u9-BF:$2x$05$jvuLahijfJ7YW978OwuqeulBCAoFwFgoYhxX1gFz0MfiRWLbOX7iG:9:0:password::
+u10-BF:$2x$05$6URDQp31Ctqlo0sMNh7asuwU/Dz1KBCDHYXAzESN0qX96kdA1RHvG:10:0:test::
+u11-BF:$2x$05$xlmxLsDes3JiqsK2d/mb.uRKsaU11WD.XqYU.sS2o4iykm9pEqtdK:11:0:late*niçhô::
+u12-BF:$2x$05$a7xEYMuG7oEva1CPk5ymSOJvbutrm1ThzQuW83hopS68R9qCXodfC:12:0:hello::
+u13-BF:$2x$05$7e2DbZOHXEr4wFHlwvau/.5qOBJBrOJJHERqY9HJnm0BE3dATJizG:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$cOQjeL1uikPIwlwSqvI/z.83USF8409ERon.ZiDWu2/jDOlPpuA7.:14:0:!!!!!!!!!::
+u15-BF:$2x$05$jkhuAbJx69Gxz1xeNft16.ajQIRvb6n7JwvxZnH8IhDEQFW.CdH2i:15:0:ttttttttttt::
+u16-BF:$2x$05$AQDQNH1f.JanI89UoFF35.vpIc9XGSy2ere6fBBR50W7rm0vGDEfC:16:0:±::
+u17-BF:$2x$05$L8QItnWtfxqVRSDVB/NJXOF1S5OLvXN64FmmmaOgSpCBZlpbKy4la:17:0:pass÷ord::
+u18-BF:$2x$05$rZM9t7U1khkRyncDGv4FZ.JtMNpnHtKWYrnLkh2NioGwqJbze/p1G:18:0:ôåst::
+u19-BF:$2x$05$IKr1PWUKKG9bpSO/WiDmcu/ZWL7ejPR7K6qvxnIec.YC2iDutBsvO:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$Gct2n0sKxXpYzgxDAv65.e0uQhyOd1mPFHwjZO1vbVchGPRarFevi:0:0:Skippinç anä*::
+u1-BF:$2x$05$qp2fVKdnPODdf2tSDFEUP.JzAI4jIJOQhUH5Fk547QMaN/o94a8BW:1:0:Skipping and*::
+u2-BF:$2x$05$.ZpdB81luKxH85BqJyJ7rOjq6IrvqHkAw7aMCZjTKD1q55vvh.IMi:2:0:Bert$ErîIE::
+u3-BF:$2x$05$Gbm3EuaSBJF6cosLyWgYC.nnICU35zhXHl549MTZOQiZRIRRAztkm:3:0:Bert$ErnIE::
+u4-BF:$2x$05$AbQTdku902Np6BT3smykjOq549vM5wj3FsSWEmx2by16mImf/1POi:4:0:bert*ernie::
+u5-BF:$2x$05$t7RLUMruSwAj1m7liKWGo.i1vbRIYDXAtbv8BScv9kh2yzkT3H2bu:5:0:late*night::
+u6-BF:$2x$05$ErahU7cU9JFXTnL3S2YoXumoXVsxNjHxtLahBs2Jhgi67v0S./r2a:6:0:::
+u7-BF:$2x$05$x0J1hO3gbnv/7P01lGj0L.R66MpiwyKkGWwRR.U.PDKkaIcZkQ20y:7:0: ::
+u8-BF:$2x$05$c3obYIW7FeOCci9ugOWmauu0belz0Lo7q41DtLLCyVUQ160Xl8xfG:8:0:1::
+u9-BF:$2x$05$ngXlm.yAcjWA1PajY50uZuaFwm6lH4k/p2FYA3Eky72m1340ysSiS:9:0:password::
+u10-BF:$2x$05$2UKU71msvbi0k0VheyveZeQVDBufnf8sLpXDIOZ5pibRZ968DRWsG:10:0:test::
+u11-BF:$2x$05$IxbXAfyVE.Wh/9gwkfzJiuKMssrtCsolYNzF7DMGGnxfXHPxj5C.a:11:0:late*niçhô::
+u12-BF:$2x$05$bf0S9YoI.ZCIJrs5dOPoAu4hW4z./MysBye/11LDZFGQNgqkpiTdO:12:0:hello::
+u13-BF:$2x$05$ohOZPfiAkMcK9BnEi9HQ8eNOsSGUNK4D9llJJjV10D2Aw0nTjMWHi:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$AEgVNcq0oW4WqaOaR4zQ4OUdiTjX5yBhRwLeOLuP6LEMtvLbdEBNm:14:0:!!!!!!!!!::
+u15-BF:$2x$05$Qz2dk6DmH01e73IjSLDT..AQCIfx7t07Q.0/L2iIAvl33dgwtIo5q:15:0:ttttttttttt::
+u16-BF:$2x$05$qO2hNOmJu/7X651r267.hOvpp0K5L2P27EwFbuNgR9tnNE26n.rU2:16:0:±::
+u17-BF:$2x$05$2Sh2esbJd4jy0FCkFSqQ3uY2YANSIKNGs4SMizCN4G/NyyFDUQ3Ii:17:0:pass÷ord::
+u18-BF:$2x$05$/oBA3V7kJEpeipsL9bee5.2zT62v1MCzxLzCr2jwVEYSb5nIpLdje:18:0:ôåst::
+u19-BF:$2x$05$RakH29Va6J9OF9szyGC.XuVtxeaZM/6HVtxJYEFo93fFpzeSVNx3m:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$WfRedEAP7ktOeQ7vDkqhxOcOy3vN5iYIz9ClXDLU4r1VCUk0nJhDu:0:0:Skippinç anä*::
+u1-BF:$2x$05$ZwRpwuxY1Q0Pt.FzwU9GzOJGwIbRCUdPeEAlLekrlmzFA9FpFIOia:1:0:Skipping and*::
+u2-BF:$2x$05$UZZSQ8AgsE4zqle9/IrEBOCen6UzUP0bD1ax2nf8p6amR/YmAH1Qa:2:0:Bert$ErîIE::
+u3-BF:$2x$05$6bfOKASJecDdnMxvAhMVHeDjJCln40.GhrFhCzYjRKzknXN2YqA56:3:0:Bert$ErnIE::
+u4-BF:$2x$05$wDhPZqDGeCS9RoFHx6YCQept3xcZCHK3HFS9Gw5wV3L9hGKT.A.dW:4:0:bert*ernie::
+u5-BF:$2x$05$Mt9Xp4tSo2PECWRtlZIFX.UFfTrrPnnm9qn/5BiAqYGgvCNa5cVN2:5:0:late*night::
+u6-BF:$2x$05$oZW.UOqR0Aqf4enWIiyOouGbdrYRnWBwx4hdAAMQaLs6NH581HkHW:6:0:::
+u7-BF:$2x$05$kEA0dZUQKNP931HzgvJgYOC9q0M9olBaJ3I2OeFtALwJOS7szI45u:7:0: ::
+u8-BF:$2x$05$/oi5GNj177NHkVsRh13UAuiS/JxkAKhoVy1/fvnIGb2Mn7YK.nPfK:8:0:1::
+u9-BF:$2x$05$BJgyGzRENk71rU0Ha69X5evrbunHSi2kwbDGIOLhxR2j4f..pwoHO:9:0:password::
+u10-BF:$2x$05$edLMXTNKhZvTEmJXd8EI7./RmZupk.Tgx89WpYdnP1XcAAbuZeOCC:10:0:test::
+u11-BF:$2x$05$lXaVC2uflWsajyW0.PtfP.3EKa6ht176C8m39kJxcMYbB2ZI52adW:11:0:late*niçhô::
+u12-BF:$2x$05$mJOKBBRsxgogz71.VfYR8OfVosX6ivqRWTH9tjEMmkmo1ev9vyyfu:12:0:hello::
+u13-BF:$2x$05$SdUihf6.yZDGy42U0fSFeuGNG2gaYm2s5bl7V4EN4rrL2c8j3ICSy:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$3gQL7OZF/oRVWaExBqpICO73ploMZG1Uy6Qu5vRSsxsGCe9Ag4SDG:14:0:!!!!!!!!!::
+u15-BF:$2x$05$G2HhvlwVnTJTLPVtN1rrxu7VCPPs9/g6o1f2/3Gkjqrwi0Sa.CaJa:15:0:ttttttttttt::
+u16-BF:$2x$05$1enomh4qgv4wJUQ37jS8lu6TNRMxoPmxTyDgdP1sXEHJfJmiUCahi:16:0:±::
+u17-BF:$2x$05$l5RD7C25CSyeW.hDOzZn6OY8f4YoW6uKQXI8ZP6rasJcb91POYdRK:17:0:pass÷ord::
+u18-BF:$2x$05$EdO6OnWrOHJ9oVgt7tZTce5HP604Et6nP4Hrram4Qileus5pbqgNS:18:0:ôåst::
+u19-BF:$2x$05$61wupbfpRuXOXqJPfOpqEObROiT2lTYeXzS5ySvsobD/AmiPzLO5S:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$a8R.qTWQzMqhSMxZmzN6veZY6Z9eDozyCE2bQiyf.cDJXz40bRAf2:0:0:Skippinç anä*::
+u1-BF:$2x$05$c/T6764i8dc8OTgXBRJljOSlTyhaVIAfpVAjpJ9sfMY6P3vqdk1s6:1:0:Skipping and*::
+u2-BF:$2x$05$YiTjZRMXEPXK5ZOKFpZGm.4v73ZEdT1pibJ5rRYYnvftZqgevpNCm:2:0:Bert$ErîIE::
+u3-BF:$2x$05$RGGmk2ykzB0rhHtMdaujBeyky8TpDWiFN9Qc3CZIAn.jSSO7DlfQ.:3:0:Bert$ErnIE::
+u4-BF:$2x$05$3SDVlim.NymjLFMbxiGTsu8PWjGI2p1q6vo4x.9969Zbm.ZtvegjW:4:0:bert*ernie::
+u5-BF:$2x$05$RyXUJB2Zb3rELmh.cJ.ZxeHhmJhKog5zNVKkvSzic.04bPK31tlym:5:0:late*night::
+u6-BF:$2x$05$dWag7If3QftYLcFv68DsaeD5VLsM1uOvryBUp5azJR2.zw8bFmPvu:6:0:::
+u7-BF:$2x$05$vdBv1KdrQl7YKRgd/hJK1.RBBH5wK7lCivHoR0huv9ObQsPUSGG4y:7:0: ::
+u8-BF:$2x$05$O5URh3ftDwmOzUGDXTsGCO.fiS8pC7SPI7HTpcYYrL7XIqqfEtBBK:8:0:1::
+u9-BF:$2x$05$2LK1FGzRY/hKFPNS3Dm/hOJ8UDZ/EaeVfEUbJcaD25rfr31Xc4qMm:9:0:password::
+u10-BF:$2x$05$TUJb75dAPd2n2ddB9xJxqeEklUvxymsmDlt4PlWzlsOWYOmZDKKLW:10:0:test::
+u11-BF:$2x$05$N7JoCh9XtxMd2Siw9Lgd9.Pnwe2HBxaO4oMjAeBBAh0dW7vszmPwC:11:0:late*niçhô::
+u12-BF:$2x$05$VkMOLZTXHiGBOla8O4WXSO0Dh/7Lmr4.tKh3tu8qelevpdM1EgOhW:12:0:hello::
+u13-BF:$2x$05$DneC/vmvlY1BmaBbAkmhE.aFUJ105bLSQ4ctZHN9U54A1AqxizMvq:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$1zDbufu8TdfomkGrZ7N0DeVGUYZ5zKzCGxayg5/K7MnWOSWIx85C6:14:0:!!!!!!!!!::
+u15-BF:$2x$05$HL675DINKQLndFBD2Kd/Su6Dx50UUGVuiVjXzR2cC1agnPSdl4QNa:15:0:ttttttttttt::
+u16-BF:$2x$05$mlzLNnI0IfAgAmnmKym3lOYjHrSBxN4M77GC4TFelDDWv8aLEBnry:16:0:±::
+u17-BF:$2x$05$EpMync0foFI2w2TW9wuVjOjGH9sG8Lq3ZgOdxmXrCRFkive2DASxi:17:0:pass÷ord::
+u18-BF:$2x$05$et9BUJIHq.dyPV/zK9fA6.Qc8gpWuYYaKU4Jdn20N81Gx2Pfi.eUO:18:0:ôåst::
+u19-BF:$2x$05$e7kJGpwv6mbvoBHpObgZuOrxkXGxnVMWUp91K/AhzfMrAmEneCymW:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$dHtFkgMr..kP5Pc/Dv9NDOWgcjeySrKydhup98VSNwz2WuHwyb/7C:0:0:Skippinç anä*::
+u1-BF:$2x$05$XFbzx2tsSyLXLvnOgjC/heg1nuMN6cN44htip..lMGmqup7zRcdNO:1:0:Skipping and*::
+u2-BF:$2x$05$NO.fxoEhGNzytitkJTo/YO0ica5BbJSeyTQ8w18lk2W.X9NNMQuy6:2:0:Bert$ErîIE::
+u3-BF:$2x$05$igtRuuKLgY/QJPsHA6PZoO8SNozjJ13qbIIof.c4VPkAOu4KGduLK:3:0:Bert$ErnIE::
+u4-BF:$2x$05$A2DHj1JVWC0Ka0C5S.jHmeqfmYPFJC2nkv/NaNx1cDnMBZV8tn9G.:4:0:bert*ernie::
+u5-BF:$2x$05$KIA9ONcoYz6Qll/ZkxagAuEwrEo5hzTG2NYN1/kF5sn.m3YubvTcS:5:0:late*night::
+u6-BF:$2x$05$ZOpOOpMh.ScUxM0e7BwbQONdjXY1mNW7V7zwsu177KGtNsAvtHCKa:6:0:::
+u7-BF:$2x$05$FxaQDUp6dYUkjrfSkyxw3egPKHLY803b80NT18PLzTZtQom8rUwBG:7:0: ::
+u8-BF:$2x$05$uOk4mlieqT5ZfydxzWRHZee/5eX4jXHJrvv3V04T8600hdBJc2Qs6:8:0:1::
+u9-BF:$2x$05$Ue7tTm3IA1x.qlMia70WM.THL3oj3uZTj.2I5iXQDmpoi4/Ghwcj6:9:0:password::
+u10-BF:$2x$05$gA0M0xoNlr41.KlvtdYEkuMmsXXLGKSE1QA/sX8LlkWbVje9wMWV6:10:0:test::
+u11-BF:$2x$05$bkXu/UUnChtKrBAeuV2wVeo0jRgcujRlNmKvknYHlLOKe8hQd2opO:11:0:late*niçhô::
+u12-BF:$2x$05$4DqZfbvMztWGxIHiAE8FZ.sRMTj7pA1P2upzvWzgcQtJXzJrubN1O:12:0:hello::
+u13-BF:$2x$05$NCx4TdQhP0jkFwcMc8PjWOmzOCsU1OmQUZi9p5OY1o5crGtEh7Xdy:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$BosOgRA/.XoE/rtiv719A.7SZfDztwuhM1Piuzl4I5AVmr.NeSsKm:14:0:!!!!!!!!!::
+u15-BF:$2x$05$.7HuaFOFqNkUi1VhkVELaOqDLuM./vspNkbGtRymR5M7mUG2Tk8vq:15:0:ttttttttttt::
+u16-BF:$2x$05$SoHBTJLJx45trNNqs4U2uuojGBfbDCyK4hiPE1pIkKFwVf/FRMW8C:16:0:±::
+u17-BF:$2x$05$PShjZdMOY1B/qDBA5gcMHOavVLkswGFMrzYK3a0KJAnjI5M7YoH1m:17:0:pass÷ord::
+u18-BF:$2x$05$QgAHBn.goc8W2p0AJf40WOu/N8Zq3e8pHOPBAcZUdyWeiNIK3MHwW:18:0:ôåst::
+u19-BF:$2x$05$V8kNdJjqnf4TeYg7A9EwwOffVQM8FxvNNXqSJqT.IfvFrJ/iMpYPm:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$uS676maff72233/13A4wleBzJuxU8kpquHf6RbGTV7qRipSM3D3Mm:0:0:Skippinç anä*::
+u1-BF:$2x$05$tvWQz3IuKqW8cZ2jF35.o.Bn1EPQYZiIX6dByOLw5TzkK3pHygs92:1:0:Skipping and*::
+u2-BF:$2x$05$0rwr/Y9ahmFyMXvykoyI8eDowocax4iR39HFvH39XjHSXfjGRhcGi:2:0:Bert$ErîIE::
+u3-BF:$2x$05$vJvbu6f3FAlNV/FAE1PwpO5PBwGvziThzn8i7Jxq7RC2bVv.eC7dy:3:0:Bert$ErnIE::
+u4-BF:$2x$05$c1D6dC70RFk1zzsqTa0X9uxeMXB9mO7bYFIzl6m2vb1HEesckyqCW:4:0:bert*ernie::
+u5-BF:$2x$05$6BDATW.pmYKEGPuFRyUHyOKHI7jCnGOVQis1WMHHzs4BE7LTIfTn.:5:0:late*night::
+u6-BF:$2x$05$wHiy5iaxTOIXwvtxbBK4w.nmsZImxxdQLhbPdviLsgB4iEr/dMDwW:6:0:::
+u7-BF:$2x$05$aOpml/lrjYu5FFtHbCNhmeCDGtmxmjNVDd6T1bY86OnXVlFw25n8u:7:0: ::
+u8-BF:$2x$05$UORuO9w86P3a3ew1MV1YwOKa5MnXxudm1fmu0TdPUL6UVmAjcIwCe:8:0:1::
+u9-BF:$2x$05$gw3iGJX7KVbJopg/kUOKk.7TKYbzlVhUg7URCBZAnOZL2P9FZXB6y:9:0:password::
+u10-BF:$2x$05$AmuWwyk44Rcy4BMouDA//e0w4zNmNNj2hmfZaPhznE3y37ncy0Hyu:10:0:test::
+u11-BF:$2x$05$tnNu0TQkLun.p9HZ/rnMOuqz/Ut5FYu60DAk3GIJ4fdCdHN/8xMUa:11:0:late*niçhô::
+u12-BF:$2x$05$lCQMKTa.Ca3mV1EjSnhHt.zn56Ii44ABMddcaEZQ8IrQ46vqLbaXq:12:0:hello::
+u13-BF:$2x$05$67xBiY7mSOUttHfZy6Wq5.AMpX/bfPkMgl7IqhF37RyyZ4jbOZlIy:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$S9OohgwWOOvqGSKy6CyGaOOeTf7nL6g/kgQ290lpNK3sX5TqjhPXy:14:0:!!!!!!!!!::
+u15-BF:$2x$05$Acgg07Wcv5NnQefxpj.AduP2Qn7UF0VEQWeI0dSdYyEJpdAAxGI5e:15:0:ttttttttttt::
+u16-BF:$2x$05$BL26ngkpR8x5hxkzp5CbxeIv7UhCTwRgNbZYma/HBFgk3Gm9Rxjn6:16:0:±::
+u17-BF:$2x$05$BSFQKLTLcqiMzt2bX0nywuXtjq9Ve./ys4UNIC.7rxbMvJ9ZGEZPO:17:0:pass÷ord::
+u18-BF:$2x$05$G.YS1lKK6mSy8TLYLi1XaeaNNbYXzdWI4OyxEjiPHOZx1Le.CFg3q:18:0:ôåst::
+u19-BF:$2x$05$V2NNX0JPo9pikiFfp/CrgO1KQe3Ugvgdr/HVOmkEJh6PJLF7UPFai:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$P7Lmr0fgKp5/4oaIY5bA7.hoEY.8VjxDpSKgwYiRFFI1BpzAtLJ2O:0:0:Skippinç anä*::
+u1-BF:$2x$05$bGbKq74nF/PDJX7deIedKOHFBa4A6g8O/Dvwci6tp8GRlnI6P5nr2:1:0:Skipping and*::
+u2-BF:$2x$05$UIcRbTjPANMkgHlY7Y6Blu/fOsfWVCu37mRhEeRoAftf5sCUH3cFS:2:0:Bert$ErîIE::
+u3-BF:$2x$05$UGj3DVCUzfkf.0o.rP9PvudrT2t.n3x3idYWNW/A9hhMHJgQYcDYq:3:0:Bert$ErnIE::
+u4-BF:$2x$05$22ylkhWSfcu2CoX8Lsa9JuHJERENXhIxUBaFbbu0AMD8s.qPPgSQa:4:0:bert*ernie::
+u5-BF:$2x$05$1LYx6XpQkbuHIwq4g/6K1.i/i7dWO.aIIOjV6GwRcgwp.i0vvT2Dm:5:0:late*night::
+u6-BF:$2x$05$mCEc.83Z0Zx1dYQ5h5kzjuLpdtWoF3j5Orzhl1sprXvpNpD8BNsMK:6:0:::
+u7-BF:$2x$05$zIDwk1YB2ZtWz5aGQZb27utjbSBz1Kg5at1OKuTfIChXAZN3604nK:7:0: ::
+u8-BF:$2x$05$DY0KGIuyblhZaJIWePENZu2ol7lsGL6T5X7gmSFhCPIEF1uG8gAVW:8:0:1::
+u9-BF:$2x$05$jWEtSq1xfBLZH4x48he3rO2LiFCYRNLOx9CPDMll9H8MMZEzHa44K:9:0:password::
+u10-BF:$2x$05$mHZb.zrP.5kGEmGLnL7R/uFnsS2v.9IdXbR5PkhsxwwvuvV5Mz/u6:10:0:test::
+u11-BF:$2x$05$h2yq/twaIjoYZS/72HJ5wOjUsu6jkaltsGYfi07cb2gwOSADPFhBu:11:0:late*niçhô::
+u12-BF:$2x$05$3Vtgw/w4uMVxCd/rQA2fGO6RkdwviEX7gpwYa5YtHEGS.ugQ8IKXS:12:0:hello::
+u13-BF:$2x$05$GAAfPLHRPXh5xQ5aapJn3ONKdRXo8JcMAeLBG.XS.M.nwZNpWX6La:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$XHCXCkhgSkLfw0gS8T9AY.WvCHvx4gRCrErdfD.OI86qEN9Tj5wfm:14:0:!!!!!!!!!::
+u15-BF:$2x$05$O5AVvaDN35Y3r633Q.E00OS0RuXa1xRPeRi3NyF6Et9JLeJyVCc2i:15:0:ttttttttttt::
+u16-BF:$2x$05$DmpkNmp/Ys/th5D8arAXfeIjQtG.HNtbT2ic4RNh3PSy/4p5Q6PcK:16:0:±::
+u17-BF:$2x$05$LnjbeaofnjPfA6Xe9aBe3.XGKe2VkuWu/Hh7t59HOha2i3E6lAwfu:17:0:pass÷ord::
+u18-BF:$2x$05$F.37R09x6/KxU28YdGlVGeT1z2KUlPx477sh2oUOySGGuBgm5IpfK:18:0:ôåst::
+u19-BF:$2x$05$DiUbBkQkULWoxNhgjkR4VebMIcr56i4wMiPvp/cQc10kCfND..heC:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$QcUcAjw2aUCk5VfmZt3bmOZOX/.m5WMpOq8eucgZWR09HO8o7KshW:0:0:Skippinç anä*::
+u1-BF:$2x$05$QxfliD9VpLSt24O6zp7B5eZEM1elsrv/xmD6dJMU5EG6d2tBu07jO:1:0:Skipping and*::
+u2-BF:$2x$05$NLcYJo8F77w.12xhjQjIQOLs/yEHohpjtgh9ewe4q2/6lFzdlPyHq:2:0:Bert$ErîIE::
+u3-BF:$2x$05$2MqOIkUk1j1pFvIFqLaVYeegA/M9qqXMz4Oid8w7YwljPBBKbxCPC:3:0:Bert$ErnIE::
+u4-BF:$2x$05$ECLn9GsON82Ocd3MxNLb1OlF18c41voW2PID7C8J4d8ti.kfULOR6:4:0:bert*ernie::
+u5-BF:$2x$05$LFAQge4fo9YaUzj848FyZ.hJycNL/VCMDztRVFOsdUQuOlsyhN.9y:5:0:late*night::
+u6-BF:$2x$05$AypUfjCaS9mbVigLa1uIQOQ2QFggaNHUKoPhCnm3hN/HpWPF7oOVy:6:0:::
+u7-BF:$2x$05$5tHiM8GXOMepFtgZi/jBluNP8luzBbVsXHBl5E2nLTR7hqVGuzw9y:7:0: ::
+u8-BF:$2x$05$KH2tgYSJYhCPy5ISJXb2SuFJeUKxnGvrLM4wnNtnjr/XZZanD5TEa:8:0:1::
+u9-BF:$2x$05$ScW96i1620R6PY02y6r2.ez5Du0nHX20IZX98x7Cf0IpTVNE.QnLG:9:0:password::
+u10-BF:$2x$05$/aL2L/W66IizWZSQxLw2OuP1JlyjxRKlb3B1H8he2uq5YoOhHDkQ.:10:0:test::
+u11-BF:$2x$05$gD9jiIM5E0nQ3eeawZMqROCVl7t.BkMybU4Bv06JUzOqnxgQlQYrq:11:0:late*niçhô::
+u12-BF:$2x$05$1as9V4TY15IsQALiGW5jE.9Mr/fYma5WfWq6h4QXtTZjK2jXfedFG:12:0:hello::
+u13-BF:$2x$05$ufPljHXNJ.nZmcdvOtGMS.M1XT.5FC6qPAXga2QVlmt3vRtl.sJda:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$TT0H4uDQUrewqs754rYhuOdkcHerZ17CyDhdHRBqCtfHRKey30cZi:14:0:!!!!!!!!!::
+u15-BF:$2x$05$D3vhvPrMzn5xTA30luvmCey65Wjzd.mg5PLZrbtvf2I70iubJja1C:15:0:ttttttttttt::
+u16-BF:$2x$05$UIIrYa2ioRRWXSQCKnZl/./5q3JPYwXPUWTJBodEMAqqi8HJawp8W:16:0:±::
+u17-BF:$2x$05$SLD05hjKoYCk60t9rO5xZuWkInN1sZoqpp1T/yRVJrFbyYEVrQVv.:17:0:pass÷ord::
+u18-BF:$2x$05$IESv6UWgBa4cFMTz.XT1zuBwWppGs8l/MZoOf7/mz4RV2ncCkt1rK:18:0:ôåst::
+u19-BF:$2x$05$pfTKWnC1xR3cm1nutjV33.DtWu3uvAkKyTob/ekSi2MJTvRzY.HsG:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$I6rapMJhK0F3LlWrsZ.j0e7XR7a2P19pXZY5tAWjmkwCbsZZ.gLoe:0:0:Skippinç anä*::
+u1-BF:$2x$05$WjL4TVV02/AcoTlmyw8LweC1YKKtrCcxalHdpP1I.iSeBkBoCLSQS:1:0:Skipping and*::
+u2-BF:$2x$05$WBLXcXT/xcqYXmg9EpOj/.RhMt/.hvXzT5YPxs6wv4.Q.Ri48jvyi:2:0:Bert$ErîIE::
+u3-BF:$2x$05$S8IssPE9NwyhpcGqCgrEtOuqxI5AwozE.UfQU1F/AqRwZTmQsZ1D.:3:0:Bert$ErnIE::
+u4-BF:$2x$05$Ja5Rrcg2xWPmbpOnUvJhjuEpe.YgSgYfPLVPruHyfkQRcDfTfYCyS:4:0:bert*ernie::
+u5-BF:$2x$05$Y7YCzx3FsyQiF5A4aC.Gz.szQAr21SWvcI946i0OvFLtq2KSAm4da:5:0:late*night::
+u6-BF:$2x$05$8H1DoufT0e/.XcelnAHetObBkTjKSb6zxuKgT4cS7CKzStsYH180y:6:0:::
+u7-BF:$2x$05$YE3GgNn4sqdl.cJ2Ic65KOqhhLTum0x2eORb8HJwdyNd5zdT/0fWi:7:0: ::
+u8-BF:$2x$05$QnqqnxXK0UvU/IXpzWRDjuJVkXdYQhuyAR8OqIbsxCm6ZDRh.IG0u:8:0:1::
+u9-BF:$2x$05$lMU1OA.6kqJoxlVGzRNMTeZ6TOKSLhzMsluXpBUJ45lnORA4tVSoC:9:0:password::
+u10-BF:$2x$05$5dCq4Iw6mP/Dw6JDP9Quw.HZ73Oq/t8B/kMD7Xg38MQvB4NNpKf7W:10:0:test::
+u11-BF:$2x$05$v2uOZ4UgqdEK.isW07bB6e7fEIO7aHJJIzi4kLIVNBowZzDip/8Da:11:0:late*niçhô::
+u12-BF:$2x$05$CGFVY6v76zuu99Q2yJU.suNbbQTPQc2A8jWXRvnEXVp7Pee3PC23q:12:0:hello::
+u13-BF:$2x$05$.M.l/TfJHcBHYO5iZJj8WOe8j0w6PF.Bdx3whqgAlQ4dZ4GreyxVm:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$/.xYGPP1XS.2oQ4dKzc8IewqzWQW83D4uZvsF0gnZcFCq9rfgxqke:14:0:!!!!!!!!!::
+u15-BF:$2x$05$6Zg7v8Vt5ZPhgH7cX8mF7OlwijQd908njbrxYGElL9buSIuT6Pz4y:15:0:ttttttttttt::
+u16-BF:$2x$05$.pfz7uc8GyetKzf6D5Xe4euWaDvdydPQzBZwmFZR9XBvrK28lEeZ6:16:0:±::
+u17-BF:$2x$05$.ZKM81U9tKODh7GxXCFo3eHxyEWlZylvLVd7TGJ89vLGAEZryD56e:17:0:pass÷ord::
+u18-BF:$2x$05$uVy5t7vTpbvfBR/737ZZee7hBjV.f4mcrgylYqe1p2fWvm/AoWcYi:18:0:ôåst::
+u19-BF:$2x$05$EM37fTuE/4WxyW4718igquKlAnT5QT2gSQ2E3vS/JoSbb0DarYRpy:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$mtHg2g9AryaIyDX7ukHN0OubXhg1AzPsKTUd0lJwCBhwf79.yYgFy:0:0:Skippinç anä*::
+u1-BF:$2x$05$e3OKnCQ3v.73236zV/G0HelQV6SwZc6vu4deJY2YNQclK64wheWg6:1:0:Skipping and*::
+u2-BF:$2x$05$we0xtCK7XmlMyF9j/m2i7uqqvQy7vi0CtyAd1p7jB8gTcy4I7kHwu:2:0:Bert$ErîIE::
+u3-BF:$2x$05$aqo8iEv8GGObgLdUvwHASuAsolMjOxvKSmD022n4dpHfjgneyDHi6:3:0:Bert$ErnIE::
+u4-BF:$2x$05$8djsFZ3JVRRQ9OUEEx1UEempV0uWP9gWX/3uKmWnLZ4rok5yzp8Na:4:0:bert*ernie::
+u5-BF:$2x$05$vnzV2BzlB5s5Fww1ZZpT0OrXeliuJa80MSz0EKc3zPgknXw2aezTm:5:0:late*night::
+u6-BF:$2x$05$mitvWlIGKgEfWxkE5TLsPeUR1hXrAFbOsSPgmsNttYn2fwIxm3bn.:6:0:::
+u7-BF:$2x$05$FrthoRb6WYWkLnfBewTfGOnZZk890E4HCDhQ3n1ZQVNtXIyto9VrK:7:0: ::
+u8-BF:$2x$05$XxMvLN7eAsMC3B4TbuXgbOukfcUXlnPN8uW2Aj7pTqNTmVXTx2HNK:8:0:1::
+u9-BF:$2x$05$ELad7OYoE9Y.9VFhAifhVeIYBRImRzC61K2rSjPnJCG2Y0VpVnyAK:9:0:password::
+u10-BF:$2x$05$efttLjYJCMVIojekOOeT1O9Gh6z9koGh/29Bo1LGDhJTbDvejCag6:10:0:test::
+u11-BF:$2x$05$YVTM3SCk7KlSmWE9cjdpn.ZO5hu4DHq4HTOf6GfhtfbbiF0/NP.DW:11:0:late*niçhô::
+u12-BF:$2x$05$NPSyZ5ufWqPjWZ6aZh4o4epTDyeQDsUnKPaOb5fsyPmn9ykO/v.2e:12:0:hello::
+u13-BF:$2x$05$Klzh4vaWEtjwV5aGim6AluzjgFHdD/M7R2tYMPeSBF/pwN70I1D36:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$o1xKEzkeOrIR.HgPSysmsemG2uWl78MN86XWY0HtbX5Y3gHrYBQBS:14:0:!!!!!!!!!::
+u15-BF:$2x$05$O7vaNCv5B8nxrq.zGLR1z./NheagYT5KX.PyZVWZ4DhuzynrJnkyq:15:0:ttttttttttt::
+u16-BF:$2x$05$QyM5ESzLyLQyPCYO5SmtleUfw9WaGc0XC33SH2PeskvcCCKI25ylG:16:0:±::
+u17-BF:$2x$05$j4ec0rqxLJkRV1vplsNiQ.1OIsw5/R6qNidH2hPy8N/uH3VENLbFK:17:0:pass÷ord::
+u18-BF:$2x$05$xfoISRE9TaXvfl/b0EEdGOceShnjPgCfGVsAhZmzLWRW7DKdLCygG:18:0:ôåst::
+u19-BF:$2x$05$l.hTQ.NulpgvOJwOv77eLumkvoFzRQPWe/O/VBsjIKgdbOV2rxt8y:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$iswqCoQ2QltodCUBFh5uSOnD1JR3cnm1pQ1K9/l9f655QUYqHEhzi:0:0:Skippinç anä*::
+u1-BF:$2x$05$BlzrW7480GrsXfiLOhIpIe3qf5dD7zqFtrMRkM9GIvVlM8o1O.gFC:1:0:Skipping and*::
+u2-BF:$2x$05$DHLdhRpS2ucOz51UbbPj6uRO5ImVeq6E8YTu9P2ZfgCRdOZrVCV.e:2:0:Bert$ErîIE::
+u3-BF:$2x$05$JJCjWVl0BiQwYIpK0FqgFum3UuV52Xe0.UUu/GwYbOJDarv.XPayG:3:0:Bert$ErnIE::
+u4-BF:$2x$05$fePykhkUKNxCoE3VPQRb4epNxd/go4Q3E83t.ZIpEZFQlzN0oSjt.:4:0:bert*ernie::
+u5-BF:$2x$05$71R91K82Vt3D1FW6WS4is.65w5yaj0TuEwwO/n/TXT2ua5wa4Gpni:5:0:late*night::
+u6-BF:$2x$05$cWtkXdjjnOTn2dhhks3gIOPHwiU74jI8fJK99IBMPT7yOpK3S4tfG:6:0:::
+u7-BF:$2x$05$XccgGpBoGfbBAZ7xUTtQ6eeclkPHO2Zo3YAWFl7Tt2C9cKH4/nHdi:7:0: ::
+u8-BF:$2x$05$MeevOjRqcQOIJf8eni.qKuKQFP5G0vZyxOQSN/Jy0GanfhWMixmEK:8:0:1::
+u9-BF:$2x$05$PspdInEf0vH5E7k5GZkja.DfItPijU5xHHezSJQHPlA9b4fcBVrsS:9:0:password::
+u10-BF:$2x$05$VUJREjufAuJHPYWIB5LTUu1zEwRdSKIE30rrdXKtDhZCcs4z2NQba:10:0:test::
+u11-BF:$2x$05$w/2hSkGK/uUYD3YnyXmp3OjOnB6k1.eTXdx7PZy4SwW5yVk93xDNm:11:0:late*niçhô::
+u12-BF:$2x$05$6U.fasGGOf2yqALwmQdsFuR2HEgzjZEXYeWrfh65aCr.zFOtadjO2:12:0:hello::
+u13-BF:$2x$05$17uK.2o7DvD0AcNO/v0MeuheQ6BGlIMkcp9yhMF0cuTk.2AjPOm26:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$pWN131fUMv3lhrIkzR3A.eYzQhwZV8.sp7fm/56RvuUxBJfpNQTjC:14:0:!!!!!!!!!::
+u15-BF:$2x$05$meYImvcClJlbcjExcjjRAOVARSUXHsVxwoxwwM2/b16TR0Oa8RosS:15:0:ttttttttttt::
+u16-BF:$2x$05$.vMbpZI.DoxNhbX.LB5XwuI3hPp7Kl5xTZaiKXJatAeq8c1IY0SzG:16:0:±::
+u17-BF:$2x$05$jpfYLGh/lMFKNv6XQ0R9YeH1UCYMgt3Xqio22OYybVb9mutrPyy5i:17:0:pass÷ord::
+u18-BF:$2x$05$eMb.Gme9KZiJkIdQkV4WB.2S27.20u2dFsIHOaLTm3nPemYrsX9jW:18:0:ôåst::
+u19-BF:$2x$05$CM61td8jnKEaErzG9zTAtulDGToeh6SW0HQbdm2YDF9d7uckeALce:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$HKbQThvemg2v5eBTJOPtqevmA0L5SxU/CQ0MKLup9EAmFArdFQkZC:0:0:Skippinç anä*::
+u1-BF:$2x$05$wM1LE3Z4/OAieesirS0XyurwEdK4HpYCeOMRT1cHMALHhqTx4QTO2:1:0:Skipping and*::
+u2-BF:$2x$05$YJF88GiCnC9By.77.9pAv.lk97qvhcq2tuo4uPiSZx8IBA4b/6xsS:2:0:Bert$ErîIE::
+u3-BF:$2x$05$.ozXY2Zu5TYa.pvsc1uBbeKGXKN99XtZOs1Ack/u7Ve8yLlPxUtO2:3:0:Bert$ErnIE::
+u4-BF:$2x$05$pZK36QfOSrTzRudV6rfVBuQwiOo2dxXC3.8UYb7EU76eUMAG/6SlS:4:0:bert*ernie::
+u5-BF:$2x$05$.sO0yGucimLe41EdMnJ1Ke2d64bjfwMjkn9SuAm79AYY80PIxZAjm:5:0:late*night::
+u6-BF:$2x$05$yrWj58IMBAzevYnS7024n.KvJ5CkgZFUeJVzh9mrnGWBdRmK6c8y6:6:0:::
+u7-BF:$2x$05$hBFJ2NfcvK7K5poCGTwvlOn/LTAXPpVBGj/I.mJxVFPVODCfc8zH2:7:0: ::
+u8-BF:$2x$05$EDTrSRzhQ2zjby6I472W2.VYYDKE/DW/4ZQ0BR.RYUt02scUYW6lG:8:0:1::
+u9-BF:$2x$05$OueL67FtUhWSMHSdqvC.Se3Szjr2bm95KoO6WTHz0QWR24/JiBlCm:9:0:password::
+u10-BF:$2x$05$NM6Wq/qGfR5yUDONweUVne003c/pMfKvXwvoIGTCG3cub3P37rgKi:10:0:test::
+u11-BF:$2x$05$xDHFiDSqIiyA64NxdxFo4Ox9k2losbRpgnjjqrBE.wH/iveCiC1l.:11:0:late*niçhô::
+u12-BF:$2x$05$cg2Vt0Txf0HU/tlfhZv5TudadzkmuSlOwzg8L14TZCyxGP.1fPC6C:12:0:hello::
+u13-BF:$2x$05$5ljTw3mDdqAAYB1.Kgl7q.doaHZLRzIe4qTF8rMxhcXByS1xFINBO:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$1w6iMYooAJoaNUBFspHMcOW17lAthY9eGumPNw3oAQFLULb.LL6Ue:14:0:!!!!!!!!!::
+u15-BF:$2x$05$NuHG2LaaPB4lmr/Ey1V0ieFvAeXCevf.qwTGXJDdc2l6Rtvdrn3ha:15:0:ttttttttttt::
+u16-BF:$2x$05$t6I18v9g4nd7foOfIB62eOomel2zglpFJh7T4Rl1A2y4j/W.0s4dG:16:0:±::
+u17-BF:$2x$05$HCTcjEIfPkl.wacQIAC.D.3NcIahAeWi5W5iN6LbonjTGua6PV4qK:17:0:pass÷ord::
+u18-BF:$2x$05$eyxHY2FBKnUch7QGKCS5a.jMITn3R2eOe/yaiQSRgF6rXYoUCPjDG:18:0:ôåst::
+u19-BF:$2x$05$knZBnwwEcQqf31whTr8W/OhvUdew2lx/BH4Uu.SoILmRWxtNOzFLG:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$j1Anjhp1x9IwYHIEiAS0gOxxdXFyGYSW9Uiqvv4l8PDPVNSLq4LXy:0:0:Skippinç anä*::
+u1-BF:$2x$05$ET6nMd2LqdpYS5ojKrHvVu5d0FYJ.bytbg/qsRh4lOCQikpAPyTBi:1:0:Skipping and*::
+u2-BF:$2x$05$ZZmz5Vf3oMyf2ELs/UUYb.VQVTAOyAOElToltzO/.BBh7crb1tepy:2:0:Bert$ErîIE::
+u3-BF:$2x$05$e7RV5oXVuWc95VHN1Ehrw./cCyLAdoB8eKK5lbg8LosWD7mvh9lSy:3:0:Bert$ErnIE::
+u4-BF:$2x$05$boLcYOIUXBFMj1uW0j5qm.PI7ljVl3jGAoQoaDgcZhrYP1QbEonwi:4:0:bert*ernie::
+u5-BF:$2x$05$QnOZhZ03S3tL5QV/hhg6QeNGidyd3tj1smvHNMu7kDp9BYXEUjKIa:5:0:late*night::
+u6-BF:$2x$05$SPTX1tBbpX79Q92JooZQFewwPPXeRTzq0bNLI7dnI.rQyPyLK.LOy:6:0:::
+u7-BF:$2x$05$SGYFDwUAz8Ve4o3drSidpe580z3t.K6HP7nvTmznDzQNCDVNDdLyu:7:0: ::
+u8-BF:$2x$05$LDUrpggY6sRHyGnooSup0O0PHh/m0xOu629nV4FIYfmHZeGa3YtIK:8:0:1::
+u9-BF:$2x$05$iA6nmEfcPv87OALuFl/M6e/m9mZZAnXG/GZ8OHb9AK9luRSGTChbi:9:0:password::
+u10-BF:$2x$05$YI69gOcxNdOJ0/YjR2pCpu9RSJ4dZu.zLBev6KT3GVQo51wM67wua:10:0:test::
+u11-BF:$2x$05$IxaNGHMLjomsqGgNIokfguyzzbRwwSbkpYO22Z6klvDu92JjfuQgS:11:0:late*niçhô::
+u12-BF:$2x$05$iPqf.pgLSpHxhPjmOMKjMO4DLrXLQInzdHbZ6B9wytEcvc/RPYVpu:12:0:hello::
+u13-BF:$2x$05$t9v8I4tag4vsmi2fHAHBBeHhOu28IUPCmn3BRsRxfxQo1BwNcjLCO:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$zBeDRWF5Maie/PNSZQH4uO2hY8FB4GMRQZvsIkL6AGeuUft/DqrD.:14:0:!!!!!!!!!::
+u15-BF:$2x$05$QC6aYwuWbQ6EYEHOOIAbm.wForz8IbXLSdamhVCbK53Da7FJGWrxu:15:0:ttttttttttt::
+u16-BF:$2x$05$NfFQuPBiNtcRB0i3L7yR7uBrmMfBpnDceIMSwcKQlUApI.mke4Yta:16:0:±::
+u17-BF:$2x$05$PDdpEG2OAK1bvv4RJR1hFuA5etHc0ZuX7HdAjALR826FdHX0bMqn.:17:0:pass÷ord::
+u18-BF:$2x$05$TA7QXeDCvux5BV7aUVeYB.dDeU4/KaEwEq2gDL8EKYKC3GCQFK6s2:18:0:ôåst::
+u19-BF:$2x$05$.lgNbvok4tNzcKnzWANrLO7HLlj7oMnPQeHguoZ5DC6DFF2/4XS6q:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$G0HcPUyDDDrOo.otLS1reutcA.RInu4U01fnqQ/PJDmtNYN8Phlvy:0:0:Skippinç anä*::
+u1-BF:$2x$05$CJt2snALx21YNZMS3tnyDuY.YeLof.cJE38WaQ8.l1VtIzDl2ltNW:1:0:Skipping and*::
+u2-BF:$2x$05$SBd7u.I52KJspE374II4fO9NS0inILcpWakxv.eOajOT2vd1bHVIS:2:0:Bert$ErîIE::
+u3-BF:$2x$05$7sxwCn7J8DYtEdzpdX8Y0uvrdwuRZV5LYzbaYRd85/4WdSGGEVO0S:3:0:Bert$ErnIE::
+u4-BF:$2x$05$ZTBFWY9BEE2VWorDMK/69.u7ZhEn1WfQO1pMckg/P.4PP0kayik8W:4:0:bert*ernie::
+u5-BF:$2x$05$wkXKRu5b/ypj1PWkSiwNouUVVyavjHJJQ1Xlidy6x7n8Rz.S1nUnm:5:0:late*night::
+u6-BF:$2x$05$GH9HM5R1kD3jacdjGn0Q.uwbb092y818S95OLXHoSumR/1.ghnU9y:6:0:::
+u7-BF:$2x$05$anCNZfGMjBX9AppX7l2K7O8OokWoZ73EWWbYNgY.XfUiBLDNOr5iy:7:0: ::
+u8-BF:$2x$05$RbtYExmx8mYxtKzbP./TCeISNCnvvc7yFD2W7ApAF6xzW2MBkOfu.:8:0:1::
+u9-BF:$2x$05$9itm1csgJoN77KmuSAslJ.TDOmWEjxKO76HpvEuiMPz3Q4Lf5Fdcm:9:0:password::
+u10-BF:$2x$05$Z6Fdk551hM.QKL4BcIM7VOmDAyVGw9qflrSKXs8kKUHRosIDYY7Mm:10:0:test::
+u11-BF:$2x$05$WuDj3DZx8gWYWsvcdSVLkOGlpy0TzFVwkAhSvzR6IK9MO2ZalJYBW:11:0:late*niçhô::
+u12-BF:$2x$05$WnPBTBtJF9H5La68bvFgJukg8Bm3nDG0HIBHSoVSUpl4r76aOyg7u:12:0:hello::
+u13-BF:$2x$05$fGeag6ifC4r2PKtOhMMk2.d/zC8IHiAnYcdXuiZVa97h6Si0JvUl2:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$HY0kODAdPPQV2Ew/4ydXqOwKboKhcyl8fnPDHH5eSC3P2nS0ojcHa:14:0:!!!!!!!!!::
+u15-BF:$2x$05$Yo/J.YJYDbWdbOy1htbcyuIErLLBArEc9eCQd.n7WqGUzdSpsf6kS:15:0:ttttttttttt::
+u16-BF:$2x$05$gip7DskK7jy4uMeK7q0.fuULNBK4HqppURfnjTPzMf7BvwPM807bG:16:0:±::
+u17-BF:$2x$05$r7zgkw9./MDsdHzkyHxd/ubscvGujtaeY5E4S/qpE/A/4jL3oZOKS:17:0:pass÷ord::
+u18-BF:$2x$05$XIjEsAqBXq9XXGZKxyHSBuYAa8WsjPdWHWnHT9BT12DeFipA1ZmOu:18:0:ôåst::
+u19-BF:$2x$05$LpnQve.ZrQDqXsRof8Y59Ovp4ypJ4vakaK5M20Wwl5NFGIeOZVWzy:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$Ul.BM8lWfhHfz5G3.YPIlOS5ZGNq9FAWUYWjPz2rRTRDHlmTHpSF6:0:0:Skippinç anä*::
+u1-BF:$2x$05$bC2wP0Zmqq42por3YcXElejHaXn2kCwHxBZpOk5B2QZfM.Zu0aMpW:1:0:Skipping and*::
+u2-BF:$2x$05$c4ULKeoL52xONwLXUFJ/SOXl8aSD6UbtU1oVV/1BinnizpgT7eWge:2:0:Bert$ErîIE::
+u3-BF:$2x$05$Tc2iqYYtBfQhrXkQLIMpfex5rytxaAWkAmbeorLI7Yc.WhKSTQjSW:3:0:Bert$ErnIE::
+u4-BF:$2x$05$smKcVn3pikbTkHbxmK8WZe/A5LUsmTzf.vwQJHN5DvHGR31iG3UQq:4:0:bert*ernie::
+u5-BF:$2x$05$Ct07y5qxO7EI1nDkagr5oOBiuLnNuN3g32WFq59TkdjAdC5r/VAqW:5:0:late*night::
+u6-BF:$2x$05$aCw4nJsrRclLp45LuCPfaO6IDW56QRUOtDuPSyKrKJviKQv40yF8i:6:0:::
+u7-BF:$2x$05$1iF0qAlAlCnrCYytIZfUH.0wqVUd5fMshJZ2B2vdjkoVbiaxT3cA6:7:0: ::
+u8-BF:$2x$05$im9783qxZ.1V4Ab9PDgr4.t2Z8yW6VsrN3E4GQRJ3753fkRKf6jaa:8:0:1::
+u9-BF:$2x$05$g6d24UOAocnsTggDGIpRqO0B9kbxselkz4WZh2zeRIaaMrxvJHaHq:9:0:password::
+u10-BF:$2x$05$QKIMB6h76FP9Cbazn2Tov.lEvOGELOi1EBULIjMJ0fYNypVS21Lhy:10:0:test::
+u11-BF:$2x$05$WNe1r6Ekr9eD5r8XHUIRPeNzuG1Z9QZM9k759TY5H9YiQS70SARHW:11:0:late*niçhô::
+u12-BF:$2x$05$xYg0VUuEE4dwokmKjTXLUuM..BSMyY6kQ/Kla6OC96H.sgCydHcRC:12:0:hello::
+u13-BF:$2x$05$56dNlXRbU.6YkS4htuUyyumBKHKI4Sac4rrErY0USjSrWYv27pjeK:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$dlSRkEL2zoCP8B4q.NvRZ.Q2YdjWNAg87baTigFhpuo7sChPuV8ha:14:0:!!!!!!!!!::
+u15-BF:$2x$05$LjcIf3ZEJOf65SuwHPaUMepUPaa3zbCw.CoeqQ1l5mm7Z71Dsxok.:15:0:ttttttttttt::
+u16-BF:$2x$05$P2xWeNiHnqvPSR46muK4K.QVqqden6lrA0voGb8ktaAyqf1IR9lY6:16:0:±::
+u17-BF:$2x$05$DnCikPUxG6uSDAg/bTeD1uP.4sieUq9lsL7Xrl8nAVDbuCVTvCOi6:17:0:pass÷ord::
+u18-BF:$2x$05$ozXvuRapZGKFxDfrGn/Dq.YR3ZMvNsyNW4bPFIEwtgbYmMQhqsfMW:18:0:ôåst::
+u19-BF:$2x$05$PvF8DmZ.KA2yxeDWqzH4jOZ4iabmWwwmDt8qZeYc5ze6LYtGwfFJe:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$pWF2PBwz/V4vSPQ6DP54G.jT6QkPw6lhXBPOJ4FqZLFZ7/Ciu/5Ua:0:0:Skippinç anä*::
+u1-BF:$2x$05$c5a.p4JoZNOcXhprWzq01.ICztaqd3BAKdhjFa1nfyAUAqyUZSxQC:1:0:Skipping and*::
+u2-BF:$2x$05$GQOJ6Hh/SRc2h3cA3B/LYuyiRzxWQud3jbb4UX8nqHsqNgD0O3PG2:2:0:Bert$ErîIE::
+u3-BF:$2x$05$cZHBYpZge9rmWKfxm1vnXejaUhLPW.MNoLbslhMyxH6wYEGek7uVS:3:0:Bert$ErnIE::
+u4-BF:$2x$05$gBAsroBupZ9Kf/KFzt0FsetzSQ5vpbSvhVdVBkt43jYsKFwzRs/LO:4:0:bert*ernie::
+u5-BF:$2x$05$mQJE5n0Sn/QVfyrdt5DX2uk7v.LVbHvB5Rq1iJWsNRS8PFJrXKPkK:5:0:late*night::
+u6-BF:$2x$05$PuIuDR87NvQda3AjQAUyXOX7rV.seK6XhvlNKFUl9br2yf17srNiq:6:0:::
+u7-BF:$2x$05$F9Cjc6ZA4TZUEEd4zQ8X1OzOEXMDr245t1Q6HmKuYnH.eV8z6hG0y:7:0: ::
+u8-BF:$2x$05$OWpBRLqZ3PgW24AEnQ90ZOfhLJYTmxSKbbS6gNIhe9beey7X.KCWO:8:0:1::
+u9-BF:$2x$05$.CQiC/wJu7Xbo2gbg0afDuMQKkJppcfYfgyYO692u2c0jQnlymSZK:9:0:password::
+u10-BF:$2x$05$PNNfUcHAzOvAxFUX/jynMOB4U2VqB37mLQNR1CCYhEy/TX3LP6Tz.:10:0:test::
+u11-BF:$2x$05$rb8l092ngh17ubq8SYhF5eOST5E22vLPO8fEettruh8ylPZHxH6DK:11:0:late*niçhô::
+u12-BF:$2x$05$m1aJtH401O22/8exhwSLpeoslrntOO3.tfp6vGcfgBDCXdgsXlcdq:12:0:hello::
+u13-BF:$2x$05$ONDxb8OZYH4/94nREAPHMeQcvosv6ML47.SPPeRRCFBNTV9KNQgBu:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$.7OZmV48c8uGdk1llN504uw1iJKCksf8uE6Hy7qVdUD.LpE3bzNH.:14:0:!!!!!!!!!::
+u15-BF:$2x$05$hEYv680OfvZbIGB.b1JbquBRQ7zgd41g6/qUM4mMpcBy/Z6JgQECe:15:0:ttttttttttt::
+u16-BF:$2x$05$LFVAfDDaC2WrXUrVmHonNOPF3XDNvUgLpJBe1X2Yg391nFnZDiIae:16:0:±::
+u17-BF:$2x$05$epcfsDb9FpD7KGwdbrHdEOyabj6srT.VAeL/AcRboqKwzAXT04PWy:17:0:pass÷ord::
+u18-BF:$2x$05$Nd63Hx8QsTc4YF1MLLOYG.SDRDcyhrW538ncgt.3Z3T3Eam.bjXzK:18:0:ôåst::
+u19-BF:$2x$05$pyZuESDE2Uoyq0tU1buFyusVkhSNuAuGmAv2spcNL5I2Qge0X9vrO:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$KgfTelJGEGdB/vkwhasbTepjZEGZhsmyIPiZtjwVmKXoh9c61ZAea:0:0:Skippinç anä*::
+u1-BF:$2x$05$/6SKe1fa.R4zogyHXdoHFeABqvxbxrYpieL8CBWhbSLjBuCBdQzLW:1:0:Skipping and*::
+u2-BF:$2x$05$nrZNvKYG8m7a27YdL3xMfu/ms0kv9nK1UT1vApAhVvZmIgDYYc23K:2:0:Bert$ErîIE::
+u3-BF:$2x$05$uKkn8jOAPVGnUodr7rx.Cu5dIrjgxXdMsYOPIETjP3pBHcUC0z5km:3:0:Bert$ErnIE::
+u4-BF:$2x$05$9AffnJ81YOmoeSx5VMocIOymIl8CrudZYmAk3gUYvs/Pu2.swZuQO:4:0:bert*ernie::
+u5-BF:$2x$05$lHoCTmaTpOAitnAxek5aT.uSHAgbsPJXQOSQu5Ca1sxoTOgRZRl86:5:0:late*night::
+u6-BF:$2x$05$oQRHPXmd5I0zBDqRGinSTeHc/R4adf17u1snECHtOtWAwF1hD6fhK:6:0:::
+u7-BF:$2x$05$ijUBRBLMBpeJ3Fe7XJ1uU.d5vcURmi9HPzHosXO/gHmnS2q495pdG:7:0: ::
+u8-BF:$2x$05$cmoqHlgSOpRVPD3CBbf...aOX5XkOtH3D3RQQc1HuLXZoXxWiJawi:8:0:1::
+u9-BF:$2x$05$JCYyasSbAMqkCJuHsdSGteW7wu7EMvdYdia.wnuPxKDCreLbRjF9m:9:0:password::
+u10-BF:$2x$05$j.rJ0Ed69xoAqfFfST5HgOGf0IQrXA5e/mS1ktBcpNR1FThxXmP2y:10:0:test::
+u11-BF:$2x$05$hF2HjGIVSceSQBpAISV50eDCqfblYJTNM4YCF7QQ6emD2SGXBWmpu:11:0:late*niçhô::
+u12-BF:$2x$05$mEGbIjgOkxY.tZgaT.j/DeyoC.8ZhJAvbFCmhQXA.j2kym1.yQKOO:12:0:hello::
+u13-BF:$2x$05$WtM5TgDnqCaX7rzfy2N29u./HvtU570VZVNwGBLLicjsfFzizBFXO:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$edAzbPC8bxz2jYSyR6PYLObh4EPr51Gp3QY96PvyKRc.CfshDRuq6:14:0:!!!!!!!!!::
+u15-BF:$2x$05$L500CzzzSbXlHRrG/YoSCeN6aoVCZojANrrP6QOTxPEsjylPT1fsy:15:0:ttttttttttt::
+u16-BF:$2x$05$ydd3rpk4P2ZhxrJqWMbtxen61W7GfdH7HPXqTPfa8SH5ha4zL0k7u:16:0:±::
+u17-BF:$2x$05$STfL2g.XYB5ok5SScZn51.Z2h3pdxyCC8lMDxDQ2GTkhkv.tcWIqe:17:0:pass÷ord::
+u18-BF:$2x$05$FBDSLG7yTOoxj5WE4NN21Oe/Oh/9E1mHNcmEE7kKhBnrZ2zEO4aEi:18:0:ôåst::
+u19-BF:$2x$05$EEYtsyUavuJURwDbFd7Ipu/LEo2r1MJeJ6W0./tr.V./pCA6lYSs6:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$0C/gOyf1pLlFkhD0aYbP1OStOzBz8HWkN/qYYKRWEPRRIfjpaQ95i:0:0:Skippinç anä*::
+u1-BF:$2x$05$/Ay57LzJAFhJSPAR.3dtK.nEnIe8rxqaiirO.c6gWLb7bKMxdeKSa:1:0:Skipping and*::
+u2-BF:$2x$05$xIRHesUyRQm.GVaNxuTIzOm22ke7hwa2hYaFkh5kdXGnTr7mAAPQu:2:0:Bert$ErîIE::
+u3-BF:$2x$05$kd0WssSmAkTKROvM6RXXzu0CE7OLN2xl1Oly3VGX4bntJ2SiZdmIO:3:0:Bert$ErnIE::
+u4-BF:$2x$05$aF.ZkIxwO47/QZ0H2YfUDeKShVg5waZZgom5GPLM4Z.pTTwwVe5h2:4:0:bert*ernie::
+u5-BF:$2x$05$TL8rP2P8p3AXfR7gbLdq4Oj68o4jIdhacrTLsHRmEUlxttiN8WlnO:5:0:late*night::
+u6-BF:$2x$05$VEbTz5llIB1AP865fS7igOxvSxKxKcEjhoXAXT/IEkoGpFFFxz6a6:6:0:::
+u7-BF:$2x$05$Z9NDYjcVu89Wwbvh35NwAO5HwLmTS1Ilp4f2gVHy/U9uvY5zSKgP6:7:0: ::
+u8-BF:$2x$05$1Su33nUahzruaCW6sbeXB.u.30kaZAshRhBxxcc4CDec.0V8.mPTu:8:0:1::
+u9-BF:$2x$05$MZ54qPxLFtq6yKb7gfeN6.3rS7sAb0Jfi6D.73mxp8IR6wt4HV34a:9:0:password::
+u10-BF:$2x$05$7WQXdXRMTfAnQuNIX6xiWOliZHUnPyfZnFscYrkT0hEB7VGZYHG2C:10:0:test::
+u11-BF:$2x$05$XWZ/DaHLHM6aoaDUZI14reU0j84sQ1h3hekpDIgAqG271f.A/z5iG:11:0:late*niçhô::
+u12-BF:$2x$05$hTvILmYTn5EX0KAC/aq/x.MVEQnYjWPOaJ3WrrXGDa9yXXbei3xru:12:0:hello::
+u13-BF:$2x$05$1.eHbPcwfrUIUTbzEoqaGexHqJZcpiFuzNxRX2XWClyO/VK9EP7vq:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$1mG.NBAmi6pZ0Oz97HnNY.W1.fwR/VLryP9CG6Mn.ULE/pneGl.r2:14:0:!!!!!!!!!::
+u15-BF:$2x$05$G9kunzqGAswkoBSZlI8rC.uwp3Tprfh92LRFOsTqxHXuxRSJIAaBS:15:0:ttttttttttt::
+u16-BF:$2x$05$rxsMlhzWeo3kt2ukOV.Nee2MFbbSdtb6UHhu2ayRXxIfqWArHK8Fi:16:0:±::
+u17-BF:$2x$05$821z743QC4QjJeXGNWhLFuklr2R1CXnNkplO7o3Z2.kf/nCLpIlOe:17:0:pass÷ord::
+u18-BF:$2x$05$uqfu9nYyZLA9rEldElUdzeb057DTPdcpGnQyY0A5MCv8Ckr/oiRNi:18:0:ôåst::
+u19-BF:$2x$05$nxlF76.yrWUytfBo1ifqoeL/ipiGQwzT22TthpMGobpmWQWPFxL1u:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$hofaA.ZOYWo.yxzAc0MT2.k0flYMbo6FeuHfo/vsQSWkTwcKx6cLe:0:0:Skippinç anä*::
+u1-BF:$2x$05$ff82lhO5ddQUinlvnjP3sO.Is0MCKRwdyXwQi8gF6QBFHqGjkOU9.:1:0:Skipping and*::
+u2-BF:$2x$05$ety800wSjUKZdqEja0.qeOF0BBRXa4tD1/4YCIgthBx9MomRJONcW:2:0:Bert$ErîIE::
+u3-BF:$2x$05$XFB7NVZpA9ENF7lntwPylOCXDUTD/hURO8T33G63846obPim5OeP2:3:0:Bert$ErnIE::
+u4-BF:$2x$05$FYamhpa1dQoqjxjg1tOfrOky/C26PwPOgx7tjM3MSu2hYgLihicM2:4:0:bert*ernie::
+u5-BF:$2x$05$p8gqgHonXq9G2U61VRGRieDvoYlhjw9Wbpl8ZQlI4Geu1A.DBHHzC:5:0:late*night::
+u6-BF:$2x$05$qPvGBea2d549.DXZ2ieyhOnkO3APP.LuZ5v8YM71Dv2yjqeNEkrhi:6:0:::
+u7-BF:$2x$05$smQQTRthdpyPiK2KbKWyTOUh9ryrziEHQ5/YBBgFI6YPELvLsFtaq:7:0: ::
+u8-BF:$2x$05$bCqunLkzqCcjVImQIeMDW.AHUdwYFdQvLH0II3swYCAavLxAM6Y0S:8:0:1::
+u9-BF:$2x$05$Xn9pZaruKZJe2LoKQT5AVui881R4k2QheXQ7CFdaTuYfp72HG1MW2:9:0:password::
+u10-BF:$2x$05$k1l0B4B5xXeupTG8Ab0P9.wSlvgHxpLLsg0dTnbjS8zM0vFj7luFW:10:0:test::
+u11-BF:$2x$05$HeP376BRt3IzXqA5EngUmea/YlKIKh8qWidFbmjl0BwHtkRUtbJhO:11:0:late*niçhô::
+u12-BF:$2x$05$KRHOqEwZOwNF8T/juMXCG.XdFXL1noYpXvi8OWYsWMd1qoIxGGiQK:12:0:hello::
+u13-BF:$2x$05$YBLRxR7ZHIl6Ry2apthcvusM6gxogTFZj99tbt435ccEGWamoiwTO:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$6pd/eUrY7E1vn9Czj/CUiuLdTuo2I345CrOOzEFOTlToiHZeYos/2:14:0:!!!!!!!!!::
+u15-BF:$2x$05$S862WJggp0T.2o6GJEWCsO7DqvbxNO7s7zAxJ.w3KJASQydKrtkhq:15:0:ttttttttttt::
+u16-BF:$2x$05$L85jgCO..Kw5VPt2Mzy94.1xGTcmg9JOs7bwrwpc5ZpWFWKAqsyG.:16:0:±::
+u17-BF:$2x$05$0TM8cUbipxqFu0tzfJKbz.9MJ6sZcQPlGyx0gs223C9J4yrKrxOd.:17:0:pass÷ord::
+u18-BF:$2x$05$oow4DHH.iwx18gUQhiqOReusdd43Mze/ROs3mCWksoFIWTGMO7irW:18:0:ôåst::
+u19-BF:$2x$05$Wt4xTmreuoSr270sZtMq2u.4kobD.cwWWrLTWHhAegBNNFoW8bwd6:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$8h0qqlB7nufyLwD1p6nAFe4Tp0dPsLc6xCccl6WBpKqURDQN3l8F6:0:0:Skippinç anä*::
+u1-BF:$2x$05$zzbR2kfqt0Si/E25AxsNd.NoI0vkBJHlw6gZ38.wmzd9VV6DGNmVe:1:0:Skipping and*::
+u2-BF:$2x$05$j7fig.J6mH0VkK1c0zZPle5cYf3SMiYGOKCRY0BQcqlBAaoNUId4.:2:0:Bert$ErîIE::
+u3-BF:$2x$05$EV5l.L.L4EMsCYJeV7pPLuhtrcAwMPVjnd27dK8PRhvrZIIEE.Fwu:3:0:Bert$ErnIE::
+u4-BF:$2x$05$gcAewbSzOiFKjZEi10F/T.YjtAW0Ix.jymBnFF1duLUKSjKAJEZw.:4:0:bert*ernie::
+u5-BF:$2x$05$j5SeGRrZEpzp2CuihKak4Opzxi08KcJqeri20pmeKS5zHZ9/xyOcW:5:0:late*night::
+u6-BF:$2x$05$y8cdogmkgz.Fhv8bCUlwCufCoeboArmTz9eaMeoaVOB81wdsvTc2m:6:0:::
+u7-BF:$2x$05$OamsbC61mc0W7PkA0SjdkubJeFTXSuZ8W6l8oMaHEGcj5z1hTd3DO:7:0: ::
+u8-BF:$2x$05$1fWy8LL17grf3AibOyApL.7e052UZ1oiw9NGyzE9G1b6a5TSQBiY.:8:0:1::
+u9-BF:$2x$05$rvbqp67pHwiUiNyM99tDAOl7QlCKcYbV88EFci0Usqt.8Cu9HdRTu:9:0:password::
+u10-BF:$2x$05$2OhTEYKneeqBvNYw86mwKeiR6mPF/caVlWWcVCYJ44RbEclxhEcIi:10:0:test::
+u11-BF:$2x$05$GM4kYNH9GS0JWtNxGuZpg.IqMT3o74TaOC406ji49gfo2zCA6XjRq:11:0:late*niçhô::
+u12-BF:$2x$05$JEyUv3Q8evAMP7cXlBOm9eZgXCparlycyMpx9m3FC0pGM2mmuQXuu:12:0:hello::
+u13-BF:$2x$05$NH/.ujYOrldsoYUo.sS1t.ZglzYRF9Vfjj2xqJHre2pbUHHvROWYa:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$Fx3uJRttChtYaQZq/9ql4uh8FzUyY1ZbjrDvI3wq8/IMi42FC.xWa:14:0:!!!!!!!!!::
+u15-BF:$2x$05$lnOdn1aA83T.R2QT93R1ee2uzMHwMKNHstjoWY726DuUWZO62bcGS:15:0:ttttttttttt::
+u16-BF:$2x$05$LHvofGU89kbj0CGj89.lW.EMFQyrnuob7qhZkT.qMLT0Zix9NqVYG:16:0:±::
+u17-BF:$2x$05$QI1bWlnqNPnstzT6bBeu4e1p4Wtjd0H4oDoasTIpXKPNUOJPpm.h.:17:0:pass÷ord::
+u18-BF:$2x$05$HKrS1CVIcPVc8nI9EZ0TYuTaFwnJJSpKWIuaWqEOhY2956dEiWopa:18:0:ôåst::
+u19-BF:$2x$05$Deqo.TXlZ9hQdry9KLLWVOTt4Va6Ph31cElvN2mHddhmTsQvAeOLe:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$ml9URcG6b8MEcfbHYWqpT.Pa7tBIhzsN6/6fV5sHIVVVZ2B1/53Cq:0:0:Skippinç anä*::
+u1-BF:$2x$05$lLR3nbksVYOD9rNqHO2Y/O3pbvZq5CHhUDD7ZNOlcfM4r0aMyIvw2:1:0:Skipping and*::
+u2-BF:$2x$05$MfQIJ1C6Hecwflq9tWT7WeizQfchBqsYadBz7MK1.PXHH9EbmWyIC:2:0:Bert$ErîIE::
+u3-BF:$2x$05$D7eGKjG8WE5FNm1R1Dv70.6AH.x95tditkTWuOScGiKDiJcBhPKkW:3:0:Bert$ErnIE::
+u4-BF:$2x$05$45DHdVIkuWy1whZ0MXOZQeMYRJAwe27z.U5ojNqmrHbyqkA/leKp2:4:0:bert*ernie::
+u5-BF:$2x$05$vfzE8smppEYniOSL1FETSuyf4x1UOnVFQ5Px9IcEC74BJP4F9S.3u:5:0:late*night::
+u6-BF:$2x$05$OVh62ZeSp5IsxeiN6CSnUu7dfQn7OufecCRKwwoB.ePB8beKnLG2y:6:0:::
+u7-BF:$2x$05$J5y3wEWM5uEXBsvrmPMFuOfQHiTpjMktfs573zSveD.KWe0LaMOnS:7:0: ::
+u8-BF:$2x$05$DOu9KcNtsFMTqn9QHWsiZOa2RXKjtWLl3SZmD0o4BMD81RDHcucuq:8:0:1::
+u9-BF:$2x$05$Hxx7iDzz2YNLJK8c1ddZ7uLaDAtR9FYTvMTqkeapiGTerFNH8au/G:9:0:password::
+u10-BF:$2x$05$53IrSA5LHm2FsLAShDfUJeKSLUvOiw/eq2xtvbIYA50wFOjBGCV6O:10:0:test::
+u11-BF:$2x$05$FhG0Qn4FremRYUUxH.Wg6Ohm9V50ME0JjWwoURW06NRKJICleTQCS:11:0:late*niçhô::
+u12-BF:$2x$05$YfhxU5UIxXrzIh6NqpDcv.cAcgSz42K541fg.CbIiwckA4KV2vlV6:12:0:hello::
+u13-BF:$2x$05$Us/fu7nFI6jIRDhfBAdOzO8PyPjsvUylvFmSs1TgiQFrQSQrEO0Ym:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$7.AvxOkyT3PmcjgiywcGO.4QTNDyIqaug.ldgtCg.63ybuZM94hEa:14:0:!!!!!!!!!::
+u15-BF:$2x$05$I7btN/ThzDzB9YJIHHwRAOMPyrSMPMwHxyJSuDtfIomagZu9ZHoie:15:0:ttttttttttt::
+u16-BF:$2x$05$vs6ueyMxbnmM1mBDU3ZXaOtR61HL4l9sjd7h0ecXia7hbFPDGiKQ6:16:0:±::
+u17-BF:$2x$05$6DHZILYOW1HhvdfZiYYDTOXAn9dBtyq4bFHSHnpdVUE0r/iDbBLSO:17:0:pass÷ord::
+u18-BF:$2x$05$sfepD/ZQ5BpctXWZ95Uh7uzCWZsLEwrAXPC3fUqoLxBlFxs4VyfO2:18:0:ôåst::
+u19-BF:$2x$05$lzzQW6vW2Pjo4NgeGQl0duUgxsClCESFYcmBwK7nNF4Dcw5QRes6O:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$M95Sqr5kRU2DwTIRLaSeAehV.mfTfb9v8Kpr.Wv4zRvEkjkBgSRKC:0:0:Skippinç anä*::
+u1-BF:$2x$05$unmExpMS0XazcK7RzjHZdukDr9OjQhtZJ2Bku/0D7wKbs76z3MaWK:1:0:Skipping and*::
+u2-BF:$2x$05$F6r34TI2N9SVSmUR5ZRDROKhcWMv5Cc.QNSQ.VZKYU3cEmPQyADZm:2:0:Bert$ErîIE::
+u3-BF:$2x$05$XYIK1KPLsaUPDKiUXRNqqeD3AOLZ//vqyAaelC0ePWW2vVxydoava:3:0:Bert$ErnIE::
+u4-BF:$2x$05$jjX/j/uP/I2BOX5yvwK/ZOg//Cmtpg5h0e3XHQl8axH4tn5sBExsq:4:0:bert*ernie::
+u5-BF:$2x$05$0XHty2Ukepej6RX47Asp9OqD5pxll3dvH84cFX0oAN0LKAEK.kaw6:5:0:late*night::
+u6-BF:$2x$05$ag8gYlC62VBVQ9gXaDehUezBETQlQkkkr0wgxsA.wrcqd0TLpegq.:6:0:::
+u7-BF:$2x$05$vHUVhHkgi9kTD0rbXJHMO.RsXlZLcnlDslGtxB.B8OjSNcScTaZde:7:0: ::
+u8-BF:$2x$05$kOlwL0Lj.MYbjEsX08B9F.DkzUHwxOaLrzmZIetJ7h9.ctyI1VIum:8:0:1::
+u9-BF:$2x$05$801rVMIcPClRALS0I5tNvOUjc3fWVMzX8XvZhVEWeLdarFDZelIoC:9:0:password::
+u10-BF:$2x$05$JdFzl15qZNBGRQ14zpLlxOIZIBBYL8wNSP9L3f0Pd.EoEz1TLAuvC:10:0:test::
+u11-BF:$2x$05$5CtF9ig5ZlflSooPHNNhYuOo.IeNXfuP4qPCxNeDg8IP.xM1BJPkS:11:0:late*niçhô::
+u12-BF:$2x$05$OSKwuqnnf9V3ePVmLe14V.j55FSvqh.WGqGJ.WxkpCjYwA.oCOqjW:12:0:hello::
+u13-BF:$2x$05$huEPxoxyohgNFa6Y/4LPQ.Q/yllFTpsbvZ1uuUcxOfWQj4HcmFym6:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$eas5TGz/X5qe.IPALQk5wesqHqHB6MeGic7SQ0OnlPByg1ELfmIAa:14:0:!!!!!!!!!::
+u15-BF:$2x$05$Tt..q2YDV8S/osnFrxP2ouwQaoYxDidgyFO7htZ2Ur9Qjwzf8LkOy:15:0:ttttttttttt::
+u16-BF:$2x$05$.QFwHdg2gKZebPuaOjEyZOb8VSzhbzvNSmV7khG/lbV1wBOwu282u:16:0:±::
+u17-BF:$2x$05$FO6xo/SE0btvv0Oxw02Tme2Zw8YuHADP/xfvFhg/b7uzhsZhmPp0S:17:0:pass÷ord::
+u18-BF:$2x$05$LuaMbvPUK1zAdnoRECDm..WonR5OUgCw5XIkzizKhfFRMtAMbZLVy:18:0:ôåst::
+u19-BF:$2x$05$4J5tuRvsqqDn1WL3T/0w3.KVU0oL8LUpNdD9islpA00AEd9CMV4JS:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$TbiQR1lvlfRNsZWX.1fb9e7/nNAWmiCVmNotjM8uu2d6UTFO6H3c.:0:0:Skippinç anä*::
+u1-BF:$2x$05$nTEWuL7JZTTceR7JVWMb3etXLddoFkepmWAripCb4SInnuiV0w6Gy:1:0:Skipping and*::
+u2-BF:$2x$05$bs95PeRystLOBxFQywIZM.Hn7X7QVHfmD80eARVMa6Varft1ebmRm:2:0:Bert$ErîIE::
+u3-BF:$2x$05$0nGPEOyyzdYr./9iG0vm5O/RWpsAKB7jHFAGBNjqricAU/Sw1TxMO:3:0:Bert$ErnIE::
+u4-BF:$2x$05$ToHzMB3qDnFOapjPpKq7Q.vwMM9iF94F3wO9KCKJtVNou0zXuDmyC:4:0:bert*ernie::
+u5-BF:$2x$05$C/ktSvXEJqfmDUkcZF8Jt.GahEI.nvFMVrVuRktTAsaBWZbjlCW3C:5:0:late*night::
+u6-BF:$2x$05$fr36PcD.KGiWkOuQAHIDo.AMvl1c8Z9vCEjdbvtvgi5SyViN0Kn0W:6:0:::
+u7-BF:$2x$05$alDO8IUNYWNY8mBCtoxdQu30Bu5Gj4ozvncRYldV9rBonS6Nx4gnK:7:0: ::
+u8-BF:$2x$05$hUn6oRXLk93GdMRrnQvIS.wQ9pCDq/0ZYsOoft8CL0MvPrJ16xYFq:8:0:1::
+u9-BF:$2x$05$LFQ790uPje5d7lWbLCJlG.bqFXDLRo0RT.JBjV7tklyCC/lh.x.BW:9:0:password::
+u10-BF:$2x$05$zm.3IC8JMUiEyOYqdCYYF.KvLPLLg2z2bCj8zCRShJZJOiZaOxaOe:10:0:test::
+u11-BF:$2x$05$sZHUoXUTYiOHbc0GxAD6Ou.STfdVz8G9q6TXHNb5x1dZVRzPKjOuC:11:0:late*niçhô::
+u12-BF:$2x$05$s6ounyIImxMeP/U1FNEyc.OL5moMUMn0h7BP1RTAwL9/lmdQlT3CO:12:0:hello::
+u13-BF:$2x$05$vrvlhPBXQ5lR9PNYqkjTJOedi6vEVpLUpctE4F4.hBj44Ux7CljA.:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$ee7PLsf8Zyb93fX3A4SgPu6LcO8rMsi2LRCm3PoRy2rlzELeljLpW:14:0:!!!!!!!!!::
+u15-BF:$2x$05$4eTzIMh8.kl8xGP/YabH.uD/ZMvzrafZCoUHcD8YFjCBYw6fDZHHC:15:0:ttttttttttt::
+u16-BF:$2x$05$.pU6lvGsfoWAihg9vOrxKOE0d1hkV0CXcwP3Zj5rOdhuvB4zr3f8O:16:0:±::
+u17-BF:$2x$05$S1JrMOdRCObCmsjonZe5f.oxfmhl1jW4NfV/2KPbeHVi7Qjpibs12:17:0:pass÷ord::
+u18-BF:$2x$05$JmPnL3tGLihEhW.NktzBNefAkNhfAC5gJ/Qeh41gae3ZDqYqchh/a:18:0:ôåst::
+u19-BF:$2x$05$95rdc1Bs1ln.aq2OgT9luOJXCpy3VtHD3EXQldPjANOdAFAwkadO2:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$jAYYFUIHApewND2OI2zimuLujD1blKSd8pZgrmxImIBb4Bk7.joA2:0:0:Skippinç anä*::
+u1-BF:$2x$05$CY.ME3w0PNX1kJcTHZGkluemq2rdwX9RANOAUAEEeUghD07v1D8Ce:1:0:Skipping and*::
+u2-BF:$2x$05$mxLEdkYO8tBd.sFy/EAclenoKvQXLQwzKVYuFexapBz.BpgENhZJa:2:0:Bert$ErîIE::
+u3-BF:$2x$05$0DgcXgLtYpzNbYIwZyLd9.o1LYd9IMIc5uFEd8lV/6txpT4mQ5ri.:3:0:Bert$ErnIE::
+u4-BF:$2x$05$6c8RQamRfv2/xAjt2w3Qc.Bul/I5CtCaRxZULqyC/WTQe1YFJo.zC:4:0:bert*ernie::
+u5-BF:$2x$05$AaVUkyt8e8VivYwYzBf1POjT1Dw7xBaursfq6rRXxuc40CLvsqpy6:5:0:late*night::
+u6-BF:$2x$05$pSqW9OGqdzVeyMe0pXtVTOQtfzjg73GHE9YFmNt0fJhhcoi2KU4Te:6:0:::
+u7-BF:$2x$05$hv8G1c.OQsJhaqJ3xKyl6uMOyyV6KgdQ.69XpcczYgQFgF4nmDG8W:7:0: ::
+u8-BF:$2x$05$AtQPcCcq70J9ysf4mNJwRuhXcYvctZF7s7Fk4dewTf0kLbiWbqHQi:8:0:1::
+u9-BF:$2x$05$qopZ5zKvim3bZVgQr6oONOrXwpbw/r4LuhKrYv4VyA4/bR6QDCdGC:9:0:password::
+u10-BF:$2x$05$zKhsHWLzN1s4bwBMRC4lJOqU3MCHhRlcfalRyLas91SGGWXKBMIam:10:0:test::
+u11-BF:$2x$05$OGBfQeiq.3arLbaGfbranOiUahFGiMehJ8tXxTJd0ZM6Chu57xRCq:11:0:late*niçhô::
+u12-BF:$2x$05$O0tYgGOvJF6ydLKHvtQOSOy248/6gDww4FbQxtxG/4doWxi/LSHd.:12:0:hello::
+u13-BF:$2x$05$dkeABrU6WdwFca0a8zwBy.LmnXREnMyPKyBvy.FJEKQgf0LJJinoG:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$38oBm3wXcVmaO.Z8OIEsd.CS4d1r5YGzNXzVizY/ZdSpigBfCRqPi:14:0:!!!!!!!!!::
+u15-BF:$2x$05$gUPbpcv.SckrxdZv5g6MhulmvZrqnhVbEpeBT/I.RfxS7D4pkXIye:15:0:ttttttttttt::
+u16-BF:$2x$05$RHy3.9/xR5A0snkRHC3iFuA3G0FsTFNihHW/bkfBcbRqm9UrKCfJS:16:0:±::
+u17-BF:$2x$05$e9j5fCB2XPOcrXiVv5cACe2A9.ibAQUHZGaXjud.P7yKF7b5ThPra:17:0:pass÷ord::
+u18-BF:$2x$05$Bsj//3gH5r9hZ2cvnK7OC.qw7k5Pg5Wdd1J1wY59BRPgLLqwK3YOO:18:0:ôåst::
+u19-BF:$2x$05$itavh3yhNs6761S29gOEcuxcVinXdxuhrIYbFgK1WexwJlK27D/2O:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$8IuWeZTH6.mNBfFH/H0hbu81drs0bvVeMTo2ejZoOyWSEquOfvtAy:0:0:Skippinç anä*::
+u1-BF:$2x$05$2SYcj.g3uwoTPrAhjLpyuOUK6/Als4qhkyucVJVkYM2LsjwYTr5X.:1:0:Skipping and*::
+u2-BF:$2x$05$L7COfAOvl5gXwFx/4D/fIuCNC5LFkcSn7WQNDPPW6WSFnJMfaV0SW:2:0:Bert$ErîIE::
+u3-BF:$2x$05$6kv0Xi3835qGnzZego53L.bK9BRAMBH3SlHwTpHPRpKCuT.HcSnqK:3:0:Bert$ErnIE::
+u4-BF:$2x$05$s7Azkah/LodIePtolj3pSeBWv6UvzRtFQA/BA7zzijfgahwf.d3Gy:4:0:bert*ernie::
+u5-BF:$2x$05$nyvRif0C0at5K6C2ZEbpJ.dKVglal9G0l7Pkt7ZwcTGY.jfjUPdCa:5:0:late*night::
+u6-BF:$2x$05$MeUkBuSmJ7SLjf.sxwQinOuKp0dRwY6BHKGi6AMdcRcufKvhrVZ8W:6:0:::
+u7-BF:$2x$05$3BkX/6D712R/gRaYBMneFOPE2O05Lo1jzMAHhq1lE3CfkwO0DmFcm:7:0: ::
+u8-BF:$2x$05$QXlGibSqcbwSJRZeKwKCCe3z8tholm0BJtWNqS9WdrW0dSByIgX0O:8:0:1::
+u9-BF:$2x$05$o3azPQ2nTA8.P68R.lYYIOpOBJPvT4g3Kia4b2o0mImZ6JlIgwHZC:9:0:password::
+u10-BF:$2x$05$IN1yz7tZ0opO335jRcErr.2P1.2eELpkRIDKxpXKO8sK6h2GlI7H2:10:0:test::
+u11-BF:$2x$05$cRUbifICNfr1FO6/OH8hweZxo5yjID4GliKBUakkaO9B0eV.6zoAK:11:0:late*niçhô::
+u12-BF:$2x$05$3CMrdA/l8fwRUPpzLMb7D.sBhUdPkfBByWwc7FdUe35nWDQ6ppoVq:12:0:hello::
+u13-BF:$2x$05$DPdUQv69jG95ppWjHbMhmODN1i75iVOG.H2PLy/iBZOvck5WGa85e:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$t3bNuOPhChA5TWhDLbJmAO3z4/T3nyODIo/VFYNIwb3ti5q2hcozu:14:0:!!!!!!!!!::
+u15-BF:$2x$05$tXW5DMsFb2axe9FahZzbRec25M8PIRdcU9SDZoylYYbupBH2yVL4y:15:0:ttttttttttt::
+u16-BF:$2x$05$xfJW9saacEkcfCdyXMUJdu/BvybxgHjIbkypbEN448gyVm90z224G:16:0:±::
+u17-BF:$2x$05$NV.SFE10S88XIiwJkzglEe2FzO3bqTvoJjXwkWTXu.3AmidY1qBe6:17:0:pass÷ord::
+u18-BF:$2x$05$V4lR1PGE6AWnF.dr.PQ2veRNHXeHPt4cryQOExAdsCF/aJVOs.84i:18:0:ôåst::
+u19-BF:$2x$05$kZQwVLJ8Lw1LwYudSYPv6u4Ym1Tr32bFylLvARVnGoj73ut6wz2fK:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$.VplUx3SUMpxRiuInKXwT.NJ.ceTMJtwRXICzxTieLaqVVTDGMzDy:0:0:Skippinç anä*::
+u1-BF:$2x$05$.vjHiZgmJZYw571Zq/8wRu2aHeTbxS1SozMaY3OrOjFm6PC6qwhiW:1:0:Skipping and*::
+u2-BF:$2x$05$PR1GTXaaEe5GEVn6/z83uelBeWNUaQ4NBQTw.y7VYih24UUgpNOQi:2:0:Bert$ErîIE::
+u3-BF:$2x$05$wzann4W8JLw8S7nW3SKEdutJo2WXxxIxEtWuZWVN8vpJf1CovzSFO:3:0:Bert$ErnIE::
+u4-BF:$2x$05$5FXG2S/pauwkumB6clv0Qu.JA1CSREOLRgbub6Udowu7fE9JFBn5a:4:0:bert*ernie::
+u5-BF:$2x$05$Cuw9NTp2KmQatsXwVxxNoeQuHYSDcjOrkS4U5ELQpE2beOAHhe/c.:5:0:late*night::
+u6-BF:$2x$05$9NfbAZKcbyK9uSxRq9xi1OeEEO6.Qx0pia74Tu11.dsWyxYAh9KwW:6:0:::
+u7-BF:$2x$05$.n6m.mC4qswuE0ucI.0fmeishT7/otWjHA/mJ5L3KKVuiMoVcylai:7:0: ::
+u8-BF:$2x$05$/JZmc3Kxe2F1CTQmwWfDceXLESw/M2sJfgOEqdC/UPQ09C9QPJsfm:8:0:1::
+u9-BF:$2x$05$0JFpBPRNcT.K.XJpZAi/sOlQPrbVgI3oppAxsePXI1O1IOBNXF3Bu:9:0:password::
+u10-BF:$2x$05$.yXum7hugt73.mGXNYqAcOjHszY25O09kO1WNGpHDdjhexXukSRa.:10:0:test::
+u11-BF:$2x$05$8YfYNHcCho7NmiERch0N4.UyCgIrAnZhF/z7iTtzeFmIz92cJnby2:11:0:late*niçhô::
+u12-BF:$2x$05$n3DvHv9leYchY/9Vjflf0OJJNeJYBPSqPuPWhf1oz.2tiV0mUUkGi:12:0:hello::
+u13-BF:$2x$05$Ft2p.RTe1daCcAU.FKXreeZyyKaw7ZOve684VMM7zmltPmN1IpFcm:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$mkmg/eMTknDHBk0.KVebd.5xaKncmymn93SwC6isTiJQAUiYlsN0u:14:0:!!!!!!!!!::
+u15-BF:$2x$05$7fV6vtPg.8CPe.RaesQ5KOe7/PENGYihVq4gelqPtTDGTRem8aDz6:15:0:ttttttttttt::
+u16-BF:$2x$05$AWnX7LEtCrUNSZrIzmpWPuS1W1GihtrtH1IF/fE0SfBAZ1fnmK0P2:16:0:±::
+u17-BF:$2x$05$0W2Bezd.lKvoypczKLQbYuKJzRTUv5mRwiOMH2hW7v3P.LmikChRm:17:0:pass÷ord::
+u18-BF:$2x$05$pc9VmPQwVAZjYo5NBmPbXuRS/8N1wOut9xR3zdEerdBS1q0ZlaLcC:18:0:ôåst::
+u19-BF:$2x$05$NFrALAjK0S72BVoYMxdoaOnsIGHgts7H4wA.wNTcYGdCFG9fp9in.:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$Bg8PnCbyB7Bw733X6PIQrONUhOorirdeo2tQtNj969B4KRghLjbAa:0:0:Skippinç anä*::
+u1-BF:$2x$05$/F1fOr2DbPNVAov9m3asOOJ5otPw6cAt67QwBZ1DGyG5xo86BHa7.:1:0:Skipping and*::
+u2-BF:$2x$05$8YOmG96SJvm0HqRGJfJR4eiLSClAbm5Ki9fIIsICLJEwA4gjJUj9q:2:0:Bert$ErîIE::
+u3-BF:$2x$05$hDpYQWd0Kup/U2S5z5ywk.3KCrfPBiaz7vdN/hcsxf6F33eGnoOhi:3:0:Bert$ErnIE::
+u4-BF:$2x$05$y9tMX.v68hHQq2ZvWVwm5.X3NxWrGUhma0WRuR5MkMDTY5IwFjjte:4:0:bert*ernie::
+u5-BF:$2x$05$Je9Gba.o7XqnljhugijGOeMhPKrzAnK93k4D.6m4E8igAnFRl4bva:5:0:late*night::
+u6-BF:$2x$05$XNdwNGtJdV8OPtUkMSRdC.FZ8uaVS8tHq5mIGu1UjFee.ZCrwPBzm:6:0:::
+u7-BF:$2x$05$lkMNYdFA4ru1DunL3Dunu.ApF353qcYqbGPM4g5TEg34CF8IRGCre:7:0: ::
+u8-BF:$2x$05$PNT8aNY7QfiMkDw13iJeEuJ91cwmeeuBfjWD8KPafrJLN2.iNNcZO:8:0:1::
+u9-BF:$2x$05$GdGI54.qGw0l87i9AlHAFed9m5OrgONFIYmVLxCern0GykfSqWXuW:9:0:password::
+u10-BF:$2x$05$qoPZKMH1cX5mRWhfX.Yan.9i2qjgmUOftdzk6qTx/g4a..aqMwwdu:10:0:test::
+u11-BF:$2x$05$FCphQTFcvFUiEpnDww2JJ.6y0aBGjdvoHT8/OUqdHAOXVgLOwQ.Vq:11:0:late*niçhô::
+u12-BF:$2x$05$3O/17UougX2DwI/kILM7t.mebUXAArfQx2HaZtVEsTLDYIXJ4Ks9W:12:0:hello::
+u13-BF:$2x$05$/2n.Hmp1XW6bT60/YXJU6uuQhSZXYtmfQpQ3ndZJBLOQ.6VyRSi6.:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$U61J4YdagRlvKyP66ML/TeDcTaDqOO8l994WZJ5OMRZ30IyTsg9Oq:14:0:!!!!!!!!!::
+u15-BF:$2x$05$eeoYISI0cNiwnOcnBBAs/OoqlOitpkOuQxLLetp1ytdR8H7RiSjLq:15:0:ttttttttttt::
+u16-BF:$2x$05$O50X74.DojML3WrMw.i4relWJMkoR/0/e6qPnmkJVYXbC6OiBhAkG:16:0:±::
+u17-BF:$2x$05$aO2WKuLVzES3fJkwwL0Rl.pboxelobpMRbjyUQdSeOb7O01CoNlE6:17:0:pass÷ord::
+u18-BF:$2x$05$iUNTfjt/Ibtgw5UwgUU2P.LDf1dXo4H0GEkHiHYVbwvw59rNHX8mO:18:0:ôåst::
+u19-BF:$2x$05$CNGoGNQQLkaIS52I/XshEeH1Q6rUwRzKRFuXkQarGiTUpRB6CX10O:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$HrLXb/garetfZTrfsVKRJurFKktdR/JwZaIbJ7T8F3XUQgU.H.6hC:0:0:Skippinç anä*::
+u1-BF:$2x$05$9NRZDGM5eGRzPpu1y4pjN.Ps2ysmzFa9AUlRBEsw4VSBjDCXhd2de:1:0:Skipping and*::
+u2-BF:$2x$05$ctSslePPKfpB8N7b9z4hf.RwNXScin18XCZ2n/XhqCXf0nfsXRvim:2:0:Bert$ErîIE::
+u3-BF:$2x$05$WWoEciBsTenXC8AWWslhc.JhoHjuASQGO3nyTcToTyYZsOwLq7ape:3:0:Bert$ErnIE::
+u4-BF:$2x$05$0uIXe1TAAX6h/61hauOguejNRBvI1LJ3i1a86EmQedJ5r5mWXq3yO:4:0:bert*ernie::
+u5-BF:$2x$05$Iu7/Mh3FWNKXf1NdS87wEOB2RxfUmHUKARRPmhw6dwLERuDYSHx9i:5:0:late*night::
+u6-BF:$2x$05$kYuUzaEZLpD0hUp6VozsEusBro5ryUAEQUqzuUoM0QSY0EsFRV6aG:6:0:::
+u7-BF:$2x$05$jKEm9Lo0somoGmyPy5leyuZS6jJUNQktKvqtUYpSObBjkFsED51i.:7:0: ::
+u8-BF:$2x$05$yABk4TeCqWdtR7MwUNjBse/ASQQx4xTe18mWLTg5O9oPgEKlw/dXi:8:0:1::
+u9-BF:$2x$05$pkRdCSZlZuU0U8XOuyqnfe35DIQGz7k4BSY8naqh2CWNkgDV6ajd2:9:0:password::
+u10-BF:$2x$05$oqlYVhDogoNkrpa9qlgxRujxOnD8K5HyI7BVYa.b5gjTZkvGaJmGa:10:0:test::
+u11-BF:$2x$05$UNTnqM4Wx9.RX/4dX6Sna.qLDV3Pve2CwE86toiNK7tY148LQ8tq2:11:0:late*niçhô::
+u12-BF:$2x$05$/yodakAuWG1X0g7wqgmkEOKb96j9CGUEEKN3iruEmNs.GD0fquGau:12:0:hello::
+u13-BF:$2x$05$hTPQLaZ0GQlElI6bgRHD3OJ/bVVcmR7SVF3Gl51.mn0K6esrE34OW:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$midajTmeXgZuDRrGI2CslePQH/DOxqtV039qSXYX1xxrdknilxwlu:14:0:!!!!!!!!!::
+u15-BF:$2x$05$LXGccTJliit7mumNaz6hMeKPMCa9KNFTEfbidCI/fqU4M7radS71a:15:0:ttttttttttt::
+u16-BF:$2x$05$9XIDS95/gN2t4oRXIPGTBOw2lWdzfkhNI724L/omCjRQs0HdNbE4e:16:0:±::
+u17-BF:$2x$05$jvDGXDVbZvD7HVSiCIy72.madUzN0csG0EK0PVfHXHysllSsPruGC:17:0:pass÷ord::
+u18-BF:$2x$05$cMqCgZQOWkTculVurUnSX.IsUb/ZD2ycfPothrgpLHviJ9LoU2GHq:18:0:ôåst::
+u19-BF:$2x$05$fE0gbiHrLbgCo9VrSeiVVe0Q9834jOM0CmOyKq65pjABJNjG7FzFm:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$GEzKojydjDdRy4QDlrWHyOF9ShFOmYOlHBvs/d/11rk2hiTBRLrTq:0:0:Skippinç anä*::
+u1-BF:$2x$05$uy0CIgNnqM.Sj/4mBpT5KOl7NbFp9Zqy3tyU6gNEJK2Bv/U8F69HC:1:0:Skipping and*::
+u2-BF:$2x$05$Fkjw9ezDDtpic7XRa1Se/u1dxaR.y5NV87oVcD5pEGM0GVPFzsOOS:2:0:Bert$ErîIE::
+u3-BF:$2x$05$a.k8CkpA8rc9GDSjCPwgXOimSh8GfmoQzEffz.eacOGiyLimIbiD2:3:0:Bert$ErnIE::
+u4-BF:$2x$05$5M/792t.cEwSbhCHMhZbKeHynF4.8T2SmK9q5cITGr65vC6g0dPfu:4:0:bert*ernie::
+u5-BF:$2x$05$BM8mPO/RcQgfWOyBz7X5xeTK6PIvyGxlUGRy/KEvG8mgGokbwiJfO:5:0:late*night::
+u6-BF:$2x$05$N75OzTa8YUZ2c2w4kCy7wee6xXzxqCQxqpSwRd90wJZhEYS4N9J..:6:0:::
+u7-BF:$2x$05$Cs1acsLb245HQTdv0Fph1e92PnkjP0pAQT6IuA4GDmBfrbwO.iZbS:7:0: ::
+u8-BF:$2x$05$zKspZ01.h.bpjWvTxnyXxenGEdjRhY9g7c19HNPCbcDKvzhnvZVXi:8:0:1::
+u9-BF:$2x$05$a6HkixEDuMqoYMG.mZri2e4wyR7yeau5jGht7/OKx56SyUdBraNHO:9:0:password::
+u10-BF:$2x$05$tzADp8pyAZDPK7s.gJSgBu12BHFsMteAP8pd5hQYxnRV.hQDsrLWa:10:0:test::
+u11-BF:$2x$05$tGB3.HNfJ0HR.HPwpCUN1O3DE70g4rU8Z3.kIa6mYhRkYRMDoYqMG:11:0:late*niçhô::
+u12-BF:$2x$05$M6nPM9jvXJDf5bxJGuMyPOOhEt3vNbbD5OphT.VntnPLQWsf3DQE6:12:0:hello::
+u13-BF:$2x$05$2.N60hBuKbOTYHrxl0fO5.bIFzB5R6KmlfpqVqptfa9rtb7L1A/XW:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$sEX.dv7YVmtgezhBEI7X1ONfDJtAvRkS7o38RF/h63MRHG/3IgLZO:14:0:!!!!!!!!!::
+u15-BF:$2x$05$5yWyzWfXjiDWiYNym4YwkOEck57Kbo1dSAgIW/j7Rh3sbODd9t0I2:15:0:ttttttttttt::
+u16-BF:$2x$05$gA3tpYBerNQIEZEBrOtN6ezILVZtVcUgxOTG0M72/xF1Wgk9mG4wO:16:0:±::
+u17-BF:$2x$05$ZX1KfCoTCQYm4ujRqlvK0uaLzZWwRMMclTkfV6wh3XXlJtf.Sua5a:17:0:pass÷ord::
+u18-BF:$2x$05$XJszvUTZUxkUWnFUgtqzWewxXCylRCB9DG2b1D61VtpoZ.apaNhg.:18:0:ôåst::
+u19-BF:$2x$05$VixBK/Ci433T2AF.gSK1ZOIgrBvXoMfUeH316JLsrEHuN31nSmdhW:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$3K8.GeixOb1dNbjqZBB3B.6ja51vJFelNiVAj.9NojS/MKnsO.ns.:0:0:Skippinç anä*::
+u1-BF:$2x$05$ly8O5/tfK1rSyuGv3xPBk.bXhEjGo/6vFX/EXq/jR2ljofcKX0pWm:1:0:Skipping and*::
+u2-BF:$2x$05$rlYM4B3uEo//6CXV7J0yLORTh3mekbpUeQ4eH2o1F2dUlmEAlRhWS:2:0:Bert$ErîIE::
+u3-BF:$2x$05$gHx8Jl7rz7Iof39Y3F1SHe/QKXTVr6etTy6syzlzamYaKSN8uMvvC:3:0:Bert$ErnIE::
+u4-BF:$2x$05$v1DS8spq/JW9q9YXRy2s9O05mqY5/kWhU49Tvoj3897pnYZBt0msW:4:0:bert*ernie::
+u5-BF:$2x$05$NTWAmGz2EDnafhZrcOOJWewB9YxOUQcELcHZNlxZ73NXmFKaVhwWi:5:0:late*night::
+u6-BF:$2x$05$1OP6CDrnNFUVp7A4PeRcDuzLalUsdXPVGdvm3vx4NuLLiiD/jh3Jy:6:0:::
+u7-BF:$2x$05$xLMSDyPNab8ZlIcTMW/oFeaauGidg3X1sGXELBXPsJ9IHCyODaLgS:7:0: ::
+u8-BF:$2x$05$Wjwn8ltgtTHF/tRjLD/gfO87CHbmK40zR.bGnG0141iYU2yp/KzTu:8:0:1::
+u9-BF:$2x$05$RSQ//QAh4HQzFxVgpMZ8W.f9QBIGTDEJXqsBxtAmH.24TjXiIJzVm:9:0:password::
+u10-BF:$2x$05$iiGyycOGrNrAh4lqKLTdz.JbkJ43fmeH1IzX6nxFN22c5gQelDaVi:10:0:test::
+u11-BF:$2x$05$OSsdKdEQSMCovDg3OCslsu1rablms2Q9sU5sbYfSKp/eKVKsebQCi:11:0:late*niçhô::
+u12-BF:$2x$05$T5VAWkWRhBBke09l2oii4elqbLSohwsbPREoLf6troWKx.EHj6LZm:12:0:hello::
+u13-BF:$2x$05$wlW4OoJt7cxM6TafCvMkSuH9sGBghh6DSy1n79pQSl3sPW3BvO6eq:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$qpCcO1bL6ezl..Dk7F3N3.poWgnf2IPrebCoRZe9jpJR4oL.5fQKa:14:0:!!!!!!!!!::
+u15-BF:$2x$05$1abN7.Fo50DgOGlOjB4VwO3Jcuq7exeTz/MayiuKIF8z7kvKMNMqK:15:0:ttttttttttt::
+u16-BF:$2x$05$52uRN88Fa5gj.JMfpOaq/OGX.fU58OaSJcT0FMlbDFWNrEw9iM//e:16:0:±::
+u17-BF:$2x$05$60WQMDC/6edcWxPVZAI7ge/2YmribJyJstJLxEiGzJ1A44bMApYVq:17:0:pass÷ord::
+u18-BF:$2x$05$l/h/hoy3eTZFZ/BNQRf3yeD/3G/rc31SN2ktm0GS8Wtbfjri5W6zC:18:0:ôåst::
+u19-BF:$2x$05$BPHWwN/H.UI9blCf.3lz2eNEUOnJKZQu5a2ATKQ06zEAOT6L41vne:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$e67HnavKWe1bRdN2/2MDKex5AQ5EO1nl/IruPgqQBY5Piuk.bKfPq:0:0:Skippinç anä*::
+u1-BF:$2x$05$YMvQwpcoDm4QcZkTA4OTVOBAskllA8EBSVBCRiFAXBGWjiy6OIkNi:1:0:Skipping and*::
+u2-BF:$2x$05$8RS1TjFcrX8R8.blQB0ZA.0kLtSRDsya4SEmJUy19RdY55mp7cb1a:2:0:Bert$ErîIE::
+u3-BF:$2x$05$KoTP0F9F.i6b/alfn0nG/OaBqD412ydO2kAK0uyTTkjaxaLYWtwE6:3:0:Bert$ErnIE::
+u4-BF:$2x$05$BAossOXBJoL2wCHYyjBWC.kdDrHmXc2akMRp8ozZUFdbiLiFI839u:4:0:bert*ernie::
+u5-BF:$2x$05$iHo62/yHJB1agFGENtXhHOBZh/7hZnh9Np3NqnMXDva7/PjltSxgm:5:0:late*night::
+u6-BF:$2x$05$jpPKhK.MlVZpnbapRbbtpOsUg5likdX7PIL3ih399B4xfNYN75vyC:6:0:::
+u7-BF:$2x$05$9YX4e9oPYBCkkS/j.osJSuAMxbbG2GxcGBUsZITDOZ6k6bb/jjLxK:7:0: ::
+u8-BF:$2x$05$pr4jUTfh2a9aKs2WDu/As.R0r6jjtFywFZTmykES0J2IET6avIbpW:8:0:1::
+u9-BF:$2x$05$jmquMg5F7WNjhepoUzA4xuGVi1QLBqAjbMvySFy5jGWnp.4sAMnGy:9:0:password::
+u10-BF:$2x$05$kt7h5CO64PBI6xjUFnxm6.g7wrXJqSKIfJDzJQwbwPRjYhfOlEFsK:10:0:test::
+u11-BF:$2x$05$dBX5XB.efKlFPRnymO0LW.IdFzYZkbVFaUf1nNhOKRP0DCNK3mXc2:11:0:late*niçhô::
+u12-BF:$2x$05$aZcaUQDKzobJKhzkSLDxqu.NcgMZcgQ3QgpTgIrnhqRcLTh76hz0u:12:0:hello::
+u13-BF:$2x$05$gmFbB8LdrsPQq4rXozsMvuUPboSDIwcfhNYnIPQuR.uyoPMCAq5.6:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$x0kVIUdTDkG/QGnlqMA9BOKkKznCreLRZ7KIGuTh9Mt.VoJSpxGJ2:14:0:!!!!!!!!!::
+u15-BF:$2x$05$ceFKaVNMKPTfZIDd0RYWeO8cUohkMgn2e2EqLTQhbFyiwG4FVDoVm:15:0:ttttttttttt::
+u16-BF:$2x$05$nrW7PYs8qSOiVM0fuCmo7O6dX3marNw62r8Wl.3dC9BjgxOZln7Su:16:0:±::
+u17-BF:$2x$05$P2AjGbXPotWxcFoJLIUMeeYMfkc.N.lxaq61.3ebVjKnCnkzBlAVW:17:0:pass÷ord::
+u18-BF:$2x$05$J/zZ.e1vHDX3prS.3yMFxOb0v/oBL3AvthACnGJoSWFbdN/8WAxFm:18:0:ôåst::
+u19-BF:$2x$05$Y5tUieDMQs0r8K5aK1gOfOz/fv66fyIOa/b3Q0VdsSz9S21PBztzG:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$boxap41HCLA1KKNkMnsum.7zPepi6mq5tPjMTqhvlz2oyrqHvmy1O:0:0:Skippinç anä*::
+u1-BF:$2x$05$oWVr33l1glx5anwxRag7wO5zzJOHFY73xRmFA6A/9VUJI8ZZV25lC:1:0:Skipping and*::
+u2-BF:$2x$05$42u0uAKDqbpcPa3idVDakuklVesj27JyKWXcQ4gUscRjGJQ2n0X9C:2:0:Bert$ErîIE::
+u3-BF:$2x$05$vZ1RvhqTuDCqHn/nMBhF0.wJ/a5BpC2qjS2OiEFXBPyiefWUMBHrC:3:0:Bert$ErnIE::
+u4-BF:$2x$05$QZPbZTap9jbqC/0xKcZlwug0G36HlI1ezdmnno8caNkGPl3OdVPPy:4:0:bert*ernie::
+u5-BF:$2x$05$5ZCPLaYZgTjMeKTHpKMhF.Q59rBDwWDTTb.SZ9XdBEY6sJmGE8Gne:5:0:late*night::
+u6-BF:$2x$05$1nilNK/h1gelHGa45qlKL.KCw.MyVzdEgMCsiABjFFN/kYCPFnMy.:6:0:::
+u7-BF:$2x$05$B7Fx6ojVSHelZWGYyHidkODi.XuSxn0/YDN2bwA1MSoqFncwfhjNe:7:0: ::
+u8-BF:$2x$05$A3SkM.UgORpjsEjynoijpuvdv6dlE3FG1w7W5Zr24fDTWMzrsR8di:8:0:1::
+u9-BF:$2x$05$m4KyPbtOTOEpGgFA77ySROEP1AnZoD4brj6UNdk/rFy4dIyvWGOim:9:0:password::
+u10-BF:$2x$05$7uEYex0mavJM81n0SAue8enLttl8RzXElVU0fIaTREl6OcGPfOojG:10:0:test::
+u11-BF:$2x$05$uKfQofT3dAR1y90s9sleJu1rtEz4E43Y9NjGrH6xCNuUENxK8UA3S:11:0:late*niçhô::
+u12-BF:$2x$05$QL61fj2JF4DRennnBBnwouKFWw4/xXG8t6EW3WvaUBuxzfzgA6ccW:12:0:hello::
+u13-BF:$2x$05$6HmCMHfKHJS9vpdcNEkdbupXBVEsNlotY26rQlZqbJs2rIT5QIDS2:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$hHALK6EYvSn3sqxlvBq0b.zT1rLDqnJ4njNRNDAizezA0dfKYHrBG:14:0:!!!!!!!!!::
+u15-BF:$2x$05$MKW4M24v347d799vftOKMuq.ebD2MlRXT18ti9mmbysnBOZKWIqke:15:0:ttttttttttt::
+u16-BF:$2x$05$bVE2C3OPHyJHr4dFkbqHEu4KoFDad9BDRKB0yGf6rsjtXvRAynVW6:16:0:±::
+u17-BF:$2x$05$Fhi6XAh4TOQQpjW47xySvO6By3lsdIrcDFs9hsxhfLNz.1HjECCmm:17:0:pass÷ord::
+u18-BF:$2x$05$vhSs9PeHpjjbYdeqdysWCe2RWS3ykEjYJqYZA7Lp8cQRlz6yCkh6S:18:0:ôåst::
+u19-BF:$2x$05$Gf8nBnYuCcNtGOOyxcCTfOGxDXS4wX0Nv5ihG5l7T4TqB77ClCMw2:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$8fB8xbFz.l5usQQQOzGMCOvXp/sn2Cuwc/AD/rHenu/w2lPbj0ikC:0:0:Skippinç anä*::
+u1-BF:$2x$05$IJhTl79.BAB9XSE.00AR/OJKsKOsLoEkge5eAkUQ1kkubuYg/bZBG:1:0:Skipping and*::
+u2-BF:$2x$05$oCsRwoygx9xGe02ETCAQFuv6ad/zNTbGKLWxPTQqMbZtScHBGrWHW:2:0:Bert$ErîIE::
+u3-BF:$2x$05$0kB7j1cV7MdX5lS39cdvFOZ3ihlNXpuYmPowJLhTu4VVRpO.RC7jy:3:0:Bert$ErnIE::
+u4-BF:$2x$05$qzh1ekoRJz5yXMh2wKjxV.rwH2ptencNXCFpu6.N3I86Q7O8AUOzC:4:0:bert*ernie::
+u5-BF:$2x$05$.LjZ8ehVv1cdrDMRGpcMD.yD440Rz8xIcSGjLN.7SERT8Qx4JDMFC:5:0:late*night::
+u6-BF:$2x$05$C1E23V9Bz7svzlJXCd3./ufxtcQAe.9h/DHNZEZbHq5qJ5ABi.jEm:6:0:::
+u7-BF:$2x$05$fjjumaUeJgYEr7JoNkCfku14dmK1UA6TgVvxhyezKsUrYCif.QXnq:7:0: ::
+u8-BF:$2x$05$iK.gQQzo6qw33JtXVLl2r.u3gorkDzmLbdwz75qaE6XHFbshmtVj6:8:0:1::
+u9-BF:$2x$05$aSGZI6aIgM3BqIH26AqUBu0YtPjU3RWNdd7m5d3lxJQDUGV1mnh8K:9:0:password::
+u10-BF:$2x$05$OxJEeM3/gyzjcAESOBVphOJK6kux9edEwd8B2IF4XebDIwKnHD5Di:10:0:test::
+u11-BF:$2x$05$F6eue0tqKWuJaGrgrAecVeSFJ1369NYQL2mV4PU6OvLsRZgyUHyt.:11:0:late*niçhô::
+u12-BF:$2x$05$2CqprDUo3m2JyMLmzkCCKuukwznj1zVb6bSigH0MKtYjW5jlT9JWK:12:0:hello::
+u13-BF:$2x$05$L/jSLzfeVoJONsD7.Sf6nucWK8IVgNmXXm2onSWUjea5qB.Slzh2a:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$mwgs.whciJ2BTurwoTh6OOIb9xt7A2KNHia3sMk1o14fU/gmBt2wK:14:0:!!!!!!!!!::
+u15-BF:$2x$05$5oYjIBgDf6QAZks7qpJHK.UjgrQ8LI0qM.2/oIsM11tmLRus9r2Uq:15:0:ttttttttttt::
+u16-BF:$2x$05$S0jJ5FxKvHji0I1HCnQLDuYEeay5t0wnLl4HoHxu5m4oYMy7kUO9i:16:0:±::
+u17-BF:$2x$05$HXuJQ53sZSkkfFU0VmfK0.LnbuU70HaSpJcBWDV4RHAZShLMUPi.2:17:0:pass÷ord::
+u18-BF:$2x$05$pJTTXAEB.NOWaGK.OPqNkO/qT/2rixIKNaMMfmYufSKxS6rvrKt0m:18:0:ôåst::
+u19-BF:$2x$05$Z8ZCLO3B4NkQ5EPRXv6GLOp2AGlTTw34nja6ioHRTYu8rGETyCPL.:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$5TtKLmopAJtW7ETq/Atxveb.pibuR2NIV1ZviYVnjoBZqkoREThP2:0:0:Skippinç anä*::
+u1-BF:$2x$05$8zuDF0Ad3xQd0nsqPtaLSe5YV/yyE969EPOAGV3G4kqrYVORB02ne:1:0:Skipping and*::
+u2-BF:$2x$05$bJiKPsFRIuGw.ZHSnvgH8OaRJR5sfIc.Q1yADNzBbPgSbDJvCTI9i:2:0:Bert$ErîIE::
+u3-BF:$2x$05$9t0OIFriwNQhd.5MqSZqL.QxeWugih5OqChaEhHAH7sYG8waNEt5e:3:0:Bert$ErnIE::
+u4-BF:$2x$05$JW0gIPjdLoqhIyj4Ewhg3uB7HD3fYSutUhNuyQnbaZt.Zvbw4Tpo2:4:0:bert*ernie::
+u5-BF:$2x$05$zgXlcNgsdrWgUhU3M0xwx.1Xb8d30JyQnYDLtRhCPaQcymk1u1Pb2:5:0:late*night::
+u6-BF:$2x$05$RxbOQ7F0CKslyApB582Vmuy/4gFyUOz/q8SGIDxUciP/CXQQJzDV.:6:0:::
+u7-BF:$2x$05$2yKsVvWyxcT1uC3yTXg80eLwW7i8IeOrOKb6bY0Xh2RGzns7/qB/m:7:0: ::
+u8-BF:$2x$05$AG0Yc0p7ZcTLsdyfw3kEb.vzn8jM2d/vAqZSAOfifxtmoBEUgW7Xi:8:0:1::
+u9-BF:$2x$05$6zTAyTcks9kVtUkVE7Pjmu09ocrQz7ZJuBguoeq3Me2jXn9KB.MDO:9:0:password::
+u10-BF:$2x$05$TZpE/eu3r5hf.mknLEK86O0kmzIxXWFCwe9W2oJm6K5kGq5FfLrs2:10:0:test::
+u11-BF:$2x$05$lH6ZM3YRFW03qxcziMFKAu7N0OcxxXmhB0Wi6TOxbKx0kqBRHzp0e:11:0:late*niçhô::
+u12-BF:$2x$05$rzSOkKx.Coy.NHqmxjLw8eaotS6e7ok5ob.HR6hgFgVs6mYvs9Fpe:12:0:hello::
+u13-BF:$2x$05$tjjAHT3r9isvweZXYQu2zuG2u0HoQQvcFJESV2jbR6AC.FuTN90pe:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$ng5XFwSD6qDIHinn.DQWWOVf1XpLW07spML14omMSLvd9l4j23Dhy:14:0:!!!!!!!!!::
+u15-BF:$2x$05$.kSpZaYLFZLSJMy1v8Q8puRd/e7yvvbdO0Suq7qKgik.qlATYS.QK:15:0:ttttttttttt::
+u16-BF:$2x$05$WQWx4f28/tBgvnwEyqanne4eCcnFfY98H67FycJxGvPfxrK6sp3y2:16:0:±::
+u17-BF:$2x$05$JhDfoG3oo7AwF47hmzZk1epDVwksM0T.6CN09emmp591DpFhNDYbe:17:0:pass÷ord::
+u18-BF:$2x$05$oThtoaInhRnmB8m16xW7ZO4FBV43HWeY5ympe1AodivZ2z8./XV0a:18:0:ôåst::
+u19-BF:$2x$05$hcVtyxzTmh80uEeMbKY5C.7I0l3DTqitHREQ38L/qvkRLj6a5ygCS:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$W9PdlX6Jbgtn9Ffv0rFZ6u3VPIM2pqITh99NBeDqLvj/gC6bhi6IC:0:0:Skippinç anä*::
+u1-BF:$2x$05$28GI1NFE2HbuVZLL0g.nkO7sf0nCqm.Tb8Kw4frDi04PNbsYyH.T2:1:0:Skipping and*::
+u2-BF:$2x$05$Q2Y.wLRj6juKttVm.ZdWY.8jenDr00IUWf007qWXvX6Xc8FcTBf06:2:0:Bert$ErîIE::
+u3-BF:$2x$05$RwqK/pUeRFzqDpLvSTG3B.4LobOGONKXJwpBZeMvudqT5JXJB8mKq:3:0:Bert$ErnIE::
+u4-BF:$2x$05$EYTvRywMOeCsRw57qlXKdealNBWBm7V1z0VkzOjnqnzU6uaf.iumO:4:0:bert*ernie::
+u5-BF:$2x$05$fEBUBowVX0jwzLWq2PK1KOzFz71V4BoZPcb4MDb0gWPS6JmM/fyJq:5:0:late*night::
+u6-BF:$2x$05$ZvFn5ebX16pTR.ZepVppsOhTly3kJomUcEqkZ2fAyp2YvAqdoPOJe:6:0:::
+u7-BF:$2x$05$B63EyddDrfy9USpBv7pJjudOK8ffRVGubTuCuPjJEBr0BBt4U1UYm:7:0: ::
+u8-BF:$2x$05$R3Ficvp1u4I9jXxoiWSzOe4ETplbHQ8TZ.acpgWLID1go3IOpFCIO:8:0:1::
+u9-BF:$2x$05$e8jV9pW47c504mZXBoxeBeOkDDu9ZLgoJb.IWZxn9IV5R3iMHEu9C:9:0:password::
+u10-BF:$2x$05$VNEo2niB2g3FTnT8Y.5OSOqlb9BWGjteTQ1CNeE0I/gFhbopGNJVy:10:0:test::
+u11-BF:$2x$05$GAzeBAuxTSWcvl2PhvhXmOUU.BuydDSal3QISEcHFIhu2ZH8Ac7BS:11:0:late*niçhô::
+u12-BF:$2x$05$dlSF8Lg7bHq.kvSo41r9uOUvIZ6VAFUB97PijwjAkyRjcFtH9suVi:12:0:hello::
+u13-BF:$2x$05$uqUR8oUEgQsBaNMs4mmZ5uYg2KXSU0fXqd2sB4OQCRDx6cbv0fXZO:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$bMKLhhQTHY4g9w37XxuFuOXeMMj2G09bYqOkFEdJOR7W.Eey54jw.:14:0:!!!!!!!!!::
+u15-BF:$2x$05$ju7Mxp9.wz.MG.3WQvhwGeG/5qM3LujP3.RFkzMrw.hXZQOmzU/HK:15:0:ttttttttttt::
+u16-BF:$2x$05$0QzHr/FyFlHy.g8mzJZoJuYtwjVS6cMZgyZulToFFq9ulc8m18FnK:16:0:±::
+u17-BF:$2x$05$gEv6Fcaw6c5m9QhSqlw0l..PCTzSNP8tj.tlvC7gEOif2Q4q2hX.e:17:0:pass÷ord::
+u18-BF:$2x$05$kltvC7rZAmN7xa900ZoWAeZtxhxPkBxdsfN7vE2qleBns3fd219Xu:18:0:ôåst::
+u19-BF:$2x$05$2YeT7qO7yKDLxsNhKeq9m.jgYyv7weE6OL0GOhh0R1rvoJGKEb0qy:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$A5sM9Sikk2DbRrvRbe8/Duua9wSWPNb/KHWoWU7sNNXXEIHrKpBhK:0:0:Skippinç anä*::
+u1-BF:$2x$05$KigJNxWOegqQbaIENeSAnODGmtPyi6EhkRuZr7NNjLERFpsYCB22C:1:0:Skipping and*::
+u2-BF:$2x$05$64W8se7D4NiHii7XW3xspugIDskLYZ.cXx2dI6BfI1Gk7Cm7RgQiC:2:0:Bert$ErîIE::
+u3-BF:$2x$05$XRW6OHgjajqR8dbVqrFZyexoYzKthq091tKSgBLsUcKakP5DPcfma:3:0:Bert$ErnIE::
+u4-BF:$2x$05$84uWshOvFdvC4Fj5.QtN.e4/2tQKluHxcaAGp5p4Wxl2AG3jqceiK:4:0:bert*ernie::
+u5-BF:$2x$05$awkVrRMs4FuYSTdzEhOP8OvA731JjsdeN5sw3GAgA4bNBdcUqaaWu:5:0:late*night::
+u6-BF:$2x$05$J7fAH0aEmOwcVQP/ErKmn.nklGp0oSDeZDQuM7zTDhcF6qewDZj3G:6:0:::
+u7-BF:$2x$05$DGEkNFSiQS.S1DGp26k5JuxIVOdDwoVyV6nYTJEypj9GOu51a//nC:7:0: ::
+u8-BF:$2x$05$NhcQHwU3/FxZ3x5SDSH1wOmG569Pedn/Ao.juIyTvQfIH1pvGXy7a:8:0:1::
+u9-BF:$2x$05$0j2Gh5pT3t.0TNtqTKwtf.zfw0fhUp8uCi.uBwdpwuZ7CBoIC0sEO:9:0:password::
+u10-BF:$2x$05$ObyO1YC.oVrBHvV3jSipxu5ZU5HKk1zf2xK/HuWa24v8n7Pu9vJOq:10:0:test::
+u11-BF:$2x$05$CPtKt37xkAtN0Uhi3bbDOu8xkXLPtvscPxC2TIZS0IJMNtI0ppX9O:11:0:late*niçhô::
+u12-BF:$2x$05$5TagHJ.QNKjRA/4/RWmeYudsuLQaxFyNEibJ8hyTDRyKrCkacN9/q:12:0:hello::
+u13-BF:$2x$05$oTSA6RJl/yl8Z6pcxEnu1O/GM5p5sVkojzW8nqBNX58IAgXM/f5Nq:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$ZLryH2Lpe.Vc9FUZCHEjJOl0aSYlqK6RR13J54dKVDGJdxLCYpQS2:14:0:!!!!!!!!!::
+u15-BF:$2x$05$/weEhdKzOhrBPmMVHpTS/.hP1.usiNLh6Uh5D3azujNAv3G4p6vCW:15:0:ttttttttttt::
+u16-BF:$2x$05$Cc0ZcT47dUDTK5g5ByC2Pe.V/IrbEa4QFoeW/YS7uqEXwrIETxfeO:16:0:±::
+u17-BF:$2x$05$k4FiPTB9mtXGgDNfIQd6rOztmU/OrkFDvmA03j0ebTqcRi3RsviBK:17:0:pass÷ord::
+u18-BF:$2x$05$7gmtliaSC1KIUTv91dhe2eavfPwjax1p25etPTB/1Vw8SPOZNzn1K:18:0:ôåst::
+u19-BF:$2x$05$amYwm9y/.K8sSdwNGrAUOePKyLcD7GOn3rgNta95NpTC.5FpKnfB6:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$bUmIBsFDTtcaR5CaD0HmJ.iN47syuTt5DLFRdwusW9WGFhxr4ApQ.:0:0:Skippinç anä*::
+u1-BF:$2x$05$.Mz3qrMiAXz/2Y30BUP2oecg.EAc.VKCXAF07CQ574PmUKhi2CO7y:1:0:Skipping and*::
+u2-BF:$2x$05$Wi05C2r/n3FRu1ufaGl7WOLAjSwYSWyKA/efNlswokXg.LW3nUt72:2:0:Bert$ErîIE::
+u3-BF:$2x$05$8C27KCv3KJ.OZW1M5rKKietKsSvuHv.gblLxKrjjQBJXgu6t3YKeO:3:0:Bert$ErnIE::
+u4-BF:$2x$05$/ta78Xt.MGk653hwvYay/.S78TZyCytowVYQVQxCmiAf7UwCI/p7G:4:0:bert*ernie::
+u5-BF:$2x$05$fNBJgHzynsC5FlScpoeTmetostUlRMvB0z9mPJMTO1kNBU/qDw.sq:5:0:late*night::
+u6-BF:$2x$05$PHr3g1OFw.KWk.XwwuldWePOhlBdaDyPScfynD5O0b6uunzAYPGfW:6:0:::
+u7-BF:$2x$05$bz/hWxUycDs8xO38cFDyGeSKg81XX3cn.cHrnAna2mqBLFbk8c.g.:7:0: ::
+u8-BF:$2x$05$AdDBJXcppTUVMb30Xq/QsuJsy3jQGwZN8p9HqRr3Dps9nZD8ej4E6:8:0:1::
+u9-BF:$2x$05$EP7lcYHVgCjV75cCkj7Rc.cuOQZEjS45tWZP4YgvQWML81njhYWri:9:0:password::
+u10-BF:$2x$05$DC1amnwskDbeOg0g.uSDtOzHveZkyHQImfi28Z.3HBzOO446js.bG:10:0:test::
+u11-BF:$2x$05$w6sFi51bZ/9sUhBNdYuhP.0Hkvrt5H5TqsLYA6FM.putY0lGXyAYy:11:0:late*niçhô::
+u12-BF:$2x$05$YIJ345sZfJpJaJlu6HQvmOBmId8kgouA.0VXNg./1ZlX7LwlmIcc.:12:0:hello::
+u13-BF:$2x$05$zyEYCK7u.4NGWvc7lTIfEuk3zfx7yScDa6Xkhi667b2gAiizdvwcW:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$rnCRozkkiBSJddsmonWcfO6zXNiGP6dXwBf5HbydlfhXFAleH6B0i:14:0:!!!!!!!!!::
+u15-BF:$2x$05$uXrkJDu3Dl9bPe9ELuiGquNlPRHhI.z/0JyMDNSfjZ1u9Q9pYEaO.:15:0:ttttttttttt::
+u16-BF:$2x$05$rEqG8JUoWjJ0e4Q80t5bA.KLBuJjQLobDt5qqMQG9..ok3m3X0oAe:16:0:±::
+u17-BF:$2x$05$sZhD/g.3Pe3WK6l55cAf1eu0sU/Hw7kA/9GJ0iDMKdoQLAm7Z11Qi:17:0:pass÷ord::
+u18-BF:$2x$05$rQSJscnY0NCyQ7Blc2nu7OqHYedkj.idtSX.CSVMynNwt4wh/B4vq:18:0:ôåst::
+u19-BF:$2x$05$z2DjOegZTMP7KkeO4MyCTukpPiWGyHT62wvXXv9ibrGkHYhI87j.G:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$yXx/IHGkzDhW/6XcoypTeuoFLnPYuNnQsvXZUdzBKyuLMsmt2yLNK:0:0:Skippinç anä*::
+u1-BF:$2x$05$oAsKwQ0QpMMaRLVFxwOwLOcxgEDZYdOaZ02cHzp9FSJZ2FvxnCJiK:1:0:Skipping and*::
+u2-BF:$2x$05$aUzEKvIcVpWWmNlGAQ1No.Ld2H5Q8Wb8q0SXUDeqopbPnpJFLCoVC:2:0:Bert$ErîIE::
+u3-BF:$2x$05$ZN.Gdb3SiCrXWmbdV2G.zexiS1RWw5kVTBoZnjr5TbK0CR7BjL01W:3:0:Bert$ErnIE::
+u4-BF:$2x$05$e0z2oqIAw0yqmi1Cz/UEyOikwdn1QBm7T.qy8oFeD71FlphcivASu:4:0:bert*ernie::
+u5-BF:$2x$05$9o9dQegBgz9buHfBXcyqq.20whbSMC5dT/vqzaI6iChgg7yyAxZ7e:5:0:late*night::
+u6-BF:$2x$05$FMZlbYbJq55HE8aG4TLQTeMUy2q21JT8AZmUydJUiqrqqqyy/kONy:6:0:::
+u7-BF:$2x$05$Ses9skMJ85X5tx0kLkcQ1.oHhzDTBKslLh73yopa4A5ZwxwXPbbRq:7:0: ::
+u8-BF:$2x$05$5HybaZJ8NCrToJCBPdK4L.EaEKRUfzF9d6BA5px5K85mb9qNyO9K.:8:0:1::
+u9-BF:$2x$05$N73hKNl7NgN7RwKu5cTmReko3b9mq5JRphexstkVMCaJ3UglacYu6:9:0:password::
+u10-BF:$2x$05$jR/xzqXSNG1KjKlnSuZh7.Zm7L5WFSlyVzUFCYKWxHDqMA6Qa2vKi:10:0:test::
+u11-BF:$2x$05$PZHxzYE/F1uy.Nj.avg.EetXw6d1Wdivpg/9965aGndn3MGwsi.W2:11:0:late*niçhô::
+u12-BF:$2x$05$K.po89BXtOoNjotQYJ50duHi4caeovLF0HeWBUFaB2Mg0nDg9td1a:12:0:hello::
+u13-BF:$2x$05$oY2tRjj1SsTb0ujI6YO7qOCbZzDjlxRkwUo9tYXwY824AjM2kqsYq:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$LmbtXFaFKsgpahrlj5REbe88OQs1UGaw6trJ.9McYtyHcgsesMo4W:14:0:!!!!!!!!!::
+u15-BF:$2x$05$20KG4XjV/ZLGZEvJw7d2QemmB2GjpO1nrCJ0WA07sIXQuRFGJh7Qa:15:0:ttttttttttt::
+u16-BF:$2x$05$PG/raDz58glEUMAb.8r7W.BHOXYEojS5XqCN1qYMNXgV0QKUHJpwK:16:0:±::
+u17-BF:$2x$05$A.GyLz8ZrevlTRmQDgXTNu/dujT/PRjT5Bpf9AQL7wmkgJlIvddGO:17:0:pass÷ord::
+u18-BF:$2x$05$.7vP718DeTBMCzJI29T2K.pCy3zHTJJSNL7SVACN5MQSDvy4/FkDK:18:0:ôåst::
+u19-BF:$2x$05$7PE5UXrB13IVth34hsWBe.85O3uHHB44uJBDNftJcXPiYpkhzhN6i:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$q8focZEh52pYGy7EmALD0OA6z4ejupxfKW9dJJl4IsNKwjN13kmZ.:0:0:Skippinç anä*::
+u1-BF:$2x$05$kR/h6VQRxJDFsCN9IMOFGOPP9Ia1wv5scJCQiU9p9kNt0HhIGAp.u:1:0:Skipping and*::
+u2-BF:$2x$05$iX5TuY5wP0Fp98MajPM6wu0l6EunE.jdK2I8NosOMiu.Mxd4LDs0y:2:0:Bert$ErîIE::
+u3-BF:$2x$05$IDfuxN.mtKDhRhUg8s/vBe3kFe02dYIyCihI7UbyKPYeE76eI77/.:3:0:Bert$ErnIE::
+u4-BF:$2x$05$6PwPEhpL3U6/q.A.egzW0OvwaMT07u9g94VAu/Lf/88iBPyffYiQO:4:0:bert*ernie::
+u5-BF:$2x$05$LWTEKo5WxVZtX.J3C15Pg.ze6H4xktLBL1tWi6BGwhyypdtxol6Gm:5:0:late*night::
+u6-BF:$2x$05$3V0d2DgCKOD4TXAandDNj.K8ECaVXaIKjSFm4Jt0L45XPkc52qlaG:6:0:::
+u7-BF:$2x$05$55iV5j5Nk0rku6goXbOp2OVc3VZLcU1UJwSJyp9utGqytRf/59zbu:7:0: ::
+u8-BF:$2x$05$k.rB6mnf2h8PTLmGO5YoleYt2deslqLH0.BZzx2qSCcwY3oNVlbAi:8:0:1::
+u9-BF:$2x$05$zA7b8AmFxZeHWhmgjKLp4elyhbEOuWELdFGMVV8Nk8sy7iAm3.CY.:9:0:password::
+u10-BF:$2x$05$JACvp2jv1f9sAeUQjCwZ.eGzV6DcdFBePu.D003Jg2.cjhJpRuF0e:10:0:test::
+u11-BF:$2x$05$CF6wSTNSuRNGn/M1uPt3p.l/QWXy4XobmaMHKFDNM55rzqjxnEVVe:11:0:late*niçhô::
+u12-BF:$2x$05$31YcaesfCSEgoLfTG0vF9ebv/3UU3rmN2u8NkJCI8HN.PoGqgoz7W:12:0:hello::
+u13-BF:$2x$05$eiargNhVA3ovKQ/uM7SmJeB0PQvFNjnw69WY0oTNoypikMf9MxJeG:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$Qhs9Mq8lYO9QGp9eL2Wup.vyWRe4dp.bg97IK9uZCw/ttbsOreSa.:14:0:!!!!!!!!!::
+u15-BF:$2x$05$DZqqXZ2.KdkWhQReJuYAgO7Udmx77MwKQKxFlawEWyg08aGnI/OZO:15:0:ttttttttttt::
+u16-BF:$2x$05$RfnrKmzvMJgIwkl0bVg34OuWOt7fjnLrRe0hVXWMFbwKI6VzPPW2G:16:0:±::
+u17-BF:$2x$05$K3MmoQhbrB7rwZWY33FuqOGGowupeGMsrWPRSMoeVOyeUZBk9Wb6e:17:0:pass÷ord::
+u18-BF:$2x$05$9W/S5bJjs.JtiJVoBryU0eaLEp8FyPylz0er.WKM6uB.JFU3DCBqe:18:0:ôåst::
+u19-BF:$2x$05$J4GfmRIAnaRZGbdHkiM55OMRvHq0qQDTqv96/mSNZrsEwaAkztOEq:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$6I9JJRn36WzQtE.OuFoH9.mcGw6cNsIJN7go9Pwf4uwIQyr0UlUN.:0:0:Skippinç anä*::
+u1-BF:$2x$05$lS9q5WzrOS.zTl//umDDk./HUdEoD3.QMd6KlvTe.SHEClIW2MMwi:1:0:Skipping and*::
+u2-BF:$2x$05$r.hhg0pYOM.Yd6vViVrJyOlHwMu26lxEc17UNRh3VsDmxv.MdDlNm:2:0:Bert$ErîIE::
+u3-BF:$2x$05$rVu6aGlXvU/1frbmO8DI1OBAplhZEeyzYPoejTG6HNB/tJg.H6QeO:3:0:Bert$ErnIE::
+u4-BF:$2x$05$5CIgIODLXtkLRyu8/T6RQuBge.mf6gMKY0M/3858VWJDnjUOthxEC:4:0:bert*ernie::
+u5-BF:$2x$05$m74PSTa/88VlhbiU.E/...gpia/Yil05rbeZPnwZsDhFcpORVewVu:5:0:late*night::
+u6-BF:$2x$05$NVWF7suc7B5Wc1rxZXKL4.gjlahn/i7AWooA2VBYYosEg0maNxxli:6:0:::
+u7-BF:$2x$05$3DtnLMmLm0qulj3l58GkrO.9vWQYbEGKN57JVbvIzbSGC6avppTn.:7:0: ::
+u8-BF:$2x$05$yPduy1RtmfhMn3bE/sVUQui56Zqsc6B3wZkGDG7yqBN7c9v0DXF/e:8:0:1::
+u9-BF:$2x$05$d8mT4Nnf7FdfUv3kU6tgiuJZEy64WZOtPAh09TqY8VIzo9zu7YxRK:9:0:password::
+u10-BF:$2x$05$wfeZouuW59b2TU4TE9fLPOWsEkzjqDEa74WdL7JT/zCETveRlNEDe:10:0:test::
+u11-BF:$2x$05$ZZdqQZ5OoBqni4qbrVWnP.8YbUCiBMt7EzQgskhe4CvtJz53Px9by:11:0:late*niçhô::
+u12-BF:$2x$05$B6zdUTh09/Dlt3rIhFSeh.NlDiZOm4MBNDNZ2Xd.mLv8FQG4uolya:12:0:hello::
+u13-BF:$2x$05$M6tG35Sr5yiOnveo3h.FO.r0ZWjri0M3Q1xAad8t9qhlwqrFHFJVm:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$MYitJ7k9C8ESJcW6IZXEHuUStHh1mb0jKNLz5dDnGuIUdygTgo2by:14:0:!!!!!!!!!::
+u15-BF:$2x$05$ftkGJZGxRAeq1NU0aopfYuRgvaFuFYxezckEifc2YWR4DMIz0S2Ge:15:0:ttttttttttt::
+u16-BF:$2x$05$hr4J.GcYUJXQOWrw0tOLs.byFKaYmo7x.nk0rXSaLdY.MdTL3754.:16:0:±::
+u17-BF:$2x$05$DB0QeoXN83fQFRZkOMX/xekLrJwUpOs4u0fgGsD83MGP9pDc5aVNe:17:0:pass÷ord::
+u18-BF:$2x$05$0zMLr5NClXQDbs8TbuRePO7pLZiKEhWzZi2ERuceHdTVB/1MMtrrS:18:0:ôåst::
+u19-BF:$2x$05$JQcI2C4M4dmFRRy6EvTDjeQjKLT59h0zCdx7tA8T2iI96LStSp9K6:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$meuJyHAT3MJhCKxFZOGl/esEKNCss8e6IdDGv5p6CtZALvW/5Lsrm:0:0:Skippinç anä*::
+u1-BF:$2x$05$MIlU9AZ08r.lApLTF8cey.Azorl/HBElqzMV9hb65Hc0uL3I3IdGi:1:0:Skipping and*::
+u2-BF:$2x$05$SAGqwlfMYzeYApteENhOhe5dd/IPA0ncwHqCngGh79C3VtF9nMyEC:2:0:Bert$ErîIE::
+u3-BF:$2x$05$dZeZwhofHwIu886buo5Moe/JBhIYOyvssz.cx8bTLR/M46C4TEUIu:3:0:Bert$ErnIE::
+u4-BF:$2x$05$Hjw5zc2QaazY96kD04cbuusWtidze/kkhAN8ushfhauZJ84y/7kei:4:0:bert*ernie::
+u5-BF:$2x$05$o55m8Rmi.5Ix4t7w7tR1Pud0DutF.7buZCJohobeJsbfY4H0pNVgC:5:0:late*night::
+u6-BF:$2x$05$LPhVCSk27EH0LEWLfj6fuuapjgUqxsk2v6r24WbCVoOM5AMYdTPiW:6:0:::
+u7-BF:$2x$05$TioRKtXpf17S88UaEdB7vu1TQ8JJhzVpXwAIx6ZgqZl2TCMl.6Gru:7:0: ::
+u8-BF:$2x$05$GlpTQ3IiwojsGX2.ZQEcmODyJh9yc/5p/ehvBk8KdkL7aPzJyD3da:8:0:1::
+u9-BF:$2x$05$/UgRNrMXzFjKyPeaeSJ53OywMQvLVWR.yzS01MQJo3B5TBW59PG.G:9:0:password::
+u10-BF:$2x$05$7pu4xZjFWihZFCbPggIAnO4XqpuMBDhniZ7rz4TYrNb2ToWzSYcfC:10:0:test::
+u11-BF:$2x$05$rhDKqrBUD19wDwNo5vROu.2wL0VuqxUwBChWf2scjY8VWDKqENbIu:11:0:late*niçhô::
+u12-BF:$2x$05$UD9iM52s4/AgiK88KocAUe7pS0ISWj1Z6.yAKLxElL9856ql8Y2li:12:0:hello::
+u13-BF:$2x$05$yadO1MnHRsdE4R1544m69OEI2tOsl3ntcliQYWANtON.K1nwNWWXS:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$kHh2DZrzeEpDE5vOdHozoe507Z12I9rOfsCDiMu9XR.ePq0T/kEEG:14:0:!!!!!!!!!::
+u15-BF:$2x$05$evrEtWqQnmdjKb2dyQ7OU.CdUb8OlTDMrJ3lVcBN1vDfyz/i2XILO:15:0:ttttttttttt::
+u16-BF:$2x$05$q4DB0vjjeYFGCY8Dp4BEmucpmhwJTJpaICbteeehxJspsPORc7c/m:16:0:±::
+u17-BF:$2x$05$W4/c.XVtZwHZjjUCBiNzqOO/SwjLFwYhnk9FVQHW1C08SSScNSSQG:17:0:pass÷ord::
+u18-BF:$2x$05$746kM3BKhqNjJcEqabm/6uy5aePZErj3k34G.BfJMKOpKJbwDA9aS:18:0:ôåst::
+u19-BF:$2x$05$CpWEhDGdRRSmdVVX4dGkcuguWHPrWyOk70EyiA6/UvPcadrQ7wsLy:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$5PVDbgoB3Qie7nLUV5JrneIwH4wZJ43bF4.Fz4lP931fE0JCeP/eO:0:0:Skippinç anä*::
+u1-BF:$2x$05$puGKT.dtfoRmEQrv3gNsceHYgH2675d7TD9Z5EOCD6sG4bFtV2ePS:1:0:Skipping and*::
+u2-BF:$2x$05$ZtlnV7YJoK.hiC7mkrrk3O006BPC3CRFaQXIFnSa0kSlODNrHi0US:2:0:Bert$ErîIE::
+u3-BF:$2x$05$TndTjebTgLsBIC6hbJ95Y.HQifJUP.RtqvIShA90ADNcedPpv5FM2:3:0:Bert$ErnIE::
+u4-BF:$2x$05$W5OM4G.c.rCnkZnilvHOsuJCPP1tfiUuCGfj6AQPmTx4LBIsww4ve:4:0:bert*ernie::
+u5-BF:$2x$05$0jp6y.REGCRQUP.GW2QRo.99MKQqfCyHwY44q3M2TUNHqOYVzh5Bm:5:0:late*night::
+u6-BF:$2x$05$TuPBSeEwz0J3V81kxuvtlO87FHP4VQkriZVVRZ.AhCWpTe.DQwNHi:6:0:::
+u7-BF:$2x$05$gAx2/Q9.h9HgRKCmTokW7OkgSQlow2fzawGwNaZh8/Wc6F9RC97gO:7:0: ::
+u8-BF:$2x$05$y1OqAwPam5mJTzvVYln7Q.RkmN2MFFuUKCMjnxu3uCIQjFkGdZdzC:8:0:1::
+u9-BF:$2x$05$sLxJvNZKmCtccnjCRHnnzes8tePRtmB98wToXs4cMnUMWxkNeB0CK:9:0:password::
+u10-BF:$2x$05$gtWOJndSY5rt7APzN1yBt.M9Pzuez07PB8YcNq25ElQmOh9.zmnVC:10:0:test::
+u11-BF:$2x$05$/vwUPx.I6b0NzsO6nE1Eau.syYwM..O6Usjp8WNF4jO10Lt6LM9b2:11:0:late*niçhô::
+u12-BF:$2x$05$j/uOXH2ANvFPd4PA859jiO6LmZ4tQCC2uFzTLaWsW3.cgGPRo3Ydm:12:0:hello::
+u13-BF:$2x$05$5nci3fKLyefbWn.y4eQAfuYVDN2FkUsrFd7d8qy8gMeQRDRKTaCJO:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$BGbhvwkLzgu5GpDKd.OmiuHky5s2P7HgamR2TsXdiOB1YFeHyhG56:14:0:!!!!!!!!!::
+u15-BF:$2x$05$YcUj1pORxDmWi54E2NMH8eDD.s.G9WlwRnRsdyAWAcSZMZkej02s.:15:0:ttttttttttt::
+u16-BF:$2x$05$GKz8wKOAfF.Tf0qBTVbYseCxt72ABQfyxXGCLJaMrXjiIypUB8Mqq:16:0:±::
+u17-BF:$2x$05$U5TQvTVq5s0vZkxPgkV9vu76TkLPEba6e/2x5y7W2eSjLTHSziwIG:17:0:pass÷ord::
+u18-BF:$2x$05$KZqpDobvX5zNSFGBgXaE1e578oTeGkZgFw4vthu.Woa9EXH4icRyy:18:0:ôåst::
+u19-BF:$2x$05$iuid4c9Rm3d.Toez4TMLWe14woIGywOAbbmfgCucJp6Y0xpfkJRqK:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$9JFRlVnBn8aew2GYd/LqOuJG6fxa6qxsM7zACuDZWWccJ1hhFVmSq:0:0:Skippinç anä*::
+u1-BF:$2x$05$gg06jYgLOe6R9LXvn9MvVOk7ewBlr6PCB/bVnOrFc/KJKbqtFF0xO:1:0:Skipping and*::
+u2-BF:$2x$05$EJC5qMP4Lid9eNUiCssoNevXImyzadaKDobZkuJ/8zZAkWrCYx8bm:2:0:Bert$ErîIE::
+u3-BF:$2x$05$aYUATM8SCJDG3aovaZCQz.zuSL9SfR9BSm1owBv5.kCCMQGccOAtq:3:0:Bert$ErnIE::
+u4-BF:$2x$05$uBXyL7ox4I8Mkvf0iIljNOFa0Q73cu1Jp4aA1tmnWnFTNeoHdM7pO:4:0:bert*ernie::
+u5-BF:$2x$05$xl6qujvVV9cduT4wz7pR/Oc.mhzEFXXS.Uq7ZHxruz8BreRYNeily:5:0:late*night::
+u6-BF:$2x$05$pzZN40o/2KdHRWHaxlw5Iulub5rS0Yql8ZIy5aSTFWwHkPWLWUn3q:6:0:::
+u7-BF:$2x$05$9JbedftOVyDn7PaYN/O3lOmrnl/wLcQBr9ocCOzM3U8imxGoGcFxW:7:0: ::
+u8-BF:$2x$05$Y9SQ5ega24NZLVgnMHK.bu2eZrl9YLrI6tUIwepcS0NFP9dOztqUe:8:0:1::
+u9-BF:$2x$05$zjhECUftyk3qqJt7I5X36eNd0EQJwfGMXjkcRfvqohQTZ3i28JwOG:9:0:password::
+u10-BF:$2x$05$S8UJccfewOUVClfTS2NK2.p5WJUUXW79LpPNydIf/rrx7So5zr9Dq:10:0:test::
+u11-BF:$2x$05$Lj01Ia1UFUzjCW8NyWD81eNeAzLvRfYWJ96Yo7rk5jtx0.HYDNTCi:11:0:late*niçhô::
+u12-BF:$2x$05$i6MT1yfumKUIgb8HLQ1zP.3ipA4iU8Yq3qAVh36s5uBiU.9/Ftfga:12:0:hello::
+u13-BF:$2x$05$EKQhY2JWmRM1XkXGm8X/3OdEl/coemedYFBLy7vtCGdmiYQTtGOBa:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$1mzfoFcMDhqS3dFiijwiZOnPCNmdkud6V8oMCyD26lBox/zE1k29i:14:0:!!!!!!!!!::
+u15-BF:$2x$05$2ea9HJSy9T55tZ.KOgS4xOmDz5k/TJ96IwHK.uHmm.5OUyJjrOSc.:15:0:ttttttttttt::
+u16-BF:$2x$05$hFa2hzRASDadB9OeZyFj3utsF6SLIz.BjRLzJOQwPTqZPhh5eVrgO:16:0:±::
+u17-BF:$2x$05$osGYXaS1kcaodJdPjbxCuu5kwWaGV15OmZdJ1/sxyPcHHO6DV5mqq:17:0:pass÷ord::
+u18-BF:$2x$05$mPL70k9cwSaTHvqz/.nSWeYRf12HSxOcQ/YtTSjFpS0nbnJABf34q:18:0:ôåst::
+u19-BF:$2x$05$T4Dc8tqJ8nSGGVi.UNIzneORQ3QkCA90RZbVi4vn07jnDzTS0t2sa:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$EwRCky/rgil2npSu98wCfetAJPHI3wEYzaEbPPKLi.nskjW1XsqwG:0:0:Skippinç anä*::
+u1-BF:$2x$05$MrdKLCgHCc7mPNHsOX7p8.OgOd89fT.QqWqKSJRWgAJfTgI21vicS:1:0:Skipping and*::
+u2-BF:$2x$05$gJfSWsP9APXLXuINJ4QiaebWybq2TBGbELbQaAPYZLfk3bSnQqYnK:2:0:Bert$ErîIE::
+u3-BF:$2x$05$lrzqnuYVGjamXNO03yHgBObS.0qULZ8tE0FK4G9kxpPH24e7aD22G:3:0:Bert$ErnIE::
+u4-BF:$2x$05$pY2bf437avp27F0IdK8QieJXZwrQ.YvIeUtaRE30XB/gMoShIY3OK:4:0:bert*ernie::
+u5-BF:$2x$05$oozmaT46d4x1u3hWfW4q9eLmWsFSWmT5TF3t0srIjiodwD7wsQAAe:5:0:late*night::
+u6-BF:$2x$05$0lmpKZTrJN7z6sX0J9dVdeD2YtuKzd2Lsv6gsQvdRZa4K0DnJo95W:6:0:::
+u7-BF:$2x$05$CXZi4/oluLqs76VBXwtGYO4fqRJc3Uwbo.npqGcrEC8PeHhm/rXAC:7:0: ::
+u8-BF:$2x$05$8aKBB3bDt39RQxZT/TUMruSDjq72hh7g.zs.9XwoadgfEccSYcfb6:8:0:1::
+u9-BF:$2x$05$vKjNqfIo2SV3CdQ8DQW0XuQMOYG6e/e.iDyBesjv05GR88MS953ae:9:0:password::
+u10-BF:$2x$05$MA1hmq8s06yc5JSVJAfB9.cakfblQ6UqyLi1U7bO4CKuKEVsis2T.:10:0:test::
+u11-BF:$2x$05$31oAhmuKEZBV5nuIull17O1DyIq1i7buNofk1u9m8B11c2FCmTwdS:11:0:late*niçhô::
+u12-BF:$2x$05$WC3R4To3.jAJ90cM6hbOIOO8rwGHIdhSYlN.6bVHuvf.WkWGvjeNC:12:0:hello::
+u13-BF:$2x$05$cGwGZoil9Vet7Bon04CWvebf9Ex7s4ULcdlZbOQdr2JDdxyNgHoH2:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$giZCxZlZFcxzlHLTDPoiWu1cF515EGchmV9eN65kKufiSGUX3ZVvu:14:0:!!!!!!!!!::
+u15-BF:$2x$05$Ku30zbFpnOy8mpwUJEdSqeVR/jyu/ezoJSyDTTbmndeF8L3Lbvjce:15:0:ttttttttttt::
+u16-BF:$2x$05$9XXdsfqyQ6UUUDaFzIchXOgivj6IZRUG9aezcjpX1ZYSt7aRI2q9m:16:0:±::
+u17-BF:$2x$05$PX1nuLYDxa45Vdfutotz7O/zGZCa.AmPmeOylbQOFWuthjvmdEm2y:17:0:pass÷ord::
+u18-BF:$2x$05$sih2iAdjZeowlLLNXBmsLeJjvviEfvaY5AtMYFKGINNCo6Hh9CNoS:18:0:ôåst::
+u19-BF:$2x$05$J7FGNZ6XCWx0KOFBLx6h/e3yA/TfIrpuIjiJxqo21L1/ReLjuaOrS:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$.aqjTcrcuFjSEZ.wTFU5g.Azv5wMLNS7FV8kh2j1OsXJWSIJ.YnFe:0:0:Skippinç anä*::
+u1-BF:$2x$05$.PhTCJwRTI05wZ0GCindD.gIeO7.0E4zlWIRwpXpg31KRLxo11q5G:1:0:Skipping and*::
+u2-BF:$2x$05$so8mVe83aL9G23S1DyvvfOTYy/cv0nlCL844P6PxIA/z8RbKCMr2m:2:0:Bert$ErîIE::
+u3-BF:$2x$05$V0aMtFBAvL7H1s/nn62F0uCJpw79vXHgYhwVo3ZK9AjkR/32iBTyy:3:0:Bert$ErnIE::
+u4-BF:$2x$05$3EcXRh43kjiXEK7NpzFKlei3MXAIThV41LVAj8SfCwTH2DhB5IbN.:4:0:bert*ernie::
+u5-BF:$2x$05$9vEG0VPg92I/odusajM7mOw47ABsXcNkpIQhQGN/4rcNFTHd8qYiO:5:0:late*night::
+u6-BF:$2x$05$6bovTe.pmE/cWVTaMQ1zBOD7Ts3EVfT/lcdAS757cokufb/DdR7S.:6:0:::
+u7-BF:$2x$05$.dv480kptVTt/q/q8.DG4ugX8tvw0j.mS6DRFsTkmpHq9KLaizHoG:7:0: ::
+u8-BF:$2x$05$Rooou.YLegO1poJzwZtjkOp5a.sXJNhryo.9oLQIY8urPMbcFpeGW:8:0:1::
+u9-BF:$2x$05$NlHH5MbN1T3topiwQ0.eMO1Rav3b0347bZt.Qfs6o8mbx5briWTgC:9:0:password::
+u10-BF:$2x$05$M3oKV2zTG/q9SnXRlp0kO.fQJKyd5X2YwOy/xPNf5lF5GrSYXW8lq:10:0:test::
+u11-BF:$2x$05$ndmGLoypQsmvS2LpZAP1s.9bb7hSP8j5bztVFdpFqvy9vesUpAcJu:11:0:late*niçhô::
+u12-BF:$2x$05$GImYLXWsAZRqYX.DNUAN..LMWRbWRduqfU2u.p/KzB76Fc9atvnUK:12:0:hello::
+u13-BF:$2x$05$kUwwwsyKHPBAXEKLXo616Olxhi8K0EFGbhd8xYT8KoX0IpDCyB8oq:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$TrWEZyYfmHYoi15dPdyh5eiME59Q4e6kJ0GpuC2RK2DEKqYQIDROW:14:0:!!!!!!!!!::
+u15-BF:$2x$05$T1FpSQtbfDwnOI5wUibyYOo28T8qFSZehCbTFs5RvdhHOW8puavqK:15:0:ttttttttttt::
+u16-BF:$2x$05$QJM8FIHSUddmN1vFq1LVl.VcBrOdzptYiMy7j05mv4vatYMopIrrG:16:0:±::
+u17-BF:$2x$05$8dw6aNdwu3xouNjX/SFvF.oI6YAmlB1gcQSUlrqy09PiGEqmglQOa:17:0:pass÷ord::
+u18-BF:$2x$05$4mRQU8LApr0VBbdS9Fh1LOP4q80P7XbgYRLXbowRIbXjs.epuBQAa:18:0:ôåst::
+u19-BF:$2x$05$3OmpvCXZ5qZkjaQnU7abAuZC5.aZn9.IOYHOsvg/I2RVquXb710Qe:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$neQMjla4L6u4gNxywpn0Wuo5JSOLJu6FTM4jVfkYTBqQrMr4ZvZYS:0:0:Skippinç anä*::
+u1-BF:$2x$05$yok89Hi0fCWUShvvMgMt1ux8HZe7txWoO.8TZldfeVAVFsMZ2jtL2:1:0:Skipping and*::
+u2-BF:$2x$05$sSy9w8pUxQKvRx6ABWEVGeOiLpxwl.79QCxAFFGqPBI4zyFT7mTfC:2:0:Bert$ErîIE::
+u3-BF:$2x$05$FTyQ0csqRAMWfsADzv8UUuWtaAortRjIRd4B55umMBpObTDldEFyG:3:0:Bert$ErnIE::
+u4-BF:$2x$05$im25k2/cEX0CLKUBLTeWUuxcyPL88w1bsp/ETSVzdrynaMapaKLoG:4:0:bert*ernie::
+u5-BF:$2x$05$QEl5QfkxEciG066aM1PpHufonNUoGIq4ANA.dIoB3/yXRapVPxwfa:5:0:late*night::
+u6-BF:$2x$05$X.fa03oygTYAvZL21aaFMefQjwUTTS.GMFW7qkgCOiJzUvIWgyN9i:6:0:::
+u7-BF:$2x$05$jGxoHKPQveqrzKcvUzbJ7OvxstOrT5ta00rzruE//0JJnLunQZ6wi:7:0: ::
+u8-BF:$2x$05$VYCKtikml7pk2ozOWGp.WeY86569Y8LdAyHUQHMO4wDSliq0exRl.:8:0:1::
+u9-BF:$2x$05$Ql.hln5jgAiYAEfUP50Fw.7Tz1mlYNQdHQmys.nBKdKf/yaDdE4Tu:9:0:password::
+u10-BF:$2x$05$M/3SUVfv7j9fBNugPt4LE.dU8U3CF4opM4PLQlWbQUL/zvlMzPlNq:10:0:test::
+u11-BF:$2x$05$TeleL7x6GLdqUZQplwNeCuTpftcrYUlFrIeGaOVpagtSP00N94ike:11:0:late*niçhô::
+u12-BF:$2x$05$91K3GR1oxDdyNWoQz/1.GubwZNwSttX9AAv31907KihpNaM4ja9gO:12:0:hello::
+u13-BF:$2x$05$3i.VDndxogGjI1g2Ht0eu.f6Le0rq9E1RLeknfaCorQpbgnvyE0C.:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$UQJz6hkO1GaTGgFJJXXDDucC6taTy9nUj3JQU/sIhO58CqAz3pDzK:14:0:!!!!!!!!!::
+u15-BF:$2x$05$dEOFTBkETP15fKRNf4deNedLqUnqibkmVjwObMZEwWlUyNIrnNEgm:15:0:ttttttttttt::
+u16-BF:$2x$05$f8mShPxQZFcZ08gwCVnqTuWHOdxkQWukwji1a6hEqyaOGrdWZ8j.i:16:0:±::
+u17-BF:$2x$05$C7vvWbJesJ8PU0p97lOROedLnsVSh4gNkhOKgQm.XZv2/3oTyX1bi:17:0:pass÷ord::
+u18-BF:$2x$05$05ELXm644kFwk0g/tBVYgeu9u0UufyOiAERwiuFABmyvqF.CYBRm.:18:0:ôåst::
+u19-BF:$2x$05$omY2peLiuFMnR6nXC72Eh.Fmtx.4ykZaFYX1zof5oORBimLirFmOi:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$LAMXRkE6C1sej.Lv4rPtCuw54VG4OwDSmxvRBtXKeYm6H35IEmg9.:0:0:Skippinç anä*::
+u1-BF:$2x$05$YaOeQWMX2H1S8FNC8XPFMufBTSbxmTF5A7a8JFVaoEUjxt/B4L9C2:1:0:Skipping and*::
+u2-BF:$2x$05$fc0MMYzU0olYVkgZB2K13etWvJEULOnqAJDg8OnRQMYdi8CbkXVui:2:0:Bert$ErîIE::
+u3-BF:$2x$05$BVoV51cLihd1/d8LOW6gwOJEz893/wlzVOsFp6RAsuvemBB/pdfTW:3:0:Bert$ErnIE::
+u4-BF:$2x$05$5W0gcW0O9EAgHtmiGoYxFOd3jY/vOoLDosnO5t.5q.8kZSbP0Ak6e:4:0:bert*ernie::
+u5-BF:$2x$05$jPKGS8OITod8IjYgox1SguOXzbw8mmX9v8U6hh40C/B9ge7YqrZ46:5:0:late*night::
+u6-BF:$2x$05$sBGYH1Q.1.nALAEk5Wa0a.vrd.S1ICvYgqD4jf/ULU1qF0X6gjuPu:6:0:::
+u7-BF:$2x$05$Q3RbSS2vpXF.kCcPUZOj2ew4RuRiPIR8nNCllMazeHKjB.ZeVMmvy:7:0: ::
+u8-BF:$2x$05$C/kHe1ZEKjG17..UbuCyC.T0cQgLdo9lcHAsEu5P.m5eoUqafPsUa:8:0:1::
+u9-BF:$2x$05$KKYzWFOBjdRQHyeo11fkYOkkaGnKQ3/yl/TVMmaEiD.KljOeS/yWe:9:0:password::
+u10-BF:$2x$05$NmjyyJKy7.bN5vUc7HICcODR3YGTziLO2w1ad8vX1QQgqTVt4Ltrm:10:0:test::
+u11-BF:$2x$05$d1trBqmJIsxm.4gLB0rDpumyD8TT8gCgOUHXXnc0COQfBD/c5ZtR.:11:0:late*niçhô::
+u12-BF:$2x$05$vEi0MYmS8LhDVLjCUQvJq.bpS59Dzfyg3PrqKobu7yyS7bdVRnhLu:12:0:hello::
+u13-BF:$2x$05$PIfif7nqEl9yN4SOdyYrx.awTXCE8KhOSa6qTaFfsElNMRe3ao37a:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$c1S0wjwCExNgjbCouGFNg.SNEbQhDFJfrJzRXFE7R08W2wgEppU22:14:0:!!!!!!!!!::
+u15-BF:$2x$05$2.WnY7GbsSNacNCF0m1DOuT2oFXTMsE5jnADtqykD6g/u1Ju5k0lq:15:0:ttttttttttt::
+u16-BF:$2x$05$ZfT09bLeZOtmI6/u8C2SKOzgW6m/FfrZr9IGBTQ6FTCvomGJ9Lahu:16:0:±::
+u17-BF:$2x$05$L0kUN45k5yA/U9YXrNL7ZuqJU8h/yMuqTCKvD25nPE2YO96Cmj3F.:17:0:pass÷ord::
+u18-BF:$2x$05$JL2ZxUtW5dSA0K9b5Pib5u727IH3kCehyYY1mkNxb8/I7erbwjmEK:18:0:ôåst::
+u19-BF:$2x$05$MuAoasllhSBZzmtm.FgyUeDc4JlS7h7rx2HQK04/yzRPXtWWFIyPG:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$fs3vKM.ecsXKSIItOVLy2OFg93YN0cAMe7.bUwgm/XyDCBNzaH51O:0:0:Skippinç anä*::
+u1-BF:$2x$05$90VbJGip9tfuZAxga.Q1MeIS0KwTrR6dWrRD9iIvR6iaEY8sTUSQO:1:0:Skipping and*::
+u2-BF:$2x$05$gjwqRdyux3g6bhyY8KjVGuOc.FQRXmz61gvhiIgF6i.14LARKebXa:2:0:Bert$ErîIE::
+u3-BF:$2x$05$JzpRv9Q/0C5zIMcOlQWGFuHappz.h.KsalJYuprGmMBVTgdz/H7Vu:3:0:Bert$ErnIE::
+u4-BF:$2x$05$UgaewHyJ2oxsTlVA5djGFuYm0miA3zvJXSrdpI8zK9vvLoUzDakFO:4:0:bert*ernie::
+u5-BF:$2x$05$0/NuNpjzQVL9a/hRp0FbxOb4DFE6b6sfZY4jcKlC1RfU6OByHcyEW:5:0:late*night::
+u6-BF:$2x$05$Vkc.GTrNBvK21LsHdC3m1ezGGbrInYHJTtVhJNe7JdmFYUCpWbT5m:6:0:::
+u7-BF:$2x$05$v0aY1NsAMYJisidjZl8Q2.xI03go.bJEpQ.V2JTg1EWo0vykQQC1S:7:0: ::
+u8-BF:$2x$05$VUrtNm0Jt0XkYwI1FyjfHufPVkUqCtY/6Jmr98x9P3peyMIPOV2CK:8:0:1::
+u9-BF:$2x$05$RWbv0EXI./JtlZE.PnZF.eqcFExcLWcJ/CmHlCcHbyc8xKgwJpe06:9:0:password::
+u10-BF:$2x$05$R5ebQBUVImjvsKK6.XtcJuPR9LrSIWuved1aIX.KobcAmrHvtNmpW:10:0:test::
+u11-BF:$2x$05$qM1n9QVLd/IjXuUiuCyIluPxqWTtKBwRwrZ4no1gKWtTwgVJ92QkK:11:0:late*niçhô::
+u12-BF:$2x$05$d3VmzgES/iHPE1NZhYgh5O.OHH5Z1Dt5Slzi9sBE5mvByD3r98lHe:12:0:hello::
+u13-BF:$2x$05$8MPnGPj9G35c5NnHP3I.KOjcplCRfkurDnYYWIuXlrVXtcl/r4fB2:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$tv6GNnWi4r0e9OpcKkOP8.LECrFvfHWA/yaOEITWXDGfah8kJUJEm:14:0:!!!!!!!!!::
+u15-BF:$2x$05$jMPu6WEDUk8H5L7yJxM.HuiedG4/VL/Lph2VCyB4zCPWFzkH58zay:15:0:ttttttttttt::
+u16-BF:$2x$05$tH42v9P/EnIfnczSZw8/xetUbD8D4VOVH37O.G8GUrFdeUxhtZJlq:16:0:±::
+u17-BF:$2x$05$rBiM2xQoaqAOh12X2zLUcuZaq68PykL5pnYmZLkQK4YatvKxtu3R.:17:0:pass÷ord::
+u18-BF:$2x$05$1M2MMQLKIRVquC0mCjjNWeIZ2akptae4/Y8HIyaP5qt.yNYPM8x4y:18:0:ôåst::
+u19-BF:$2x$05$jGGRFbIaYY9PqRwVlB.uOeSUQ1bI7dD9kcqmkGTtbtuLKwfuhPwkK:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$pG42U/aNRYiJFJE8W08ZQ.RIDNVDl53pJHOGZe4jOI0.DxOB.oFHm:0:0:Skippinç anä*::
+u1-BF:$2x$05$8CAlLB5PpYnKakNMWjv4ieNqTHHKK3L0hAeITlTZP9BKsaZoj/RNi:1:0:Skipping and*::
+u2-BF:$2x$05$11UM2SKwzeSs.i6774AHwOOeyFCuYTOQMc/3WfdgGtHXkdxltpSuO:2:0:Bert$ErîIE::
+u3-BF:$2x$05$2BsvF/lCJ2lK8cHfcOVXoeQC5mB24LEHlyLaCRW5Lp.QvL6UIfoVW:3:0:Bert$ErnIE::
+u4-BF:$2x$05$VSUJlqgmt1FoqTmTOFhNfOpXY4krfwBf2BXJLa2IGbznw6GBUcyF.:4:0:bert*ernie::
+u5-BF:$2x$05$LZrwY60gjQZIROE2Q19ddeG2zRXokW5C4QdSwwLJTUgoDNdgAtm5e:5:0:late*night::
+u6-BF:$2x$05$3BmYb.HzNaSI4ng3lSqUL.b/vhX5rGFJ2s49VR6numbI0gtG/4/Xa:6:0:::
+u7-BF:$2x$05$CHZPAG3i2oF6FUqeU8RJA.xRPf4BgDtyh1ordcRZvQmlw1Mva5ouu:7:0: ::
+u8-BF:$2x$05$NQk/gtv1Of03lHuCjIR0dubv0NtYjMMktekwBGicnJND.sIZ6a0qe:8:0:1::
+u9-BF:$2x$05$MoggEhsyU66iOUfhePMzduDzI4MC3ueFkODf3aCHB6ZAAZ7VUJ4ma:9:0:password::
+u10-BF:$2x$05$Wv1LTcJMHg1pC9j2U1CiqOsU8osd0lB3HAaCVQQ6mrxemIafY/566:10:0:test::
+u11-BF:$2x$05$O9X7JW9lJPryEIsvRqoZo.lmqPOgNLhHTsmANPLXMg8qh4h2ZFVvy:11:0:late*niçhô::
+u12-BF:$2x$05$dAdTkY9vNaURuZRs/r3XwuNHUViV/dU5M7RG.Gk26Jh50DmgHJ4Ce:12:0:hello::
+u13-BF:$2x$05$2ZCjKLmqr5SzMnXzkuxvKuw5v7530844/PB9Ae3hs1hRj3K28kQK2:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$xj/nVHz4IZODK9UQTadjuuBRdcby357s75VfANGCsP3tgQiRZLKvq:14:0:!!!!!!!!!::
+u15-BF:$2x$05$AciNgA4LBFn8ZaCHUVTDZ.Y7B1Q7pH761.W8q7xo.RUPN0Izw/Thi:15:0:ttttttttttt::
+u16-BF:$2x$05$rQvLwFRPDQhXFaSbHvcUye0Nl5kfynA2jCVYUadsWSm138fzxtAf6:16:0:±::
+u17-BF:$2x$05$jepVsVNElgBzOrMGroit7eAx3AGwAWtKHjkrwiM.hh/Q59dMwH4Be:17:0:pass÷ord::
+u18-BF:$2x$05$9W1LJdpp7CKPdwimaMkHDOrOEC93jlNG4ExTnr/1Niuz0d9.R9xVW:18:0:ôåst::
+u19-BF:$2x$05$G2799uYBYwgQdBRWfvnna.1gvqw4WOoyiO0D3ZmrCfndktA3Iuplu:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$sNr3LFMmzWEki3nNMKZe3ediufjxkouLTvif8MocmW5kFzoxxB3V2:0:0:Skippinç anä*::
+u1-BF:$2x$05$Dtb5fRW3X098dEKQZEq3puJPXcTJrLZQzvFVTAFaJhuD5tjY65lP2:1:0:Skipping and*::
+u2-BF:$2x$05$dHP7XEq3ipfxvXxneqi.I.QE/muAijZCEbAODhcYgXeaG4ImV42yK:2:0:Bert$ErîIE::
+u3-BF:$2x$05$cTloxTt12kWG.sHqZWpSM.kVPr4GIOh/5KQpbLaLKDWIONBapgpOi:3:0:Bert$ErnIE::
+u4-BF:$2x$05$zhaobbKXk0khcGS38X8A0OgGzFspwaCssse.ZB//pwapR0Ykd2Jjq:4:0:bert*ernie::
+u5-BF:$2x$05$h6LLYoHpw0Uq7ie6YnHMS.mZPANFI74au9CGlOKWO3s9A03f3kWOa:5:0:late*night::
+u6-BF:$2x$05$lshjX5wrp/Rk31iDOWqDh.UzAIIbMhIbnEZZ1k4JvR7XDmB76Xiji:6:0:::
+u7-BF:$2x$05$bkvr0kFz8fmAaxgVdABq0OztKYmLqjQ8XtjV75NsAOP87OiahRlx2:7:0: ::
+u8-BF:$2x$05$oCy61G/ZcQYMKxQOPCm37eTbJkHsXocDZnBAjvh9CYjyObtIxyCTm:8:0:1::
+u9-BF:$2x$05$MID.XORP8yNcDIDWcrwxguT6s4FqyH7WKXkxyHVz0gErWcAineKw2:9:0:password::
+u10-BF:$2x$05$vfOBo9NabD7QjTkWcAMFbOky4dUXl/T/zK8p3vfaZDSb4u6cVRjhe:10:0:test::
+u11-BF:$2x$05$voRtprVo9HcsI65POcE4Tu60VZ61TjIFLeUuCPdCIcsr30qBpDKxe:11:0:late*niçhô::
+u12-BF:$2x$05$L8IySSOPnRo2.Nip3qdMJui5nZ2.6dPpbRnvcin2wduj7p0zseVQm:12:0:hello::
+u13-BF:$2x$05$3YyWxmTuMXgpKs7wACfJbOtQhz0wWvemK7TZ1ZKodVBxSEr3aTtfi:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$.FSzoJlyykQ2vtXEKwHCh.XgwWkGPqKbSVqrlYPKv5NPq5C898flu:14:0:!!!!!!!!!::
+u15-BF:$2x$05$pQb3qNoMNLDhaCvNjzTb0uM71vP40s9fwIecWVSHwyDLq4L.lRgou:15:0:ttttttttttt::
+u16-BF:$2x$05$a8lsWt8tRtISrB.chdrZ3uTaIiByK0Tf07jEyNX833gS9Fg94M4Za:16:0:±::
+u17-BF:$2x$05$/YrK.PIZQGavjPdRh4i58ue1SNzbq5f1wiZE/J45xxnJ53Yp536bK:17:0:pass÷ord::
+u18-BF:$2x$05$aJpwsnT1I/PceivucGD4H.7r2cQDyY.iIFRlt8avArBLhlJO00Nbu:18:0:ôåst::
+u19-BF:$2x$05$ao.bxijv9oK9uxU83.kpOeSycXyyRz1odeu2CdHTKhBYPbCcyw6Dq:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$PkEAm/z9BZdn8LeUpIimIeqjyOYMfuC6L3wZ6iTwpTwZhNl4Q6Hlq:0:0:Skippinç anä*::
+u1-BF:$2x$05$SISFkFJ4kS/0PHb45LEXV.qaNMae04gQ0Lkzp5mTnRvNU6iQi.TDK:1:0:Skipping and*::
+u2-BF:$2x$05$luo7hNRe9umDnyDqM8szMelkaM4fv2LqpEE4XNd7SXEbyT.VSQ9wG:2:0:Bert$ErîIE::
+u3-BF:$2x$05$O0YuC1nCjqesOCptxpp0PuYSREFNTow1GdGJ0FJgMg75uQDvTk/VS:3:0:Bert$ErnIE::
+u4-BF:$2x$05$eJxcQCaXEZgsIMdtl0ZU5ORFV4JaJ6rPS1gLabEWMnXn.2sQpt6QO:4:0:bert*ernie::
+u5-BF:$2x$05$gz9NefXzyqn4WHoLyW6fvOr7uOxxCWWS.IbhN.V4V8XCUbk.ALrg6:5:0:late*night::
+u6-BF:$2x$05$0Q0TKvx7BLf/Iey0aLTyq.2zBLepLb2W8e3LsnCx54DkG6vetft06:6:0:::
+u7-BF:$2x$05$Gnqfdvx3FCSdfI5MJmfbjety7MMbNTCxHYUGnAl8TAHi5YiJ5KJKq:7:0: ::
+u8-BF:$2x$05$NaBa6mOcFdMJRWixRty8JOcJLyurpemWwIqkCYIzHoPq8pA47gkCe:8:0:1::
+u9-BF:$2x$05$iB4LYTLGaVR6sAcLUTJsk.hu0EgaY4t4gzeIIglCT372A4fkd5isu:9:0:password::
+u10-BF:$2x$05$X/nehJ5.hxve2ejGBMWE2eaRZVHvMk7Bfpdcq7tJVsRRVB0xqlDvO:10:0:test::
+u11-BF:$2x$05$iU//YsPCFbz2E2P5urCAbeBYcdy9LWeWZoEh98iVTwv8q3DUFqMXK:11:0:late*niçhô::
+u12-BF:$2x$05$MNM2BhFXxzBfBbE6CT.OSeBFqo66r8FL/6GO1zLOfseO2h6mRzDfm:12:0:hello::
+u13-BF:$2x$05$/ufijJgy0pUehx8P5gG1ouaUgTJRDDQ1YvjRQep9YBkygmBnhPmgy:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$laa.QKj0iwqCWMDQCc6p1eIIpnxKJKRvEYCWn7gqCmCZUDOCxH3ZS:14:0:!!!!!!!!!::
+u15-BF:$2x$05$P0iny2DGL5qKgSMpeg3HqO.rSCGWpzyq8gVtpql8xRlsrhgJ/XMW.:15:0:ttttttttttt::
+u16-BF:$2x$05$/t72OpW80DhONZEyKoFYSOIEhBDk0/MMlqDnf3kNOFWu.lqOIQZXq:16:0:±::
+u17-BF:$2x$05$/O93GBliPq15ehFIaJWkOuTndV8cRbeFCX9frdSQ/6OdlDX9AE5cG:17:0:pass÷ord::
+u18-BF:$2x$05$7KnmZGDrjDAir3C9oI.g4up.bzC25.i1O5i6mIDnxDLCsBL3haUAO:18:0:ôåst::
+u19-BF:$2x$05$j2xiDC6BCG.8PsDaCjKVhOXvSOlJDrjWKBfXgQHdodhSfeQpjZWcC:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$7StglOtWcV249dBvleVbqejFPYz07JZkLl35WEe32j64R71SfYpEq:0:0:Skippinç anä*::
+u1-BF:$2x$05$E9LpSP4twvDYaUw8LjeSceeV1lykyN9abPxK7QGv.v.5gRdjhWUwm:1:0:Skipping and*::
+u2-BF:$2x$05$6LCBS2Grzzx7LGYDIs1cn.vuwE6fBhopVSwntaQ7lOaPVkYMaMKMm:2:0:Bert$ErîIE::
+u3-BF:$2x$05$HPft7X7hkuCXJ2wJ72xwYOld/w34w/jdIb4JyLhTHWaO4N8Oe1.Oi:3:0:Bert$ErnIE::
+u4-BF:$2x$05$7GFYIbA69lVbbbDKC7JbZeSYv8eXvCv3NG9HcwGLKqbhKIbWDcjmi:4:0:bert*ernie::
+u5-BF:$2x$05$/BHzOtRT/9nWfy.Bf4Sz7OEdZ4mDtVkfEzcNzxIz9k87MO2oTcD1G:5:0:late*night::
+u6-BF:$2x$05$oL47pfdjLdHKeLCUCjTOBuxD33rlcR3CXuVXqgvKO4JTg5sHGa3Y2:6:0:::
+u7-BF:$2x$05$b0WJSbM.u9d6sxW6lUSXi.rltiv14tihMBuWS.G1.oLZXWMdjVV2y:7:0: ::
+u8-BF:$2x$05$4f4lq0j7aLSPImChx6ZMsuZS2w2Fz3ssN2XvTuGpAoScqcIZ9NAty:8:0:1::
+u9-BF:$2x$05$CJyyB1MvUxwDsgRsSZY99uI1ttYWGRJ1I7Z6jBR7S0VtmhUqz5U0C:9:0:password::
+u10-BF:$2x$05$0Iy.l9WKBHPgok3zj4.QuO/Q4EWItkMuL2/PHi.11XL1HqcGqVcFe:10:0:test::
+u11-BF:$2x$05$V/jRJ5Ez8wJNqwyKM5p8x.6baXOYitIYwvFmqEGk6ngTbpPRhR/Hi:11:0:late*niçhô::
+u12-BF:$2x$05$gRR9ny3L2eZnuThK0SjsyO7vYpwalMdStV1uE2MOB97yDrq0n8o3m:12:0:hello::
+u13-BF:$2x$05$LksmW2dYC.Wn3YnOUDVp8Od9C0kImmAHR1ITb1tMVn075f4DPhTvm:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$mHJZZrn6zthHbFOZ3Uklre90eRcnWEeS9RqHwkX384zjyS5yMMivm:14:0:!!!!!!!!!::
+u15-BF:$2x$05$PoKCiL6WadK9dMRp02DpOuJvP55isKESjGT565sJcwZqQEZxTCaO2:15:0:ttttttttttt::
+u16-BF:$2x$05$bKhoy5jnNzpEf.fsnOWErOhMDZFzdIGnjos7ktYFAuqFIZPDVc6ge:16:0:±::
+u17-BF:$2x$05$zPlJZA8aauCeht1CSAF.2uEUb6KguRNronZ8rCgYRfXhePYZskAPW:17:0:pass÷ord::
+u18-BF:$2x$05$zSkaRvmzZpJZgUTOEL0kx.JwVWUD66VrKmpcPqzOxKQO5T2ZIyIv6:18:0:ôåst::
+u19-BF:$2x$05$Zm4VZlxM5aYcort9fsLfweI8gB6cBCtjYXAgC.1jodDl.A5V1yW72:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$Ysd9OKgZjeDcdBLxT2isOuxd2EOOh9d3ChwUl.2LQRrNKuPmbLfG.:0:0:Skippinç anä*::
+u1-BF:$2x$05$LabbAyqVay7IAOL5fPKJZ.8pkfYlaAA730xRbbjyhZfaKHroFbq12:1:0:Skipping and*::
+u2-BF:$2x$05$TGIYtwPo6prLacoBz7NuZ.YVXW878pkbJNlnJUn3ODslPJ7k/qipK:2:0:Bert$ErîIE::
+u3-BF:$2x$05$6LaIxdJUDwFCpHX/ej1CleqmS8lisYVYc1HNKldH4DLVBSIKalufy:3:0:Bert$ErnIE::
+u4-BF:$2x$05$pktlHiD4OrHyUoR.Ycbo9u8KoOz0oYXp2uxSp/Y3TNjrCl1oXXZbK:4:0:bert*ernie::
+u5-BF:$2x$05$epqHQEXaN2J7FX9qqfLDEe3/5cS9oTl3opu8ggAAQRgqZW8AQzwCW:5:0:late*night::
+u6-BF:$2x$05$vlmhyW86AQwPwHvEljPq8.OpwtUBwNg1Q.FP8/B19yIuj/HihndWS:6:0:::
+u7-BF:$2x$05$Quwo.lOXfcF5irtsT5uU1eI.bUA.FFAVLwEwdS5kACqk4ZuHNpP0m:7:0: ::
+u8-BF:$2x$05$3wrROzuEIIJiKT8KWGzdZudzxCFlSWS2lYtjsQwybQFVVK9nZapQu:8:0:1::
+u9-BF:$2x$05$6rq14nMHa5IKaZOMMIEsKuibIDnXn4WlY6yBqXe2vKq1l30KaQ9Cm:9:0:password::
+u10-BF:$2x$05$OyRQqrnbZy8RZJIhwyKpGO7xygI2lvxqEzP2P1acHtEniucyS9St2:10:0:test::
+u11-BF:$2x$05$d3mKE/Xe4FEjVV6BZF0NUO4Vkt7p2YTUU9Lzlc1c2nRQPjceJnbcS:11:0:late*niçhô::
+u12-BF:$2x$05$ign4T0MsyWukXllRjGZCkOJ4zXQi3lJBr6z1O8LQVnRNMHgkSE0gS:12:0:hello::
+u13-BF:$2x$05$2IGyulH2frb9wZt85QeleOiOVBwhubhg5z85lgrIQt8jJ.coHyTFG:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$PUIFjw0qoFXgs85bHCc.4eP3iKn4zgPlXJhRY3fsFNlKfCo9Qmo1W:14:0:!!!!!!!!!::
+u15-BF:$2x$05$dgW08houRBKNWaT9JA8gh.ssjL2JMo4or7NTFJwTs6VUjHY86frfC:15:0:ttttttttttt::
+u16-BF:$2x$05$UAh0GDMS5.kLkyLIYGzrIeEAfBiCNedymnIY5NQNSd9INTmZPSiGu:16:0:±::
+u17-BF:$2x$05$yIg5A70hJTxz8auyXAOiFe6a2M6qNABqp3yAMpK6BAJdtlNg2VzT6:17:0:pass÷ord::
+u18-BF:$2x$05$QxYX/RnKaSahG0TSijYubek8g3u0fSh5vk7gjl9FHOqbuODUWy8Re:18:0:ôåst::
+u19-BF:$2x$05$85Mt.RgkpFNA8vfShur5ZOQEVwBnJWbqddkcuTnN8ZukCVnSDdSmW:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$tbIvA21i9VlLrXZmNoIVVO.8TrfP9xO32/GbdWyqb9R.PDBX1uOIm:0:0:Skippinç anä*::
+u1-BF:$2x$05$GEZAMa9YpWWYDsZpsoD5zOo3U7O.vHBCMgKmR4D2fssZ4mPxolD1G:1:0:Skipping and*::
+u2-BF:$2x$05$1W12IYdMuMfdfCz.u1R.IuxFeZe4kxH13kps5oddJZRds8he1Pz/m:2:0:Bert$ErîIE::
+u3-BF:$2x$05$VO3pMyIdV/KkZ0ezhdeRD.OqqwIYDtCIdzEZK/x9YwQAtm.FUkXHi:3:0:Bert$ErnIE::
+u4-BF:$2x$05$MvISRAMh5NEiJXfuO7Bi6.g/LiD6UTJuF8CkNtYGzfv.N.P/i6tH6:4:0:bert*ernie::
+u5-BF:$2x$05$1JuPjn/trZAilCQTn6pXNuNJB.YqdmCJQQX2ZyYwMsKPZotqSNgAW:5:0:late*night::
+u6-BF:$2x$05$apI1WB6SrvuzX6LaaoXBqefAh9QbnUilVIcC7JA8CpH46ol3SuOcO:6:0:::
+u7-BF:$2x$05$aAreS//067X//5Uy7lNGHuqguG2riaHnVukH1hcK/lLn0482KSSfe:7:0: ::
+u8-BF:$2x$05$w9sdXImxo62REy8k7WzlFu9Bl4YQjwwzTCi9xLExH7evouzX0tTOm:8:0:1::
+u9-BF:$2x$05$DTiqvLqMX64qYvP0Z7u/ReLYACgj32Y3n9QWB6vtMfa4D1wX5Rwq2:9:0:password::
+u10-BF:$2x$05$hrl7ej6/D9LdcvKLUTqxUeZ5iacBp09fJShugRDVe5ZnFXgA3spAW:10:0:test::
+u11-BF:$2x$05$Wt0Vbv4BoiqtCL4sEsgW8uMmVkU4KgxygGBvMQ2VfFFqB2xZicTSG:11:0:late*niçhô::
+u12-BF:$2x$05$qHjWA/hwWIxlmCQFCCwB1.py7TsCNOL5kg8LXKzaGEmoeXG6XIKFe:12:0:hello::
+u13-BF:$2x$05$8aBqOIbKox4DgAUG.hg0GO0xpxSorvoD68t2zuFV/jkqKEFzp68nW:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$z8u8T7jl.c90AamMM66aP.Nj7HnDPfyT8fYz7cXEZ2ahXhmnuW0Cu:14:0:!!!!!!!!!::
+u15-BF:$2x$05$1duvdZMBsZLluBtAXFTG3.6IExz6CC4W2xrW8z28a4.GFNKpZPU4q:15:0:ttttttttttt::
+u16-BF:$2x$05$G2zBZOI3EvTUr2dsnodhQ.lMknjT.YGh/cc1DhN2RPOMN6otRBTvu:16:0:±::
+u17-BF:$2x$05$M7N7TtfaWrqYEgPEkpQgd.FatchGuLOXY6r9szYKNfT2sbkjo0zpa:17:0:pass÷ord::
+u18-BF:$2x$05$usxHI2vOhGQ/Z1f0KPkQvulclf4JMPC.CZCIXumeODL02sOLkNJ2K:18:0:ôåst::
+u19-BF:$2x$05$.sZjz.0ZoavhLPVGU9W43esHapUYRCWkCqgRfv5XPJybL0FXkAjv.:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$POMSTpMYZr3xe5uJujX6cOHzo8tHmtx4GNEyCodYsFpTkM0fXB4k6:0:0:Skippinç anä*::
+u1-BF:$2x$05$A6mu03VVj.mkCS3oV4Z8bOqV/Lu0yFHh7MpbrW4YKYKNW1LvGEyua:1:0:Skipping and*::
+u2-BF:$2x$05$nPapi3GJewSEADvur0CKjOPdaU2grkJlZ030ptj6xD.NjoW4BQEVW:2:0:Bert$ErîIE::
+u3-BF:$2x$05$HFhGt3KFkXw9qVa1l5WnV.ja5qUwcQyZbzojzNr0J63VAjZ6P9Rsa:3:0:Bert$ErnIE::
+u4-BF:$2x$05$jEQ8gU2wjgVKAOzSxu05i.2LdKrF3EbPM6ulAv9TAbMY40YrnF/2K:4:0:bert*ernie::
+u5-BF:$2x$05$vnOc5.jGv0dtZoOKCoIvaOw1k8x4yzPU1zSDLQVXCTFuAsEBDIXGa:5:0:late*night::
+u6-BF:$2x$05$AO1ToxccPBFuVgqhKE1aVOc79FFvm.5TX5WvLTvC.BvQsdXTwcPvW:6:0:::
+u7-BF:$2x$05$lqT2ZwTzvswkXbw8A4S50O5OaU78rIKKKXnhZHI8oCQCkXuo.dLDm:7:0: ::
+u8-BF:$2x$05$XYmYV3ja09ew00lwkv5YAugpkn5B/gMpgaBdDIubLMpW.WLtUAbca:8:0:1::
+u9-BF:$2x$05$8Rl9AxmUDUKVl5ENwHrzJeORS4fac/fMDahZ0AWUwuT0UFGig/Yfy:9:0:password::
+u10-BF:$2x$05$.w7ldsWgf3F0AXl5bWt4luZ6YvtLAb.rUuW.GjvGrcjLC97k6l3Q6:10:0:test::
+u11-BF:$2x$05$xgDM.a40CcV.mVh1Jd6B..78vDcvHQXH804zkj3wetawBeiLqQ/6C:11:0:late*niçhô::
+u12-BF:$2x$05$livmNflCBpzWXF2y72lFruANLKTPtvqPXd.lYkbok2Niogtti5UWG:12:0:hello::
+u13-BF:$2x$05$6VOpYMBAGDt02om6U79lr.szcVbL0h8CSkfbykp7seFzwwYAmtTwy:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$N6DEGynmIAHHW61X.EYbKOzHGrb00oGGxdIpCZyA8WVv9iNx4MIxG:14:0:!!!!!!!!!::
+u15-BF:$2x$05$X9R5lXHeGGxkQFZx89Z7fumP.5mZKm.jI9Vi.wZbIA6P72BXFTlCC:15:0:ttttttttttt::
+u16-BF:$2x$05$tBcaHYivU.YwVYatT2jNtulrsefq9eobH451IUmwOaEYBhYlTeBRW:16:0:±::
+u17-BF:$2x$05$WQqY2W7FrI.XBn7404Df2uLgqj7dvdz4Vv8UgJUcvSjU20PChWnqq:17:0:pass÷ord::
+u18-BF:$2x$05$NVT9q6wOhPmfBi.W6lTsj.Faozv2MidBybgAMYjjSyM6CJ7GSMxGW:18:0:ôåst::
+u19-BF:$2x$05$tWv2lkw4GvRTAGNyyLuF7OhkkOztb5cxtXsav7HVCbLpdtG36zxjO:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$7t5wt2hd3ZDCsSKw78hFnOqiycGBNY/H4mFTs2VmzKxQ6z6VjWlqS:0:0:Skippinç anä*::
+u1-BF:$2x$05$hPoyd53NBDOHjHG3M0z5uOX.NCkMfr.pzMJTPXZ90fMJg2dVuYQ8.:1:0:Skipping and*::
+u2-BF:$2x$05$8//91HXosQJNUEhkEEPPQOe//HEBdD8VG2uqLqMH1VF9yz./v3Tum:2:0:Bert$ErîIE::
+u3-BF:$2x$05$tiKbZLFIUzHSfQDNFbd42.YPaikJjR/t1NnP21AZkGcYt74bHqSK.:3:0:Bert$ErnIE::
+u4-BF:$2x$05$frq/yLWVrjOrAwEzpljgAeFZrDRCsLAVzCXHWasf6NDGWOzzIDHLu:4:0:bert*ernie::
+u5-BF:$2x$05$8lI7QuT.b6S34ljRHqXOSe67lQgDuUR8esHazWkBX.HRwGcM//lVe:5:0:late*night::
+u6-BF:$2x$05$5z1./Di.fv9IJDFVrQL55ehnUrVbdiIv/AxmWbShonLI.umAO7GcW:6:0:::
+u7-BF:$2x$05$fMOXa3Iln4T3rQZvPBRkOuwxGK1WADr10r1vcpMCSu8txNOzEqrb2:7:0: ::
+u8-BF:$2x$05$y71ZQ.da50hlkGVrAlBHo.fs3vcR3UqKVTjEcoe2Dfj0MxU7yeZYu:8:0:1::
+u9-BF:$2x$05$pw41B69SbjAdlcrTRsaXsuhPwjAKYwKeBjjVTbB8PernHCektbkxW:9:0:password::
+u10-BF:$2x$05$rqHFFF.0XkEMJhyd/rM3PuAIzW2oZzXgVnQJKlKT6HOYxp.75WxH6:10:0:test::
+u11-BF:$2x$05$FX/ZaEa0GLrTk/LoN91RFOwk/vhzZGhTJVs7CmwbIwtNQszypfhNm:11:0:late*niçhô::
+u12-BF:$2x$05$9SaYa.JCcOxWorBN7qXjL.x.vLiWcseg4OuRjvAGROfz11zB9m86S:12:0:hello::
+u13-BF:$2x$05$cfJ0wLA0CsJQRvv2a6HAt.gH/jFEV.T0g9Kv0J.OIyob0l67JZKNa:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$xsTFk28MCUItelbQlaN6d.ZSdha2nZ.mim9zah7NMAtMMVfaa5432:14:0:!!!!!!!!!::
+u15-BF:$2x$05$R7flg1csJATjlbUm5aNS..yRFgkcr/xjJwVxCLP0blhZVUm.lKSli:15:0:ttttttttttt::
+u16-BF:$2x$05$tUryBohD.hyGkoMiDZQRDOOxiv68bKwyMSoW6l95R8dNpofXM0PEe:16:0:±::
+u17-BF:$2x$05$0ahUuLXVpCfg52S63PzqkeaYEnAFcYCA5WEunqRlnAuY88t22NZcS:17:0:pass÷ord::
+u18-BF:$2x$05$JTxKG2slM9dFJkY.RBBAYetb7lV/Hf/FL1vZDGbZ.19gPs3L8KJgu:18:0:ôåst::
+u19-BF:$2x$05$MZZlgdvmzPfHDA9J5HOkou.8bj/bI1MGUVspbgrYBJ4DuSC8Ks6Wy:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$rvMNEofyoKgtXJ3Wbap70OtBqnyyaFXWNpZy7RHDTuSjqY0Pqc1am:0:0:Skippinç anä*::
+u1-BF:$2x$05$mh1SskvFQZVZ9oo.6hB5jOIgDa4dn7ycjiH01i9Yma1OuLT/6jV0G:1:0:Skipping and*::
+u2-BF:$2x$05$Ox0cejQTcADMiCerPOLKj.n033KVlkuz7/lZktT8vboRpx9dWrm6G:2:0:Bert$ErîIE::
+u3-BF:$2x$05$NMP6GJxK5Vpy3WQgBpHR0e6YFWtdwA0sChOVSAnzvECAEQisD7xbu:3:0:Bert$ErnIE::
+u4-BF:$2x$05$gsHKoY7Ck8d8dM3Id7zWZescjmZ9ccdhHlXXpnJPV4R3MSolynb.u:4:0:bert*ernie::
+u5-BF:$2x$05$i3IYNpbLWqiD.CzT9n8eSe.XWlbmzXw4m04mtEPr1F7DDLiMaOzMO:5:0:late*night::
+u6-BF:$2x$05$d1stM4Q04Y0MFdGRvLQ83ecMgmJp.7NfFke6tbvWZReXnekUPJ1ge:6:0:::
+u7-BF:$2x$05$i5rwBJaTwPgtprlJH1N7jezxsUdZs2XinRQCorcu/25ttrNXColkm:7:0: ::
+u8-BF:$2x$05$MgfQ7qIYlv75JtfsvNQef.JIGIVyA7muej7MbTstyjXCdtpwX0PdG:8:0:1::
+u9-BF:$2x$05$8KxkVW1Abb3hwTyGwN7XtuUtsF0YxBhenIpB/EFb7q2rpAbNxT5Pi:9:0:password::
+u10-BF:$2x$05$v6wWxllbADHhBzNY/Qj7Dud3cw9A8WqI7DphVo1jlGcWTnHS/R8sC:10:0:test::
+u11-BF:$2x$05$NCZDJYxSYteWseCywAqxAejTFCE81sjCDlgQJvFISjx9Bk8FRAsLa:11:0:late*niçhô::
+u12-BF:$2x$05$k1IJtgWx6svfca1XijSzIOS/UQU7FFZM3AGdHT0mHL0O.7ozlw9Te:12:0:hello::
+u13-BF:$2x$05$GiJSj2vEELKM7kT4SLye/Ot7iqZgHHDgC3l/92bjANcLNTq1rxRmy:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$0Rp2Re17fmrNCark/duwWuFzVVqw6IjIa2JINtLBVbcmXBEfRnPaS:14:0:!!!!!!!!!::
+u15-BF:$2x$05$DBS4iuhs7gxKe/gIZaHh1.DZDXteP0Sl2JvYbdpAKIF8.vqoKCGVa:15:0:ttttttttttt::
+u16-BF:$2x$05$ScQNCqX3v4fWbyjWEekP/uU6KBzmZORBTD.S69/TkVmeYs9Q2rWBK:16:0:±::
+u17-BF:$2x$05$OxnpOGGVOk67k42i7sesu.gYL71prdZptnrGIAn2icLdyb181H6YK:17:0:pass÷ord::
+u18-BF:$2x$05$FAxYPHiqUuL2ohmmsXtZ2ekmZlW5dt6CMRwXP6.t9odEmQgmxG8XC:18:0:ôåst::
+u19-BF:$2x$05$YL/8QuKpFMszfK239qhTdeiK6zu1OV92W5Ok/ramVujkSOAxCmYKS:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$QJaomMIICnEVcEnF3VbR..eGrZiqluUQbYvuZCuM3myqQGMeHWppK:0:0:Skippinç anä*::
+u1-BF:$2x$05$UKRBId4I1HVPOHtigh1GS.Ibi8lMJWl9akt1D9KIgVJAiNJ1y2Xti:1:0:Skipping and*::
+u2-BF:$2x$05$0gEcezQ2Sr4P8vJyzAE8J.aFLiIUgHd5Fw/C2rK5KD45mD9lcYbFS:2:0:Bert$ErîIE::
+u3-BF:$2x$05$5SUX2p4WhnaXIruzN3fpAe4xQuDG4bJZ9myOyh7PO/kr2hIsucY3e:3:0:Bert$ErnIE::
+u4-BF:$2x$05$WqjhouDQi3vmsCdX90dNXedtw9g0PLj0q17qjGSq7uPNFDmGCGy82:4:0:bert*ernie::
+u5-BF:$2x$05$IhPMNSr5imrYuTGZ9m/XLe936VGFDaZfoshtXYThP9zlWN6RuY2PC:5:0:late*night::
+u6-BF:$2x$05$GnXeFIpzFTzO.IIalzIaX.eAHuUQEdnGXAQSnW4YixnG8FjEAlPju:6:0:::
+u7-BF:$2x$05$0KrZuZzjo2UdBo6n8SAlaupGwRMF963Z5PZYfOPl41tHtL2OP8kMO:7:0: ::
+u8-BF:$2x$05$IxJN/qA49NK75lVkhd2fyudgZyEa0LZMBP4op3QIxLAW2j1Gif9aC:8:0:1::
+u9-BF:$2x$05$UhrSXaYrc1XliggB/cQuaea3JsggD6v.7e1L1X/reA3cJMg7Nhuqi:9:0:password::
+u10-BF:$2x$05$Io9cT3ZF32x..zK1E4Cn2uGmlplriKSwv4vPI77TkIX0VpA23kLya:10:0:test::
+u11-BF:$2x$05$0xl.Zr4LkbhT6QpnF6K3gu9Tm0G9q.iB19tN2PJpMQ4bfeINQVAY2:11:0:late*niçhô::
+u12-BF:$2x$05$zLS8Dmjl49pOw.EotyTHKuIQMFtoOTdC.03xG9dVHsxcUn82TxVzy:12:0:hello::
+u13-BF:$2x$05$5RyBOZTIjJBqOLnd3TY6w.gzv4C/F4Eq7NcNkGIitOfp15vtKUA7y:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$a8yYTyB5PF66uLTUgcVmdOxyDuhq3hQ9xEdjejhCtU1ONK4xpkTpK:14:0:!!!!!!!!!::
+u15-BF:$2x$05$ewDSK6x.rgU2txULk2qAQebIxEFXZ6oYXksMWPE7iyIlxAyAQZ0Vq:15:0:ttttttttttt::
+u16-BF:$2x$05$BSBlO6jk7FGxOajvE60YGO8mIoCib6J.sdL3GSkxuEsQvHg/5L12e:16:0:±::
+u17-BF:$2x$05$nkS8xj4YIzRTwsUa53Ad6uwkaeePBZuQ0hNQM23hs569nBV2IbZmy:17:0:pass÷ord::
+u18-BF:$2x$05$AsmOm7/woJI6ZMUpK51EvekHp7r6rR3sLYizKqUhta6ZHs/QUAJVu:18:0:ôåst::
+u19-BF:$2x$05$CU60f34mMrTRiNeHyqMU3eGrZkJOS6/NHRGJ80VLQzAqZO5APVYIy:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$YNJuXm30oa33XxCf9AaZqezq5KwyPT2sy8W8HMAYmNUws2/ju3jIG:0:0:Skippinç anä*::
+u1-BF:$2x$05$MhiQ8vvB3.cVR4DG6krxUeaXmbaKqwfbpMsoBnGliPRRlUbCDOZmm:1:0:Skipping and*::
+u2-BF:$2x$05$j.LHU8aPMKD4oElOFXYv5uxoOqZHCOJnMS7Pw39EQ5GQgCEd64dMC:2:0:Bert$ErîIE::
+u3-BF:$2x$05$TU3eWk3s/2SEmbn9/mk4IOaY6RvZGBQaBExV0rsUntU2yybt5qVRW:3:0:Bert$ErnIE::
+u4-BF:$2x$05$p5gLxHCw1pnaZiS4SoUYFOkI0IT3Tnie4CA58bGYcqpC.TAHw0IP6:4:0:bert*ernie::
+u5-BF:$2x$05$tgisLYAHUZyNVX.stwqKPexiy81jb3xqIPk/y/FLTygiAJUYfs8t2:5:0:late*night::
+u6-BF:$2x$05$U1c3pCoALy4t7vpXhuQlyuUr3NgY44vTZWnDVWlzlCJIGdEgAYDpO:6:0:::
+u7-BF:$2x$05$tm1fpAi/IKaZ5UoI5TW8luSCOf9ZezOG.oC3Bm7UNBmkHjVNqMqtm:7:0: ::
+u8-BF:$2x$05$cJDb3Yv5Aop7B63g0CNKNeXDWFVru97C2jWYaMi5uOaGmrCCcCjjy:8:0:1::
+u9-BF:$2x$05$KZilvXI0KWE9yoRDwZDL1OT9iB6TZbkZQV.DldZB6t5niqNuS/uIO:9:0:password::
+u10-BF:$2x$05$ZbaIbu138ItFqB1n.fH7OeK.0B7fL9SpUv7F6M2ojSyUp76xPFfeW:10:0:test::
+u11-BF:$2x$05$s4Z9uMEExcF0xBbqkcM0kOdhj9g8tTKb01fmTtjmALvYa0h1nm3fW:11:0:late*niçhô::
+u12-BF:$2x$05$Ez1Z0fgNs5qsc1RnZL79PeFv89R2K9H13kT8Uiue8qTqL7NC5hMuG:12:0:hello::
+u13-BF:$2x$05$VbKuv9KjsIPiiK7cL8.ZmO9Khy9FoheX8NJsl62VEq6wmoDk5iFkO:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$expsiLJI0JclaotrEBDbZOz1Pai0Fybmb8jEfSdMxKYbChuK9i9Fq:14:0:!!!!!!!!!::
+u15-BF:$2x$05$mFC5zAVtWbzx.hQzaCo8fu5R94xQDps2MmDoTxv/ltj3U2EFLsioi:15:0:ttttttttttt::
+u16-BF:$2x$05$3KP6W1Iu3ErPcp2W6wUKgO54JPepprw6jDVfNXINphc15DXy7W.bO:16:0:±::
+u17-BF:$2x$05$bm/fMRahC8nNrMWslLBZru/0zhqBKf5N36hxdpEuGS8oJIFcp1Ozm:17:0:pass÷ord::
+u18-BF:$2x$05$iZdfOch4jfegb7vvo4c3ge.KTi8Vc5KL2Fqn17wP8stk85O6ttdIa:18:0:ôåst::
+u19-BF:$2x$05$yIC8p89/lQgoqYXs2iu8Fe1h/cicw49Vsb..kSkvCK2IKd13XiBsu:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$Phb9AkNeGFfyO3gPce/opuNe.6Xf1WCuYxmynQns7D1A5I/gW7udm:0:0:Skippinç anä*::
+u1-BF:$2x$05$cxppGhIhwO7ZBw8BxTdXbeNuZwavxzAaa/GqOmkFb6Y.Ioh5L.g3e:1:0:Skipping and*::
+u2-BF:$2x$05$nFb5.dnkMkdchxlF3MfC/u.RTgGAr3QhcUZIXgL7h7lAzEmQY4/MO:2:0:Bert$ErîIE::
+u3-BF:$2x$05$X9tbrxKYNfocX2CYDBvdl.KakJ4v5aMgtQ0FJV/Jnx3J/KJDaUGhi:3:0:Bert$ErnIE::
+u4-BF:$2x$05$yewVwM7OhSH.AXN7EFANSu4nvxx9CKVu4UXMzX8TyP1jooGg8YWa6:4:0:bert*ernie::
+u5-BF:$2x$05$NSt97jv0SomtavKfzv4gQOkWfhFJTldusridHtjOw3inUSdvpF5S6:5:0:late*night::
+u6-BF:$2x$05$vNwihgB56TQLHOnTFKxgLuZjQ4aJZGdFt8o.KnZz3YMqBAWx2Jh9q:6:0:::
+u7-BF:$2x$05$w.x2FXSJwH4WVXZB871cbeo/sYCRQMipJlVNHjAMZ9j.Nqel9JBu6:7:0: ::
+u8-BF:$2x$05$CRrQT72LhUE96nC3fthos.RH3vbiTNP3aAj0KHc6qpC6JQOwEu7fS:8:0:1::
+u9-BF:$2x$05$yyTZl0N6R5OC0OSWqM0xZe4/LQKk/kjuv81x1GCDMqSBEK/Edtf.6:9:0:password::
+u10-BF:$2x$05$08bwn9twc5MM7HL5Bm.Hj.MRVkFZori.5vcFi94iAPUvDLRDFHL/m:10:0:test::
+u11-BF:$2x$05$PQoE7J46lKlboK9i9uWAMeN5LnTVfOu7c3byZL3CguJDFga5RLHly:11:0:late*niçhô::
+u12-BF:$2x$05$N/pMRRXQEAJbTtPKuBpK9eMBMfoNk26wFEDNw.vjs29ufXRsjjPza:12:0:hello::
+u13-BF:$2x$05$jmSIYAbBnlMbf/f0pjrsUeGXfWwYWA1FzGpKqhU9hLUBiVGncjCfG:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$/w7QD.CmpDtP6iask05bAOIRzrpn7BHvf.NNaNQGCEDmhhXBikbA.:14:0:!!!!!!!!!::
+u15-BF:$2x$05$rnPTBmWAXlHgvCdo6/4bheGFZLtOsQN5E2R7AYe09.J4tdUmgDNC2:15:0:ttttttttttt::
+u16-BF:$2x$05$5is00giXfu4wml/m9iQWVeuLcjLb78dqrISmCxCmS64zSaRWWSxoO:16:0:±::
+u17-BF:$2x$05$r5hnY89EaswiOFXxso0zeunX31qG8gY0eyJRS9xzEENyzlS03iNXC:17:0:pass÷ord::
+u18-BF:$2x$05$DzUPwaN5Fp8Im/K/wiBn7.vUqt8yG0nT7WIDy6TERfBlbT.eL.BGS:18:0:ôåst::
+u19-BF:$2x$05$ECRzLSduyyWPU0n061Nn4.XhmXz4cQbVgyb5vQQiYc5csihlAz1Ky:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$j5bdlk5lTFAIOTslrUO1v.57/hnEaZwkyeM6FkZCJgEgtEshYf9aW:0:0:Skippinç anä*::
+u1-BF:$2x$05$9eQv9aMEwYJUU4r4e64k5uLE24xAmeQHot6DXPUZo1WxyJ7KO9KU.:1:0:Skipping and*::
+u2-BF:$2x$05$SfLvTaMysFt/7WjnkoXSNe8wd20YIpTYCrRMuOKQT7SWHVnd12.me:2:0:Bert$ErîIE::
+u3-BF:$2x$05$0LEv27utgzOP5UP9p39Ia.Q4wPgrj/U0VZAkCuyll8x9VbWb8mhVa:3:0:Bert$ErnIE::
+u4-BF:$2x$05$f1KEiW3vgEKjk0aJIrU/tOqVm8Hh9ozjakccciYFrWVicQpSyxrgO:4:0:bert*ernie::
+u5-BF:$2x$05$v0JFmAdxJcsITSWLt6x8VeCF30Z900XLGnaxUrIA4.bcDxwaqwHHW:5:0:late*night::
+u6-BF:$2x$05$Fbz7cnlLI6Bzu8uoBIjFLe3nkWI2hP91Ds3Cy6PISSBEJYOfkOqSe:6:0:::
+u7-BF:$2x$05$6Z4FGwcO9EDCJkcQL/pcTOsUq9Zk5eGlnVLHOq75qbgtPREsCuOMa:7:0: ::
+u8-BF:$2x$05$JfNRxJTfxHurXfdk/ht.mOQpW.ef.krR/TUN21WDX0OH.mCVZAGmK:8:0:1::
+u9-BF:$2x$05$7u5CSxQElkqBx1oLW1ruZeVuB1iEHIzOEboGAILJaCqOfAB6cDV7e:9:0:password::
+u10-BF:$2x$05$OjSLZ.GmLxeJemWbf.d7kuxpYkHhLi593CJ4bhXPVXlciB8hgH.ua:10:0:test::
+u11-BF:$2x$05$ojia3BijeebpW4Zvm.TV4OnsUVbS2Oh/gQ87i2Fku8DrKzj0WvWDK:11:0:late*niçhô::
+u12-BF:$2x$05$vgUgZdMDL74ZyFRhnMJfeeBjSpv93sbbAbThC7Yoi3J45gJgg645u:12:0:hello::
+u13-BF:$2x$05$EF/jCD5oDVEYDqEl6Jx6y.M4n0xToeMyFpTPNbOEiEezh3rkJOAP.:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$DBh.7oIoMHW/VnJy5iq9W.diz7BqwPMmya46dWALOT6Kuss9f9jKK:14:0:!!!!!!!!!::
+u15-BF:$2x$05$UgnuMsh.sWz71yVuHX4azOpxIdcx3B72Zrqxq3J5fNFiUhkKWbDUq:15:0:ttttttttttt::
+u16-BF:$2x$05$MDHa9mqY8tiKDDW.yLOwEOYAs95TpkPlRks/timp8e7trizWrTEZS:16:0:±::
+u17-BF:$2x$05$F6Q1Tv.mbMlY6tYNQXJ6cOzUPm891CtoV.EwLmwv/CIbPkzetwNae:17:0:pass÷ord::
+u18-BF:$2x$05$q46lhnL681siA1..CEpBAuEwqZB7YNaFk6mlQBKdgevBGR.VrNOQW:18:0:ôåst::
+u19-BF:$2x$05$HYudWF7L1HAh5I1VzDcc2OKkZrYC6.8M6PgA/biqP2UNoHRcQRehS:19:0:Skipðing and& Diðping::
+u0-BF:$2x$05$50sRC94wTdIaPDRmZ559L.BC8RQ27tk9/VGcoOKo1OYAMykondE96:0:0:Skippinç anä*::
+u1-BF:$2x$05$/kGtvDoLcys6.M.7W0.Q0eIZb7/y.Dkb6j1i62dkuNF1wRxFFovWW:1:0:Skipping and*::
+u2-BF:$2x$05$6tl3DMQIL8vQOY6I0bdAJehDBU9Dw7JaqyQcaeFP0beCCorMLjPTy:2:0:Bert$ErîIE::
+u3-BF:$2x$05$gige3WOoNLxRSdPXk6XUz.YOsCHp2mdeDBCVp6U42T2ZqOvru5vlm:3:0:Bert$ErnIE::
+u4-BF:$2x$05$xx7w3aLZ5P.2Db9WjJ8lPOu7SXMySD0Kk50/OfIFM7tmnmC.wcR4C:4:0:bert*ernie::
+u5-BF:$2x$05$UzgsEGwEQMUCsAJDXxjznu6OuiGZl16TTJqJHLe4bd2SVen4rIBBi:5:0:late*night::
+u6-BF:$2x$05$o.gzfVedp1UV7IIudo4NguEk30cU59cVylwiiLBm0fAMOqFl7A53e:6:0:::
+u7-BF:$2x$05$vqncKsMUVQcmJ1.oOH/.L.tj/V28IGzfVTSKTV14r188CBNy1XGJu:7:0: ::
+u8-BF:$2x$05$QeUVRxyxKNO73Og8W5dkBuQwCW4Gby9yxV9iIzxKrmtJSITEj9J3e:8:0:1::
+u9-BF:$2x$05$7u8KNGkiLP2Mk2/6QP90I.EtHfSlxw91TR3y4d/Joj.S6VYgdwFWO:9:0:password::
+u10-BF:$2x$05$hzWh4b04xGhgStguKORsuupeUIKdfAMDUOVBDbX9lzf/SkDkpP2d6:10:0:test::
+u11-BF:$2x$05$CqKcC79lzNIAQNaVxMfiZuc8FzCaTMFAD6f9my7oQLnvrpKTGI.m.:11:0:late*niçhô::
+u12-BF:$2x$05$vaqIRyokoF/.WPDNBChjAu6.uTST7pxAzIr7EE3KS73PpJ.YCYIxu:12:0:hello::
+u13-BF:$2x$05$TG4FIEBH0XwZJDY2qcJD/eiQPBdKC5PvwrNkLI6SZSh1Lw3NrK7Kq:13:0:Skipping and& Dipping::
+u14-BF:$2x$05$k2UqKQ9C2.VTHFwTPd.XxOjRMrpLz.R3aLudGN9VfrJIsthyYQ3.S:14:0:!!!!!!!!!::
+u15-BF:$2x$05$76lJpsGYaagVtK3lPjY6Q.qoEuVK/RmudsPd0v1EGs21AopBn0VjW:15:0:ttttttttttt::
+u16-BF:$2x$05$tfz8u46gkVTyFkvXxsyEaOQf4v35vTLFXsGVOZyPNQFwEmfC4FRDS:16:0:±::
+u17-BF:$2x$05$QSHi130jwIUBMHisOq82Ju9FH4tO0EA/2A2.On.aRAqm8U8ThyO9C:17:0:pass÷ord::
+u18-BF:$2x$05$1dwz/N9iCmtUf.yXI.srM.9jXZlb20DYzrkEm6TZoNuj.6s1g2/za:18:0:ôåst::
+u19-BF:$2x$05$euZ1/u6qF6jK4zz/untb3Og2chyOH7UxOumjdYYeHFWe6k8YKxqwm:19:0:Skipðing and& Diðping::
