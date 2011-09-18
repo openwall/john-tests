@@ -72,5 +72,5 @@ JOHN_OUT=
 EXPARM=
 
 rm -f tst.rec
-rm -f tst.pot
+#rm -f tst.pot
 rm -f tst.log
