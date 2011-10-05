@@ -10,7 +10,7 @@ UNIQUE="$JOHN_PATH/unique"
 JOHN_ARG1="$1"
 
 #-------------------------------------------------------------------
-# John, testing suite, v1.07 (early release).   Jim Fougeron.
+# John, testing suite, v1.08.   Jim Fougeron.
 #
 # No copyright is claimed, and the software is hereby 
 # placed in the public domain. In case this attempt to disclaim 
@@ -68,6 +68,11 @@ JOHN_ARG1="$1"
 #               The functions allow a much smaller script file.  To add a new code page,
 #               be sure the input files are named properly (FmtName_tst_CODEPAGE.in), then in
 #               this script file search for CODE_PAGE, and add the new approprate lines.
+#
+# v1.08 Added 'raw' input testing for md5_gen.  Changed md5_gen to dyanmic. Thus, all the input
+#               files were renamed here in the test suite, and all format signatures were 
+#               changed to 'proper' type.
+#          
 #--------------------------------------------------------------------
 
 if [ ! -d $JOHN_PATH ]; then
@@ -83,7 +88,7 @@ fi
 JOHN_SIGNATURE=`$JOHN_EXE | head -1`
 
 echo  "--------------------------------------------------------------------------------"
-echo  "- JtR Test Suite Script. Version 1.07(early release), Aug 18, 2011.  By, Jim Fougeron"
+echo  "- JtR Test Suite Script. Version 1.08, Oct 5, 2011.  By, Jim Fougeron"
 echo  "-"
 echo  "- Testing this build of john:"
 echo  "-   $JOHN_SIGNATURE"
@@ -166,121 +171,128 @@ JUMBO_FORMATS() {
   echo "Detected John 'jumbo' build, so testing all jumbo formats"
   echo
   
-  ./tstone pw md5_gen_0_tst.in   '-form=md5_gen(0)'
-  ./tstone pw md5_gen_1_tst.in   '-form=md5_gen(1)'
-  ./tstone pw md5_gen_2_tst.in   '-form=md5_gen(2)'
-  ./tstone pw md5_gen_3_tst.in   '-form=md5_gen(3)'
-  ./tstone pw md5_gen_4_tst.in   '-form=md5_gen(4)'
-  ./tstone pw md5_gen_5_tst.in   '-form=md5_gen(5)'
-  ./tstone pw md5_gen_6_tst.in   '-form=md5_gen(6)'
-  ./tstone pw md5_gen_6_1salt_tst.in '-form=md5_gen(6)_1-salt'
-  ./tstone pw md5_gen_7_tst.in   '-form=md5_gen(7)'     -fie '\x1F'
-  ./tstone pw md5_gen_8_tst.in   '-form=md5_gen(8)'
-  ./tstone pw md5_gen_9_tst.in   '-form=md5_gen(9)'
-  ./tstone pw md5_gen_10_tst.in  '-form=md5_gen(10)'
-  ./tstone pw md5_gen_11_tst.in  '-form=md5_gen(11)'
-  ./tstone pw md5_gen_12_tst.in  '-form=md5_gen(12)'
-  ./tstone pw md5_gen_13_tst.in  '-form=md5_gen(13)'
-  ./tstone pw md5_gen_14_tst.in  '-form=md5_gen(14)'
-  ./tstone pw md5_gen_15_tst.in  '-form=md5_gen(15)'
-  ./tstone pw md5_gen_16_tst.in  '-form=md5_gen(16)'
+  ./tstone pw dynamic_0_tst.in       -form=dynamic_0
+  ./tstone pw dynamic_0_raw_tst.in   -form=dynamic_0-raw -form dynamic_0
+  ./tstone pw dynamic_1_tst.in       -form=dynamic_1
+  ./tstone pw dynamic_2_tst.in       -form=dynamic_2
+  ./tstone pw dynamic_2_raw_tst.in   -form=dynamic_2-raw -form dynamic_2
+  ./tstone pw dynamic_3_tst.in       -form=dynamic_3
+  ./tstone pw dynamic_3_raw_tst.in   -form=dynamic_3-raw -form dynamic_3
+  ./tstone pw dynamic_4_tst.in       -form=dynamic_4
+  ./tstone pw dynamic_5_tst.in       -form=dynamic_5
+  ./tstone pw dynamic_6_tst.in       -form=dynamic_6
+  ./tstone pw dynamic_6_1salt_tst.in -form=dynamic_6_1-salt
+  ./tstone pw dynamic_7_tst.in       -form=dynamic_7     -fie '\x1F'
+  ./tstone pw dynamic_8_tst.in       -form=dynamic_8
+  ./tstone pw dynamic_9_tst.in       -form=dynamic_9
+  ./tstone pw dynamic_10_tst.in      -form=dynamic_10
+  ./tstone pw dynamic_11_tst.in      -form=dynamic_11
+  ./tstone pw dynamic_12_tst.in      -form=dynamic_12
+  ./tstone pw dynamic_13_tst.in      -form=dynamic_13
+  ./tstone pw dynamic_14_tst.in      -form=dynamic_14
+  ./tstone pw dynamic_15_tst.in      -form=dynamic_15
+  ./tstone pw dynamic_16_tst.in      -form=dynamic_16
   if [ "$JOHN_ARG1" != "quick" ]; then
     head -150 pw.dic > pw-150.dic
-    ./tstone pw-150 md5_gen_17_tst.in  '-form=md5_gen(17)'
+    ./tstone pw-150 dynamic_17_tst.in  -form=dynamic_17
     rm pw-150.dic
   fi
-  ./tstone pw md5_gen_18_tst.in  '-form=md5_gen(18)'
-  ./tstone pw md5_gen_19_tst.in  '-form=md5_gen(19)'
-  ./tstone pw md5_gen_20_tst.in  '-form=md5_gen(20)'
-  ./tstone pw md5_gen_21_tst.in  '-form=md5_gen(21)'
-  ./tstone pw md5_gen_22_tst.in  '-form=md5_gen(22)'
-  ./tstone pw md5_gen_23_tst.in  '-form=md5_gen(23)'
-  ./tstone pw md5_gen_24_tst.in  '-form=md5_gen(24)'
-  ./tstone pw md5_gen_25_tst.in  '-form=md5_gen(25)'
-  ./tstone pw md5_gen_26_tst.in  '-form=md5_gen(26)'
+  ./tstone pw dynamic_18_tst.in  -form=dynamic_18
+  ./tstone pw dynamic_19_tst.in  -form=dynamic_19
+  ./tstone pw dynamic_20_tst.in  -form=dynamic_20
+  ./tstone pw dynamic_21_tst.in  -form=dynamic_21
+  ./tstone pw dynamic_22_tst.in  -form=dynamic_22
+  ./tstone pw dynamic_23_tst.in  -form=dynamic_23
+  ./tstone pw dynamic_24_tst.in  -form=dynamic_24
+  ./tstone pw dynamic_25_tst.in  -form=dynamic_25
+  ./tstone pw dynamic_26_tst.in  -form=dynamic_26
+  ./tstone pw rawmd5u_raw_tst.in -form=dynamic_29-raw -form dynamic_29
+  
 
   if [ "$JOHN_ARG1" != "quick" ]; then
     head -200 pw.dic > pw-200.dic
-    ./tstone pw-200 md5_gen_27_tst.in  '-form=md5_gen(27)'
-    ./tstone pw-200 md5_gen_28_tst.in  '-form=md5_gen(28)'
-    ./tstone pw-200 md5_1_tst.in       '-form=md5'
-    ./tstone pw-200 md5_apr1_tst.in    '-form=md5_(apr1)'
-    ./tstone pw-200 BSDI_tst.in        '-form=BSDI'
+    ./tstone pw-200 dynamic_27_tst.in  -form=dynamic_27
+    ./tstone pw-200 dynamic_28_tst.in  -form=dynamic_28
+    ./tstone pw-200 md5_1_tst.in       -form=md5
+    ./tstone pw-200 md5_apr1_tst.in    -form=md5_apr1
+    ./tstone pw-200 BSDI_tst.in        -form=BSDI
     rm pw-200.dic
     head -40 pw.dic > pw-40.dic
-    ./tstone pw-40 BF_tst.in       '-form=BF'
-    ./tstone pw-40 BFx_tst.in      '-form=BF_broken'
+    ./tstone pw-40 BF_tst.in       -form=BF
+    ./tstone pw-40 BFx_tst.in      -form=BF_broken
     rm pw-40.dic
     head -150 pw.dic > pw-150.dic
-    ./tstone pw-150 phpass_tst.in  '-form=PHPass-md5'
+    ./tstone pw-150 phpass_tst.in  -form=PHPass-md5
     rm pw-150.dic
   fi
 
   head -50 pw.dic > pw-50.dic
-  ./tstone pw-50 MSCash2_tst.in '-form=mscash2'         -form mscash2
+  ./tstone pw-50 MSCash2_tst.in -form=mscash2         -form mscash2
   rm pw-50.dic
-  ./tstone pw DES_tst.in        '-form=DES'
-  ./tstone pw BigCrypt_tst.in   '-form=BigCrypt_DES'
-  ./tstone pw mediawiki_tst.in  '-form=mediawiki'       -form mediawiki
-  ./tstone pw pixMD5_tst.in     '-form=pixMD5'          -form pix-md5
-  ./tstone pw po_tst.in         '-form=PO'
-  ./tstone pw phps_tst.in       '-form=PHPS'
-  ./tstone pw rawmd5_tst.in     '-form=raw-md5'         -form raw-md5
-  ./tstone pw rawmd5u_tst.in    '-form=raw-md5u' -form raw-md5u
-  ./tstone pw rawsha1_tst.in    '-form=raw-sha1'        -form raw-sha1
-  ./tstone pw sha1p_tst.in      '-form=sha1-genp'       -form sha1-gen
-  ./tstone pw sha1s_tst.in      '-form=sha1-gens'       -form sha1-gen
-  ./tstone pw NT_tst.in         '-form=NT'              -form nt
-  ./tstone pw rawmd4_tst.in     '-form=raw-md4'         -form raw-md4
-  ./tstone pw md4p_tst.in       '-form=md4-genp'        -form md4-gen
-  ./tstone pw md4s_tst.in       '-form=md4-gens'        -form md4-gen
-  ./tstone pw mscash_tst.in     '-form=mscash'          -form mscash
+  ./tstone pw DES_tst.in        -form=DES
+  ./tstone pw BigCrypt_tst.in   -form=BigCrypt_DES
+  ./tstone pw mediawiki_tst.in  -form=mediawiki       -form mediawiki
+  ./tstone pw pixMD5_tst.in     -form=pixMD5          -form pix-md5
+  ./tstone pw po_tst.in         -form=PO
+  ./tstone pw phps_tst.in       -form=PHPS
+  ./tstone pw rawmd5_tst.in     -form=raw-md5         -form raw-md5
+  ./tstone pw dynamic_0_raw_tst.in   -form=raw-md5    -form raw-md5
+  ./tstone pw rawmd5u_tst.in    -form=raw-md5-unicode -form raw-md5u
+  ./tstone pw rawmd5u_raw_tst.in    -form=raw-md5-unicode -form raw-md5u
+  ./tstone pw rawsha1_tst.in    -form=raw-sha1        -form raw-sha1
+  ./tstone pw sha1p_tst.in      -form=sha1-genp       -form sha1-gen
+  ./tstone pw sha1s_tst.in      -form=sha1-gens       -form sha1-gen
+  ./tstone pw NT_tst.in         -form=NT              -form nt
+  ./tstone pw rawmd4_tst.in     -form=raw-md4         -form raw-md4
+  ./tstone pw md4p_tst.in       -form=md4-genp        -form md4-gen
+  ./tstone pw md4s_tst.in       -form=md4-gens        -form md4-gen
+  ./tstone pw mscash_tst.in     -form=mscash          -form mscash
 
-  echo NOTE, mscash 'crash' may crash, run and present 1440 or run and present 1500,
+  echo NOTE, mscash-crash may crash, run and present 1440 or run and present 1500,
   echo depending upon if mscash dies for user names over 19, if it can run but ignore them,
   echo of if it can properly process user names up to 22 characters.
   echo
 
-  ./tstone pw mscash_crash_tst.in    '-form=mscash-crash'            -form mscash
-  ./tstone pw LM_tst.in              '-form=LM'  -form lm
+  ./tstone pw mscash_crash_tst.in    -form=mscash-crash            -form mscash
+  ./tstone pw LM_tst.in              -form=LM  -form lm
 
-  echo NOTE, only 986 LM tests found in this pwdump file, that is 'normal'
+  echo NOTE, only 986 LM tests found in this pwdump file, that is normal
   echo
 
-  ./tstone pw pwdump_tst.in          '-form=pwdump_LM'               -form lm
-  ./tstone pw pwdump_tst.in          '-form=pwdump_NT'               -form nt
-  ./tstone pw nsldap_tst.in          '-form=Netscape_LDAP_SHA'       -form nsldap
-  ./tstone pw nsldaps_tst.in         '-form=Netscape_LDAP_SSHA'      -form ssha
-  ./tstone pw nsldaps_tst.in         '-form=LDAP_SSHA-(salted-sha)'  -form salted-sha
-  ./tstone pw openssha_tst.in        '-form=OpenSSHA'                -form openssha
-  ./tstone pw ns_tst.in              '-form=Netscreen_MD5'
-  ./tstone pw XSHA_tst.in            '-form=MAC_OSX_Salted_SHA1'
-  ./tstone pw hmacMD5_tst.in         '-form=hmacMD5'
-  ./tstone pw mskrb5_tst.in          '-form=mskrb5'
-  ./tstone pw BFegg_tst.in           '-form=bfegg'                   -form bfegg
-  ./tstone pw IPB2_tst.in            '-form=IPB2'
-  ./tstone pw MSSql05_tst.in         '-form=mssql05'
+  ./tstone pw pwdump_tst.in          -form=pwdump_LM               -form lm
+  ./tstone pw pwdump_tst.in          -form=pwdump_NT               -form nt
+  ./tstone pw nsldap_tst.in          -form=Netscape_LDAP_SHA       -form nsldap
+  ./tstone pw nsldaps_tst.in         -form=Netscape_LDAP_SSHA      -form ssha
+  ./tstone pw nsldaps_tst.in         -form=LDAP_SSHA-salted-sha    -form salted-sha
+  ./tstone pw openssha_tst.in        -form=OpenSSHA                -form openssha
+  ./tstone pw ns_tst.in              -form=Netscreen_MD5
+  ./tstone pw XSHA_tst.in            -form=MAC_OSX_Salted_SHA1
+  ./tstone pw hmacMD5_tst.in         -form=hmacMD5
+  ./tstone pw mskrb5_tst.in          -form=mskrb5
+  ./tstone pw BFegg_tst.in           -form=bfegg                   -form bfegg
+  ./tstone pw IPB2_tst.in            -form=IPB2
+  ./tstone pw MSSql05_tst.in         -form=mssql05
 # echo mssql expected # found is 1423 without using -enc=iso-8559-1 encoding
-  ./tstone pw mssql_tst.in           '-form=mssql'
-  ./tstone pw mssql_tst.in           '-form=mssql-8859-1'            -form mssql -enc=iso-8859-1
-  ./tstone pw-gen-enc mssql_tst_iso8859-1.in '-form=mssql-8859-1-gen' -form mssql -enc=iso-8859-1
-  ./tstone pw mysqlSHA1_tst.in       '-form=mysqlSHA1'               -form mysql-SHA1
-  ./tstone pw mysql_tst.in           '-form=mysql'                   -form mysql
-  ./tstone pw mysql_tst.in           '-form=mysql-fast'              -form mysql-fast
-  ./tstone pw oracle_tst.in          '-form=oracle'                  -form oracle
-  ./tstone pw oracle11_tst.in        '-form=oracle11'                -form oracle11
-  ./tstone pw hdaa_tst.in            '-form=hdaa'
-  ./tstone pw netntlm_tst.in         '-form=netntlm'
-  ./tstone pw lotus5_tst.in          '-form=lotus5'                  -form lotus5
-  ./tstone pw l0phtcrack_tst.in      '-form=netntlm'                 -form netntlm
+  ./tstone pw mssql_tst.in           -form=mssql
+  ./tstone pw mssql_tst.in           -form=mssql-8859-1            -form mssql -enc=iso-8859-1
+  ./tstone pw-gen-enc mssql_tst_iso8859-1.in -form=mssql-8859-1-gen -form mssql -enc=iso-8859-1
+  ./tstone pw mysqlSHA1_tst.in       -form=mysqlSHA1               -form mysql-SHA1
+  ./tstone pw mysql_tst.in           -form=mysql                   -form mysql
+  ./tstone pw mysql_tst.in           -form=mysql-fast              -form mysql-fast
+  ./tstone pw oracle_tst.in          -form=oracle                  -form oracle
+  ./tstone pw oracle11_tst.in        -form=oracle11                -form oracle11
+  ./tstone pw hdaa_tst.in            -form=hdaa
+  ./tstone pw netntlm_tst.in         -form=netntlm
+  ./tstone pw lotus5_tst.in          -form=lotus5                  -form lotus5
+  ./tstone pw l0phtcrack_tst.in      -form=netntlm                 -form netntlm
 
   echo only 1351 hashes expected for NetLM in the l0phtcrack file
   echo
 
-  ./tstone pw l0phtcrack_tst.in      '-form=netlm'                   -form netlm
-  ./tstone pw mschapv2_tst.in        '-form=mschapv2'                -form mschapv2
-  ./tstone pw netlmv2_tst.in         '-form=netlmv2'                 -form netlmv2
-  ./tstone pw netntlmv2_tst.in       '-form=netntlmv2'               -form netntlmv2
+  ./tstone pw l0phtcrack_tst.in      -form=netlm                   -form netlm
+  ./tstone pw mschapv2_tst.in        -form=mschapv2                -form mschapv2
+  ./tstone pw netlmv2_tst.in         -form=netlmv2                 -form netlmv2
+  ./tstone pw netntlmv2_tst.in       -form=netntlmv2               -form netntlmv2
 }
 
 ####################################################################################################
@@ -290,7 +302,7 @@ DO_JOHN_TEST() {
   ARG="$1"
   if [ "$ARG" != "" ]; then
     echo "testing: 'john -test=0 $ARG'"
-    #$JOHN_EXE -test=0 $ARG | grep FAILED
+    $JOHN_EXE -test=0 $ARG | grep FAILED
   fi
 }
 
@@ -316,6 +328,10 @@ DO_FIND_ENCODING() {
   ARG="$1"
   ENCODE_STR=""
   rm -f tst.pot
+  
+#  echo $JOHN_EXE -nolog -config=$JOHN_PATH/john.conf -pot=./tst.pot -sess=./tst -w=./pw.dic -form=nt nt_in $ARG
+#  exit 1
+  
   JOHN_OUT=`$JOHN_EXE -nolog -config=$JOHN_PATH/john.conf -pot=./tst.pot -sess=./tst -w=./pw.dic -form=nt nt_in $ARG 2>&1 >/dev/null | awk '{printf("%s %s %s %s %s\n",$1,$2,$3,$4,$5);}' | grep guesses`
   if [ "$JOHN_OUT" != "" ]; then
 	ENCODE_STR="$ARG"
@@ -420,7 +436,9 @@ JUMBO_FORMAT_SINGLE_ENCODING() {
 	  JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $MSSQL_FILE mssql_tst_${3}.in     "-form=mssql05-${3}"     -form mssql05    $1
       JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  MSSql05_tst_${3}.in   "-form=mssql05-${3}"     -form mssql05    $1
       JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  oracle_tst_${3}.in    "-form=oracle-${3}"      -form oracle     $1
-      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  rawmd5u_tst_${3}.in   "-form=raw-md5u-${3}"    -form raw-md5u $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  rawmd5u_tst_${3}.in   "-form=raw-md5u-${3}"    -form raw-md5u   $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  rawmd5u_raw_tst_${3}.in   "-form=raw-md5u-${3}"    -form raw-md5u   $1
+      JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE  rawmd5u_raw_tst_${3}.in   "-form=dynamic_29-${3}"    -form 'dynamic_29'   $1
     fi
   fi
 }
@@ -471,7 +489,9 @@ JUMBO_FORMATS_UNICODE() {
     ./tstone pw mssql_tst.in           '-form=mssql-utf8'              -form mssql      $UTF8_STR
     ./tstone pw MSSql05_tst.in         '-form=mssql05-utf8'            -form mssql05    $UTF8_STR
     ./tstone pw oracle_tst.in          '-form=oracle-utf8'             -form oracle     $UTF8_STR
-    ./tstone pw rawmd5u_tst.in         '-form=raw-md5u-utf8'           -form raw-md5u $UTF8_STR
+    ./tstone pw rawmd5u_tst.in         '-form=raw-md5u-utf8'           -form raw-md5u   $UTF8_STR
+	./tstone pw rawmd5u_raw_tst.in     '-form=raw-md5u-utf8'           -form raw-md5u   $UTF8_STR
+	./tstone pw rawmd5u_raw_tst.in     '-form=dynamic_29-utf8'        -form 'dynamic_29'   $UTF8_STR
 
     ## NOW do the jumbo test of 'real' UTF8
     JUMBO_FORMAT_SINGLE_ENCODING "$UTF8_STR"     "utf8" "utf8"
@@ -498,7 +518,7 @@ echo "Running preliminary check of john, using -test=0."
 echo "Any 'FAILURE' shows a format/codepage that has a problem in this build."
 echo
 echo "testing: 'john -test=0'"
-#$JOHN_EXE -test=0 | grep FAILED
+$JOHN_EXE -test=0 | grep FAILED
 
 ######################################	
 # Now, call the 'real' test engine(s)
@@ -514,7 +534,7 @@ esac
 
 
 #These formats are 'missing'.
-#md5_gen(1001) to 'max'
+#dynamic_1001 to 'max'
 #afs
 #dmd5
 #dominosec

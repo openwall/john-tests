@@ -1,12 +1,12 @@
 #!/bin/sh
 
 #-------------------------------------------------------------------
-# John, testing suite, v1.07 (early release).   Jim Fougeron.  
+# John, testing suite, v1.08.   Jim Fougeron.  
 #
 # No copyright is claimed, and the software is hereby 
 # placed in the public domain. In case this attempt to disclaim 
 # copyright and place the software in the public domain is deemed 
-# null and void, then the software is Copyright © 2009 Jim Fougeron
+# null and void, then the software is Copyright © 2011 Jim Fougeron
 # and it is hereby released to the general public under the following
 # terms: 
 #
@@ -21,6 +21,8 @@ if [ x"$JOHN_PATH" = x ]; then
   export JOHN_PATH
   export JOHN_EXE
 fi
+
+#echo ./tstone $1 $2 $3 $4 $5 $6 $7 $8
 
 rm -f tst.rec
 rm -f tst.pot
@@ -44,6 +46,7 @@ if [ "$5" != "$EXPARM" ]; then
 fi
 
 #echo dict=$1.dic file=$2
+#echo $JOHN_EXE -nolog -config=$JOHN_PATH/john.conf -pot=./tst.pot -sess=./tst -w=./$1.dic $EXPARM $2
 JOHN_OUT=`$JOHN_EXE -nolog -config=$JOHN_PATH/john.conf -pot=./tst.pot -sess=./tst -w=./$1.dic $EXPARM $2 2>&1 >/dev/null | awk '{printf("%s %s %s %s %s\n",$1,$2,$3,$4,$5);}' | grep guesses`
 # $JOHN_EXE -nolog -config=$JOHN_PATH/john.conf -pot=./tst.pot -sess=./tst -w=./$1.dic $EXPARM $2
 
