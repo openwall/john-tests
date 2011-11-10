@@ -143,6 +143,12 @@ CORE_JOHN_ONLY() {
   echo
 
   ./tstonebase pw DES_tst.in       '-form=DES'
+  ./tstonebase pw LM_tst.in              -form=LM  -form lm
+
+  echo NOTE, only 986 LM tests found in this pwdump file, that is normal
+  echo
+
+  ./tstonebase pw pwdump_tst.in          -form=pwdump_LM               -form lm
   ./tstonebase pw BigCrypt_tst.in  '-form=BigCrypt_DES'
   #
   # we make 'smaller' dictionary files for these SLOWER hashes. This is so that if there ARE
