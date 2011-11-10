@@ -55,7 +55,7 @@ if [ "$JOHN_OUT" != "" ]; then
 	echo $3 | cut -b 7-30 | awk '{printf(".pot CHK:  %-21.21s", $1);}'
     cut -f 2-8 -d ":"    < $JOHN_PATH/john.pot > pw2
 	rm -f pw3
-	$UNIQUE -inp=pw2 pw3 > /dev/null
+	$UNIQUE < pw2 pw3 > /dev/null
 	rm -f pw2
 	mv $JOHN_PATH/john.pot tst2.pot
 	JOHN_OUT=`$JOHN_EXE -sess=./tst -w=./pw3 $EXPARM $2 2>&1 >/dev/null | awk '{printf("%s %s %s %s %s\n",$1,$2,$3,$4,$5);}' | grep guesses`
@@ -77,5 +77,5 @@ rm -f john.log
 rm -f tst.log
 # restore any original john.pot that existed in the run directory
 rm -f $JOHN_PATH/john.pot
-mv .$JOHN_PATH/tstxxx $JOHN_PATH/john.pot 2> /dev/null
+mv $JOHN_PATH/tstxxx $JOHN_PATH/john.pot 2> /dev/null
 
