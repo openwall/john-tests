@@ -171,6 +171,7 @@ JUMBO_FORMATS() {
   echo "Detected John 'jumbo' build, so testing all jumbo formats"
   echo
   
+if [ "$JOHN_ARG1" != "utf8" ]; then
   ./tstone pw dynamic_0_tst.in       -form=dynamic_0
   ./tstone pw dynamic_0_raw_tst.in   -form=dynamic_0-raw -form dynamic_0
   ./tstone pw dynamic_1_tst.in       -form=dynamic_1
@@ -293,6 +294,7 @@ JUMBO_FORMATS() {
   ./tstone pw mschapv2_tst.in        -form=mschapv2                -form mschapv2
   ./tstone pw netlmv2_tst.in         -form=netlmv2                 -form netlmv2
   ./tstone pw netntlmv2_tst.in       -form=netntlmv2               -form netntlmv2
+fi
 }
 
 ####################################################################################################
@@ -427,7 +429,7 @@ JUMBO_FORMAT_SINGLE_ENCODING() {
       JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE netntlmv2_tst_${3}.in  "-form=netntlmv2-${3}"   -form netntlmv2  $1
       JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE NT_tst_${3}.in         "-form=NT-${3}"          -form nt         $1
       JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS $DICT_FILE mscash_tst_${3}.in     "-form=mscash-${3}"      -form mscash     $1
-      if [ "$JOHN_ARG1" != "quick" ]; then
+      if [ "$JOHN_ARG1" != "quick" -a "$JOHN_ARG1" != "utf8" ]; then
         head -160 $DICT_FILE.dic > pw-160.dic
         JUMBO_FORMAT_SINGLE_ENCODING_DO_PROCESS pw-160 MSCash2_tst_${3}.in      "-form=mscash2-${3}"     -form mscash2    $1
         rm pw-160.dic
@@ -481,7 +483,7 @@ JUMBO_FORMATS_UNICODE() {
     ./tstone pw NT_tst.in              '-form=NT-utf8'                 -form nt         $UTF8_STR
     ./tstone pw pwdump_tst.in          '-form=pwdump_NT-utf8'          -form nt         $UTF8_STR
     ./tstone pw mscash_tst.in          '-form=mscash-utf8'             -form mscash     $UTF8_STR
-    if [ "$JOHN_ARG1" != "quick" ]; then
+    if [ "$JOHN_ARG1" != "quick" -a "$JOHN_ARG1" != "utf8" ]; then
       head -50 pw.dic > pw-50.dic
       ./tstone pw-50 MSCash2_tst.in    '-form=mscash2-utf8'            -form mscash2    $UTF8_STR
       rm pw-50.dic
