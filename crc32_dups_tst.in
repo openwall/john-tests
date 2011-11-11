@@ -1,0 +1,51 @@
+#!comment: Built with pass_gen.pl using RAW mode, 0 to 31 characters dict file=pw.dic
+0-crc32:$crc32$00000000.31503aaf:0:0:100:Skippinç anä*:
+1-crc32:$crc32$00000000.1463b63c:0:0:100:Skipping and*:
+2-crc32:$crc32$00000000.d00a5d22:0:0:100:Bert$ErîIE:
+3-crc32:$crc32$00000000.313f46a2:0:0:100:Bert$ErnIE:
+4-crc32:$crc32$00000000.2b430f6c:0:0:100:bert*ernie:
+5-crc32:$crc32$00000000.e3123b9d:0:0:100:late*night:
+6-crc32:$crc32$00000000.00000000:0:0:100::
+7-crc32:$crc32$00000000.e96ccf45:0:0:100: :
+8-crc32:$crc32$00000000.83dcefb7:0:0:100:1:
+9-crc32:$crc32$00000000.35c246d5:0:0:100:password:
+10-crc32:$crc32$00000000.d87f7e0c:0:0:100:test:
+11-crc32:$crc32$00000000.ef9fa33d:0:0:100:late*niçhô:
+12-crc32:$crc32$00000000.3610a686:0:0:100:hello:
+13-crc32:$crc32$00000000.925b33e3:0:0:100:Skipping and& Dipping:
+14-crc32:$crc32$00000000.fe33e3b8:0:0:100:!!!!!!!!!:
+15-crc32:$crc32$74464558.4fafaede:0:0:100:ttttttttttt:
+16-crc32:$crc32$00000000.6e646c97:0:0:100:±:
+17-crc32:$crc32$00000000.d89bf0ee:0:0:100:pass÷ord:
+18-crc32:$crc32$00000000.beec4688:0:0:100:dffffffffffff:
+19-crc32:$crc32$00000000.d413d3b7:0:0:100:ôåst:
+20-crc32:$crc32$0ead2159.7114dad3:0:0:100:Skipðing and& Diðping:
+21-crc32:$crc32$00000000.21404ef7:0:0:100:alsfdkja;:
+22-crc32:$crc32$00000000.6e0bdf79:0:0:100:qerwt:
+23-crc32:$crc32$00000000.ea8a0d03:0:0:100:ôtttttttttô:
+24-crc32:$crc32$00000000.bb6475a1:0:0:100:dæffffæffæfff:
+25-crc32:$crc32$00000000.25354052:0:0:100:q÷årt12345:
+26-crc32:$crc32$00000000.03498d7d:0:0:100:qwerty:
+27-crc32:$crc32$00000000.105bc5c7:0:0:100:qwert12345:
+28-crc32:$crc32$00000000.cbf53a1c:0:0:100:12345:
+29-crc32:$crc32$00000000.ff484fbb:0:0:100:12qw34er:
+30-crc32:$crc32$00000000.3595c0c4:0:0:100:johnripper:
+31-crc32:$crc32$00000000.26ac8c27:0:0:100:1²345:
+32-crc32:$crc32$00000000.1c749bad:0:0:100:letmein:
+33-crc32:$crc32$00000000.c6fd21df:0:0:100:trustno1:
+34-crc32:$crc32$00000000.3d02e87a:0:0:100:sppooky:
+35-crc32:$crc32$00000000.f3c5d71b:0:0:100:12qw3´eò:
+36-crc32:$crc32$00000000.91bdef67:0:0:100:gobble:
+37-crc32:$crc32$00000000.2284492c:0:0:100:summer:
+38-crc32:$crc32$00000000.85bf2721:0:0:100:aksarban:
+39-crc32:$crc32$13504553.a2d7649f:0:0:100:johnny:
+40-crc32:$crc32$00000000.880e0d76:0:0:100:admin:
+41-crc32:$crc32$00000000.75500baa:0:0:100:password1:
+42-crc32:$crc32$00000000.f7a18909:0:0:100:Password1:
+43-crc32:$crc32$00000000.bc463493:0:0:100:letMein:
+44-crc32:$crc32$00000000.4be6f5ff:0:0:100:HookFish:
+45-crc32:$crc32$00000000.42d52bf0:0:0:100:Swordfish:
+46-crc32:$crc32$00000000.f12d2d96:0:0:100:letíein:
+47-crc32:$crc32$00000000.c024a953:0:0:100:swordfish:
+48-crc32:$crc32$39697921.b069c00e:0:0:100:limiey:
+49-crc32:$crc32$00000000.af11d938:0:0:100:asdfasfga:

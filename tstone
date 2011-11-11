@@ -22,6 +22,7 @@ if [ x"$JOHN_PATH" = x ]; then
   export JOHN_EXE
 fi
 
+#uncomment the next line, to 'see' the proper command used to call ./tstone with.  Shows how to use tstone by itself to quickly test a problem format, without having to wait for all other testing items to be handled 'first'
 #echo ./tstone $1 $2 $3 $4 $5 $6 $7 $8
 
 rm -f tst.rec

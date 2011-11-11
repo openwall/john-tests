@@ -15,7 +15,7 @@ JOHN_ARG1="$1"
 # No copyright is claimed, and the software is hereby 
 # placed in the public domain. In case this attempt to disclaim 
 # copyright and place the software in the public domain is deemed 
-# null and void, then the software is Copyright © 2009 Jim Fougeron
+# null and void, then the software is Copyright © 2011 Jim Fougeron
 # and it is hereby released to the general public under the following
 # terms: 
 #
@@ -23,7 +23,7 @@ JOHN_ARG1="$1"
 # purpose, in source and binary forms, with or without modification.
 #
 # Things TODO:
-#   Add am 'expected' number to match. Then if it matches, simply echo "PASS"
+#   Add an 'expected' number to match. Then if it matches, simply echo "PASS"
 #   Finish up any missing formats.
 #
 # v1.00 initial release
@@ -68,11 +68,9 @@ JOHN_ARG1="$1"
 #               The functions allow a much smaller script file.  To add a new code page,
 #               be sure the input files are named properly (FmtName_tst_CODEPAGE.in), then in
 #               this script file search for CODE_PAGE, and add the new approprate lines.
-#
-# v1.08 Added 'raw' input testing for md5_gen.  Changed md5_gen to dyanmic. Thus, all the input
-#               files were renamed here in the test suite, and all format signatures were 
-#               changed to 'proper' type.
-#          
+# v1.08 Added crc32. Changed md5_gen to dynamic, changing 'all' files, both names, and internal
+#               contents. Some fixes in tstonebase, and LM was not being called in base.
+#               Added 'raw' input testing for dynamic.  Magnum added -utf8 command line switch.
 #--------------------------------------------------------------------
 
 if [ ! -d $JOHN_PATH ]; then
@@ -88,7 +86,7 @@ fi
 JOHN_SIGNATURE=`$JOHN_EXE | head -1`
 
 echo  "--------------------------------------------------------------------------------"
-echo  "- JtR Test Suite Script. Version 1.08, Oct 5, 2011.  By, Jim Fougeron"
+echo  "- JtR Test Suite Script. Version 1.08, Nov 11, 2011.  By, Jim Fougeron"
 echo  "-"
 echo  "- Testing this build of john:"
 echo  "-   $JOHN_SIGNATURE"
@@ -101,54 +99,16 @@ echo  "- it is very likely this format has a problem within the current build of
 echo  "--------------------------------------------------------------------------------"
 echo
 
-MSSQL_ORACLE_ONLY_TEST () {
-./tstone pw mssql_tst.in           '-form=mssql'
-./tstone pw mssql_tst.in           '-form=mssql-8859-1'            -form mssql -enc=iso-8859-1
-./tstone pw-gen-enc mssql_tst_iso8859-1.in '-form=mssql-8859-1'    -form mssql -enc=iso-8859-1
-
-./tstone pw-gen-enc mssql_tst_cp437.in           '-form=mssql-cp437'            -form mssql -enc=cp437
-./tstone pw-gen-enc mssql_tst_cp737.in           '-form=mssql-cp737'            -form mssql -enc=cp737
-./tstone pw-gen-enc mssql_tst_cp850.in           '-form=mssql-cp850'            -form mssql -enc=cp850
-./tstone pw-gen-enc mssql_tst_cp858.in           '-form=mssql-cp858'            -form mssql -enc=cp858
-./tstone pw-gen-enc mssql_tst_cp866_gen.in       '-form=mssql-cp866'            -form mssql -enc=cp866
-./tstone pw-gen-enc mssql_tst_cp1251_gen.in      '-form=mssql-cp1251'           -form mssql -enc=cp1251
-./tstone pw-gen-enc mssql_tst_cp1252.in          '-form=mssql-cp1252'           -form mssql -enc=cp1252
-./tstone pw-gen-enc mssql_tst_cp437.in           '-form=mssql-cp437'            -form mssql -enc=cp437
-./tstone pw-gen-enc mssql_tst_koi8r_gen.in       '-form=mssql-koi8r'            -form mssql -enc=koi8r
-./tstone pw         mssql_tst.in                 '-form=mssql-utf8 (1229)'      -form mssql -enc=utf8
-
-./tstone pw-cp866 mssql_tst_cp866.in             '-form=mssql-cp866'            -form mssql -enc=cp866
-./tstone pw-cp1251 mssql_tst_cp1251.in           '-form=mssql-cp1251'           -form mssql -enc=cp1251
-./tstone pw-koi8r mssql_tst_koi8r.in             '-form=mssql-koi8r'            -form mssql -enc=koi8r
-
-./tstone pw         oracle_tst.in             '-form=oracle'                   -form oracle
-./tstone pw         oracle_tst.in             '-form=oracle-8859-1'            -form oracle -enc=iso-8859-1
-./tstone pw-gen-enc oracle_tst_cp437.in       '-form=oracle-cp437'            -form oracle -enc=cp437
-./tstone pw-gen-enc oracle_tst_cp737.in       '-form=oracle-cp737'            -form oracle -enc=cp737
-./tstone pw-gen-enc oracle_tst_cp850.in       '-form=oracle-cp850'            -form oracle -enc=cp850
-./tstone pw-gen-enc oracle_tst_cp858.in       '-form=oracle-cp858'            -form oracle -enc=cp858
-./tstone pw-cp866   oracle_tst_cp866.in       '-form=oracle-cp866'            -form oracle -enc=cp866
-./tstone pw-cp1251  oracle_tst_cp1251.in      '-form=oracle-cp1251'           -form oracle -enc=cp1251
-./tstone pw-gen-enc oracle_tst_cp1252.in      '-form=oracle-cp1252'           -form oracle -enc=cp1252
-./tstone pw-koi8r   oracle_tst_koi8r.in       '-form=oracle-koi8r'            -form oracle -enc=koi8r
-./tstone pw-utf8    oracle_tst_utf8.in        '-form=oracle-utf8'             -form oracle -enc=utf8
-./tstone pw         oracle_tst.in             '-form=oracle-utf8 (1229)'      -form oracle -enc=utf8
-
-exit 2;
-}
-
 CORE_JOHN_ONLY() {
   echo
   echo "Detected John 'core' build, so only testing the core formats"
   echo
 
   ./tstonebase pw DES_tst.in       '-form=DES'
-  ./tstonebase pw LM_tst.in              -form=LM  -form lm
-
+  ./tstonebase pw LM_tst.in        '-form=LM'            -form lm
   echo NOTE, only 986 LM tests found in this pwdump file, that is normal
   echo
-
-  ./tstonebase pw pwdump_tst.in          -form=pwdump_LM               -form lm
+  ./tstonebase pw pwdump_tst.in    '-form=pwdump_LM'     -form lm
   ./tstonebase pw BigCrypt_tst.in  '-form=BigCrypt_DES'
   #
   # we make 'smaller' dictionary files for these SLOWER hashes. This is so that if there ARE
@@ -255,6 +215,14 @@ if [ "$JOHN_ARG1" != "utf8" ]; then
   ./tstone pw md4s_tst.in       -form=md4-gens        -form md4-gen
   ./tstone pw mscash_tst.in     -form=mscash          -form mscash
 
+  echo "For the CRC testing, the checking of the pot file for the dups testing"
+  echo "should not find 1500, but only find 50 candidates. But the main testing"
+  echo "still should find 1500.  The reason is that crc32 is a non-exact format"
+  echo
+  ./tstone pw crc32_tst.in                           -form=crc32
+  ./tstone pw-crc32-dup crc32_dups_tst.in            -form=crc32_dups
+  ./tstone pw-crc32-dup2 crc32_dups2_tst.in          -form=crc32_dups2
+  
   echo NOTE, mscash-crash may crash, run and present 1440 or run and present 1500,
   echo depending upon if mscash dies for user names over 19, if it can run but ignore them,
   echo of if it can properly process user names up to 22 characters.
