@@ -61,11 +61,11 @@ if [ "$JOHN_OUT" != "" ]; then
 	esac
 	rm -f pw3
 	$UNIQUE -inp=pw2 pw3 > /dev/null
-	rm -f pw2
+	#rm -f pw2
 	mv tst.pot tst2.pot
 	JOHN_OUT=`$JOHN_EXE -nolog -config=$JOHN_PATH/john.conf -pot=./tst.pot -sess=./tst -w=./pw3 $EXPARM $2 2>&1 >/dev/null | awk '{printf("%s %s %s %s %s\n",$1,$2,$3,$4,$5);}' | grep guesses`
-	rm -f pw3
-	rm -f tst2.pot
+	#rm -f pw3
+	#rm -f tst2.pot
 	echo $JOHN_OUT
 	echo
 else
