@@ -11,7 +11,7 @@ my $VERSION = "1.10";
 #############################################################################
 
 # EDIT this variable to properly setup the john-test-suite script
-my $JOHN_PATH = "../john-1.7.9/john-1.7.9-a/run";
+my $JOHN_PATH = "../run";
 # NOTE, john built on Windows 'may' need this lines changed to "$JOHN_PATH/john.exe" IF the script will not run properly.
 my $JOHN_EXE  = "$JOHN_PATH/john";
 my $UNIQUE    = "$JOHN_PATH/unique";
