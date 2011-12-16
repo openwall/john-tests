@@ -72,6 +72,9 @@ sub parseArgs {
 		$UNIQUE    = "$JOHN_PATH/unique";		
 	}
 	setquiet($quiet);
+	if (@ARGV) {
+	    push @types, @ARGV;
+	}
 }
 
 ###############################################################################
