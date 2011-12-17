@@ -1,21 +1,23 @@
-package testall_inc;
+package jtrts_inc;
 use strict;
 use warnings;
 use Exporter;
 
 my $last_line_len = 0;
-my $quiet = "";
+my $verbosity;
 
 our @ISA= qw( Exporter );
 
 # these CAN be exported.
-our @EXPORT_OK = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV setquiet stringInArray arrayPartInString );
+our @EXPORT_OK = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV 
+                     setVerbosity stringInArray arrayPartInString timeToSecs ScreenOutAlways_ar );
 
 # these are exported by default.
-our @EXPORT = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV setquiet stringInArray arrayPartInString );
+our @EXPORT = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV 
+                  setVerbosity stringInArray arrayPartInString timeToSecs ScreenOutAlways_ar );
 
-sub setquiet {
-	$quiet = $_[0];
+sub setVerbosity {
+	$verbosity = $_[0];
 }
 
 ###############################################################################
@@ -30,25 +32,28 @@ usage: $0 [-h|-?] [-option[s]]
     Options can be abbreviated!
 
     Options are:
-    -quiet     <s> 4 'valid' values for <s>  q, qq, v and vv. q is pretty
-                   quiet, qq is very quiet. in qq mode, the only screen
-                   output is errors.  v is more verbose, and vv is very
-                   verbose.
+    -quiet+        Makes JtRTest Suite more 'quiet' or more verbose. -q
+    -verbose+      is a good level to run.  -qq is very quiet, does not
+                   output until run has ended, unless there are errors.
+                   -v is the opposite of -q.  -v outputs a lot of information.
+                   -vv  is pretty much debugging level, it outputs a LOT.
+                   -q -v together is a no-op.
     -type      <s> Provide selection criteria.
                    Examples:
                      -type1 dynamic_0    This will test this 1 format
                      -type1 utf8         tests all formats with -utf8
                      -type1 nt -type2 utf8  NT format, but ONLY utf8
 	               N can be 1, 2, 3 or 4.  Thus, you can provide 4
-	               selection criteria
-    -non_type  <s> Provide negative selection criteria.  Thus, we will
+	               selection criteria.  NOTE, any 'left over' command
+                   line params, get shoved into a 'type'.
+    -nontype   <s> Provide negative selection criteria.  Thus, we will
                    not process any formats containing this type.
     -showtypes     Show the possible values that can be used for -typeN
                    or -nontypeN options, and required types.
     -basepath  <s> set the basepath where john exe is located. By default 
                    this is set to $_[0]
     -prelims       Perform (and optionally show), the prelim testing (encoding).
-	-noprelims     Do not perform this prelim work.
+	-noprelims     Do not perform this prelim work. -prelim is default.
     -help|?        shows this help screen.
 UsageHelp
 }
@@ -59,65 +64,74 @@ UsageHelp
 # testings, we may output using ScreenOutSemi.  In this mode, if running under
 # 'qq, we output nothing.  If in 'q', we output the one line mode, with \r to
 # overwrite the prior line.  Otherwise it outputs 'normally'.  These multiple
-# 'modes' allows us to better control screen output. There are quiet's and 
-# verboses's.  Thus, we can tell the script how quiet, or how verbose to be,
-# and the output will be tailored to that request.
+# 'modes' allows us to better control screen output. There are verbosity's and 
+# verboses's.  Thus, we can tell the script how verbose to be, and the output
+# will be tailored to that request.
 ###############################################################################
 
 # this is the 'normal' screen output
 sub ScreenOut {
-	if ($quiet ne 'qq' && $quiet ne 'q') {
-		print "$_[0]";
+	if ($verbosity >= 2) {
+		print "@_";
 		$last_line_len = 0;
-		if (length($_[0]) && substr($_[0], length($_[0])-1, 1) eq '\n') {
-			$last_line_len = length($_[0]);
-		}
 	}
 }
 # this screen output output 1 line, and overwrite it, if in 'q' quiet mode. In 'qq' it will 
 # output nothing.  In 'normal mode', it will call ScreenOut
 sub ScreenOutSemi {
-	if ($quiet eq 'qq') { return; }
-	if ($quiet eq 'q') {
+	if ($verbosity < 1) { return; }
+	if ($verbosity == 1) {
 		printf ("\r%$last_line_len.${last_line_len}s\r", " ");
 		my $s = $_[0];
 		chomp $s;
 		print $s;
 		$last_line_len = length($s);
 		print "\r";
-	} else { ScreenOut($_[0]); }
+	} else { ScreenOut(@_); }
 }
 # output to screen no matter what mode we are in.  This is used to show
 # errors. Either script not setup or called right, OR a test failure error.
 sub ScreenOutAlways {
-	print "$_[0]";
+	print "@_";
 	$last_line_len = 0;
-	if (length($_[0]) && substr($_[0], length($_[0])-1, 1) eq '\n') {
-		$last_line_len = length($_[0]);
+}
+
+sub ScreenOutAlways_ar {
+	my $len = length($_[0]);
+	if (substr($_[0], length($_[0])-1, 1) eq "\n") { $len = 0; }
+	print shift;
+	my $first = 1;
+	my $s;
+	foreach $s (@_) {
+		if ($len + length($s) + 2 > 78) { print("\n"); $len = 0; }
+		if ($len && !$first) {
+			print ", $s";
+			$len += length($s)+2;
+		} else {
+			print "  $s";
+			$len += length($s)+2;
+		}
+		$first = 0;
 	}
+	if ($len) { print "\n"; }
+	$last_line_len = 0;
 }
 
 # print verbose 'v' messages
 # also able to print array's (debugging shit).
 sub ScreenOutV {
-	if ($quiet eq 'v' || $quiet eq 'vv') {
+	if ($verbosity > 2) {
 		print "@_";
 		$last_line_len = 0;
-		if (length($_[0]) && substr($_[0], length($_[0])-1, 1) eq '\n') {
-			$last_line_len = length($_[0]);
-		}
 	}
 }
 
 # print verbose 'vv' messages
 # also able to print array's (debugging shit).
 sub ScreenOutVV {
-	if ($quiet eq 'vv') {
+	if ($verbosity > 3) {
 		print "@_";
 		$last_line_len = 0;
-		if (defined($_[0]) && length($_[0]) && substr($_[0], length($_[0])-1, 1) eq '\n') {
-			$last_line_len = length($_[0]);
-		}
 	}
 }
 
@@ -138,5 +152,15 @@ sub arrayPartInString {
 		}
 	}
 	return 0;
+}
+
+sub timeToSecs {
+	# not a time_t, but enough to add/subtract one time from another, and get # of seconds.
+	my $secs = 0;
+	$secs += $_[0];
+	$secs += $_[1]*60;
+	$secs += $_[2]*3600;
+	$secs += $_[7]*3600*24;
+	return $secs;
 }
 1;

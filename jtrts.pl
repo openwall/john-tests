@@ -1,10 +1,14 @@
 #!/usr/bin/perl -w
 use strict;
 use Getopt::Long;
-use testall_inc;
-use IO::CaptureOutput qw/capture_exec/;
+use jtrts_inc;
 
-my $VERSION = "1.10";
+my $VERSION = "1.10-RC1";
+
+# how to do alpha character left, so next 'alpha', or beta release will be easy.
+#use utf8;
+#my $VERSION = "1.10-\x{3B1}2"; # alpha-2
+#binmode(STDOUT, ":utf8"); # to print the alpha char. once we get rid of the alpha char, this line should be commented out.
 
 #############################################################################
 # For the version information list, see the file JtrTestSuite.Manifest
@@ -15,37 +19,45 @@ my $JOHN_PATH = "../run";
 # NOTE, john built on Windows 'may' need this lines changed to "$JOHN_PATH/john.exe" IF the script will not run properly.
 my $JOHN_EXE  = "$JOHN_PATH/john";
 my $UNIQUE    = "$JOHN_PATH/unique";
-my $quiet     = "";
+my $verbosity  = 2;
+my $quiet = 0; my $verbose = 0;
 my @types=();
 my @nontypes=();
 my @caps=();
+my @encs=();
 my @johnUsageScreen=();
 my @validFormats=();
 my @tstdata;
-my $showtypes=0, my $basepath=""; my $prelims=0;
+my $showtypes=0, my $basepath=""; my $prelims=1;
 my $last_line_len=0;
 my $john_type="core";  # may be replaced with jumbo.  This will end up BEING a typex
-my $error_cnt = 0, my $error_cnt_pot = 0;
-  
+my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0;
+my @timeStart = localtime(time);
+
 ###############################################################################
 # MAIN
 ###############################################################################
 
 parseArgs();
-johnPrelims();
+setup();
 readData();
+if ($showtypes) { showTypeData(); exit; }
+johnPrelims();
 filterPatterns();
 process();
 cleanup();
-if ($error_cnt == 0 && $error_cnt_pot == 0) {
-	ScreenOutAlways ("All tests passed without error\n");
-} else {
-	my $s = "Some tests had Errors. ";
-	unless ($error_cnt == 0) { $s = $s . "  $error_cnt errors"; }
-	unless ($error_cnt_pot == 0) { $s = $s . "  $error_cnt_pot errors reprocessing the .POT files"; }
-	ScreenOutAlways ("$s\n");
-}
 
+my @timeEnd = localtime(time);
+my $secs = timeToSecs(@timeEnd)-timeToSecs(@timeStart);
+
+if ($error_cnt == 0 && $error_cnt_pot == 0) {
+	ScreenOutAlways ("All tests passed without error.  Performed $done_cnt tests.  Time used was $secs seconds\n");
+} else {
+	my $s = "Some tests had Errors. Performed $done_cnt tests.";
+	unless ($error_cnt == 0) { $s = $s . "$error_cnt errors"; }
+	unless ($error_cnt_pot == 0) { $s = $s . "  $error_cnt_pot errors reprocessing the .POT files"; }
+	ScreenOutAlways ("$s\nTime used was $secs seconds\n");
+}
 
 ###############################################################################
 # Here are all of the subroutines that get the job done
@@ -58,23 +70,24 @@ sub parseArgs {
 	my $help = 0;
 	GetOptions(
 		'help|?',          => \$help,
-		'quiet=s'          => \$quiet,
+		'quiet+'           => \$quiet,
+		'verbose+'         => \$verbose,
 		'type=s'           => \@types,
 		'nontype=s'        => \@nontypes,
 		'showtypes'        => \$showtypes,
 		'basepath=s'       => \$basepath,
 		'prelims!'         => \$prelims,
-		) || usage($JOHN_EXE);
+		);
 	if ($help) { usage(); }
-	if ($basepath ne "") { 
+	if ($basepath ne "") {
 		$JOHN_PATH = $basepath;
 		$JOHN_EXE  = "$JOHN_PATH/john";
-		$UNIQUE    = "$JOHN_PATH/unique";		
+		$UNIQUE    = "$JOHN_PATH/unique";
 	}
-	setquiet($quiet);
-	if (@ARGV) {
-	    push @types, @ARGV;
-	}
+	$verbosity = 2 + $verbose - $quiet;
+	setVerbosity($verbosity);
+	if (@ARGV) { push @types, @ARGV; }
+
 }
 
 ###############################################################################
@@ -90,9 +103,71 @@ sub grepUsage {
 }
 
 ###############################################################################
-# here we do prelim work.
+# here we do prelim work.  This is the multiple calls to -test=0 which should
+# not output ANY error conditions.
 ###############################################################################
 sub johnPrelims {
+	return unless $prelims;
+	
+	johnTest0_one(" ");
+	foreach my $item (@encs) {johnTest0_one("-enc:$item");}
+	if ($verbosity < 2) {ScreenOutSemi(" \n");}
+}
+sub johnTest0_one {
+	ScreenOutSemi("testing: john -test=0 $_[0]\n");
+	my $sCmd = "$JOHN_EXE -test=0 $_[0]";
+	my $sCmdOut = `$sCmd`;
+	my @CmdLines = split (/\n/, $sCmdOut);
+	foreach my $line(split (/\n/, $sCmdOut)) { if (index($line, "FAILED") ge 0) { ScreenOutAlways($line,"\n"); } }
+}
+###############################################################################
+# We parse through the data file, and list the 'types' that can be used, 
+# removing duplicates, etc.
+###############################################################################
+sub showTypeData {
+	# Get all the 'types'.  NOTE, full was removed from element 0, so we 'add' it to 'seed' the list, and also add base.
+	my @typeddata = ("base", "full");
+	
+	{
+		LINE: foreach my $line(@tstdata) {
+			my @ar = split(',', $line);
+			my $cnt = @ar;
+			if ($cnt == 12) {
+				my @types = split('\)', $ar[0]);
+				my @types_fixed = ();
+				TYPE: foreach my $type (@types) {
+					$type = substr($type, 1, length($type)-1);
+					if ($type eq "full") {ScreenOutVV("(full) found in field0 for $line\n");}
+					if (!stringInArray($type, @validFormats)) {
+						push(@types_fixed, $type);
+					} else {
+						ScreenOutVV("Exact format found in field 1 $type\n");
+					}
+				}
+				my %k;
+				map { $k{$_} = 1 } @typeddata;
+				push(@typeddata, grep { !exists $k{$_} } @types_fixed);		
+			}
+		}
+	}
+	ScreenOutAlways_ar("\nHere are all of the type values in this test suite:\n", @typeddata);
+	ScreenOutAlways_ar("\nThese are the valid formats in this john (also valid as types):\n", @validFormats);
+
+	ScreenOutAlways("\nIf there is no types given, then '-type base -type utf8 -type koi8r'\n");
+	ScreenOutAlways("will be the type used if this is a john-jumbo build, and -type full\n");
+	ScreenOutAlways("will be used for non-jumbo john (i.e. 'core' john)\n\n");
+	ScreenOutAlways("-type full does a test of ALL formats, and all encodings, including the\n");
+	ScreenOutAlways("           slow types.\n");
+	ScreenOutAlways("-type base tests the formats where tests do not take 'too' much time.\n");
+	ScreenOutAlways("      NOTE, base covers most of the formats.\n");
+}
+###############################################################################
+# Setup the program to run.  Parses through params, strtok's the ./john screen
+# output, and also possilby ./john -sub:LIST and ./john -enc:LIST to find
+# internal 'variable' data built into jumbo, which can be added to, or removed
+# over time, and between builds.
+###############################################################################
+sub setup {
 	if ( ! -d $JOHN_PATH ) {
 		ScreenOutAlways("ERROR, the JOHN_PATH variable has to be setup properly for this script file to run.\n");
 		exit;
@@ -101,27 +176,19 @@ sub johnPrelims {
 		ScreenOutAlways("Error, the JOHN_EXE variable is not setup properly, or john was not built yet\n");
 		exit;
 	}
-	
+
 	# we store a ./john error string to this file.  We will use this data in several ways, later.
 	system ("$JOHN_EXE >JohnUsage.Scr 2>&1");
 	open(FILE, "<JohnUsage.Scr") or die $!;
 	@johnUsageScreen = <FILE>;
 	close(FILE);
-	
+
 	ScreenOutAlways("-------------------------------------------------------------------------------\n");
 	ScreenOutAlways("- JtRTestSuite. Version $VERSION, Dec 15, 2011.  By, Jim Fougeron\n");
-	ScreenOut("-\n");
-	ScreenOutAlways("- Testing this build of john:\n");
-	ScreenOutAlways("-     $johnUsageScreen[0]"); # note the line ends in a \n, so do not add one.
-	ScreenOut("-\n");
-	ScreenOut("- against many formats. Each test should find 1500 passwords.  A few do find a\n");
-	ScreenOut("- smaller count, and when this is the case, this script does list this fact.\n");
-	ScreenOut("- If a format shows fewer than 1500 values (and .pot CHK) found, and the format\n");
-	ScreenOut("- is not one of them listed as the 'supposed to be less then 1500' formats, then\n");
-	ScreenOut("- it is very likely this format has a problem within the current build of john.\n");
+	ScreenOutAlways("- Testing:  $johnUsageScreen[0]"); # note the line ends in a \n, so do not add one.
 	ScreenOutAlways("--------------------------------------------------------------------------------\n");
 	ScreenOut("\n");
-	
+
 	# now use the john error screen to determine if this is a jumbo john, or
 	# a core john. Then use this data to figure out what formats ARE and are NOT
 	# able to be run by this build (so we can later skip formats NOT built in
@@ -129,7 +196,7 @@ sub johnPrelims {
 	# in different builds of john.  Also certain extra options like -nolog may
 	# be 'possible'.  We simply parse that screen (and also a john -sub:list to
 	# get a list of dynamics, if we are in a jumbo), so we know HOW to proceed.
-	
+
 	ScreenOutVV("John 'usage' data is:\n");
 	ScreenOutVV(@johnUsageScreen);
 
@@ -150,11 +217,10 @@ sub johnPrelims {
 		ScreenOutV("--nolog option is valid\n");
 	}
 	# can we use --config=./john.conf ?
-	if (grepUsage("--config=FILE")) {
-		push(@caps, "config_valid");
+	if (grepUsage("--config=FILE")) { push(@caps, "config_valid");
 		ScreenOutV("--config=FILE option is valid\n");
 	}
-	# if the --field-sep=value valid? 
+	# if the --field-sep=value valid?
 	if (grepUsage("--field-separator-char=")) {
 		push(@caps, "field_sep_valid");
 		ScreenOutV("--field-separator-char=C option is valid\n");
@@ -171,7 +237,8 @@ sub johnPrelims {
 			loadAllValidEncodings();
 		} else {
 			# 'hopefully' these are valid.
-			push(@caps, "utf8", "cp1252", "cp1251", "koi8r", "cp437", "cp737", "cp850", "cp858", "cp866", "iso5559-1", "iso5559-15" );
+			push(@encs, "utf8", "cp1252", "cp1251", "koi8r", "cp437", "cp737", "cp850", "cp858", "cp866", "iso5559-1", "iso5559-15" );
+			push(@caps, @encs );
 		}
 	}
 	if (@types) {
@@ -179,7 +246,18 @@ sub johnPrelims {
 		ScreenOutV(@types);
 		ScreenOutV("\n");
 	} else {
-		@types = ("*"); # we want ALL that are valid.
+		#@types = ("*"); # we want ALL that are valid.
+
+		# we setup the 'defaults'.  If there are NO types at all, then we do this:
+		#  -type full      (core builds)
+		#  -t base -t koi8r -t utf8 on john jumbo builds.
+		if (stringInArray("jumbo", @caps)) {
+			ScreenOutV("Setting default for john-jumbo to be:   base+koi8r+utf8\n");
+			push (@types, "base", "koi8r", "utf8"); 
+		} else {
+			ScreenOutV("Setting default for john-core to be:   full+core\n");
+			push (@types, "core", "full");
+		}
 	}
 	if (@nontypes) {
 		ScreenOutV("Types to filter off (non-types):\n");
@@ -212,7 +290,7 @@ sub loadAllValidFormatTypeStrings {
 				while (substr($line, 0, 1) ne ":") {
 					$line = substr($line, 1, length($line)-1);
 				}
-				$line = substr($line, 2, length($line)-2);				
+				$line = substr($line, 2, length($line)-2);
 				chomp($line);
 				$line =~ s/\r$//;  # strip CR for non-Windows
 				$fmt_str = $fmt_str . $line;
@@ -221,7 +299,7 @@ sub loadAllValidFormatTypeStrings {
 			if (index($line, '-') == 0) { last; }
 			while (substr($line, 0, 1) eq " " || substr($line, 0, 1) eq "\t") {
 				$line = substr($line, 1, length($line)-1);
-			}			
+			}
 			chomp($line);
 			$line =~ s/\r$//;  # strip CR for non-Windows
 			$fmt_str = $fmt_str . $line;
@@ -241,9 +319,9 @@ sub loadAllValidFormatTypeStrings {
 			}
 		}
 	}
-	
+
 	@validFormats = split(/\//, $fmt_str);
-	if ($quiet eq 'vv') {
+	if ($verbosity > 3) {
 		my $cnt = @validFormats;
 		ScreenOutVV("There are $cnt formats this john build can handle are:\n");
 		foreach my $line(@validFormats) { ScreenOutVV($line . ","); }
@@ -257,7 +335,7 @@ sub loadAllValidEncodings {
 	my @encodings = <FILE>;
 	close(FILE);
 	unlink("JohnEncUsage.Scr");
-	my $str; 
+	my $str;
 	foreach my $sline (@encodings) {
 		if (index($sline, "Supported ") lt 0) {
 			my @encline = split(/, /,$sline);
@@ -269,30 +347,41 @@ sub loadAllValidEncodings {
 					$item = substr($item, 0, index($item, ","));
 				}
 				push(@caps, $item);
+				push(@encs, $item);
 			}
 		}
 	}
 }
 ###############################################################################
-# we read the data file 'tstall.dat'.  This is a CSV file. It contains lines
+# we read the data file 'jtrts.dat'.  This is a CSV file. It contains lines
 # of data, which provide the data, used along with john's capabilities, along
 # with the way the user wants to run (the -type and -nontype values).
 ###############################################################################
 sub readData {
-	open(FILE, "<tstall.dat") or die $!;
+	open(FILE, "<jtrts.dat") or die $!;
 	my @lines = <FILE>;
 	close(FILE);
 	foreach my $line(@lines) {
 		chomp($line);
 		$line =~ s/\r$//;  # strip CR for non-Windows
 		if (length($line) > 0 && substr($line, 0, 1) ne "#") {
-			$line = "(*)" . $line;
-			push(@tstdata, $line);
+			#$line = "(*)" . $line;  # we have now added the "base", so there is no reason for this one.
+			my @ar = split(',', $line);
+			my $cnt = @ar;
+			if ($cnt == 12) {
+				if (!$showtypes) {
+					if (index($ar[0], "($ar[7])") lt 0) {
+						$line = "($ar[7])$line";
+					}
+					$line = "(full)$line";
+				}
+				push(@tstdata, $line);
+			}
 		}
 	}
-	if ($quiet eq 'vv') {
+	if ($verbosity > 3) {
 		my $cnt = @tstdata;
-		ScreenOutVV("Running data-dictionary. $cnt items (tstall.dat):\n");
+		ScreenOutVV("Running data-dictionary. $cnt items (jtrts.dat):\n");
 		foreach my $line(@tstdata) { ScreenOutVV($line . "\n"); }
 		ScreenOutVV("\n");
 	}
@@ -308,17 +397,17 @@ sub filterPatterns {
 			my $valid = 'f';
 			if ($cnt == 12) {
 				# determine if our build of john 'can' do this format:
-				if (!stringInArray($ar[7], @validFormats)) { 
+				if (!stringInArray($ar[7], @validFormats)) {
 					ScreenOutVV("Line [$line] filtered out, because format ${ar[7]} can not be processed by this build of john\n");
 					next LINE;
 				}
 				# Now, make sure that this is something 'requested'
-				if (!arrayPartInString($ar[0], @types)) { 
+				if (!arrayPartInString($ar[0], @types)) {
 					ScreenOutVV("Line [$line] filtered out, no requests [$ar[0]] in [@types] were satisfied\n");
 					next LINE;
 				}
 				# Now, make sure that nothing from the is something 'non-requested' is set
-				if (arrayPartInString($ar[0], @nontypes)) { 
+				if (arrayPartInString($ar[0], @nontypes)) {
 					ScreenOutVV("Line [$line] filtered out. A non request [@types] was found\n");
 					next LINE;
 				}
@@ -329,7 +418,7 @@ sub filterPatterns {
 						my @reqs = split(/&/,$ar[1]);
 						$valid = 'f';
 						foreach my $req(@reqs) { # note, these are already wrapped in ()
-							if (!stringInArray(substr($req, 1, length($req)-2), @types)) { 
+							if (!stringInArray(substr($req, 1, length($req)-2), @types)) {
 								ScreenOutVV("Line [$line] filtered out, required option [@reqs] not satisfied in [@types]\n");
 								next LINE;
 							}
@@ -339,14 +428,14 @@ sub filterPatterns {
 				# Now, make sure that ALL of the required build capacities are satisfied.
 				my @reqs = split(/&/,$ar[2]);
 				foreach my $req(@reqs) {
-					if (!stringInArray(substr($req, 1, length($req)-2), @caps)) { 
+					if (!stringInArray(substr($req, 1, length($req)-2), @caps)) {
 						ScreenOutVV("Line [$line] filtered out, required build option option [@reqs] not satisfied in [@caps]\n");
 						next LINE;
 					}
 				}
-				
+
 				# OK, make sure the dictionary file 'exists'
-				unless (-e "${ar[5]}.dic") { 
+				unless (-e "${ar[5]}.dic") {
 					ScreenOutVV("Line [$line] filtered out, because dictionary ${ar[5]}.dic not found\n");
 					next LINE;
 				}
@@ -355,15 +444,15 @@ sub filterPatterns {
 				push (@filtereddata, $line);
 			}
 		}
-		
+
 		# now that we have filtered our data, put it on the 'real' list.
 		@tstdata = ();
 		for my $line(@filtereddata) { push(@tstdata, $line); }
 	}
-	
-	if ($quiet eq 'vv') {
+
+	if ($verbosity > 3) {
 		my $cnt = @tstdata;
-		ScreenOutVV("Filtered items from the data-dictionary. $cnt items (tstall.dat):\n");
+		ScreenOutVV("Filtered items from the data-dictionary. $cnt items (jtrts.dat):\n");
 		foreach my $line(@tstdata) { ScreenOutVV($line . "\n"); }
 		ScreenOutVV("\n");
 	}
@@ -386,12 +475,13 @@ sub process {
 	my $dict_name_ex = "";
 	my $dict_name = "";
 	my $line = "";
-	
+
 	LINE: foreach my $line(@tstdata) {
 		my @ar = split(',', $line);
 		$dict_name = "$ar[5].dic";
 		my $cmd = "$cmd_head $ar[6]";
-		unless (-e $ar[6]) { next LINE; } 
+		unless (-e $ar[6]) { next LINE; }
+		$done_cnt = $done_cnt + 1;
 		if ($ar[3] != 10000) {
 			open (FILE, "<".$dict_name);
 			my @lines = <FILE>;
@@ -407,16 +497,16 @@ sub process {
 			close(FILE);
 		}
 		$cmd = "$cmd -w=$dict_name";
-		
+
 		if ($ar[8] eq 'Y') { $cmd = "$cmd \'-form=$ar[7]\'"; }
 		if ($ar[9] ne 'X') { $cmd = "$cmd $ar[9]"; }
 		$cmd = "$cmd 2>&1 >/dev/null";
-		
+
 		ScreenOutVV("Execute john: $cmd\n");
 		unlink($pot);
 		my $cmd_data = `$cmd`;
 		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
-		
+
 		my @crack_cnt = split (/\n/, $cmd_data);
 
 		my @crack_xx = ();
@@ -429,12 +519,13 @@ sub process {
 		while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
 		my $orig_crack_cnt = $crack_xx[1];
 		ScreenOutSemi("\n");
-		
+
 		if (index($ar[10], "($orig_crack_cnt)") lt 0) {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt);
 			ScreenOutAlways($str);
 			# check for self-test failure
+			# NOTE other failures should also be looked for, when we 'find' them.
 			$error_cnt += 1;
 			foreach $line (@crack_cnt) {
 				if (index($line, "Self test failed") ge 0) {
@@ -448,7 +539,7 @@ sub process {
 		if ($dict_name_ex ne "") {
 			unlink ($dict_name_ex);
 		}
-		
+
 		# now do the .pot check.
 		unlink ("pw3");
 		if ($ar[8] eq "\'-fie=\\x1F\'") {
@@ -459,12 +550,12 @@ sub process {
 			system($cmd2);
 		}
 		$cmd =~ s/$dict_name/pw3/;
-		
-		ScreenOutVV("Execute john (.pot check): $cmd\n");		
+
+		ScreenOutVV("Execute john (.pot check): $cmd\n");
 		unlink ($pot);
 		$cmd_data = `$cmd`;
 		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
-		
+
 		unlink("pw3");
 		@crack_xx = ();
 		@crack_cnt = split (/\n/, $cmd_data);
@@ -490,7 +581,7 @@ sub process {
 		# handle john 'core' behavior.  then we delete the pot we just made, then rename the 'saved' version.
 		unlink $JOHN_PATH."/john.pot";
 		rename $JOHN_PATH."/john.ptt",$JOHN_PATH."/john.pot";
-	}	
+	}
 }
 
 ###############################################################################
