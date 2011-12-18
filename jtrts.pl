@@ -3,7 +3,7 @@ use strict;
 use Getopt::Long;
 use jtrts_inc;
 
-my $VERSION = "1.10-RC1";
+my $VERSION = "1.10-RC2";
 
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
@@ -88,7 +88,6 @@ sub parseArgs {
 	setVerbosity($verbosity);
 	if (@ARGV) { push @types, @ARGV; }
 	foreach my $i (0..$#types) { $types[$i] = lc($types[$i]); }
-
 }
 
 ###############################################################################
@@ -115,11 +114,17 @@ sub johnPrelims {
 	if ($verbosity < 2) {ScreenOutSemi(" \n");}
 }
 sub johnTest0_one {
-	ScreenOutSemi("testing: john -test=0 $_[0]\n");
-	my $sCmd = "$JOHN_EXE -test=0 $_[0]";
-	my $sCmdOut = `$sCmd`;
-	my @CmdLines = split (/\n/, $sCmdOut);
-	foreach my $line(split (/\n/, $sCmdOut)) { if (index($line, "FAILED") ge 0) { ScreenOutAlways($line,"\n"); } }
+	if (length($_[0]) < 2 || stringInArray($_[0], @types) || stringInArray("enc", @types) || stringInArray("full", @types)) {
+		ScreenOutSemi("testing: john -test=0 $_[0]\n");
+		my $sCmd = "$JOHN_EXE -test=0 $_[0]";
+		my $sCmdOut = `$sCmd`;
+		my @CmdLines = split (/\n/, $sCmdOut);
+		foreach my $line(split (/\n/, $sCmdOut)) {
+			if (index($line, "FAILED") ge 0) {
+				ScreenOutAlways($line,"\n");
+			}
+		}
+	}
 }
 ###############################################################################
 # We parse through the data file, and list the 'types' that can be used, 
