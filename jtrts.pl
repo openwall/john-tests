@@ -87,6 +87,7 @@ sub parseArgs {
 	$verbosity = 2 + $verbose - $quiet;
 	setVerbosity($verbosity);
 	if (@ARGV) { push @types, @ARGV; }
+	foreach my $i (0..$#types) { $types[$i] = lc($types[$i]); }
 
 }
 
