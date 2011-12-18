@@ -3,7 +3,7 @@ use strict;
 use Getopt::Long;
 use jtrts_inc;
 
-my $VERSION = "1.10-RC2";
+my $VERSION = "1.10";
 
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
@@ -110,11 +110,12 @@ sub johnPrelims {
 	return unless $prelims;
 	
 	johnTest0_one(" ");
-	foreach my $item (@encs) {johnTest0_one("-enc:$item");}
+	foreach my $item (@encs) {johnTest0_one($item);}
 	if ($verbosity < 2) {ScreenOutSemi(" \n");}
 }
 sub johnTest0_one {
 	if (length($_[0]) < 2 || stringInArray($_[0], @types) || stringInArray("enc", @types) || stringInArray("full", @types)) {
+		if (length($_[0]) >= 2) { $_[0] = "-enc:$_[0]"; }
 		ScreenOutSemi("testing: john -test=0 $_[0]\n");
 		my $sCmd = "$JOHN_EXE -test=0 $_[0]";
 		my $sCmdOut = `$sCmd`;
@@ -190,7 +191,7 @@ sub setup {
 	close(FILE);
 
 	ScreenOutAlways("-------------------------------------------------------------------------------\n");
-	ScreenOutAlways("- JtRTestSuite. Version $VERSION, Dec 15, 2011.  By, Jim Fougeron\n");
+	ScreenOutAlways("- JtR-TestSuite (jtrts). Version $VERSION, Dec 18, 2011.  By, Jim Fougeron\n");
 	ScreenOutAlways("- Testing:  $johnUsageScreen[0]"); # note the line ends in a \n, so do not add one.
 	ScreenOutAlways("--------------------------------------------------------------------------------\n");
 	ScreenOut("\n");
@@ -252,8 +253,6 @@ sub setup {
 		ScreenOutV(@types);
 		ScreenOutV("\n");
 	} else {
-		#@types = ("*"); # we want ALL that are valid.
-
 		# we setup the 'defaults'.  If there are NO types at all, then we do this:
 		#  -type full      (core builds)
 		#  -t base -t koi8r -t utf8 on john jumbo builds.

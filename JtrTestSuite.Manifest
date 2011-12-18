@@ -64,6 +64,10 @@
 # v1.10 Major release.  Recoded entire test suite, in perl.  Now program is MUCH
 #               smarter. It knows the capabilities of john, and ONLY allows proper things
 #               to be done. Also, screen output is much more controlable.  Also, we can 
-#               easily select the work to do or not do.
+#               easily select the work to do or not do.   Defaults (if there are no command
+#               line params) is -type base -type utf8 -type koi8r  if the john is a jumbo,
+#               and is -type core -type full if this is a john core build.  This will cause
+#               john to run MUCH faster in a 'default' mode.  There are MANY other
+#               improvements.  NTv2 format also added.
 #--------------------------------------------------------------------
 
