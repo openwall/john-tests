@@ -33,16 +33,16 @@ usage: $0 [-h|-?] [-option[s]]
 
     Options are:
     -quiet+        Makes JtRTest Suite more 'quiet' or more verbose. -q
-    -verbose+      is a good level to run.  -qq is very quiet, does not
+    -verbose+      is a good level to run.  -q -q is very quiet, does not
                    output until run has ended, unless there are errors.
                    -v is the opposite of -q.  -v outputs a lot of information.
-                   -vv  is pretty much debugging level, it outputs a LOT.
+                   -v -v  is pretty much debugging level, it outputs a LOT.
                    -q -v together is a no-op.
     -type      <s> Provide selection criteria.
                    Examples:
                      -type1 dynamic_0    This will test this 1 format
-                     -type1 utf8         tests all formats with -utf8
-                     -type1 nt -type2 utf8  NT format, but ONLY utf8
+                     -type1 utf-8         tests all formats with -utf-8
+                     -type1 nt -type2 utf-8  NT format, but ONLY utf-8
 	               N can be 1, 2, 3 or 4.  Thus, you can provide 4
 	               selection criteria.  NOTE, any 'left over' command
                    line params, get shoved into a 'type'.
@@ -53,6 +53,8 @@ usage: $0 [-h|-?] [-option[s]]
     -basepath  <s> set the basepath where john exe is located. By default 
                    this is set to $_[0]
     -prelims       Perform (and optionally show), the prelim testing (encoding).
+                   in 'full' mode, all encodings are tested.  normally, only
+                   -test=0 and tests of any 'requested' encodings is performed.
 	-noprelims     Do not perform this prelim work. -prelim is default.
     -help|?        shows this help screen.
 UsageHelp

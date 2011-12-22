@@ -164,7 +164,7 @@ sub showTypeData {
 	ScreenOutAlways("will be the type used if this is a john-jumbo build, and -type full\n");
 	ScreenOutAlways("will be used for non-jumbo john (i.e. 'core' john)\n\n");
 	ScreenOutAlways("-type full does a test of ALL formats, and all encodings, including the\n");
-	ScreenOutAlways("           slow types.\n");
+	ScreenOutAlways("      slower types.\n");
 	ScreenOutAlways("-type base tests the formats where tests do not take 'too' much time.\n");
 	ScreenOutAlways("      NOTE, base covers most of the formats.\n");
 }
