@@ -69,5 +69,12 @@
 #               and is -type core -type full if this is a john core build.  This will cause
 #               john to run MUCH faster in a 'default' mode.  There are MANY other
 #               improvements.  NTv2 format also added.
+#
+# v1.11 There were a few MSSQL05 hashes, which were using forced mssql, instead of the mssql05.
+#               Only the .dat file changed.
+#               Did a little to 'clean' up the main code, in the jtrts.pl file.
+#               Added dynamic 30,31,32,33,34.  Added NT-raw, NT-raw-utf8.  These files were added
+#               to NT, NTv2 and dynamic_33.
+#               Different message if there are zero tests.
 #--------------------------------------------------------------------
 

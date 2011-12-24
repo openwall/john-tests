@@ -3,7 +3,7 @@ use strict;
 use Getopt::Long;
 use jtrts_inc;
 
-my $VERSION = "1.10";
+my $VERSION = "1.11";
 
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
@@ -32,12 +32,13 @@ my $showtypes=0, my $basepath=""; my $prelims=1;
 my $last_line_len=0;
 my $john_type="core";  # may be replaced with jumbo.  This will end up BEING a typex
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0;
-my @timeStart = localtime(time);
+my @startingTime;
 
 ###############################################################################
 # MAIN
 ###############################################################################
 
+startTime();
 parseArgs();
 setup();
 readData();
@@ -46,22 +47,34 @@ johnPrelims();
 filterPatterns();
 process();
 cleanup();
+displaySummary();
 
-my @timeEnd = localtime(time);
-my $secs = timeToSecs(@timeEnd)-timeToSecs(@timeStart);
 
-if ($error_cnt == 0 && $error_cnt_pot == 0) {
-	ScreenOutAlways ("All tests passed without error.  Performed $done_cnt tests.  Time used was $secs seconds\n");
-} else {
-	my $s = "Some tests had Errors. Performed $done_cnt tests.";
-	unless ($error_cnt == 0) { $s = $s . "$error_cnt errors"; }
-	unless ($error_cnt_pot == 0) { $s = $s . "  $error_cnt_pot errors reprocessing the .POT files"; }
-	ScreenOutAlways ("$s\nTime used was $secs seconds\n");
-}
+###############################################################################
+# End of MAIN. Everything from this point on is subroutines.
+###############################################################################
 
 ###############################################################################
 # Here are all of the subroutines that get the job done
 ###############################################################################
+
+sub startTime {
+	@startingTime = localtime(time);
+}
+
+sub displaySummary {
+	my @timeEnd = localtime(time);
+	my $secs = timeToSecs(@timeEnd)-timeToSecs(@startingTime);
+	if ($error_cnt == 0 && $error_cnt_pot == 0) {
+		if ($done_cnt == 0) { ScreenOutAlways ("NO tests were performed.  Time used was $secs seconds\n"); }
+		else { ScreenOutAlways ("All tests passed without error.  Performed $done_cnt tests.  Time used was $secs seconds\n"); }
+	} else {
+		my $s = "Some tests had Errors. Performed $done_cnt tests.";
+		unless ($error_cnt == 0) { $s = $s . "$error_cnt errors"; }
+		unless ($error_cnt_pot == 0) { $s = $s . "  $error_cnt_pot errors reprocessing the .POT files"; }
+		ScreenOutAlways ("$s\nTime used was $secs seconds\n");
+	}
+}
 
 ###############################################################################
 # parse our command line options.

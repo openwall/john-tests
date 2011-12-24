@@ -1,3 +1,10 @@
+############################################################################
+#  Version 1.10.  Original release, Dec 18, 2011
+#  Version 1.11.  Several MSSQL05 hashes were being called with forced mssql
+#                 Added dynamic 30,31,32,33,34, and several 'NT-raw' formats
+#                 for dynamic_33 AND NT/NTv2
+############################################################################
+#
 # core formats: des/bsdi/md5/bf/afs/lm/trip/dummy, no tests (yet) for afs, trip, dummy.  Need more for LM.
 # CSV format file for JtRTestSuite input data.  Format is:
 #types,required_types,sys_caps,dict_cnt,scr_output,dict,input,-form=string,Y/N_FmtStr_req,addtionalParams,correct_Cracks_num(s),.pot_crack_num(s)
@@ -45,6 +52,14 @@
 (dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-utf8,pw,rawmd5u_tst.in,dynamic_29,Y,-enc:utf-8,(1229),(1229)
 (dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-utf8,pw-utf8,rawmd5u_tst_utf8.in,dynamic_29,Y,-enc:utf-8,(1500),(1500)
 #
+(dynamic)(base),(X),(jumbo),10000,dynamic_30,pw,dynamic_30_tst.in,dynamic_30,N,X,(1500),(1500)
+(dynamic)(base),(X),(jumbo),10000,dynamic_31,pw,dynamic_31_tst.in,dynamic_31,N,X,(1500),(1500)
+(dynamic)(base),(X),(jumbo),10000,dynamic_32,pw,dynamic_32_tst.in,dynamic_32,N,X,(1500),(1500)
+(dynamic)(base),(X),(jumbo),10000,dynamic_33,pw,dynamic_33_tst.in,dynamic_33,N,X,(1500),(1500)
+(dynamic)(base),(X),(jumbo),10000,dynamic_33-NT,pw,NT_raw_tst.in,dynamic_33,Y,X,(1500),(1500)
+(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_33-NT-utf8,pw-utf8,NT_raw_tst_utf8.in,dynamic_33,Y,-enc=utf8,(1500),(1500)
+(dynamic)(base),(X),(jumbo),10000,dynamic_34,pw,dynamic_34_tst.in,dynamic_34,N,X,(1500),(1500)
+#
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5u,pw,rawmd5u_tst.in,raw-md5u,Y,X,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-raw-utf8,pw,rawmd5u_raw_tst.in,raw-md5u,Y,-enc:utf-8,(1229),(1229)
@@ -78,7 +93,9 @@
 (sha1-genp)(base),(X),(jumbo),10000,raw-sha1,pw,sha1p_tst.in,sha1-gen,Y,X,(1500),(1500)
 #
 (base),(X),(jumbo),10000,NT,pw,NT_tst.in,nt,Y,X,(1500),(1500)
+(base),(X),(jumbo),10000,NT-raw,pw,NT_raw_tst.in,nt,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,NTv2,pw,NT_tst.in,nt2,Y,X,(1500),(1500)
+(base),(X),(jumbo),10000,NTv2-raw,pw,NT_raw_tst.in,nt2,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md4,pw,rawmd4_tst.in,raw-md4,Y,X,(1500),(1500)
 (md4-genp)(base),(X),(jumbo),10000,md4-genp,pw,md4p_tst.in,md4-gen,Y,X,(1500),(1500)
 (md4-gens)(base),(X),(jumbo),10000,md4-gens,pw,md4s_tst.in,md4-gen,Y,X,(1500),(1500)
@@ -131,6 +148,8 @@
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netntlmv2-utf8,pw-utf8,netntlmv2_tst_utf8.in,netntlmv2,Y,-enc=utf8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,NT-utf8,pw-utf8,NT_tst_utf8.in,nt,Y,-enc=utf8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,NTv2-utf8,pw-utf8,NT_tst_utf8.in,nt2,Y,-enc=utf8,(1500),(1500)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,NT-raw-utf8,pw-utf8,NT_raw_tst_utf8.in,nt,Y,-enc=utf8,(1500),(1500)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,NTv2-raw-utf8,pw-utf8,NT_raw_tst_utf8.in,nt2,Y,-enc=utf8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mscash-utf8,pw-utf8,mscash_tst_utf8.in,mscash,Y,-enc=utf8,(1500),(1500)
 (utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),160,mscash2-utf8,pw-utf8,MSCash2_tst_utf8.in,mscash2,Y,-enc=utf8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-utf8,pw-utf8,MSSql05_tst_utf8.in,mssql05,Y,-enc=utf8,(1500),(1500)
@@ -150,7 +169,7 @@
 (koi8r)(enc),(full),(jumbo)&(encode_valid),160,mscash2-koi8r,pw-koi8r,MSCash2_tst_koi8r.in,mscash2,Y,-enc=koi8r,(1500),(1500)
 (koi8r)(enc),(X),(jumbo)&(encode_valid),10000,mssql-koi8r-gen,pw-gen-enc,mssql_tst_koi8r_gen.in,mssql,Y,-enc=koi8r,(1500),(1500)
 (koi8r)(enc),(X),(jumbo)&(encode_valid),10000,mssql-koi8r,pw-koi8r,mssql_tst_koi8r.in,mssql,Y,-enc=koi8r,(1500),(1500)
-(koi8r)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-koi8r-gen,pw-gen-enc,mssql_tst_koi8r_gen.in,mssql,Y,-enc=koi8r,(1500),(1500)
+(koi8r)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-koi8r-gen,pw-gen-enc,mssql_tst_koi8r_gen.in,mssql05,Y,-enc=koi8r,(1500),(1500)
 (koi8r)(enc),(X),(jumbo)&(encode_valid),10000,MSSql05-koi8r,pw-koi8r,MSSql05_tst_koi8r.in,mssql05,Y,-enc=koi8r,(1500),(1500)
 (koi8r)(enc),(X),(jumbo)&(encode_valid),10000,oracle-koi8r,pw-koi8r,oracle_tst_koi8r.in,oracle,Y,-enc=koi8r,(1500),(1500)
 #
@@ -165,7 +184,7 @@
 (cp1251)(enc),(full),(jumbo)&(encode_valid),160,mscash2-cp1251,pw-cp1251,MSCash2_tst_cp1251.in,mscash2,Y,-enc=cp1251,(1500),(1500)
 (cp1251)(enc),(X),(jumbo)&(encode_valid),10000,mssql-cp1251-gen,pw-gen-enc,mssql_tst_cp1251_gen.in,mssql,Y,-enc=cp1251,(1500),(1500)
 (cp1251)(enc),(X),(jumbo)&(encode_valid),10000,mssql-cp1251,pw-cp1251,mssql_tst_cp1251.in,mssql,Y,-enc=cp1251,(1500),(1500)
-(cp1251)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-cp1251-gen,pw-gen-enc,mssql_tst_cp1251_gen.in,mssql,Y,-enc=cp1251,(1500),(1500)
+(cp1251)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-cp1251-gen,pw-gen-enc,mssql_tst_cp1251_gen.in,mssql05,Y,-enc=cp1251,(1500),(1500)
 (cp1251)(enc),(X),(jumbo)&(encode_valid),10000,MSSql05-cp1251,pw-cp1251,MSSql05_tst_cp1251.in,mssql05,Y,-enc=cp1251,(1500),(1500)
 (cp1251)(enc),(X),(jumbo)&(encode_valid),10000,oracle-cp1251,pw-cp1251,oracle_tst_cp1251.in,oracle,Y,-enc=cp1251,(1500),(1500)
 #
@@ -180,7 +199,7 @@
 (cp866)(enc),(full),(jumbo)&(encode_valid),160,mscash2-cp866,pw-cp866,MSCash2_tst_cp866.in,mscash2,Y,-enc=cp866,(1500),(1500)
 (cp866)(enc),(X),(jumbo)&(encode_valid),10000,mssql-cp866-gen,pw-gen-enc,mssql_tst_cp866_gen.in,mssql,Y,-enc=cp866,(1500),(1500)
 (cp866)(enc),(X),(jumbo)&(encode_valid),10000,mssql-cp866,pw-cp866,mssql_tst_cp866.in,mssql,Y,-enc=cp866,(1500),(1500)
-(cp866)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-cp866-gen,pw-gen-enc,mssql_tst_cp866_gen.in,mssql,Y,-enc=cp866,(1500),(1500)
+(cp866)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-cp866-gen,pw-gen-enc,mssql_tst_cp866_gen.in,mssql05,Y,-enc=cp866,(1500),(1500)
 (cp866)(enc),(X),(jumbo)&(encode_valid),10000,MSSql05-cp866,pw-cp866,MSSql05_tst_cp866.in,mssql05,Y,-enc=cp866,(1500),(1500)
 (cp866)(enc),(X),(jumbo)&(encode_valid),10000,oracle-cp866,pw-cp866,oracle_tst_cp866.in,oracle,Y,-enc=cp866,(1500),(1500)
 #
