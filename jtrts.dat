@@ -281,3 +281,9 @@
 (cp1252)(enc),(X),(jumbo)&(encode_valid),10000,MSSql05-cp1252,pw-gen-enc,MSSql05_tst_cp1252.in,mssql05,Y,-enc=cp1252,(1500),(1500)
 (cp1252)(enc),(X),(jumbo)&(encode_valid),10000,oracle-cp1252,pw-gen-enc,oracle_tst_cp1252.in,oracle,Y,-enc=cp1252,(1500),(1500)
 ###############################################
+(opencl),(X),(jumbo),200,cryptmd5-opencl,pw,md5_1_tst.in,cryptmd5-opencl,Y,X,(1500),(1500)
+(opencl),(X),(jumbo),150,phpass-opencl,pw,phpass_tst.in,phpass-opencl,Y,X,(1500),(1500)
+(opencl),(X),(jumbo),10000,raw-md5-opencl,pw,rawmd5_tst.in,raw-md5-opencl,Y,X,(1500),(1500)
+(opencl),(X),(jumbo),10000,raw-sha1-opencl,pw,rawsha1_tst.in,raw-sha1-opencl,Y,X,(1500),(1500)
+(opencl),(X),(jumbo),10000,nt-opencl,pw,NT_tst.in,nt-opencl,Y,X,(1500),(1500)
+(opencl),(X),(jumbo),10000,ssha-opencl,pw,openssha_tst.in,ssha-opencl,Y,X,(1500),(1500)
