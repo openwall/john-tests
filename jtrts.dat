@@ -287,7 +287,7 @@
 (opencl)(gpu),(X),(jumbo),10000,raw-sha1-opencl,pw,rawsha1_tst.in,raw-sha1-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo),10000,nt-opencl,pw,NT_tst.in,nt-opencl,Y,X,(1478),(1478)
 (opencl)(gpu),(X),(jumbo),10000,ssha-opencl,pw,nsldaps_tst.in,ssha-opencl,Y,X,(1500),(1500)
-(opencl)(gpu),(X),(jumbo),10000,mysqlsha1-opencl,pw,mysqlSHA1_tst.in,mysqlsha1-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo),10000,mysql-sha1-opencl,pw,mysqlSHA1_tst.in,mysql-sha1-opencl,Y,X,(1500),(1500)
 (cuda)(gpu),(X),(jumbo),200,cuda-cryptmd5,pw,md5_1_tst.in,cuda-cryptmd5,Y,X,(1500),(1500)
 (cuda)(gpu),(X),(jumbo),150,cuda-phpass,pw,phpass_tst.in,cuda-phpass,Y,X,(1470),(1470)
 (cuda)(gpu),(X),(jumbo),10000,cuda-mscash,pw,mscash_tst.in,cuda-mscash,Y,X,(1430),(1430)
