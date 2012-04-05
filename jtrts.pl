@@ -338,7 +338,8 @@ sub loadAllValidFormatTypeStrings {
 		}
 	}
 
-	@validFormats = split(/\//, $fmt_str);
+	@validFormats = split(/ /, $fmt_str);
+	printf("formats: $fmt_str\nsplit:", join(', ', @validFormats));
 	if ($verbosity > 3) {
 		my $cnt = @validFormats;
 		ScreenOutVV("There are $cnt formats this john build can handle are:\n");
