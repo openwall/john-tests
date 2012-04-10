@@ -1,10 +1,10 @@
 #-------------------------------------------------------------------
-# John, testing suite, v1.10.   Jim Fougeron.
+# John, testing suite, v1.12.   Jim Fougeron.
 #
 # No copyright is claimed, and the software is hereby 
 # placed in the public domain. In case this attempt to disclaim 
 # copyright and place the software in the public domain is deemed 
-# null and void, then the software is Copyright © 2011 Jim Fougeron
+# null and void, then the software is Copyright © 2011-2012 Jim Fougeron
 # and it is hereby released to the general public under the following
 # terms: 
 #
@@ -76,5 +76,25 @@
 #               Added dynamic 30,31,32,33,34.  Added NT-raw, NT-raw-utf8.  These files were added
 #               to NT, NTv2 and dynamic_33.
 #               Different message if there are zero tests.
+#
+# v1.12 Added some new hashes, and build types (ssh, inc, cuda, opencl).
+#               There was much change to the dat file.  Many lines added.
+#               Added 3 incrementatal test types, dyna_0, NT and DES.  There are numerous
+#               test items added for each of these types.  There are quick ones, and slower 
+#               tests.  NOTE, these 'may' cause a lockup like situation, since there is no
+#               dictionary, that will 'finish'.  We may want to look into ways to fix this.
+#               In bleeding edge john, there is the --max-run-time=X switch. 
+#               New 'types' added, are (cuda) (opencl) (gpu) which is either cuda or opencl,
+#               and (inc).  Now, if a dictionary name starts with INCREMENT_ then no dictionary
+#               will be used, and an incremental john run will be done, using the last part of
+#               the dictionary field (minus the INCREMENT_) for this line in the jtrts.dat file.
+#               A large ssh input file was created by putting 1500 files into an input file.
+#               These ssh input were built by Dhiru.
+#               New command line args to jtrts.pl added:
+#                 -passthru <s>  Will allow this string to be passed to john as a command line
+#                                argument.  Multiple -passthru <s> can be used.
+#                 -stoponerror   Will cause jtrts to stop on any error, and leaves the .pot file
+#               Fixed issues where / char or ' ' (space) char could be used to separate the
+#               fmt types in john's screen output. Now, either form will work.
 #--------------------------------------------------------------------
 

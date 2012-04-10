@@ -3,7 +3,7 @@ use strict;
 use Getopt::Long;
 use jtrts_inc;
 
-my $VERSION = "1.11";
+my $VERSION = "1.12";
 
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
@@ -25,12 +25,12 @@ my @types=();
 my @nontypes=();
 my @caps=();
 my @encs=();
+my @passthru=();
 my @johnUsageScreen=();
 my @validFormats=();
 my @tstdata;
-my $showtypes=0, my $basepath=""; my $prelims=1;
+my $showtypes=0, my $basepath=""; my $prelims=1, my $stop_on_error=0;
 my $last_line_len=0;
-my $john_type="core";  # may be replaced with jumbo.  This will end up BEING a typex
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0;
 my @startingTime;
 
@@ -90,6 +90,8 @@ sub parseArgs {
 		'showtypes'        => \$showtypes,
 		'basepath=s'       => \$basepath,
 		'prelims!'         => \$prelims,
+		'passthru=s'       => \@passthru,
+		'stoponerror!'     => \$stop_on_error,
 		);
 	if ($help) { usage(); }
 	if ($basepath ne "") {
@@ -131,6 +133,7 @@ sub johnTest0_one {
 		if (length($_[0]) >= 2) { $_[0] = "-enc:$_[0]"; }
 		ScreenOutSemi("testing: john -test=0 $_[0]\n");
 		my $sCmd = "$JOHN_EXE -test=0 $_[0]";
+		foreach my $s (@passthru) { $sCmd = $sCmd . " " . $s . " "; }
 		my $sCmdOut = `$sCmd`;
 		my @CmdLines = split (/\n/, $sCmdOut);
 		foreach my $line(split (/\n/, $sCmdOut)) {
@@ -311,6 +314,8 @@ sub loadAllValidFormatTypeStrings {
 				$line = substr($line, 2, length($line)-2);
 				chomp($line);
 				$line =~ s/\r$//;  # strip CR for non-Windows
+				$line = $line . '/';
+				$line =~ s/ /\//g;
 				$fmt_str = $fmt_str . $line;
 			}
 		} else {
@@ -320,9 +325,14 @@ sub loadAllValidFormatTypeStrings {
 			}
 			chomp($line);
 			$line =~ s/\r$//;  # strip CR for non-Windows
+			$line = $line . '/';
+			$line =~ s/ /\//g;
 			$fmt_str = $fmt_str . $line;
 		}
 	}
+	# strip off the 'final' / char
+	$fmt_str = substr($fmt_str, 0, -1);
+
 	# Ok, now if we have 'dynamic's, LOAD them
 	if (grepUsage("--subformat=LIST")) {
 		system ("$JOHN_EXE --subformat=LIST >JohnDynaUsage.Scr 2>&1");
@@ -337,9 +347,12 @@ sub loadAllValidFormatTypeStrings {
 			}
 		}
 	}
-
-	@validFormats = split(/ /, $fmt_str);
-	printf("formats: $fmt_str\nsplit:", join(', ', @validFormats));
+	#$fmt_str = $fmt_str . "/inc";
+	@validFormats = split(/\//, $fmt_str);
+	if (index($fmt_str, "-cuda") != -1)  { push(@caps, "cuda"); }
+	if (index($fmt_str, "-opencl") != -1)  { push(@caps, "opencl"); }
+	# push (inc), since ALL john versions allow the inc.
+	push(@caps, "inc");
 	if ($verbosity > 3) {
 		my $cnt = @validFormats;
 		ScreenOutVV("There are $cnt formats this john build can handle are:\n");
@@ -455,8 +468,10 @@ sub filterPatterns {
 
 				# OK, make sure the dictionary file 'exists'
 				unless (-e "${ar[5]}.dic") {
-					ScreenOutVV("Line [$line] filtered out, because dictionary ${ar[5]}.dic not found\n");
-					next LINE;
+					if (substr($ar[5],0,10) ne "INCREMENT_") {
+						ScreenOutVV("Line [$line] filtered out, because dictionary ${ar[5]}.dic not found\n");
+						next LINE;
+					}
 				}
 
 				# we are going to process this item.  Add it to our filtered array.
@@ -482,6 +497,7 @@ sub filterPatterns {
 sub process {
 	my $pot = "./tst.pot";
 	my $cmd_head = "$JOHN_EXE -ses=./tst";
+	foreach my $s (@passthru) { $cmd_head = $cmd_head . " " . $s . " "; }
 	if (stringInArray("nolog_valid", @caps)) { $cmd_head = "$cmd_head -nolog"; }
 	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=./john.conf"; }
 	if (stringInArray("local_pot_valid", @caps)) { $cmd_head = "$cmd_head -pot=./tst.pot"; }
@@ -497,7 +513,11 @@ sub process {
 
 	LINE: foreach my $line(@tstdata) {
 		my @ar = split(',', $line);
-		$dict_name = "$ar[5].dic";
+		if (substr($ar[5],0,10) eq "INCREMENT_") {
+			$dict_name = "-inc:" . substr($ar[5],10);
+		} else {
+			$dict_name = "-w:$ar[5].dic";
+		}
 		my $cmd = "$cmd_head $ar[6]";
 		unless (-e $ar[6]) { next LINE; }
 		$done_cnt = $done_cnt + 1;
@@ -515,7 +535,7 @@ sub process {
 			}
 			close(FILE);
 		}
-		$cmd = "$cmd -w=$dict_name";
+		$cmd = "$cmd $dict_name";
 
 		if ($ar[8] eq 'Y') { $cmd = "$cmd \'-form=$ar[7]\'"; }
 		if ($ar[9] ne 'X') { $cmd = "$cmd $ar[9]"; }
@@ -551,6 +571,11 @@ sub process {
 					ScreenOutAlways("$line\n");
 				}
 			}
+			if ($stop_on_error) {
+				ScreenOut("Exiting on error.  The pot file $pot contains the found data\n");
+				ScreenOut("The command used to run this test was:\n\n$cmd\n");
+				exit(1);
+			}
 		} else {
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
 			ScreenOutSemi($str);
@@ -568,14 +593,13 @@ sub process {
 			my $cmd2 = sprintf("cut -f 2-8 -d \":\" < $pot | $UNIQUE pw3 > /dev/null");
 			system($cmd2);
 		}
-		$cmd =~ s/$dict_name/pw3/;
+		$cmd =~ s/$dict_name/-w:pw3/;
 
 		ScreenOutVV("Execute john (.pot check): $cmd\n");
 		unlink ($pot);
 		$cmd_data = `$cmd`;
 		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
 
-		unlink("pw3");
 		@crack_xx = ();
 		@crack_cnt = split (/\n/, $cmd_data);
 		foreach $line (@crack_cnt) {
@@ -590,10 +614,17 @@ sub process {
 			my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $crack_xx[1]);
 			ScreenOutAlways($str);
 			$error_cnt_pot += 1;
+			if ($stop_on_error) {
+				ScreenOut("Exiting on error (reporcessing original .pot file).\n The pot file $pot contains the found data\n");
+				ScreenOut("The command used to run this test was:\n\n$cmd\n");
+				exit(1);
+			}
 		} else {
 			my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $crack_xx[1]);
 			ScreenOutSemi($str);
 		}
+		unlink("$pot");
+		unlink("pw3");
 	}
 	ScreenOutSemi("\n");
 	if (!stringInArray("local_pot_valid", @caps)) {
