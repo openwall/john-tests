@@ -324,6 +324,7 @@
 (inc),(inc),(core),10000,DES-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,des,N,X,(1500),(1500)
 #
 # sapG (== sapF) is supposed to run in ascii or UTF-8, never 8-bit CP
-(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,sapG-utf8,pw-utf8,sapF,sapg,N,-enc=utf8,(1500),(1500)
-# sapB is supposed to run ascii or 8-bit CP only, never UTF-8.
-(base),(X),(jumbo),10000,sapB-ansi,pw,sapB,sapb,N,X,(1500),(1500)
+(sapf)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,sapG-utf8,pw-utf8,sapF.in,sapg,N,-enc:utf-8,(1500),(1500)
+# sapB is supposed to run ascii or 8-bit CP only, never UTF-8. Any 8-bit is
+# converted to '^' by the format.
+(base),(X),(jumbo),10000,sapB,pw,sapB.in,sapb,N,X,(1500),(1500)
