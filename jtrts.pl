@@ -522,12 +522,12 @@ sub process {
 		unless (-e $ar[6]) { next LINE; }
 		$done_cnt = $done_cnt + 1;
 		if ($ar[3] != 10000) {
-			open (FILE, "<".$dict_name) or die "Failed opening ${dict_name}: $!";
+			open (FILE, "<".substr($dict_name,3));
 			my @lines = <FILE>;
 			close(FILE);
-			$dict_name = "$ar[5]-$ar[3].dic";
-			$dict_name_ex = $dict_name;
-			open (FILE, ">".$dict_name);
+			$dict_name = "-w:$ar[5]-$ar[3].dic";
+			$dict_name_ex = substr($dict_name,3);
+			open (FILE, ">".substr($dict_name,3));
 			my $i;
 			for ($i = 0; $i < $ar[3]; $i += 1) {
 				my $line = shift(@lines);
