@@ -522,7 +522,7 @@ sub process {
 		unless (-e $ar[6]) { next LINE; }
 		$done_cnt = $done_cnt + 1;
 		if ($ar[3] != 10000) {
-			open (FILE, "<".$dict_name);
+			open (FILE, "<".$dict_name) or die "Failed opening ${dict_name}: $!";
 			my @lines = <FILE>;
 			close(FILE);
 			$dict_name = "$ar[5]-$ar[3].dic";
