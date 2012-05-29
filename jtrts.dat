@@ -141,6 +141,7 @@
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql-utf8,pw,mssql_tst.in,mssql,Y,-enc=utf8,(1229),(1229)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-utf8,pw,MSSql05_tst.in,mssql05,Y,-enc=utf8,(1229),(1229)
 
+(base),(X),(jumbo),10000,gost,pw,gost_tst.in,gost,N,X,(1500),(1500)
 ###############################################
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netlmv2-utf8,pw-utf8,netlmv2_tst_utf8.in,netlmv2,Y,-enc=utf8,(1500),(1500)
