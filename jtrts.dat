@@ -3,6 +3,9 @@
 #  Version 1.11.  Several MSSQL05 hashes were being called with forced mssql
 #                 Added dynamic 30,31,32,33,34, and several 'NT-raw' formats
 #                 for dynamic_33 AND NT/NTv2
+#  Version 1.12.  Added many 'inc' types.  Added ssh, added opencl and cuda
+#                 Added GOST
+#                 force required for PO, since GOST 'stole' a non force of PO
 ############################################################################
 #
 # core formats: des/bsdi/md5/bf/afs/lm/trip/dummy, no tests (yet) for afs, trip, dummy.  Need more for LM.
@@ -79,7 +82,7 @@
 #
 (base),(X),(jumbo),10000,mediawiki,pw,mediawiki_tst.in,mediawiki,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,pixMD5,pw,pixMD5_tst.in,pix-md5,N,X,(1500),(1500)
-(base),(X),(jumbo),10000,PO,pw,po_tst.in,po,N,X,(1500),(1500)
+(base),(X),(jumbo),10000,PO,pw,po_tst.in,po,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,PHPS,pw,phps_tst.in,phps,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5,pw,rawmd5_tst.in,raw-md5,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5thick,pw,rawmd5_tst.in,raw-md5thick,Y,X,(1500),(1500)
@@ -88,7 +91,7 @@
 (base),(X),(jumbo),10000,raw-md5u,pw,rawmd5u_tst.in,raw-md5u,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,-enc:utf-8,(1500),(1500)
-(base),(X),(jumbo),10000,raw-sha1,pw,rawsha1_tst.in,raw-sha1,N,X,(1500),(1500)
+(base),(X),(jumbo),10000,raw-sha1,pw,rawsha1_tst.in,raw-sha1,Y,X,(1500),(1500)
 (sha1-gens)(base),(X),(jumbo),10000,sha1-gen,pw,sha1s_tst.in,sha1-gen,Y,X,(1500),(1500)
 (sha1-genp)(base),(X),(jumbo),10000,raw-sha1,pw,sha1p_tst.in,sha1-gen,Y,X,(1500),(1500)
 #
@@ -280,4 +283,52 @@
 (cp1252)(enc),(X),(jumbo)&(encode_valid),10000,mssql-cp1252,pw-gen-enc,mssql_tst_cp1252.in,mssql,Y,-enc=cp1252,(1500),(1500)
 (cp1252)(enc),(X),(jumbo)&(encode_valid),10000,MSSql05-cp1252,pw-gen-enc,MSSql05_tst_cp1252.in,mssql05,Y,-enc=cp1252,(1500),(1500)
 (cp1252)(enc),(X),(jumbo)&(encode_valid),10000,oracle-cp1252,pw-gen-enc,oracle_tst_cp1252.in,oracle,Y,-enc=cp1252,(1500),(1500)
-###############################################
+#
+###############################################  NEW items as of v1.12
+#
+(opencl)(gpu),(X),(jumbo)&(opencl),200,cryptmd5-opencl,pw,md5_1_tst.in,cryptmd5-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo)&(opencl),150,phpass-opencl,pw,phpass_tst.in,phpass-opencl,Y,X,(1470),(1470)
+(opencl)(gpu),(X),(jumbo)&(opencl),10000,raw-md5-opencl,pw,dynamic_0_raw_tst.in,raw-md5-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo)&(opencl),10000,raw-sha1-opencl,pw,rawsha1_tst.in,raw-sha1-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo)&(opencl),10000,nt-opencl,pw,NT_tst.in,nt-opencl,Y,X,(1478),(1478)
+(opencl)(gpu),(X),(jumbo)&(opencl),10000,ssha-opencl,pw,nsldaps_tst.in,ssha-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo)&(opencl),10000,mysql-sha1-opencl,pw,mysqlSHA1_tst.in,mysql-sha1-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo)&(opencl),50,mscash2-opencl,pw,MSCash2_tst.in,mscash2-opencl,Y,X,(1500),(1500)
+(cuda)(gpu),(X),(jumbo)&(cuda),200,cryptmd5-cuda,pw,md5_1_tst.in,cryptmd5-cuda,Y,X,(1500),(1500)
+(cuda)(gpu),(X),(jumbo)&(cuda),150,phpass-cuda,pw,phpass_tst.in,phpass-cuda,Y,X,(1470),(1470)
+(cuda)(gpu),(X),(jumbo)&(cuda),10000,mscash-cuda,pw,mscash_tst.in,mscash-cuda,Y,X,(1430),(1430)
+(cuda)(gpu),(X),(jumbo)&(cuda),50,mscash2-cuda,pw,MSCash2_tst.in,mscash2-cuda,Y,X,(1479),(1479)
+# This is a very slow, and VERY large input file hash.
+(ssh),(full),(jumbo),1600,ssh,pass,ssh_1500_tst.in,ssh,N,X,(1500),(1500)
+#
+# these use  -inc:all and -inc:alnum and NOT a password dict.
+#
+# These are 'quick' to run, so will be run under 'normal' testing.  WARNING, since these do NOT use
+# a dictionary, then they CAN 'lock up' the test suite run, IF the increment files are changed.  We may want
+# to change these from a base run, at a later time.  Also, we may want to use --max-run-time=X to cause
+# a lockup to not happen. However, this switch is ONLY in the bleeding edge john jumbo right now.
+#
+(inc)(base),(X),(jumbo),10000,dyn_0-inc_all_qwk,INCREMENT_all,dynamic_0_inc_all_qwk_tst.in,dynamic_0,N,X,(500),(500)
+(inc)(base),(X),(jumbo),10000,dyn_0-inc_alnum_qwk,INCREMENT_alnum,dynamic_0_inc_alnum_qwk_tst.in,dynamic_0,N,X,(500),(500)
+(inc)(base),(X),(jumbo),10000,NT-inc_all_qwk,INCREMENT_all,NT_inc_all_qwk_tst.in,nt,N,X,(500),(500)
+(inc)(base),(X),(jumbo),10000,NT-inc_alnum_qwk,INCREMENT_alnum,NT_inc_alnum_qwk_tst.in,nt,N,X,(500),(500)
+(inc)(base),(X),(core),10000,DES-inc_all_qwk,INCREMENT_all,DES_inc_all_qwk_tst.in,des,N,X,(1500),(1500)
+(inc)(base),(X),(core),10000,DES-inc_alnum_qwk,INCREMENT_alnum,DES_inc_alnum_qwk_tst.in,des,N,X,(1500),(1500)
+#
+# these are SLOW. Will only be run if inc is the 'type' listed.
+(inc),(inc),(jumbo),10000,dyn_0-inc_all,INCREMENT_all,dynamic_0_inc_all_tst.in,dynamic_0,N,X,(1500),(1500)
+(inc),(inc),(jumbo),10000,dyn_0-inc_alnum,INCREMENT_alnum,dynamic_0_inc_alnum_tst.in,dynamic_0,N,X,(1500),(1500)
+(inc),(inc),(jumbo),10000,NT-inc_all,INCREMENT_all,NT_inc_all_tst.in,nt,N,X,(1500),(1500)
+(inc),(inc),(jumbo),10000,NT-inc_alnum,INCREMENT_alnum,NT_inc_alnum_tst.in,nt,N,X,(1500),(1500)
+(inc),(inc),(core),10000,DES-inc_all,INCREMENT_all,DES_inc_all_tst.in,des,N,X,(1500),(1500)
+(inc),(inc),(core),10000,DES-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,des,N,X,(1500),(1500)
+(inc),(inc),(core),10000,DES-inc_all,INCREMENT_all,DES_inc_all_tst.in,des,N,X,(1500),(1500)
+(inc),(inc),(core),10000,DES-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,des,N,X,(1500),(1500)
+#
+#types,required_types,sys_caps,dict_cnt,scr_output,dict,input,-form=string,Y/N_FmtStr_req,addtionalParams,correct_Cracks_num(s),.pot_crack_num(s)
+# sapG (== sapF) is supposed to run in ascii or UTF-8, never 8-bit CP
+(sapf)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,sapG-utf8,pw-utf8,sapf_tst.in,sapg,N,-enc=utf8,(1500),(1500)
+# sapB is supposed to run ascii or 8-bit CP only, never UTF-8.
+#
+(base),(X),(jumbo),10000,gost,pw,gost_tst.in,gost,N,X,(1500),(1500)
+(base),(X),(jumbo),10000,gost,pw,gost_raw_tst.in,gost,Y,X,(1500),(1500)

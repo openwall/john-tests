@@ -32,6 +32,8 @@ usage: $0 [-h|-?] [-option[s]]
     Options can be abbreviated!
 
     Options are:
+    -basepath  <s> set the basepath where john exe is located. By default 
+                   this is set to $_[0]
     -quiet+        Makes JtRTest Suite more 'quiet' or more verbose. -q
     -verbose+      is a good level to run.  -q -q is very quiet, does not
                    output until run has ended, unless there are errors.
@@ -50,12 +52,14 @@ usage: $0 [-h|-?] [-option[s]]
                    not process any formats containing this type.
     -showtypes     Show the possible values that can be used for -typeN
                    or -nontypeN options, and required types.
-    -basepath  <s> set the basepath where john exe is located. By default 
-                   this is set to $_[0]
     -prelims       Perform (and optionally show), the prelim testing (encoding).
                    in 'full' mode, all encodings are tested.  normally, only
                    -test=0 and tests of any 'requested' encodings is performed.
-	-noprelims     Do not perform this prelim work. -prelim is default.
+    -noprelims     Do not perform this prelim work. -prelim is default.
+    -passthru  <s> Pass this argument straight into john.  Can use more than 1.
+    -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
+                   and other temp files will be left, AND the command line 
+                   that was run is listed. (default is -nostoponerror). 
     -help|?        shows this help screen.
 UsageHelp
 }
