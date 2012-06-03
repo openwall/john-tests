@@ -96,5 +96,9 @@
 #                 -stoponerror   Will cause jtrts to stop on any error, and leaves the .pot file
 #               Fixed issues where / char or ' ' (space) char could be used to separate the
 #               fmt types in john's screen output. Now, either form will work.
+#               Added gost format
+#               Added SAPG format (still has problems). I will work this out with Magnum.
+#               PO now required a forced test (gost 'grabbed' it ;) )
+#               Raw SHA1 required a forced test.
 #--------------------------------------------------------------------
 

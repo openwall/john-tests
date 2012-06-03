@@ -4,7 +4,7 @@ use Getopt::Long;
 use jtrts_inc;
 
 my $VERSION = "1.12";
-
+my $RELEASE_DATE = "May 24, 2012";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -207,7 +207,7 @@ sub setup {
 	close(FILE);
 
 	ScreenOutAlways("-------------------------------------------------------------------------------\n");
-	ScreenOutAlways("- JtR-TestSuite (jtrts). Version $VERSION, Dec 18, 2011.  By, Jim Fougeron\n");
+	ScreenOutAlways("- JtR-TestSuite (jtrts). Version $VERSION, $RELEASE_DATE.  By, Jim Fougeron & others\n");
 	ScreenOutAlways("- Testing:  $johnUsageScreen[0]"); # note the line ends in a \n, so do not add one.
 	ScreenOutAlways("--------------------------------------------------------------------------------\n");
 	ScreenOut("\n");
@@ -531,7 +531,7 @@ sub process {
 			my $i;
 			for ($i = 0; $i < $ar[3]; $i += 1) {
 				my $line = shift(@lines);
-				print FILE $line;
+				if (defined $line) { print FILE $line; }
 			}
 			close(FILE);
 		}
@@ -587,10 +587,10 @@ sub process {
 		# now do the .pot check.
 		unlink ("pw3");
 		if ($ar[8] eq "\'-fie=\\x1F\'") {
-			my $cmd2 = sprintf("cut -f 2-8 -d \"%c\" < $pot | $UNIQUE pw3 > /dev/null", 31);
+			my $cmd2 = sprintf("cut -f 2- -d\"%c\" < $pot | $UNIQUE pw3 > /dev/null", 31);
 			system($cmd2);
 		} else {
-			my $cmd2 = sprintf("cut -f 2-8 -d \":\" < $pot | $UNIQUE pw3 > /dev/null");
+			my $cmd2 = sprintf("cut -f 2- -d: < $pot | $UNIQUE pw3 > /dev/null");
 			system($cmd2);
 		}
 		$cmd =~ s/$dict_name/-w:pw3/;
