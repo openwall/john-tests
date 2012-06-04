@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------
-# John, testing suite, v1.12.   Jim Fougeron.
+# John, testing suite, v1.12.2   Jim Fougeron.
 #
 # No copyright is claimed, and the software is hereby 
 # placed in the public domain. In case this attempt to disclaim 
@@ -100,5 +100,6 @@
 #               Added SAPG format (still has problems). I will work this out with Magnum.
 #               PO now required a forced test (gost 'grabbed' it ;) )
 #               Raw SHA1 required a forced test.
+# v1.12.2 Fixed sapG and added sapB (per magnum).
 #--------------------------------------------------------------------
 

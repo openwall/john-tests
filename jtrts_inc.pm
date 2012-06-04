@@ -28,7 +28,7 @@ die <<"UsageHelp";
 
 JtR TestSuite, command usage:
 
-usage: $0 [-p=PATH_TO_john] [-h|-?] [-option[s]]
+usage: $0 [-h|-?] [-option[s]]
     Options can be abbreviated!
 
     Options are:
