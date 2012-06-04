@@ -329,6 +329,7 @@
 # sapG (== sapF) is supposed to run in ascii or UTF-8, never 8-bit CP
 (sapf)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,sapG-utf8,pw-utf8,sapf_tst.in,sapg,N,-enc=utf8,(1500),(1500)
 # sapB is supposed to run ascii or 8-bit CP only, never UTF-8.
+(base),(X),(jumbo),10000,sapB,pw,sapb_tst.in,sapb,N,X,(1500),(1500)
 #
 (base),(X),(jumbo),10000,gost,pw,gost_tst.in,gost,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,gost,pw,gost_raw_tst.in,gost,Y,X,(1500),(1500)
