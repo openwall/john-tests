@@ -260,7 +260,7 @@ sub setup {
 			loadAllValidEncodings();
 		} else {
 			# 'hopefully' these are valid.
-			push(@encs, "utf8", "cp1252", "cp1251", "koi8r", "cp437", "cp737", "cp850", "cp858", "cp866", "iso5559-1", "iso5559-15" );
+			push(@encs, "utf8", "cp1252", "cp1251", "koi8r", "cp437", "cp737", "cp850", "cp858", "cp866", "iso8859-1", "iso8859-15" );
 			push(@caps, @encs );
 		}
 	}
