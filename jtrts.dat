@@ -92,6 +92,7 @@
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,-enc:utf-8,(1500),(1500)
 (base),(X),(jumbo),10000,raw-sha1,pw,rawsha1_tst.in,raw-sha1,Y,X,(1500),(1500)
+(rawsha1_sse4),(X),(jumbo),10000,rawsha1_sse4,pw,rawsha1_tst.in,rawsha1_sse4,Y,X,(1430),(1430)
 (sha1-gens)(base),(X),(jumbo),10000,sha1-gen,pw,sha1s_tst.in,sha1-gen,Y,X,(1500),(1500)
 (sha1-genp)(base),(X),(jumbo),10000,raw-sha1,pw,sha1p_tst.in,sha1-gen,Y,X,(1500),(1500)
 #
