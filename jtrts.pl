@@ -3,8 +3,8 @@ use strict;
 use Getopt::Long;
 use jtrts_inc;
 
-my $VERSION = "1.12.2";
-my $RELEASE_DATE = "June 3, 2012";
+my $VERSION = "1.12.3";
+my $RELEASE_DATE = "June 22, 2012";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -238,6 +238,11 @@ sub setup {
 	if (grepUsage("--nolog")) {
 		push(@caps, "nolog_valid");
 		ScreenOutV("--nolog option is valid\n");
+	}
+	# does this version handle --dupe-supression ?
+	if (grepUsage("--dupe-supression")) {
+		push(@caps, "dupe_suppression");
+		ScreenOutV("--dupe-suppression option is valid\n");
 	}
 	# can we use --config=./john.conf ?
 	if (grepUsage("--config=FILE")) { push(@caps, "config_valid");

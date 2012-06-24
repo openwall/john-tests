@@ -92,9 +92,9 @@
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,-enc:utf-8,(1500),(1500)
 (base),(X),(jumbo),10000,raw-sha1,pw,rawsha1_tst.in,raw-sha1,Y,X,(1500),(1500)
-(raw-sha1-ng),(X),(jumbo),10000,rawsha1_sse4,pw,rawsha1_tst.in,raw-sha1-ng,Y,X,(1430),(1430)
-(sha1-gens)(base),(X),(jumbo),10000,sha1-gen,pw,sha1s_tst.in,sha1-gen,Y,X,(1500),(1500)
-(sha1-genp)(base),(X),(jumbo),10000,raw-sha1,pw,sha1p_tst.in,sha1-gen,Y,X,(1500),(1500)
+(raw-sha1),(X),(jumbo),10000,rawsha1-ng,pw,rawsha1_tst.in,raw-sha1-ng,Y,X,(1430),(1430)
+(sha1-gens)(base),(X),(jumbo),10000,sha1-gens,pw,sha1s_tst.in,sha1-gen,Y,X,(1500),(1500)
+(sha1-genp)(base),(X),(jumbo),10000,sha1-genp,pw,sha1p_tst.in,sha1-gen,Y,X,(1500),(1500)
 #
 (base),(X),(jumbo),10000,NT,pw,NT_tst.in,nt,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,NT-raw,pw,NT_raw_tst.in,nt,Y,X,(1500),(1500)
@@ -106,8 +106,14 @@
 (base),(X),(jumbo),10000,mscash,pw,mscash_tst.in,mscash,Y,X,(1500),(1500)
 #
 (base),(X),(jumbo),10000,crc32,pw,crc32_tst.in,crc32,N,X,(1500),(1500)
+(base),(X),(jumbo),10000,crc32_read_file,pw,crc32_tst.in,crc32,N,-mem=10,(1500),(1500)
+# pw-crc32-dup.dic has a trailing \n in the file.  pw-crc32-dup2.dic DOES NOT have a trailing \n in the file.
 (crc32_dups)(base),(X),(jumbo),10000,crc32_dups,pw-crc32-dup,crc32_dups_tst.in,crc32,N,X,(1500),(50)
 (crc32_dups2)(base),(X),(jumbo),10000,crc32_dups2,pw-crc32-dup2,crc32_dups2_tst.in,crc32,N,X,(1500),(50)
+(crc32_dups)(base),(X),(jumbo),10000,crc32_dups_read_file,pw-crc32-dup,crc32_dups_tst.in,crc32,N,-mem=10,(1500),(50)
+(crc32_dups2)(base),(X),(jumbo),10000,crc32_dups2_read_file,pw-crc32-dup2,crc32_dups2_tst.in,crc32,N,-mem=10,(1500),(50)
+(crc32_dups)(base)(dupe_suppression),(X),(jumbo),10000,crc32_dups_dupe_rem,pw-crc32-dup,crc32_dups_tst.in,crc32,N,-dupe-suppression,(50),(50)
+(crc32_dups2)(base)(dupe_suppression),(X),(jumbo),10000,crc32_dups2_dupe_rem,pw-crc32-dup2,crc32_dups2_tst.in,crc32,N,-dupe-suppression,(50),(50)
 #
 (mscash_crash)(base),(X),(jumbo),10000,mscash_crash,pw,mscash_crash_tst.in,mscash,Y,X,(1440),(1440)
 (base),(X),(core),10000,lm,pw,LM_tst.in,lm,Y,X,(1500),(1500)
