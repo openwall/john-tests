@@ -342,10 +342,10 @@ sub loadAllValidFormatTypeStrings {
 	# Ok, now if we have 'dynamic's, LOAD them
 	if (grepUsage("--list=WHAT") || grepUsage("--subformat=LIST")) {
 		if (grepUsage("--list=WHAT")) {
-			system ("$JOHN_EXE --subformat=LIST >JohnDynaUsage.Scr 2>&1");
+			system ("$JOHN_EXE --list=subformats >JohnDynaUsage.Scr 2>&1");
 		}
 		else {
-			system ("$JOHN_EXE --list=subformats >JohnDynaUsage.Scr 2>&1");
+			system ("$JOHN_EXE --subformat=LIST >JohnDynaUsage.Scr 2>&1");
 		}
 		open(FILE, "<JohnDynaUsage.Scr") or die $!;
 		my @dyna = <FILE>;
