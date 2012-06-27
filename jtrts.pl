@@ -130,7 +130,7 @@ sub johnPrelims {
 }
 sub johnTest0_one {
 	if (length($_[0]) < 2 || stringInArray($_[0], @types) || stringInArray("enc", @types) || stringInArray("full", @types)) {
-		if (length($_[0]) >= 2) { $_[0] = "-enc:$_[0]"; }
+		if (length($_[0]) >= 2) { $_[0] = "--encoding=$_[0]"; }
 		ScreenOutSemi("testing: john -test=0 $_[0]\n");
 		my $sCmd = "$JOHN_EXE -test=0 $_[0]";
 		foreach my $s (@passthru) { $sCmd = $sCmd . " " . $s . " "; }
@@ -186,7 +186,8 @@ sub showTypeData {
 }
 ###############################################################################
 # Setup the program to run.  Parses through params, strtok's the ./john screen
-# output, and also possilby ./john -sub:LIST and ./john -enc:LIST to find
+# output, and also possilby ./john --subformat=LIST (deprecated) or
+# ./john --list=subformats and ./john --encoding=LIST to find
 # internal 'variable' data built into jumbo, which can be added to, or removed
 # over time, and between builds.
 ###############################################################################
@@ -215,9 +216,9 @@ sub setup {
 	# now use the john error screen to determine if this is a jumbo john, or
 	# a core john. Then use this data to figure out what formats ARE and are NOT
 	# able to be run by this build (so we can later skip formats NOT built in
-	# this build.  Also check for how to do -utf8 or -enc:utf8 (different syntax
+	# this build.  Also check for how to do -utf8 or --encoding=utf8 (different syntax
 	# in different builds of john.  Also certain extra options like -nolog may
-	# be 'possible'.  We simply parse that screen (and also a john -sub:list to
+	# be 'possible'.  We simply parse that screen (and also a john --subformat=LIST to
 	# get a list of dynamics, if we are in a jumbo), so we know HOW to proceed.
 
 	ScreenOutVV("John 'usage' data is:\n");
@@ -257,7 +258,7 @@ sub setup {
 		push(@caps, "local_pot_valid");
 		ScreenOutV("--pot=NAME option is valid\n");
 	}
-	# can we use -enc:utf8, -enc:koi8r, etc.
+	# can we use --encoding=utf8, --encoding=koi8r, etc.
 	if (grepUsage("--encoding=NAME")) {
 		push(@caps, "encode_valid");
 		ScreenOutV("--encoding=NAME option is valid\n");
@@ -339,8 +340,13 @@ sub loadAllValidFormatTypeStrings {
 	$fmt_str = substr($fmt_str, 0, -1);
 
 	# Ok, now if we have 'dynamic's, LOAD them
-	if (grepUsage("--subformat=LIST")) {
-		system ("$JOHN_EXE --subformat=LIST >JohnDynaUsage.Scr 2>&1");
+	if (grepUsage("--list=WHAT") || grepUsage("--subformat=LIST")) {
+		if (grepUsage("--list=WHAT")) {
+			system ("$JOHN_EXE --subformat=LIST >JohnDynaUsage.Scr 2>&1");
+		}
+		else {
+			system ("$JOHN_EXE --list=subformats >JohnDynaUsage.Scr 2>&1");
+		}
 		open(FILE, "<JohnDynaUsage.Scr") or die $!;
 		my @dyna = <FILE>;
 		close(FILE);
@@ -360,14 +366,14 @@ sub loadAllValidFormatTypeStrings {
 	push(@caps, "inc");
 	if ($verbosity > 3) {
 		my $cnt = @validFormats;
-		ScreenOutVV("There are $cnt formats this john build can handle are:\n");
+		ScreenOutVV("There are $cnt formats this john build can handle. These are:\n");
 		foreach my $line(@validFormats) { ScreenOutVV($line . ","); }
 		ScreenOutVV("\n");
 	}
 }
 sub loadAllValidEncodings {
 	ScreenOutV("--encoding=LIST is valid, so we get valid encodings from there\n");
-	system ("$JOHN_EXE --enc:LIST >JohnEncUsage.Scr 2>&1");
+	system ("$JOHN_EXE ---encoding=LIST >JohnEncUsage.Scr 2>&1");
 	open(FILE, "<JohnEncUsage.Scr") or die $!;
 	my @encodings = <FILE>;
 	close(FILE);
@@ -519,9 +525,9 @@ sub process {
 	LINE: foreach my $line(@tstdata) {
 		my @ar = split(',', $line);
 		if (substr($ar[5],0,10) eq "INCREMENT_") {
-			$dict_name = "-inc:" . substr($ar[5],10);
+			$dict_name = "--incremental=" . substr($ar[5],10);
 		} else {
-			$dict_name = "-w:$ar[5].dic";
+			$dict_name = "--wordlist=$ar[5].dic";
 		}
 		my $cmd = "$cmd_head $ar[6]";
 		unless (-e $ar[6]) { next LINE; }
@@ -530,7 +536,7 @@ sub process {
 			open (FILE, "<".substr($dict_name,3));
 			my @lines = <FILE>;
 			close(FILE);
-			$dict_name = "-w:$ar[5]-$ar[3].dic";
+			$dict_name = "--wordlist=$ar[5]-$ar[3].dic";
 			$dict_name_ex = substr($dict_name,3);
 			open (FILE, ">".substr($dict_name,3));
 			my $i;
@@ -595,10 +601,11 @@ sub process {
 			my $cmd2 = sprintf("cut -f 2- -d\"%c\" < $pot | $UNIQUE pw3 > /dev/null", 31);
 			system($cmd2);
 		} else {
+			# FIXME: shouldn't we be even more paranoid, and use cut -f 2- -d: -s
 			my $cmd2 = sprintf("cut -f 2- -d: < $pot | $UNIQUE pw3 > /dev/null");
 			system($cmd2);
 		}
-		$cmd =~ s/$dict_name/-w:pw3/;
+		$cmd =~ s/$dict_name/--wordlist=pw3/;
 
 		ScreenOutVV("Execute john (.pot check): $cmd\n");
 		unlink ($pot);

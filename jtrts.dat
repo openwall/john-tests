@@ -50,10 +50,10 @@
 #
 (dynamic)(base),(X),(jumbo),10000,dynamic_29-raw,pw,rawmd5u_raw_tst.in,dynamic_29,Y,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_29,pw,rawmd5u_tst.in,dynamic_29,Y,X,(1500),(1500)
-(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-raw-utf8,pw,rawmd5u_raw_tst.in,dynamic_29,Y,-enc:utf-8,(1229),(1229)
-(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-raw-utf8,pw-utf8,rawmd5u_raw_tst_utf8.in,dynamic_29,Y,-enc:utf-8,(1500),(1500)
-(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-utf8,pw,rawmd5u_tst.in,dynamic_29,Y,-enc:utf-8,(1229),(1229)
-(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-utf8,pw-utf8,rawmd5u_tst_utf8.in,dynamic_29,Y,-enc:utf-8,(1500),(1500)
+(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-raw-utf8,pw,rawmd5u_raw_tst.in,dynamic_29,Y,--encoding=utf-8,(1229),(1229)
+(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-raw-utf8,pw-utf8,rawmd5u_raw_tst_utf8.in,dynamic_29,Y,--encoding=utf-8,(1500),(1500)
+(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-utf8,pw,rawmd5u_tst.in,dynamic_29,Y,--encoding=utf-8,(1229),(1229)
+(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-utf8,pw-utf8,rawmd5u_tst_utf8.in,dynamic_29,Y,--encoding=utf-8,(1500),(1500)
 #
 (dynamic)(base),(X),(jumbo),10000,dynamic_30,pw,dynamic_30_tst.in,dynamic_30,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_31,pw,dynamic_31_tst.in,dynamic_31,N,X,(1500),(1500)
@@ -65,10 +65,10 @@
 #
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5u,pw,rawmd5u_tst.in,raw-md5u,Y,X,(1500),(1500)
-(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-raw-utf8,pw,rawmd5u_raw_tst.in,raw-md5u,Y,-enc:utf-8,(1229),(1229)
-(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-raw-utf8,pw-utf8,rawmd5u_raw_tst_utf8.in,raw-md5u,Y,-enc:utf-8,(1500),(1500)
-(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw,rawmd5u_tst.in,raw-md5u,Y,-enc:utf-8,(1229),(1229)
-(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,-enc:utf-8,(1500),(1500)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-raw-utf8,pw,rawmd5u_raw_tst.in,raw-md5u,Y,--encoding=utf-8,(1229),(1229)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-raw-utf8,pw-utf8,rawmd5u_raw_tst_utf8.in,raw-md5u,Y,--encoding=utf-8,(1500),(1500)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw,rawmd5u_tst.in,raw-md5u,Y,--encoding=utf-8,(1229),(1229)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,--encoding=utf-8,(1500),(1500)
 #
 ,(full),(core),200,md5,pw,md5_1_tst.in,md5,N,X,(1500),(1500)
 ,(full),(core),200,md5_apr1,pw,md5_apr1_tst.in,md5,N,X,(1500),(1500)
@@ -90,7 +90,7 @@
 (base),(X),(jumbo),10000,raw-md5thk-dyno0,pw,dynamic_0_raw_tst.in,raw-md5thick,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5u,pw,rawmd5u_tst.in,raw-md5u,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
-(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,-enc:utf-8,(1500),(1500)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,--encoding=utf-8,(1500),(1500)
 (base),(X),(jumbo),10000,raw-sha1,pw,rawsha1_tst.in,raw-sha1,Y,X,(1500),(1500)
 (raw-sha1),(X),(jumbo),10000,rawsha1-ng,pw,rawsha1_tst.in,raw-sha1-ng,Y,X,(1430),(1430)
 (sha1-gens)(base),(X),(jumbo),10000,sha1-gens,pw,sha1s_tst.in,sha1-gen,Y,X,(1500),(1500)
@@ -309,7 +309,7 @@
 # This is a very slow, and VERY large input file hash.
 (ssh),(full),(jumbo),1600,ssh,pass,ssh_1500_tst.in,ssh,N,X,(1500),(1500)
 #
-# these use  -inc:all and -inc:alnum and NOT a password dict.
+# these use  --incremental=all and --incremental=alnum and NOT a password dict.
 #
 # These are 'quick' to run, so will be run under 'normal' testing.  WARNING, since these do NOT use
 # a dictionary, then they CAN 'lock up' the test suite run, IF the increment files are changed.  We may want
