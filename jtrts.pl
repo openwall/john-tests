@@ -3,7 +3,7 @@ use strict;
 use Getopt::Long;
 use jtrts_inc;
 
-my $VERSION = "1.12.3";
+my $VERSION = "1.12.4";
 my $RELEASE_DATE = "June 22, 2012";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
@@ -601,8 +601,7 @@ sub process {
 			my $cmd2 = sprintf("cut -f 2- -d\"%c\" < $pot | $UNIQUE pw3 > /dev/null", 31);
 			system($cmd2);
 		} else {
-			# FIXME: shouldn't we be even more paranoid, and use cut -f 2- -d: -s
-			my $cmd2 = sprintf("cut -f 2- -d: < $pot | $UNIQUE pw3 > /dev/null");
+			my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
 			system($cmd2);
 		}
 		$cmd =~ s/$dict_name/--wordlist=pw3/;
