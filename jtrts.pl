@@ -533,12 +533,12 @@ sub process {
 		unless (-e $ar[6]) { next LINE; }
 		$done_cnt = $done_cnt + 1;
 		if ($ar[3] != 10000) {
-			open (FILE, "<".substr($dict_name,3));
+			open (FILE, "<".substr($dict_name,11));
 			my @lines = <FILE>;
 			close(FILE);
 			$dict_name = "--wordlist=$ar[5]-$ar[3].dic";
 			$dict_name_ex = substr($dict_name,3);
-			open (FILE, ">".substr($dict_name,3));
+			open (FILE, ">".substr($dict_name,11));
 			my $i;
 			for ($i = 0; $i < $ar[3]; $i += 1) {
 				my $line = shift(@lines);
@@ -598,7 +598,7 @@ sub process {
 		# now do the .pot check.
 		unlink ("pw3");
 		if ($ar[8] eq "\'-fie=\\x1F\'") {
-			my $cmd2 = sprintf("cut -f 2- -d\"%c\" < $pot | $UNIQUE pw3 > /dev/null", 31);
+			my $cmd2 = sprintf("cut -f 2- -d\"%c\" -s < $pot | $UNIQUE pw3 > /dev/null", 31);
 			system($cmd2);
 		} else {
 			my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
