@@ -306,6 +306,8 @@
 #
 ###############################################  NEW items as of v1.12
 #
+
+# OPENCL FORMATS
 (opencl)(gpu),(X),(jumbo)&(opencl),200,md5crypt-opencl,pw,md5_1_tst.in,md5crypt-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),150,phpass-opencl,pw,phpass_tst.in,phpass-opencl,Y,X,(1470),(1470)
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,raw-md5-opencl,pw,dynamic_0_raw_tst.in,raw-md5-opencl,Y,X,(1500),(1500)
@@ -315,10 +317,17 @@
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,mysql-sha1-opencl,pw,mysqlSHA1_tst.in,mysql-sha1-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),50,mscash2-opencl,pw,MSCash2_tst.in,mscash2-opencl,Y,X,(1410),(1410)
 (opencl)(gpu),(X),(jumbo)&(opencl),40,bf-opencl,pw,BF_tst.in,bf-opencl,N,X,(1500),(1500)
+(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha512-opencl,pw,rawsha512_tst.in,raw-sha512-opencl,Y,X,(1500),(1500)
+
+# CUDA FORMATS
 (cuda)(gpu),(X),(jumbo)&(cuda),200,md5crypt-cuda,pw,md5_1_tst.in,md5crypt-cuda,Y,X,(1500),(1500)
 (cuda)(gpu),(X),(jumbo)&(cuda),150,phpass-cuda,pw,phpass_tst.in,phpass-cuda,Y,X,(1470),(1470)
 (cuda)(gpu),(X),(jumbo)&(cuda),10000,mscash-cuda,pw,mscash_tst.in,mscash-cuda,Y,X,(1430),(1430)
 (cuda)(gpu),(X),(jumbo)&(cuda),50,mscash2-cuda,pw,MSCash2_tst.in,mscash2-cuda,Y,X,(1479),(1479)
+(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,raw-sha224-cuda,pw,rawsha224_tst.in,raw-sha224-cuda,Y,X,(1500),(1500)
+(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,raw-sha256-cuda,pw,rawsha256_tst.in,raw-sha256-cuda,Y,X,(1500),(1500)
+(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,raw-sha512-cuda,pw,rawsha512_tst.in,raw-sha512-cuda,Y,X,(1500),(1500)
+
 # This is a very slow, and VERY large input file hash.
 (ssh),(full),(jumbo),1600,ssh,pass,ssh_1500_tst.in,ssh,N,X,(1500),(1500)
 #
