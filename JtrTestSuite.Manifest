@@ -101,18 +101,23 @@
 #               PO now required a forced test (gost 'grabbed' it ;) )
 #               Raw SHA1 required a forced test.
 # v1.12.2 Fixed sapG and added sapB (per magnum).
-# v1.12.3 Added gost, gost_cp, raw-sha1_ng (faster on some cpu's).
+# v1.12.3 Added gost, gost_cp, raw-sha1_ng (faster on some cpu's).  
 #				Added some extra test using crc32, for dupe suppression, and for files having
 #				and lacking
 #				final EOL in the file.
-#				Numerous other changes (-enc:utf changed to --encode=utf)
+#				Numerous other changes (-enc:utf changed to --encode=utf) 
 #               Changed the cut statement in .pot testing, adding the -s to only cut lines
 #				with  a : char.
 # v1.12.4  Added a bunch of new formats:
 #                 raw-ssh224, raw-ssh256, raw-sha384, raw-sha512, dragonfly3_32, dragonfly4_32,
 #                 hmac-sha1, hmac-sha224, hmac-sha256, hmac-sha384, hmac-sha512,
+#                 -w= changed to --wordlist= and -enc:utf8 changed to --encoding=utf8. The
+#                 -w= change trigged a couple of bugs.
+# v1.12.5  Added sha256crypt and sha512crypt.  Still had one more nit from the change from 
+#               -w= to --wordlist=
 # Todo (1.13)
 #				Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #				file formats seen in the wild.  These tests are in -w= and -pipe modes
+#               http://www.openwall.com/lists/john-dev/2012/06/29/39
 #--------------------------------------------------------------------
 

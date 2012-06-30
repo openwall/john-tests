@@ -3,8 +3,8 @@ use strict;
 use Getopt::Long;
 use jtrts_inc;
 
-my $VERSION = "1.12.4";
-my $RELEASE_DATE = "June 22, 2012";
+my $VERSION = "1.12.5";
+my $RELEASE_DATE = "June 29, 2012";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -537,7 +537,7 @@ sub process {
 			my @lines = <FILE>;
 			close(FILE);
 			$dict_name = "--wordlist=$ar[5]-$ar[3].dic";
-			$dict_name_ex = substr($dict_name,3);
+			$dict_name_ex = substr($dict_name,11);
 			open (FILE, ">".substr($dict_name,11));
 			my $i;
 			for ($i = 0; $i < $ar[3]; $i += 1) {

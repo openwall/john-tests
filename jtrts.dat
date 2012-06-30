@@ -95,7 +95,7 @@
 (raw-sha1)(sha)(sha1),(X),(jumbo),10000,rawsha1-ng,pw,rawsha1_tst.in,raw-sha1-ng,Y,X,(1430),(1430)
 (sha1-gens)(base)(sha)(sha1),(X),(jumbo),10000,sha1-gens,pw,sha1s_tst.in,sha1-gen,Y,X,(1500),(1500)
 (sha1-genp)(base)(sha)(sha1),(X),(jumbo),10000,sha1-genp,pw,sha1p_tst.in,sha1-gen,Y,X,(1500),(1500)
-# Data added June 28, 2112
+# Data added June 28 2012
 (base)(sha)(sha2),(X),(jumbo),10000,raw-sha224,pw,rawsha224_tst.in,raw-sha224,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,raw-sha256,pw,rawsha256_tst.in,raw-sha256,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,raw-sha384,pw,rawsha384_tst.in,raw-sha384,Y,X,(1500),(1500)
@@ -105,6 +105,8 @@
 (base)(sha)(sha2),(X),(jumbo),10000,hmac-sha256,pw,hmacSHA256_tst.in,hmac-sha256,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,hmac-sha384,pw,hmacSHA384_tst.in,hmac-sha384,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,hmac-sha512,pw,hmacSHA512_tst.in,hmac-sha512,Y,X,(1500),(1500)
+(base)(sha)(sha2),(X),(jumbo),40,sha256crypt,pw,SHA256crypt_tst.in,sha256crypt,Y,X,(1500),(1500)
+(base)(sha)(sha2),(X),(jumbo),40,sha512crypt,pw,SHA512crypt_tst.in,sha512crypt,Y,X,(1500),(1500)
 #
 (base),(X),(jumbo),10000,dragonfly3-32,pw,dragonfly3_32_tst.in,dragonfly3-32,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,dragonfly4-32,pw,dragonfly4_32_tst.in,dragonfly4-32,Y,X,(1500),(1500)
