@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------
-# John, testing suite, v1.12.4   Jim Fougeron.
+# John, testing suite, v1.12.6   Jim Fougeron.
 #
 # No copyright is claimed, and the software is hereby 
 # placed in the public domain. In case this attempt to disclaim 
@@ -115,6 +115,7 @@
 #                 -w= change trigged a couple of bugs.
 # v1.12.5  Added sha256crypt and sha512crypt.  Still had one more nit from the change from 
 #               -w= to --wordlist=
+# v1.12.6  Added XSHA512
 # Todo (1.13)
 #				Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #				file formats seen in the wild.  These tests are in -w= and -pipe modes

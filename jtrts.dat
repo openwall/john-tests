@@ -107,6 +107,7 @@
 (base)(sha)(sha2),(X),(jumbo),10000,hmac-sha512,pw,hmacSHA512_tst.in,hmac-sha512,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),40,sha256crypt,pw,SHA256crypt_tst.in,sha256crypt,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),40,sha512crypt,pw,SHA512crypt_tst.in,sha512crypt,Y,X,(1500),(1500)
+(base)(sha)(sha2),(X),(jumbo),10000,XSHA512,pw,XSHA512_tst.in,xsha512,Y,X,(1500),(1500)
 #
 (base),(X),(jumbo),10000,dragonfly3-32,pw,dragonfly3_32_tst.in,dragonfly3-32,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,dragonfly4-32,pw,dragonfly4_32_tst.in,dragonfly4-32,Y,X,(1500),(1500)
