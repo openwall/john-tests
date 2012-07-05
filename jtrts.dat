@@ -325,6 +325,7 @@
 # OPENCL FORMATS
 (opencl)(gpu),(X),(jumbo)&(opencl),200,md5crypt-opencl,pw,md5_1_tst.in,md5crypt-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),150,phpass-opencl,pw,phpass_tst.in,phpass-opencl,Y,X,(1470),(1470)
+(opencl)(gpu),(X),(jumbo)&(opencl),10000,raw-md4-opencl,pw,rawmd4_tst.in,raw-md4-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,raw-md5-opencl,pw,dynamic_0_raw_tst.in,raw-md5-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,raw-sha1-opencl,pw,rawsha1_tst.in,raw-sha1-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,nt-opencl,pw,NT_tst.in,nt-opencl,Y,X,(1478),(1478)
