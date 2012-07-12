@@ -115,7 +115,9 @@
 #                 -w= change trigged a couple of bugs.
 # v1.12.5  Added sha256crypt and sha512crypt.  Still had one more nit from the change from 
 #               -w= to --wordlist=
-# v1.12.6  Added XSHA512
+# v1.12.6  Added XSHA512, and updated/added many GPU formats.
+# v1.12.7  Added new formats dynamic_35 sha1(uc($u).:.$p), dynamic_36 sha1($u.:.$p),
+#                dynamic_37 sha1(lc($u).$p) and dynamic_38 (sha1($s.sha1($s.sha1($p)))
 # Todo (1.13)
 #				Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #				file formats seen in the wild.  These tests are in -w= and -pipe modes
