@@ -118,6 +118,8 @@
 # v1.12.6  Added XSHA512, and updated/added many GPU formats.
 # v1.12.7  Added new formats dynamic_35 sha1(uc($u).:.$p), dynamic_36 sha1($u.:.$p),
 #                dynamic_37 sha1(lc($u).$p) and dynamic_38 (sha1($s.sha1($s.sha1($p)))
+# v1.12.8  Added new formats dynamic_39, which is an sha256 dynamic. Updated input file
+#                for dyna_38.  Salt set to fixed 20 bytes.
 # Todo (1.13)
 #				Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #				file formats seen in the wild.  These tests are in -w= and -pipe modes
