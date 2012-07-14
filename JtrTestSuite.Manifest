@@ -120,6 +120,13 @@
 #                dynamic_37 sha1(lc($u).$p) and dynamic_38 (sha1($s.sha1($s.sha1($p)))
 # v1.12.8  Added new formats dynamic_39, which is an sha256 dynamic. Updated input file
 #                for dyna_38.  Salt set to fixed 20 bytes.
+# v1.12.9  Added new formats dynamic_50,_51,_52, which is an sha224 dynamic ($p) ($s.$p) ($p.$s)
+#               Updated input file for dyna_38.  Salt set to fixed 20 bytes.
+#               Added new dynamic_60,_61,_62 (SHA256). _70,_71,_72 SHA384.  _80,_81,_82 SHA512.
+#               _90,_91,_92 GOST.  Dyna_39 renamed to dyna_61
+#               some lines added to a few dynamic formats, that were dupe lines, but with
+#               case change in the hash.  This will flush out problems of split-unify-case
+#               not being present.
 # Todo (1.13)
 #				Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #				file formats seen in the wild.  These tests are in -w= and -pipe modes

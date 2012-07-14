@@ -3,8 +3,8 @@ use strict;
 use Getopt::Long;
 use jtrts_inc;
 
-my $VERSION = "1.12.8";
-my $RELEASE_DATE = "July 12, 2012";
+my $VERSION = "1.12.9";
+my $RELEASE_DATE = "July 13, 2012";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2

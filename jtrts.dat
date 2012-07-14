@@ -66,7 +66,26 @@
 (dynamic)(base)(sha1),(X),(jumbo),10000,dynamic_36,pw,dynamic_36_tst.in,dynamic_36,N,X,(1500),(1500)
 (dynamic)(base)(sha1),(X),(jumbo),10000,dynamic_37,pw,dynamic_37_tst.in,dynamic_37,N,X,(1500),(1500)
 (dynamic)(base)(sha1),(X),(jumbo),10000,dynamic_38,pw,dynamic_38_tst.in,dynamic_38,N,X,(1500),(1500)
-(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_39,pw,dynamic_39_tst.in,dynamic_39,N,X,(1500),(1500)
+# SHA224
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_50,pw,dynamic_50_tst.in,dynamic_50,N,X,(1500),(1500)
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_51,pw,dynamic_51_tst.in,dynamic_51,N,X,(1500),(1500)
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_52,pw,dynamic_52_tst.in,dynamic_52,N,X,(1500),(1500)
+# SHA256
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_60,pw,dynamic_60_tst.in,dynamic_60,N,X,(1500),(1500)
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_61,pw,dynamic_61_tst.in,dynamic_61,N,X,(1500),(1500)
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_62,pw,dynamic_62_tst.in,dynamic_62,N,X,(1500),(1500)
+# SHA384
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_70,pw,dynamic_70_tst.in,dynamic_70,N,X,(1500),(1500)
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_71,pw,dynamic_71_tst.in,dynamic_71,N,X,(1500),(1500)
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_72,pw,dynamic_72_tst.in,dynamic_72,N,X,(1500),(1500)
+# SHA512
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_80,pw,dynamic_80_tst.in,dynamic_80,N,X,(1500),(1500)
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_81,pw,dynamic_81_tst.in,dynamic_81,N,X,(1500),(1500)
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_82,pw,dynamic_82_tst.in,dynamic_82,N,X,(1500),(1500)
+# GOST
+(dynamic)(base)(gost),(X),(jumbo),10000,dynamic_90,pw,dynamic_90_tst.in,dynamic_90,N,X,(1500),(1500)
+(dynamic)(base)(gost),(X),(jumbo),10000,dynamic_91,pw,dynamic_91_tst.in,dynamic_91,N,X,(1500),(1500)
+(dynamic)(base)(gost),(X),(jumbo),10000,dynamic_92,pw,dynamic_92_tst.in,dynamic_92,N,X,(1500),(1500)
 #
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5u,pw,rawmd5u_tst.in,raw-md5u,Y,X,(1500),(1500)
