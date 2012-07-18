@@ -2,9 +2,10 @@
 use strict;
 use Getopt::Long;
 use jtrts_inc;
+use Digest::MD5;
 
-my $VERSION = "1.12.9";
-my $RELEASE_DATE = "July 13, 2012";
+my $VERSION = "1.12.10";
+my $RELEASE_DATE = "July 16, 2012";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -269,6 +270,28 @@ sub setup {
 			push(@encs, "utf8", "cp1252", "cp1251", "koi8r", "cp437", "cp737", "cp850", "cp858", "cp866", "iso8859-1", "iso8859-15" );
 			push(@caps, @encs );
 		}
+	}
+	
+	# ok, now load the md5's of the all.chr and alnum.chr files. These end up being 'required' types for the inc to run.
+	my $file = $JOHN_PATH . "/all.chr";
+    if (open(FILE, $file)) {
+	    binmode(FILE);
+		my $sHash = "inc_all_" . Digest::MD5->new->addfile(*FILE)->hexdigest;
+	    close(FILE);
+		push(@caps, $sHash);
+		ScreenOutV("all.chr found, $sHash added as a capability\n");
+	} else {
+		ScreenOutV("all.chr ($file) not found\n");
+	}
+	$file = $JOHN_PATH . "/alnum.chr";
+    if (open(FILE, $file)) {
+	    binmode(FILE);
+		my $sHash = "inc_alnum_" . Digest::MD5->new->addfile(*FILE)->hexdigest;
+	    close(FILE);
+		push(@caps, $sHash);
+		ScreenOutV("alnum.chr found, $sHash added as a capability\n");
+	} else {
+		ScreenOutV("alnum.chr ($file) not found\n");
 	}
 	if (@types) {
 		ScreenOutV("Types to filter on:\n");

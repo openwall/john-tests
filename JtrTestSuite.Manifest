@@ -127,6 +127,13 @@
 #               some lines added to a few dynamic formats, that were dupe lines, but with
 #               case change in the hash.  This will flush out problems of split-unify-case
 #               not being present.
+# v1.12.10  Added new formats dynamic_100,_101,_102, which is whirlpool($p) & ($s.$p) & ($p.$s)
+#               and added pwsafe (cpu, cuda and opencl).  Added MD5 checksum into usage of the
+#               incremental files.  This is a REQUIRED check.  This will make sure that
+#               the incremental file, and the test data actually match up. If they do not, then
+#               the TS can appear to lock up.  Added a new script file (pw_len_finder.sh)
+#               that can help to build the proper number of candidates to expect, when a format
+#               has a PLAINTEXT_LENGTH shorter than what the input file was built with.
 # Todo (1.13)
 #				Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #				file formats seen in the wild.  These tests are in -w= and -pipe modes
