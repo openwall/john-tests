@@ -134,6 +134,9 @@
 #               the TS can appear to lock up.  Added a new script file (pw_len_finder.sh)
 #               that can help to build the proper number of candidates to expect, when a format
 #               has a PLAINTEXT_LENGTH shorter than what the input file was built with.
+# v1.12.11  Added django, dragonfly3-64 and dragonfly4-64, formspring (thin-dyna_61),
+#               EPI, episerver (v1 and v0), hmailserver, nukedclan(nk), radmin, rawsha0,
+#               SybaseASE, wbb3 (WoltLab Burning Board 3: sha1($s.sha1($s.sha1($p)))),
 # Todo (1.13)
 #				Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #				file formats seen in the wild.  These tests are in -w= and -pipe modes

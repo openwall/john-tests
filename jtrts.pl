@@ -4,8 +4,8 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 
-my $VERSION = "1.12.10";
-my $RELEASE_DATE = "July 16, 2012";
+my $VERSION = "1.12.11";
+my $RELEASE_DATE = "July 20, 2012";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
