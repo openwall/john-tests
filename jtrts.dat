@@ -356,15 +356,15 @@
 # CUDA FORMATS
 (cuda)(gpu),(X),(jumbo)&(cuda),200,md5crypt-cuda,pw,md5_1_tst.in,md5crypt-cuda,Y,X,(1500),(1500)
 (cuda)(gpu),(X),(jumbo)&(cuda),150,phpass-cuda,pw,phpass_tst.in,phpass-cuda,Y,X,(1470),(1470)
-(cuda)(gpu),(X),(jumbo)&(cuda),10000,mscash-cuda,pw,mscash_tst.in,mscash-cuda,Y,X,(1430),(1430)
-(cuda)(gpu),(X),(jumbo)&(cuda),50,mscash2-cuda,pw,MSCash2_tst.in,mscash2-cuda,Y,X,(1479),(1479)
-(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,raw-sha224-cuda,pw,rawsha224_tst.in,raw-sha224-cuda,Y,X,(1500),(1500)
-(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,raw-sha256-cuda,pw,rawsha256_tst.in,raw-sha256-cuda,Y,X,(1500),(1500)
-(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,raw-sha512-cuda,pw,rawsha512_tst.in,raw-sha512-cuda,Y,X,(1050),(1050)
+(cuda)(gpu),(X),(jumbo)&(cuda),10000,mscash-cuda,pw,mscash_tst.in,mscash-cuda,Y,X,(1500),(1500)
+(cuda)(gpu),(X),(jumbo)&(cuda),50,mscash2-cuda,pw,MSCash2_tst.in,mscash2-cuda,Y,X,(1500),(1500)
+(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,raw-sha224-cuda,pw,rawsha224_tst.in,raw-sha224-cuda,Y,X,(1476),(1476)
+(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,raw-sha256-cuda,pw,rawsha256_tst.in,raw-sha256-cuda,Y,X,(1476),(1476)
+(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,raw-sha512-cuda,pw,rawsha512_tst.in,raw-sha512-cuda,Y,X,(1476),(1476)
 (cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),40,sha256crypt-cuda,pw,SHA256crypt_tst.in,sha256crypt-cuda,Y,X,(1389),(1389)
 (cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),40,sha512crypt-cuda,pw,SHA512crypt_tst.in,sha512crypt-cuda,Y,X,(1389),(1389)
 (cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,xsha512-cuda,pw,XSHA512_tst.in,xsha512-cuda,Y,X,(1500),(1500)
-(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),40,pwsafe-cuda,pw,pwsafe_tst.in,pwsafe-cuda,Y,X,(1485),(1485)
+(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),40,pwsafe-cuda,pw,pwsafe_tst.in,pwsafe-cuda,Y,X,(1500),(1500)
 
 # OPENCL FORMATS
 (opencl)(gpu),(X),(jumbo)&(opencl),200,md5crypt-opencl,pw,md5_1_tst.in,md5crypt-opencl,Y,X,(1500),(1500)
@@ -377,9 +377,9 @@
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,mysql-sha1-opencl,pw,mysqlSHA1_tst.in,mysql-sha1-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),50,mscash2-opencl,pw,MSCash2_tst.in,mscash2-opencl,Y,X,(1410),(1410)
 (opencl)(gpu),(X),(jumbo)&(opencl),40,bf-opencl,pw,BF_tst.in,bf-opencl,N,X,(1500),(1500)
-(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha512-opencl,pw,rawsha512_tst.in,raw-sha512-opencl,Y,X,(1050),(1050)
+(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha512-opencl,pw,rawsha512_tst.in,raw-sha512-opencl,Y,X,(1476),(1476)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),40,sha512crypt-opencl,pw,SHA512crypt_tst.in,sha512crypt-opencl,Y,X,(1389),(1389)
-(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,xsha512-opencl,pw,XSHA512_tst.in,xsha512-opencl,Y,X,(1050),(1050)
+(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,xsha512-opencl,pw,XSHA512_tst.in,xsha512-opencl,Y,X,(1476),(1476)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),40,pwsafe-opencl,pw,pwsafe_tst.in,pwsafe-opencl,Y,X,(1485)(1375),(1485)(1375)
 
 # This is a very slow, and VERY large input file hash.
