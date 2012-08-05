@@ -383,8 +383,14 @@ sub loadAllValidFormatTypeStrings {
 	}
 	#$fmt_str = $fmt_str . "/inc";
 	@validFormats = split(/\//, $fmt_str);
-	if (index($fmt_str, "-cuda") != -1)  { push(@caps, "cuda"); }
-	if (index($fmt_str, "-opencl") != -1)  { push(@caps, "opencl"); }
+	if (index($fmt_str, "-cuda") != -1)  {
+	    push(@caps, "cuda");
+	    $prelims = 0;
+	}
+	if (index($fmt_str, "-opencl") != -1)  {
+	    push(@caps, "opencl");
+	    $prelims = 0;
+	}
 	# push (inc), since ALL john versions allow the inc.
 	push(@caps, "inc");
 	if ($verbosity > 3) {
