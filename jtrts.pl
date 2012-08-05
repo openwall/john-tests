@@ -584,7 +584,8 @@ sub process {
 
 		my @crack_xx = ();
 		foreach $line (@crack_cnt) {
-			if (index($line, "guesses: ") eq 0) {
+			$line =~ s/.*\x08//; # cut away progress indicator
+			if (index($line, "guesses:") == 0) {
 				@crack_xx = split (/ /, $line);
 				last;
 			}
@@ -637,7 +638,8 @@ sub process {
 		@crack_xx = ();
 		@crack_cnt = split (/\n/, $cmd_data);
 		foreach $line (@crack_cnt) {
-			if (index($line, "guesses: ") eq 0) {
+			$line =~ s/.*\x08//; # cut away progress indicator
+			if (index($line, "guesses:") == 0) {
 				@crack_xx = split (/ /, $line);
 				last;
 			}
