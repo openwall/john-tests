@@ -364,7 +364,7 @@
 (cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),40,sha256crypt-cuda,pw,SHA256crypt_tst.in,sha256crypt-cuda,Y,X,(1389),(1389)
 (cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),40,sha512crypt-cuda,pw,SHA512crypt_tst.in,sha512crypt-cuda,Y,X,(1389),(1389)
 (cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),10000,xsha512-cuda,pw,XSHA512_tst.in,xsha512-cuda,Y,X,(1500),(1500)
-(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),40,pwsafe-cuda,pw,pwsafe_tst.in,pwsafe-cuda,Y,X,(1500),(1500)
+(cuda)(gpu)(sha)(sha2),(X),(jumbo)&(cuda),40,pwsafe-cuda,pw,pwsafe_tst.in,pwsafe-cuda,Y,X,(1485),(1485)
 
 # OPENCL FORMATS
 (opencl)(gpu),(X),(jumbo)&(opencl),200,md5crypt-opencl,pw,md5_1_tst.in,md5crypt-opencl,Y,X,(1500),(1500)
@@ -380,7 +380,7 @@
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha512-opencl,pw,rawsha512_tst.in,raw-sha512-opencl,Y,X,(1476),(1476)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),40,sha512crypt-opencl,pw,SHA512crypt_tst.in,sha512crypt-opencl,Y,X,(1389),(1389)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,xsha512-opencl,pw,XSHA512_tst.in,xsha512-opencl,Y,X,(1476),(1476)
-(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),40,pwsafe-opencl,pw,pwsafe_tst.in,pwsafe-opencl,Y,X,(1485)(1375),(1485)(1375)
+(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),40,pwsafe-opencl,pw,pwsafe_tst.in,pwsafe-opencl,Y,X,(1375),(1375)
 
 # This is a very slow, and VERY large input file hash.
 (ssh),(full),(jumbo),1600,ssh,pass,ssh_1500_tst.in,ssh,N,X,(1500),(1500)
