@@ -419,4 +419,5 @@
 #
 (base),(X),(jumbo),10000,gost,pw,gost_tst.in,gost,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,gost,pw,gost_raw_tst.in,gost,Y,X,(1500),(1500)
-(base),(X),(jumbo),25,rar,pw,rar_tst.in,rar,N,X,(80),(80)
+# The RAR format is both for opencl and CPU, using same name
+(opencl)(gpu)(base),(X),(jumbo),25,rar,pw,rar_tst.in,rar,N,X,(80),(80)
