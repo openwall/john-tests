@@ -177,6 +177,7 @@
 (base),(X),(jumbo),10000,mskrb5,pw,mskrb5_tst.in,mskrb5,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,BFegg,pw,BFegg_tst.in,bfegg,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,IPB2,pw,IPB2_tst.in,ipb2,N,X,(1500),(1500)
+(base),(X),(jumbo),10000,MSSql12,pw,MsSql12_tst.in,mssql12,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,MSSql05,pw,MSSql05_tst.in,mssql05,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,MSSql,pw,mssql_tst.in,mssql,N,X,(1500),(1500)
 (ansi)(base)(8859-1)(iso-8859-1)(enc),(X),(jumbo)&(encode_valid),10000,MSSql-8859-1,pw,mssql_tst.in,mssql,N,-enc=iso-8859-1,(1500),(1500)
@@ -205,6 +206,7 @@
 (base)(raw-sha)(raw-sha0)(rawsha0),(X),(jumbo),10000,rawsha0,pw,rawsha0_tst.in,raw-sha,Y,X,(1464),(1464)
 (base)(sybasease),(X),(jumbo),10000,sybasease,pw,sybasease_tst.in,sybasease,Y,X,(1500),(1500)
 (base)(wbb3),(X),(jumbo),10000,wbb3,pw,wbb3_tst.in,wbb3,Y,X,(1500),(1500)
+(base)(drupal7),(X),(jumbo),40,drupal7,pw,drupal7_tst.in,drupal7,Y,X,(1500),(1500)
 
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql-utf8,pw,mssql_tst.in,mssql,Y,-enc=utf8,(1229),(1229)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-utf8,pw,MSSql05_tst.in,mssql05,Y,-enc=utf8,(1229),(1229)
