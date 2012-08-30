@@ -628,10 +628,10 @@ sub process {
 		# now do the .pot check.
 		unlink ("pw3");
 		if ($ar[8] eq "\'-fie=\\x1F\'") {
-			my $cmd2 = sprintf("cut -f 2- -d\"%c\" -s < $pot | $UNIQUE pw3 > /dev/null", 31);
+			my $cmd2 = sprintf("LC_ALL=C cut -f 2- -d\"%c\" -s < $pot | $UNIQUE pw3 > /dev/null", 31);
 			system($cmd2);
 		} else {
-			my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
+			my $cmd2 = sprintf("LC_ALL=C cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
 			system($cmd2);
 		}
 		$cmd =~ s/$dict_name/--wordlist=pw3/;
