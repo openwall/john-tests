@@ -175,6 +175,7 @@
 (osx)(base)(sha)(sha1),(X),(jumbo),10000,MAC_OSX_Salted_SHA1,pw,XSHA_tst.in,xsha,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,hmacMD5,pw,hmacMD5_tst.in,hmac-md5,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,mskrb5,pw,mskrb5_tst.in,mskrb5,N,X,(1500),(1500)
+(base),(X),(jumbo),10000,krb5pa-md5,pw,mskrb5_tst.in,krb5pa-md5,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,BFegg,pw,BFegg_tst.in,bfegg,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,IPB2,pw,IPB2_tst.in,ipb2,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,MSSql12,pw,MsSql12_tst.in,mssql12,N,X,(1500),(1500)
