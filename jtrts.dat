@@ -422,6 +422,8 @@
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),40,pwsafe-opencl,pw,pwsafe_tst.in,pwsafe-opencl,Y,X,(1485)(1375),(1485)(1375)
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,des-opencl,pw,DES_tst.in,des-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,ntlmv2-opencl,pw,netntlmv2_tst.in,ntlmv2-opencl,Y,X,(1452)(1500),(1452)(1500)
+(opencl)(gpu),(X),(jumbo)&(encode_valid)&(opencl),10000,netntlmv2-utf8,pw-utf8,netntlmv2_tst_utf8.in,ntlmv2-opencl,Y,-enc=utf8,(1341)(1500),(1341)(1500)
+(opencl)(gpu),(X),(jumbo)&(encode_valid)&(opencl),10000,netntlmv2-koi8r,pw-koi8r,netntlmv2_tst_koi8r.in,ntlmv2-opencl,Y,-enc=koi8r,(1429)(1500),(1429)(1500)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha256-opencl,pw,rawsha256_tst.in,raw-sha256-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),30,rar-opencl,pw,rar_tst.in,rar-opencl,Y,X,(130),(130)
 
