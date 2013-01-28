@@ -390,6 +390,7 @@
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,des-opencl,pw,DES_tst.in,des-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,ntlmv2-opencl,pw,netntlmv2_tst.in,ntlmv2-opencl,Y,X,(1452)(1500),(1452)(1500)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha256-opencl,pw,rawsha256_tst.in,raw-sha256-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo)&(opencl),30,rar-opencl,pw,rar_tst.in,rar-opencl,Y,X,(130),(130)
 
 # This is a very slow, and VERY large input file hash.
 (ssh),(full),(jumbo),1600,ssh,pass,ssh_1500_tst.in,ssh,N,X,(1500),(1500)
@@ -426,5 +427,4 @@
 #
 (base),(X),(jumbo),10000,gost,pw,gost_tst.in,gost,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,gost,pw,gost_raw_tst.in,gost,Y,X,(1500),(1500)
-# The RAR format is both for opencl and CPU, using same name
-(opencl)(gpu)(base),(X),(jumbo),30,rar,pw,rar_tst.in,rar,N,X,(130),(130)
+(base),(X),(jumbo),30,rar,pw,rar_tst.in,rar,Y,X,(130),(130)
