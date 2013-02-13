@@ -216,11 +216,11 @@
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-utf8,pw,MSSql05_tst.in,mssql05,Y,-enc=utf8,(1229),(1229)
 
 ###############################################
-(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1500),(1500)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mschapv2-naive-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2-naive,Y,-enc=utf8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netlmv2-utf8,pw-utf8,netlmv2_tst_utf8.in,netlmv2,Y,-enc=utf8,(1500),(1500)
-(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netntlm-utf8,pw-utf8,netntlm_tst_utf8.in,netntlm,Y,-enc=utf8,(1500),(1500)
-(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netntlm(l0phtcrack)-utf8,pw-utf8,l0phtcrack_tst_utf8.in,netntlm,Y,-enc=utf8,(1500),(1500)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netntlm-utf8,pw-utf8,netntlm_tst_utf8.in,netntlm,Y,-enc=utf8,(1442)(1500),(1442)(1500)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netntlm(l0phtcrack)-utf8,pw-utf8,l0phtcrack_tst_utf8.in,netntlm,Y,-enc=utf8,(1442)(1500),(1442)(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netntlm-naive-utf8,pw-utf8,netntlm_tst_utf8.in,netntlm-naive,Y,-enc=utf8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netntlm-naive(l0phtcrack)-utf8,pw-utf8,l0phtcrack_tst_utf8.in,netntlm-naive,Y,-enc=utf8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,netntlmv2-utf8,pw-utf8,netntlmv2_tst_utf8.in,netntlmv2,Y,-enc=utf8,(1500),(1500)
