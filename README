@@ -1,0 +1,16 @@
+This is supposed to reside *in* a John the Ripper tree. That is, if you
+have this structure for john:
+
+john/
+john/src
+john/run
+
+...this Test Suite should reside in:
+
+john/test
+
+
+So when checking out this from GitHub, you would:
+
+cd john
+git clone https://github.com/magnumripper/jtrTestSuite.git test
