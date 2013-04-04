@@ -59,7 +59,10 @@ usage: $0 [-h|-?] [-option[s]]
     -passthru  <s> Pass this argument straight into john.  Can use more than 1.
     -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
                    and other temp files will be left, AND the command line 
-                   that was run is listed. (default is -nostoponerror). 
+                   that was run is listed. (default is -nostoponerror).
+	-showstderr    Allows any stderr writing to 'show' on screen. Usually not
+                   wanted, but for some usage, like memory leak checking, or
+                   other errors, any display of stderr is needed.
     -help|?        shows this help screen.
 UsageHelp
 }

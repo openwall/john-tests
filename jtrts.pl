@@ -30,7 +30,7 @@ my @passthru=();
 my @johnUsageScreen=();
 my @validFormats=();
 my @tstdata;
-my $showtypes=0, my $basepath=""; my $prelims=1, my $stop_on_error=0;
+my $showtypes=0, my $basepath=""; my $prelims=1, my $stop_on_error=0, my $show_stderr=0;
 my $last_line_len=0;
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0;
 my @startingTime;
@@ -93,6 +93,7 @@ sub parseArgs {
 		'prelims!'         => \$prelims,
 		'passthru=s'       => \@passthru,
 		'stoponerror!'     => \$stop_on_error,
+		'showstderr!'      => \$show_stderr,
 		);
 	if ($help) { usage(); }
 	if ($basepath ne "") {
@@ -579,11 +580,16 @@ sub process {
 
 		if ($ar[8] eq 'Y') { $cmd = "$cmd \'-form=$ar[7]\'"; }
 		if ($ar[9] ne 'X') { $cmd = "$cmd $ar[9]"; }
-		$cmd = "$cmd 2>&1 >/dev/null";
+
+		if ($show_stderr != 1) { $cmd = "$cmd 2>&1 >/dev/null"; }
+		# this will switch stderr and stdout (vs joining them), so we can grab stderr BY ITSELF.
+		else { $cmd = "$cmd 3>&1 1>&2 2>&3 >/dev/null "; }
 
 		ScreenOutVV("Execute john: $cmd\n");
 		unlink($pot);
 		my $cmd_data = `$cmd`;
+		# ok, now show stderr, if asked to.
+		if ($show_stderr == 1) { print $cmd_data; }
 		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
 
 		my @crack_cnt = split (/\n/, $cmd_data);
@@ -639,6 +645,8 @@ sub process {
 		ScreenOutVV("Execute john (.pot check): $cmd\n");
 		unlink ($pot);
 		$cmd_data = `$cmd`;
+		# ok, now show stderr, if asked to.
+		if ($show_stderr == 1) { print $cmd_data; }
 		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
 
 		@crack_xx = ();
