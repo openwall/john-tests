@@ -125,7 +125,7 @@ sub grepUsage {
 ###############################################################################
 sub johnPrelims {
 	return unless $prelims;
-	
+
 	johnTest0_one(" ");
 	foreach my $item (@encs) {johnTest0_one($item);}
 	if ($verbosity < 2) {ScreenOutSemi(" \n");}
@@ -146,13 +146,13 @@ sub johnTest0_one {
 	}
 }
 ###############################################################################
-# We parse through the data file, and list the 'types' that can be used, 
+# We parse through the data file, and list the 'types' that can be used,
 # removing duplicates, etc.
 ###############################################################################
 sub showTypeData {
 	# Get all the 'types'.  NOTE, full was removed from element 0, so we 'add' it to 'seed' the list, and also add base.
 	my @typeddata = ("base", "full");
-	
+
 	{
 		LINE: foreach my $line(@tstdata) {
 			my @ar = split(',', $line);
@@ -171,7 +171,7 @@ sub showTypeData {
 				}
 				my %k;
 				map { $k{$_} = 1 } @typeddata;
-				push(@typeddata, grep { !exists $k{$_} } @types_fixed);		
+				push(@typeddata, grep { !exists $k{$_} } @types_fixed);
 			}
 		}
 	}
@@ -272,7 +272,7 @@ sub setup {
 			push(@caps, @encs );
 		}
 	}
-	
+
 	# ok, now load the md5's of the all.chr and alnum.chr files. These end up being 'required' types for the inc to run.
 	my $file = $JOHN_PATH . "/all.chr";
     if (open(FILE, $file)) {
@@ -304,7 +304,7 @@ sub setup {
 		#  -t base -t koi8r -t utf8 on john jumbo builds.
 		if (stringInArray("jumbo", @caps)) {
 			ScreenOutV("Setting default for john-jumbo to be:   base+koi8r+utf8\n");
-			push (@types, "base", "koi8r", "utf8"); 
+			push (@types, "base", "koi8r", "utf8");
 		} else {
 			ScreenOutV("Setting default for john-core to be:   full+core\n");
 			push (@types, "core", "full");
@@ -531,7 +531,7 @@ sub filterPatterns {
 		foreach my $line(@tstdata) { ScreenOutVV($line . "\n"); }
 		ScreenOutVV("\n");
 	}
-	
+
 }
 ###############################################################################
 ###############################################################################
