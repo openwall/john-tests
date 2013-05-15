@@ -596,11 +596,14 @@ sub process {
 
 		my @crack_xx = ();
 		foreach $line (@crack_cnt) {
-			$line =~ s/.*\x08//; # cut away progress indicator
-			if (index($line, "guesses:") == 0) {
-				@crack_xx = split (/ /, $line);
-				last;
-			}
+		    # cut away progress indicator
+		    $line =~ s/.*\x08//;
+		    # convert to legacy format
+		    $line =~ s/^(\d+)g /guesses: $1 /;
+		    if (index($line, "guesses:") == 0) {
+			@crack_xx = split (/ /, $line);
+			last;
+		    }
 		}
 		while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
 		my $orig_crack_cnt = $crack_xx[1];
@@ -652,11 +655,14 @@ sub process {
 		@crack_xx = ();
 		@crack_cnt = split (/\n/, $cmd_data);
 		foreach $line (@crack_cnt) {
-			$line =~ s/.*\x08//; # cut away progress indicator
-			if (index($line, "guesses:") == 0) {
-				@crack_xx = split (/ /, $line);
-				last;
-			}
+		    # cut away progress indicator
+		    $line =~ s/.*\x08//;
+		    # convert to legacy format
+		    $line =~ s/^(\d+)g /guesses: $1 /;
+		    if (index($line, "guesses:") == 0) {
+			@crack_xx = split (/ /, $line);
+			last;
+		    }
 		}
 		while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
 		while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
