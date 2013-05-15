@@ -599,7 +599,7 @@ sub process {
 		    # cut away progress indicator
 		    $line =~ s/.*\x08//;
 		    # convert to legacy format
-		    $line =~ s/^(\d+)g /guesses: $1 /;
+		    $line =~ s/^(\d+)g /guesses: $1  /;
 		    if (index($line, "guesses:") == 0) {
 			@crack_xx = split (/ /, $line);
 			last;
@@ -658,7 +658,7 @@ sub process {
 		    # cut away progress indicator
 		    $line =~ s/.*\x08//;
 		    # convert to legacy format
-		    $line =~ s/^(\d+)g /guesses: $1 /;
+		    $line =~ s/^(\d+)g /guesses: $1  /;
 		    if (index($line, "guesses:") == 0) {
 			@crack_xx = split (/ /, $line);
 			last;
