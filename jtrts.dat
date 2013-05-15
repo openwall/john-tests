@@ -100,14 +100,20 @@
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,--encoding=utf-8,(1500),(1500)
 #
 ,(full),(core),200,md5,pw,md5_1_tst.in,md5,N,X,(1500),(1500)
+,(full),(core),200,md5crypt,pw,md5_1_tst.in,md5crypt,N,X,(1500),(1500)
 ,(full),(core),200,md5_apr1,pw,md5_apr1_tst.in,md5,N,X,(1500),(1500)
 ,(full),(core),200,BSDI,pw,BSDI_tst.in,bsdi,N,X,(1500),(1500)
 ,(full),(core),40,BF,pw,BF_tst.in,bf,N,X,(1500),(1500)
 ,(full),(core),40,BF_broken,pw,BFx_tst.in,bf,N,X,(1500),(1500)
+,(full),(core),200,BSDIcrypt,pw,BSDI_tst.in,bsdicrypt,N,X,(1500),(1500)
+,(full),(core),40,Bcrypt,pw,BF_tst.in,bcrypt,N,X,(1500),(1500)
+,(full),(core),40,Bcrypt_broken,pw,BFx_tst.in,bcrypt,N,X,(1500),(1500)
 (phpass),(full),(jumbo),150,PHPass-md5,pw,phpass_tst.in,phpass-md5,N,X,(1500),(1500)
 ,(full),(jumbo),50,mscash2,pw,MSCash2_tst.in,mscash2,Y,X,(1500),(1500)
 (base),(X),(core),10000,des,pw,DES_tst.in,des,N,X,(1500),(1500)
 (bigcrypt)(base),(X),(core),10000,des,pw,BigCrypt_tst.in,des,N,X,(1500),(1500)
+(base),(X),(core),10000,descrypt,pw,DES_tst.in,descrypt,N,X,(1500),(1500)
+(bigcrypt)(base),(X),(core),10000,descrypt,pw,BigCrypt_tst.in,descrypt,N,X,(1500),(1500)
 #
 (base),(X),(jumbo),10000,mediawiki,pw,mediawiki_tst.in,mediawiki,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,pixMD5,pw,pixMD5_tst.in,pix-md5,N,X,(1500),(1500)
@@ -443,6 +449,8 @@
 (inc)(base),(X),(jumbo)&(inc_alnum_8748cf8baf51cc549f01dce50d0b715d),10000,NT-inc_alnum_qwk,INCREMENT_alnum,NT_inc_alnum_qwk_tst.in,nt,N,X,(500),(500)
 (inc)(base),(X),(core)&(inc_all_8fec3288c3f1bc96273d86cd1447d019),10000,DES-inc_all_qwk,INCREMENT_all,DES_inc_all_qwk_tst.in,des,N,X,(1500),(1500)
 (inc)(base),(X),(core)&(inc_alnum_8748cf8baf51cc549f01dce50d0b715d),10000,DES-inc_alnum_qwk,INCREMENT_alnum,DES_inc_alnum_qwk_tst.in,des,N,X,(1500),(1500)
+(inc)(base),(X),(core)&(inc_all_8fec3288c3f1bc96273d86cd1447d019),10000,descrypt-inc_all_qwk,INCREMENT_all,DES_inc_all_qwk_tst.in,descrypt,N,X,(1500),(1500)
+(inc)(base),(X),(core)&(inc_alnum_8748cf8baf51cc549f01dce50d0b715d),10000,descrypt-inc_alnum_qwk,INCREMENT_alnum,DES_inc_alnum_qwk_tst.in,descrypt,N,X,(1500),(1500)
 #
 # these are SLOW. Will only be run if inc is the 'type' listed.
 (inc),(inc),(jumbo)&(inc_all_8fec3288c3f1bc96273d86cd1447d019),10000,dyn_0-inc_all,INCREMENT_all,dynamic_0_inc_all_tst.in,dynamic_0,N,X,(1500),(1500)
@@ -453,6 +461,10 @@
 (inc),(inc),(core)&(inc_alnum_8748cf8baf51cc549f01dce50d0b715d),10000,DES-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,des,N,X,(1500),(1500)
 (inc),(inc),(core)&(inc_all_8fec3288c3f1bc96273d86cd1447d019),10000,DES-inc_all,INCREMENT_all,DES_inc_all_tst.in,des,N,X,(1500),(1500)
 (inc),(inc),(core)&(inc_alnum_8748cf8baf51cc549f01dce50d0b715d),10000,DES-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,des,N,X,(1500),(1500)
+(inc),(inc),(core)&(inc_all_8fec3288c3f1bc96273d86cd1447d019),10000,descrypt-inc_all,INCREMENT_all,DES_inc_all_tst.in,descrypt,N,X,(1500),(1500)
+(inc),(inc),(core)&(inc_alnum_8748cf8baf51cc549f01dce50d0b715d),10000,descrypt-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,descrypt,N,X,(1500),(1500)
+(inc),(inc),(core)&(inc_all_8fec3288c3f1bc96273d86cd1447d019),10000,descrypt-inc_all,INCREMENT_all,DES_inc_all_tst.in,descrypt,N,X,(1500),(1500)
+(inc),(inc),(core)&(inc_alnum_8748cf8baf51cc549f01dce50d0b715d),10000,descrypt-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,descrypt,N,X,(1500),(1500)
 #
 #types,required_types,sys_caps,dict_cnt,scr_output,dict,input,-form=string,Y/N_FmtStr_req,addtionalParams,correct_Cracks_num(s),.pot_crack_num(s)
 # sapG (== sapF) is supposed to run in ascii or UTF-8, never 8-bit CP
