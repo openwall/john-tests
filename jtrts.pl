@@ -4,8 +4,8 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 
-my $VERSION = "1.12.11";
-my $RELEASE_DATE = "July 20, 2012";
+my $VERSION = "1.12.12";
+my $RELEASE_DATE = "July 21, 2013";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -362,6 +362,9 @@ sub loadAllValidFormatTypeStrings {
 	}
 	# strip off the 'final' / char
 	$fmt_str = substr($fmt_str, 0, -1);
+
+	# Make all format labels listed from JtR lower case.
+	$fmt_str = lc($fmt_str);
 
 	# Ok, now if we have 'dynamic's, LOAD them
 	if (grepUsage("--list=WHAT") || grepUsage("--subformat=LIST")) {
