@@ -14,3 +14,16 @@ So when checking out this from GitHub, you would:
 
 cd john
 git clone https://github.com/magnumripper/jtrTestSuite.git test
+
+To perform the test:
+
+cd test
+./jtrts.pl
+
+To avoid a -test=0 run (that won't work well with GPU formats) within TS, run it with -noprelim option. Eg:
+
+./jtrts.pl -noprelim ssha-opencl
+
+The -passthru option can be used to select platform:
+
+./jtrts.pl -noprelim -passthru "-plat=1" opencl
