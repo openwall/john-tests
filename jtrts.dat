@@ -136,7 +136,6 @@
 (base)(sha)(sha2),(X),(jumbo),10000,raw-sha384,pw,rawsha384_tst.in,raw-sha384,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,raw-sha512,pw,rawsha512_tst.in,raw-sha512,Y,X,(1500),(1500)
 (base)(sha)(sha1)(hmac),(X),(jumbo),10000,hmac-sha1,pw,hmacSHA1_tst.in,hmac-sha1,Y,X,(1500),(1500)
-(base)(sha)(sha1)(hmac),(X),(jumbo),10000,rakp,pw,rakp_tst.in,rakp,Y,X,(1500),(1500)
 (base)(sha)(sha2)(hmac),(X),(jumbo),10000,hmac-sha224,pw,hmacSHA224_tst.in,hmac-sha224,Y,X,(1500),(1500)
 (base)(sha)(sha2)(hmac),(X),(jumbo),10000,hmac-sha256,pw,hmacSHA256_tst.in,hmac-sha256,Y,X,(1500),(1500)
 (sha)(sha2)(hmac),(X),(jumbo),10000,hmac-sha384,pw,hmacSHA384_tst.in,hmac-sha384,Y,X,(1500),(1500)
@@ -181,6 +180,7 @@
 (ns)(netscreen)(base),(X),(jumbo),10000,Netscreen_MD5,pw,ns_tst.in,md5ns,N,X,(1500),(1500)
 (osx)(base)(sha)(sha1),(X),(jumbo),10000,MAC_OSX_Salted_SHA1,pw,XSHA_tst.in,xsha,N,X,(1500),(1500)
 (base)(hmac),(X),(jumbo),10000,hmacMD5,pw,hmacMD5_tst.in,hmac-md5,N,X,(1500),(1500)
+(base)(sha)(sha1)(hmac),(X),(jumbo),10000,rakp,pw,rakp_tst.in,rakp,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,mskrb5,pw,mskrb5_tst.in,mskrb5,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,krb5pa-md5,pw,mskrb5_tst.in,krb5pa-md5,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,BFegg,pw,BFegg_tst.in,bfegg,Y,X,(1500),(1500)
@@ -434,6 +434,7 @@
 (opencl)(gpu),(X),(jumbo)&(encode_valid)&(opencl),10000,netntlmv2-koi8r,pw-koi8r,netntlmv2_tst_koi8r.in,ntlmv2-opencl,Y,-enc=koi8r,(1429)(1500),(1429)(1500)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha256-opencl,pw,rawsha256_tst.in,raw-sha256-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),30,rar-opencl,pw,rar_tst.in,rar-opencl,Y,X,(130),(130)
+(opencl)(gpu),(X),(jumbo)&(opencl),10000,rakp-opencl,pw,rakp_tst.in,rakp-opencl,Y,X,(1500)(1451),(1500)(1451)
 
 # This is a very slow, and VERY large input file hash.
 (ssh),(full),(jumbo),1600,ssh,pass,ssh_1500_tst.in,ssh,N,X,(1500),(1500)
