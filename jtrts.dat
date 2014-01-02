@@ -194,7 +194,7 @@
 (base),(X),(jumbo),10000,MySql,pw,mysql_tst.in,mysql,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,MySql-fast,pw,mysql_tst.in,mysql-fast,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,oracle,pw,oracle_tst.in,oracle,Y,X,(1500),(1500)
-(base),(X),(jumbo),10000,oracle11,pw,oracle11_tst.in,oracle11,N,X,(1500),(1500)
+(base),(X),(jumbo),10000,oracle11,pw,oracle11_tst.in,oracle11,Y,X,(1500),(1500)
 
 (base),(X),(jumbo),10000,hdaa,pw,hdaa_tst.in,hdaa,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,netntlm,pw,netntlm_tst.in,netntlm,N,X,(1500),(1500)
