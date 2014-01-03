@@ -640,52 +640,54 @@ sub process {
 		}
 
 		# now do the .pot check.
-		unlink ("pw3");
-		if ($ar[8] eq "\'-fie=\\x1F\'") {
-			my $cmd2 = sprintf("LC_ALL=C cut -f 2- -d\"%c\" -s < $pot | $UNIQUE pw3 > /dev/null", 31);
-			system($cmd2);
-		} else {
-			my $cmd2 = sprintf("LC_ALL=C cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
-			system($cmd2);
-		}
-		$cmd =~ s/$dict_name/--wordlist=pw3/;
-
-		ScreenOutVV("Execute john (.pot check): $cmd\n");
-		unlink ($pot);
-		$cmd_data = `$cmd`;
-		# ok, now show stderr, if asked to.
-		if ($show_stderr == 1) { print $cmd_data; }
-		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
-
-		@crack_xx = ();
-		@crack_cnt = split (/\n/, $cmd_data);
-		foreach $line (@crack_cnt) {
-		    # cut away progress indicator
-		    $line =~ s/.*\x08//;
-		    # convert to legacy format
-		    $line =~ s/^(\d+)g /guesses: $1  /;
-		    if (index($line, "guesses:") == 0) {
-			@crack_xx = split (/ /, $line);
-			last;
-		    }
-		}
-		while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
-		while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
-		if (index($ar[11], "($crack_xx[1])") lt 0 && $crack_xx[1] ne $orig_crack_cnt) {
-			my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $crack_xx[1]);
-			ScreenOutAlways($str);
-			$error_cnt_pot += 1;
-			if ($stop_on_error) {
-				ScreenOut("Exiting on error (reporcessing original .pot file).\n The pot file $pot contains the found data\n");
-				ScreenOut("The command used to run this test was:\n\n$cmd\n");
-				exit(1);
+		if (-f $pot) {
+			unlink ("pw3");
+			if ($ar[8] eq "\'-fie=\\x1F\'") {
+				my $cmd2 = sprintf("LC_ALL=C cut -f 2- -d\"%c\" -s < $pot | $UNIQUE pw3 > /dev/null", 31);
+				system($cmd2);
+			} else {
+				my $cmd2 = sprintf("LC_ALL=C cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
+				system($cmd2);
 			}
-		} else {
-			my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $crack_xx[1]);
-			ScreenOutSemi($str);
+			$cmd =~ s/$dict_name/--wordlist=pw3/;
+
+			ScreenOutVV("Execute john (.pot check): $cmd\n");
+			unlink ($pot);
+			$cmd_data = `$cmd`;
+			# ok, now show stderr, if asked to.
+			if ($show_stderr == 1) { print $cmd_data; }
+			ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
+
+			@crack_xx = ();
+			@crack_cnt = split (/\n/, $cmd_data);
+			foreach $line (@crack_cnt) {
+				# cut away progress indicator
+				$line =~ s/.*\x08//;
+				# convert to legacy format
+				$line =~ s/^(\d+)g /guesses: $1  /;
+				if (index($line, "guesses:") == 0) {
+					@crack_xx = split (/ /, $line);
+					last;
+				}
+			}
+			while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
+			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
+			if (index($ar[11], "($crack_xx[1])") lt 0 && $crack_xx[1] ne $orig_crack_cnt) {
+				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $crack_xx[1]);
+				ScreenOutAlways($str);
+				$error_cnt_pot += 1;
+				if ($stop_on_error) {
+					ScreenOut("Exiting on error (reporcessing original .pot file).\n The pot file $pot contains the found data\n");
+					ScreenOut("The command used to run this test was:\n\n$cmd\n");
+					exit(1);
+				}
+			} else {
+				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $crack_xx[1]);
+				ScreenOutSemi($str);
+			}
+			unlink("$pot");
+			unlink("pw3");
 		}
-		unlink("$pot");
-		unlink("pw3");
 	}
 	ScreenOutSemi("\n");
 	if (!stringInArray("local_pot_valid", @caps)) {
