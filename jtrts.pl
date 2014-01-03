@@ -609,7 +609,7 @@ sub process {
 		    }
 		}
 		# convert to legacy format
-		$crack_xx[4] =~ s/100%/DONE/;
+		if (defined $crack_xx[4]) { $crack_xx[4] =~ s/100%/DONE/; }
 		while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
 		my $orig_crack_cnt = $crack_xx[1];
 		ScreenOutSemi("\n");
