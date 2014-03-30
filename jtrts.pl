@@ -581,7 +581,7 @@ sub process {
 		}
 		$cmd = "$cmd $dict_name";
 
-		if ($ar[8] eq 'Y') { $cmd = "$cmd \'-form=$ar[7]\'"; }
+		if ($ar[8] eq 'Y') { $cmd = "$cmd -form=$ar[7]"; }
 		if ($ar[9] ne 'X') { $cmd = "$cmd $ar[9]"; }
 
 		if ($show_stderr != 1) { $cmd = "$cmd 2>&1 >/dev/null"; }
@@ -628,6 +628,7 @@ sub process {
 			}
 			if ($stop_on_error) {
 				ScreenOut("Exiting on error.  The pot file $pot contains the found data\n");
+				$cmd =~ s# 2>&1 >/dev/null##;
 				ScreenOut("The command used to run this test was:\n\n$cmd\n");
 				exit(1);
 			}
