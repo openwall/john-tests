@@ -406,7 +406,7 @@ sub loadAllValidFormatTypeStrings {
 }
 sub loadAllValidEncodings {
 	ScreenOutV("--encoding=LIST is valid, so we get valid encodings from there\n");
-	system ("$JOHN_EXE ---encoding=LIST >JohnEncUsage.Scr 2>&1");
+	system ("$JOHN_EXE --encoding=LIST >JohnEncUsage.Scr 2>&1");
 	open(FILE, "<JohnEncUsage.Scr") or die $!;
 	my @encodings = <FILE>;
 	close(FILE);
