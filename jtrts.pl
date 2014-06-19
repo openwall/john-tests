@@ -4,8 +4,8 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 
-my $VERSION = "1.12.12";
-my $RELEASE_DATE = "July 21, 2013";
+my $VERSION = "1.12.13";
+my $RELEASE_DATE = "June 19, 2014";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -95,12 +95,12 @@ sub parseArgs {
 		'stoponerror!'     => \$stop_on_error,
 		'showstderr!'      => \$show_stderr,
 		);
-	if ($help) { usage(); }
 	if ($basepath ne "") {
 		$JOHN_PATH = $basepath;
 		$JOHN_EXE  = "$JOHN_PATH/john";
 		$UNIQUE    = "$JOHN_PATH/unique";
 	}
+	if ($help) { usage($JOHN_PATH); }
 	$verbosity = 2 + $verbose - $quiet;
 	setVerbosity($verbosity);
 	if (@ARGV) { push @types, @ARGV; }
