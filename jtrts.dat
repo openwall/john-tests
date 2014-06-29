@@ -570,7 +570,7 @@
 #
 #types,required_types,sys_caps,dict_cnt,scr_output,dict,input,-form=string,Y/N_FmtStr_req,addtionalParams,correct_Cracks_num(s),.pot_crack_num(s)
 # sapG (== sapF) is supposed to run in ascii or UTF-8, never 8-bit CP
-(sapf)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,sapG-utf8,pw-utf8,sapf_tst.in,sapg,N,-enc=utf8,(1500),(1500)
+(sapf)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,SAP F/G,sapf_utf8,sapf_tst.in,sapg,N,-enc=utf8,(6794),(6794)
 # sapB is supposed to run ascii or 8-bit CP only, never UTF-8.
 (base),(X),(jumbo),10000,sapB,pw,sapb_tst.in,sapb,N,X,(1500),(1500)
 #
