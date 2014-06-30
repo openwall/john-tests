@@ -54,6 +54,7 @@
 (dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-raw-utf8,pw-utf8,rawmd5u_raw_tst_utf8.in,dynamic_29,Y,--encoding=utf-8,(1500),(1500)
 (dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-utf8,pw,rawmd5u_tst.in,dynamic_29,Y,--encoding=utf-8,(1229),(1229)
 (dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-utf8,pw-utf8,rawmd5u_tst_utf8.in,dynamic_29,Y,--encoding=utf-8,(1500),(1500)
+(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_29-sapf-utf8,sapf_utf8,dynamic_29-sapf-utf8.in,dynamic_29,Y,--encoding=utf-8,(1416)(1500),(1416)(1500)
 #
 (dynamic)(base),(X),(jumbo),10000,dynamic_30,pw,dynamic_30_tst.in,dynamic_30,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_31,pw,dynamic_31_tst.in,dynamic_31,N,X,(1500),(1500)
@@ -61,6 +62,7 @@
 (dynamic)(base),(X),(jumbo),10000,dynamic_33,pw,dynamic_33_tst.in,dynamic_33,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_33-NT,pw,NT_raw_tst.in,dynamic_33,Y,X,(1500),(1500)
 (dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_33-NT-utf8,pw-utf8,NT_raw_tst_utf8.in,dynamic_33,Y,-enc=utf8,(1500),(1500)
+(dynamic)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,dynamic_33-sapf-utf8,sapf_utf8,dynamic_33-sapf-utf8.in,dynamic_33,Y,-enc=utf8,(1416)(1500),(1416)(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_34,pw,dynamic_34_tst.in,dynamic_34,N,X,(1500),(1500)
 (dynamic)(base)(sha1),(X),(jumbo),10000,dynamic_35,pw,dynamic_35_tst.in,dynamic_35,N,X,(1500),(1500)
 (dynamic)(base)(sha1),(X),(jumbo),10000,dynamic_36,pw,dynamic_36_tst.in,dynamic_36,N,X,(1500),(1500)
@@ -187,6 +189,7 @@
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-raw-utf8,pw-utf8,rawmd5u_raw_tst_utf8.in,raw-md5u,Y,--encoding=utf-8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw,rawmd5u_tst.in,raw-md5u,Y,--encoding=utf-8,(1229),(1229)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,--encoding=utf-8,(1500),(1500)
+(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-sapf-utf8,sapf_utf8,dynamic_29-sapf-utf8.in,raw-md5u,Y,--encoding=utf-8,(1416)(1500),(1416)(1500)
 #
 ,(full),(core),200,md5,pw,md5_1_tst.in,md5,N,X,(1500),(1500)
 ,(full),(core),200,md5crypt,pw,md5_1_tst.in,md5crypt,N,X,(1500),(1500)
