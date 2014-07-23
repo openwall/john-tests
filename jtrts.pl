@@ -601,10 +601,8 @@ sub process {
 		foreach $line (@crack_cnt) {
 		    # cut away progress indicator
 		    $line =~ s/.*\x08//;
-		    # convert to legacy format
-		    $line =~ s/^(\d+)g /guesses: $1  /;
-			# handle -fork format also
-		    $line =~ s/^d+ (\d+)g /guesses: $1  /;
+		    # convert to legacy format, take care of --fork=
+		    $line =~ s/^(\d+ )?(\d+)g /guesses: $2  /;
 		    if (index($line, "guesses:") == 0) {
 				# fork will have multiple guess lines.
 				if (defined $crack_xx[1] > 0) {
@@ -671,10 +669,8 @@ sub process {
 			foreach $line (@crack_cnt) {
 				# cut away progress indicator
 				$line =~ s/.*\x08//;
-				# convert to legacy format
-				$line =~ s/^(\d+)g /guesses: $1  /;
-				# handle -fork format also
-				$line =~ s/^d+ (\d+)g /guesses: $1  /;
+				# convert to legacy format, take care of --fork=
+				$line =~ s/^(\d+ )?(\d+)g /guesses: $2  /;
 				if (index($line, "guesses:") == 0) {
 					# fork will have multiple guess lines.
 					if (defined $crack_xx[1] > 0) {
