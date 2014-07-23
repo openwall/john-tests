@@ -603,9 +603,16 @@ sub process {
 		    $line =~ s/.*\x08//;
 		    # convert to legacy format
 		    $line =~ s/^(\d+)g /guesses: $1  /;
+			# handle -fork format also
+		    $line =~ s/^d+ (\d+)g /guesses: $1  /;
 		    if (index($line, "guesses:") == 0) {
-			@crack_xx = split (/ /, $line);
-			last;
+				# fork will have multiple guess lines.
+				if (defined $crack_xx[1] > 0) {
+					my @crxx = split (/ /, $line);
+					$crack_xx[1] += $crxx[1];
+				} else {
+					@crack_xx = split (/ /, $line);
+				}
 		    }
 		}
 		# convert to legacy format
@@ -666,9 +673,16 @@ sub process {
 				$line =~ s/.*\x08//;
 				# convert to legacy format
 				$line =~ s/^(\d+)g /guesses: $1  /;
+				# handle -fork format also
+				$line =~ s/^d+ (\d+)g /guesses: $1  /;
 				if (index($line, "guesses:") == 0) {
-					@crack_xx = split (/ /, $line);
-					last;
+					# fork will have multiple guess lines.
+					if (defined $crack_xx[1] > 0) {
+						my @crxx = split (/ /, $line);
+						$crack_xx[1] += $crxx[1];
+					} else {
+						@crack_xx = split (/ /, $line);
+					}
 				}
 			}
 			while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
