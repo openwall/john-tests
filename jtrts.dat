@@ -270,7 +270,7 @@
 (nsldaps)(base)(sha)(sha1),(X),(jumbo),10000,LDAP_SSHA-salted-sha,pw,nsldaps_tst.in,salted-sha1,Y,X,(1500),(1500)
 (openssha)(base)(sha)(sha1),(X),(jumbo),10000,OpenSSHA,pw,openssha_tst.in,salted-sha1,Y,X,(1500),(1500)
 (ns)(netscreen)(base),(X),(jumbo),10000,Netscreen_MD5,pw,ns_tst.in,md5ns,N,X,(1500),(1500)
-(osx)(base)(sha)(sha1),(X),(jumbo),10000,MAC_OSX_Salted_SHA1,pw,XSHA_tst.in,xsha,N,X,(1500),(1500)
+(osx)(base)(sha)(sha1),(X),(jumbo),10000,MAC_OSX_Salted_SHA1,pw,XSHA_tst.in,xsha,Y,X,(1500),(1500)
 (base)(hmac),(X),(jumbo),10000,hmacMD5,pw,hmacMD5_tst.in,hmac-md5,N,X,(1500),(1500)
 (base)(sha)(sha1)(hmac),(X),(jumbo),10000,rakp,pw,rakp_tst.in,rakp,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,mskrb5,pw,mskrb5_tst.in,mskrb5,N,X,(1500),(1500)
