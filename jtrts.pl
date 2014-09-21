@@ -619,9 +619,19 @@ sub process {
 		my $orig_crack_cnt = $crack_xx[1];
 		ScreenOutSemi("\n");
 
-		if (index($ar[10], "($orig_crack_cnt)") lt 0) {
+		# Ok, get crack count using --show
+		my $cmdshow = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]";
+		#if ($ar[8] eq 'Y') { $cmdshow = "$cmdshow -form=$ar[7]"; }
+		#if ($ar[9] ne 'X') { $cmdshow = "$cmdshow $ar[9]"; }
+		my $cmd_show_data2 = `$cmdshow`;
+		my @cmd_show_lines = split(/\n/, $cmd_show_data2);
+		my $cmd_show_line = $cmd_show_lines[scalar (@cmd_show_lines) - 1];
+		my @orig_show_words =  split(/\s/, $cmd_show_line);
+		my $orig_show_cnt = $orig_show_words[0];
+
+		if (index($ar[10], "($orig_crack_cnt)") lt 0 || (index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0)) {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
-			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt);
+			my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 			ScreenOutAlways($str);
 			# check for self-test failure
 			# NOTE other failures should also be looked for, when we 'find' them.

@@ -6,6 +6,8 @@
 #  Version 1.12.  Added many 'inc' types.  Added ssh, added opencl and cuda
 #                 Added GOST
 #                 force required for PO, since GOST 'stole' a non force of PO
+#  Version 1.18   Many formats added by other authors, (but not listed).
+#                 Added (-show###) syntax for crack counts for some formats.
 ############################################################################
 #
 # core formats: des/bsdi/md5/bf/afs/lm/trip/dummy, no tests (yet) for afs, trip, dummy.  Need more for LM.
@@ -14,7 +16,12 @@
 #
 # NOTE, full needs to be on element 0, if this is a fast format, and should be on element 0 AND 1 for slow formats.
 # this allows ./testall -type slow  to be the same as the older ./tstall full
-(dynamic)(base),(X),(jumbo),10000,dynamic_0,pw,dynamic_0_tst.in,dynamic_0,N,X,(1500),(1500)
+# NOTE, new method checks crack count from tail end of run, AND checks -show for count. On some formats
+#  (LM crc, etc), the -show count will NOT be the same.  For LM, 1500 crack and 3000 show is normal.
+#  So for the correct crack num, there is a 'new' format (-show###)  The -show will use the (-show###)
+#  optionally, if it does not find a fitting (####) from the crack count.  ONLY put this (-show###)
+#  into rules that need it.  Most times, -show maches -crack mode.
+(dynamic)(base),(X),(jumbo),10000,dynamic_0,pw,dynamic_0_tst.in,dynamic_0,N,X,(1500)(-show1502),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_0-raw,pw,dynamic_0_raw_tst.in,dynamic_0,Y,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1,pw,dynamic_1_tst.in,dynamic_1,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_2,pw,dynamic_2_tst.in,dynamic_2,N,X,(1500),(1500)
@@ -93,7 +100,7 @@
 (dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_68,pw,dynamic_68_tst.in,dynamic_68,N,X,(1500),(1500)
 # SHA384
 (dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_70,pw,dynamic_70_tst.in,dynamic_70,N,X,(1500),(1500)
-(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_71,pw,dynamic_71_tst.in,dynamic_71,N,X,(1500),(1500)
+(dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_71,pw,dynamic_71_tst.in,dynamic_71,N,X,(1500)(-show1502),(1500)
 (dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_72,pw,dynamic_72_tst.in,dynamic_72,N,X,(1500),(1500)
 (dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_73,pw,dynamic_73_tst.in,dynamic_73,N,X,(1500),(1500)
 (dynamic)(base)(sha2),(X),(jumbo),10000,dynamic_74,pw,dynamic_74_tst.in,dynamic_74,N,X,(1500),(1500)
@@ -255,16 +262,16 @@
 (base),(X),(jumbo),10000,crc32,pw,crc32_tst.in,crc32,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,crc32_read_file,pw,crc32_tst.in,crc32,N,-mem=10,(1500),(1500)
 # pw-crc32-dup.dic has a trailing \n in the file.  pw-crc32-dup2.dic DOES NOT have a trailing \n in the file.
-(crc32_dups)(base),(X),(jumbo),10000,crc32_dups,pw-crc32-dup,crc32_dups_tst.in,crc32,N,X,(1500),(50)
-(crc32_dups2)(base),(X),(jumbo),10000,crc32_dups2,pw-crc32-dup2,crc32_dups2_tst.in,crc32,N,X,(1500),(50)
-(crc32_dups)(base),(X),(jumbo),10000,crc32_dups_read_file,pw-crc32-dup,crc32_dups_tst.in,crc32,N,-mem=10,(1500),(50)
-(crc32_dups2)(base),(X),(jumbo),10000,crc32_dups2_read_file,pw-crc32-dup2,crc32_dups2_tst.in,crc32,N,-mem=10,(1500),(50)
+(crc32_dups)(base),(X),(jumbo),10000,crc32_dups,pw-crc32-dup,crc32_dups_tst.in,crc32,N,X,(1500)(-show50),(50)
+(crc32_dups2)(base),(X),(jumbo),10000,crc32_dups2,pw-crc32-dup2,crc32_dups2_tst.in,crc32,N,X,(1500)(-show50),(50)
+(crc32_dups)(base),(X),(jumbo),10000,crc32_dups_read_file,pw-crc32-dup,crc32_dups_tst.in,crc32,N,-mem=10,(1500)(-show50),(50)
+(crc32_dups2)(base),(X),(jumbo),10000,crc32_dups2_read_file,pw-crc32-dup2,crc32_dups2_tst.in,crc32,N,-mem=10,(1500)(-show50),(50)
 (crc32_dups)(base)(dupe_suppression),(X),(jumbo),10000,crc32_dups_dupe_rem,pw-crc32-dup,crc32_dups_tst.in,crc32,N,-dupe-suppression,(50),(50)
 (crc32_dups2)(base)(dupe_suppression),(X),(jumbo),10000,crc32_dups2_dupe_rem,pw-crc32-dup2,crc32_dups2_tst.in,crc32,N,-dupe-suppression,(50),(50)
 #
 (mscash_crash)(base),(X),(jumbo),10000,mscash_crash,pw,mscash_crash_tst.in,mscash,Y,X,(1440),(1440)
-(base),(X),(core),10000,lm,pw,LM_tst.in,lm,Y,X,(1500),(1500)
-(pwdump_lm)(base),(X),(core),10000,pwdump_lm,pw,pwdump_tst.in,lm,Y,X,(986),(986)
+(base),(X),(core),10000,lm,pw,LM_tst.in,lm,Y,X,(1500)(-show3000),(1500)
+(pwdump_lm)(base),(X),(core),10000,pwdump_lm,pw,pwdump_tst.in,lm,Y,X,(986)(-show2760),(986)
 (pwdump_nt)(base),(X),(jumbo),10000,pwdump_nt,pw,pwdump_tst.in,nt,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,Netscape_LDAP_SHA,pw,nsldap_tst.in,nsldap,Y,X,(1500),(1500)
 (nsldaps)(base)(sha)(sha1),(X),(jumbo),10000,LDAP_SSHA-salted-sha,pw,nsldaps_tst.in,salted-sha1,Y,X,(1500),(1500)
@@ -310,7 +317,7 @@
 (base)(nukedclan)(nk),(X),(jumbo),10000,nukedclan,pw,nukedclan_tst.in,nk,Y,X,(1500),(1500)
 (base)(radmin),(X),(jumbo),10000,radmin,pw,radmin_tst.in,radmin,Y,X,(1500),(1500)
 # NOTE, there are some dup hashes in the next test file.  That is why only 1464 are found.
-(base)(raw-sha)(raw-sha0)(rawsha0),(X),(jumbo),10000,rawsha0,pw,rawsha0_tst.in,raw-sha,Y,X,(1464),(1464)
+(base)(raw-sha)(raw-sha0)(rawsha),(X),(jumbo),10000,raw-sha,pw,rawsha0_tst.in,raw-sha,Y,X,(1464),(1464)
 (base)(sybasease),(X),(jumbo),10000,sybasease,pw,sybasease_tst.in,sybasease,Y,X,(1500),(1500)
 (base)(wbb3),(X),(jumbo),10000,wbb3,pw,wbb3_tst.in,wbb3,Y,X,(1500),(1500)
 (base)(drupal7),(X),(jumbo),40,drupal7,pw,drupal7_tst.in,drupal7,Y,X,(1485),(1485)
