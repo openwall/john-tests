@@ -623,7 +623,15 @@ sub process {
 		my $cmdshow = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]";
 		#if ($ar[8] eq 'Y') { $cmdshow = "$cmdshow -form=$ar[7]"; }
 		#if ($ar[9] ne 'X') { $cmdshow = "$cmdshow $ar[9]"; }
+
+		ScreenOutVV("Execute john: $cmdshow\n");
+
 		my $cmd_show_data2 = `$cmdshow`;
+
+		# ok, now show stderr, if asked to.
+		if ($show_stderr == 1) { print $cmd_show_data2; }
+		ScreenOutVV("\n\nCmd_show_data2 = \n$cmd_show_data2\n\n");
+
 		my @cmd_show_lines = split(/\n/, $cmd_show_data2);
 		my $cmd_show_line = $cmd_show_lines[scalar (@cmd_show_lines) - 1];
 		my @orig_show_words =  split(/\s/, $cmd_show_line);
