@@ -629,7 +629,7 @@ sub process {
 		my @orig_show_words =  split(/\s/, $cmd_show_line);
 		my $orig_show_cnt = $orig_show_words[0];
 
-		if (index($ar[10], "($orig_crack_cnt)") lt 0 || (index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0)) {
+		if (index($ar[10], "($orig_crack_cnt)") lt 0 && index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0) {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
 			my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 			ScreenOutAlways($str);
