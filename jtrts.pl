@@ -626,13 +626,13 @@ sub process {
 
 		ScreenOutVV("Execute john: $cmdshow\n");
 
-		my $cmd_show_data2 = `$cmdshow`;
+		my $cmd_show_data = `$cmdshow`;
 
 		# ok, now show stderr, if asked to.
-		if ($show_stderr == 1) { print $cmd_show_data2; }
-		ScreenOutVV("\n\nCmd_show_data2 = \n$cmd_show_data2\n\n");
+		if ($show_stderr == 1) { print $cmd_show_data; }
+		ScreenOutVV("\n\nCmd_show_data = \n$cmd_show_data\n\n");
 
-		my @cmd_show_lines = split(/\n/, $cmd_show_data2);
+		my @cmd_show_lines = split(/\n/, $cmd_show_data);
 		my $cmd_show_line = $cmd_show_lines[scalar (@cmd_show_lines) - 1];
 		my @orig_show_words =  split(/\s/, $cmd_show_line);
 		my $orig_show_cnt = $orig_show_words[0];
@@ -700,9 +700,25 @@ sub process {
 				}
 			}
 			while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
+			my $orig_pot_cnt = $crack_xx[1];
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
-			if (index($ar[11], "($crack_xx[1])") lt 0 && $crack_xx[1] ne $orig_crack_cnt) {
-				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $crack_xx[1]);
+
+			# Ok, get pot count using --show
+			my $cmdshow2 = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]";
+			#if ($ar[8] eq 'Y') { $cmdshow2 = "$cmdshow2 -form=$ar[7]"; }
+			#if ($ar[9] ne 'X') { $cmdshow2 = "$cmdshow2 $ar[9]"; }
+			ScreenOutVV("Execute john: $cmdshow2\n");
+			my $cmd_show_data2 = `$cmdshow2`;
+			# ok, now show stderr, if asked to.
+			if ($show_stderr == 1) { print $cmd_show_data2; }
+			ScreenOutVV("\n\nCmd_show_data2 = \n$cmd_show_data2\n\n");
+			my @cmd_show_lines2 = split(/\n/, $cmd_show_data2);
+			my $cmd_show_line2 = $cmd_show_lines2[scalar (@cmd_show_lines2) - 1];
+			my @orig_show_words2 =  split(/\s/, $cmd_show_line2);
+			my $orig_show_cnt2 = $orig_show_words2[0];
+
+			if (index($ar[11], "($crack_xx[1])") lt 0 && $orig_pot_cnt ne $orig_crack_cnt && index($ar[10], "($orig_show_cnt2)") lt 0 && index($ar[10], "(-show$orig_show_cnt2)") lt 0) {
+				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 				ScreenOutAlways($str);
 				$error_cnt_pot += 1;
 				if ($stop_on_error) {
@@ -711,7 +727,7 @@ sub process {
 					exit(1);
 				}
 			} else {
-				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $crack_xx[1]);
+				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
 			}
 			unlink("$pot");
