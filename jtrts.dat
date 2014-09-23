@@ -317,7 +317,7 @@
 (base)(nukedclan)(nk),(X),(jumbo),10000,nukedclan,pw,nukedclan_tst.in,nk,Y,X,(1500),(1500)
 (base)(radmin),(X),(jumbo),10000,radmin,pw,radmin_tst.in,radmin,Y,X,(1500),(1500)
 # NOTE, there are some dup hashes in the next test file.  That is why only 1464 are found.
-(base)(raw-sha)(raw-sha0)(rawsha),(X),(jumbo),10000,raw-sha,pw,rawsha0_tst.in,raw-sha,Y,X,(1464),(1464)
+(base)(raw-sha)(raw-sha0)(rawsha),(X),(jumbo),10000,raw-sha,pw,rawsha0_tst.in,raw-sha,Y,X,(1500),(1500)
 (base)(sybasease),(X),(jumbo),10000,sybasease,pw,sybasease_tst.in,sybasease,Y,X,(1500),(1500)
 (base)(wbb3),(X),(jumbo),10000,wbb3,pw,wbb3_tst.in,wbb3,Y,X,(1500),(1500)
 (base)(drupal7),(X),(jumbo),40,drupal7,pw,drupal7_tst.in,drupal7,Y,X,(1485),(1485)
