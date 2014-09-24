@@ -536,6 +536,31 @@ sub filterPatterns {
 	}
 
 }
+
+sub ExtraArgs_Run { #($ar[8], $ar[7], $ar[9]);
+	#if ($ar[8] eq 'Y') { $cmd = "$cmd -form=$ar[7]"; }
+	#if ($ar[9] ne 'X') { $cmd .= "$cmd $ar[9]"; }
+	my $ret = "";
+	if ($_[0] eq 'Y') { $ret .= " -form=$_[1]"; }
+	if ($_[2] ne 'X') {
+		if (substr($_[2], 0, 1) eq 'X') {
+			$ret .= " ".substr($_[2], 1);
+		} else {
+			$ret .= " $_[2]";
+		}
+	}
+	return $ret;
+}
+
+sub ExtraArgs_Show { #($ar[9]);
+	#if ($ar[9] ne 'X') { $cmd .= "$cmd $ar[9]"; }
+	my $ret = "";
+	if (substr($_[0], 0, 1) ne 'X') {
+		$ret .= " $_[0]";
+	}
+	return $ret;
+}
+
 ###############################################################################
 ###############################################################################
 sub process {
@@ -579,11 +604,7 @@ sub process {
 			}
 			close(FILE);
 		}
-		$cmd = "$cmd $dict_name";
-
-		if ($ar[8] eq 'Y') { $cmd = "$cmd -form=$ar[7]"; }
-		if ($ar[9] ne 'X') { $cmd = "$cmd $ar[9]"; }
-
+		$cmd = "$cmd $dict_name" . ExtraArgs_Run($ar[8], $ar[7], $ar[9]);
 		if ($show_stderr != 1) { $cmd = "$cmd 2>&1 >/dev/null"; }
 		# this will switch stderr and stdout (vs joining them), so we can grab stderr BY ITSELF.
 		else { $cmd = "$cmd 3>&1 1>&2 2>&3 >/dev/null "; }
@@ -620,9 +641,7 @@ sub process {
 		ScreenOutSemi("\n");
 
 		# Ok, get crack count using --show
-		my $cmdshow = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]";
-		#if ($ar[8] eq 'Y') { $cmdshow = "$cmdshow -form=$ar[7]"; }
-		#if ($ar[9] ne 'X') { $cmdshow = "$cmdshow $ar[9]"; }
+		my $cmdshow = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
 
 		ScreenOutVV("Execute john: $cmdshow\n");
 
@@ -704,9 +723,7 @@ sub process {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
 
 			# Ok, get pot count using --show
-			my $cmdshow2 = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]";
-			#if ($ar[8] eq 'Y') { $cmdshow2 = "$cmdshow2 -form=$ar[7]"; }
-			#if ($ar[9] ne 'X') { $cmdshow2 = "$cmdshow2 $ar[9]"; }
+			my $cmdshow2 = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
 			ScreenOutVV("Execute john: $cmdshow2\n");
 			my $cmd_show_data2 = `$cmdshow2`;
 			# ok, now show stderr, if asked to.
