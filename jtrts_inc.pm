@@ -9,11 +9,11 @@ my $verbosity;
 our @ISA= qw( Exporter );
 
 # these CAN be exported.
-our @EXPORT_OK = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV 
+our @EXPORT_OK = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV
                      setVerbosity stringInArray arrayPartInString timeToSecs ScreenOutAlways_ar );
 
 # these are exported by default.
-our @EXPORT = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV 
+our @EXPORT = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV
                   setVerbosity stringInArray arrayPartInString timeToSecs ScreenOutAlways_ar );
 
 sub setVerbosity {
@@ -32,7 +32,7 @@ usage: $0 [-h|-?] [-option[s]]
     Options can be abbreviated!
 
     Options are:
-    -basepath  <s> set the basepath where john exe is located. By default 
+    -basepath  <s> set the basepath where john exe is located. By default
                    this is set to $_[0]
     -quiet+        Makes JtRTest Suite more 'quiet' or more verbose. -q
     -verbose+      is a good level to run.  -q -q is very quiet, does not
@@ -58,7 +58,7 @@ usage: $0 [-h|-?] [-option[s]]
     -noprelims     Do not perform this prelim work. -prelim is default.
     -passthru  <s> Pass this argument straight into john.  Can use more than 1.
     -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
-                   and other temp files will be left, AND the command line 
+                   and other temp files will be left, AND the command line
                    that was run is listed. (default is -nostoponerror).
     -showstderr    Allows any stderr writing to 'show' on screen. Usually not
                    wanted, but for some usage, like memory leak checking, or
@@ -73,7 +73,7 @@ UsageHelp
 # testings, we may output using ScreenOutSemi.  In this mode, if running under
 # 'qq, we output nothing.  If in 'q', we output the one line mode, with \r to
 # overwrite the prior line.  Otherwise it outputs 'normally'.  These multiple
-# 'modes' allows us to better control screen output. There are verbosity's and 
+# 'modes' allows us to better control screen output. There are verbosity's and
 # verboses's.  Thus, we can tell the script how verbose to be, and the output
 # will be tailored to that request.
 ###############################################################################
@@ -85,7 +85,7 @@ sub ScreenOut {
 		$last_line_len = 0;
 	}
 }
-# this screen output output 1 line, and overwrite it, if in 'q' quiet mode. In 'qq' it will 
+# this screen output output 1 line, and overwrite it, if in 'q' quiet mode. In 'qq' it will
 # output nothing.  In 'normal mode', it will call ScreenOut
 sub ScreenOutSemi {
 	if ($verbosity < 1) { return; }

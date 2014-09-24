@@ -1,12 +1,12 @@
 #-------------------------------------------------------------------
 # John, testing suite, v1.12.6   Jim Fougeron.
 #
-# No copyright is claimed, and the software is hereby 
-# placed in the public domain. In case this attempt to disclaim 
-# copyright and place the software in the public domain is deemed 
+# No copyright is claimed, and the software is hereby
+# placed in the public domain. In case this attempt to disclaim
+# copyright and place the software in the public domain is deemed
 # null and void, then the software is Copyright © 2011-2012 Jim Fougeron
 # and it is hereby released to the general public under the following
-# terms: 
+# terms:
 #
 # This software may be modified, redistributed, and used for any
 # purpose, in source and binary forms, with or without modification.
@@ -23,37 +23,37 @@
 #              added ablity to use multiple different dictionary files.
 #
 # v1.03 Totally redid all hash files.  Up'd the count to 1500.  Also simplified
-#               the results. Now the results are 'pass' 'fail' (and if 
-#               fail, the number missing is displayed.  Added 'validation' of 
-#               the data stored in john.pot, extract the passwords, and 
-#               re-run then through john again. mediawiki added.  Added code 
+#               the results. Now the results are 'pass' 'fail' (and if
+#               fail, the number missing is displayed.  Added 'validation' of
+#               the data stored in john.pot, extract the passwords, and
+#               re-run then through john again. mediawiki added.  Added code
 #               functions and initial checking, and then detect if the john
 #               is core or jumbo, and run the 'right' code.  So now, tstall
 #               will properly work for core or jumbo builds, and auto detect.
 #
 # v1.04 Small change.  Using john's unique program, vs using the sort | uniq, since
 #               the prior had issues with our 'bad' binary data, and LC_COLLATE settings
-#               John's unique program treats data in a 'binary' manner, and will not 
+#               John's unique program treats data in a 'binary' manner, and will not
 #               unique out lines that are different but setup to collate the same.
 #
 # v1.05 Small change again. Now, the UNIQUE is one of the 'top' settings in tstall script.
 #               Also, different versions of john-jumbo, to handle --utf8 or --charset=utf8
 #               until we get a 'unified' version.
 #
-# v1.06 Split up unicode into it's own function.  Added 'encoding' function also (for KOI8-R 
+# v1.06 Split up unicode into it's own function.  Added 'encoding' function also (for KOI8-R
 #               and CP1251).  Fixed a bug in tstonebase where we were redirecting to /dev/nul
 #               Got all KOI8-R and CP1251's working. Added CP866 also. Within the 'SETUP_UNICODE'
 #               function, we do not setup CP866 to allow it to run at this time.
 #               These functions are now part of this script:
 #               CORE_JOHN_ONLY()     tests the 'core' functions, and uses fewer command line switches
-#               SETUP_UNICODE_AND_PRETESTS() figures out if old -utf8 or newer -enc=utf8 works. Sets 
-#                                            -enc=koi8r also. This also performs the 'quick' 
+#               SETUP_UNICODE_AND_PRETESTS() figures out if old -utf8 or newer -enc=utf8 works. Sets
+#                                            -enc=koi8r also. This also performs the 'quick'
 #                                            -test=0's for the unicode, and other code pages.
 #               JUMBO_FORMATS()      Tests all the 'jumbo' formats including base ones.
 #               JUMBO_FORMATS_UNICODE()  Tests the unicode enabled formats.
 #               JUMBO_FORMATS_ENCODING() Tests the unicode enabled formats, using non-standard code
 #                                        page processing.
-# v1.07 More functions.  Now, easy to add code pages. Only 2 parts need small edits.  
+# v1.07 More functions.  Now, easy to add code pages. Only 2 parts need small edits.
 #               The functions allow a much smaller script file.  To add a new code page,
 #               be sure the input files are named properly (FmtName_tst_CODEPAGE.in), then in
 #               this script file search for CODE_PAGE, and add the new approprate lines.
@@ -63,7 +63,7 @@
 #
 # v1.10 Major release.  Recoded entire test suite, in perl.  Now program is MUCH
 #               smarter. It knows the capabilities of john, and ONLY allows proper things
-#               to be done. Also, screen output is much more controlable.  Also, we can 
+#               to be done. Also, screen output is much more controlable.  Also, we can
 #               easily select the work to do or not do.   Defaults (if there are no command
 #               line params) is -type base -type utf8 -type koi8r  if the john is a jumbo,
 #               and is -type core -type full if this is a john core build.  This will cause
@@ -80,10 +80,10 @@
 # v1.12 Added some new hashes, and build types (ssh, inc, cuda, opencl).
 #               There was much change to the dat file.  Many lines added.
 #               Added 3 incrementatal test types, dyna_0, NT and DES.  There are numerous
-#               test items added for each of these types.  There are quick ones, and slower 
+#               test items added for each of these types.  There are quick ones, and slower
 #               tests.  NOTE, these 'may' cause a lockup like situation, since there is no
 #               dictionary, that will 'finish'.  We may want to look into ways to fix this.
-#               In bleeding edge john, there is the --max-run-time=X switch. 
+#               In bleeding edge john, there is the --max-run-time=X switch.
 #               New 'types' added, are (cuda) (opencl) (gpu) which is either cuda or opencl,
 #               and (inc).  Now, if a dictionary name starts with INCREMENT_ then no dictionary
 #               will be used, and an incremental john run will be done, using the last part of
@@ -101,11 +101,11 @@
 #               PO now required a forced test (gost 'grabbed' it ;) )
 #               Raw SHA1 required a forced test.
 # v1.12.2 Fixed sapG and added sapB (per magnum).
-# v1.12.3 Added gost, gost_cp, raw-sha1_ng (faster on some cpu's).  
+# v1.12.3 Added gost, gost_cp, raw-sha1_ng (faster on some cpu's).
 #				Added some extra test using crc32, for dupe suppression, and for files having
 #				and lacking
 #				final EOL in the file.
-#				Numerous other changes (-enc:utf changed to --encode=utf) 
+#				Numerous other changes (-enc:utf changed to --encode=utf)
 #               Changed the cut statement in .pot testing, adding the -s to only cut lines
 #				with  a : char.
 # v1.12.4  Added a bunch of new formats:
@@ -113,7 +113,7 @@
 #                 hmac-sha1, hmac-sha224, hmac-sha256, hmac-sha384, hmac-sha512,
 #                 -w= changed to --wordlist= and -enc:utf8 changed to --encoding=utf8. The
 #                 -w= change trigged a couple of bugs.
-# v1.12.5  Added sha256crypt and sha512crypt.  Still had one more nit from the change from 
+# v1.12.5  Added sha256crypt and sha512crypt.  Still had one more nit from the change from
 #               -w= to --wordlist=
 # v1.12.6  Added XSHA512, and updated/added many GPU formats.
 # v1.12.7  Added new formats dynamic_35 sha1(uc($u).:.$p), dynamic_36 sha1($u.:.$p),
