@@ -588,4 +588,4 @@
 #
 (base),(X),(jumbo),10000,gost,pw,gost_tst.in,gost,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,gost,pw,gost_raw_tst.in,gost,Y,X,(1500),(1500)
-(base),(X),(jumbo),30,rar,pw,rar_tst.in,rar,Y,X,(130),(130)
+(base),(full),(jumbo),30,rar,pw,rar_tst.in,rar,Y,X,(130),(130)
