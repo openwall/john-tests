@@ -4,8 +4,8 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 
-my $VERSION = "1.12.14";
-my $RELEASE_DATE = "June 30, 2014";
+my $VERSION = "1.12.15";
+my $RELEASE_DATE = "Sept 24, 2014";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -13,6 +13,8 @@ my $RELEASE_DATE = "June 30, 2014";
 
 #############################################################################
 # For the version information list, see the file JtrTestSuite.Manifest
+# also see the github commit record at:
+#   https://github.com/magnumripper/jtrTestSuite/commits/master
 #############################################################################
 
 # EDIT this variable to properly setup the john-test-suite script
@@ -605,9 +607,9 @@ sub process {
 			close(FILE);
 		}
 		$cmd = "$cmd $dict_name" . ExtraArgs_Run($ar[8], $ar[7], $ar[9]);
-		if ($show_stderr != 1) { $cmd = "$cmd 2>&1 >/dev/null"; }
+		if ($show_stderr != 1) { $cmd .= " 2>&1 >/dev/null"; }
 		# this will switch stderr and stdout (vs joining them), so we can grab stderr BY ITSELF.
-		else { $cmd = "$cmd 3>&1 1>&2 2>&3 >/dev/null "; }
+		else { $cmd .= " 3>&1 1>&2 2>&3 >/dev/null"; }
 
 		ScreenOutVV("Execute john: $cmd\n");
 		unlink($pot);
@@ -642,19 +644,19 @@ sub process {
 
 		# Ok, get crack count using --show
 		my $cmdshow = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
+		$cmdshow .= " 2>&1";
 
 		ScreenOutVV("Execute john: $cmdshow\n");
 
 		my $cmd_show_data = `$cmdshow`;
 
-		# ok, now show stderr, if asked to.
-		if ($show_stderr == 1) { print $cmd_show_data; }
 		ScreenOutVV("\n\nCmd_show_data = \n$cmd_show_data\n\n");
 
 		my @cmd_show_lines = split(/\n/, $cmd_show_data);
 		my $cmd_show_line = $cmd_show_lines[scalar (@cmd_show_lines) - 1];
 		my @orig_show_words =  split(/\s/, $cmd_show_line);
 		my $orig_show_cnt = $orig_show_words[0];
+		ScreenOutVV("\n\cmd_show_line = \n$cmd_show_line\n\n");
 
 		if (index($ar[10], "($orig_crack_cnt)") lt 0 && index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0) {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
@@ -724,15 +726,16 @@ sub process {
 
 			# Ok, get pot count using --show
 			my $cmdshow2 = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
+			$cmdshow2 .= " 2>&1";
 			ScreenOutVV("Execute john: $cmdshow2\n");
 			my $cmd_show_data2 = `$cmdshow2`;
 			# ok, now show stderr, if asked to.
-			if ($show_stderr == 1) { print $cmd_show_data2; }
 			ScreenOutVV("\n\nCmd_show_data2 = \n$cmd_show_data2\n\n");
 			my @cmd_show_lines2 = split(/\n/, $cmd_show_data2);
 			my $cmd_show_line2 = $cmd_show_lines2[scalar (@cmd_show_lines2) - 1];
 			my @orig_show_words2 =  split(/\s/, $cmd_show_line2);
 			my $orig_show_cnt2 = $orig_show_words2[0];
+			ScreenOutVV("\n\cmd_show_line2 = \n$cmd_show_line2\n\n");
 
 			if (index($ar[11], "($crack_xx[1])") lt 0 && $orig_pot_cnt ne $orig_crack_cnt && index($ar[10], "($orig_show_cnt2)") lt 0 && index($ar[10], "(-show$orig_show_cnt2)") lt 0) {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);

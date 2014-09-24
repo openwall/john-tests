@@ -137,9 +137,18 @@
 # v1.12.11  Added django, dragonfly3-64 and dragonfly4-64, formspring (thin-dyna_61),
 #               EPI, episerver (v1 and v0), hmailserver, nukedclan(nk), radmin, rawsha0,
 #               SybaseASE, wbb3 (WoltLab Burning Board 3: sha1($s.sha1($s.sha1($p)))),
+# v1.12.14  Many small changes, and many formats added (lots of opencl)
+# v1.12.15  (sept 24, 2014) Got -fork=NN working.  Lots of little changes.
+#               Added -show | tail 1 to detect count in a different manner. This was needed for
+#               the -fork (and -mpi) runs, which may detect more than the count in the input
+#               file.  The -show will run without the fork, and list the count of user passwords
+#               cracked.  One side effect is formats that have dupe hashes (dyna_0 and a few others
+#               do this to check dupe supression), we end up with more than expected count on the
+#               -show.  So a new (-show####) was added to specifically handle these known side
+#               effects.  MANY other smaller issues in the .dat file were also fixed.
 # Todo (1.13)
-#				Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
-#				file formats seen in the wild.  These tests are in -w= and -pipe modes
+#               Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
+#               file formats seen in the wild.  These tests are in -w= and -pipe modes
 #               http://www.openwall.com/lists/john-dev/2012/06/29/39
 #--------------------------------------------------------------------
 

@@ -45,8 +45,8 @@ usage: $0 [-h|-?] [-option[s]]
                      -type1 dynamic_0    This will test this 1 format
                      -type1 utf-8         tests all formats with -utf-8
                      -type1 nt -type2 utf-8  NT format, but ONLY utf-8
-	               N can be 1, 2, 3 or 4.  Thus, you can provide 4
-	               selection criteria.  NOTE, any 'left over' command
+                   N can be 1, 2, 3 or 4.  Thus, you can provide 4
+                   selection criteria.  NOTE, any 'left over' command
                    line params, get shoved into a 'type'.
     -nontype   <s> Provide negative selection criteria.  Thus, we will
                    not process any formats containing this type.
@@ -60,7 +60,7 @@ usage: $0 [-h|-?] [-option[s]]
     -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
                    and other temp files will be left, AND the command line 
                    that was run is listed. (default is -nostoponerror).
-	-showstderr    Allows any stderr writing to 'show' on screen. Usually not
+    -showstderr    Allows any stderr writing to 'show' on screen. Usually not
                    wanted, but for some usage, like memory leak checking, or
                    other errors, any display of stderr is needed.
     -help|?        shows this help screen.
