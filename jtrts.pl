@@ -4,7 +4,7 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 
-my $VERSION = "1.12.15";
+my $VERSION = "1.12.16";
 my $RELEASE_DATE = "Sept 24, 2014";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
@@ -152,8 +152,9 @@ sub johnTest0_one {
 # removing duplicates, etc.
 ###############################################################################
 sub showTypeData {
-	# Get all the 'types'.  NOTE, full was removed from element 0, so we 'add' it to 'seed' the list, and also add base.
-	my @typeddata = ("base", "full");
+	# Get all the 'types'.  NOTE, full/full_only were removed from element 0
+	# so we 'add' it to 'seed' the list, and also add base.
+	my @typeddata = ("base", "full", "full_only");
 
 	{
 		LINE: foreach my $line(@tstdata) {
@@ -187,6 +188,7 @@ sub showTypeData {
 	ScreenOutAlways("      slower types.\n");
 	ScreenOutAlways("-type base tests the formats where tests do not take 'too' much time.\n");
 	ScreenOutAlways("      NOTE, base covers most of the formats.\n");
+	ScreenOutAlways("      NOTE, full_only will test ONLY the (full) formats.\n");
 }
 ###############################################################################
 # Setup the program to run.  Parses through params, strtok's the ./john screen
@@ -452,6 +454,9 @@ sub readData {
 						$line = "($ar[7])$line";
 					}
 					$line = "(full)$line";
+					if (index($ar[1], "(full)") >= 0) {
+						$line = "(full_only)$line";
+					}
 				}
 				push(@tstdata, $line);
 			}
@@ -494,11 +499,15 @@ sub filterPatterns {
 				if (!stringInArray($ar[7], @types)) {
 					if ($ar[1] ne "(X)") {
 						my @reqs = split(/&/,$ar[1]);
-						$valid = 'f';
-						foreach my $req(@reqs) { # note, these are already wrapped in ()
-							if (!stringInArray(substr($req, 1, length($req)-2), @types)) {
-								ScreenOutVV("Line [$line] filtered out, required option [@reqs] not satisfied in [@types]\n");
-								next LINE;
+						if (stringInArray("full_only", @types) && index($ar[1], "(full)") >= 0) {
+							# we want this one!!
+						} else {
+							$valid = 'f';
+							foreach my $req(@reqs) { # note, these are already wrapped in ()
+								if (!stringInArray(substr($req, 1, length($req)-2), @types)) {
+									ScreenOutVV("Line [$line] filtered out, required option [@reqs] not satisfied in [@types]\n");
+									next LINE;
+								}
 							}
 						}
 					}

@@ -146,6 +146,10 @@
 #               do this to check dupe supression), we end up with more than expected count on the
 #               -show.  So a new (-show####) was added to specifically handle these known side
 #               effects.  MANY other smaller issues in the .dat file were also fixed.
+# v1.12.16 (sept 24, 2014) added a new fake 'type'  full_only.  This type if used, will cause the
+#               TS to ONLY test the formats which have a requirement of (full) (i.e. the slower
+#               formats).  This will allow a run (even though slow), of only the slow formats,
+#               which usually do not get tested.  No changes to the .dat file, only to the Perl file.
 # Todo (1.13)
 #               Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #               file formats seen in the wild.  These tests are in -w= and -pipe modes
