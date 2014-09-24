@@ -8,6 +8,7 @@
 #                 force required for PO, since GOST 'stole' a non force of PO
 #  Version 1.18   Many formats added by other authors, (but not listed).
 #                 Added (-show###) syntax for crack counts for some formats.
+#  Version 1.19   Removed FULL from md5crypt, BSDI, MSCash2, sha512crypt.
 ############################################################################
 #
 # core formats: des/bsdi/md5/bf/afs/lm/trip/dummy, no tests (yet) for afs, trip, dummy.  Need more for LM.
@@ -198,17 +199,19 @@
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,--encoding=utf-8,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-sapf-utf8,sapf_utf8,dynamic_29-sapf-utf8.in,raw-md5u,Y,--encoding=utf-8,(1416)(1500),(1416)(1500)
 #
-,(full),(core),200,md5,pw,md5_1_tst.in,md5,N,X,(1500),(1500)
-,(full),(core),200,md5crypt,pw,md5_1_tst.in,md5crypt,N,X,(1500),(1500)
-,(full),(core),200,md5_apr1,pw,md5_apr1_tst.in,md5,N,X,(1500),(1500)
-,(full),(core),200,BSDI,pw,BSDI_tst.in,bsdi,N,X,(1500),(1500)
+,(X),(core),200,md5,pw,md5_1_tst.in,md5,N,X,(1500),(1500)
+,(X),(core),200,md5crypt,pw,md5_1_tst.in,md5crypt,N,X,(1500),(1500)
+,(X),(core),200,md5_apr1,pw,md5_apr1_tst.in,md5,N,X,(1500),(1500)
+,(X),(core),200,md5_apr1,pw,md5_apr1_tst.in,md5crypt,N,X,(1500),(1500)
+,(X),(core),200,BSDI,pw,BSDI_tst.in,bsdi,N,X,(1500),(1500)
 ,(full),(core),40,BF,pw,BF_tst.in,bf,N,X,(1500),(1500)
 ,(full),(core),40,BF_broken,pw,BFx_tst.in,bf,N,X,(1500),(1500)
-,(full),(core),200,BSDIcrypt,pw,BSDI_tst.in,bsdicrypt,N,X,(1500),(1500)
+,(X),(core),200,BSDIcrypt,pw,BSDI_tst.in,bsdicrypt,N,X,(1500),(1500)
 ,(full),(core),40,Bcrypt,pw,BF_tst.in,bcrypt,N,X,(1500),(1500)
 ,(full),(core),40,Bcrypt_broken,pw,BFx_tst.in,bcrypt,N,X,(1500),(1500)
 (phpass),(full),(jumbo),150,PHPass-md5,pw,phpass_tst.in,phpass-md5,N,X,(1500),(1500)
-,(full),(jumbo),50,mscash2,pw,MSCash2_tst.in,mscash2,Y,X,(1500),(1500)
+(phpass),(full),(jumbo),150,PHPass,pw,phpass_tst.in,phpass,N,X,(1500),(1500)
+,(X),(jumbo),50,mscash2,pw,MSCash2_tst.in,mscash2,Y,X,(1500),(1500)
 (base),(X),(core),10000,des,pw,DES_tst.in,des,N,X,(1500),(1500)
 (bigcrypt)(base),(X),(core),10000,des,pw,BigCrypt_tst.in,des,N,X,(1500),(1500)
 (base),(X),(core),10000,descrypt,pw,DES_tst.in,descrypt,N,X,(1500),(1500)
@@ -240,7 +243,7 @@
 (sha)(sha2)(hmac),(X),(jumbo),10000,hmac-sha384,pw,hmacSHA384_tst.in,hmac-sha384,Y,X,(1500),(1500)
 (sha)(sha2)(hmac),(X),(jumbo),10000,hmac-sha512,pw,hmacSHA512_tst.in,hmac-sha512,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),40,sha256crypt,pw,SHA256crypt_tst.in,sha256crypt,Y,X,(1500),(1500)
-(sha)(sha2),(full),(jumbo),40,sha512crypt,pw,SHA512crypt_tst.in,sha512crypt,Y,X,(1500),(1500)
+(sha)(sha2),(X),(jumbo),40,sha512crypt,pw,SHA512crypt_tst.in,sha512crypt,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,XSHA512,pw,XSHA512_tst.in,xsha512,Y,X,(1500),(1500)
 (sha)(sha2),(X),(jumbo),40,pwsafe,pw,pwsafe_tst.in,pwsafe,Y,X,(1485),(1485)
 (sha)(sha2),(X),(jumbo),40,django,pw,django_tst.in,django,Y,X,(1500),(1500)
