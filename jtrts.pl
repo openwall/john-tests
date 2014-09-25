@@ -576,11 +576,12 @@ sub ExtraArgs_Show { #($ar[9]);
 ###############################################################################
 sub process {
 	my $pot = "./tst.pot";
+	my $pot_opt = "";
 	my $cmd_head = "$JOHN_EXE -ses=./tst";
 	foreach my $s (@passthru) { $cmd_head = $cmd_head . " " . $s . " "; }
 	if (stringInArray("nolog_valid", @caps)) { $cmd_head = "$cmd_head -nolog"; }
 	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=./john.conf"; }
-	if (stringInArray("local_pot_valid", @caps)) { $cmd_head = "$cmd_head -pot=./tst.pot"; }
+	if (stringInArray("local_pot_valid", @caps)) { $cmd_head .= $pot_opt = " -pot=./tst.pot"; }
 	else {
 		# handle john 'core' behavior.  We save off existing john.pot, then it is overwritten
 		unlink $JOHN_PATH."/john.ptt";
@@ -652,7 +653,7 @@ sub process {
 		ScreenOutSemi("\n");
 
 		# Ok, get crack count using --show
-		my $cmdshow = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
+		my $cmdshow = "$JOHN_EXE -show $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
 		$cmdshow .= " 2>&1";
 
 		ScreenOutVV("Execute john: $cmdshow\n");
@@ -734,7 +735,7 @@ sub process {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
 
 			# Ok, get pot count using --show
-			my $cmdshow2 = "$JOHN_EXE -show -pot=$pot $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
+			my $cmdshow2 = "$JOHN_EXE -show $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
 			$cmdshow2 .= " 2>&1";
 			ScreenOutVV("Execute john: $cmdshow2\n");
 			my $cmd_show_data2 = `$cmdshow2`;
@@ -756,6 +757,7 @@ sub process {
 					exit(1);
 				}
 			} else {
+				$crack_xx[4] =~ s/%/%%/;
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
 			}
