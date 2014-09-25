@@ -647,7 +647,10 @@ sub process {
 		    }
 		}
 		# convert to legacy format
-		if (defined $crack_xx[4]) { $crack_xx[4] =~ s/100%/DONE/; }
+		if (defined $crack_xx[4]) {
+			$crack_xx[4] =~ s/100%/DONE/;
+			$crack_xx[4] =~ s/%/%%/;
+		}
 		while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
 		my $orig_crack_cnt = $crack_xx[1];
 		ScreenOutSemi("\n");
@@ -757,7 +760,6 @@ sub process {
 					exit(1);
 				}
 			} else {
-				$crack_xx[4] =~ s/%/%%/;
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
 			}
