@@ -736,6 +736,7 @@ sub process {
 			while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
 			my $orig_pot_cnt = $crack_xx[1];
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
+			$crack_xx[4] =~ s/%/%%/;
 
 			# Ok, get pot count using --show
 			my $cmdshow2 = "$JOHN_EXE -show $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
