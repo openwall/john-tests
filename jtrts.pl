@@ -62,11 +62,11 @@ displaySummary();
 ###############################################################################
 
 sub startTime {
-	@startingTime = localtime(time);
+	@startingTime = gmtime(time);
 }
 
 sub displaySummary {
-	my @timeEnd = localtime(time);
+	my @timeEnd = gmtime(time);
 	my $secs = timeToSecs(@timeEnd)-timeToSecs(@startingTime);
 	if ($error_cnt == 0 && $error_cnt_pot == 0) {
 		if ($done_cnt == 0) { ScreenOutAlways ("NO tests were performed.  Time used was $secs seconds\n"); }
