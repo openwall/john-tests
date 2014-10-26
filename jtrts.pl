@@ -624,6 +624,7 @@ sub process {
 		ScreenOutVV("Execute john: $cmd\n");
 		unlink($pot);
 		my $cmd_data = `$cmd`;
+		my $ret_val = $?;
 		# ok, now show stderr, if asked to.
 		if ($show_stderr == 1) { print $cmd_data; }
 		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
@@ -689,8 +690,11 @@ sub process {
 				ScreenOut("The command used to run this test was:\n\n$cmd\n");
 				exit(1);
 			}
-		} else {
+		} elsif ($ret_val == 0) {
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
+			ScreenOutSemi($str);
+		} else {
+			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_crack_cnt);
 			ScreenOutSemi($str);
 		}
 		if ($dict_name_ex ne "") {
@@ -712,6 +716,7 @@ sub process {
 			ScreenOutVV("Execute john (.pot check): $cmd\n");
 			unlink ($pot);
 			$cmd_data = `$cmd`;
+			$ret_val = $?;
 			# ok, now show stderr, if asked to.
 			if ($show_stderr == 1) { print $cmd_data; }
 			ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
@@ -760,8 +765,11 @@ sub process {
 					ScreenOut("The command used to run this test was:\n\n$cmd\n");
 					exit(1);
 				}
-			} else {
+			} elsif ($ret_val == 0) {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_pot_cnt);
+				ScreenOutSemi($str);
+			} else {
+				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
 			}
 			unlink("$pot");
