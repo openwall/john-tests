@@ -55,7 +55,7 @@ usage: $0 [-h|-?] [-option[s]]
     -prelims       Perform (and optionally show), the prelim testing (encoding).
                    in 'full' mode, all encodings are tested.  normally, only
                    -test=0 and tests of any 'requested' encodings is performed.
-    -noprelims     Do not perform this prelim work. -prelim is default.
+    -no-prelims    Do not perform this prelim work. -no-prelim is default.
     -passthru  <s> Pass this argument straight into john.  Can use more than 1.
     -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
                    and other temp files will be left, AND the command line

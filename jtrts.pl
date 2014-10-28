@@ -4,8 +4,8 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 
-my $VERSION = "1.12.16";
-my $RELEASE_DATE = "Sept 24, 2014";
+my $VERSION = "1.12.17";
+my $RELEASE_DATE = "Oct 28, 2014";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -32,9 +32,9 @@ my @passthru=();
 my @johnUsageScreen=();
 my @validFormats=();
 my @tstdata;
-my $showtypes=0, my $basepath=""; my $prelims=1, my $stop_on_error=0, my $show_stderr=0;
+my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_stderr=0;
 my $last_line_len=0;
-my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0;
+my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my @startingTime;
 
 ###############################################################################
@@ -68,13 +68,14 @@ sub startTime {
 sub displaySummary {
 	my @timeEnd = gmtime(time);
 	my $secs = timeToSecs(@timeEnd)-timeToSecs(@startingTime);
-	if ($error_cnt == 0 && $error_cnt_pot == 0) {
+	if ($error_cnt == 0 && $error_cnt_pot == 0 && $ret_val_non_zero_cnt == 0) {
 		if ($done_cnt == 0) { ScreenOutAlways ("NO tests were performed.  Time used was $secs seconds\n"); }
 		else { ScreenOutAlways ("All tests passed without error.  Performed $done_cnt tests.  Time used was $secs seconds\n"); }
 	} else {
 		my $s = "Some tests had Errors. Performed $done_cnt tests.";
-		unless ($error_cnt == 0) { $s = $s . "$error_cnt errors"; }
+		unless ($error_cnt == 0) { $s = $s . "  $error_cnt errors"; }
 		unless ($error_cnt_pot == 0) { $s = $s . "  $error_cnt_pot errors reprocessing the .POT files"; }
+		unless ($ret_val_non_zero_cnt == 0) { $s = $s . "  $ret_val_non_zero_cnt runs had non-zero return code (cores?)"; }
 		ScreenOutAlways ("$s\nTime used was $secs seconds\n");
 	}
 }
@@ -668,13 +669,21 @@ sub process {
 
 		my @cmd_show_lines = split(/\n/, $cmd_show_data);
 		my $cmd_show_line = $cmd_show_lines[scalar (@cmd_show_lines) - 1];
+		if (!defined($cmd_show_line)) { $cmd_show_line = ""; }
 		my @orig_show_words =  split(/\s/, $cmd_show_line);
 		my $orig_show_cnt = $orig_show_words[0];
+		if (!defined($orig_show_cnt)) { $orig_show_cnt = ""; }
 		ScreenOutVV("\n\cmd_show_line = \n$cmd_show_line\n\n");
 
 		if (index($ar[10], "($orig_crack_cnt)") lt 0 && index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0) {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
-			my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+			my $str;
+			if ($ret_val == 0) {
+				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+			} else {
+				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!  return code $ret_val]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+				$ret_val_non_zero_cnt += 1;
+			}
 			ScreenOutAlways($str);
 			# check for self-test failure
 			# NOTE other failures should also be looked for, when we 'find' them.
@@ -695,7 +704,8 @@ sub process {
 			ScreenOutSemi($str);
 		} else {
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_crack_cnt);
-			ScreenOutSemi($str);
+			ScreenOutAlways($str);
+			$ret_val_non_zero_cnt += 1;
 		}
 		if ($dict_name_ex ne "") {
 			unlink ($dict_name_ex);
@@ -757,7 +767,13 @@ sub process {
 			ScreenOutVV("\n\cmd_show_line2 = \n$cmd_show_line2\n\n");
 
 			if (index($ar[11], "($crack_xx[1])") lt 0 && $orig_pot_cnt ne $orig_crack_cnt && index($ar[10], "($orig_show_cnt2)") lt 0 && index($ar[10], "(-show$orig_show_cnt2)") lt 0) {
-				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+				my $str;
+				if ($ret_val == 0) {
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+				} else {
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!! return code $ret_val]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+					$ret_val_non_zero_cnt += 1;
+				}
 				ScreenOutAlways($str);
 				$error_cnt_pot += 1;
 				if ($stop_on_error) {
@@ -770,7 +786,8 @@ sub process {
 				ScreenOutSemi($str);
 			} else {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_pot_cnt);
-				ScreenOutSemi($str);
+				ScreenOutAlways($str);
+				$ret_val_non_zero_cnt += 1;
 			}
 			unlink("$pot");
 			unlink("pw3");
