@@ -153,6 +153,8 @@
 # v1.12.17 (oct 28, 2014) Added checks for non-zero return code (cores).  This will always show (even
 #               in -q mode, and has a summary line listing how many non-zero's were seen.
 #               made -no-prelims the default, so now if you WANT prelims, you have to use -prelims
+# v1.12.18 (oct 31, 2014) Return from script will not be 0 if there are any failures. It will be number
+#               number of failed test, or tests which jtr returned non-zero.
 # Todo (1.13)
 #               Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #               file formats seen in the wild.  These tests are in -w= and -pipe modes

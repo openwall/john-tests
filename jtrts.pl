@@ -4,8 +4,8 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 
-my $VERSION = "1.12.17";
-my $RELEASE_DATE = "Oct 28, 2014";
+my $VERSION = "1.12.18";
+my $RELEASE_DATE = "Oct 31, 2014";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -45,13 +45,13 @@ startTime();
 parseArgs();
 setup();
 readData();
-if ($showtypes) { showTypeData(); exit; }
+if ($showtypes) { showTypeData(); exit 0; }
 johnPrelims();
 filterPatterns();
 process();
 cleanup();
 displaySummary();
-
+exit $error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt;
 
 ###############################################################################
 # End of MAIN. Everything from this point on is subroutines.
