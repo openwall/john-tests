@@ -9,6 +9,7 @@
 #  Version 1.18   Many formats added by other authors, (but not listed).
 #                 Added (-show###) syntax for crack counts for some formats.
 #  Version 1.19   Removed FULL from md5crypt, BSDI, MSCash2, sha512crypt.
+#  Version 1.20   Added mozilla, odf (2 flavors)
 ############################################################################
 #
 # core formats: des/bsdi/md5/bf/afs/lm/trip/dummy, no tests (yet) for afs, trip, dummy.  Need more for LM.
@@ -297,6 +298,9 @@
 (base),(X),(jumbo),10000,MySql-fast,pw,mysql_tst.in,mysql-fast,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,oracle,pw,oracle_tst.in,oracle,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,oracle11,pw,oracle11_tst.in,oracle11,Y,X,(1500),(1500)
+(base),(X),(jumbo),10000,mozilla,pw,mozilla_tst.in,mozilla,N,X,(1500),(1500)
+(base),(X),(jumbo),10000,odf,pw,odf_tst.in,odf,N,X,(1500),(1500)
+(base),(X),(jumbo),10000,odf_1,pw,odf_1_tst.in,odf,N,X,(1500),(1500)
 
 (base),(X),(jumbo),10000,hdaa,pw,hdaa_tst.in,hdaa,N,X,(1500),(1500)
 (base),(full),(jumbo),10000,netntlm,pw,netntlm_tst.in,netntlm,N,X,(1500),(1500)
