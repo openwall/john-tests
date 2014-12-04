@@ -700,8 +700,19 @@ sub process {
 				exit(1);
 			}
 		} elsif ($ret_val == 0) {
-			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
-			ScreenOutSemi($str);
+			if ($orig_crack_cnt != $orig_show_cnt) {
+				if (index($ar[10], "(-show$orig_show_cnt)") >= 0) {
+					# we are 'ok' here.
+					my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
+					ScreenOutSemi($str);
+				} else {
+					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%-4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+					ScreenOutAlways($str);
+				}
+			} else {
+				my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
+				ScreenOutSemi($str);
+			}
 		} else {
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_crack_cnt);
 			ScreenOutAlways($str);
