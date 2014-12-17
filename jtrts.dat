@@ -10,7 +10,7 @@
 #                 Added (-show###) syntax for crack counts for some formats.
 #  Version 1.19   Removed FULL from md5crypt, BSDI, MSCash2, sha512crypt.
 #  Version 1.20   Added mozilla, odf (2 flavors)
-#  Version 1.21   Added rar.
+#  Version 1.21   Added rar. Krb5-18
 ############################################################################
 #
 # core formats: des/bsdi/md5/bf/afs/lm/trip/dummy, no tests (yet) for afs, trip, dummy.  Need more for LM.
@@ -329,6 +329,8 @@
 (base)(sybasease),(X),(jumbo),10000,sybasease,pw,sybasease_tst.in,sybasease,Y,X,(1500),(1500)
 (base)(wbb3),(X),(jumbo),10000,wbb3,pw,wbb3_tst.in,wbb3,Y,X,(1500),(1500)
 (base)(drupal7),(X),(jumbo),40,drupal7,pw,drupal7_tst.in,drupal7,Y,X,(1485),(1485)
+(base)(krb5-18),(X),(jumbo),50,krb5-18,pw,krb5-18_tst.in,krb5-18,Y,X,(1500),(1500)
+
 
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql-utf8,pw,mssql_tst.in,mssql,Y,-enc=utf8,(1229),(1229)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-utf8,pw,MSSql05_tst.in,mssql05,Y,-enc=utf8,(1229),(1229)

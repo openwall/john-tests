@@ -1,0 +1,1501 @@
+#!comment: Built with pass_gen.pl using RAW mode, 0 to 128 characters dict file=pw.dic
+u0-krb5-18:$krb18$fsjklsdfldsff$0465a5f27f2a0214cc54ab05bc9691f0f9e2c17d344ac1924b116d1cef0fadec:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$fsjklsdfldsff$feb42b9de0ae15c59e80deef5a34cad1fef692db0f25d6a03249c1e55a9efdb1:1:0:Skipping and*::
+u2-krb5-18:$krb18$fsjklsdfldsff$2a3b7b467ad84db57f985cf5fc9408911ff4a82894332664341d2682f4712166:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$fsjklsdfldsff$02b2421a605b4c90ee98f6fa6f04a8030073569bc80f7cf9f2e128dd3c34f505:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$fsjklsdfldsff$66f441cdbccfd208c088df94f74261c2f52a23ea00328f3f8e9962f32978f135:4:0:bert*ernie::
+u5-krb5-18:$krb18$fsjklsdfldsff$523c92aa74b99f621b72f5fb3a85e39bc4509de8d3c6d6d7043caf1874d548e2:5:0:late*night::
+u6-krb5-18:$krb18$fsjklsdfldsff$43f8a03666ed189fed2a00c77e8d798df80bc5cab6c586315b7b265291a4a011:6:0:::
+u7-krb5-18:$krb18$fsjklsdfldsff$63b89aa7646c8d05df30dc43b23bf7804f010588c34d92778c52cb34a4fe8cfa:7:0: ::
+u8-krb5-18:$krb18$fsjklsdfldsff$a3a7ab83f0229e67b64f5bb1638897d7a116a8a5e1969719ce48d1528f8263cb:8:0:1::
+u9-krb5-18:$krb18$fsjklsdfldsff$09c3379913032ff9f723a1baf1c28eb3bd5b224098ceb0e1c4560b7b787ae842:9:0:password::
+u10-krb5-18:$krb18$fsjklsdfldsff$5864eb8b3f7df227f9b2c22550d7c016de9413d4fefcd8e24ab6997d8bf5ca18:10:0:test::
+u11-krb5-18:$krb18$fsjklsdfldsff$719fb89226dbb9febf8b7233df1ac92c77b80c22965edac7b9e62a08b35470a6:11:0:late*niçhô::
+u12-krb5-18:$krb18$fsjklsdfldsff$a6b37a8d5a080b3fced6ab26a98d65e97b190ed6cf304f1458e5b483563e36c7:12:0:hello::
+u13-krb5-18:$krb18$fsjklsdfldsff$493d28d4fc1f864b5088e11af10a6d79f740921e3b34dae3d09d6f97e6cd413f:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$fsjklsdfldsff$757eea52e2cd8406793963e985b004a6e379d2d06baae193c37b9a25fccd714e:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$fsjklsdfldsff$4d25695aa0e864ab99b986bd02940f1e5281c5e27b37df7607f1c4efa232c595:15:0:ttttttttttt::
+u16-krb5-18:$krb18$fsjklsdfldsff$6fafbf043f844fb8253ed61d6b519a974f2266dfb92109179751abfff5375abf:16:0:±::
+u17-krb5-18:$krb18$fsjklsdfldsff$9badedd537dc3b1efc1d18c4094fe8fe3af7037c326424f45ee4fcdebff79d37:17:0:pass÷ord::
+u18-krb5-18:$krb18$fsjklsdfldsff$282a432b7658ffc5ff7337f1e43663d6fc5c9dcade00eb4aee04f00bd03cfd0d:18:0:dffffffffffff::
+u19-krb5-18:$krb18$fsjklsdfldsff$155978b95292b1ca7902e0b8f713955dc7266c46e44595ffee8af1ad3b320e9d:19:0:ôåst::
+u20-krb5-18:$krb18$fsjklsdfldsff$79c5500695559f1beb90221dc56268d769c8f807dae7e8a7adf31e61e8fb515c:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$fsjklsdfldsff$9f330e3d3e003ad391eb69b36bc7da721d18e015a31a682582d0fd52aed3a827:21:0:alsfdkja;::
+u22-krb5-18:$krb18$fsjklsdfldsff$15f88e295556d45de3a93f337c2aa1623068c9b5af97800e906e90eb3fe54d47:22:0:qerwt::
+u23-krb5-18:$krb18$fsjklsdfldsff$358cd78b588705c84c8a2b373f8ce26350565a786c4eb990b63faa54be8fcc36:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$fsjklsdfldsff$c52bcb14a0a201b34bdb5fefbeaad8e74458012a652bbf9fa9f67ec0851f6345:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$fsjklsdfldsff$8eaf9995af68d915355f96ef718f42e949ab1e30ff11908dff32ac52e05b5ca5:25:0:q÷årt12345::
+u26-krb5-18:$krb18$fsjklsdfldsff$21417dc07dc16157bd439b18b639904d2fc3b5bb517c3b4290d47c370b4394e9:26:0:qwerty::
+u27-krb5-18:$krb18$fsjklsdfldsff$68f9a3d61579c1d170866f5fd624668e1243606b9970efe025f044cf928bf411:27:0:qwert12345::
+u28-krb5-18:$krb18$fsjklsdfldsff$288900e834d3d1226eeb5d375f3d158ad4ab656e802cfd6772bfed8e21d12c8b:28:0:12345::
+u29-krb5-18:$krb18$fsjklsdfldsff$42789d3ad99c15cfd64c566f4545f0c663d1e6bb23fbe681d412596f9d17ba1b:29:0:12qw34er::
+u0-krb5-18:$krb18$krltafldsff$10086913225b10ada223cbb011a5435fc5f16e484ab07c58c949728294fe9ef0:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$krltafldsff$4bcff3f4189f43273ebc09b3a32e844768cf4fa80b701a9d27f5f90615acdd92:1:0:Skipping and*::
+u2-krb5-18:$krb18$krltafldsff$9110b6c3b20ac93f9f50aa2a320ba22625d69d2e2dceef40bce063f2c001467e:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$krltafldsff$45327b992dc8d56b6454b3265b0a7802721a80ad7a34b5ffa7febb806da50175:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$krltafldsff$46c586219c3565fc3401b838c64ba5a1094ec67647071520b8dff5125b9b5cee:4:0:bert*ernie::
+u5-krb5-18:$krb18$krltafldsff$e82d4dca58ce7d01f7d22ddbd4a4f32b9f7d4a60a3a605c0fb7e7777d820f093:5:0:late*night::
+u6-krb5-18:$krb18$krltafldsff$fbc8c88775549504e263e2cc1b6f236ffb95bfc31bfd54110fac066efc0bb01e:6:0:::
+u7-krb5-18:$krb18$krltafldsff$8b118291ac362f67fd6adc61f38d77dd6ba4d5790111bf85670c2f3d26c5b586:7:0: ::
+u8-krb5-18:$krb18$krltafldsff$bf873f19b1d3b6b6b1b8e140f1d42e8c17d39bf9979a1ffdf036d840a27df406:8:0:1::
+u9-krb5-18:$krb18$krltafldsff$d62ba353ffddaa8ec313e61cfc88a4a9b70069d3475eceb95ab0027863129a3a:9:0:password::
+u10-krb5-18:$krb18$krltafldsff$b65f0a95ad35ab0ce83b1924dd42b66a7fb07441521bff9a8a1293237344d2ed:10:0:test::
+u11-krb5-18:$krb18$krltafldsff$e4e6c43f62c787784e7c5f93eb830eb790824439f13a80ca33f922b4c9522a5b:11:0:late*niçhô::
+u12-krb5-18:$krb18$krltafldsff$ddcea3d01d884d1ba1d42133ae194dad285b3729cb0bb0342f574e1deecd1590:12:0:hello::
+u13-krb5-18:$krb18$krltafldsff$fc5d84143d390188340df365f985d1a191bd0d21e945a92a047bfa24d77ddfff:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$krltafldsff$4b44305d877e4f3e3f8e2c0fa145a357d03058288afd4f0a0c8d57791be60f76:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$krltafldsff$f05378468ef208a1208538b69bc54283b1ec64497832f04d3f2d5421eda04d34:15:0:ttttttttttt::
+u16-krb5-18:$krb18$krltafldsff$714b3e9dddad4275bc9caa2319ccdfb0d575bbe150832cb814bd50177768cb7a:16:0:±::
+u17-krb5-18:$krb18$krltafldsff$8b133127d4bd141ac211cd3d267a1bdf77128dc883139efae9e0f0d72edbf3a4:17:0:pass÷ord::
+u18-krb5-18:$krb18$krltafldsff$4dd82a1edb616b0505fdcc788691e2b0a6f4cfb2151d9f6e909560592ca2f617:18:0:dffffffffffff::
+u19-krb5-18:$krb18$krltafldsff$3a943a125d012469548bf25eb1bbf51cff6396dc41888fb6ca6aa2adc5d4a782:19:0:ôåst::
+u20-krb5-18:$krb18$krltafldsff$6ba421f729b5914042318726acab7f8298ef57381711a360d9a4ca9d2670032b:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$krltafldsff$26c5d60544ccf23d0e630f8aa2d42eabe59b3db1704069bdfb7a6b0e5a243acd:21:0:alsfdkja;::
+u22-krb5-18:$krb18$krltafldsff$f954b7b1b26eed0121f81a0431f5679f96b09408d39e24066d2b6a5644d0fb1c:22:0:qerwt::
+u23-krb5-18:$krb18$krltafldsff$cf0a1e364b8968fcc21fb0dbf6d40d885f37a5a537e3e8f69d66a167eb53d4d0:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$krltafldsff$ae3a1f4eaf432cec3883df8ce97da30628d9ea23fb14d6d4ab50c2412738e3c3:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$krltafldsff$26dbaa20d5b5bc000297f818b12fb394bf1323214b60a16f8ffee0b05e41d526:25:0:q÷årt12345::
+u26-krb5-18:$krb18$krltafldsff$c9cf6f16f5a252271142e6149d294ca4c31d311316c79a55e2077dcc8cbe1036:26:0:qwerty::
+u27-krb5-18:$krb18$krltafldsff$85c6301735ed816f07c938ad091f92356aaf847b8377be1fa27c24b4a27a8ff0:27:0:qwert12345::
+u28-krb5-18:$krb18$krltafldsff$3c427bd338c5e0eb56079f8023f110bd11262ca3e63d28eb44fd93f32c003415:28:0:12345::
+u29-krb5-18:$krb18$krltafldsff$1e5795f42ef2a189de3ce4be9e23254b6bedb4179a6436c8d1530b1236812533:29:0:12qw34er::
+u0-krb5-18:$krb18$kbiimafsff$3be9e3ed13593599f6680e6e51b1ec7a8c7182a4f4230befc504786c0dbee279:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$kbiimafsff$000c532620053cd0e689482eb42cd7a6c520c78c12ee713443f26bf0c87bf331:1:0:Skipping and*::
+u2-krb5-18:$krb18$kbiimafsff$4e25a2d4adcb873d72f5dbea6b25e1d6ac60d6f5de173c340de161c135c1f69f:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$kbiimafsff$ef6c628d43abe1c26b45faee6692c42cad8d325f0bf0220aa3dc8b0460d6bb6e:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$kbiimafsff$ca68fceb7bcb948256323833d8a10f18e7c07bf843199b494fbb015f69e52f0d:4:0:bert*ernie::
+u5-krb5-18:$krb18$kbiimafsff$452ac93d0e475f39750d7b3932ff9a9a36444fcd3f257b4bb51bb4747e3e9be0:5:0:late*night::
+u6-krb5-18:$krb18$kbiimafsff$fbdeaa08f942f0e055dc91f650dd9c6ec967021541a3f2e4fa08bbc725a176f9:6:0:::
+u7-krb5-18:$krb18$kbiimafsff$0a1849c4aad537d1f9e3c8cf62778156f7dffd71ada29d65497518acd8ab8104:7:0: ::
+u8-krb5-18:$krb18$kbiimafsff$42ae9d027f5f582e6d349ed83537fe176893ff9d38e1ba2173b62c1e6c4bcb57:8:0:1::
+u9-krb5-18:$krb18$kbiimafsff$d95ea7b1ab188ba4a4e086a50d8ed67d0f7cec2f92e47973ecb9b208592abcfa:9:0:password::
+u10-krb5-18:$krb18$kbiimafsff$43c299bdd0e0d01db29f445dedc7f570a9d2d038325ddce36bae20ca0da551f1:10:0:test::
+u11-krb5-18:$krb18$kbiimafsff$80a8ecd1c4f73c46ac33f5bfffb30b5a9deccec748bd2ce2ecaf6898ef4b102c:11:0:late*niçhô::
+u12-krb5-18:$krb18$kbiimafsff$64a5839769724930d0e3aa83c56332c08539be3274108d3cf057ecb5701007c4:12:0:hello::
+u13-krb5-18:$krb18$kbiimafsff$5f8fb1da05489073b1f64d5a35776a3badbb89f2f1cdfc919e8e8d53bf18eb8e:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$kbiimafsff$dd34efebcd1389b7dc2e5633846fc6390f102a69716cce2c8ae2a99ad7854e6d:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$kbiimafsff$57239cfc1c8ed0c707cc3a80b600e2ebdc4aa6675403e312940a273e1e0881a7:15:0:ttttttttttt::
+u16-krb5-18:$krb18$kbiimafsff$e1f216fc4bf5f8208d6ab8d2e78d9269eb75158d897db3c2a506ab1e0339574a:16:0:±::
+u17-krb5-18:$krb18$kbiimafsff$a4ad77d6b85538e555716231a9885ea36799bd92d37902d8fbd040c2a8a08dd8:17:0:pass÷ord::
+u18-krb5-18:$krb18$kbiimafsff$3d611479e3ed9974fbb13061cae7610d5728356849cfb48ee30edf353867d82e:18:0:dffffffffffff::
+u19-krb5-18:$krb18$kbiimafsff$41b975f28cb840f39f717bf087e6823b697f78e8ab36f9c912a2b4caafb0adbb:19:0:ôåst::
+u20-krb5-18:$krb18$kbiimafsff$a21fbcb1623a45d0c827c4d98d8bbfcf4eb916da77184a9fc95281a3c9bc6c14:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$kbiimafsff$080dc0835867dd252c745bb2ee3931b9eee7941326b342327812669cb93d483a:21:0:alsfdkja;::
+u22-krb5-18:$krb18$kbiimafsff$82bab887898ba0a355bbbab7a86e79102d2472b5ef3d5320e48518f7d2b117dc:22:0:qerwt::
+u23-krb5-18:$krb18$kbiimafsff$002e7f32691039435c77ddc3e94e0f2bd3ca02c8b18f70b62248fc191e03dc5e:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$kbiimafsff$ebda2b4c3c4c2dfdf17e761f7946405de52afc93233788428b2e58943c57fbf7:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$kbiimafsff$7d8dc6c15de1dd6bed951d69a005a35910223cba1b7f43fe061ec35b9f536729:25:0:q÷årt12345::
+u26-krb5-18:$krb18$kbiimafsff$ecffff7d49b5c2fc0943816a20eb7acbe6db04f404faee72e6f9e2aa149cec00:26:0:qwerty::
+u27-krb5-18:$krb18$kbiimafsff$676a397d378beb9692be8307172ad81e71e84c83d65ac9f0a7affb174f6d4bf0:27:0:qwert12345::
+u28-krb5-18:$krb18$kbiimafsff$439ea5ec6359a5ebd8db054ababcf6abd318b60c59241631bed2511704dcf8e3:28:0:12345::
+u29-krb5-18:$krb18$kbiimafsff$e38336f15edca0d936f61388d6f35d15f88ee652e3a6405665f9cd557e9028db:29:0:12qw34er::
+u0-krb5-18:$krb18$kbhanpapsxsff$d06e148951898153223862d26f3c02079a734ca158ef8a350ab6a26b52174e25:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$kbhanpapsxsff$3d8ef00f01f5d91af26001b3e5f2ab6b822fdd40d24669c34035157879416beb:1:0:Skipping and*::
+u2-krb5-18:$krb18$kbhanpapsxsff$d02d6fca43dc451d2bd3b34e225a8102ed26139208ad7211525e62885771dc61:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$kbhanpapsxsff$eb3b6b9d7dcdb31e19158d9db93c073eca91d31248e917cafdf53622769ebd94:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$kbhanpapsxsff$fcebfd28f551e96465fec621a373c785a762e81377e5df921f135630f0069f8e:4:0:bert*ernie::
+u5-krb5-18:$krb18$kbhanpapsxsff$de712329a998a3e3692ffa3e1cd7bc5e089f34ccc2f855eb42676c2ac959b4b8:5:0:late*night::
+u6-krb5-18:$krb18$kbhanpapsxsff$d08adee43d62ff9330ab5138d4530bbc4565ea3fe7e4b109f381c732919a7c80:6:0:::
+u7-krb5-18:$krb18$kbhanpapsxsff$e056486e5f38e861ef0fbe703061fc8599063cc3c91f13fda08d369f3f04dd4b:7:0: ::
+u8-krb5-18:$krb18$kbhanpapsxsff$22f94fabf3c47da4db5305824ac1c77d07ab97536144519ad04e3079047acd78:8:0:1::
+u9-krb5-18:$krb18$kbhanpapsxsff$81d5c9f927670b07625003fa88a869ae1d793d5a3ad1a6c153eb12336ee1e25c:9:0:password::
+u10-krb5-18:$krb18$kbhanpapsxsff$03e15d1d2817049ed8b464fcaf96a36a0704803947b2a0a481a81dedd89dff93:10:0:test::
+u11-krb5-18:$krb18$kbhanpapsxsff$69c7d7727f9c254e1e3d04c538f0fa9e8beba1671be4e3f0094783a46a1eb425:11:0:late*niçhô::
+u12-krb5-18:$krb18$kbhanpapsxsff$c437a53cfeb64ab8133ce974c472bd8642bc8b25a317a351eb9296970a9d18f3:12:0:hello::
+u13-krb5-18:$krb18$kbhanpapsxsff$c06febf4dcc174db4d076c45343886b8016cd046dc1acdcd396f5406a988c94f:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$kbhanpapsxsff$5649028296ea917a1d5de9fb47f8f0805e9b7f1364aee9eb2b9469a3cb0e57b4:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$kbhanpapsxsff$cba8605e8f58de4e5c4e974a39e3478a776326447f2644d8d28c47f4c07ef105:15:0:ttttttttttt::
+u16-krb5-18:$krb18$kbhanpapsxsff$5341efb7ae9d1ce9073dd5574c3351c212f65a3248ddd396849de8525be5ceec:16:0:±::
+u17-krb5-18:$krb18$kbhanpapsxsff$b375442c3186ce1d375387affcbcc2c00cfb461df2e479fba063ed6a62eaa119:17:0:pass÷ord::
+u18-krb5-18:$krb18$kbhanpapsxsff$8c6a3b98d667bac42ecd5b4f8508b4a3a11e356af4236f53431639dbc2769d39:18:0:dffffffffffff::
+u19-krb5-18:$krb18$kbhanpapsxsff$30f5f98be2d9f38064d937a1b08e1c7567c5a5024b02990d2578036c9f1eaed6:19:0:ôåst::
+u20-krb5-18:$krb18$kbhanpapsxsff$a63d37a384f0511b56c1ffa02b17600d1ef4a9b7bb4c4deffcd9543e2fcc1e59:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$kbhanpapsxsff$12b02bce843cbb48adb17882e9d52263d0dcf0a1c6dcd7b7d540dcd584f9f385:21:0:alsfdkja;::
+u22-krb5-18:$krb18$kbhanpapsxsff$6efb8f4879faa254f226aa30f77ed8e5bc77d5b9766c4b2b4cb104a39004bec2:22:0:qerwt::
+u23-krb5-18:$krb18$kbhanpapsxsff$cc646ed546599a1f0892e60c9945a52292f1d0f4b106469f3fd380280f34de0f:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$kbhanpapsxsff$0448d76a2f372b4717c672ce1cbfef92a9b2b6ecbfbc3397ef7d0714a270feee:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$kbhanpapsxsff$10f77c12dd40407bb89b24c9adbfd0f2a840d4781fd67d218728aaff84fb4323:25:0:q÷årt12345::
+u26-krb5-18:$krb18$kbhanpapsxsff$8d879687ecc1d4d8afa4ec76221c0e215779ea9d2c7904fbd38e9b5d002a31dd:26:0:qwerty::
+u27-krb5-18:$krb18$kbhanpapsxsff$8a57c83752cdc2b6e2211bafb6263aae1b1f618d567d097d3af3663884638267:27:0:qwert12345::
+u28-krb5-18:$krb18$kbhanpapsxsff$7b7dfdd017e10b2ab63538c2cb64b146a84d691e99763be417bcab5fc80a9032:28:0:12345::
+u29-krb5-18:$krb18$kbhanpapsxsff$64010aabd7d3ee41ad24bc306a4110c319bba6dca6af5f894e4cc10d9b8c4587:29:0:12qw34er::
+u0-krb5-18:$krb18$1tjanpapsxsff$bd3f1d73bb709312cf902f0d9de88d1fbd3e6839984a49c3d7897ae1f920e3b2:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$1tjanpapsxsff$1bcb90b308209baf0b184e81058c27e0dab9350f8294b80392bd3ee521378165:1:0:Skipping and*::
+u2-krb5-18:$krb18$1tjanpapsxsff$d4b25b5c576d059de01bfce706c998148c72abc48ff158a8811deb7cf88d1f1f:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$1tjanpapsxsff$5eade661cb2935e10f1a5121604ca0fcbbb96194487e7f6e1b842fdc6fde6c03:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$1tjanpapsxsff$1a7da05b1450a6d137de5ea50d9d1ff7a37bd3bf1707f47109d4dca676a942b3:4:0:bert*ernie::
+u5-krb5-18:$krb18$1tjanpapsxsff$0621a6f203f2dfe570df8b6575f70dcb3b1907089a4e0a3e7bf9eca1564af8d2:5:0:late*night::
+u6-krb5-18:$krb18$1tjanpapsxsff$a47c2be4906218056be4cfa5de75084e02edf5e05e5937a6db59124cf01b1b41:6:0:::
+u7-krb5-18:$krb18$1tjanpapsxsff$6ea11ec43a2eb996c867a19612c49c75e8b16e553554bdcd04a862f5157bad04:7:0: ::
+u8-krb5-18:$krb18$1tjanpapsxsff$635d2f6872f2f463985ff967fb27425c1ee294cb8fa0613d9434d0b49e0f7e07:8:0:1::
+u9-krb5-18:$krb18$1tjanpapsxsff$a21fb70e0618b5de843e2726e011b8250b9c445d98306ac0b428736c8623fd5a:9:0:password::
+u10-krb5-18:$krb18$1tjanpapsxsff$9786c4609dc5dc912e01cf73b3de27e136610c1740b75a8cf008bfd1439877a4:10:0:test::
+u11-krb5-18:$krb18$1tjanpapsxsff$3b235ddc18c3b89d3232f16e8de9b4c48c8c19e590282829ca57de70249df636:11:0:late*niçhô::
+u12-krb5-18:$krb18$1tjanpapsxsff$d46fa2e403a06f5914b521109251f0e7624cc06ed415adf3b812036dca2a1874:12:0:hello::
+u13-krb5-18:$krb18$1tjanpapsxsff$6ca16ea41ee6a3928ef21265c73d8c86083f62246f368492bca0509e2b8b3b2c:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$1tjanpapsxsff$aafa14baac3df6e19418e8d59c508a36255e940f8d15adbafbf3c7f689db1394:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$1tjanpapsxsff$4fd00ccdabe4ee2a662af56f90280e9482d809287e693e60a88e7505eeaf2f45:15:0:ttttttttttt::
+u16-krb5-18:$krb18$1tjanpapsxsff$a126c3c6ceb87336f0c7e3c4bbf1c4eedcda57a81546fc169449bcbb5c1553dc:16:0:±::
+u17-krb5-18:$krb18$1tjanpapsxsff$a6603de2950c7ee6dc8d9527475a775ba256f787b17f664a57bebeaf48f3c10c:17:0:pass÷ord::
+u18-krb5-18:$krb18$1tjanpapsxsff$43b3e97e785a271c832cab73b078b97f45f92272dc76c95fac78275e83dd7b0c:18:0:dffffffffffff::
+u19-krb5-18:$krb18$1tjanpapsxsff$d64fcefc4a0d7b61755553a9520ae9787c43c9cd07aaa5d5c56485fc660f8e33:19:0:ôåst::
+u20-krb5-18:$krb18$1tjanpapsxsff$36f324526e74e5b69647668c4e0c23a9c404e9259beccde6e9aba8dcf3f30337:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$1tjanpapsxsff$da0a4b5835df1eee0fa5d93deae6ca4291954735c2d0c560a521b35f8557a4b8:21:0:alsfdkja;::
+u22-krb5-18:$krb18$1tjanpapsxsff$8e229ed5c2d805a0b3a6a8c3ed2e51035182aca1a7505a832dc3d3725d7e44fd:22:0:qerwt::
+u23-krb5-18:$krb18$1tjanpapsxsff$1a12360b75238e0476d4b35f1cce274eac1dd29dd6f9124d89a3a96ba87470e8:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$1tjanpapsxsff$2ad72cbd55e9b6e673bbfc629d386a6d29ab029b8ff9f083397376eb1929c45f:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$1tjanpapsxsff$d093023dafa2709058ac48e94166f88268c534f68c8ebaa3c25f5e9ae3af158e:25:0:q÷årt12345::
+u26-krb5-18:$krb18$1tjanpapsxsff$ab3bf92738ac8bde5b9f7b71a707873052848c1df4303493b8c9216c7ea9ebfc:26:0:qwerty::
+u27-krb5-18:$krb18$1tjanpapsxsff$340406c73ec265260a2a68be451e12a3f7f0cac6484b6ccd8955e19e58692734:27:0:qwert12345::
+u28-krb5-18:$krb18$1tjanpapsxsff$878eab95778b221c5180a91d6c67561dcc7db20aea39aae0bfe789230b9353cf:28:0:12345::
+u29-krb5-18:$krb18$1tjanpapsxsff$3c78c03fbb7cfc6a472cc528306cbee52d0003a7ad87a2b2c1f1f66081d63a68:29:0:12qw34er::
+u0-krb5-18:$krb18$2rianpapsxsff$37bc8516c4596805a9bb40fd4289217afba500a9851591ed5a8b23ef4c409bec:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$2rianpapsxsff$e8ad2b8eaa099f3445543f967b1a694fcff0c68c65df74b6a5aea2d4dd1a8a24:1:0:Skipping and*::
+u2-krb5-18:$krb18$2rianpapsxsff$32489048a651e2e1fcc84bd74ca5dd36e5859812298c8bdd6bfe7eed1d8500f4:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$2rianpapsxsff$b1215f5f984f77575609699f4aef951f5cea5199703e0cd9884b023fa3feda8c:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$2rianpapsxsff$bba40be6d58f537f7395e61b1379eca6640d3b423ba81cc3c0e56c449c46005c:4:0:bert*ernie::
+u5-krb5-18:$krb18$2rianpapsxsff$b91cd8ac76156c2ae02d2ff8ee9ead5790801ef7d7fbf32fc438c9f9412594b6:5:0:late*night::
+u6-krb5-18:$krb18$2rianpapsxsff$d21f6c27d71814d529b2347629e35fb0ef5b9ec4f8efcbf919e50408bb606802:6:0:::
+u7-krb5-18:$krb18$2rianpapsxsff$bc139a99b69ea9acce28a7cc4217339a2e658f74d5206fc0c2777fd2be90ac6c:7:0: ::
+u8-krb5-18:$krb18$2rianpapsxsff$1ff87a29abeb6c429649e5e1b53301c9a7bf16fbcb0eab0eedd4902460c86d01:8:0:1::
+u9-krb5-18:$krb18$2rianpapsxsff$b1e75500e014df1ce37a793a9f8ff88df7319fd471d2eb7c3430f13d8230856f:9:0:password::
+u10-krb5-18:$krb18$2rianpapsxsff$1d2785ebdffdf179738452edeb236b7ab643b463d45162b181244523e9a76ec0:10:0:test::
+u11-krb5-18:$krb18$2rianpapsxsff$481eedee9e946888360215cf4c4c431c4f52644fc29a9b6db2d8d2310e0eb5ed:11:0:late*niçhô::
+u12-krb5-18:$krb18$2rianpapsxsff$bae35f1a9765294eaa3e3e6efbb6552055e99ec513ef587a03d8f5cc859467a9:12:0:hello::
+u13-krb5-18:$krb18$2rianpapsxsff$488b7b6591048faf7813935c64ba88deb154a546a62bbe5359a2e607e0890427:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$2rianpapsxsff$7995ee0889186533103ee62251283578c98aef8532641551f2600a5c99f81a23:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$2rianpapsxsff$89e2def4ff1be7d3afbddb97f0723620a87d8294dea2bc93c8a215c3513fb372:15:0:ttttttttttt::
+u16-krb5-18:$krb18$2rianpapsxsff$df752802c9058f2502e80f8b66e253acca4a1b34e798256d976af4d6cc6fd98f:16:0:±::
+u17-krb5-18:$krb18$2rianpapsxsff$def2ed5b337f22326dc3158be33645045c398c8eb9c82885b5d2cd0ac2797451:17:0:pass÷ord::
+u18-krb5-18:$krb18$2rianpapsxsff$359dc4cb4ca41c92da97b9e891439db6515ee592f6cdd9e674990b3690050855:18:0:dffffffffffff::
+u19-krb5-18:$krb18$2rianpapsxsff$88958db54135ea576326542fed736ff533996dcbdc73de33dd5c75aa19043e2f:19:0:ôåst::
+u20-krb5-18:$krb18$2rianpapsxsff$86fe8c799bf71b61103348aa1765f9e489b444cda11bf80f88409fd63e0793e9:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$2rianpapsxsff$5355c974462c12e65d46293514a98df3007ddedb45cb6ccfc9dc45b332a6ccb6:21:0:alsfdkja;::
+u22-krb5-18:$krb18$2rianpapsxsff$84e14772871116209f0f9ec1ad92c3dfdf06c9956347d4867f53cf030de6d9c0:22:0:qerwt::
+u23-krb5-18:$krb18$2rianpapsxsff$d25670067cda77f14d3295ba6ecb1dc8b40f85e7261abeccab9e57fbc221cae1:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$2rianpapsxsff$70f71c493cc0b4550384c33116af21c594469de7a5876e142b9fe23c16f92b08:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$2rianpapsxsff$a18ce5ccedac98728abf5059ef2868612ce7b5ecdfa68dcb9e0ebd37b459bab8:25:0:q÷årt12345::
+u26-krb5-18:$krb18$2rianpapsxsff$93e91d652a828e2025246738fad1bde9628794d5bd31209b7fd39c85d57aae63:26:0:qwerty::
+u27-krb5-18:$krb18$2rianpapsxsff$16921a352160db5d3c6d21fb7062296d7ad6a556a2dba5c8b760ac0063283381:27:0:qwert12345::
+u28-krb5-18:$krb18$2rianpapsxsff$d9543b66796c62e1072e9e509d688b644d797bd7862b4289adb83c4a7d7cc4b1:28:0:12345::
+u29-krb5-18:$krb18$2rianpapsxsff$d315eb3adb7fd9971ca02ea24418ae3d3cd0337bcb20fd0e5d7ba53183bbd762:29:0:12qw34er::
+u0-krb5-18:$krb18$3jkanpapsxsff$32b37bff59ac9c4d35766b201784e3de1e8c7b0735abb253f49661ef8876d7a8:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$3jkanpapsxsff$e2f965db7684195c832777b27aedecd0bcd8974dfdfcde45624acef68b20e111:1:0:Skipping and*::
+u2-krb5-18:$krb18$3jkanpapsxsff$daf93d2072ba4563b474495e0f01e9dea4e80c85a968b7e0824a91898bebc4b1:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$3jkanpapsxsff$3d99c12287cb296e17fba8b8fa27a9cc43896ad5c8ebb023be26222eaddd7476:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$3jkanpapsxsff$bd496da48d8b834e5ef10f120cabf8904977740f87923879d67ad9b7aca56804:4:0:bert*ernie::
+u5-krb5-18:$krb18$3jkanpapsxsff$4b3bad1fd545d6ca6af8bdc6438fdb9776ef33d4c5788cabc6c63aaf3c075beb:5:0:late*night::
+u6-krb5-18:$krb18$3jkanpapsxsff$324c354b794459cf7cb803df665ed650e27c2cb26e9a30683bbba111198aa624:6:0:::
+u7-krb5-18:$krb18$3jkanpapsxsff$4998036e9c38b0e41ff478169274062b6487664a0ca060cdbf9da3b481483ba1:7:0: ::
+u8-krb5-18:$krb18$3jkanpapsxsff$71dcd3380f3c24dd238f562f3716979fca2a63795cc9a2d5e5f0a01277879220:8:0:1::
+u9-krb5-18:$krb18$3jkanpapsxsff$22811e3acba8e1244c6ed414dbcccbd4c6f773a884d91309151d95c0cf267c1b:9:0:password::
+u10-krb5-18:$krb18$3jkanpapsxsff$a34d547ec1c25832031eeb8be1e07f466ee10c77b7aeae9bb60f9a14243ae61b:10:0:test::
+u11-krb5-18:$krb18$3jkanpapsxsff$386a30c62ada13d1b21ca4a154258320eeb937dab046eff1265e5a427ac2213e:11:0:late*niçhô::
+u12-krb5-18:$krb18$3jkanpapsxsff$c5b03d07dbeceeb91ca710f5e0844c09f44598a967c1a58a2a2f7bcbe70dab87:12:0:hello::
+u13-krb5-18:$krb18$3jkanpapsxsff$42c915cb171de95bbbf79ab42781917d2e27d136d8ea639ae44410d20249b0cd:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$3jkanpapsxsff$2f9600439d5150ea9f884aaa318a561507e14c60a90aaab8965622d3dfd32c89:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$3jkanpapsxsff$0d7afb6aa76ac68c676cf33a783abaf41e90570a505914fb22b037d8799344ff:15:0:ttttttttttt::
+u16-krb5-18:$krb18$3jkanpapsxsff$351e7e2cb7a647174a5b67ff2a8d2553bcb303badf8d721c68c902c130a5ee9e:16:0:±::
+u17-krb5-18:$krb18$3jkanpapsxsff$516e202457f090210922d7582c36a8567198d45c9dc03512ac7969da084b5de4:17:0:pass÷ord::
+u18-krb5-18:$krb18$3jkanpapsxsff$0bfe1da6ae7541948cd279c31a1ee31a040802f80fbb95487aae3661bd4c48a5:18:0:dffffffffffff::
+u19-krb5-18:$krb18$3jkanpapsxsff$7d87bb909b77dd6c6b588a72f9695e4da917872c9a0cddefe30ebf511e3fefc6:19:0:ôåst::
+u20-krb5-18:$krb18$3jkanpapsxsff$3f1d8bda10f24f4ff3efe1a54c8e0c549eb9c33d222e889df404f227e9004a0a:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$3jkanpapsxsff$4c0435a9faad22072cc2b234f7f9ab1a12750697b7a32c1dbf7185cc502c4a31:21:0:alsfdkja;::
+u22-krb5-18:$krb18$3jkanpapsxsff$c3f7a3542a2a3cfe10d8a342c76e67af76875c0a6629b1fac881a3cb8c91f418:22:0:qerwt::
+u23-krb5-18:$krb18$3jkanpapsxsff$c8de05389ab52e85b74f9ff1c48e9f42ad07cf0df8a7f7cb35b67a9211bb3888:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$3jkanpapsxsff$fe6137a1601572016df530cf913b08f688ab029b3b4702b765d81421d4358b80:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$3jkanpapsxsff$3a1e21201814f743022d94fb86f3abc929de492a5abdb0724e53df645b4c21bd:25:0:q÷årt12345::
+u26-krb5-18:$krb18$3jkanpapsxsff$9be2cbca07e3c62ec3079d5df36512c5ace24fde593ed713c3ad99f832302bb0:26:0:qwerty::
+u27-krb5-18:$krb18$3jkanpapsxsff$ad9246c02ad4f4aff2fe203292fc499ab1eda8eee25d631bbfc4613aad376b60:27:0:qwert12345::
+u28-krb5-18:$krb18$3jkanpapsxsff$e39b34573d8493053286c6b2c7edc4ddd96c5edcef153767856dff6706de7a77:28:0:12345::
+u29-krb5-18:$krb18$3jkanpapsxsff$910e87a37d527a0334e62a03b8b1102146197230c40e4df87ecc2de6cfa0cbc8:29:0:12qw34er::
+u0-krb5-18:$krb18$4chmnpapsxsff$b18652a10ac4138b0469e918829128efdc9afab5a7b57f7d6a6361c29e4b5af8:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$4chmnpapsxsff$6e49602b22b6cb5aab901530f632777cdbedec472cfb4f23eb4439a7c865bb88:1:0:Skipping and*::
+u2-krb5-18:$krb18$4chmnpapsxsff$903c5960bad0ed2c531f3558f18f19574bdb535ad2bfeee67b28dd9720a4e517:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$4chmnpapsxsff$18ada31d6e8fcec5a95a75dc63c4078d0149adc619d7d8de2c68330bbe0592ec:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$4chmnpapsxsff$d2f5d776c0c61b770d2f53fb3317c316a80d6313abbb3c743545a67d69dc89a8:4:0:bert*ernie::
+u5-krb5-18:$krb18$4chmnpapsxsff$a0a29dff297f78178ec1970bf25b49241197cd1394da8d6e563f73bcba8e0263:5:0:late*night::
+u6-krb5-18:$krb18$4chmnpapsxsff$6f67e632cac464dd671dcd7bea978f034b1b1f589aa73d42bbeaa97df0835b17:6:0:::
+u7-krb5-18:$krb18$4chmnpapsxsff$abce830341a0a67625bdbaaec8aac85df6623fa5379a0b1ba71c5c2c6d9fe719:7:0: ::
+u8-krb5-18:$krb18$4chmnpapsxsff$dca6b39460de14629f2cbaed7670b2e788b9767ab70af82a09ed42c502f68de4:8:0:1::
+u9-krb5-18:$krb18$4chmnpapsxsff$55c2a4a374530a39ec6a1f1c8856403316f5395bd5f573f72619e539a00468aa:9:0:password::
+u10-krb5-18:$krb18$4chmnpapsxsff$053f39baf520ed8561402db946b6b2a8cfddb6722354b999e1cb0faa7c81e393:10:0:test::
+u11-krb5-18:$krb18$4chmnpapsxsff$1de1fa0b990cb4d936a497bd49d18154785d40d80c69ec891bbe2d17a2e00896:11:0:late*niçhô::
+u12-krb5-18:$krb18$4chmnpapsxsff$75944a2428730462b9cc416a6a9c2ab3d767593ae093179d6de392f209954eea:12:0:hello::
+u13-krb5-18:$krb18$4chmnpapsxsff$6ae1cef6a3f7b6a3d4cfb12c255a81b5f821f8d962530d49be49afe78bc6bfc7:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$4chmnpapsxsff$d7b744bce0cef177e27373d5799f93c0a056d3539586fc5300ace35ea46e381e:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$4chmnpapsxsff$59f56a56d70551805b29eda2b2425f3b42883e17fd5234a7ab05cffac381fd5b:15:0:ttttttttttt::
+u16-krb5-18:$krb18$4chmnpapsxsff$20986dfa0da78a09884b8c7a3823ab864f2a7f25044a15be5f44a358c2824576:16:0:±::
+u17-krb5-18:$krb18$4chmnpapsxsff$44232b72e112fa9435583db679c50505d2090cad456da2e1fab3755bb45ccd43:17:0:pass÷ord::
+u18-krb5-18:$krb18$4chmnpapsxsff$849f57d73ef5908db93017aee7e917c482a4cdc8788dcfb5ee7e9b988deb4154:18:0:dffffffffffff::
+u19-krb5-18:$krb18$4chmnpapsxsff$5150171f48bb327cf532077797d06df8e0a465530fb8aafcf2388da44ca288ac:19:0:ôåst::
+u20-krb5-18:$krb18$4chmnpapsxsff$3f3dec540351bc6df29359bdfd1e9de1e2c9aa6306c341abc5d3d2880a074f99:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$4chmnpapsxsff$e84f864dd8a35d69432b3881f071f68f62bed163bb9ea5ef5011df7fc03d70b7:21:0:alsfdkja;::
+u22-krb5-18:$krb18$4chmnpapsxsff$745922d7a5d83d395c59093b5c282a5cb71ca7c4ae246c31c1bd9cddeb380766:22:0:qerwt::
+u23-krb5-18:$krb18$4chmnpapsxsff$64edcf01241ec9958750227e83106c95b2d98b6524b3b48a2f5dbf3f43b13241:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$4chmnpapsxsff$7a9158198f3d2d4db1b0805e8e63c6d5f62cf8636b49874895f0cb34a7f9b267:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$4chmnpapsxsff$692d21c0d92cbc701d8e332256b25723ffe4dacb02e393675b1744a3533fd21d:25:0:q÷årt12345::
+u26-krb5-18:$krb18$4chmnpapsxsff$c23a7d362122d562842de9bf70e3e86840c35eda22507398e914bdda4a528994:26:0:qwerty::
+u27-krb5-18:$krb18$4chmnpapsxsff$9b15f9ea03f6c323ef601a83a78c9cff898f2410a01e55a22a2454454f3be884:27:0:qwert12345::
+u28-krb5-18:$krb18$4chmnpapsxsff$669b5d11041744f8a335c6b7180952a33f33c401d3b25b3991c722bae35c6821:28:0:12345::
+u29-krb5-18:$krb18$4chmnpapsxsff$86147e330fccf36421950fbf51c52ef6d901a3cb6b591c53ccf87bee68b7cbff:29:0:12qw34er::
+u0-krb5-18:$krb18$5ahonpapsxsff$28da0936368594f22bcdc8938fc50b5f6002968d302184351842937710eb283e:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$5ahonpapsxsff$5b0fe987a0d83525d09fa358c55f75f8c7eff307e31ff860787a87efc13bb5c8:1:0:Skipping and*::
+u2-krb5-18:$krb18$5ahonpapsxsff$590061dc01d79bce9d8e8b895376eb8db31b8db12da8fa4f656d87c1d814e2b1:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$5ahonpapsxsff$f3e7b07de4d7394ca7de6a3c795f23a1a336c6ef38d5d7cef5a321b14b0a87f7:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$5ahonpapsxsff$82cf2e5ce4e0b6a7e3349a00ec7fa70df8506c71f9f6017e70ec74f72c244223:4:0:bert*ernie::
+u5-krb5-18:$krb18$5ahonpapsxsff$86588287860fa09e489e9bcbe3b6808ff12e398e99e20b0bee4aa8819d5a2bc1:5:0:late*night::
+u6-krb5-18:$krb18$5ahonpapsxsff$75d4e8acedaa7e0313eec670d670589389edd378b0731242d90458a7d45ead29:6:0:::
+u7-krb5-18:$krb18$5ahonpapsxsff$7300479ffae19c0e88dc087c6648e2074a2b98ac15abe5de04a1b1d3705d89c1:7:0: ::
+u8-krb5-18:$krb18$5ahonpapsxsff$cfed6266f0bc2fb43e14008781821d2356e0a0bc483a15e78737d6bfc1a42327:8:0:1::
+u9-krb5-18:$krb18$5ahonpapsxsff$4ae025440226ca2376d6dc19c0f6fef7f10b29f383681c2350f11635a1c3fec9:9:0:password::
+u10-krb5-18:$krb18$5ahonpapsxsff$dc4d738d3a60bb82ea19baa7cc026420ac4b73a6b5a5af9039bd802bf8d7ec08:10:0:test::
+u11-krb5-18:$krb18$5ahonpapsxsff$f0f0be78c1380bbe15513b22ee102da7a62cd119ae644baa01ed1d664ea723d1:11:0:late*niçhô::
+u12-krb5-18:$krb18$5ahonpapsxsff$317a410b3318e3e9306aa7316fef8a5ce46685e52694365b982c01ed3611afd4:12:0:hello::
+u13-krb5-18:$krb18$5ahonpapsxsff$4e5da15ca4e5c8c1dfb9ac2c2f2f61170c6c09f18632881654e6df1614884bae:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$5ahonpapsxsff$84af6560dc924e3eb36bed256f512ace96e3dbd26f07a111522f11df04bf6bb0:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$5ahonpapsxsff$16b2734e8c81ac7c597d1973fc2ffeea83d2e7327f0c4607b935bcc077819600:15:0:ttttttttttt::
+u16-krb5-18:$krb18$5ahonpapsxsff$2b9130b8e3905792ccbe33382e24aefd150a6f558d8666bab5ba6f8ee583120d:16:0:±::
+u17-krb5-18:$krb18$5ahonpapsxsff$0dfcb9db12a9bf76d4b922562450c63a50f4499468664e1b536dffe4f5f404f4:17:0:pass÷ord::
+u18-krb5-18:$krb18$5ahonpapsxsff$a83ce901a63eb652ce3e04e563065145fdbbda388bd345b118e5314d26ab0efb:18:0:dffffffffffff::
+u19-krb5-18:$krb18$5ahonpapsxsff$ea29dfaf9e79c898e9cd33396a681651f1178722681fac8a23f6b08473ae06b1:19:0:ôåst::
+u20-krb5-18:$krb18$5ahonpapsxsff$80f7e9fee2d4fbe1474907e1a7446b92d303cff0b4e879d3bc4c153e57d55bd8:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$5ahonpapsxsff$9bbe77799dc5a9b1299dff9a6c032ee1ee1089d2ac70d4fee50178f372679ffe:21:0:alsfdkja;::
+u22-krb5-18:$krb18$5ahonpapsxsff$c28387eedc6240af99f2d8ef5f4796277900ba96e7ef9347288bdf6632fd37d2:22:0:qerwt::
+u23-krb5-18:$krb18$5ahonpapsxsff$a4f81e8042a2ded9602b6b7d685e0c985b05386ad9acd1ce4e70ad974345915d:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$5ahonpapsxsff$cac63e71a953f7af3c80eb51536a92154da83def41ac5d0f9eea991c9a19ac52:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$5ahonpapsxsff$509157c24c01013be578791140290c00819582bb865f5e7f0052d75f05ef9ba3:25:0:q÷årt12345::
+u26-krb5-18:$krb18$5ahonpapsxsff$e39e7f26637caf73fa22e28532627268a6c762d30955d9f91d9fff677c00b280:26:0:qwerty::
+u27-krb5-18:$krb18$5ahonpapsxsff$b85e444a6d20cce21c57deb8e7fe241ab6cd0117ddeb8d2309d9fb63e44f19c2:27:0:qwert12345::
+u28-krb5-18:$krb18$5ahonpapsxsff$01eaf56c960950f0a85abd453b062a174f839e95f312d9a1e14d3343ba3e960e:28:0:12345::
+u29-krb5-18:$krb18$5ahonpapsxsff$662443e666c3b274e25096cf10e055174b6ff8ce17031f89fcc6d8de1f7323fe:29:0:12qw34er::
+u0-krb5-18:$krb18$6ghtnpapsxsff$a23eb3b131093a775bfa99ded46c9956c49d599e487a3db3b87491be01ea5102:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$6ghtnpapsxsff$4aec62be6ab81b397db50d2ab2d1e25467d3440e170c5d5f1d4868d318372302:1:0:Skipping and*::
+u2-krb5-18:$krb18$6ghtnpapsxsff$9f8d742d46e797f01774a28213e7e957acf9f7688ebf9cee81d1eac5254268c9:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$6ghtnpapsxsff$fbae7a1bf7e9cc5ca6cbaa8be42866ee3e698b0553923e309a53474bfafbdd3f:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$6ghtnpapsxsff$eda1a8b2332f333e9440c534d7241ff67f1f56834b73fbbf904794aced192294:4:0:bert*ernie::
+u5-krb5-18:$krb18$6ghtnpapsxsff$8602eb3f3fe141dfe2d24ddc3b6007311697ec7ebc960124f0ea551c606bf666:5:0:late*night::
+u6-krb5-18:$krb18$6ghtnpapsxsff$fbadb2bd26cf35f49da19ba921ef233a2407f861e280e9312ccfaba0bb16f71a:6:0:::
+u7-krb5-18:$krb18$6ghtnpapsxsff$5921b08476c05cf52ad618c5a3cf99e6e01b0482817cc1040b0ee06ece419913:7:0: ::
+u8-krb5-18:$krb18$6ghtnpapsxsff$651ba118507c12821de8821dcad9f119d4c7d0893e9709dd0dbb9b3dfffed374:8:0:1::
+u9-krb5-18:$krb18$6ghtnpapsxsff$b404b64d0b6d61dc8b3ef9b0483322a1ad0e47253d763e5851cf87a19150345e:9:0:password::
+u10-krb5-18:$krb18$6ghtnpapsxsff$a2a21a9d2e511f8cb914083b00494eea1bc24579fbb6e353314e4151a83260c4:10:0:test::
+u11-krb5-18:$krb18$6ghtnpapsxsff$1d9e9892b92fb9cbbee9b731df0b05743c89c61489130bcf62c21a932ea76e26:11:0:late*niçhô::
+u12-krb5-18:$krb18$6ghtnpapsxsff$ca326e7aaa67f957e840cc01167678a2766bcea6a2120c37d16601b339585378:12:0:hello::
+u13-krb5-18:$krb18$6ghtnpapsxsff$eb243cd6105fe49f6d52e917d285bc2520f890758da09f40775e48e2600a54fb:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$6ghtnpapsxsff$b7af6d93db25d171500adf73eeb63388bda84f93302f3683bf22955c4fce49d5:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$6ghtnpapsxsff$59ec16b42b876aa08cfc31ad4b38f802912dd5b1cb472345c948b572c7f5e451:15:0:ttttttttttt::
+u16-krb5-18:$krb18$6ghtnpapsxsff$8fa5052b2dcfbaa8998bcff5d0bc7096a53a827c5a3aaabd37481998e966f774:16:0:±::
+u17-krb5-18:$krb18$6ghtnpapsxsff$65aaeaf837022b3165141592fb085fab711399c923231de6f2cf4cbd46d734d3:17:0:pass÷ord::
+u18-krb5-18:$krb18$6ghtnpapsxsff$991a8ca4d6c6dc32d46e215aacd4c52df016264c596498264fc47da756a4547c:18:0:dffffffffffff::
+u19-krb5-18:$krb18$6ghtnpapsxsff$325c717a15a00857fb94577a1acc52d7f34674d05182433fa09d0c64b5bb13ac:19:0:ôåst::
+u20-krb5-18:$krb18$6ghtnpapsxsff$9d51e6341748f97b02c5b8cd63d8ba48a7434fa2b9803212e7aca71877dafc86:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$6ghtnpapsxsff$42e9499bd5e5dc741c33894e0969c7cee48b255260c8d555b001d803cca2a22d:21:0:alsfdkja;::
+u22-krb5-18:$krb18$6ghtnpapsxsff$7896a9ec3e75753ea9771789870cdc55ade9f0e428634889f3d2d329faf97263:22:0:qerwt::
+u23-krb5-18:$krb18$6ghtnpapsxsff$ab356b845f5e6ced43a48ae8cc2d367e93ac0d92a234d874aefdd4bb2a7c71a0:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$6ghtnpapsxsff$f4a378d080c5b819f4121f11167e493c9b3f1c19329a1747fbbaef555f201cda:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$6ghtnpapsxsff$bb643fd0dd93e9f952e026d6e5d940c63532ae5e5e4f1009c206e9f29f475bf7:25:0:q÷årt12345::
+u26-krb5-18:$krb18$6ghtnpapsxsff$fcc9560dd4d3a7cdfd5dda8bc190a61f7fdedb63a0904c653d075a0be3101d5f:26:0:qwerty::
+u27-krb5-18:$krb18$6ghtnpapsxsff$5438f6b34f95c46047c0c3cefab89cb8711d7ace27aaa195962b1238689a1f7c:27:0:qwert12345::
+u28-krb5-18:$krb18$6ghtnpapsxsff$0bd3ac0c182d0e9284a652139a8985c343736699f65c563f377194282b56c03a:28:0:12345::
+u29-krb5-18:$krb18$6ghtnpapsxsff$0f2c3a6bbf33e5b0df1ccfb60b94177eceeaf0e624ccc1a921903c5ea2edb71b:29:0:12qw34er::
+u0-krb5-18:$krb18$0sjklsdfldsff$b4a4716db356b730f4c39bb55f1b72e7cb7033e7f2399b6ec4e4cb925184fa9e:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0sjklsdfldsff$8d1fe64cd9e59393c5a0e7f9db73ef68eaad25077ef621820b1404a9a19d5393:1:0:Skipping and*::
+u2-krb5-18:$krb18$0sjklsdfldsff$518f547351905d19a04b0109a26c90e5f7739db5824391aea07f76c1b4853500:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0sjklsdfldsff$69571d9569f4d853348fc6acd8fce13f42d786ce2f4036b8d89fa526ff7795c5:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0sjklsdfldsff$e6775fea2a3a15030fd63d28d8170a712f4247c48bcf68d573eb4509b7d9e532:4:0:bert*ernie::
+u5-krb5-18:$krb18$0sjklsdfldsff$822c6f85918a99c8ac02b2d809645231a13855dad6a329735872030692c0621a:5:0:late*night::
+u6-krb5-18:$krb18$0sjklsdfldsff$84a59b7a066d404cad3d00d7283d0985d00c29f67515eba67a5a9c7497c14b2e:6:0:::
+u7-krb5-18:$krb18$0sjklsdfldsff$b872f7257810281b01ff70f557589142e5fb046030cc7ce2d67dd3dc422d0090:7:0: ::
+u8-krb5-18:$krb18$0sjklsdfldsff$17f0ab37b5f3653860af9b69f1757f6addfbadf36793adddb8a2b4d33e738532:8:0:1::
+u9-krb5-18:$krb18$0sjklsdfldsff$871666d5ed8b4ef14fe550df73fa209e2f99eead3b79c9f70d216e6d3422ed6b:9:0:password::
+u10-krb5-18:$krb18$0sjklsdfldsff$36a1c303fdda4d7af09fcc1f69040b3f8a36118fca8703a2331e5b8f3a589f07:10:0:test::
+u11-krb5-18:$krb18$0sjklsdfldsff$e16361fe1f0845227c9278048679f7344508331e783c2858e5538dc6263d00c9:11:0:late*niçhô::
+u12-krb5-18:$krb18$0sjklsdfldsff$f90bb92ee1c61a1203560fd41295ea8e5b50d647d9ce5ebf08b758d2cb6ca2b7:12:0:hello::
+u13-krb5-18:$krb18$0sjklsdfldsff$8013f6227e95dfdb1046566f868edfcc45933c3af1fa0300093e70c9f67db651:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0sjklsdfldsff$a91cf95f16157206cf42c4092a2aee459df750b7fca019141de1710604f7de50:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0sjklsdfldsff$6c5990bebae6dea08b98327fba09ace90663bbd789e0f9d5b86a4ce5aec93cb9:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0sjklsdfldsff$63f130f816c61ee3163f82c226826ab96c518c7711c227232e14ddb6667658e4:16:0:±::
+u17-krb5-18:$krb18$0sjklsdfldsff$902a9cada180591387a23b21109bc6dad4fb5a5dd0a9978d668c415f64b8772b:17:0:pass÷ord::
+u18-krb5-18:$krb18$0sjklsdfldsff$2d67bd8e5a6900eb3c364648a2a5d13b6f7388b0335794b230ec6fd8795c1ff4:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0sjklsdfldsff$76f801384a4f8b1873a652c3039e5cf6cad8b2edc5514f9e6b73308b7ce807d1:19:0:ôåst::
+u20-krb5-18:$krb18$0sjklsdfldsff$a3ab86787df630e5de6ebc78c9d21bb8983de98e189cf6f370a646710f826fff:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0sjklsdfldsff$773938e9b33035905fa67a27bc889e934b2018fcd33c0a7e790273660f30b63d:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0sjklsdfldsff$b0fabde4a41225c0fa4c8671c5f31b53398391526c558ff902741d6037ea29b1:22:0:qerwt::
+u23-krb5-18:$krb18$0sjklsdfldsff$2440fdbc29f9592d83460f1fbf9f0e06a6c03176c6fe2ec91fc26fedd9a0324a:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0sjklsdfldsff$39606da84b9983dd04c69181a2a8795a31731ea5789da5261422c9519ea45b3b:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0sjklsdfldsff$3db2e54779767105c7a8676c836f5fb646b2c52593da754ce642b5ce741b2cc5:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0sjklsdfldsff$65768f5955d2df1b5face17ea98d77790d66c731a383e18426bbf2ba5d084a0c:26:0:qwerty::
+u27-krb5-18:$krb18$0sjklsdfldsff$d283bcb0eef8c5b242c9d29b734def8d014dd8fa748d271d8a3f98a6fca18325:27:0:qwert12345::
+u28-krb5-18:$krb18$0sjklsdfldsff$2c86160ea0f616259b093ee1a9ce702286dd8e3a0254a81271af5d87c12be46a:28:0:12345::
+u29-krb5-18:$krb18$0sjklsdfldsff$8727985ae631715a943fb0ebd5fb42f68ff5757d7abb092006395cc6001cf7af:29:0:12qw34er::
+u0-krb5-18:$krb18$0rltafldsff$8df13283aece951770fb4a85611211d91653fbd2738f1d48bb64e763862464bc:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0rltafldsff$fba8d05e7b8bacfa093eaab23a4b6b1e00fe39e9a960f689b0b31e78ce9c37ac:1:0:Skipping and*::
+u2-krb5-18:$krb18$0rltafldsff$f4f9fa749b76e51f9e9aab22f01a81e534cb72d639b03dc193302c1d51169231:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0rltafldsff$98bda1f6216c2aac2558fdd01e902dabef95f0670efc2a9e6a4c1a5e3bb80868:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0rltafldsff$8e6136cdded0201d586c96cbf37e9bf23f7de33d56b770d66e38621701a6527c:4:0:bert*ernie::
+u5-krb5-18:$krb18$0rltafldsff$fac261066731a44d88fb08e31badf936cf293d346efda5c9206a129d3b8b4ba1:5:0:late*night::
+u6-krb5-18:$krb18$0rltafldsff$cd597731af455ee25befde2b2bea94971d17a316233a027343b6b787c47a6317:6:0:::
+u7-krb5-18:$krb18$0rltafldsff$6d011125e168410a8fe5950fc15ef40faf269c4a43441faac5b7f52dcb31cb6b:7:0: ::
+u8-krb5-18:$krb18$0rltafldsff$7706c31ddf4ffaa5c666183f49bac53bec7e62fbb77084962dbb7ed039bf0cb2:8:0:1::
+u9-krb5-18:$krb18$0rltafldsff$01bef4931eb3da02ab1aa5b0abac850910689f3faa019f2d0dcbc60ca929d150:9:0:password::
+u10-krb5-18:$krb18$0rltafldsff$5a2dbbdad262b05183652da1d117c1dc2857b4e82d21488bc29a4396fc5add7f:10:0:test::
+u11-krb5-18:$krb18$0rltafldsff$aa5f9e4cf814c288329af7a97cbd04bbb424b1b885b350c04e0c15c19e5f2e0b:11:0:late*niçhô::
+u12-krb5-18:$krb18$0rltafldsff$2fc2fa631f33b3bf383a9240975185714e2219841ca3b45fb22c6ad578139229:12:0:hello::
+u13-krb5-18:$krb18$0rltafldsff$adc9d8df85b78303db88211faa232f2629860941f96fd01b4d827f2d1d9ea8b6:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0rltafldsff$e7f22835adcf4fda839d4c4b9ada95d88e4ff789f8947f3b0105bae63f3315c4:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0rltafldsff$ea835dc1e9f84ba7cf2d50e93015766444a2e92cdf532fc93a3b6db45d0ad09a:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0rltafldsff$2902eebb404af1aaa4a5b0d802d367991b9b41730e6071a0c9416bbbc6abcf33:16:0:±::
+u17-krb5-18:$krb18$0rltafldsff$cece0d2ab161b84556f5e3179b31a4e0fe61d221157511355fd052c75bdec066:17:0:pass÷ord::
+u18-krb5-18:$krb18$0rltafldsff$eab43aeff8006ce34e5446118892c61f8ec1dd87b1092482890ad6db122b38a1:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0rltafldsff$ba0b537bdf6ffa9143c8534e01db01dc3838b829fb067b50e18b16b96358b436:19:0:ôåst::
+u20-krb5-18:$krb18$0rltafldsff$634f40a3e6ddad9bec95b25fc0268c6bb9bb210bbc7d27cf245a8fb895d996ee:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0rltafldsff$11c293c48a3aced1b9d48f8609eeef63adafe3122286cfa2a45e021d172d5705:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0rltafldsff$e5ec36af0a6e67f713e798673dd734aa06a7c7b9ff14d37855711595caae1cb1:22:0:qerwt::
+u23-krb5-18:$krb18$0rltafldsff$ef8643c80c06becdb9f0a1909cced677fb6cc2fc30d8a34b4ccbae96825fb25a:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0rltafldsff$bcbfde94d3f04efae515a263460f476800186384688751a2ed1cc81a156cf634:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0rltafldsff$67b3df50793993f31b7cc7d23139b74ebd7cd4a897665f708f04712a5502b423:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0rltafldsff$e747caa3c590e309db9598869928346f96d027df0fcf9aecddb31d5093ae8209:26:0:qwerty::
+u27-krb5-18:$krb18$0rltafldsff$2d858d69f07c47b7f908a69ffdaaa19161472314a81a07acf5d27912644010f6:27:0:qwert12345::
+u28-krb5-18:$krb18$0rltafldsff$17689e8b36d44073a06a227e64bfba5389131c135370654c81b904506ae9e779:28:0:12345::
+u29-krb5-18:$krb18$0rltafldsff$09cedef25fb08454d023cd3d1a2f69caa5262e57595f401d739f5a281d7052ad:29:0:12qw34er::
+u0-krb5-18:$krb18$0biimafsff$a9f8bac297373acccf6af4ff4e4ad3cad3b6605466ba218bfee4ba99d7ec3c63:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0biimafsff$d7d7b8eb6809fbf7d5d0337304d0e2a607758ef9bcf7ad15b69ee7aa2fa1d8d3:1:0:Skipping and*::
+u2-krb5-18:$krb18$0biimafsff$7e6e6cc1bf8a9aecf7c51e5294ecebd5b68950d58f18602a03830b10742fc6b1:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0biimafsff$594d0122d7385eb5454541a4390cb20c89879cbfbc20ac26f5786520a9a2987e:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0biimafsff$60643d39780e672f4cc53ab314d52744030e1b2159c8258448dcc720f751339a:4:0:bert*ernie::
+u5-krb5-18:$krb18$0biimafsff$b3967c812a2cd03a663dc3e6ce628e7a14e20c167c1ae72d07685ff685b0b1bd:5:0:late*night::
+u6-krb5-18:$krb18$0biimafsff$4ea42ea64398a36e21118e0c6cf8d97861e86d04f4343eec08699f9ec3b97b30:6:0:::
+u7-krb5-18:$krb18$0biimafsff$63c73b6f3cea3cb3827fbe592ee4512ae8489a353f45cab22dc79fd036cf6151:7:0: ::
+u8-krb5-18:$krb18$0biimafsff$d1251eac9377bb756381a3f28f1b9d77255e1bdc14e135372ee46de5999bfce3:8:0:1::
+u9-krb5-18:$krb18$0biimafsff$b7dbc3bd463c2447ab987abdb3689690aa653937a920f24c13d6b640ad65a99a:9:0:password::
+u10-krb5-18:$krb18$0biimafsff$36f26736f85f911419b2d70a322165788d7ee7203d868a1ca285473cc3d86fe5:10:0:test::
+u11-krb5-18:$krb18$0biimafsff$99b7dae77433f37ab1960a8ad20f3c965867c4abef96e13236e5d8b26d7ae8b2:11:0:late*niçhô::
+u12-krb5-18:$krb18$0biimafsff$98975898a83f2bf1232d61b55d9d4025b324da347776ac368fa55d2404945ff1:12:0:hello::
+u13-krb5-18:$krb18$0biimafsff$186dd414e7bc5e17d5e5a78a5f19adb9fcce20f9890d56e0baca49edce1d984f:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0biimafsff$041e3ab558c5ad304c611ece63e9feb495209146531268302c8b8f6b2f2fa27d:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0biimafsff$6593de373af6e53ece0925e70e0cd119c2f5aebdf9f5ea4cf8ee366a9e3931da:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0biimafsff$26fb825bac6c3fad8aebfbd5c40523567458d95112262d68ea7a9489c650de11:16:0:±::
+u17-krb5-18:$krb18$0biimafsff$88a48082982580dd431e43f12f58be052d6125b9d79ec5c94efd48b77e26242c:17:0:pass÷ord::
+u18-krb5-18:$krb18$0biimafsff$fbe3b79f6de9d8cf1182a02f62d1a52ba1889d5605b68310ac93670a11045be1:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0biimafsff$e0fb3a773c9b8b18a82ffb54ec8c7da8ec59ef812497bc6e97ee9fb2e826c388:19:0:ôåst::
+u20-krb5-18:$krb18$0biimafsff$e4417764ad7b4d52a41ea7a94c09cb075e90c1734308140d8e1b8c7e4d2481bf:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0biimafsff$7b64616f3fb55193f5beecca42adb843b75a77b46b0fea4e46a238cc753bb0e5:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0biimafsff$01920a89a449b994cd27850fe5576c91da96acc8e6ad9d2aab3ce170157c4fa6:22:0:qerwt::
+u23-krb5-18:$krb18$0biimafsff$a31a8e7233cf77e16c52f6339e2528a015b4fb0243fbff6cf53b5e698f662544:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0biimafsff$93a34fb074ddbc6a81ec024daeb1939e27883da8d4e1549aec6d1d90d83f60f3:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0biimafsff$0edeeb0238cb3d88585b06ec01efa65273d7a625bca32abe903e456dfa39b6f1:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0biimafsff$dc86c9efcb65c394bcf15c61f83e7ccfdcbc5f5e480769cde030def86b9655b5:26:0:qwerty::
+u27-krb5-18:$krb18$0biimafsff$90a4fbbc41718104e2070a466e9bb607296c519bf0d6092ee9fe1d1dcfe7a65a:27:0:qwert12345::
+u28-krb5-18:$krb18$0biimafsff$b8c5dc5dbda89d109659616d754cd540183596bc939f66cff70edb60c0998fd6:28:0:12345::
+u29-krb5-18:$krb18$0biimafsff$fb3df88f6fffa8af8a0ce12affd42b60847ead29c962d678536a3b50b48ca436:29:0:12qw34er::
+u0-krb5-18:$krb18$0bhanpapsxsff$8060c9b718b077b526956eb9c702b7b446385c440bd0023db342b5684181d954:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0bhanpapsxsff$b16ccdbd49e28390ee65b49e300b05d71781258b1f5d991fbe9d13fbed160e36:1:0:Skipping and*::
+u2-krb5-18:$krb18$0bhanpapsxsff$2021b42df9f81366141092dc5f8cf2224586e912ed7a79e9f6e11d8b38140a23:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0bhanpapsxsff$7f88d2ce039aafd7005f1e35f4b34275dc277a6733d4cfe801b00ea163567857:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0bhanpapsxsff$86868b835ef88aae6b4fe28bf9227e09ea14f9d0614350ba694adbae8a778856:4:0:bert*ernie::
+u5-krb5-18:$krb18$0bhanpapsxsff$c80f8426d889470f9d86617046b6f5a105567ad84a60f61bcabdb766092b7c54:5:0:late*night::
+u6-krb5-18:$krb18$0bhanpapsxsff$35b2157765499ce7cb3c67f1d415cc2453cf35226fd7289f6dcca8078f388511:6:0:::
+u7-krb5-18:$krb18$0bhanpapsxsff$179bf08c6ac7169d57ee57730e8738ebe5b0bbc2c6703b2355cdf84522444851:7:0: ::
+u8-krb5-18:$krb18$0bhanpapsxsff$00e0d30efa059d14a6e15259f71003eaeecb1cf379345a6e0c08554d916e588c:8:0:1::
+u9-krb5-18:$krb18$0bhanpapsxsff$e7216ff4e4040d7f3508421a3dcf065ae7868e71ed66bd61445add682646096f:9:0:password::
+u10-krb5-18:$krb18$0bhanpapsxsff$261e24d43ace4a1a2685b8a662778d19a7e108b5900b4082d995ba40d6d00c46:10:0:test::
+u11-krb5-18:$krb18$0bhanpapsxsff$eb8650fceb6caf09785a369f897d5d16fa5f2e17133cbe8956fa93cd064220fd:11:0:late*niçhô::
+u12-krb5-18:$krb18$0bhanpapsxsff$681d5b948cfc055b1cbd43abce112f4e16dc85a728aabb8efd7f5e60cf3080da:12:0:hello::
+u13-krb5-18:$krb18$0bhanpapsxsff$5cbd6fdd969ed88bc1a393413056e3b900b322cae15f3a8bcf1ce5c4328b1fdb:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0bhanpapsxsff$4971562fc066ca243efdf0139fdd84b0c196b778a51bdbbfa8a490be322e3b1e:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0bhanpapsxsff$3e41428f973a78f86004d122f4dd60313d58aa1ab8aa2333b6bb9c173f264844:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0bhanpapsxsff$be6c05cbb254048c5a4a73f077ba679fe9d146419d60f63b6c6ac4f03cedea39:16:0:±::
+u17-krb5-18:$krb18$0bhanpapsxsff$08ca254119da5021515b4e1929b5ad850a0f0d1259cf52638678d24e7136bc7a:17:0:pass÷ord::
+u18-krb5-18:$krb18$0bhanpapsxsff$1805bb4abeaebe67024e25319f5a2387b60f6ff0556fbc332744c207d19484ac:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0bhanpapsxsff$898e28b4ee802c289bc689ce71153100f039475b4ead951a6ea6313d452a5fbc:19:0:ôåst::
+u20-krb5-18:$krb18$0bhanpapsxsff$bafb5b2977b8a144e144941d796ffccf7ad2e0dbfae29e559f66392a5f8c49f9:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0bhanpapsxsff$33988bbbf6eeb8bf21c0231cb80940310c647f88de8356b10a916742d714b7ec:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0bhanpapsxsff$1f63ffeddafc6b205fa56c651e48b09aa2f2cbf4359c36cd95e9d0d3e503bcbc:22:0:qerwt::
+u23-krb5-18:$krb18$0bhanpapsxsff$2b95f4028a116d49fa16cc6c16f48606174998dbeb272c4d9d4f2bd8e54c77c8:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0bhanpapsxsff$ce257f2042e01f6f977989937f2f50ea0098070adfe55acf4cb81335907b69b8:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0bhanpapsxsff$c028f914215b17655a8f6436b4195d21685762aa783c267da18a17612a745a31:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0bhanpapsxsff$39bc3e5437a62a62c686146e7a3f403f0972766b8007e784cabbbb641ebaff0c:26:0:qwerty::
+u27-krb5-18:$krb18$0bhanpapsxsff$53fe12104709c5b3b7518a80558ef604473021ce39809023d9f69fc51b8fd7ac:27:0:qwert12345::
+u28-krb5-18:$krb18$0bhanpapsxsff$7451c1404c50bab92a7aed4108bb96637fb1017cf86904dca91a5eb373e9d2d5:28:0:12345::
+u29-krb5-18:$krb18$0bhanpapsxsff$bbee579dde07d5612d70ba3ad8ed902da3f6f599a6436a242a074d49b58d718f:29:0:12qw34er::
+u0-krb5-18:$krb18$0tjanpapsxsff$2d56df76f74c0daacf442237ca0c9ebbf5de98fcc9d18c8d1b28bda541bff1a2:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0tjanpapsxsff$490cf8f31d46d32438db7a76a307639ee6f048c59e7484033726c499497e3487:1:0:Skipping and*::
+u2-krb5-18:$krb18$0tjanpapsxsff$c140061b0e8a4be324cac6c59ce02ff56e6565bd5321cfb6bdf4cfb3fcbb10b1:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0tjanpapsxsff$f9e3c5ec087f42cae583dea8ccee061c72bc3db0dc0b4f410d5fd2983c06c02e:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0tjanpapsxsff$a6afcc4eb9695ac41f70c75f08fa152111326e881deb14535ee7c7d553546f6e:4:0:bert*ernie::
+u5-krb5-18:$krb18$0tjanpapsxsff$594ac99bfab846a2fe966916dc9c567e2d64590cbc45ff8c21943b487e559f17:5:0:late*night::
+u6-krb5-18:$krb18$0tjanpapsxsff$eaf61611a9f157a5df58755cec7a0b6f5fbbc0ca3719fb1f32c954b79b788c87:6:0:::
+u7-krb5-18:$krb18$0tjanpapsxsff$138edf1376330cd76a2dd8e367d35f9cd5f0f364ac095bf4cf37ae4f9e698c0d:7:0: ::
+u8-krb5-18:$krb18$0tjanpapsxsff$2b88727cd5d2e15c64b34f7f15f5d330ba6915f7c7f145c7fa4b8733bbe3354e:8:0:1::
+u9-krb5-18:$krb18$0tjanpapsxsff$6f6dce270252bb99af877610ba9190e8b260470a3e6a76f4359dcc19e1b1b718:9:0:password::
+u10-krb5-18:$krb18$0tjanpapsxsff$3dc09cc8cd3ce44a674728b2fdd6ec56b25846bce979e19ecc369bd148a826fc:10:0:test::
+u11-krb5-18:$krb18$0tjanpapsxsff$b9bebe26dcb15c697a6c6d171981d6291df4490c1ced5d3f6de1f36fb5705e4d:11:0:late*niçhô::
+u12-krb5-18:$krb18$0tjanpapsxsff$46ea392f05a013b3e97ccfdd3a5edfb0a81777fe2f8015fb2056843cfa1ebb52:12:0:hello::
+u13-krb5-18:$krb18$0tjanpapsxsff$16406acab3a5fffb17611ea3f210ee5f00eed5f02fa7913cca86bd9ecee65d38:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0tjanpapsxsff$de8367f38e0b4889a78c81daeb28aa4e9e9f7223aed96da49147867aee706285:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0tjanpapsxsff$c9e8375d5abf5d58ae085b92547bd67d94216953fa502ccf04d376aa2e176854:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0tjanpapsxsff$9c68d4cd20692b1942ea72d3db6e655d4304942aadc1c9f12e23db6d66479ada:16:0:±::
+u17-krb5-18:$krb18$0tjanpapsxsff$06cb2b733284184c99c6a3c70b4b7277fa11f608d4e6cd7167210c8fd08d96a0:17:0:pass÷ord::
+u18-krb5-18:$krb18$0tjanpapsxsff$c3c0e19beb643313f26f4787d3cef62edd66594b2687ebe1fa7db020bd0bd3d0:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0tjanpapsxsff$1237538f1c75726661d0d30ba7ad33898e6499eb20d684fe73175499e1e73831:19:0:ôåst::
+u20-krb5-18:$krb18$0tjanpapsxsff$3ead3c8e2b37322999154d120bf464178b5057cc8c6e9b7c20b4e5189cd7ff6b:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0tjanpapsxsff$8f591d1c7ce85d85fcbe728c73b615804e13ccca030b840dde77ad0d6c891ac3:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0tjanpapsxsff$494315d3aff915b33e9ddda5401e50e21a666a602f6463b3f28e5681e36e27b9:22:0:qerwt::
+u23-krb5-18:$krb18$0tjanpapsxsff$b6ec73f30c5c972c8ef03643e059a168cd66cebdab1e1999d241fe15ec48c84f:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0tjanpapsxsff$3be28869df76767b4063952155cafc4430cf81b5f9dd1277728b7153b912ed03:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0tjanpapsxsff$f46ead8dc3a049f174bb61def6e65043dff0085cfa964db03803443547df8ff3:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0tjanpapsxsff$e24f16eed567bceb90107e98c47b73b5692481afa01be9a8f952d90fc2fa6e80:26:0:qwerty::
+u27-krb5-18:$krb18$0tjanpapsxsff$fc7311651b7e505eba877b40c67b8c0a1058ad99bec3fd7201d393583f6eb724:27:0:qwert12345::
+u28-krb5-18:$krb18$0tjanpapsxsff$3a3250d35a3e4aff1e810bae98f4151c2d0b5e4381ee342c425f9d4d9ad0df1c:28:0:12345::
+u29-krb5-18:$krb18$0tjanpapsxsff$c848ec06da676a44af8fa26f8b6e97bc5626cff24c74df9a054347565bbe8063:29:0:12qw34er::
+u0-krb5-18:$krb18$0rianpapsxsff$0ed094517557ffc1ffcc6d212115dbe79278aa970cd2431f7753f4d361cb5002:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0rianpapsxsff$8b53c48501f73b12974f0692782294d477d848162c6f916255860466d616d832:1:0:Skipping and*::
+u2-krb5-18:$krb18$0rianpapsxsff$c07672ac911110f41d1edcd1d93f5c9cc3e9e5fc451a39df57659d8f7e9dc21a:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0rianpapsxsff$5a5d634f3e14e3fd074d4de54217bda873635edfd7ef532fb278f12a3147a55e:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0rianpapsxsff$d743cc618ef313f5ee5e12eb21133d6b30ff52600e2ee2eaabb44ae16d54f4ac:4:0:bert*ernie::
+u5-krb5-18:$krb18$0rianpapsxsff$9752487efbd862702263309fb2757284af8d7ae1c8572b520fb4c85da68e41de:5:0:late*night::
+u6-krb5-18:$krb18$0rianpapsxsff$2f4d00dcb2cd186c06cb850f2b0926ea2da7d815337985146e8318a8d42e8817:6:0:::
+u7-krb5-18:$krb18$0rianpapsxsff$bcd2099d49272f2dc187df46859c6b780277c33f2af234e822ebe2ebfb1eb548:7:0: ::
+u8-krb5-18:$krb18$0rianpapsxsff$69e4af63500d0c86841343406b283f477b7f6ef198c30993c17b2f678ea9d30b:8:0:1::
+u9-krb5-18:$krb18$0rianpapsxsff$a036a7cd9eb5e6d33bc7dc884456620f0b7f146d56a336c0a0445c3b7a07239a:9:0:password::
+u10-krb5-18:$krb18$0rianpapsxsff$d7a6a87975c59a396bb9238833d3560fa4a2fd8652ff9b81fd204282cc7f5e38:10:0:test::
+u11-krb5-18:$krb18$0rianpapsxsff$8f9c0a33f32612b73dce37c53d44ab720b206ecab6393a0a575f92453c2969a4:11:0:late*niçhô::
+u12-krb5-18:$krb18$0rianpapsxsff$abbbf07fe9105fa618496a8abb3517a9be8565f5b1039d0647d5051700619f5d:12:0:hello::
+u13-krb5-18:$krb18$0rianpapsxsff$d86f18747c4fdd99bcf53dc2e61bd0280a1861f89bdef8581035db41a27ef047:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0rianpapsxsff$796bd63dc2c566dd9bf096044efd1e35229abdddb9ef315ba01fc755ec84bfb4:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0rianpapsxsff$96804f236a350cbbbb1a01a48753bc20e8df2d6e49162af894fec69f2794e21c:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0rianpapsxsff$f36e0cf4a0ceedddbcf769d8500cad566f8e3716ef7c6529693cbaeafcd879a9:16:0:±::
+u17-krb5-18:$krb18$0rianpapsxsff$cdec69a982e2d9d97511d8a9081d4fdf2dde536e6f959e763271cc88ebf8ba5a:17:0:pass÷ord::
+u18-krb5-18:$krb18$0rianpapsxsff$c9762b764554339e5ea5db320de4671fef278db314fc4a4d90a7e8e404fcafe6:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0rianpapsxsff$804acbc7e9530001bf8359e98fb2e6f6539d0c42f37ea8939a7ce933613fc6e8:19:0:ôåst::
+u20-krb5-18:$krb18$0rianpapsxsff$0e20f544565176ef0c0f7ca83e74a27f914d0a95711fea97efb2e16c1437488d:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0rianpapsxsff$2ec99017311af9e2d52f8680fa99110a51a0994954264272555ad3768376745d:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0rianpapsxsff$fc7969ce53656ed6ba7ff0d33695d9977997ebd82e7fbbc231fa819750ec3d52:22:0:qerwt::
+u23-krb5-18:$krb18$0rianpapsxsff$8adea7f5ffb7487832d9331f2b89d787a3754f2ab74140207b3c2cea8c6e7e16:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0rianpapsxsff$7bb2a2c060e67f0c18302dd0869cfe0c098c348c559d9f616d190d1780508e49:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0rianpapsxsff$ee76e437429b5264ff1aad38e287451e5bed46902f2b44815e29126aacfa698b:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0rianpapsxsff$8c3b7803352ee7116cf69fbb82750c4af869ad004526e8993eb952a65f81b236:26:0:qwerty::
+u27-krb5-18:$krb18$0rianpapsxsff$17cb30bf459692bd1bea171e1038162af671f5633753cd5e06f7b1d1e37de77b:27:0:qwert12345::
+u28-krb5-18:$krb18$0rianpapsxsff$c656826fd53acaada362b864c9aee38162a2c83f06282119f9cf367025fea0e3:28:0:12345::
+u29-krb5-18:$krb18$0rianpapsxsff$cc1ea487c484feb49120b2fb03985476471c7cdcb5a030512f03e1c1b698d054:29:0:12qw34er::
+u0-krb5-18:$krb18$0jkanpapsxsff$9f9c79756470212a17043d18d15d884457a31f422844e97eb9d13e0ee4401945:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0jkanpapsxsff$b94c6a36a17571af15edab39c3f49bffc3c3ce376fbdb729e5e03505ff1bef3b:1:0:Skipping and*::
+u2-krb5-18:$krb18$0jkanpapsxsff$a74e2a56c2ede2044ffdae5bba000f7a42e3fd5a0acb2b4099a1981577a25384:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0jkanpapsxsff$683b302c03f84576c2e118bb3df598873153082d34807a0f1023132910dad904:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0jkanpapsxsff$c228dae1b1a16bd212949017b2dbc6db38b9360814316616e6e9d3f7f947f3d8:4:0:bert*ernie::
+u5-krb5-18:$krb18$0jkanpapsxsff$598434018d1e37104fb2969af0891bb98a8a2795d3ea09d800441a734cc1e605:5:0:late*night::
+u6-krb5-18:$krb18$0jkanpapsxsff$7753cedc5a7f73541fddbbcf0fd1bc7fb5ffa8fb0fcb7936ecd29b6a0ee1fb63:6:0:::
+u7-krb5-18:$krb18$0jkanpapsxsff$b6e8c9a3a9f82973ccabea06c856fbf20626c333a8ac9a57a2b18bebe56c8d5a:7:0: ::
+u8-krb5-18:$krb18$0jkanpapsxsff$8fa0c38b0da67320dec02240e9fb3e91e36f87c1d7517c8d63046bde801e00d8:8:0:1::
+u9-krb5-18:$krb18$0jkanpapsxsff$b82d20932cc8f0add9c2f2708c5a6759d42922b78ee22f5f5f3434c87dd107ae:9:0:password::
+u10-krb5-18:$krb18$0jkanpapsxsff$885b4d948d7621778728ca455f7b1e25531f0bb71604491d77f73d1ff01dda10:10:0:test::
+u11-krb5-18:$krb18$0jkanpapsxsff$9ef1bb821c87a07049210e56da8121decaebca7a794fb778ddecf0e7b184d5e4:11:0:late*niçhô::
+u12-krb5-18:$krb18$0jkanpapsxsff$d9c40d214049e32624ca2347b44139e60bb9a6c81929bb3690bc0183f07f474c:12:0:hello::
+u13-krb5-18:$krb18$0jkanpapsxsff$baa1393f31c72c47086c28aa22fca7e80054f7e37c6ba40f92269f7c2de43960:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0jkanpapsxsff$9e7714476ea54fc44cb4029c703021b0134f3f7750bfbafe033c623251405b30:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0jkanpapsxsff$76faca03e7db4edf383bccedba8624cb49f3f010c1ae296af7dca93a4ade02f7:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0jkanpapsxsff$07cdc917605f4e82d6fa08320a24ac34e3a824d44021858c947468deaa340178:16:0:±::
+u17-krb5-18:$krb18$0jkanpapsxsff$486962ded8193165551199a7669c577914ff18d05f5cd21b53a3fec005f11ebc:17:0:pass÷ord::
+u18-krb5-18:$krb18$0jkanpapsxsff$72e50c6f95a214ce0042ac697ca76f99190308306fd3726a2fb5ab48d0a70aff:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0jkanpapsxsff$dc5f050a5117598c830be5715ac1dcb96cede4dd097bd2939af8029c875069d9:19:0:ôåst::
+u20-krb5-18:$krb18$0jkanpapsxsff$dd44090a6be0de4f619a062206569b5d25977fa97ef9ef200968e492152df1ef:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0jkanpapsxsff$fd2b6fdbb475d49ed7606b28e77538799ec232df41dd750ac59c02a635beb450:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0jkanpapsxsff$3505df0d1a576927bc7d5083c072437e67f12bba29eb82e961699d1c783ceaac:22:0:qerwt::
+u23-krb5-18:$krb18$0jkanpapsxsff$307b82db1159b87af430c3ef94404a3f25144778956b62cd4fcde8d1ae2b41ff:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0jkanpapsxsff$0b7777c083f58996133139bc063d1713c6e807e9795a7292682d7949334a0f4d:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0jkanpapsxsff$5330bebee1cc0f58455bae8ce32cd511861e8a37376960e3eddd34910780f833:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0jkanpapsxsff$1301e3b1d56ec5af2098722fc4aae0bee6610ae2116a9678724011a5d6bead99:26:0:qwerty::
+u27-krb5-18:$krb18$0jkanpapsxsff$6ef2a1f514c441bfc0a06013688dbd54886394d3ac800391cb1b02c3f7e56bfa:27:0:qwert12345::
+u28-krb5-18:$krb18$0jkanpapsxsff$490c63dbd93053ca47ae81ac397a83476efc013a60181031e897d208727c9d43:28:0:12345::
+u29-krb5-18:$krb18$0jkanpapsxsff$60d3641777eeb57fdeb1882cc8d1c7d34dcdf2dc2fc1608d703fc3c2e99730cc:29:0:12qw34er::
+u0-krb5-18:$krb18$0chmnpapsxsff$65cb84c60023485bc5433c7eeaae8420182a34b08218be6cd413216c425f4658:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0chmnpapsxsff$e410061e6fb6b38227a3cea3ecf3b0443a765cb04a8c5dcad17a3c0ada5bb24b:1:0:Skipping and*::
+u2-krb5-18:$krb18$0chmnpapsxsff$b54818c006a9942e6435d243a7dc38740c537a452678fa325c75f0c56d4d99a7:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0chmnpapsxsff$fd1c7cfe1b843b338975fcfa8efdf4392b5eb1c953be2d60e11336901cecbe02:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0chmnpapsxsff$e158bbaf017e4ce72ca3e3e90f60b96265751207f5da40a9166aa5e96b28533e:4:0:bert*ernie::
+u5-krb5-18:$krb18$0chmnpapsxsff$b6b4b201c6e00638345428ddff427c92bd451cb05dbc37f062739aa9d2f4866d:5:0:late*night::
+u6-krb5-18:$krb18$0chmnpapsxsff$00bc26829c62a05753488932a6bff0b75d2b5e2de4d7a67da7658cf6217bc937:6:0:::
+u7-krb5-18:$krb18$0chmnpapsxsff$f2a0615f3176e3a3c4217b12c7cd85126c927f358e64387df6ff69ac6b6ef5b8:7:0: ::
+u8-krb5-18:$krb18$0chmnpapsxsff$a8bd24841b43db6b50a5c2d9535c90f583b5ad651bcde68f366d7bb176c467fe:8:0:1::
+u9-krb5-18:$krb18$0chmnpapsxsff$129213e728c29154ae12ff1afc0c0dac42e51a275c637db941407e80bf6d0894:9:0:password::
+u10-krb5-18:$krb18$0chmnpapsxsff$a6e0f9d9af72a928512ff98a54743ff7c1fad70621d18207e85ec7b0aed16671:10:0:test::
+u11-krb5-18:$krb18$0chmnpapsxsff$9090635d2f5c30e98fe0202076c25d9357201143a25621db1e140d525f1d72ee:11:0:late*niçhô::
+u12-krb5-18:$krb18$0chmnpapsxsff$67b69e105a7ab768118b123684aa422e28fad66ace81880e5100702adddfed64:12:0:hello::
+u13-krb5-18:$krb18$0chmnpapsxsff$26a2d4aff9f11576413d8d99057c625c94274b2e1ac65008d8cc16454500cc36:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0chmnpapsxsff$f37fd6591c11775f7fe6fb50b619b6b924699e89e5b35456351956117a4e2635:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0chmnpapsxsff$8251797d2eddf759279a23a8a4f17af06f51370e0d55111a0a4261ff37a46ac2:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0chmnpapsxsff$426bd5c95e31d05cbab11360079fe7a374dea901005b90d06bc89fddd41d316d:16:0:±::
+u17-krb5-18:$krb18$0chmnpapsxsff$1d5772f1488ec348e47fa1b96085ebab2673c6dddc9c8fedcb32aa5b1fe197db:17:0:pass÷ord::
+u18-krb5-18:$krb18$0chmnpapsxsff$3fd079d76a8f7552458500dad98cf00085bef6e75cd2791f1dd75ae96f26dc4b:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0chmnpapsxsff$493ac948bb2f9bdb8abf96554862cfb89a3795cc6aa19a142e1516f8a5e7c74c:19:0:ôåst::
+u20-krb5-18:$krb18$0chmnpapsxsff$7849464c3e90e0e40309f922e93c412f8c3383a4278121b0eab91494763020f8:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0chmnpapsxsff$2e34d947678b6b55e6c19424f682491f0ca9621f762818d213cc77cdf026a9be:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0chmnpapsxsff$85b9ca26355bc3840667eb7241442eb605d1b24932b294614ae7dd08dfac9136:22:0:qerwt::
+u23-krb5-18:$krb18$0chmnpapsxsff$b4d8e883bde9b45668a4aaeeb8e575c3ead4b5a426c8867056f56844b3afcec6:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0chmnpapsxsff$de73a47bbee8a79dcfb65da84545255e9a964461fadc304f1210810ec89db76a:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0chmnpapsxsff$b58aba1a286cbd8a27ac59615b15dede92fed3aca503629139c0c8233be6b7f8:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0chmnpapsxsff$52a8946d8e2f65e6e94c13af8b9ea00e88b4598ee2cb6eaaaeb16be804667b25:26:0:qwerty::
+u27-krb5-18:$krb18$0chmnpapsxsff$49645ad66a71c82d5335a8fac24c34dfd7ffa18a8a1997286da1ebf2e0c43788:27:0:qwert12345::
+u28-krb5-18:$krb18$0chmnpapsxsff$2203b3a16d17b897b9bc6c0d7fc1c36b0ee7b635f44dcc68abc5bfa17023eec4:28:0:12345::
+u29-krb5-18:$krb18$0chmnpapsxsff$c0ba1b8e58445a698168031635a106659de5a175beee61da83acd163395a1d95:29:0:12qw34er::
+u0-krb5-18:$krb18$0ahonpapsxsff$ed28a28d8343c5cf55f6bdd8ee082bc64dffa3377694ad9febc80b3d0bc67b39:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0ahonpapsxsff$8a816e69bd04b587317e9baf10d9fd8e5e72411f00dec8b234fa5f8dfc5168ee:1:0:Skipping and*::
+u2-krb5-18:$krb18$0ahonpapsxsff$0ebc023fff6184362a8535c347d0d79c26f077ab1d894dbbee997d61de123d4f:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0ahonpapsxsff$e7a353f2267b3dc3b3867f03b62d7efc5eab2310cacd0f18f9f40ceb80b77e00:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0ahonpapsxsff$3ddc6d8739d0aa0ec6ff01302b20ac4716a2f8b78974f64a030ad09356ba06ad:4:0:bert*ernie::
+u5-krb5-18:$krb18$0ahonpapsxsff$06e2e941e4bf72c6483eac37f2f86f7e7fcc990335d89c2915e345b0379bc37b:5:0:late*night::
+u6-krb5-18:$krb18$0ahonpapsxsff$6bb7ccdea0e299ebfeba5588e2ef11aaf687d6a9960f192e3dc48b8be3204677:6:0:::
+u7-krb5-18:$krb18$0ahonpapsxsff$df63ede19cdd491a7d24975542aa63ea19b24de312b92477a0babfe723815bae:7:0: ::
+u8-krb5-18:$krb18$0ahonpapsxsff$9523b994f13a6abc580bef449e9ac40ceebcf1a67c0d313d2bd0537d4afb3655:8:0:1::
+u9-krb5-18:$krb18$0ahonpapsxsff$8b35401fc10246e5eb587fb544dca5b9ef26d132589e60b05e600170fca54711:9:0:password::
+u10-krb5-18:$krb18$0ahonpapsxsff$e3d02c967eeba3200f19912e4328bc9bf52369017eb09f50017001dc7ae02467:10:0:test::
+u11-krb5-18:$krb18$0ahonpapsxsff$b313284f386e038eaa411afb8587d88ed0446a08288bf82d7c4c992ba1086d72:11:0:late*niçhô::
+u12-krb5-18:$krb18$0ahonpapsxsff$1469a1dd4323798daf9274aeb15a9e903ce6f0553ec4db873433206a81780238:12:0:hello::
+u13-krb5-18:$krb18$0ahonpapsxsff$7962f6e19b9af64cd6817972b3debd8ec6413812e5a5882c4b8e3b80731ee29b:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0ahonpapsxsff$43de3a91aaeb3c509e0d88aa68f9950d9f0344a580bac45b3d881d01ec6f5e8a:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0ahonpapsxsff$147f9db4810f8e0c42ff3a10fd3c086b1bda911e1a11dc1da49bef5533a834f2:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0ahonpapsxsff$ebce1c4c959dd2f8cec0bb9bb368d14359d64612a3179bff1893175b9ac2978e:16:0:±::
+u17-krb5-18:$krb18$0ahonpapsxsff$fd54cc64f8469fa331f74d49d7f2a45e4b28538f3a4834377b404906c6c78510:17:0:pass÷ord::
+u18-krb5-18:$krb18$0ahonpapsxsff$90f5441a1075e945632dccfc51ed771a32727b41996c494a947906a86e35fb4f:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0ahonpapsxsff$959e6c7c4dfebd6a498c338188e43f7aa2c6c5e07b571e547875350cc842b1a4:19:0:ôåst::
+u20-krb5-18:$krb18$0ahonpapsxsff$88d3fb360f9acda2156f95c90f5e2de61edc535931edc0b9f82678b544b23ac1:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0ahonpapsxsff$9550c034359ab159fb3567058285fc330c384b9fc1a4a7fd59948f35d244087e:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0ahonpapsxsff$fe213a42aef7770aa0fa1a9e1a7e15a0bfd00382c885c78108ef5ed969c3f1be:22:0:qerwt::
+u23-krb5-18:$krb18$0ahonpapsxsff$2410862648d7d2e10b2c2ef9494dbeb52715319d5f0eef5b801e41df361e9ea6:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0ahonpapsxsff$4919b0bbfd5d10b5d5572c66f6fd9e4cd6b898a62ad4e36b434cf2bbc8cab9dc:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0ahonpapsxsff$e7ff3745f3985dd265b54b02199d718a8e1236a973b03c5f0ea4f4a5ec30854a:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0ahonpapsxsff$9280194f132654270f592afa907c30350a3294ebe1172e37bfc9c8a8b71a5da7:26:0:qwerty::
+u27-krb5-18:$krb18$0ahonpapsxsff$e560fa23609f067b31d6525a3a57f9bed162babc31126bbb21448c2d2acb75e8:27:0:qwert12345::
+u28-krb5-18:$krb18$0ahonpapsxsff$5a8068cfcf5c7504a2e6921e96dc1b65a09e9543edf0e9473bada63cc5da5e1a:28:0:12345::
+u29-krb5-18:$krb18$0ahonpapsxsff$8559f71be313441cfcfcb1ec774c276819066a4a9e25371072cd6c59abffd9d5:29:0:12qw34er::
+u0-krb5-18:$krb18$0ghtnpapsxsff$9f00f8bfba8ae1c0c2c99715f88b24be8a9b6f35c673bbdc784c0346b9b51901:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$0ghtnpapsxsff$b6d512f5cf12b97963c4410b78f636a3bc01dde2ad734400789e6bc78453fa48:1:0:Skipping and*::
+u2-krb5-18:$krb18$0ghtnpapsxsff$51e051b2edc54b3c250d446c26a483dee8ac8708983379299f3c7e591fbefb95:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$0ghtnpapsxsff$2d5347e0a2ee56309791c7f80bc06e158f9e8b21fcb8ae00c4d2121e86d5e64e:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$0ghtnpapsxsff$e22557a77c314c6302775ceb8559853261738c777697b5c9991faa38b611049a:4:0:bert*ernie::
+u5-krb5-18:$krb18$0ghtnpapsxsff$5f50038832d84c9624a683260e6f81c27936afb20b71eaacbc2034e12f4f76e3:5:0:late*night::
+u6-krb5-18:$krb18$0ghtnpapsxsff$9b82408323988cbb50eff9185c05dca4334a1adfff2b672842f3e2b7a6474df5:6:0:::
+u7-krb5-18:$krb18$0ghtnpapsxsff$edece4d1c623274f6261689b1002c80251bdfc247a79a8a1dd4c957708717e04:7:0: ::
+u8-krb5-18:$krb18$0ghtnpapsxsff$ad3475c40846b44f6e136eb3c44e4a9d1f704799d25f3690436f560ad346ba6b:8:0:1::
+u9-krb5-18:$krb18$0ghtnpapsxsff$b89f9e3cf70bb7220639bbb1396e3ce2568d873fa77cb0179b891b2d5eaf371b:9:0:password::
+u10-krb5-18:$krb18$0ghtnpapsxsff$4eb1d2e82c00e1315d6270bdd6d3ae1858c0504e56f24ac7638d605ef3402731:10:0:test::
+u11-krb5-18:$krb18$0ghtnpapsxsff$e24f2120226772811ed5e19febbbc93a07c6137a35a5e26a7c9527f10549e5d4:11:0:late*niçhô::
+u12-krb5-18:$krb18$0ghtnpapsxsff$3442dec2b74f503b965bb492c65b6b62ef026faa749e77a23ff60290e90eac8e:12:0:hello::
+u13-krb5-18:$krb18$0ghtnpapsxsff$247b38b6ccf6d2a5b2cd4d414da98400a147e86231894f9ee7489871dd813f68:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$0ghtnpapsxsff$36ccd35c3a91661812516cc46b371ec294af11b9fbea398f4bb40d99715b40eb:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$0ghtnpapsxsff$f2c00b01d70b559313e30e3e5faedd463424a9674b9a2035b16359319ff6cc84:15:0:ttttttttttt::
+u16-krb5-18:$krb18$0ghtnpapsxsff$959ea5291214caaa22a910373cd302d6426bb1bc99f827fba48ea51211c11b80:16:0:±::
+u17-krb5-18:$krb18$0ghtnpapsxsff$8153d509fbf155ba057acb213a5472f81b3bce54dfbff285f79b40dea6cb7c6f:17:0:pass÷ord::
+u18-krb5-18:$krb18$0ghtnpapsxsff$e991dd52b5f3de8a156481d8ba36b9da18eaac49659c44b9c42ac64b6ddcac01:18:0:dffffffffffff::
+u19-krb5-18:$krb18$0ghtnpapsxsff$8565aaad0ad27d6193230dbf5daf390e7be2a7f9b4bd63aca0f8dba2283f7201:19:0:ôåst::
+u20-krb5-18:$krb18$0ghtnpapsxsff$39913d6c9299d8cceb29d02f25bc70159d060672b8b2ff67f3f8777eb0750edd:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$0ghtnpapsxsff$30b765deac4954984570dcee7a01f82ef427f3950c3408c9f81686f9a89abf73:21:0:alsfdkja;::
+u22-krb5-18:$krb18$0ghtnpapsxsff$20e1280bd1ea86f6941c74bb35a932c747c142b76e2516e7ea9e562a4aa627ef:22:0:qerwt::
+u23-krb5-18:$krb18$0ghtnpapsxsff$3a0ab8445a1f26daa4311a0ce594b8c0833ab858bb4b0f35b32391977fa2f04a:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$0ghtnpapsxsff$af2dac3d9b0ce455e99a4e71a8cdc1a00be65523288eba8cddceb56e60e2b4b0:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$0ghtnpapsxsff$eed5f6126cc812562a657613ca2d72819fac1b4b33de29cd7935826364858581:25:0:q÷årt12345::
+u26-krb5-18:$krb18$0ghtnpapsxsff$f6737cfd35b9282f1a40dca8d40a42eb0633bb74b84ad4816fc4ea95678de002:26:0:qwerty::
+u27-krb5-18:$krb18$0ghtnpapsxsff$14924813c58af5732c692ba4619cd79919a5492deebfb9795fb3f604ccbcb1b6:27:0:qwert12345::
+u28-krb5-18:$krb18$0ghtnpapsxsff$3046d4e52dd8c350b390d9745c55876f38c50c3d7a430f23a5addfa18411b089:28:0:12345::
+u29-krb5-18:$krb18$0ghtnpapsxsff$2382e22692dfaefdb6dde88e6465c34599d6cb3064c96c9f35a6c39f427701f9:29:0:12qw34er::
+u0-krb5-18:$krb18$Msjklsdfldsff$14ff6c072cdaddef430a0490bdf549502850622f8fea7815fb295bd6013573c4:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Msjklsdfldsff$12398bc8bc661e103e92f5756244762064bf21a587155cf6586e8332601b2456:1:0:Skipping and*::
+u2-krb5-18:$krb18$Msjklsdfldsff$820f5627ac345ff4716e0f7428dff47ad70f207ed1e93efa143f2cdf77424b22:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Msjklsdfldsff$9736d956b5d2f68f6f8ebb656dba05b5d2c4ec55240de4d000ede77d6d06fd9e:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Msjklsdfldsff$ca6fecd12a26f6b965a7f1247977806737e7648c6282af5a49009919f6fb36fe:4:0:bert*ernie::
+u5-krb5-18:$krb18$Msjklsdfldsff$e6a0842987a0a142b1cfc99aa4e3c4b6d717fec7ed11b856cd9d5be7906215b9:5:0:late*night::
+u6-krb5-18:$krb18$Msjklsdfldsff$dd163585e9f07b1f368862f86c2c58ad8cf39702ab4f260802ffba099652b853:6:0:::
+u7-krb5-18:$krb18$Msjklsdfldsff$74ba62717b3d0029484368af562fdec1c83a294087d81b23b0de58dab29ba8c9:7:0: ::
+u8-krb5-18:$krb18$Msjklsdfldsff$1ae673b46f9a5c3e9bee5fcf66643f2c1ba88cfc36e3ee9ed205ab2c895dd42e:8:0:1::
+u9-krb5-18:$krb18$Msjklsdfldsff$40899da9737bd46fded4f3d69abf7d71fd685256f06f45ea779a2b706bdd81dd:9:0:password::
+u10-krb5-18:$krb18$Msjklsdfldsff$be147a90b62995ce125ec58fd88786e660f86298a9f3900f0e0b5505c18e73c3:10:0:test::
+u11-krb5-18:$krb18$Msjklsdfldsff$1738c834ddcf293b4b4c0ddef67bc29ffe0deb9a15895fa344d89ad9b16f58da:11:0:late*niçhô::
+u12-krb5-18:$krb18$Msjklsdfldsff$4274e74f357b6e94c08453528bdb91160a2873983eaeeabfdc9fee1f6e17c4b7:12:0:hello::
+u13-krb5-18:$krb18$Msjklsdfldsff$0f35f0e0230ec5e5b24f08ceed294ecb37084d5d611b9080025b80115f9b7254:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Msjklsdfldsff$4a9eefa885bd1fb072e72cc17d4a4b0e94a54bd186947c0a06896bcbc830aa9b:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Msjklsdfldsff$aaee22c79bf15389d290c9c49a17ace8a97385fbb50959a5fcc78e6d43d96c28:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Msjklsdfldsff$05ae1453506f74768f17f955de487fb44fc857265b6dd989df1e00fc8f737004:16:0:±::
+u17-krb5-18:$krb18$Msjklsdfldsff$9bc7dbbca38a199ed8b25c86eeba93b59b99d0f5a6e015962eb91113ef82ccdf:17:0:pass÷ord::
+u18-krb5-18:$krb18$Msjklsdfldsff$3c09277a4320ec45f9f06d54e21b004263012ec942cb5493a859707e6e4667da:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Msjklsdfldsff$be601e22cffc545352459b57cd8c822d835725d07b4b6c562a1e397dbe2bc953:19:0:ôåst::
+u20-krb5-18:$krb18$Msjklsdfldsff$8deae0540664a5fee80c972e50c73d49b9c6999737d5f98c9c17227a85c9870d:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Msjklsdfldsff$08a33c637233b81aaec88c3650742123f7672533d8e989af4f3489ac11e62fef:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Msjklsdfldsff$151de8c0c4d4e010b8a0ce08e136a3c6f89fe76b12faed981d43317df44eef51:22:0:qerwt::
+u23-krb5-18:$krb18$Msjklsdfldsff$7d5f6f9804079ab18d5ee937e81d14859b28ec974618bae2ff83edc2a0554c42:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Msjklsdfldsff$6a082d6eba0e23adc61aa16b4dff2fd68b0d05e9f433ffb27363da71d385402d:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Msjklsdfldsff$c35c056c94c7d107e18072be047f282177015fe105c93d1301d6aa6b6850d002:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Msjklsdfldsff$4afa0a258f7d63c75a413b53ac23c122beac1b6f99daff315c1f0c596db6c169:26:0:qwerty::
+u27-krb5-18:$krb18$Msjklsdfldsff$8212a15cdc25cd68368db1523cc329657dcc0bdf880a34ac0fbc162ffbf12906:27:0:qwert12345::
+u28-krb5-18:$krb18$Msjklsdfldsff$aeebc5ac20854bbea83ccbd01d4461dd326e7337dd6516e1c0b27404bab5ae33:28:0:12345::
+u29-krb5-18:$krb18$Msjklsdfldsff$446b4905a1da3109ad23e938a7955661853b5508711fa31202a8a27ddf7534fc:29:0:12qw34er::
+u0-krb5-18:$krb18$Mrltafldsff$ce626dc3d3a1497c7b8b8e9ff9d167724c8e47cec67ea17505d786bdbfe20275:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Mrltafldsff$0f947ed03a4aee1e611368086e09201bfb838b850c80efc26e127f0b9e4d4c74:1:0:Skipping and*::
+u2-krb5-18:$krb18$Mrltafldsff$a47cd06bd5f2dcc0bab8993989b2d2b42d3c175f6bc18ddf17c49ad592143117:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Mrltafldsff$3c983a1c168e4b81062a9eacdb80e277a30a380b8d9bb566409ff8d2ca917fa5:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Mrltafldsff$a938c497d44a2f3c28d48a22caf279b76a87a3fb14279a3aa7d7f8ffe69f88d8:4:0:bert*ernie::
+u5-krb5-18:$krb18$Mrltafldsff$4f6ccecc5ebaafc0a0ce27b4f92e0516a4150b58cc23d07ee64cff1e59e7b69d:5:0:late*night::
+u6-krb5-18:$krb18$Mrltafldsff$2bc04497fc72c6585a2cc7dbe7ad5fc109ef3eb8a8c34b75eace997c58f4af6c:6:0:::
+u7-krb5-18:$krb18$Mrltafldsff$aa96967d7238a3c5d185069c7b613dbc29248ca602870ffea63b34467769ed5a:7:0: ::
+u8-krb5-18:$krb18$Mrltafldsff$1c41750813c94a93afd21946789f7bf2f80463249b4b96d20934ba3dda246910:8:0:1::
+u9-krb5-18:$krb18$Mrltafldsff$e5096fe433f4812649d25b916732dad975ab549a3c248921207475f3bf7d0c7a:9:0:password::
+u10-krb5-18:$krb18$Mrltafldsff$875c2ab5e1de02badc084d2b0123ed0ca56dc125ddf5a9c1ac7fdb6c77970318:10:0:test::
+u11-krb5-18:$krb18$Mrltafldsff$801b2f11938d95b4d78b031d3ce1a8054a4ce25d600dee87d7c020e9a82cb39d:11:0:late*niçhô::
+u12-krb5-18:$krb18$Mrltafldsff$b3bed1a4b15f8deb83d4adf087db41de46a7033f2c7d6721ab7977ac9d75ecc5:12:0:hello::
+u13-krb5-18:$krb18$Mrltafldsff$dbfa8c2f887d4b6f9678d419e42454d3e598039e1de78b7229e22da38b08fb84:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Mrltafldsff$03db4bcdb429af1d41cf6d5d864b68e9449490ea3fab4c17552362b7f2da81a4:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Mrltafldsff$0e62c97b97966e04a449df4665df48bbe2b4b61c71b28bd27a771f885dfe6ce9:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Mrltafldsff$e7d5627b5c3c16bd32ec7c20ffc7fd8808760b6514ad5f7a1167054adc938821:16:0:±::
+u17-krb5-18:$krb18$Mrltafldsff$596b3567a92b88259b0ffbb2feccfebe37d0c83850884f4a7bef7b1376cd282b:17:0:pass÷ord::
+u18-krb5-18:$krb18$Mrltafldsff$64f2c5d487b2c15649aec92d7e542a8346eb0fce9a61c9cf68cbe55b1d7a4753:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Mrltafldsff$9e5d546c7e74d45c5740b233d7c0f6cc9f591177cb17f293f0a5449d34ce390b:19:0:ôåst::
+u20-krb5-18:$krb18$Mrltafldsff$d79dd9a336f960ab23b2c57b49a6e730b737c952090f281279b2f6df692cbe4b:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Mrltafldsff$8f3baa9a4647583f7b9415e5a5463e9bb46ecd51262005936f9a194ab2f4a48b:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Mrltafldsff$9bb34890e5e8b9ed96f0ddc58ad43601ceb155360ca20ee32599963002c40232:22:0:qerwt::
+u23-krb5-18:$krb18$Mrltafldsff$eec7bb825423fa7d30d0155904ee612cad274b94731ed11a62079b403c5cea91:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Mrltafldsff$fcc7043bd747bdaf62922a5e0ab470030bacac9e3a0d2ad8dd2603adac604419:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Mrltafldsff$abecbbcf37cd14e53533a412fa425c446c6a6ad54a1e711228ef3be7c09b75ae:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Mrltafldsff$2aaeade7ad01af687b5700e06b806fa024b9e0b6c39ac87126e6ba7a987280fd:26:0:qwerty::
+u27-krb5-18:$krb18$Mrltafldsff$ccfb84a17539cb86509886941816b41348e2f019330a55ee77f886df11641cbd:27:0:qwert12345::
+u28-krb5-18:$krb18$Mrltafldsff$b5f79a7b145fed53016d12b553875f657dc8dcb3e8121a20a46cd0d32a28f368:28:0:12345::
+u29-krb5-18:$krb18$Mrltafldsff$194c64440386961c520696085af7381e1c359d439935397ff4d584623b8a208d:29:0:12qw34er::
+u0-krb5-18:$krb18$Mbiimafsff$7997f311fcd7a70e74a13dc4f1e56bd65db1a78c4e64e31d1c8c97b055effe99:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Mbiimafsff$da04114680da10ae5ce71522c6fe88dfeaa7c8a5e70eccbae4810d1274a70bdd:1:0:Skipping and*::
+u2-krb5-18:$krb18$Mbiimafsff$5d74b3721585e12a3bcfd21cab76eb0fe90b187929bfd94985c63e3d74a8833a:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Mbiimafsff$525807fd95a4f6ea3dd54a2c06413f96e06c5082961fc4c6bb2f2155dca447a6:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Mbiimafsff$7f77a76863d21e4f94430dcd4f20de97600e7b2fdb39f60bf2f7bd113cd7562a:4:0:bert*ernie::
+u5-krb5-18:$krb18$Mbiimafsff$e3515c881040249e01bc50192106bb5285e40e169d85705f2d9a34777053adb2:5:0:late*night::
+u6-krb5-18:$krb18$Mbiimafsff$2f12c3928fd29c15adb4d5e9debf337acbe0d129d4e171d4a8682ba34582876b:6:0:::
+u7-krb5-18:$krb18$Mbiimafsff$83883de4cd6550fde90f1b9554df80c9e6c238eb70a3d2a46f410304159bf4c6:7:0: ::
+u8-krb5-18:$krb18$Mbiimafsff$92232d4887efd0c8da7171c79329baeef808b64f82bc45e577c1005cef400fac:8:0:1::
+u9-krb5-18:$krb18$Mbiimafsff$42d3c2c205fdd546a0aa43b0d1fe651dc2459e448ff4bebedd2235982fc6f6ef:9:0:password::
+u10-krb5-18:$krb18$Mbiimafsff$ce7884650720209cac433aa7a513b5e0a4ade6211d39c9728f7f8985ca1db048:10:0:test::
+u11-krb5-18:$krb18$Mbiimafsff$451eb9a27bb8a6111cfcfbc1360b405fc9c711d53eb558a8967eceb460d0c686:11:0:late*niçhô::
+u12-krb5-18:$krb18$Mbiimafsff$30fe4031aa143789ef1f5f0e8a12a7e9c786d952a7c760ba786b9997458e5b0c:12:0:hello::
+u13-krb5-18:$krb18$Mbiimafsff$ba7a022893b965266c96f284b8fe52be92c59cc0b37ec8c6d60e9aedcf89af5f:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Mbiimafsff$ff7817ad93b90d6d7eb555eb885dc7393dde07fd20465c9c3f5ce31096b0037c:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Mbiimafsff$339d424183b2e8139f69e887d0f8d13ecc5558314d4b60470aec219a6bc45717:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Mbiimafsff$80ace08b7a95ccb6217a4678d02d0c1d463f27fad891a14f6f71a7dd237611bf:16:0:±::
+u17-krb5-18:$krb18$Mbiimafsff$3110945ecd2f810839b7cd99bc13dcf29c441bf84e4434a219ab9ba4f0dcec52:17:0:pass÷ord::
+u18-krb5-18:$krb18$Mbiimafsff$4b2f589fc2f4d169bb710a4381c5a90644243920d39fbac85892edb4a4b2e530:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Mbiimafsff$3b48fe1826ef123f5961124257d835e1beb3fd84e042dc47c2353f8af9677e59:19:0:ôåst::
+u20-krb5-18:$krb18$Mbiimafsff$4153ee3bc1f13f1eca67fe125c6675dfad8da6c01a40ebbfc0ae5af0da537e65:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Mbiimafsff$e6c792543d6923f4cca95d6ce3535ad6794aca92572eea9ea5ce27d1426627d4:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Mbiimafsff$3f59060db92bbe9c3ee0dfd78a3c66baf6f0fb167117df0b3892e84037e34d11:22:0:qerwt::
+u23-krb5-18:$krb18$Mbiimafsff$478f318880ebe130c4b428422368cccd83a676916b137660eb3dae3524ee6351:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Mbiimafsff$d70ab059868f5c6adef506ac77dfa03333b6775514254fd351be1d3121802999:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Mbiimafsff$9820a353f8a69e9bf095e81f79df9617928fdf00df2b4d1411abc1b8be8f4c4c:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Mbiimafsff$1f9ca26e2d0bb39c2d8e522ac7c6ff902545f0389de71600f9b77c177087a25c:26:0:qwerty::
+u27-krb5-18:$krb18$Mbiimafsff$d7a8eff0a769faa3a8aab6668118207d7d531e9cd060a4a5e565ad11148aee7d:27:0:qwert12345::
+u28-krb5-18:$krb18$Mbiimafsff$e5d7bf48267f4e8f2056385832221c1a82835edbd80c133c46fd6a6ff0d2dfe9:28:0:12345::
+u29-krb5-18:$krb18$Mbiimafsff$a0fec766e456f8f56366a5aab794c0745fddc325093c2e580759f538e0e7ccc8:29:0:12qw34er::
+u0-krb5-18:$krb18$Mbhanpapsxsff$5bbae29b39cd4a6750734753f20852131a88c60618b29470175fffd9cb902216:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Mbhanpapsxsff$6b671c5a0652af8038271b6401e900be8dfe39775fea921b5a33cc0a1ed8f849:1:0:Skipping and*::
+u2-krb5-18:$krb18$Mbhanpapsxsff$4b8280ea654cc134da6bb53c0d1d7fdcb6dc01dbded6b4cecb2019202cd89bf4:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Mbhanpapsxsff$e8b746d67c5f752dba7a006c2d4062d6c201c0d95394b2a26a841afdc9856064:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Mbhanpapsxsff$e58662b3c2c5f1ca64db041d9fa1c331adcda1180af7ddb9fd6921d7e828ab1f:4:0:bert*ernie::
+u5-krb5-18:$krb18$Mbhanpapsxsff$0156165a1ddde98180ba2e8af8bcbbd75e02c0fa6535f4cd2ce01cf1c75f0b98:5:0:late*night::
+u6-krb5-18:$krb18$Mbhanpapsxsff$34052682b694046244c52b828afdb9f2066054e565b31b50d1b74239317f5325:6:0:::
+u7-krb5-18:$krb18$Mbhanpapsxsff$95feaa3edcc72628da5286114977a11f847c95533f78bdaaf282138da0c0cb64:7:0: ::
+u8-krb5-18:$krb18$Mbhanpapsxsff$9b791b1eace08157c2e46d1626ebe5667963a6b8155e10eab40ce652e7dec8ad:8:0:1::
+u9-krb5-18:$krb18$Mbhanpapsxsff$94e54448944cf54a7ec8e1a08524f6716b361e4719db99116b69b476587134c8:9:0:password::
+u10-krb5-18:$krb18$Mbhanpapsxsff$2c262bf901c7c760bf4509057c76a5b80d8f0be83821099a0e304fafdda1baab:10:0:test::
+u11-krb5-18:$krb18$Mbhanpapsxsff$55d60f248af58621034b38fe0ca060cc9df868dd141a3c6d6b1aa4797c3ac733:11:0:late*niçhô::
+u12-krb5-18:$krb18$Mbhanpapsxsff$077ee59dbb9a6926c99e5885bcae0dc61b82ba900ed6ac78127f6cc82e7ee4e6:12:0:hello::
+u13-krb5-18:$krb18$Mbhanpapsxsff$e5df4020004c32cad1b03d2a52387afb06aea5d2f88cf6dcf2c8b4d7840541fa:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Mbhanpapsxsff$89aedaf90d347565291e319c3cf6086973661994e922821e500d4bf6d6bed5cd:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Mbhanpapsxsff$e331b5155a887851352da6f3371b9d8ca4fac11c1b4eaf64d7e198af938373e3:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Mbhanpapsxsff$08005cc94a5e9d933733d175fc9a835f14a1010cebf1eab53137be017d0b7559:16:0:±::
+u17-krb5-18:$krb18$Mbhanpapsxsff$a3b0e3ddb71f74fadfbf46b9b641413c5bf3d9c98e83c33594e2eb2f59995d05:17:0:pass÷ord::
+u18-krb5-18:$krb18$Mbhanpapsxsff$c5cd12517fe1d9c0f93f2827f8bfcbf4f964ca9bf1240f2295e0956a74fcfb8a:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Mbhanpapsxsff$b82fc91fd4d759805b2933014fc81225ae46ffb918fe9e6214f2826647684efc:19:0:ôåst::
+u20-krb5-18:$krb18$Mbhanpapsxsff$a725c25a5d0e8f8cbf1cfdd9ff0164600060e7d8d7551fec9b14b1c186a694d9:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Mbhanpapsxsff$fc4ae222448cd30e0dcab7dca7f49ad476fcaaca14559e7af81bf5299f246e34:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Mbhanpapsxsff$3a6ded789265aef2e6c9a879f365ca76a08eab74df35176101f069f9ae88e3f4:22:0:qerwt::
+u23-krb5-18:$krb18$Mbhanpapsxsff$d983bda3c5e7cf010e12cc97dfbf6d274d74085eb719638cdbe2c48c4b29ec12:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Mbhanpapsxsff$e58a9365957e44f997f4a67ef9b5c636cfae46681ff6411c4f506bce1b6735ad:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Mbhanpapsxsff$418b37c684a2435388385317aa703badc693297babe97b7eda5b94eb46d25831:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Mbhanpapsxsff$5465ba581e045124bc21911a8d114689add26a0ae33378439d3cec4971aa7645:26:0:qwerty::
+u27-krb5-18:$krb18$Mbhanpapsxsff$5629621da3184cfce5254acd019ba4fdcddf4474d75ea2306b75930f286d6181:27:0:qwert12345::
+u28-krb5-18:$krb18$Mbhanpapsxsff$3e72afb41e851aa303108efa7bf022ebefac74fbf06f5f388746daf15c47b302:28:0:12345::
+u29-krb5-18:$krb18$Mbhanpapsxsff$56185552b6f4d7ad52ee421b199eff1ab7d7d79c80742cdc2136a8a38d824061:29:0:12qw34er::
+u0-krb5-18:$krb18$Mtjanpapsxsff$75593be502ffee56e90cb9c3883ffc026ad2d5656da9683fb23d236572836475:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Mtjanpapsxsff$479393650dc765ccf5aeaa4601292b23a372438c42bc2eccec049ae63ae367a5:1:0:Skipping and*::
+u2-krb5-18:$krb18$Mtjanpapsxsff$7c2780ee03f7f35524bd3b4eb867ae208bcd208bef72e5de09b592f34d63d705:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Mtjanpapsxsff$8b00db826dff20ac14a711ca58c1b448227183c4d15538f72d3291b24bea14c5:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Mtjanpapsxsff$374090b1ffd7bc25c5ee85a6004a4d921ea4d242985c017fb7b6a55280552796:4:0:bert*ernie::
+u5-krb5-18:$krb18$Mtjanpapsxsff$6d4ee795af5f24f95e05e892a311fe5794204672481bb4114bd117d07358ca32:5:0:late*night::
+u6-krb5-18:$krb18$Mtjanpapsxsff$c8a46153a1b14f7b440f98ffc041034404fefb657cfd7425eaa5aa34a51f0e75:6:0:::
+u7-krb5-18:$krb18$Mtjanpapsxsff$597cc651595646986c221ab1486d2dfe33b5c04c2b8012e1b97426b57ce74c49:7:0: ::
+u8-krb5-18:$krb18$Mtjanpapsxsff$8b2650ea1df0a09b04c78c219c5d1f5ceb6c742fb8c2acfea6524a704bc49e78:8:0:1::
+u9-krb5-18:$krb18$Mtjanpapsxsff$faa9c4bdaf319ff9bcf14e16fe76f2f78f478488526262ee787f48738da47629:9:0:password::
+u10-krb5-18:$krb18$Mtjanpapsxsff$9f5df4796b879df54abd225360635599025f97f6e0863ed8fd2f3adb1823f517:10:0:test::
+u11-krb5-18:$krb18$Mtjanpapsxsff$03482791b59b09498fd491115b4e186f6e8d920b4a1e3e7fea43617435bd6819:11:0:late*niçhô::
+u12-krb5-18:$krb18$Mtjanpapsxsff$388094a976c2b8370cfa9bf303e68fa62b4f3b8faf7b83a3e7fcb06abaeb49eb:12:0:hello::
+u13-krb5-18:$krb18$Mtjanpapsxsff$b0ace523f33458f58d760b9c7f38e6f094128a96330d9eb616681d83a7d6dbce:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Mtjanpapsxsff$452c6a0f04e181b1c7cafbc7f20c13567a378a1dd141f801d5498c60cc16b793:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Mtjanpapsxsff$175392b613c9df10e99b1d3c5e18cdb029aceec80fd521a43d5531286812e4f6:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Mtjanpapsxsff$5d20ac50896946c47038ce2991ccc6092b12311d790cf1200fe4beedde6aeb1b:16:0:±::
+u17-krb5-18:$krb18$Mtjanpapsxsff$a02d32dc14d6b1e6bb86f1ac55f30fbc445e231bf2a9a71771de0f20f60b6db1:17:0:pass÷ord::
+u18-krb5-18:$krb18$Mtjanpapsxsff$d5ecf748bc9873e87ad56cc1de96f75cec6889be14c003ccf0596913b7b95894:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Mtjanpapsxsff$1d4732a849e4f8fc3fc48e58e20390b79b44297d59590cd69b602d1475ea9b28:19:0:ôåst::
+u20-krb5-18:$krb18$Mtjanpapsxsff$5cd5b6fdd3d044a2a8d90ecd3c38c084693de6e2e407864d0e52ed16fbe03438:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Mtjanpapsxsff$e37e1244f29a34821ad4d0b2f1c6f2c58433d0a0b918291c1648bc5adcde7762:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Mtjanpapsxsff$3585cb7d3faa5993aa43cf780ea9ac8ae714c857dcd06bd676f66c84fcee563d:22:0:qerwt::
+u23-krb5-18:$krb18$Mtjanpapsxsff$c3293c91444d8781e4e2feefe33cf6bda4a7b059e2803c32c35b061c80dec631:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Mtjanpapsxsff$82252218c3dd4aa7eeb923d9467bf21b49f3622440f6091c16c853dc78c5a963:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Mtjanpapsxsff$95d2561994fb2feabd46fe61d4fc57e102f8888e1fc8889600d0925c98d50481:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Mtjanpapsxsff$55cab0cbe3dd56186cdfac7b25594fff70cd09830a0911c076d1117cb3dc83d1:26:0:qwerty::
+u27-krb5-18:$krb18$Mtjanpapsxsff$b7e5be063058191afb3a852e98e19905b8cefd4368aad7d47f09b827499a2f44:27:0:qwert12345::
+u28-krb5-18:$krb18$Mtjanpapsxsff$48509a95f429f2e92a9c6527f290a421306448a879afb0615d72de555f59cfac:28:0:12345::
+u29-krb5-18:$krb18$Mtjanpapsxsff$6f43d080a57f30a2f02c9b618afe6f3093ade1fb8b21414be923a9e87aac3c10:29:0:12qw34er::
+u0-krb5-18:$krb18$Mrianpapsxsff$ad7a2ef02989e5ae0a91a20c165dfed3b6467abb83fd07bb65e3eaadedcead47:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Mrianpapsxsff$944c0f995f5c27ffadd6edfc9346fe94e94d985df97287c341a939c7019c0841:1:0:Skipping and*::
+u2-krb5-18:$krb18$Mrianpapsxsff$68eb0e3c6b4b5c3fd548d04409a9824d7c76a2ed3e74ba9293a7448b72908ef5:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Mrianpapsxsff$878077ba8600c5e8dfa9d22c88d1e6829abda3166737530bc489b95eb46fc882:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Mrianpapsxsff$274fd3d54c2501fd831b194d5bb2d1a79791a35c2b4b2ca51dfb04237778e530:4:0:bert*ernie::
+u5-krb5-18:$krb18$Mrianpapsxsff$fc18d7ef7152e1379cd4d075a1524cc357407c7eaefebb6986333ef11d116b7a:5:0:late*night::
+u6-krb5-18:$krb18$Mrianpapsxsff$2192f881ef73c7954b8a222fb5a06aa60a81d9b8381ad7a7f14457975cecccfd:6:0:::
+u7-krb5-18:$krb18$Mrianpapsxsff$b69b1ef8b765466874170e2497e47816de7319a56ba20db91d739582f0a6df5c:7:0: ::
+u8-krb5-18:$krb18$Mrianpapsxsff$9c422a560c6e21348f6cf0b9f06a4d07aa564681284844ad363132358147f23d:8:0:1::
+u9-krb5-18:$krb18$Mrianpapsxsff$b5275d039a1aacb0b33d4761065e7ab79b043f863b8d93462ad145b045e88778:9:0:password::
+u10-krb5-18:$krb18$Mrianpapsxsff$b4945ee107097e9feae3a72a4b469c97a458a0b30d0ce3e7675c1d61a6342b26:10:0:test::
+u11-krb5-18:$krb18$Mrianpapsxsff$e00831ada10a92afc41ba98a016ff57046cfc03c6abd281c7340d850e1499e45:11:0:late*niçhô::
+u12-krb5-18:$krb18$Mrianpapsxsff$9c6efe4ea4011a777c2ed380290db1d4869756661d719676cf366a702fd96a35:12:0:hello::
+u13-krb5-18:$krb18$Mrianpapsxsff$310b294c56026b545d327b8435fc435d7c94a356af5cd747a4047bffd6d3af10:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Mrianpapsxsff$cbc99d84019df0b25843b9287605ff900683bc235bd135b35d920090e40ad7cf:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Mrianpapsxsff$a5d969d16294ad6b5426500cb472c0d7bcf10bf9702ee63911b16110940e8606:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Mrianpapsxsff$a0370818f086f1b93d022a9c624da42ea6c786b0e7c0ef7cb6a9595f001958cd:16:0:±::
+u17-krb5-18:$krb18$Mrianpapsxsff$b760159989f9a515a721af577d2b87c500b330843f0e7be58c39b82f3df56fe2:17:0:pass÷ord::
+u18-krb5-18:$krb18$Mrianpapsxsff$a9c9af62462c660094f343c9609336d04d86e3af6626ed0388d9ef7951b7c0f5:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Mrianpapsxsff$5293e8c0e155fd478010010b8961874369b275c07d0386c3cfce46c50d0a242b:19:0:ôåst::
+u20-krb5-18:$krb18$Mrianpapsxsff$ffa7d087ed7edb172ce74610f4f7ae6e3bb30751d8e98f2bfce52a1c6fd2827b:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Mrianpapsxsff$98c62dcd390d6b667351f193fd5203aa4ee31b331e3200052a7e576a009297c9:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Mrianpapsxsff$bcb9bc66b73af27fbe1101e20e17f5dc67fae7913a77a556ce73632578f84191:22:0:qerwt::
+u23-krb5-18:$krb18$Mrianpapsxsff$d40190d6301dddf0b808e5e74d4428d7692220613ec4bb2466ddc0b12f76c921:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Mrianpapsxsff$1abe7b53dea6b5f30d310dc4cc4970347cbca1b29de2a620ad1de5c147db118c:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Mrianpapsxsff$f9b18c0422aecca11287d25f0b1f3e336c31f99579db85d48922abbcc429534b:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Mrianpapsxsff$e51f2946e9ad0c0fe6c4756b2691d5eb3498f0085769d8ba4e884e1ba1eea0ca:26:0:qwerty::
+u27-krb5-18:$krb18$Mrianpapsxsff$a65817947baf24fa28f98d6c65b2e42385cf85dd846236c5793547f0bed73f31:27:0:qwert12345::
+u28-krb5-18:$krb18$Mrianpapsxsff$99028e48869cdde2edf43675b510fd6fb286e800926a7266e6f662ed90a70982:28:0:12345::
+u29-krb5-18:$krb18$Mrianpapsxsff$271bf3c37e2f30408527ac49ef1c019160e4ff5f4bb438ec900c2c3db084c442:29:0:12qw34er::
+u0-krb5-18:$krb18$Mjkanpapsxsff$43104543015242808eb725d5c252252658effa9838c135d92590c1fcaab39706:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Mjkanpapsxsff$c1fbc76a5a0d3bae21dee5c87df0849ec923144be668b9608aacb33274ea8906:1:0:Skipping and*::
+u2-krb5-18:$krb18$Mjkanpapsxsff$4d2e172d5d917bacf1195b98ce323c5330e2228b0834cb20bcebfb5a7056f369:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Mjkanpapsxsff$1070c4fe4be1f63414bdcd0f740d90300fbd18d4a87d35df4cc05cb43ea78d54:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Mjkanpapsxsff$0182c57975fae0f4c4683e2b30ed46b506bd9101850615ddd69f07eb42c14ba1:4:0:bert*ernie::
+u5-krb5-18:$krb18$Mjkanpapsxsff$58a596f7cb68245bcf792eb2e08f4469bfdc45881c2fdd9ac17eeb1775c63dba:5:0:late*night::
+u6-krb5-18:$krb18$Mjkanpapsxsff$f7640da60300bd6e6597071d55d114fa706e055a9855621672a03381be9c2081:6:0:::
+u7-krb5-18:$krb18$Mjkanpapsxsff$0f2559cc96d8e8b36f39438c863db00c1a3fc319ad32129f81cc0f8020e3d03f:7:0: ::
+u8-krb5-18:$krb18$Mjkanpapsxsff$d7edd85726106f6f3c9844ad10369a1825859abe638e5a42ad9d1bb377d9d7d7:8:0:1::
+u9-krb5-18:$krb18$Mjkanpapsxsff$67c5914fc11de062efc1f2efe234fa9b94f65ff3ab29a64c834be4e45c11fe0f:9:0:password::
+u10-krb5-18:$krb18$Mjkanpapsxsff$164ae8c0cd80fcccaceacad0bc506733f24bf1439c1c9a1dc06a888ddfb08ddc:10:0:test::
+u11-krb5-18:$krb18$Mjkanpapsxsff$b9d8a7ed56c368c95a74d9bb376c253715788576d93f56ad8a6876e9406b4af5:11:0:late*niçhô::
+u12-krb5-18:$krb18$Mjkanpapsxsff$db5164ad715191de445fb3a30154fdcc394ea976d6a462df325e9b6e6a96e22d:12:0:hello::
+u13-krb5-18:$krb18$Mjkanpapsxsff$4ffb46a1a095cc78de3086beef324fc56b0e9640480c36cbbc2cfdb561332bc3:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Mjkanpapsxsff$a798f99131717a085833a4d5d30f416d90374108877c70e2f3015f7f86a18918:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Mjkanpapsxsff$1c8afc5973520cac0fed128e01ee73f337a77d7e35be249c8eb5b4ea4f09df90:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Mjkanpapsxsff$81669d7e3f0a732dbed1612baaf90667d0c456b337d70f13d94f0aa4d8694e1a:16:0:±::
+u17-krb5-18:$krb18$Mjkanpapsxsff$be04ddba3201874d636f5e477de833814a4cf699aeb9b88c703481d8631e1bab:17:0:pass÷ord::
+u18-krb5-18:$krb18$Mjkanpapsxsff$e14f667d8a06be4628fcfc44a16d49eb3fe7eacf9e1e6c8c58a37ded0ee70ec3:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Mjkanpapsxsff$7aa341c4991e199f00033c49589231bb11ea7f6a4164b3a5a62104d958b476b0:19:0:ôåst::
+u20-krb5-18:$krb18$Mjkanpapsxsff$bef6e32c4916665d0ecf136dd645bcf6e18fff7d929e4f4f3149705ecdff80c7:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Mjkanpapsxsff$edcf4cf2a1d10857a601c82964d9958971bd3ff9d9f313cdda4cfec02462ef1e:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Mjkanpapsxsff$05442f2d36b0404f3978430ff28a2d61765390799d7cb3534fa023ae2b5a06ba:22:0:qerwt::
+u23-krb5-18:$krb18$Mjkanpapsxsff$9d731a9a0f70ea2c3a0816ea8cca4569705c266eaf3ec1530ada93635566a6c6:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Mjkanpapsxsff$fb9b15bb91c047155638656501ca5854eba5ed51633b22b8bc3b2b49a38da378:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Mjkanpapsxsff$44c97ede1b9059da84b66e356e6e0e3b72ff1c055c79bc94efcd4e4bac9a3485:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Mjkanpapsxsff$a3e3f5cf6e94fe6a1e81a3db767f6ab71366811b996fd096b994ab6ebdc120f6:26:0:qwerty::
+u27-krb5-18:$krb18$Mjkanpapsxsff$3f8d151da5742544d0a4e7f8dac97441cf87620692c03a1c4658e834b93a57bb:27:0:qwert12345::
+u28-krb5-18:$krb18$Mjkanpapsxsff$eba0dda8de5dcc316bb42f1b1cc343529664f4eb08b9827898a29dc809e25581:28:0:12345::
+u29-krb5-18:$krb18$Mjkanpapsxsff$13409f41e0eae5256ad83a25701325c41a1180bbe9df0763f37c4cdbe247098c:29:0:12qw34er::
+u0-krb5-18:$krb18$Mchmnpapsxsff$937ef3cbef654b9c4bd7a956e9470ca4d9dcb03dbbea7242929ef44b00ac7d47:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Mchmnpapsxsff$957774e0bafa8a3a20d8f91c97ed166a0688ad89a30d616842fb06ca293421f9:1:0:Skipping and*::
+u2-krb5-18:$krb18$Mchmnpapsxsff$992aabe970af56b1badcfb8d67f3d7b0af8f0ed92f825c442bf0272c1fd3da4c:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Mchmnpapsxsff$d71eee99306f70b0668682d27edf3466a507aa2b420f5bf0c4d94c6d1cf04d91:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Mchmnpapsxsff$4774d0bdf12adf07d41a313323ab8d74148e42777bc25974570afa61c0cbdf48:4:0:bert*ernie::
+u5-krb5-18:$krb18$Mchmnpapsxsff$9908abd9618298b5297949cdb6729aa974fa14df3cad1e5909c0b4146a777bb1:5:0:late*night::
+u6-krb5-18:$krb18$Mchmnpapsxsff$24a9bbed2e9929732dc3b37ecef8761d54816d270b2ba01cf0b541b5d9507ce0:6:0:::
+u7-krb5-18:$krb18$Mchmnpapsxsff$7e302868ad4c4d9218985492a3798393043defbb6511a1cbab9203c52493746d:7:0: ::
+u8-krb5-18:$krb18$Mchmnpapsxsff$0bf78b25f9bcd02b3e2342c859e5c8d9583da91d16d1e89956b658af7ea40aba:8:0:1::
+u9-krb5-18:$krb18$Mchmnpapsxsff$63bb726b8252b872761448958bf5e2256e30c500f7f6373c04aaa9fcf4b0488b:9:0:password::
+u10-krb5-18:$krb18$Mchmnpapsxsff$1dc63e72d45405f4d70cd17a0dddcda0ba401f0d63faf19ae7a6aee973fa8da1:10:0:test::
+u11-krb5-18:$krb18$Mchmnpapsxsff$9c289d083624b627a049e02ca254e813a8115a78fb7caf1bc0f2cf2593d8d63a:11:0:late*niçhô::
+u12-krb5-18:$krb18$Mchmnpapsxsff$54f31e1001eacd0b7155ac6f1637b5026f241555b02b91764143075baf3aeeed:12:0:hello::
+u13-krb5-18:$krb18$Mchmnpapsxsff$65abb75094cda0a1609aec908b9ed7d3692ae7c4a7bb2a201c3ee48e38decbee:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Mchmnpapsxsff$d39d32c12652dae35658982419ae970207201e77fcabd3246f4e2a4a0f542093:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Mchmnpapsxsff$96a7a586604f7db8d9270fff0a33e9269a664e6cdb0cc58ea351ba94e7bdf565:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Mchmnpapsxsff$b307e3092bf8491987f4cb64ff16a66415604d021e86337bdcc852eb0ef81ac5:16:0:±::
+u17-krb5-18:$krb18$Mchmnpapsxsff$db4546939cb0122a09aea8c85cdb666ba83382217e741c661df12908c1589094:17:0:pass÷ord::
+u18-krb5-18:$krb18$Mchmnpapsxsff$1650fe286c76e633332e8226c299659513e0d2074e493d49405c1bbd88130afa:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Mchmnpapsxsff$3005bde52ed35b2f2344e1382e548eaac059d6878f0e1d98bd3c53f7b5bbfc8c:19:0:ôåst::
+u20-krb5-18:$krb18$Mchmnpapsxsff$f72b3e23b8369aa3d0148887d4e39e60fa47df04bad4e382c2542b6b046825c7:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Mchmnpapsxsff$ecae8609e8a5c8679ad186925290cc1e658bab49839d933920a1006e38523507:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Mchmnpapsxsff$2aea37b261fb88ca6379358e27a8937f84d954d71a957b14004be3be94dc25de:22:0:qerwt::
+u23-krb5-18:$krb18$Mchmnpapsxsff$7772df049ccfd4c335a9d30a0584ec4d1c019686084a4b729c9c4c81c612241e:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Mchmnpapsxsff$a8f933872a7380d571b1919d153ccd60950880e9a2e125ea686a67a355717630:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Mchmnpapsxsff$1ad09ca4ef8348744b9ca4c890f59f74ca553ed8d6fd6adb311ee652b1c8b6c4:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Mchmnpapsxsff$ba06fa843bd9354e5cdcdaee047036103e868b13b53ad65833eb5db61b01692d:26:0:qwerty::
+u27-krb5-18:$krb18$Mchmnpapsxsff$9f83a25060d136efc00935cf5cb82d4066ee31b798bb2a3dcf5f709a551b7873:27:0:qwert12345::
+u28-krb5-18:$krb18$Mchmnpapsxsff$e6bfcaf480352bab234ebbbb9caed07b6522d8b26bec524940a1247da7bc47a1:28:0:12345::
+u29-krb5-18:$krb18$Mchmnpapsxsff$67948dd867264eea6433a3fbe6cd5482cc7a29abf24997eb903bbcbc1ba0d0ce:29:0:12qw34er::
+u0-krb5-18:$krb18$Mahonpapsxsff$7174c88a98b79d91288d084f19a869144e72a378b0984967f5c0cbf199196ae3:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Mahonpapsxsff$992bad0b17b3cdfd3a69fc7cc19f70d6405510edb44ea3b2ca0f5841165ad0cb:1:0:Skipping and*::
+u2-krb5-18:$krb18$Mahonpapsxsff$fc57f11a9fc826be69f10119234c27bae04b2609fb990a7d863cd55b844934de:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Mahonpapsxsff$7dc5a6f0d52cb1bd4e7809df07bcebc83746e3c2d9b4572f925cb303d32ca569:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Mahonpapsxsff$4c75fe013d60dabe08aecfea2699b1b0f9bb495096a7323c8e59ca90877c6b88:4:0:bert*ernie::
+u5-krb5-18:$krb18$Mahonpapsxsff$f4219dd81548f265307d0becf8098d6bf04f61dfd535112155243d3bf7d18d5e:5:0:late*night::
+u6-krb5-18:$krb18$Mahonpapsxsff$8b1d3f677bdb434afdc320f56efcf4de32677cf277bfeb354ecad814f6607463:6:0:::
+u7-krb5-18:$krb18$Mahonpapsxsff$b50ff10aa44d4061b3b9481ffa1043b9991df86c601e0b2ce0c1c064e2f37133:7:0: ::
+u8-krb5-18:$krb18$Mahonpapsxsff$3b220481ebd290aa0a5e903e45d83cda6de15ecf43e31307dbb5e60b6669a3a0:8:0:1::
+u9-krb5-18:$krb18$Mahonpapsxsff$99952cc3afa6c3bc5742524ad5840f68b84f00705ac6925eeb320335ed10a090:9:0:password::
+u10-krb5-18:$krb18$Mahonpapsxsff$4a93320e90dc75fb9fd69f83138298ca529f79f37546f3f8cb6b710871d5897a:10:0:test::
+u11-krb5-18:$krb18$Mahonpapsxsff$a7bcfa85856887faf13884443329db4bc3c18223c7b11b659e05c38dde2b5f68:11:0:late*niçhô::
+u12-krb5-18:$krb18$Mahonpapsxsff$d7b72155487ea48675c012aa91f554ae594f32f1bbfecc9628c5c99037ce7920:12:0:hello::
+u13-krb5-18:$krb18$Mahonpapsxsff$a4815cc81e74338464804a0d78d3aa48b24e5fd616813438725452ddf8cc5975:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Mahonpapsxsff$988428b580f1434a9a7ceb457ebc3cd0063853d13dcd164f319977207a14c407:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Mahonpapsxsff$8338dc0028d2812bc6b4d7de1dab725a0f30bae0900241f0d12dd8e31385ac86:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Mahonpapsxsff$631a2765b5c6dc6bcf999601729fbbb29bb365de03db8ae1cfede96343daf634:16:0:±::
+u17-krb5-18:$krb18$Mahonpapsxsff$cfd6b06eb443b8f0211c0302f22213503a4fcb5072e5ce43b012fbccb4ee745e:17:0:pass÷ord::
+u18-krb5-18:$krb18$Mahonpapsxsff$4505bbdb214246c1e3756c240dd043fda21153fea9df3bf55c02f0d7169fd65f:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Mahonpapsxsff$df04a39f384e6ccc50ac3f80c2a6eb07140dae8bd3be3b5b6a33b11700074e4e:19:0:ôåst::
+u20-krb5-18:$krb18$Mahonpapsxsff$816d23b5981a08c7b3cb8bd91f11a186f699f269286bca3df13523b213991175:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Mahonpapsxsff$e11af1adfd699cb601ae699fafd0a29d489869965ec594b322537ed46435589b:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Mahonpapsxsff$f660edfe4aa3d1c4770a51c945f0903bee90d66afdd92d0f8180451f8035e502:22:0:qerwt::
+u23-krb5-18:$krb18$Mahonpapsxsff$c55c44ed0d5570ed796ef28fc1d0fa2bf0682efdeadb34274146c725fef5f4e1:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Mahonpapsxsff$e241335353e718c721384c821a911282468af9fd60cd604392304b90ac115e72:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Mahonpapsxsff$95ae6d62fbc217f3d865411ba4040b43a0b50c1531130fcc39921887175ab7b1:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Mahonpapsxsff$46cab68fa643bb266ff88eac2d60a6d8497d4854173d797d143dd5fd5d231edc:26:0:qwerty::
+u27-krb5-18:$krb18$Mahonpapsxsff$c0d8b33c4c1fc092f7d5919f6e54a28ea2f5fbf18f8f9e5177caf9a48e21a329:27:0:qwert12345::
+u28-krb5-18:$krb18$Mahonpapsxsff$7bcc556599bc6dd4af947a0bb755d6eeeebfd2305036227e1f90ea425e0331f2:28:0:12345::
+u29-krb5-18:$krb18$Mahonpapsxsff$656257fd0b34a6e9de5e82c9f809bc260ca1083532bd5a6cd423bf7ae79f5756:29:0:12qw34er::
+u0-krb5-18:$krb18$Mghtnpapsxsff$32f0d149b9075eda9a1000baa3db4206258146bc08bb4069b9b779900c0e0e98:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Mghtnpapsxsff$7d2fc103be14532e10ae35eb118d3348da3147a0633b24d7a14ea24d62642a10:1:0:Skipping and*::
+u2-krb5-18:$krb18$Mghtnpapsxsff$551b46b8e8bd7e9f3ded0db91656eb1896e700f6193f0aadd192a1a280569364:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Mghtnpapsxsff$38d4c9755bddea8f35a08558d47237483d3c7e941451ea775e362859c2d3fb4c:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Mghtnpapsxsff$eaeaa28cd36e75d9bb11ffcadce20b8dd09f755e3faa205f108df024f074fe53:4:0:bert*ernie::
+u5-krb5-18:$krb18$Mghtnpapsxsff$d743e787aa5d13cccb4fcb370b219745270439ff4716cacaf3236d7645153f7b:5:0:late*night::
+u6-krb5-18:$krb18$Mghtnpapsxsff$4655dc1398e1f7a96e321eb50df1346035c8fe18d60b2421688af8c3774fefde:6:0:::
+u7-krb5-18:$krb18$Mghtnpapsxsff$1c9b6756542be2b0896c05fc1e37a458a5b797781e51f10afd490b9be9b0a532:7:0: ::
+u8-krb5-18:$krb18$Mghtnpapsxsff$12eec7c1b04a911883432b81210bc5cfba5c1e27a33baca837ef58d0357b2bcc:8:0:1::
+u9-krb5-18:$krb18$Mghtnpapsxsff$6c239b89350758b21e7b5100bf954d412e606481f8184de6a8c2b3553333c816:9:0:password::
+u10-krb5-18:$krb18$Mghtnpapsxsff$c4c66361bddc407e4fd7745ac297e50ad98c4504510053f4f2087d2749523563:10:0:test::
+u11-krb5-18:$krb18$Mghtnpapsxsff$3a46c6a261bd4b0e3ab045173e15ea7b66f744460671010ec3c1240fec829b91:11:0:late*niçhô::
+u12-krb5-18:$krb18$Mghtnpapsxsff$22d499d7564a7bd742b1b865b39a0b6e05e71906b4e285a9f3e679e5dd9cec59:12:0:hello::
+u13-krb5-18:$krb18$Mghtnpapsxsff$2c751892262d2d4857804e2fe36ef268b3bdb31ed7850b01155917659d940017:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Mghtnpapsxsff$313eaacb622a665ade96230560fb1dfabecae6491274474ba8a6de90c8a362e5:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Mghtnpapsxsff$4efe499a66c475edfe475e1a2e8e00227eaa26297d93b9862b9f96e26d99aa6f:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Mghtnpapsxsff$005e8d6c681b63d02aded24f5ff0cedf07b6c7cac055baff03512b2cb9e6ca89:16:0:±::
+u17-krb5-18:$krb18$Mghtnpapsxsff$b4b360dc4c48768fde19a1dbb99355b1106fca9fd593edfa30d37325483a1e47:17:0:pass÷ord::
+u18-krb5-18:$krb18$Mghtnpapsxsff$a029ecd95dc9f204268042941abc8ad86f03742f14ea6b97ab26157b0c573ea9:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Mghtnpapsxsff$a276ed904df8b30b859a385c78fce2ded2aefce4dd3ec474d7e7b585b2d3ae5c:19:0:ôåst::
+u20-krb5-18:$krb18$Mghtnpapsxsff$1651c9114940597a9900d645652ae38038abc3a73142947a6e4867952a96f67b:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Mghtnpapsxsff$63319c515278bc2dc368b17b41e20f45977f51ca20cffc65e427be33838529ce:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Mghtnpapsxsff$08b737fedff699d3a37ddf26deb263e700625759e53679c8233be3797b4dab8e:22:0:qerwt::
+u23-krb5-18:$krb18$Mghtnpapsxsff$8a1ee4aa824e3e3b49b8801dd4b3355bacc71f587be057a13b89dff36722f963:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Mghtnpapsxsff$d212d09cb731442b459ba9818079318cce7db0c30b9c4d8437f097b9e644b599:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Mghtnpapsxsff$f9cfbbf51b3a1686ae2c9fae30f58ccee7219a989d0b2fd356f41e5306d2777e:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Mghtnpapsxsff$34a99a063b671a4ea3939b90c77caf67bee704a7d9b68a65972d1a4aede11448:26:0:qwerty::
+u27-krb5-18:$krb18$Mghtnpapsxsff$45280f2c96eb665999dd65d23aad37477bf3fbbc37b257cb71e1e221d6769c0f:27:0:qwert12345::
+u28-krb5-18:$krb18$Mghtnpapsxsff$9f18bfa05f211d5fe3afdac63895a80053a3680b558b17ce36bb257014868510:28:0:12345::
+u29-krb5-18:$krb18$Mghtnpapsxsff$1479b5cfb5b280be51a71646977eb6fad23fba0ca51cd0fa747ad0edb69f841b:29:0:12qw34er::
+u0-krb5-18:$krb18$Nsjklsdfldsff$8a0746a6b89d2a3f450de61530336e35e3b8b80944cd37cf9ba0b3d34427670c:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Nsjklsdfldsff$b503da5b85a0f635263c2b8c82aebd7c602f46bf7f82c66944e9e5ab711fc78a:1:0:Skipping and*::
+u2-krb5-18:$krb18$Nsjklsdfldsff$fc478c4e847037706dbaf417f33527b60c3283e917c6dc22b9cbe4cf9a26ba39:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Nsjklsdfldsff$03756aecfd46681cf9a8b76465f23615302bf907f4fc1a597fb8db3b0e62cd24:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Nsjklsdfldsff$2c402cbd1bd6d2663105288e252e53579cc4417b69272024c912493f3ccbe785:4:0:bert*ernie::
+u5-krb5-18:$krb18$Nsjklsdfldsff$94c53a77516f9715425bc37b1266a15dcc1fb5dcfaecf97f835f254eb16bd852:5:0:late*night::
+u6-krb5-18:$krb18$Nsjklsdfldsff$7de328bd44543aa8408176b91ef8a7f2408dcd04bca6b05d23a63829b1ef6878:6:0:::
+u7-krb5-18:$krb18$Nsjklsdfldsff$16bbde4a36169b613f157354a13cfe3b1c923d5edee595593e887820eb9c506d:7:0: ::
+u8-krb5-18:$krb18$Nsjklsdfldsff$e508871cf58aa75113f1ffed375e42a72b8fbfbbf1e406958dd2430dbc5c5484:8:0:1::
+u9-krb5-18:$krb18$Nsjklsdfldsff$5dee52767450fe348c98a7f001acc60ee02298e0b3aeece50a95dad12aee00ea:9:0:password::
+u10-krb5-18:$krb18$Nsjklsdfldsff$4b3d658cb7f5239b9b7dbe7bfba68891802c3c96ff8868514f95766ea7310a43:10:0:test::
+u11-krb5-18:$krb18$Nsjklsdfldsff$bf14186ebfed4229e1826d98579db91f1bdc6af1f913ef7649f64ca4783027a6:11:0:late*niçhô::
+u12-krb5-18:$krb18$Nsjklsdfldsff$e9046fc4c76bc994493721552c07b2d9be55f7abbe12f2f61faab6c6e1004af4:12:0:hello::
+u13-krb5-18:$krb18$Nsjklsdfldsff$ea5dc74d29646198108b6b336507faa44400692c1345f3777762b6edab2b4411:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Nsjklsdfldsff$fdf1230503feb795cc5ef070dcf8c7d7ca3426a6fcd771982658082904edeaef:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Nsjklsdfldsff$2d23b48ccbb7dcdab6a458a8f3eeae430a0ca485c0fa836f089d26a5ae6a1bbd:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Nsjklsdfldsff$6b0449e68be2e778f708486b236eed8516b69cbb0bae1de819edb94bd7b9d581:16:0:±::
+u17-krb5-18:$krb18$Nsjklsdfldsff$957570ae70e151d46bf7a73acebfda9c2ead871a1bd2595e1f63ba6892d9549a:17:0:pass÷ord::
+u18-krb5-18:$krb18$Nsjklsdfldsff$53d0d25f356af46883fe1971269bcdb8bafa3e5dfbaf82b7a52369b321c1f853:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Nsjklsdfldsff$9860d08aa0a6f3fad924b5349aa95ab55adca57cc5d17b08393579b9b795b234:19:0:ôåst::
+u20-krb5-18:$krb18$Nsjklsdfldsff$a5607fa9e10d8a30877a09b3ef57c0fb805207570f1789b92dfc65b10333d0e8:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Nsjklsdfldsff$13d1f2e897fdd4e10157b0305d06674d80a73e5c74db52e0b81d9baf46f37008:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Nsjklsdfldsff$fea34280a33fc9bd755aac0816a0eebff3e9c045632cfd169eaaa24b876504e6:22:0:qerwt::
+u23-krb5-18:$krb18$Nsjklsdfldsff$edaba5bb970f3da1ac8f4603b0505fddaf30bed01a6acde6a0b9b1bc56859d75:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Nsjklsdfldsff$101c775600df02f90d892ee0815cb16e93a0467e884a051546c6c85482e18b79:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Nsjklsdfldsff$f502a5c4b67e35fc2b70470790e77c122b98c295e3908742f50081f050be125f:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Nsjklsdfldsff$c25d115eaed73792dc61d57aa6780ecffee2de3478de41e5453e98f37ac0da03:26:0:qwerty::
+u27-krb5-18:$krb18$Nsjklsdfldsff$68ed3fd599dbcc588eaa1fa4a7db4e992097789734bbc1e0781a5d818aaf6f37:27:0:qwert12345::
+u28-krb5-18:$krb18$Nsjklsdfldsff$c0c2216ea2386b3eb13d00791009afd0784bb820868d71967650ddf47583f2bb:28:0:12345::
+u29-krb5-18:$krb18$Nsjklsdfldsff$108fcc9f59f1a84a0c99f9b9cae6ca0f0191575d6a5e2a0c31a98b8934da797e:29:0:12qw34er::
+u0-krb5-18:$krb18$Nrltafldsff$3cb87827af1420112957ee6d86e8c4b7549dfefa900539f28cf20ca0c61d1b16:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Nrltafldsff$1a2427308e299a90bf8f2f0627490c127c4b8d8c085bc1c58ba4efa903648609:1:0:Skipping and*::
+u2-krb5-18:$krb18$Nrltafldsff$56e3129c21f522c02411c9ff02a1f633edc4caccb855118eb9f5bc3072727669:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Nrltafldsff$b6c62d6b4afb195bfab625c8edc0c648174a3ed70a770c24beab8249b3db3ccc:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Nrltafldsff$49433a772b44eab2865b9b4cfd03c4516b857a8e758fd7217c393c74fbdcea82:4:0:bert*ernie::
+u5-krb5-18:$krb18$Nrltafldsff$a07c5d09e1046c4d3df7701ba66c3aec91ccb822b0e440a82824f7bc5abfc1f6:5:0:late*night::
+u6-krb5-18:$krb18$Nrltafldsff$c59347d53cd7b6650dbbb065120b233d2cab5b7827c29d7cbae1d8187184fd02:6:0:::
+u7-krb5-18:$krb18$Nrltafldsff$b6ba47bd25b7757cf826d3a111118cd9746dfc0f5410077b53b7642c90e6f231:7:0: ::
+u8-krb5-18:$krb18$Nrltafldsff$4cd31fc89b1ae0e140f37b39b5309db7449326315acdac1ae7bc1ad0d9f459e1:8:0:1::
+u9-krb5-18:$krb18$Nrltafldsff$ede29aa028b5b65a966116b40014ae70a0988fdf89cbfea7f4f5fe9e5dd53225:9:0:password::
+u10-krb5-18:$krb18$Nrltafldsff$b550c276e12f8ebb09be494676a63cb1de83d63ea1403162ea0cf07b22af6e7b:10:0:test::
+u11-krb5-18:$krb18$Nrltafldsff$4e4c82e0185f176b67a5500a2e59e2c4e3b73a1fb65a250e8bcfa0db95f812dc:11:0:late*niçhô::
+u12-krb5-18:$krb18$Nrltafldsff$56fc5bcdf0af14c88d75906faafa61f5a54120f5306c91848cbfdf3f1c800c7d:12:0:hello::
+u13-krb5-18:$krb18$Nrltafldsff$c213923e918cfc60f0e932cda767be2a72f2e58edebaceae7665ab7c8139b24f:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Nrltafldsff$353030ebbc6b8a3b28c4e7ef7774d20f187681510625fb3f840e653c5903bce4:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Nrltafldsff$27816ab4f89f38313bbb625a2f465e8260158fa3b4ca0c18a74da549dd1a7411:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Nrltafldsff$2cce76e3a64ddcaceddf555aec4a841f7b133fb20e9b5e0c37a52ec1cc693369:16:0:±::
+u17-krb5-18:$krb18$Nrltafldsff$238c51738779775ce599a7e845ba776534ab1778fb52bf23234976855fed7cbe:17:0:pass÷ord::
+u18-krb5-18:$krb18$Nrltafldsff$9000816d689a6cb3bc1c3708187950bf31a34fe23b69357a534998445ea78b83:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Nrltafldsff$208ea9c0fa2ec776576e0d2abd4e056d8504410d8f8464c6e03a1b382ead5ec2:19:0:ôåst::
+u20-krb5-18:$krb18$Nrltafldsff$5730b0cc501593f9de98ea1d0aadca8e607c5c131d55b35668725ea22f4934d1:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Nrltafldsff$6473aab0e7357ed78398631b9a2b37d02e00bcc66aac654baf5e10ff1bacca75:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Nrltafldsff$af62f8c40867543051574a5a72a67dffa72895603554d4725bf716837b320246:22:0:qerwt::
+u23-krb5-18:$krb18$Nrltafldsff$7080f70a6e2fe2af6e76eeebd8cd705b9f2cfc6ef52b0f386355562db50b0bb4:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Nrltafldsff$e029d5be1d8050ae562ad06c486c6b82666b66b56d70b79a7a2ec7f7d8ae0b96:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Nrltafldsff$3fa5c7cbf0b302b4b07cea1547e28344d91db08a1fb977b132a1f99e2889fa6d:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Nrltafldsff$46375f667c1391c9b85728599ed0bf62df51044f7301339b219b973cd195b7e2:26:0:qwerty::
+u27-krb5-18:$krb18$Nrltafldsff$f70519bd1b56010c932812733bc3ed6dc5cd844242d499aaf6895c861d14382d:27:0:qwert12345::
+u28-krb5-18:$krb18$Nrltafldsff$2a86bc5f395f17a506efc628c58083495da1b9e1be4e512db6a060ae1b5bf8ff:28:0:12345::
+u29-krb5-18:$krb18$Nrltafldsff$b5b681db24e2f7830f9bd4729dc77fbc815c235c65ae1dac6340576f5b084b8c:29:0:12qw34er::
+u0-krb5-18:$krb18$Nbiimafsff$b2a8358a89517ec85bf23c36a86f91edbdf00828a4443f710b684ae5e740fb57:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Nbiimafsff$839e5db202256b46905e1704b3fc19a7e6c42fcf26526274b370ce41f173d057:1:0:Skipping and*::
+u2-krb5-18:$krb18$Nbiimafsff$acef999d3297d3171ab135edd306b8075089a8c46538b9fd28a82769e46e665d:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Nbiimafsff$a2450968b6d0c8b8dbcbf3b5cab38fad126ce521a150dff4bc17f3d4005219e6:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Nbiimafsff$c5b7f28b25c4c7ba4e14ed5683fdb4b8985cef35dda6cf7db9db1b18f68968bd:4:0:bert*ernie::
+u5-krb5-18:$krb18$Nbiimafsff$f29ec6332a995a62732d936beab727cb6289117370149332b2b76e91214ae760:5:0:late*night::
+u6-krb5-18:$krb18$Nbiimafsff$28a38c923c3c23a6fab379526fbd46820eb3b7a45328a62e17797d71a848bbee:6:0:::
+u7-krb5-18:$krb18$Nbiimafsff$f6678768d0d4f802419b42c9d4c72536d7b4c24c60d4dd40281f9d712020bf57:7:0: ::
+u8-krb5-18:$krb18$Nbiimafsff$89cd3ab2888982be6aa8c41b0c958299f941cd3f1c909f4c3e7d50f85335002e:8:0:1::
+u9-krb5-18:$krb18$Nbiimafsff$fa8d0e8377a6dc1c7aba8c6abc97ff705ad71a61c42f392f14213ab861dfde10:9:0:password::
+u10-krb5-18:$krb18$Nbiimafsff$b8031065063f9774263b9abfd3cb80784859f0c682cb7e39c953b0cae222a428:10:0:test::
+u11-krb5-18:$krb18$Nbiimafsff$36f719c503e96dffdd3e22d136a325909c0902d22c5e8b8eca25d1bebbe75d42:11:0:late*niçhô::
+u12-krb5-18:$krb18$Nbiimafsff$f233724496eb37bf9eaeb8df9d1d1626acc296864e17d4d3dd62bde35ad63bc3:12:0:hello::
+u13-krb5-18:$krb18$Nbiimafsff$d449355bb7b023f2f6f3042a027ea3b42d0391e5bcd7db23d4630a8ac44509b0:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Nbiimafsff$6534fbc2d1cd768246253b5651316be43ca40bc622560e5cd5125969e7db3570:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Nbiimafsff$6dd31f37f45b175f7de112603bc67e77412feb14ad2ee87f001d9f9c8eca6c14:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Nbiimafsff$f7da4357beace6e968da162bc9b867071b33bc07cb452a3e5f07dc792cef6e33:16:0:±::
+u17-krb5-18:$krb18$Nbiimafsff$32e815631f0f34d49be301d0f62d19147d8ca8c5feb452d85d4181147c0fb459:17:0:pass÷ord::
+u18-krb5-18:$krb18$Nbiimafsff$1aa5c05cf5b86cbe40d4d14c093e83d95ea5e931ba9178afdabf6383098f0ece:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Nbiimafsff$119692f89c331baa6776bb190456d8a7468089a9114b284cc2aa18acd3ac06fb:19:0:ôåst::
+u20-krb5-18:$krb18$Nbiimafsff$3053269989edf1d86c70d81264cdac84657a3a613cdd9ba13189f511b79bbbb2:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Nbiimafsff$babb6d1a8ed9e4f4f895b7e196b1042c1d82aa6828fa08a62bf1bfcbfdff2ed9:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Nbiimafsff$54041d83378212e885d6700533a88b6fa3493367d317e2115f4412efdb564d82:22:0:qerwt::
+u23-krb5-18:$krb18$Nbiimafsff$064d509f2bc13d84dea5d35f1b8d90ad54f6b6c74156410a8503e32634711352:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Nbiimafsff$4e35c83092a3798edfe3f41dc6f423dfc2ff67d85a43c956275cad5c27ff8ebf:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Nbiimafsff$77f2ea7a53d7af0f3d36c3ca75657fcf5f5bc9e23b50b6543d662ce315e2a93b:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Nbiimafsff$531a1b20a3dacb515547a7f31dc45d14b809c8e49b17293d7a80711365912d2a:26:0:qwerty::
+u27-krb5-18:$krb18$Nbiimafsff$a5b089fa3aebd91b0dd9bb0cfacbdf63473671b8156f793be1b60e2a49d59a6d:27:0:qwert12345::
+u28-krb5-18:$krb18$Nbiimafsff$6dd3e9014c2d99805237febf8bc6341c8e69f9580e53bd0c7f300ff09f84a99d:28:0:12345::
+u29-krb5-18:$krb18$Nbiimafsff$f5a2dcb9fc9bc771ef86faec6ae3c2a06f4a02c8d9808c167161050510784107:29:0:12qw34er::
+u0-krb5-18:$krb18$Nbhanpapsxsff$61a69b88d9fecce4d75de2133fac67164ffa6a77260365227c923bdbcde8fef0:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Nbhanpapsxsff$00b44f303222b407e8f50e9cb5e4f8172fda49ecc3cb566e4a517a6ec90e19d4:1:0:Skipping and*::
+u2-krb5-18:$krb18$Nbhanpapsxsff$6a347b89eb7f8328288dcca684cf6b01950572a820f4fa911da69e96214197eb:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Nbhanpapsxsff$03b7a7f69a96772bf00556b6dd696a60ea7aaa05dbcc3ff9d3654a6136a39eb5:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Nbhanpapsxsff$e7ef3c5d57a9ef6eb3de91a62b24fa8e01c24e6deefe6c70b1291ab61b191322:4:0:bert*ernie::
+u5-krb5-18:$krb18$Nbhanpapsxsff$a428245d92d62b298f218883514482330c26ff4167a47e1294d97cb53a43c452:5:0:late*night::
+u6-krb5-18:$krb18$Nbhanpapsxsff$72b22a0185e8523e3398ae2b13f89b41336cb6c92c9b99bb0d49a8b17512d8b7:6:0:::
+u7-krb5-18:$krb18$Nbhanpapsxsff$444c9727290c1598529da15878a562c7ac222efbdcaa53292c47202553d5a8b1:7:0: ::
+u8-krb5-18:$krb18$Nbhanpapsxsff$d6218ab7eb34535a62f5b6b5abd365c0c476b55ebf60436287b5ee6fbdc8716e:8:0:1::
+u9-krb5-18:$krb18$Nbhanpapsxsff$040b0c0fab152d71604e287ea2f95e85fabb05ea784636f0ac668754bb435772:9:0:password::
+u10-krb5-18:$krb18$Nbhanpapsxsff$07903945b1e25aeb3a7897f2be32da98736c941855ff38e14c568e713733ad53:10:0:test::
+u11-krb5-18:$krb18$Nbhanpapsxsff$f66b22276fa42e102ecdb554a7d47fa26b66a4b3806c85192455a02da8e27bfa:11:0:late*niçhô::
+u12-krb5-18:$krb18$Nbhanpapsxsff$ba113f8ce72424cf32615043986d855ee1fb2b4bf373a49b3d60c4bdbac1666a:12:0:hello::
+u13-krb5-18:$krb18$Nbhanpapsxsff$89ca99849e56d83578a0183731c6eec43710fdff12998b9c348a6fe3cf1ce4bb:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Nbhanpapsxsff$6f9b8fafe61a650fb8108f96d043a0539739ff6074c583602f5e5e95c3bbb5e2:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Nbhanpapsxsff$3638f160c53a7f472fbf1991febbb1dc8fff08148939cd49532ac1af344baf2b:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Nbhanpapsxsff$825c1f4ca92b095f014d2e982e46e0e99ac8697d084a0c7153090d1e0128ef86:16:0:±::
+u17-krb5-18:$krb18$Nbhanpapsxsff$3c5b3faa4b93d1b2404769bd53896b80d7bbf3a2dae6bfd2b15e0ee211e33f0e:17:0:pass÷ord::
+u18-krb5-18:$krb18$Nbhanpapsxsff$de76a340aa60acd417069bef17b9321187bb9a56e65ec9b7069e1bce13b1abd6:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Nbhanpapsxsff$be2367a2aad69e1c98fceae77c9711ee7d88f9c0039a240e085c37cdab60fda7:19:0:ôåst::
+u20-krb5-18:$krb18$Nbhanpapsxsff$ac73ce5586a3a2c7d2438a84b6ba3d7daa7d73ee324dbd36f83e343cbb6cb3bd:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Nbhanpapsxsff$ed25d708099045a5eca594dd3bc2def241da2c281b58585631ff160d7c009012:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Nbhanpapsxsff$6fcc69f7f72ea471e3646294a4a81c007c5cbeea52cd5add5200b6f7e2ebd553:22:0:qerwt::
+u23-krb5-18:$krb18$Nbhanpapsxsff$009eb780f0ecceee039cbd505c34060dea4bebbc52b720c749c65f28060352fc:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Nbhanpapsxsff$af95ad2c17a5fcd9bc501249da685892f1520156d8a00c3d3ebb6188dda22280:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Nbhanpapsxsff$83bda6af1452b5e68ec53aabc3a7aefc89181f0b6eaac31f70f8962586359432:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Nbhanpapsxsff$b91ffe49876899656a7a3030ccdf54a1f5952c469a96a54f0bceea89aaef587a:26:0:qwerty::
+u27-krb5-18:$krb18$Nbhanpapsxsff$fdeea64b9fdc663f2fe7dda8201811cbd10d1d692458753119d856ce88ae4dbd:27:0:qwert12345::
+u28-krb5-18:$krb18$Nbhanpapsxsff$460dfea4e8e274e687be92814e4601f03ff848fc4200ce3c3e52d04156f2f0ed:28:0:12345::
+u29-krb5-18:$krb18$Nbhanpapsxsff$5175ab5e506060604bfa6d2e93a55be537641ff16b4993faf19ec6333ea855d3:29:0:12qw34er::
+u0-krb5-18:$krb18$Ntjanpapsxsff$3c8f0f8efa5871357dbc331ef7ef1ba9313a7fe1e4c31d381b66848373b22460:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Ntjanpapsxsff$238f228a78561742aa17c0b030f525b987ba2964056cc68118c8ee282793dfde:1:0:Skipping and*::
+u2-krb5-18:$krb18$Ntjanpapsxsff$4a3bb298f871912412cbf5b5a0c469cd886928577a81acea2fe7e202defd9bcd:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Ntjanpapsxsff$3a459409cebe7729b33d8029221152838059f03799d7a9a8d4295bc3819fa4b5:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Ntjanpapsxsff$e7aa5c2317e9e56b168e9137d9aba29828f0ae868fd8b594a98e1bbd9b9a8d91:4:0:bert*ernie::
+u5-krb5-18:$krb18$Ntjanpapsxsff$c60abb2fcc453afc1f6dda82b0391a2d9d36fea694185320e9eecc0056fcaa17:5:0:late*night::
+u6-krb5-18:$krb18$Ntjanpapsxsff$d94eec47b98e8542b59ab386423726f54847a9582885df82db90dfda74e5ee70:6:0:::
+u7-krb5-18:$krb18$Ntjanpapsxsff$5272952ae9470a97f44e9fd9b20507d14581cd6732f4100f747b6f8cbca01c87:7:0: ::
+u8-krb5-18:$krb18$Ntjanpapsxsff$b5968f80668dc1a75585f0614f7e4ababeb2ca2d7c90b53b84b2c98770ebfa99:8:0:1::
+u9-krb5-18:$krb18$Ntjanpapsxsff$55b83cdbfffe224b311419c778e8b094f96366660dc3bc4ba4056a08cf46eed2:9:0:password::
+u10-krb5-18:$krb18$Ntjanpapsxsff$f85b247b687134711b0a06f643370cc01e40db5319e2bc8fa9545408f8251227:10:0:test::
+u11-krb5-18:$krb18$Ntjanpapsxsff$1047b98510fd6c2880894b4535ffb8f5816bc98d81db5c1bf78d358d6f7dc004:11:0:late*niçhô::
+u12-krb5-18:$krb18$Ntjanpapsxsff$5dd49d8e90314ef35002ccaf00c7deac21749d0cc4d734b068eb3470b77dd939:12:0:hello::
+u13-krb5-18:$krb18$Ntjanpapsxsff$d198ba3477a2cc3886e3ca0f376be4ba8f90f2deddfd95f33bddab4628e3a117:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Ntjanpapsxsff$bb992acf441d21428e6dc4bbab6e590769621e959d9e84d8afb0b4ae4f1f87d2:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Ntjanpapsxsff$7f26c3fd3c668a07bdf1e61c51ddfda4e6f449814cfd644c504dbdef33a24c44:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Ntjanpapsxsff$29b402c3de900a8cd569b907b09fc80436cf96c4d5d83f01802700bc0e4ee70b:16:0:±::
+u17-krb5-18:$krb18$Ntjanpapsxsff$aa504a851d45874f0bb5cb8889667032a69a4fe17aef793db3444992d33676c6:17:0:pass÷ord::
+u18-krb5-18:$krb18$Ntjanpapsxsff$d1f0a1f5c757b665aa7a16fcac00817103bee774c4f243e0da97c7fe3d99da36:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Ntjanpapsxsff$241354332aa296c7069ca54dcbc2d2fd6f005e8d179c58e62d37a770a82cb999:19:0:ôåst::
+u20-krb5-18:$krb18$Ntjanpapsxsff$cdba3064a61309ed16148d54f5cab191f2a55ab84181a7b0525e201846ef310d:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Ntjanpapsxsff$c0b8138653b8f387eadfab1bb79b77f4ac93dfbb219871c1deb26d6a1df6c9b0:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Ntjanpapsxsff$51ce11528015ac85a53c6036a832e53a03ded27f5ab64a3d5c16eb93ab6ca4a0:22:0:qerwt::
+u23-krb5-18:$krb18$Ntjanpapsxsff$3c0760f016f1767ab2bac574b016cfb646e644bfbc58cd5d7d7d1f4484f0fe38:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Ntjanpapsxsff$5259dd8f76c6746ecf07d139ae9d8aaa64dd67745fb3201487341184d6e8ff2d:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Ntjanpapsxsff$89f615873986f53c4bc92f5a56fd3c9ff6e3cc03dff779606621064a09cfb56d:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Ntjanpapsxsff$4c32d28dfb22edcf207f3b15599e2dbe73ebb090c44955c0251d8764138eee24:26:0:qwerty::
+u27-krb5-18:$krb18$Ntjanpapsxsff$857fd761445d4aca8fbdc86e86e054db7cef496bc0815b06f7b0795aee3a4e25:27:0:qwert12345::
+u28-krb5-18:$krb18$Ntjanpapsxsff$e66f62b1d510181c02e19133588b98120be4123cc72f60f3558c87ca21c555a1:28:0:12345::
+u29-krb5-18:$krb18$Ntjanpapsxsff$08ccdc9fc5b9e11a5fad09dc766e5fe884e56be22902839251665be25c36fd7a:29:0:12qw34er::
+u0-krb5-18:$krb18$Nrianpapsxsff$5dcb73fecc666dc377db9ec06875c0c1ee03476e619c65478d5582352be48817:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Nrianpapsxsff$29e1c410c4fbc93e93ce613b57a4f43438c1e07933171f89754535657d2f2f1d:1:0:Skipping and*::
+u2-krb5-18:$krb18$Nrianpapsxsff$ef34db1a52d19a11002dd46441dfbcf130d54c8b90e0ee123c87e80f8bad7657:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Nrianpapsxsff$e4497a6ba8927b3da4ebef79c5ecc1177f8d0cd12cd50b185b2f9c197d4b009f:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Nrianpapsxsff$b584daf92147cd379473d6744209b162089b88762ed35c929b1297649adc10d6:4:0:bert*ernie::
+u5-krb5-18:$krb18$Nrianpapsxsff$57bbfe70b576d2aa32be0cf0f222c9ad0029312c69f489f92a6efdcd21ee164f:5:0:late*night::
+u6-krb5-18:$krb18$Nrianpapsxsff$a124d3a57cbbfca214da8076bfcb40b60c191984c97c5487dcc25e1cae3da0c7:6:0:::
+u7-krb5-18:$krb18$Nrianpapsxsff$51d3c0b9259a4571fd92b44202b0080ff62d77ffb79e83cad71257ae2f596083:7:0: ::
+u8-krb5-18:$krb18$Nrianpapsxsff$b28938ff95603c55db3d94ca239254fe6675d6b0f45c2448d485199ea0c91c83:8:0:1::
+u9-krb5-18:$krb18$Nrianpapsxsff$c2ce8a68c7644478b46928e55153bb96863eb92ccb98319589b04b87401165e2:9:0:password::
+u10-krb5-18:$krb18$Nrianpapsxsff$773984a3a911f06bc4f6e1cfd98aee5d048345c7d8a00d3c87ae679a7456cc78:10:0:test::
+u11-krb5-18:$krb18$Nrianpapsxsff$d8b9556310d2b01bb92ea04d9576c46af80b971978671eef41f4645e328a2841:11:0:late*niçhô::
+u12-krb5-18:$krb18$Nrianpapsxsff$eae66e438976cff8ef6a362462455c7623b6fe914f153aca47b3debabac835a7:12:0:hello::
+u13-krb5-18:$krb18$Nrianpapsxsff$6813e7b6ad3a13cce62de202e536b3b52f53b2ca0d91e5569fc4b26c96d3975f:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Nrianpapsxsff$77184676fcc560ece7a089baf9852b57e2612d8f02d8c120256d93de261cee4e:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Nrianpapsxsff$b2bea5fe0a60097959cd28acf3f40027488dd30bb7e8d4f19c49412aecc708b9:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Nrianpapsxsff$adb4e638617260895b8cfcaff7f722d692654259d2fdf990296aa9107cefcfa2:16:0:±::
+u17-krb5-18:$krb18$Nrianpapsxsff$15d77ed89f77767a51deec3973d48032b4b9a83e2c126b86a277e3baa221a852:17:0:pass÷ord::
+u18-krb5-18:$krb18$Nrianpapsxsff$ed53fa82e9d6a6e07619efde537d96085316e6217cf33be4644dce5955abf22c:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Nrianpapsxsff$9c3d1883cf49e81bad143da1e05212f23959e80a818b868561e3865022a59cc6:19:0:ôåst::
+u20-krb5-18:$krb18$Nrianpapsxsff$55ee5118febc50cd6c224c957c6eb2baf543c9e35de3395b201a11ea0349cfa4:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Nrianpapsxsff$086dcdea2aa66fc98aca7265b97dc8e0296f3b3a73f71a9e19059fe1b67b0bc1:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Nrianpapsxsff$8bcd25c9d933a80ff6bb8dbdd74bd7a1e4b62d39d06098d7a6e26707b4a6cfca:22:0:qerwt::
+u23-krb5-18:$krb18$Nrianpapsxsff$f43a5b71481b5bfa0a0979a4081dc73ca6e384d0bd252a7882a2a57d66d14d26:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Nrianpapsxsff$bd6eb27445a3d22241a36ec80ae6841abb58280adf72ef93413d5be2905a23ab:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Nrianpapsxsff$a8ce60f4f14899d8212e6c591f342255e3fc70201cd364c5ff1179aaa961c399:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Nrianpapsxsff$731e3634cf57626b244c182999513ab52da61836b5de929893c624a7f72fe9eb:26:0:qwerty::
+u27-krb5-18:$krb18$Nrianpapsxsff$1017e0df0823ff691f2e1dc912cb104173a9b434ea175d896d9ac7f11d43b779:27:0:qwert12345::
+u28-krb5-18:$krb18$Nrianpapsxsff$5e748eac4c4a915a807b6183e1b7a425ae54ee1d2b7b23d8e0890429ee880005:28:0:12345::
+u29-krb5-18:$krb18$Nrianpapsxsff$ab87c875d94c00f621c855cf1af0b908931b2435a98c320edc2baf4af2067bbc:29:0:12qw34er::
+u0-krb5-18:$krb18$Njkanpapsxsff$1c90b1e7bd15344e6eb5d7fd6fac92568def9bea8d0a3a017a3b1ec4019b2f21:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Njkanpapsxsff$d19aa4ef870dce90746d7ad14748c6764447848018e5a4c4b5b51b5dcdfcb156:1:0:Skipping and*::
+u2-krb5-18:$krb18$Njkanpapsxsff$1a5715226b03d3ae0a9791bcab739e0809fa123d1d240d7b07608b188e3a2b6c:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Njkanpapsxsff$ca50ac3a937489bef295d42252936e8d81b316acd6d92cfce35503a4ce9ac95f:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Njkanpapsxsff$65d3a62b455d2866d0259be8c7f8539e42d7f20315bc18002abbd11db11a3a69:4:0:bert*ernie::
+u5-krb5-18:$krb18$Njkanpapsxsff$8b8128a25c1d438533d0c37f59c2edf40be405ee128a0b5e024c465799aaba63:5:0:late*night::
+u6-krb5-18:$krb18$Njkanpapsxsff$a22fa34eaaf5a527e20199a246464541907adba3ab3bbd34a6cbe9083e32e1b4:6:0:::
+u7-krb5-18:$krb18$Njkanpapsxsff$c0fc70d89a040459965a7801d58d8a7adb6cf9c958966e94769a1f50e3a97b95:7:0: ::
+u8-krb5-18:$krb18$Njkanpapsxsff$fefe38cd910e44aff4a9a8587aa141019e37a07a63c326209a69178a1e4cf751:8:0:1::
+u9-krb5-18:$krb18$Njkanpapsxsff$082bfc6b91de3a0bd904a70186f50370243497b9cb8bb0b423a7944f8b4492b8:9:0:password::
+u10-krb5-18:$krb18$Njkanpapsxsff$27cf06bc76c39e9e698f3b6af52d618a49d4040c58f933a74fa0853100705586:10:0:test::
+u11-krb5-18:$krb18$Njkanpapsxsff$76a101053da4124d6516ec41e42a29a8bf644ebbc061ef34c08b73b32d531764:11:0:late*niçhô::
+u12-krb5-18:$krb18$Njkanpapsxsff$9607f20a9151c04104b087a8207713b9e7804ecf29edb058cb9c255e27fad60b:12:0:hello::
+u13-krb5-18:$krb18$Njkanpapsxsff$20b95535254be6cb336fb7e8b0670737dcfca8e21326139e8d6b97399cd0bafd:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Njkanpapsxsff$35911adcdc98f746dc085bc2b9068d3c7f9845ec9ceb47b69cb66af632c6545f:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Njkanpapsxsff$5e567ed0e4ffda9933ec17da66ec0533bc50808e172d4640587b7cdfedf3a7ca:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Njkanpapsxsff$40e0b3b948fc4776d90135d9df5f9b33d372c55f3bcf92f4e9b2bf617c86a2d1:16:0:±::
+u17-krb5-18:$krb18$Njkanpapsxsff$1b0334042883a672b59168651e33867fd1ac80f0e88ec70d2465a96ef8117f8f:17:0:pass÷ord::
+u18-krb5-18:$krb18$Njkanpapsxsff$1df1cbfdc0f38f2e2a2b942b71f6a0a76d0217f88696c0e5a61cac3029e5eaf2:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Njkanpapsxsff$953b9a5b934372a3ebd73f0e6f8c70af195eff7c3a7fb653f6d2bc2178a9c844:19:0:ôåst::
+u20-krb5-18:$krb18$Njkanpapsxsff$691075b42020af960dd8011fb42c4264aa13db44f87dfcb935421e4fd8e9a969:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Njkanpapsxsff$9720ab0eb58d34fcc4d2ed2c063616dc78a82e32d9ad72d4581f903a77422374:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Njkanpapsxsff$34a9483b05214daeca22d57fbff1b22befc27c624a908e6c34cdc6bb3676f6db:22:0:qerwt::
+u23-krb5-18:$krb18$Njkanpapsxsff$b1964e16977b107cb62fee491f7d7481ffa410cea682fdd7d7e0c6686380097e:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Njkanpapsxsff$b41a6e38815525ef577f57dbc6c70f95442a882e68c65d9a55f2ae69c8e2ae86:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Njkanpapsxsff$33724796fce41c35255ce35250f08ab6b0363afbb2367f6f4adb4cb791d88673:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Njkanpapsxsff$1adcf297b2bb1641f7661fb2d279a5c9028bbedd6d209f6e5d38d63278bc8456:26:0:qwerty::
+u27-krb5-18:$krb18$Njkanpapsxsff$4f2e51378461068b6592661afbd59231921986f46fc74e4f6b2d2ef021e16dcb:27:0:qwert12345::
+u28-krb5-18:$krb18$Njkanpapsxsff$df666784c5733408ffce407bc058625e3c80d1956fde6a34837dea45aa8ad063:28:0:12345::
+u29-krb5-18:$krb18$Njkanpapsxsff$aca22ae241c3e961349b2582ef3a77768d1e490d8560b814c738fd86b82a3f6c:29:0:12qw34er::
+u0-krb5-18:$krb18$Nchmnpapsxsff$363f13b21008f200875128dbe14c123cbbe90ac626150afc198426b14c93e610:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Nchmnpapsxsff$eec6a90744820c4121d5a8fe3da606dd05c23d8868efd7a202e7520945438e8c:1:0:Skipping and*::
+u2-krb5-18:$krb18$Nchmnpapsxsff$4e79ddee0ba9327f0c8121d22f5c51f47073abda3d44d42c808fc9c25ea49615:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Nchmnpapsxsff$0577df86721318e11cbbc523c501d7f2cabdc399d0b739f771f2bd98566373c1:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Nchmnpapsxsff$65025b0c8f7bc6f58dfe3afe85f3e0de92ca68f631207cda56e245340601365f:4:0:bert*ernie::
+u5-krb5-18:$krb18$Nchmnpapsxsff$c47f07c436fe28f80d2ae1da02a558d04925bea436aa40b6c5582364eca8d66d:5:0:late*night::
+u6-krb5-18:$krb18$Nchmnpapsxsff$79b1658496f9b038f19c85790ac4ab563dae4979a7badc248b443f6c2222f40a:6:0:::
+u7-krb5-18:$krb18$Nchmnpapsxsff$3cb0f2c45e57ae8054dcb85ce7d924a2f649058e47dafa8cf35e424bf28c782e:7:0: ::
+u8-krb5-18:$krb18$Nchmnpapsxsff$b7899871da4f346cc74318ec7b56eea59c12721db1ed44e1137bc21713262459:8:0:1::
+u9-krb5-18:$krb18$Nchmnpapsxsff$3c39d20d3fd1204d7a48eb2f624c44fc551f1b68d63a09b59eee31d195fa4703:9:0:password::
+u10-krb5-18:$krb18$Nchmnpapsxsff$cd52fa78c6c983154ebd4f70e1d2b97b7770d2a1591c85637bcaf3d9f849192d:10:0:test::
+u11-krb5-18:$krb18$Nchmnpapsxsff$f6402273590f64ea7b345a2a2f4ea20399ec36f859637520ab3d3dee7708c02e:11:0:late*niçhô::
+u12-krb5-18:$krb18$Nchmnpapsxsff$b2f5e7ff6e566483455490d3b66c0b138f764c060743026253682dec699d1ba5:12:0:hello::
+u13-krb5-18:$krb18$Nchmnpapsxsff$5a9c1a7a9ca2911f96bf08bee4320c1dbcfa1caeeac0d9a1f7b40adccb0ee81f:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Nchmnpapsxsff$c80e3dd0d79ffef6a4161386c7dc929c89895dec56675838a7cd5e8828639a6f:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Nchmnpapsxsff$234ee16b3dd895a5bebff951a5cd01288ae93a5a4779bde55917c439fa4c59fe:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Nchmnpapsxsff$0c8c88a0a1fe6d21667129b1c4c615183ed0cee309e3493920b86704417a9ba4:16:0:±::
+u17-krb5-18:$krb18$Nchmnpapsxsff$14ecf903f6df862444176d0081f9a6146c8ce6226deba7d571b85429479d075b:17:0:pass÷ord::
+u18-krb5-18:$krb18$Nchmnpapsxsff$2a98352348d456d9fe61c95ada502ffece7fa1b8395cd31f4ca8ec9db00be93a:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Nchmnpapsxsff$c06570a5ebaa9eeb39d93762a0b3f74ce1ecacda0e034dc424986287fbfaf283:19:0:ôåst::
+u20-krb5-18:$krb18$Nchmnpapsxsff$b5d576d428c335f9d3bb6c8eb1981e444fab89c4861401e6a8d2be3498473081:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Nchmnpapsxsff$721c388c5c9b986ff4c4b163ea9f6ece4666debfce8af9897079ae7ad18a6299:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Nchmnpapsxsff$5fae64d93cc782c53a1e27598e1b568ecde78ca2890b5f5450054bc0894f0375:22:0:qerwt::
+u23-krb5-18:$krb18$Nchmnpapsxsff$c63149d956859208cedf84a3cf309c5a5139a43236836894ef9beaa56142cc2a:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Nchmnpapsxsff$78b6e401b23f9ed3c260c424c3774369e9e75a9ab896d1dad20510d23488dc03:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Nchmnpapsxsff$d5428990bc7b7c5c744eca995632e225c4ca364eef355fb34a4f288e32f95eb4:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Nchmnpapsxsff$25bb90eaab1df7dd6ef91d9368717523428a585003a492c646c0771ae8d84db5:26:0:qwerty::
+u27-krb5-18:$krb18$Nchmnpapsxsff$e1a34fb9d03c33dd4d43525f28e074f9c6f85f9cbda652780d13cd24175e23d1:27:0:qwert12345::
+u28-krb5-18:$krb18$Nchmnpapsxsff$0a8cfcda4c8de3581eb2b71cf64718b28dfd3ce43b76c8e181b33659cbe58f49:28:0:12345::
+u29-krb5-18:$krb18$Nchmnpapsxsff$00d3e273c7cd48664398ecb05bc8853fd140aa4c76e28039a3cb41890465a4f5:29:0:12qw34er::
+u0-krb5-18:$krb18$Nahonpapsxsff$7493abf86f9bcc3df79ec3ceed69c4af57a6745ae6a1374868179d332114a2f8:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Nahonpapsxsff$b2a5db47580b829d69f3f0e9dc51311cd075fc1bb471211bda377e3ca27098bd:1:0:Skipping and*::
+u2-krb5-18:$krb18$Nahonpapsxsff$f1d900b73135545b175f00456374289b59939508f0a15886bf2c3dccd072c487:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Nahonpapsxsff$50c540885cbf67a103b4bea186dcd926d2e1a4643c809cbd8c22affbadd58355:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Nahonpapsxsff$1cef413c1e9879148eddfc5bb05e644fa5758003957ccdd401f3b802c15d5230:4:0:bert*ernie::
+u5-krb5-18:$krb18$Nahonpapsxsff$adda20d30876db817859a31d2059c432222eb89b6dc284885fd52e844bd41a18:5:0:late*night::
+u6-krb5-18:$krb18$Nahonpapsxsff$bfb3d2fad218100ed514d91539d0a8dffff0180c41af4e15f44e325d2f7a976a:6:0:::
+u7-krb5-18:$krb18$Nahonpapsxsff$a5391f888ef38b3d30e27dbf91c7a52f46fe64a5eda4b41822d86b6457f9954a:7:0: ::
+u8-krb5-18:$krb18$Nahonpapsxsff$67aebbe8a27ead091021fa7f0e9256841a932051c651e1e9105d0e5a78ceea36:8:0:1::
+u9-krb5-18:$krb18$Nahonpapsxsff$27dab79a53e089600db96a4b334d66e8be338d5e10b0ec1405a3c4558bc9fff7:9:0:password::
+u10-krb5-18:$krb18$Nahonpapsxsff$3a67b0359c5a5aac7a3c1e8567e9d0926e4c74c73920d3ab781136d9e06c6e5f:10:0:test::
+u11-krb5-18:$krb18$Nahonpapsxsff$a2c2cb3ace2517f1e6fa251c73e9a6f794320513f8b09de58e1f3867e8ce5a0d:11:0:late*niçhô::
+u12-krb5-18:$krb18$Nahonpapsxsff$df74378e0b6035c47cdeedcef798429f0753916d69b0007cf167de35a0641762:12:0:hello::
+u13-krb5-18:$krb18$Nahonpapsxsff$56a398a6ad90caf1536d1e2dd72454abf68aa15ffe7327c6d94c3b6abad522ad:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Nahonpapsxsff$39a90baaf67dfe0c3957ca0e52652153ba215416c2e609f46030812ae715feb9:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Nahonpapsxsff$cacdbb9bf7f1f2ce1f7d564cc6b491103e1baa29a51d442877b5bf743e5c85ed:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Nahonpapsxsff$c35f986004920c91a60bf878b94d1b9b8f7d68b840e724f227f96eae7d01fe4e:16:0:±::
+u17-krb5-18:$krb18$Nahonpapsxsff$ecb774dea1e8bc3cedaad3a6f362e3580fac9349fd46d7531203b430e09e7c46:17:0:pass÷ord::
+u18-krb5-18:$krb18$Nahonpapsxsff$cd2410180783086234a7912dccc8304aa55613d75b49bc44b00ff324f372acd2:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Nahonpapsxsff$85ddb3372e10fb89a4f47dec62d11f400cf10cb358e26f9e204b7c78b16f1fe1:19:0:ôåst::
+u20-krb5-18:$krb18$Nahonpapsxsff$06a3d10fbcbc06647cdd21040e3b34305f8b591a7b98a21a800c8bd9a6ffb0b4:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Nahonpapsxsff$50b523f126c29a95b1be78291fde7fc40a9bacc7d690ef9b74c4a3f9fce43afa:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Nahonpapsxsff$624ac458c316c079a155490115e45fe32a345a0b548f47fac9371f80281e56de:22:0:qerwt::
+u23-krb5-18:$krb18$Nahonpapsxsff$3000aabff06cc1351e5431ec467f5ce04f1fceba9ef67a9cd728cab3856afa8b:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Nahonpapsxsff$e2ac0fd02ea9fbab7c8efab5a7f8df3110784d04bc46520a7d86d9f231a754a0:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Nahonpapsxsff$b390a0359793bace52ae13f26ebd1f05c665142fc248acac1fc847e5c07007e5:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Nahonpapsxsff$c589fef505136cce372019a6f0daa104f3a0a3b94769c84b7d1e182f180793db:26:0:qwerty::
+u27-krb5-18:$krb18$Nahonpapsxsff$69125a2cb6ec0ee0dfa3d28e1fe3e6c86c7a755f1327dd0fddc6aa1bd971a7f8:27:0:qwert12345::
+u28-krb5-18:$krb18$Nahonpapsxsff$88bc44dafb8d5594f5f7ee37563cd9eb9b741a702b86160bc892cab47097b337:28:0:12345::
+u29-krb5-18:$krb18$Nahonpapsxsff$06fa25ccd18b434a3bd670eff99ecd0b39b78f2d552d3685e75aac0c411ab762:29:0:12qw34er::
+u0-krb5-18:$krb18$Nghtnpapsxsff$a007690dcc95d63bf650c12ff8207b3e299aebfcfba7cec92ec98f3900c9040d:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$Nghtnpapsxsff$2ddcc14c4e2941c9f30c95a01b51c5dfed5caa87ad2253710518d51ff4b61a02:1:0:Skipping and*::
+u2-krb5-18:$krb18$Nghtnpapsxsff$b1f83c27faf60204ff96dcfdaa6228371526adb0ef1b577a9db1361ab681bd76:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$Nghtnpapsxsff$b3d646bbb1957bf58e2db02b13e2b5060ad55ed1e6966e29e09dded2dfde439a:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$Nghtnpapsxsff$4131fec7ba174a36c2a11e8498c35f9992b32bcfece29edabbda7bdfb051836d:4:0:bert*ernie::
+u5-krb5-18:$krb18$Nghtnpapsxsff$c3c44dd3a1b168152ca61e735b4ad23cada58ba531db56077031008303c4f3bf:5:0:late*night::
+u6-krb5-18:$krb18$Nghtnpapsxsff$735740d0bb30a99812589e07d43d0eb12689e4a3f9ddf2d57be846170998fc0a:6:0:::
+u7-krb5-18:$krb18$Nghtnpapsxsff$615472852548c6d445cc428a2ba07a9584eb79d94e82514ecd071ca3edae5862:7:0: ::
+u8-krb5-18:$krb18$Nghtnpapsxsff$0f139dffe98f8012451cea348655adab9b8075132cd7781af2f5c05999d3fe17:8:0:1::
+u9-krb5-18:$krb18$Nghtnpapsxsff$8e992cc58177a18fa26191de32e0be6dbc06f1715b3012daeb757e0925b13578:9:0:password::
+u10-krb5-18:$krb18$Nghtnpapsxsff$ea017d5c3be158d9c3a67bbc9bcb56f8a73bcbb65220606827f5d8975308b695:10:0:test::
+u11-krb5-18:$krb18$Nghtnpapsxsff$f9d4990a0424b17cc7c91323921e906b30caa1870507c443c40480948d21ec27:11:0:late*niçhô::
+u12-krb5-18:$krb18$Nghtnpapsxsff$48e4e65d4aed9eb7022f4c809031bddc6009ec15c34b91c20e199a35e1c0efae:12:0:hello::
+u13-krb5-18:$krb18$Nghtnpapsxsff$b73b0b1a3e603b899381e6e266863151ffcede4a9269c1dd4839544ab8a2eee8:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$Nghtnpapsxsff$835a2b56c6d668124b7329c54fe7d410e60ad2e24f6b696cb3ee146bd0063d47:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$Nghtnpapsxsff$08d7b530c48053d6bb84cafd2f94611d4ef37fd2263c713ae2d4766648b28fc6:15:0:ttttttttttt::
+u16-krb5-18:$krb18$Nghtnpapsxsff$194229484517176849e6ba0bd1447dab6d4a8363e3d5ff830c59f5b54dc5d0e6:16:0:±::
+u17-krb5-18:$krb18$Nghtnpapsxsff$d4c0ba7a1bfa22814fe0f95c41efa2ed65e7de17a0e4c39da4d114572d22c89e:17:0:pass÷ord::
+u18-krb5-18:$krb18$Nghtnpapsxsff$eab4135d872585766f118cd30a74db650ad8ab92045997e24d7a8d5fcfc7e10d:18:0:dffffffffffff::
+u19-krb5-18:$krb18$Nghtnpapsxsff$c20fa48be23f1a4d589b689ae6707b92be4ea0745d432e52f0b4da31a844893d:19:0:ôåst::
+u20-krb5-18:$krb18$Nghtnpapsxsff$24f4981fcb935a849577271cb2bdc297e8802cb5a1ec387c70f6722e84eed9aa:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$Nghtnpapsxsff$90ecb6c8322d6bea741593acbf8a5597867f9656dccd97b961ec455c261f8dec:21:0:alsfdkja;::
+u22-krb5-18:$krb18$Nghtnpapsxsff$595b1e069d38c03ff8e55aca1fa3b916fb0e2c55565c6e670d4b8cb86ff8c93b:22:0:qerwt::
+u23-krb5-18:$krb18$Nghtnpapsxsff$8880bcb1002a8858cdf058b4dd23b237d568a20819e9d528f254d4d4d40d69fe:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$Nghtnpapsxsff$c057bb63b8d2f30413ea6f0497cc6822263a40a5fb152bef5985bdeda5d2c2cb:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$Nghtnpapsxsff$23ef55e5be30af6fb405fec0fcbcac2f1891382bc461d9b8949beb5abf9af35e:25:0:q÷årt12345::
+u26-krb5-18:$krb18$Nghtnpapsxsff$422a54a817ad8ebd657e68688af1bb542cdd4ef494bc3d9cb41f37d578083624:26:0:qwerty::
+u27-krb5-18:$krb18$Nghtnpapsxsff$e01b38ea38aaa7ed744fa7804809c218fdb99f5e7f1c0cef9c2ae16aced8f041:27:0:qwert12345::
+u28-krb5-18:$krb18$Nghtnpapsxsff$91a54be19ed384d581bfdb2080781886c3870e30fdc69e428adf05df42f2145b:28:0:12345::
+u29-krb5-18:$krb18$Nghtnpapsxsff$2552ff8184afe5b0299a91099cd150e360cfdd34c37948d071b5fff5b9683bfc:29:0:12qw34er::
+u0-krb5-18:$krb18$CNsjklsdfldsff$0911b7696bfc7d2205bc02dab8576b19d1636b62e9c415ec2b5a92c4920606de:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNsjklsdfldsff$606b4ad6e04b14fcd8961081830f55241a81fa6d0c133f6f2f56972848658467:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNsjklsdfldsff$0f4840e4a42e30f9becc2933585f5ade773dc4b76f70b594d62fbd9252ca00d4:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNsjklsdfldsff$64db45c82b70eb38520dd24ffaf0dc24a47895e54f4e8bf6f2689fd7fae1dd9f:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNsjklsdfldsff$a7ec99ee2ec1b6cf86d32be7f64b7d719c838cf7920ab868f3f12370f807135f:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNsjklsdfldsff$503d2e07e11d9435c42dd21204a519418c01356991ea3df55062b4c2ba7de1dc:5:0:late*night::
+u6-krb5-18:$krb18$CNsjklsdfldsff$5c3783424618bc6ede96cd2e901566c6804677b5bdd5f6060ae0869cea888b5b:6:0:::
+u7-krb5-18:$krb18$CNsjklsdfldsff$937def0c029831a8c1464fde7d0adba0b30107ea4a87bd363e91b028c1f621fd:7:0: ::
+u8-krb5-18:$krb18$CNsjklsdfldsff$dc84dd6efc3476a9eae4442efa4571c967ec8e6a647c9c94a2f6b52b6289ad23:8:0:1::
+u9-krb5-18:$krb18$CNsjklsdfldsff$31999a2155508994625d52c201034f27c7a2864d0f5bd301dff4af65b578660e:9:0:password::
+u10-krb5-18:$krb18$CNsjklsdfldsff$6d5c995832a27d6fe0f3f48c9aabb637ba184c60b080002c0e6557737b382f41:10:0:test::
+u11-krb5-18:$krb18$CNsjklsdfldsff$95fe7553e428c42ec7f1bebc64d881d20677720aa2e042ad17d552db478e9ad2:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNsjklsdfldsff$eeffa1c67ba01eca7a96989629908ca095548545b61f6346d00d4e406366f2ce:12:0:hello::
+u13-krb5-18:$krb18$CNsjklsdfldsff$c968da7a5f17730a0b8c5c1389ef0a9d846522aa4db485d46aab94c3429315ce:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNsjklsdfldsff$a23bce67c78d5f1dccadbd52267106160acda75a750966be04dcd5af0def4b03:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNsjklsdfldsff$8bb2e28ad05b2046b3db2f4d5dbea07fd09c3f964b9cdb9f9ab01006c00bbac7:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNsjklsdfldsff$b52e857ddb122068a89759fc63e4645dd15cb0c70b3accd8c8a620f350442bc6:16:0:±::
+u17-krb5-18:$krb18$CNsjklsdfldsff$c5997e6106531f63109f2432caffaff949496938996f8d94e4b551dc190e3ad8:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNsjklsdfldsff$ef94406e295ac306174c6aaba9180948fd386f0bedaab44288321d60ad2b1659:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNsjklsdfldsff$596a73491b94fe9e2791d73721f41ab659f4226254f885ce142e7d31d8a478cb:19:0:ôåst::
+u20-krb5-18:$krb18$CNsjklsdfldsff$d256243637291e1ac8d85d8b4d477e3300b89bfccb9f84538d10bbe848f773c1:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNsjklsdfldsff$6f980a8483c6a31173d79d128399a6d957ff01868ea582015328a8e2bdb6023e:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNsjklsdfldsff$7e863622103f46695460ad6ce4a48d1882db79d06972c43882b0458602864a8d:22:0:qerwt::
+u23-krb5-18:$krb18$CNsjklsdfldsff$e407b00a4439904f8e86da69a5ee6d96787fda7beed8a29036fd876e7e60aad9:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNsjklsdfldsff$110b15a19b7d3748d515004cb69c9fafeeb7766c2c3990dccf4d287da605a440:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNsjklsdfldsff$8cc747a7c75e7b2ef84ac4d38837b9716087fbb57404c13af5c496ca059a1bb4:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNsjklsdfldsff$cd06154054759e260faf1ced20daab802665b94e81032348a5c2e5322d396b46:26:0:qwerty::
+u27-krb5-18:$krb18$CNsjklsdfldsff$0c9d1cb549f3ac407f1f778cfc3d4e03fc9556f645f77f373b468c1d2f092cd0:27:0:qwert12345::
+u28-krb5-18:$krb18$CNsjklsdfldsff$29944f4e5b527fa2c35b3ebb1fe021d996122360868923f5158848966652485b:28:0:12345::
+u29-krb5-18:$krb18$CNsjklsdfldsff$72bf79a3945ac6250096bdfcf487ab29385e785dd863e8a8f1cdf9c90a8bd5ae:29:0:12qw34er::
+u0-krb5-18:$krb18$CNrltafldsff$800a302fd9acb5f30abc1d58f6124b4c6d196737f440c682a8d11fe25b3a1ca6:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNrltafldsff$5df965faf284ac7ca9fa8261ff7cfdfea02e61fc764c774e41ef81b876b2a4fb:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNrltafldsff$608357d101343d04198cba8f5b8c53e44ee702ac555a5f46af56670e4b51b4f3:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNrltafldsff$cd9ffe4abd2ba00ffc7a97a2597493c41294b583d1a1e1723357a12d02e02b80:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNrltafldsff$2ef3fdf8744178e166f0e4a71a9bfb84838341cb0996de6089a7423aa5a4eefa:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNrltafldsff$d40c0d1c1557d5505a1be3a38b9b120467197f95850475f042deb08482236957:5:0:late*night::
+u6-krb5-18:$krb18$CNrltafldsff$4f666e5ec0e417ee26f604056bfaa36b1f86a340701a0890f19c52697ec0c998:6:0:::
+u7-krb5-18:$krb18$CNrltafldsff$d6511075cc7ad2acce44fba61284d330c5da50e386ee978181106aead3735ebb:7:0: ::
+u8-krb5-18:$krb18$CNrltafldsff$6ea7f345253ed1e42efcbc930a64fde59f5e47903e77abb5c6ad9d734e02e35d:8:0:1::
+u9-krb5-18:$krb18$CNrltafldsff$f1e3ac51a759c7ca61039a4247b9c03a516b86fd7737d26a08ac5c82b18058ff:9:0:password::
+u10-krb5-18:$krb18$CNrltafldsff$6e2facae5904cb4d500b652b26768f83e32b592ca12aa24260796728bb7402d0:10:0:test::
+u11-krb5-18:$krb18$CNrltafldsff$fedf80e48444a410516581ca928d8cfe572498a6e5eda62341a04ec91c1a6d0e:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNrltafldsff$6c11cac84904975765a3dbcca3d0235d34b5b2df496c091c507a1034d3218b2b:12:0:hello::
+u13-krb5-18:$krb18$CNrltafldsff$eda3122547b2088ac1e71a3fa305098143be858f990b3ebcc858b9a86c649081:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNrltafldsff$7c0c8f94cd56121cecaa726787fb2c27e77038f2185733e193d98faba486db86:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNrltafldsff$22899b1bdfe2e267b7ded340f5921b93b0b1b41e02090e998d1a987e099aea2c:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNrltafldsff$bce4358cfc93004b4bf3dc8b70df052860d3a23386dd4bfbafbd2aefe4ea8265:16:0:±::
+u17-krb5-18:$krb18$CNrltafldsff$5191ce5b350b7d56a11dc7cc581b07ea4f1fbfaf0977afa3a94a56b368d912c1:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNrltafldsff$3faa6a5f593277a8ecaf503d8ee92f453a2945238640d07a1ab1591d39c90111:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNrltafldsff$e8ba0709a70db63153905b814ca51c19da8c3537550580958eb3304364cef485:19:0:ôåst::
+u20-krb5-18:$krb18$CNrltafldsff$40dbb15e33e8d3dfaf1f533019c6c6060124bf57ff27f53a8f9f6154f8837ac2:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNrltafldsff$ab9a17d052769058bc0a0019299a7130e05abd06baf1e5580dee180afe15f8ae:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNrltafldsff$81b8bd5a1bc404778be86481775318ab3893eac6393153a72d031fcd8d960881:22:0:qerwt::
+u23-krb5-18:$krb18$CNrltafldsff$225d7cc7461a70d9ed90e81b9bf3c626def793e3870f663bb951c90ef626ec07:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNrltafldsff$29e5f1ca3ecf0acb868366e991f43d476d723c49ed85a4d82f610715bccd8fed:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNrltafldsff$ebbfe01424bdefc3b3329f7bbec0bfd7c63b058925418d410f1297472f2daae2:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNrltafldsff$416b6e929c6a42ed0c595f8ae12d4bc02cfa2a01770c1133571765118f5dc054:26:0:qwerty::
+u27-krb5-18:$krb18$CNrltafldsff$9ede8010357e024097b1b78cab17af0ba2654c168eaeca61869383fe2826ae69:27:0:qwert12345::
+u28-krb5-18:$krb18$CNrltafldsff$ba932b1c655e78fa9ca0ca0c3c774c52db19c6564fb665b539d2f615daccfda9:28:0:12345::
+u29-krb5-18:$krb18$CNrltafldsff$98c21043cfda0e5be7c6c9e113b4dbc39f92eda6a3e1544227b95ae75e9e7bee:29:0:12qw34er::
+u0-krb5-18:$krb18$CNbiimafsff$a64eeaf5151bb638486e6f119b96dfd57f043c9f537505f6f41a06342f79e56d:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNbiimafsff$e00c50e91d44f8fd0ae7387c4fffa71f98d43cc78a02b2b59503ae223e3e4743:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNbiimafsff$f2b0f62d84b06b4522ec9ab3781bdd3b4ab68a49451149c584bcbd791e4010cc:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNbiimafsff$89a2f3e5b30d1f28fe654651e9926736be0557acad2a95a9790fc4d4fc1d32c4:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNbiimafsff$c28d9f4082400bfb5a86ec5f37f948ac8932b60e6002783f4c74c39f204f9643:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNbiimafsff$736e15788bc4f804fea1b789cff58522775914850e98d507592ecab5900900d9:5:0:late*night::
+u6-krb5-18:$krb18$CNbiimafsff$8fb3d08549c1ac5fd0e7c7cd6ba1a6faf7e1be9b1b6d48bad0420af45a0b3303:6:0:::
+u7-krb5-18:$krb18$CNbiimafsff$1dfe4a592c0d7af46a8891aae0bbfe7c9531311502dd81dd0f62eadea2e787d7:7:0: ::
+u8-krb5-18:$krb18$CNbiimafsff$66f132bc050f6f449c7be79fa740f08c506e1556cacc82eff82cde6aadda6ab9:8:0:1::
+u9-krb5-18:$krb18$CNbiimafsff$0aa3ea798f33f15667907040575603f1ff3b447522d32abd6ab607b8673737f2:9:0:password::
+u10-krb5-18:$krb18$CNbiimafsff$7c515df92714dd3734b42acdc5a4ef28de0be7a7a5a007996b6451ce3b651420:10:0:test::
+u11-krb5-18:$krb18$CNbiimafsff$5c39204e1d7ea26f4e812bd19dc5ee2333a08a2b21984dd88ada534e22300bfa:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNbiimafsff$25a0361012266d15f822aa08848b0ec610adebd7b097f15e3eb826cef2f0c2c2:12:0:hello::
+u13-krb5-18:$krb18$CNbiimafsff$785a9059984295ddc766def920958c1396c353d3dceafd2f06fb2d7109115c89:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNbiimafsff$8f55d15e358b0ffa7cf6c3103a651bb1f8c10b7a65a4850cc75e7d4c1e2fc2d2:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNbiimafsff$0675741df5d0398e1b3b3f059616949b39c2f84cea64c2f8fd8b4c5eb1d3099c:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNbiimafsff$f632c5e0450bb22eb7b8c8cdc3207ebd758ddea1278420e6d93bbecfc74f9e4d:16:0:±::
+u17-krb5-18:$krb18$CNbiimafsff$bf9f56ca31397a32aafa4bff6cbac47eb6392c49f065fc6acedaa1b0d0bef03b:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNbiimafsff$262c75d0a292da3d49123e3d375f4f4ebdd554df344767954e72089f7b85285d:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNbiimafsff$3eeb4abf888bd666457b8a5b14d61d9efc46b52f8ab584bef5c39633625d9632:19:0:ôåst::
+u20-krb5-18:$krb18$CNbiimafsff$8584a5c23fb9e3a0649dbd9df7729d8f73e8c6e0ce3b90c9f6d3fbaf46b7873b:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNbiimafsff$e238f6e8a77ab33fefd528499223e700047d83c5951757a688e1a9ce523168ba:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNbiimafsff$c8265b56703e2a1323cc74be7af1674a0a14a4470e3917dc71ab9d41cc8d8da1:22:0:qerwt::
+u23-krb5-18:$krb18$CNbiimafsff$11ae01069a5f2ce6efca0a49a91259afc91065df8caa560ef9a634120243b296:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNbiimafsff$5aca200cb3544010db92a59860d0c70bf62563e01a75b3aa03d2bb0f93d7714e:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNbiimafsff$a35704e33cf40a27beea7593f1e30e1ec4eedf4ba5075cd70d0fd490e9b92fbe:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNbiimafsff$01e2d2d9d61b2ae027ae6b78f7aa64e6d3fe9ade2f189ccb2112529d7c6e2aae:26:0:qwerty::
+u27-krb5-18:$krb18$CNbiimafsff$6c656412b71d323792319c5ad61d2bdc839313f8849717823ece8e3e5b94fee9:27:0:qwert12345::
+u28-krb5-18:$krb18$CNbiimafsff$fe8dcfff78ddec9222c9bda3780aec056444abc516206e92ed6c7d8c69a7d138:28:0:12345::
+u29-krb5-18:$krb18$CNbiimafsff$44d8c904c9489a5c148bdd76fa047009214185e621aa4fcf6ed92f5a694c9cbb:29:0:12qw34er::
+u0-krb5-18:$krb18$CNbhanpapsxsff$a6f3f83731f331ae32a8c659a704c3a802af3fca2514a89717a12aef4bbc85c1:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNbhanpapsxsff$5c905b1f32e9c2d93cee54d5d72f4a51d72a8a5689123ed4e1c34fe406c64444:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNbhanpapsxsff$33d70503a481d9505a358b0c4ef4c74476f945f059d631c27ba741cfca825a4d:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNbhanpapsxsff$55e87bd0e142c938d42490b7e3fb5d3b1109aa1317f430f602d95dec1418b976:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNbhanpapsxsff$32faf794192fc9221787669c2a96ae5e458a58a5f8e0dc5f2363f1f7b1fbac73:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNbhanpapsxsff$877de47b01ebfaca7863b0b6ca41165093e3199c33e4a8f4202e8022a1589cb2:5:0:late*night::
+u6-krb5-18:$krb18$CNbhanpapsxsff$cb70ab2acc233f56104fc69d0d3d34f0d57b6c95f49b42a0cdf9b9fcfe0273d9:6:0:::
+u7-krb5-18:$krb18$CNbhanpapsxsff$6b1acbbfbc85defa5dbc5960d003ab2b9b011c387514956051bc7b9c4e65273a:7:0: ::
+u8-krb5-18:$krb18$CNbhanpapsxsff$c647900ac4431e24535045a6f832209fb599ada0420134dccb11c179931cf851:8:0:1::
+u9-krb5-18:$krb18$CNbhanpapsxsff$a1e4178c87fe945a672d234abe87d0ceefdb7c17540acf52e64876d64dc236b7:9:0:password::
+u10-krb5-18:$krb18$CNbhanpapsxsff$d214577ed22fb197b8a3858c841940089df06fad2574a869a6a21674c40b6354:10:0:test::
+u11-krb5-18:$krb18$CNbhanpapsxsff$b5d4ebb3cb480537c91afae1ab76b51a1648401bce49ad4b6c94844da444fcbc:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNbhanpapsxsff$141c973a960ef50d549ccec4e3e22f40d13b7eda9e6b4d6eb32f17ae468909cb:12:0:hello::
+u13-krb5-18:$krb18$CNbhanpapsxsff$b886ed5752260f3034da8cbb31f2daa9d1d3dfed209b69430d4895798fb9aab6:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNbhanpapsxsff$0042b7251d4ef8521bd2d0379f0f13d930aa84d9d221415612153d7a885a9479:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNbhanpapsxsff$ae5018b208cad90766a135917243b4371fb58aedbc03ba0118a4fd16dda3e1c6:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNbhanpapsxsff$a3531332ccd96009331fa8a71ee77f2cbacb6d135affad862b41d4e475bc05b1:16:0:±::
+u17-krb5-18:$krb18$CNbhanpapsxsff$711511818434699ed56dfd2650207e6a6f549e7f25f1d2307dc8b44de09196bd:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNbhanpapsxsff$3b9be663fc100f67e789168566e15b1f4f4c21eed18a86bea2e7f34ab210c07d:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNbhanpapsxsff$dfb7d9b8eeac899c8562467f77c9c1eb34ab6de7828e64191faddc94d2439c29:19:0:ôåst::
+u20-krb5-18:$krb18$CNbhanpapsxsff$a03351b4fa6b20a4d5ab207895d012e257dbcf0bb1f26a6af4f1d220be467a8b:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNbhanpapsxsff$07900734edcf277ac157b8805d7aba3f9ff4c37190825408f7f879b3889d521c:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNbhanpapsxsff$8cddf8312bbde3ad33f87436e065a6b904dd0f77e0d530e5caaf8303dc2587d4:22:0:qerwt::
+u23-krb5-18:$krb18$CNbhanpapsxsff$b2407cb46bb4d94fe707ecc6142fdfab4050a32527107264abfefa5e29903033:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNbhanpapsxsff$103ad955fb788b0c63850f203c8211e18a26e2ddcd864e4171a478738e9f5b11:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNbhanpapsxsff$9ca3242be13af2bec3cf2ac811ecc2bb2da12f789a79625929e2a9fc4f9b11d3:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNbhanpapsxsff$bc4eb251aaf20d9f7b1d3097b8369693de66d7a4852e363832df5182d1258e74:26:0:qwerty::
+u27-krb5-18:$krb18$CNbhanpapsxsff$bbdc5ed81472107e14001121f24a987d134857a16270c493b67d218b04b17d69:27:0:qwert12345::
+u28-krb5-18:$krb18$CNbhanpapsxsff$063b3e31250d47f4d9329345eb54f2133050b8c7ffd9542f6c913ac98915623f:28:0:12345::
+u29-krb5-18:$krb18$CNbhanpapsxsff$4bc3d058b35c86dec6f2f5ff2992d2083ae2a23eef2fc71eb257a5f4a01f1dba:29:0:12qw34er::
+u0-krb5-18:$krb18$CNtjanpapsxsff$17868c0631074b629f8e3b926fa8075d0426689a82443cfcc811b9c56d27c277:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNtjanpapsxsff$be6f23bf60d790a5f1f8e8c253a3764a3614928a97440df5ca7dedc850d0aeb5:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNtjanpapsxsff$bfc0946cd6bd35d9417b5251d78d45db269a1007618277bc8ea8e78121aa0578:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNtjanpapsxsff$a78d06c563478f6c2d86004b640318436b778852b1af64da10c1663542d1b681:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNtjanpapsxsff$3c5fe153c98f28a2c4b13a858de5ec9e36040abe06d37d5d62cdf67e3683fb14:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNtjanpapsxsff$e3013731958ee328b639112fede6064c13c5116d555c880b58ab5403cf28ccdb:5:0:late*night::
+u6-krb5-18:$krb18$CNtjanpapsxsff$aa549f1049159267d3eccda8032e3406c7ffb6c51ce1eeef4638cf49f700c742:6:0:::
+u7-krb5-18:$krb18$CNtjanpapsxsff$235fa01a8028a00d1464f4856994480034b0bb140068761bbe5ad65a3d92fa78:7:0: ::
+u8-krb5-18:$krb18$CNtjanpapsxsff$552931ecdb79d9951e0141a8c789a9db550247ab0b667b2795a2d610a6eb59d7:8:0:1::
+u9-krb5-18:$krb18$CNtjanpapsxsff$c6e211b2ccfb0f239c170c5b54e17bd8408eee1a96369555876541a4a9673051:9:0:password::
+u10-krb5-18:$krb18$CNtjanpapsxsff$a73d1f8f2f099924d67ccd703a25399d291d3e4266af1fbcf6d0ac58f380ad1e:10:0:test::
+u11-krb5-18:$krb18$CNtjanpapsxsff$f860d6f436261c1b62dd1dc812d29f168d32247b562d4a81382958da62ad51d2:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNtjanpapsxsff$4bd912eaeecc0efbd9db29162c0b86e53eb83485f9e8dfe0e35a71c28fc3c21d:12:0:hello::
+u13-krb5-18:$krb18$CNtjanpapsxsff$37afba0f92addda8256ecadd0c9efe1369f9784f65ac38eede10d6195cc30471:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNtjanpapsxsff$242d0690ba811a4e89a47b1effb3436ba57123027c6bb6d7eb3d3c28dbf7c1d5:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNtjanpapsxsff$b0adc3afdc20ae60631bbe262dc01f69d54c8e9de646af7e0b7baf7d0da5ef7c:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNtjanpapsxsff$20291d4361abe3eb3a994ac3ec344c79a0094f8ebbdb3257e7a8132d53685822:16:0:±::
+u17-krb5-18:$krb18$CNtjanpapsxsff$e9106ed0058d63faefbd58e1c49e7bb573fe403723242e73766e9578bc07e8fd:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNtjanpapsxsff$6bbf2f48fab72ded0c9cd114739ba8e8a35c1005614ef4c293799e927cd3f1b2:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNtjanpapsxsff$3dd6ff8e4f8421c6439e4ca21b30898caa714c1d35ca4caf8be27ef190630ddd:19:0:ôåst::
+u20-krb5-18:$krb18$CNtjanpapsxsff$885488dbab62d76ca31b622b02015f0141173cc67583474914c8e74a968a573f:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNtjanpapsxsff$e4f7ac5545569d34e411217c52ca34335b1cf8e3c22cd88d38f5b22b75ab0056:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNtjanpapsxsff$8cdcf1e527b68d45237211d78c2c53e253b0e085c50520cdc07939631e0d7510:22:0:qerwt::
+u23-krb5-18:$krb18$CNtjanpapsxsff$ff12277e2539b6ce5ea358263d92ad1f55f65784a602818133e66998e6ee5262:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNtjanpapsxsff$97456c47034ff8a3be5fe1c9980dfff2e7ce4ed7d10f110d9d1bd0aff0256410:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNtjanpapsxsff$e365d0c8f0a8f3a756bbbeacd5b9b7e62f4738666e97e21984feb65cbfdcccd6:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNtjanpapsxsff$ad46b5085d554fc5bba76eb1f47987e2850daf00a4a7c9f8bbff159512c37a59:26:0:qwerty::
+u27-krb5-18:$krb18$CNtjanpapsxsff$d1481496909507a7cdc5c14ea32cb032a238174097f1c1bcc8f3cc8782e56911:27:0:qwert12345::
+u28-krb5-18:$krb18$CNtjanpapsxsff$d6779f542e999acf067f295f3fe56ea3441aadd01bb5e1d6a6d4e5475a40f7f8:28:0:12345::
+u29-krb5-18:$krb18$CNtjanpapsxsff$658f28340cefa4fbd8c1d93d11c0b54698eb52bab8de1f94492d5afc6edce34d:29:0:12qw34er::
+u0-krb5-18:$krb18$CNrianpapsxsff$8ffea9b630b3156b1efbf5fa2de0ff2a73b648317cc739432570cb2ed03f56e6:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNrianpapsxsff$dd8139c4d7e7bb92c050c92b6dde1046e380fa90ce1ef19945061a85fc197b85:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNrianpapsxsff$4841c97e2582560d15f9c97bf38a31ddaec4a81a986f298d61f17b17b5935651:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNrianpapsxsff$c7af097ac148b90ebdb7accda250ab538aabeafecd5576ac010fdc36553a1d4f:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNrianpapsxsff$7be4d7a2da793797fb824c5267e8700dea6ebf9844c13cdb8dce229e45a0306d:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNrianpapsxsff$8d27e3e7dea5a0ae1a25969bca9cf7edb1a3f91061429ef84fdc8765dda18c64:5:0:late*night::
+u6-krb5-18:$krb18$CNrianpapsxsff$61f10f1ed64360c557f5831c671ca00aa131389a0330a43a46f2e87d44a757cb:6:0:::
+u7-krb5-18:$krb18$CNrianpapsxsff$b56b0ac3fa8bbf70851eebd76af65387728144bb1eb2a894bf68e4b929b0a05f:7:0: ::
+u8-krb5-18:$krb18$CNrianpapsxsff$25b6c1dff436d76d0f1938224f48b5ecb685302492a01822241701808492fcab:8:0:1::
+u9-krb5-18:$krb18$CNrianpapsxsff$ddc3160577203a0dd43aa870ab6f4168cb58148fd5f7b86aae1aed2317db36ac:9:0:password::
+u10-krb5-18:$krb18$CNrianpapsxsff$0d717f59b51a410e70c4edd1255db038c3a877d4d20d9a16c85312578f52658c:10:0:test::
+u11-krb5-18:$krb18$CNrianpapsxsff$ecd73743b7bd5a12d0c05be7ca014a583d00478ca9ea2f90efce5d2aae4acae1:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNrianpapsxsff$22538f6966b74791753f04078dbd0e1458506ff78ab1b67495f43fb324dcbe64:12:0:hello::
+u13-krb5-18:$krb18$CNrianpapsxsff$ca78b095031360ce6c9396865dd904cb4bc2e8dc418c34c38885aa4979fe5e3e:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNrianpapsxsff$204fab8fe738728ac06823fea4ecef077ea6d0b4df6984e1bce9ac1c968217cd:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNrianpapsxsff$b240e922591ae664ec0d01684bf23132d397cc7dabc522204149f92ddbfd626a:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNrianpapsxsff$0849919fe8562bead9007a2fe3caf1e4225bc6d98a12877dd29669dae270b8ef:16:0:±::
+u17-krb5-18:$krb18$CNrianpapsxsff$e1a84dd523c0fbc5e468f8a181acd7211a4fbcaf69e570a6c1e720bc322d4102:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNrianpapsxsff$1387dec13040ccfda4f53f82389e5135ee7fa7a9db8e21fdba05e2c85b155397:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNrianpapsxsff$046a76429bdec77cc49103ba0a85d7a2863391e83ed72e6dd529f590fb8a03d7:19:0:ôåst::
+u20-krb5-18:$krb18$CNrianpapsxsff$a02740c4752e42927ba70bfce58a7581ae12cc2bc6759b38bb41420f24ce3187:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNrianpapsxsff$5476c9489c1622683d5c18ea8d100b8b4ad04ec7b5b7a21514c5d7d4b04fa426:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNrianpapsxsff$3fbe6111afb3185fe8b8ddd9e3e822d1023239ae189de526365d54424ffc135d:22:0:qerwt::
+u23-krb5-18:$krb18$CNrianpapsxsff$e558593706f69bf6038708b53c831704ec737029239fef998485fcd0d7cc9eff:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNrianpapsxsff$0470da021c653898541ef7df072728aebaddcf2a5b71e2bf939af2bbbb3ebd38:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNrianpapsxsff$4decabf438931b6b5cdd7ae6c65ee3f38722bedeb64ae464c51266323fd1d873:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNrianpapsxsff$2a7aa219327f7da5e0fb97c2f7cb3c85f0b4c4504fc3080eb16c9cc3b41f766b:26:0:qwerty::
+u27-krb5-18:$krb18$CNrianpapsxsff$dce4f78b70fac93eb107f39ca352ee981037a063391021e41286ef09554887d1:27:0:qwert12345::
+u28-krb5-18:$krb18$CNrianpapsxsff$6fc11b50dd0726be4402e2342ccba86ab77c92217db0c2f9f289e786f2a3fd53:28:0:12345::
+u29-krb5-18:$krb18$CNrianpapsxsff$0b7373d75eeffe2abf61c77f7501b774e4905e99e3a7d4f4f2670fc647633265:29:0:12qw34er::
+u0-krb5-18:$krb18$CNjkanpapsxsff$a3ab687f7b97ef21da54508de4e1168586bfaa8a188f636ecf3acbd6c5cb27ed:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNjkanpapsxsff$7c99c3347be4ee8a61c4300a22405fd4786fdd0ae4e51009ba773b7d3d31c1f1:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNjkanpapsxsff$6448c585024aaa2233073479ca355bb56bec8c455cf4dfa5b56c91c98577cfc1:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNjkanpapsxsff$6182d5f1c19a2ee09e8d66a8947e0424091c2d6fd828dad1e857d870689b0c49:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNjkanpapsxsff$b26f463de14662a613bcbc557b02939913f5e38f97e6ce538c3fc02c3c22b06e:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNjkanpapsxsff$9f39077b15ee2e6b3b1f187f5a54ac51c271eeade0d6add8a6cabc94b672cd66:5:0:late*night::
+u6-krb5-18:$krb18$CNjkanpapsxsff$bd2450e4f3f6b67d7d30fcff4039040b01392aa3838557c2f675a55c5400c7d3:6:0:::
+u7-krb5-18:$krb18$CNjkanpapsxsff$0a77aa3a9bf653ef26ac98270562cf3cf617f1aae388997b97e36f33c8344fdd:7:0: ::
+u8-krb5-18:$krb18$CNjkanpapsxsff$e2c18f88232413fa501ef4771ecba66169be9f67b061f0d86ff0b2dfef1bb33e:8:0:1::
+u9-krb5-18:$krb18$CNjkanpapsxsff$0dc52ccd52d13de45f8376bd61d8379e95119ceaa7d7521e059aad9cc2f99dbb:9:0:password::
+u10-krb5-18:$krb18$CNjkanpapsxsff$e8424f3e7d8e34521e4d06ecd16aaf3683f7df7c448f795273cfb32ca216155c:10:0:test::
+u11-krb5-18:$krb18$CNjkanpapsxsff$52fa4b30d9dccc12cdb7763dfe7dd25b6018ba82fb79cd5afc1f81025203afd9:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNjkanpapsxsff$7e8d8fb5a859ed354e5c5b5d3af32a1ebac71d2ad386d07d4d9e2d38a95f7b48:12:0:hello::
+u13-krb5-18:$krb18$CNjkanpapsxsff$7cd4d012caa39003e59b78140a3e33fc3af8d65280f04220da2bf4d9a75abf18:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNjkanpapsxsff$504df844c2fc0aa8ac3ad7761c2ce5e246432a23dd7d0d75a6b0b5930841efee:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNjkanpapsxsff$5e246a5d378d23b2b1f20044ed27f6cebf5ae3fde3bb9afeb7e332193aff9787:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNjkanpapsxsff$3c32672f336cb6d6e97cfe41ae5c44ac43d251b9eb3dd96f677e745fec675ec3:16:0:±::
+u17-krb5-18:$krb18$CNjkanpapsxsff$524d81906c2819971e4bd6108c1f438565ef1fb67242dc32489a40ef7a691f81:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNjkanpapsxsff$ad1ff4b699f4af7a1c256dc30b3a02d27408342e107bed8435c11cac7dafa5b5:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNjkanpapsxsff$d0d2700ec18be8578bc08ffabac1c4031579d60f22e26961266b2794a2711fba:19:0:ôåst::
+u20-krb5-18:$krb18$CNjkanpapsxsff$ffd6cd10374ccc65cc39c97f258e710a0cd1d8709cbc414fc53eaaba4604cc75:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNjkanpapsxsff$6f536e6c589d829b8684422e1169022ff24ca3074f7d3e958358101fbb39697d:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNjkanpapsxsff$be29c803f6716a59d6ff757253ac4955c2c3bbfb9239d724a2646798a6c5ba0b:22:0:qerwt::
+u23-krb5-18:$krb18$CNjkanpapsxsff$4f035a25316d33a0153c99442ecc01462ca844c0f4630ae03df8fdd414bc5e40:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNjkanpapsxsff$aff4abd8a7f82ab273059a1e5f00bb206bad3f1a3cb941020dc88130d9c01f7e:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNjkanpapsxsff$69f63e8203b89cf8817e40e500628dbeb8805d0351b18f5bda6d69f54b398c41:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNjkanpapsxsff$836c31b2206e0f9f98dae7115c1a45cd7798ee13c19a57652506b336b917e6aa:26:0:qwerty::
+u27-krb5-18:$krb18$CNjkanpapsxsff$8eee83fe6b2e239ae3b0b89acdf9c313e80be94caa78c48d6eb1e54cf10708dd:27:0:qwert12345::
+u28-krb5-18:$krb18$CNjkanpapsxsff$931a0a9c66026b86a88e2f319ae2ca8235d28a4439812e9611a1320c9c07bac4:28:0:12345::
+u29-krb5-18:$krb18$CNjkanpapsxsff$32023ba167a3683833e15a0778ca8cdb51d85c576d6d316cffd2cb5fc47d789e:29:0:12qw34er::
+u0-krb5-18:$krb18$CNchmnpapsxsff$69497d7a59d07d05e6571642078e31107e9be8b2bea59ba5780ec8be63226c4c:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNchmnpapsxsff$abf70dc970027b4bd5716fcafb201410b4a076f1c108ce16051ef84296e10fad:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNchmnpapsxsff$157a54269a90f37c00442d4d66a65916e6597e0beb36be3624bef7af5a1f0f8f:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNchmnpapsxsff$7261db882ae39ed65459c4e1d1dc9252194a090c24763a82ee06cc041179125e:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNchmnpapsxsff$55b672823cb55e7d341d7a93c2bc948c4fa905a4db212ad5b52f70e3abf555ad:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNchmnpapsxsff$18cdf1616145c0339d93d8b4526e544f335b8a3bbbea1e01a12e6ff69f05f767:5:0:late*night::
+u6-krb5-18:$krb18$CNchmnpapsxsff$ebd02c28ec3c3bf28114ca4dff0dd3e626f43471de351f555d06df3598534817:6:0:::
+u7-krb5-18:$krb18$CNchmnpapsxsff$03ce4fb57b2fe2b558a9ec0a92429f18b4df75a17ec07bf326bef8bcafc420a0:7:0: ::
+u8-krb5-18:$krb18$CNchmnpapsxsff$7b5edd344a20f14fa5fc5bd7fc0a7673a739562efbf37f964007938b92d73b9c:8:0:1::
+u9-krb5-18:$krb18$CNchmnpapsxsff$0309e41b33aee878a4ed3175d7e884331d71ee8b2562a9b478300f724720c2b0:9:0:password::
+u10-krb5-18:$krb18$CNchmnpapsxsff$72cd8f36279bb7167cd3f85a6f7c899760ec684393064bb9cc422b16ff508e73:10:0:test::
+u11-krb5-18:$krb18$CNchmnpapsxsff$2e1489f5c7072d2aebf0f5039aa9c42bb73523f53979727c0b041e42dc93cfbd:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNchmnpapsxsff$ba4927c5172f7c616413114e0c736d965858f913aa8f614713f2e5e56a891ba2:12:0:hello::
+u13-krb5-18:$krb18$CNchmnpapsxsff$d28c0f99eb7e9ba422ae9657511d82396268a98e6b70f9b3f966c514773e3c72:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNchmnpapsxsff$fa2560651f7456f6834836670e9a1a2d298b30a2d721c2873747201ade231c31:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNchmnpapsxsff$4296e66c743a9486b775442ab01c5cfc7cbbef3b34e07371421bdbf5e03fcf70:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNchmnpapsxsff$a8108b5d235a4412ac9f234f714ec832f3ff7d51e52b705c676e15bd7a591eee:16:0:±::
+u17-krb5-18:$krb18$CNchmnpapsxsff$4b51f8aa073bdc4de1388d6d2a22c7c3ff85269e8c19bb30eb7fb7af42a23624:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNchmnpapsxsff$328ae2c3394fb8d7edf7f0a216f409e3a3e39cd4e36c80bf26ef60b52c73d96e:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNchmnpapsxsff$f7e0e66e7401d6deb6d9ccc0da258d21eb4cca6c1a8a686d4795014ee8d86514:19:0:ôåst::
+u20-krb5-18:$krb18$CNchmnpapsxsff$857487300406a57b02ab3fc1500c7987627daeebd630910653a520212b444618:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNchmnpapsxsff$7ce7682476a53fdfdab7e2c793f1183a28f2404518cbc5fd5b594b947c3efede:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNchmnpapsxsff$153bd62b9971d1dd493994047558c409d95c3c48eecbcfa7a8ec2d1c56fd9433:22:0:qerwt::
+u23-krb5-18:$krb18$CNchmnpapsxsff$14b2692881f662d8d7c16fd7f8f163d23fd23b31cc4671a29ed2e4d32dd8c6f1:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNchmnpapsxsff$5a1e57f4859760f1a07e0ff6f1989fbf0af7a2a0cf594ac3f5f71bca57f6b0b5:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNchmnpapsxsff$dc8b544c593bfeaa69cca2423ebaf50840fbe905da8c31808c9cdb93920274ce:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNchmnpapsxsff$3dee50fe0502c77b33c0b96291ba5dafacf5fb0ad9321bb85071815df86da980:26:0:qwerty::
+u27-krb5-18:$krb18$CNchmnpapsxsff$9642769ea1ea3875e5d2892a523ec65ee7bdcab77de4cd7f6a60bc34d6f45abc:27:0:qwert12345::
+u28-krb5-18:$krb18$CNchmnpapsxsff$943c665eb36fdd2fb59c6b1a3a5f27d0cd08e5e2b3fde6840649bc82c94aaa16:28:0:12345::
+u29-krb5-18:$krb18$CNchmnpapsxsff$576ca131ea1fc4c5dd5cb9cd90b7f89db4c34d05984b297734822fdd73f50820:29:0:12qw34er::
+u0-krb5-18:$krb18$CNahonpapsxsff$b85f6ae82cb8141d78be8f0ed7c7ef08fdd4f4b72b4d2124de148e73ef7e10af:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNahonpapsxsff$b1cea39cfc4c89d9558390aa7de7795a141fd22f7487e4dfb554315c874c71d1:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNahonpapsxsff$d448571c52099fe23d39cc73a1eb078084941d6664f160969bd0db71399347a6:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNahonpapsxsff$6551934d9207113b7400ac28619bec9bb026c75036677ebb8ecc82b04bcd5d96:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNahonpapsxsff$a001da7a1ca9407d96ebf8fcc2031c7a1655bfc9397fa22c8a885072f7f3bfec:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNahonpapsxsff$bc867b242e2f780a594204592d236b2b5f824253d8ce36b1d04bd3b302571faf:5:0:late*night::
+u6-krb5-18:$krb18$CNahonpapsxsff$a0d3fa544c570781699a6c2df2103c8673d8d76b4e2b41bf234fbc7d4ce82b18:6:0:::
+u7-krb5-18:$krb18$CNahonpapsxsff$b995009edda3cd67cc37f415d5679aad948650d0531f66411557794a1121089d:7:0: ::
+u8-krb5-18:$krb18$CNahonpapsxsff$76c3d545cdfcd9d2139fa3c70c5db1b37ea36627e0b4032f81f635be028328bf:8:0:1::
+u9-krb5-18:$krb18$CNahonpapsxsff$d357b14db38d24da3c45e452e7ab35da848bf48ef4f93ab390c972e07c9f9b53:9:0:password::
+u10-krb5-18:$krb18$CNahonpapsxsff$165c86b62d548e9c4ff7c315b260174c893597b7805c5a16f2596013d22c86f2:10:0:test::
+u11-krb5-18:$krb18$CNahonpapsxsff$7e685e522f254b168e3df0cfef40a1526b54fa4facaa1761904e301ee8816bd4:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNahonpapsxsff$eb00e7956b7cb784b5eb7660d96b27c141f0b9438118093e200119ec33ec12ec:12:0:hello::
+u13-krb5-18:$krb18$CNahonpapsxsff$cb4537faab6de35293d5b4081152326a2ca282cc201c754326657ce6525b9e47:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNahonpapsxsff$0fa7d41481fa6658e196ff3423ab02dd601413f48b4b7c4ddc09c09b26385312:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNahonpapsxsff$01877457af93d83d513ea1a1168e67234b12c41d84608a54b14880e7f975c630:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNahonpapsxsff$ccfa18f58c70f08c11562fc51d737fc679cb6667df1a8d3c7bccba8dd449fc61:16:0:±::
+u17-krb5-18:$krb18$CNahonpapsxsff$16875513c214098f9629ecca06ede39b0db8d445d9199095416d2ca21accf8fb:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNahonpapsxsff$68c3d37ba1897c9dc54d6d4cc3c48e6b700b4c48277fe7165d4badf259b9364f:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNahonpapsxsff$e0d3758c3c4ab0eb5e060e1a0372ccfa51039e6c7e3e541ae676e0e747f2d9cc:19:0:ôåst::
+u20-krb5-18:$krb18$CNahonpapsxsff$c967d5e1860bb9b07198b2fe8ba82547db99021c169494a30fdf8aadd87436e1:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNahonpapsxsff$fb82359e11775c8759fa3f56377a2fc4778470df3124755522ab4639dcd44155:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNahonpapsxsff$86ac0fa3939ce741e907c9b72d3ab675076c718c63ae34e38594817acfdda29e:22:0:qerwt::
+u23-krb5-18:$krb18$CNahonpapsxsff$b2c0550a451518b5dc753fc147a87b52ca1006855c230a923efbb4033c0f66df:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNahonpapsxsff$fed61fc2fb60fccecfa74f1b4fbe5ca6b46ef37cb89f896f4401b39300fbb624:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNahonpapsxsff$74a0ffc529a7da5137bf818516e9057ebe4156facc01fd1ce0d2ffb0274eda94:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNahonpapsxsff$0b72572fc4fb69effcd6f2ec9cfcf0fefd61deafecf2f08e13e6a6070aca8a54:26:0:qwerty::
+u27-krb5-18:$krb18$CNahonpapsxsff$846acddd0b014297b4966d0b1c96c2be2000d25afc263052b2d159b694c02738:27:0:qwert12345::
+u28-krb5-18:$krb18$CNahonpapsxsff$525927959cf7b59c679548ac57fb485e532fdfd493cbf245be5ff695483c21fc:28:0:12345::
+u29-krb5-18:$krb18$CNahonpapsxsff$3a7222406743eb0d6cbbae272c950b4a13120da45f906d5ce88d147b6e283baf:29:0:12qw34er::
+u0-krb5-18:$krb18$CNghtnpapsxsff$506be42af6cb6a75f21c348f36c9829a4262db627a4b069022ced96ef884938a:0:0:Skippinç anä*::
+u1-krb5-18:$krb18$CNghtnpapsxsff$294a2a17bbaee40a028fccf7cab1511f3b73e3f8e64b6ae88713e01cbbf712e2:1:0:Skipping and*::
+u2-krb5-18:$krb18$CNghtnpapsxsff$c15e1993872a8a79fe9f91e7b4f84d4094df4e66c843feec1823b84f19cfaa91:2:0:Bert$ErîIE::
+u3-krb5-18:$krb18$CNghtnpapsxsff$1fa45ce2a12e56c2927a6d2244fd1de8442ce73160a77a1e4f85f31fb003a64a:3:0:Bert$ErnIE::
+u4-krb5-18:$krb18$CNghtnpapsxsff$1b74ddb3649e0828174b2324778bcaa7f0847ec957b038e77ea148fa1149131f:4:0:bert*ernie::
+u5-krb5-18:$krb18$CNghtnpapsxsff$ece038d72bafd1bc73ca22f9f7b8ad6fc4cbdf9dd58427c268eded675d94014f:5:0:late*night::
+u6-krb5-18:$krb18$CNghtnpapsxsff$9dee3ec2a8418f6891c7cff075a7a62d3b6bcc3b46924a299a190d991e140c5f:6:0:::
+u7-krb5-18:$krb18$CNghtnpapsxsff$30b7eb41491ead204a8b8ed9159191bddc6648ef3792d274abeffb150b88a306:7:0: ::
+u8-krb5-18:$krb18$CNghtnpapsxsff$60b478b587597b2ae27a7f1a032d1d99abb8c9e66b9962ce6e4f96ce8adf2c7e:8:0:1::
+u9-krb5-18:$krb18$CNghtnpapsxsff$8b68c291f9614f8ec15de95adeeea32accb974b0792ed98507473d2482bd3bad:9:0:password::
+u10-krb5-18:$krb18$CNghtnpapsxsff$a66f86a065f4c03e3616a1353ff80b17bf4cd42b7d4b93142aeaac0573fa7825:10:0:test::
+u11-krb5-18:$krb18$CNghtnpapsxsff$f608d9c1adff6f38c27acabac4031736ab33127478ca7ceddacb05013cbaccb7:11:0:late*niçhô::
+u12-krb5-18:$krb18$CNghtnpapsxsff$f644933ff9c46ccaea443f6682380f226a0bfcb40f44c7440a10fccf9ef18722:12:0:hello::
+u13-krb5-18:$krb18$CNghtnpapsxsff$aa54dcb802d7a516251a581e0db0d8d551788845c9451afdf264cca763c81b94:13:0:Skipping and& Dipping::
+u14-krb5-18:$krb18$CNghtnpapsxsff$2cb256a62114c2ae76a7dbcc1cf400ae36a171ca7bb87202b6037d2bd6cf9408:14:0:!!!!!!!!!::
+u15-krb5-18:$krb18$CNghtnpapsxsff$b9a8ba3c3fecebf941d962277f28954dd88dfba88a25b8c6ffbeba206b0c4201:15:0:ttttttttttt::
+u16-krb5-18:$krb18$CNghtnpapsxsff$dd4018201af3591087f7d1fb680e196b94eb97663141666d8ad3f7eb5feab37d:16:0:±::
+u17-krb5-18:$krb18$CNghtnpapsxsff$4a69d4323744e4f68c1cb694f7b2c7a32c79c72cfbeddbae460478b96a13fde6:17:0:pass÷ord::
+u18-krb5-18:$krb18$CNghtnpapsxsff$888f7bb2f0be21dad8ceca9c79689181850da985d38a1978124928c6055875a8:18:0:dffffffffffff::
+u19-krb5-18:$krb18$CNghtnpapsxsff$2ccb4fbe85982a9c3f5a10eb1369a50143c12cf713391b8700581981445c4d01:19:0:ôåst::
+u20-krb5-18:$krb18$CNghtnpapsxsff$1b5b52da29392069306b4a577d40f15b31828e05116b8a62ada80d7bfe61d0ae:20:0:Skipðing and& Diðping::
+u21-krb5-18:$krb18$CNghtnpapsxsff$947e921e65e51e8bcf3f280f8802b3f595136084970b4aef65cd7830082e5b9f:21:0:alsfdkja;::
+u22-krb5-18:$krb18$CNghtnpapsxsff$0f0118fd7334cb8189d19e3f47f0252509d2b674c9fd7a6c90ebed2e78a137f9:22:0:qerwt::
+u23-krb5-18:$krb18$CNghtnpapsxsff$f4b6ab1bf3b6d711e1f7ef1ee800b3f78b87250b5e1c22a47efe87ee88bb3b00:23:0:ôtttttttttô::
+u24-krb5-18:$krb18$CNghtnpapsxsff$b516732106b7071d5ba35f2942b8511aaecb368cc91d56dfb3eaf0a5e6a1768e:24:0:dæffffæffæfff::
+u25-krb5-18:$krb18$CNghtnpapsxsff$55c7f088495f3547a4d06770b369f0753a710583c80cfc407bbad64d0919c3fd:25:0:q÷årt12345::
+u26-krb5-18:$krb18$CNghtnpapsxsff$68ff70c4b00ba357aedf5087352211160b151492f6cc5045785a45bb7e5d3f59:26:0:qwerty::
+u27-krb5-18:$krb18$CNghtnpapsxsff$3df0ceeaab9872916053311bc22538552ba682430ac890fa7712d9ec97870485:27:0:qwert12345::
+u28-krb5-18:$krb18$CNghtnpapsxsff$435091c99a5570f0213b0c216044692581cff294711cee9f2fa278bfbd4bf79b:28:0:12345::
+u29-krb5-18:$krb18$CNghtnpapsxsff$144beb1613ff28b031dd12b1884682f10b4dedf42e05f48f61a343ec8fec86f4:29:0:12qw34er::
