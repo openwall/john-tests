@@ -1,3 +1,6 @@
+*.log
+*.pot
+*.rec
 pw-150.dic
 pw-200.dic
 pw-40.dic
