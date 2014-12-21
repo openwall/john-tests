@@ -28,7 +28,6 @@ my @types=();
 my @nontypes=();
 my @caps=();
 my @encs=();
-my @passthru=();
 my @johnUsageScreen=();
 my @validFormats=();
 my @tstdata;
@@ -36,6 +35,8 @@ my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_s
 my $last_line_len=0; my $internal_testing;
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my @startingTime;
+my $pass_thru = "";
+my $show_pass_thru;
 
 ###############################################################################
 # MAIN
@@ -49,7 +50,7 @@ if ($showtypes) { showTypeData(); exit 0; }
 johnPrelims();
 if ($internal_testing) { doInternalMode(); }
 filterPatterns();
-process();
+process(0);
 cleanup();
 displaySummary();
 exit $error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt;
@@ -85,6 +86,7 @@ sub displaySummary {
 # parse our command line options.
 ###############################################################################
 sub parseArgs {
+	my @passthru=();
 	my $help = 0;
 	GetOptions(
 		'help|?',          => \$help,
@@ -110,6 +112,9 @@ sub parseArgs {
 	setVerbosity($verbosity);
 	if (@ARGV) { push @types, @ARGV; }
 	foreach my $i (0..$#types) { $types[$i] = lc($types[$i]); }
+	foreach my $s (@passthru) { $pass_thru .= " " . $s; }
+	$show_pass_thru = $pass_thru;
+	$show_pass_thru =~ s/--?fork[=:]\d+ ?//;
 }
 
 ###############################################################################
@@ -139,8 +144,7 @@ sub johnTest0_one {
 	if (length($_[0]) < 2 || stringInArray($_[0], @types) || stringInArray("enc", @types) || stringInArray("full", @types)) {
 		if (length($_[0]) >= 2) { $_[0] = "--encoding=$_[0]"; }
 		ScreenOutSemi("testing: john -test=0 $_[0]\n");
-		my $sCmd = "$JOHN_EXE -test=0 $_[0]";
-		foreach my $s (@passthru) { $sCmd = $sCmd . " " . $s . " "; }
+		my $sCmd = "$JOHN_EXE -test=0 $_[0] $pass_thru";
 		my $sCmdOut = `$sCmd`;
 		my @CmdLines = split (/\n/, $sCmdOut);
 		foreach my $line(split (/\n/, $sCmdOut)) {
@@ -581,10 +585,11 @@ sub ExtraArgs_Show { #($ar[9]);
 ###############################################################################
 ###############################################################################
 sub process {
+	my $skip = shift(@_);
 	my $pot = "./tst.pot";
 	my $pot_opt = "";
-	my $cmd_head = "$JOHN_EXE -ses=./tst";
-	foreach my $s (@passthru) { $cmd_head = $cmd_head . " " . $s . " "; }
+	my $cmd_head = "$JOHN_EXE -ses=./tst $pass_thru";
+	if ($skip) { $cmd_head .= " -skip" }
 	if (stringInArray("nolog_valid", @caps)) { $cmd_head = "$cmd_head -nolog"; }
 	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=./john.conf"; }
 	if (stringInArray("local_pot_valid", @caps)) { $cmd_head .= $pot_opt = " -pot=./tst.pot"; }
@@ -663,7 +668,7 @@ sub process {
 		ScreenOutSemi("\n");
 
 		# Ok, get crack count using --show
-		my $cmdshow = "$JOHN_EXE -show $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
+		my $cmdshow = "$JOHN_EXE -show $show_pass_thru $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
 		$cmdshow .= " 2>&1";
 
 		ScreenOutVV("Execute john: $cmdshow\n");
@@ -770,7 +775,7 @@ sub process {
 			$crack_xx[4] =~ s/%/%%/;
 
 			# Ok, get pot count using --show
-			my $cmdshow2 = "$JOHN_EXE -show $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
+			my $cmdshow2 = "$JOHN_EXE -show $show_pass_thru $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
 			$cmdshow2 .= " 2>&1";
 			ScreenOutVV("Execute john: $cmdshow2\n");
 			my $cmd_show_data2 = `$cmdshow2`;
@@ -882,17 +887,17 @@ sub doInternalMode {
 
 		if ($doit == 1) {
 			# first, build our dictionary
-			my $cmd = "$JOHN_EXE -format=$type -list=format-tests 2>&1 | LC_ALL=C cut -f 4 > selftest.dic";
+			my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>&1 | LC_ALL=C cut -f 4 > selftest.dic";
 			$cmd = `$cmd`;
 			# Now build the input file
-			$cmd = "$JOHN_EXE -format=$type -list=format-tests 2>&1 | LC_ALL=C cut -f3 > selftest.in";
+			$cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>&1 | LC_ALL=C cut -f3 > selftest.in";
 			$cmd = `$cmd`;
 			my $cnt = `LC_ALL=C wc -l selftest.in | LC_ALL=C awk \'{print \$1}\'`;
 			chomp $cnt;
 			# build the @tstdata array with 1 element
 			@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt),($cnt)");
-			ScreenOutV("Preparing to run internal for type: $type\n");
-			process();
+			ScreenOutVV("Preparing to run internal for type: $type\n");
+			process(1);
 		}
 	}
 
