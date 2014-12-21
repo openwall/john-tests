@@ -57,6 +57,10 @@ usage: $0 [-h|-?] [-option[s]]
                    -test=0 and tests of any 'requested' encodings is performed.
     -no-prelims    Do not perform this prelim work. -no-prelim is default.
     -passthru  <s> Pass this argument straight into john.  Can use more than 1.
+    -internal      A special mode, that tests JtR -list-format-tests data
+                   from a john jumbo build. This allows doing 'some' testing
+                   on formats not yet in the TS, by using the internal test
+                   strings from the format itself.
     -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
                    and other temp files will be left, AND the command line
                    that was run is listed. (default is -nostoponerror).

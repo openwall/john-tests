@@ -4,8 +4,8 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 
-my $VERSION = "1.12.18";
-my $RELEASE_DATE = "Oct 31, 2014";
+my $VERSION = "1.13";
+my $RELEASE_DATE = "Dec 21, 2014";
 # how to do alpha character left, so next 'alpha', or beta release will be easy.
 #use utf8;
 #my $VERSION = "1.10-\x{3B1}2"; # alpha-2
@@ -33,7 +33,7 @@ my @johnUsageScreen=();
 my @validFormats=();
 my @tstdata;
 my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_stderr=0;
-my $last_line_len=0;
+my $last_line_len=0; my $internal_testing;
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my @startingTime;
 
@@ -47,6 +47,7 @@ setup();
 readData();
 if ($showtypes) { showTypeData(); exit 0; }
 johnPrelims();
+if ($internal_testing) { doInternalMode(); }
 filterPatterns();
 process();
 cleanup();
@@ -97,6 +98,7 @@ sub parseArgs {
 		'passthru=s'       => \@passthru,
 		'stoponerror!'     => \$stop_on_error,
 		'showstderr!'      => \$show_stderr,
+		'internal!'        => \$internal_testing,
 		);
 	if ($basepath ne "") {
 		$JOHN_PATH = $basepath;
@@ -371,6 +373,9 @@ sub loadAllValidFormatTypeStrings {
 	# Make all format labels listed from JtR lower case.
 	$fmt_str = lc($fmt_str);
 
+	# removed dynamic_n IF it exists
+	$fmt_str =~ s/\/dynamic_n//g;
+
 	# Ok, now if we have 'dynamic's, LOAD them
 	if (grepUsage("--list=WHAT") || grepUsage("--subformat=LIST")) {
 		if (grepUsage("--list=WHAT")) {
@@ -592,6 +597,18 @@ sub process {
 	my $dict_name_ex = "";
 	my $dict_name = "";
 	my $line = "";
+	
+	#my $k = 0;
+	#foreach my $l(@tstdata) {
+	#	my @ar = split(',', $l);
+	#	print "line=$l\n";
+	#	my $i = 0;
+	#	foreach my $e(@ar) {
+	#		print "ar[$i] = $e\n";
+	#		$i += 1;
+	#	}
+	#	exit(0);
+	#}
 
 	LINE: foreach my $line(@tstdata) {
 		my @ar = split(',', $line);
@@ -820,4 +837,66 @@ sub cleanup {
 	unlink ("tst.pot");
 	unlink ("tst.log");
 	unlink ("tst.ses");
+	unlink ("selftest.dic");
+	unlink ("selftest.in");
+}
+
+###############################################################################
+# Internal mode. This will generate a file from the format itself
+# using:
+#    john -format=$fmt -list=format-tests | cut -f3 > selftest.in
+#    john -format=$fmt -list=format-tests | cut -f4 > selftest.dic
+# this function does not return, it cleans up, and exits with proper errorlevel.
+###############################################################################
+sub doInternalMode {
+	if (grepUsage("--pot=NAME")) {
+		# we are OK, we run only on jumbo mode.
+	} else {
+		ScreenOut("John CORE build detected.\n The -internal mode ONLY works for jumbo build of john.\n");
+		exit 1;
+	}
+	ScreenOutSemi("Running JTRTS in -internal mode\n");
+	ScreenOutVV("\@validFormats\n");
+	ScreenOutVV(@validFormats);
+	ScreenOutVV("\n\n\@types  (before fixups)\n");
+	ScreenOutVV(@types);
+	if (scalar @types == 3 && $types[0] eq "base" && $types[1] eq "koi8r" && $types[2] eq "utf8") {
+		@types = @validFormats;
+	}
+	# handle finding 'classes' here, such as $types[x] == "dynamic", then find all dynamic
+	# also handle other wildcard stuff.
+
+	ScreenOutVV("\n\n\@types  (after fixups)\n");
+	ScreenOutVV(@types);
+	ScreenOutVV("\n\n\@nontypes\n");
+	ScreenOutVV(@nontypes);
+
+	# now process the internal stuff.
+	foreach my $type (@types) {
+		my $fnd = 0;
+		foreach my $nontype (@nontypes) {
+			my $s = $type;
+			if ($s =~ m/$nontype/) {
+				$fnd = 1;
+			}
+		}
+		if ($fnd == 0) {
+			# first, build our dictionary
+			my $cmd = "$JOHN_EXE -format=$type -list=format-tests 2>&1 | cut -f 4 > selftest.dic";
+			$cmd = `$cmd`;
+			# Now build the input file
+			$cmd = "$JOHN_EXE -format=$type -list=format-tests 2>&1 | cut -f3 > selftest.in";
+			$cmd = `$cmd`;
+			my $cnt = `wc -l selftest.in | awk \'{print \$1}\'`;
+			chomp $cnt;
+			# build the @tstdata array with 1 element
+			@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt),($cnt)");
+			ScreenOutVV("Preparing to run internal for type: $type\n");
+			process();
+		}
+	}
+
+	cleanup();
+	displaySummary();
+	exit $error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt;
 }

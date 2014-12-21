@@ -155,7 +155,11 @@
 #               made -no-prelims the default, so now if you WANT prelims, you have to use -prelims
 # v1.12.18 (oct 31, 2014) Return from script will not be 0 if there are any failures. It will be number
 #               number of failed test, or tests which jtr returned non-zero.
-# Todo (1.13)
+#
+# v1.13    (dec 18, 2014) added -internal test mode, to test 'test' strings from inside formats.
+#               This allows testing formats which do not yet have test suite input files.
+#               Did a 'major' version, since this is fully new behavior.
+# Todo (1.14)
 #               Add tests for -pipe, files with \r\n \n \r and \r\r\n, which are 'real'
 #               file formats seen in the wild.  These tests are in -w= and -pipe modes
 #               http://www.openwall.com/lists/john-dev/2012/06/29/39
