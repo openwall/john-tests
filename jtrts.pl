@@ -597,18 +597,6 @@ sub process {
 	my $dict_name_ex = "";
 	my $dict_name = "";
 	my $line = "";
-	
-	#my $k = 0;
-	#foreach my $l(@tstdata) {
-	#	my @ar = split(',', $l);
-	#	print "line=$l\n";
-	#	my $i = 0;
-	#	foreach my $e(@ar) {
-	#		print "ar[$i] = $e\n";
-	#		$i += 1;
-	#	}
-	#	exit(0);
-	#}
 
 	LINE: foreach my $line(@tstdata) {
 		my @ar = split(',', $line);
@@ -862,9 +850,11 @@ sub doInternalMode {
 	ScreenOutVV(@types);
 	if (scalar @types == 3 && $types[0] eq "base" && $types[1] eq "koi8r" && $types[2] eq "utf8") {
 		@types = @validFormats;
+	} else {
+		# handle finding 'classes' here, such as $types[x] == "dynamic", then find all dynamic
+		# also handle other wildcard stuff.  Make sure that these types work:
+		# dynamic, cpu, gpu, cuda, opencl also wildcards.  Probably also encodings.
 	}
-	# handle finding 'classes' here, such as $types[x] == "dynamic", then find all dynamic
-	# also handle other wildcard stuff.
 
 	ScreenOutVV("\n\n\@types  (after fixups)\n");
 	ScreenOutVV(@types);
@@ -873,25 +863,35 @@ sub doInternalMode {
 
 	# now process the internal stuff.
 	foreach my $type (@types) {
-		my $fnd = 0;
+		my $doit = 1;
+		# handle finding 'classes' here, such as $types[x] == "dynamic", then find all dynamic
+		# also handle other wildcard stuff.  Make sure that these types work:
+		# dynamic, cpu, gpu, cuda, opencl also wildcards.
 		foreach my $nontype (@nontypes) {
 			my $s = $type;
 			if ($s =~ m/$nontype/) {
-				$fnd = 1;
+				$doit = 0;
 			}
 		}
-		if ($fnd == 0) {
+
+		# make sure we have this type as a valid type in JtR
+		my @match = grep { /^$type$/ } @validFormats;
+		ScreenOutVV("\n\nsearch of type in validFormats resulted in:\n")
+		ScreenOutVV("type=[$type] match=[\@match]\n");
+		if (scalar(@match) == 0) { $doit = 0; }
+
+		if ($doit == 1) {
 			# first, build our dictionary
-			my $cmd = "$JOHN_EXE -format=$type -list=format-tests 2>&1 | cut -f 4 > selftest.dic";
+			my $cmd = "$JOHN_EXE -format=$type -list=format-tests 2>&1 | LC_ALL=C cut -f 4 > selftest.dic";
 			$cmd = `$cmd`;
 			# Now build the input file
-			$cmd = "$JOHN_EXE -format=$type -list=format-tests 2>&1 | cut -f3 > selftest.in";
+			$cmd = "$JOHN_EXE -format=$type -list=format-tests 2>&1 | LC_ALL=C cut -f3 > selftest.in";
 			$cmd = `$cmd`;
-			my $cnt = `wc -l selftest.in | awk \'{print \$1}\'`;
+			my $cnt = `LC_ALL=C wc -l selftest.in | LC_ALL=C awk \'{print \$1}\'`;
 			chomp $cnt;
 			# build the @tstdata array with 1 element
 			@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt),($cnt)");
-			ScreenOutVV("Preparing to run internal for type: $type\n");
+			ScreenOutV("Preparing to run internal for type: $type\n");
 			process();
 		}
 	}
