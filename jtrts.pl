@@ -38,6 +38,9 @@ my @startingTime;
 my $pass_thru = "";
 my $show_pass_thru;
 
+# Set this once and we don't have to care about it anymore
+$ENV{"LC_ALL"} = "C";
+
 ###############################################################################
 # MAIN
 ###############################################################################
@@ -736,10 +739,10 @@ sub process {
 		if (-f $pot) {
 			unlink ("pw3");
 			if ($ar[8] eq "\'-fie=\\x1F\'") {
-				my $cmd2 = sprintf("LC_ALL=C cut -f 2- -d\"%c\" -s < $pot | $UNIQUE pw3 > /dev/null", 31);
+				my $cmd2 = sprintf("cut -f 2- -d\"%c\" -s < $pot | $UNIQUE pw3 > /dev/null", 31);
 				system($cmd2);
 			} else {
-				my $cmd2 = sprintf("LC_ALL=C cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
+				my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
 				system($cmd2);
 			}
 			$cmd =~ s/$dict_name/--wordlist=pw3/;
@@ -887,12 +890,12 @@ sub doInternalMode {
 
 		if ($doit == 1) {
 			# first, build our dictionary
-			my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>&1 | LC_ALL=C cut -f 4 > selftest.dic";
+			my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>&1 | cut -f 4 > selftest.dic";
 			$cmd = `$cmd`;
 			# Now build the input file
-			$cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>&1 | LC_ALL=C cut -f3 > selftest.in";
+			$cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>&1 | cut -f3 > selftest.in";
 			$cmd = `$cmd`;
-			my $cnt = `LC_ALL=C wc -l selftest.in | LC_ALL=C awk \'{print \$1}\'`;
+			my $cnt = `wc -l selftest.in | awk \'{print \$1}\'`;
 			chomp $cnt;
 			# build the @tstdata array with 1 element
 			@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt),($cnt)");
