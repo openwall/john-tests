@@ -876,7 +876,7 @@ sub doInternalMode {
 
 		# make sure we have this type as a valid type in JtR
 		my @match = grep { /^$type$/ } @validFormats;
-		ScreenOutVV("\n\nsearch of type in validFormats resulted in:\n")
+		ScreenOutVV("\n\nsearch of type in validFormats resulted in:\n");
 		ScreenOutVV("type=[$type] match=[\@match]\n");
 		if (scalar(@match) == 0) { $doit = 0; }
 
