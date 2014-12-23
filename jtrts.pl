@@ -859,9 +859,21 @@ sub doInternalMode {
 	if (scalar @types == 3 && $types[0] eq "base" && $types[1] eq "koi8r" && $types[2] eq "utf8") {
 		@types = @validFormats;
 	} else {
-		# handle finding 'classes' here, such as $types[x] == "dynamic", then find all dynamic
-		# also handle other wildcard stuff.  Make sure that these types work:
-		# dynamic, cpu, gpu, cuda, opencl also wildcards.  Probably also encodings.
+		my @newtypes;
+		foreach my $type (@types) {
+			ScreenOutVV("Looking for $type\n\n");
+			my $cmd = "$JOHN_EXE -list=formats -format=$type $show_pass_thru 2>/dev/null";
+			my $ret_types = `$cmd`;
+			ScreenOutVV("john -list=formats -format=$type returned $ret_types\n\n");
+			$ret_types =~ s/\n//g;
+			$ret_types =~ s/ //g;
+			my @typesarr = split(",", $ret_types);
+			foreach $type (@typesarr) { push (@newtypes, lc $type); }
+		}
+		# uniq newtypes
+		my %seen = ();
+		@newtypes = grep { ! $seen{ $_ }++ } @newtypes;
+		@types = sort(@newtypes);
 	}
 
 	ScreenOutVV("\n\n\@types  (after fixups)\n");
