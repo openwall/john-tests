@@ -30,9 +30,10 @@ my @caps=();
 my @encs=();
 my @johnUsageScreen=();
 my @validFormats=();
+my %formatDetails=();
 my @tstdata;
 my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_stderr=0;
-my $last_line_len=0; my $internal_testing;
+my $last_line_len=0; my $internal_testing=0; my $hash_case_mangle=0;
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my @startingTime;
 my $pass_thru = "";
@@ -104,6 +105,7 @@ sub parseArgs {
 		'stoponerror!'     => \$stop_on_error,
 		'showstderr!'      => \$show_stderr,
 		'internal!'        => \$internal_testing,
+		'case_mangle!'     => \$hash_case_mangle,
 		);
 	if ($basepath ne "") {
 		$JOHN_PATH = $basepath;
@@ -817,7 +819,8 @@ sub process {
 			unlink("pw3");
 		}
 	}
-	ScreenOutSemi("\n");
+	# in -internal mode, we do not want the extra \n
+	if (!$skip) { ScreenOutSemi("\n"); }
 	if (!stringInArray("local_pot_valid", @caps)) {
 		# handle john 'core' behavior.  then we delete the pot we just made, then rename the 'saved' version.
 		unlink $JOHN_PATH."/john.pot";
@@ -838,6 +841,37 @@ sub cleanup {
 }
 
 ###############################################################################
+###############################################################################
+sub PossiblyCaseMangle {
+	my ($hash) = @_;
+	return $hash;
+}
+sub build_self_test_files {
+	my $type = $_[0];
+	my $cnt = 0;
+	my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null";
+	my $results = `$cmd`;
+	DumpFileVV("results from -list=format-tests -format=$type = \n$results\n\n");
+	my @ar1 = split("\n", $results);
+	open (FILE1, "> selftest.in") || die "problem creating selftest.in\n";
+	open (FILE2, "> selftest.dic") || die "problem creating selftest.dic\n";
+	foreach my $line (@ar1) {
+		my @dtls = split("\t", $line);
+		if (scalar (@dtls) == 4) {
+			print FILE1 $dtls[2]."\n";
+			print FILE2 $dtls[3]."\n";
+			#if ($hash_case_mangle && this format is a CASE type) {
+			#	print FILE2 PossiblyCaseMangle($dtls[4]));
+			#	print FILE2 PossiblyCaseMangle($dtls[4]));
+			#}
+			$cnt += 1;
+		}
+	}
+	close(FILE2); close(FILE1);
+	DumpFileVV("selftest.dic"); DumpFileVV("selftest.in");
+	return $cnt;
+}
+###############################################################################
 # Internal mode. This will generate a file from the format itself
 # using:
 #    john -format=$fmt -list=format-tests | cut -f3 > selftest.in
@@ -850,6 +884,17 @@ sub doInternalMode {
 	} else {
 		ScreenOut("John CORE build detected.\n The -internal mode ONLY works for jumbo build of john.\n");
 		exit 1;
+	}
+	if ($hash_case_mangle) {
+		# build the formatDetails hash (1 time)
+		my $res = `$JOHN_EXE -list=format-details`;
+		my @details = split ("\n", $res);
+		foreach my $detail (@details) {
+			my @indiv = split("\t", $detail);
+			$formatDetails {$indiv[0]} = $detail;
+		}
+		print "%formatDetails\n";
+		exit(1);
 	}
 	ScreenOutSemi("Running JTRTS in -internal mode\n");
 	ScreenOutVV("\@validFormats\n");
@@ -901,18 +946,8 @@ sub doInternalMode {
 		if (scalar(@match) == 0) { $doit = 0; }
 
 		if ($doit == 1) {
-			# first, build our dictionary
-			my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null | cut -f 4 > selftest.dic";
-			ScreenOutVV("\nCMD for selftest.dic make:\n$cmd\n");
-			$cmd = `$cmd`;
-			DumpFileVV("selftest.dic");
-			# Now build the input file
-			$cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null | cut -f3 > selftest.in";
-			ScreenOutVV("\nCMD for selftest.in make:\n$cmd\n");
-			$cmd = `$cmd`;
-			DumpFileVV("selftest.in");
-			my $cnt = `wc -l selftest.in | awk \'{print \$1}\'`;
-			chomp $cnt;
+			# first, build our dictionary/input files
+			my $cnt = build_self_test_files($type);
 			# build the @tstdata array with 1 element
 			@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt),($cnt)");
 			ScreenOutVV("Preparing to run internal for type: $type\n");

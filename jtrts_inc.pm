@@ -61,6 +61,12 @@ usage: $0 [-h|-?] [-option[s]]
                    from a john jumbo build. This allows doing 'some' testing
                    on formats not yet in the TS, by using the internal test
                    strings from the format itself.
+    -case_mangle   ONLY works in -internal mode. In this mode, if testing a
+                   a format that has FMT_SPLIT_UNIFIES_CASE set, and we can
+                   detect a raw hex hash, then that line will get output, and
+                   other lines will also get output, mixing the hash case.
+                   When run, JtR should skip all the duplicate hashes that
+                   are the same other than case.
     -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
                    and other temp files will be left, AND the command line
                    that was run is listed. (default is -nostoponerror).
@@ -151,6 +157,7 @@ sub DumpFileVV {
 	if ($verbosity > 3) {
 		my $c = `cat $_[0]`;
 		print "\n\nDump of file $_[0] is:\n$c\n\n";
+		$last_line_len = 0;
 	}
 }
 sub stringInArray {
