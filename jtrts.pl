@@ -843,15 +843,68 @@ sub cleanup {
 ###############################################################################
 ###############################################################################
 sub PossiblyCaseMangle {
-	my ($hash) = @_;
+	my ($hash, $up) = @_;
+	my @ar = split /\$/, $hash, 100;
+	my $cnt; my $cnt2;
+	$cnt = 0;
+	foreach my $item (@ar) {
+		my $len = length($item);
+		if ($len == 32 || $len == 40 || $len == 56 || $len == 64 || $len == 96 || $len == 128) {
+			# possible hex sizes.  See if this field is 'pure' hex
+			my $s = unpack("H*",pack("H*",$item));
+			if (lc $s eq lc $item) {
+				#found one
+				$cnt2 = 0;
+				my $ret = "";
+				foreach $item (@ar) {
+					if ($cnt == $cnt2) {
+						if ($up) { $item = uc $item; }
+						else { $item = lc $item; }
+					}
+					$ret .= $item . '$';
+					$cnt2 += 1;
+				}
+				if (length($ret) -1 == length($hash)) { $ret = substr($ret, 0, length($ret)-1); }
+				return $ret;
+			}
+		}
+		$cnt += 1;
+	}
+	$cnt = 0;
+	@ar = split /\*/, $hash, 100;
+	foreach my $item (@ar) {
+		my $len = length($item);
+		if ($len == 32 || $len == 40 || $len == 56 || $len == 64 || $len == 96 || $len == 128) {
+			# possible hex sizes.  See if this field is 'pure' hex
+			my $s = unpack("H*",pack("H*",$item));
+			if (lc $s eq lc $item) {
+				#found one
+				my $ret = "";
+				$cnt2 = 0;
+				foreach $item (@ar) {
+					if ($cnt == $cnt2) {
+						if ($up) { $item = uc $item; }
+						else { $item = lc $item; }
+					}
+					$ret .= $item . '*';
+					$cnt2 += 1;
+				}
+				if (length($ret) -1 == length($hash)) { $ret = substr($ret, 0, length($ret)-1); }
+				return $ret;
+			}
+		}
+		$cnt += 1;
+	}
 	return $hash;
 }
 sub build_self_test_files {
 	my $type = $_[0];
 	my $cnt = 0;
+	my @details = split("\t", $formatDetails{$type});
+	my $mangle = hex($details[4]) & 0x00020000; # check for FMT_SPLIT_UNIFIES_CASE
 	my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null";
 	my $results = `$cmd`;
-	DumpFileVV("results from -list=format-tests -format=$type = \n$results\n\n");
+	ScreenOutVV("results from -list=format-tests -format=$type = \n$results\n\n");
 	my @ar1 = split("\n", $results);
 	open (FILE1, "> selftest.in") || die "problem creating selftest.in\n";
 	open (FILE2, "> selftest.dic") || die "problem creating selftest.dic\n";
@@ -860,10 +913,10 @@ sub build_self_test_files {
 		if (scalar (@dtls) == 4) {
 			print FILE1 $dtls[2]."\n";
 			print FILE2 $dtls[3]."\n";
-			#if ($hash_case_mangle && this format is a CASE type) {
-			#	print FILE2 PossiblyCaseMangle($dtls[4]));
-			#	print FILE2 PossiblyCaseMangle($dtls[4]));
-			#}
+			if ($hash_case_mangle && $mangle) {
+				print FILE1 PossiblyCaseMangle($dtls[2], 1)."\n";
+				print FILE1 PossiblyCaseMangle($dtls[2], 0)."\n";
+			}
 			$cnt += 1;
 		}
 	}
@@ -885,17 +938,7 @@ sub doInternalMode {
 		ScreenOut("John CORE build detected.\n The -internal mode ONLY works for jumbo build of john.\n");
 		exit 1;
 	}
-	if ($hash_case_mangle) {
-		# build the formatDetails hash (1 time)
-		my $res = `$JOHN_EXE -list=format-details`;
-		my @details = split ("\n", $res);
-		foreach my $detail (@details) {
-			my @indiv = split("\t", $detail);
-			$formatDetails {$indiv[0]} = $detail;
-		}
-		print "%formatDetails\n";
-		exit(1);
-	}
+
 	ScreenOutSemi("Running JTRTS in -internal mode\n");
 	ScreenOutVV("\@validFormats\n");
 	ScreenOutVV(@validFormats);
@@ -921,6 +964,16 @@ sub doInternalMode {
 		@types = sort(@newtypes);
 	}
 
+	if ($hash_case_mangle) {
+		# build the formatDetails hash (1 time)
+		my $res = `$JOHN_EXE -list=format-details`;
+		my @details = split ("\n", $res);
+		foreach my $detail (@details) {
+			my @indiv = split("\t", $detail);
+			$formatDetails {lc $indiv[0]} = $detail;
+		}
+	}
+
 	ScreenOutVV("\n\n\@types  (after fixups)\n");
 	ScreenOutVV(@types);
 	ScreenOutVV("\n\n\@nontypes\n");
@@ -942,14 +995,15 @@ sub doInternalMode {
 		# make sure we have this type as a valid type in JtR
 		my @match = grep { /^$type$/ } @validFormats;
 		ScreenOutVV("\n\nsearch of type in validFormats resulted in:\n");
-		ScreenOutVV("type=[$type] match=[\@match]\n");
+		ScreenOutVV("type=[$type] match=[@match]\n");
 		if (scalar(@match) == 0) { $doit = 0; }
 
 		if ($doit == 1) {
 			# first, build our dictionary/input files
 			my $cnt = build_self_test_files($type);
 			# build the @tstdata array with 1 element
-			@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt),($cnt)");
+			my $cnt3 = $cnt*3;
+			@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt)(-show$cnt3),($cnt)");
 			ScreenOutVV("Preparing to run internal for type: $type\n");
 			process(1);
 		}
