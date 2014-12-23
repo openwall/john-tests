@@ -9,11 +9,11 @@ my $verbosity;
 our @ISA= qw( Exporter );
 
 # these CAN be exported.
-our @EXPORT_OK = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV
+our @EXPORT_OK = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV DumpFileVV
                      setVerbosity stringInArray arrayPartInString timeToSecs ScreenOutAlways_ar );
 
 # these are exported by default.
-our @EXPORT = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV
+our @EXPORT = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV DumpFileVV
                   setVerbosity stringInArray arrayPartInString timeToSecs ScreenOutAlways_ar );
 
 sub setVerbosity {
@@ -147,7 +147,12 @@ sub ScreenOutVV {
 		$last_line_len = 0;
 	}
 }
-
+sub DumpFileVV {
+	if ($verbosity > 3) {
+		my $c = `cat $_[0]`;
+		print "\n\nDump of file $_[0] is:\n$c\n\n";
+	}
+}
 sub stringInArray {
 	my $str = shift;
 	foreach my $elem(@_) {

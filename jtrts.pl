@@ -890,11 +890,15 @@ sub doInternalMode {
 
 		if ($doit == 1) {
 			# first, build our dictionary
-			my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>&1 | cut -f 4 > selftest.dic";
+			my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null | cut -f 4 > selftest.dic";
+			ScreenOutVV("\nCMD for selftest.dic make:\n$cmd\n");
 			$cmd = `$cmd`;
+			DumpFileVV("selftest.dic");
 			# Now build the input file
-			$cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>&1 | cut -f3 > selftest.in";
+			$cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null | cut -f3 > selftest.in";
+			ScreenOutVV("\nCMD for selftest.in make:\n$cmd\n");
 			$cmd = `$cmd`;
+			DumpFileVV("selftest.in");
 			my $cnt = `wc -l selftest.in | awk \'{print \$1}\'`;
 			chomp $cnt;
 			# build the @tstdata array with 1 element
