@@ -729,6 +729,7 @@ sub process {
 				ScreenOutSemi($str);
 			}
 		} else {
+			if (!defined $crack_xx[3]) {ScreenOutAlways("\n");}
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_crack_cnt);
 			ScreenOutAlways($str);
 			$ret_val_non_zero_cnt += 1;
@@ -900,8 +901,11 @@ sub PossiblyCaseMangle {
 sub build_self_test_files {
 	my $type = $_[0];
 	my $cnt = 0;
-	my @details = split("\t", $formatDetails{$type});
-	my $mangle = hex($details[4]) & 0x00020000; # check for FMT_SPLIT_UNIFIES_CASE
+	my $mangle = 0;
+	if ($hash_case_mangle) {
+		my @details = split("\t", $formatDetails{$type});
+		$mangle = hex($details[4]) & 0x00020000; # check for FMT_SPLIT_UNIFIES_CASE
+	}
 	my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null";
 	my $results = `$cmd`;
 	ScreenOutVV("results from -list=format-tests -format=$type = \n$results\n\n");
@@ -910,9 +914,10 @@ sub build_self_test_files {
 	open (FILE2, "> selftest.dic") || die "problem creating selftest.dic\n";
 	foreach my $line (@ar1) {
 		my @dtls = split("\t", $line);
-		if (scalar (@dtls) == 4) {
+		if (scalar (@dtls) >= 3) {
 			print FILE1 $dtls[2]."\n";
-			print FILE2 $dtls[3]."\n";
+			if (defined $dtls[3]) { print FILE2 $dtls[3]; }
+			print FILE2 "\n";
 			if ($hash_case_mangle && $mangle) {
 				print FILE1 PossiblyCaseMangle($dtls[2], 1)."\n";
 				print FILE1 PossiblyCaseMangle($dtls[2], 0)."\n";
