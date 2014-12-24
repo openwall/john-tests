@@ -727,6 +727,12 @@ sub process {
 				} else {
 					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%-4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 					ScreenOutAlways($str);
+					if ($stop_on_error) {
+						ScreenOut("Exiting on error.  The pot file $pot contains the found data\n");
+						$cmd =~ s# 2>&1 >/dev/null##;
+						ScreenOut("The command used to run this test was:\n\n$cmd\n");
+						exit(1);
+					}
 				}
 			} else {
 				my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
