@@ -841,14 +841,14 @@ sub cleanup {
 	unlink ("tst.pot");
 	unlink ("tst.log");
 	unlink ("tst.ses");
-	#unlink ("selftest.dic");
-	#unlink ("selftest.in");
+	unlink ("selftest.dic");
+	unlink ("selftest.in");
 }
 
 ###############################################################################
 ###############################################################################
 sub PossibleCaseMangle1 {
-	my ($hash, $up, $ch, $force) = @_;
+	my ($hash, $up, $ch) = @_;
 	my $ch1 = "\\".$ch;
 	my @ar = split /$ch1/, $hash, 100;
 	my $cnt; my $cnt2;
@@ -864,7 +864,7 @@ sub PossibleCaseMangle1 {
 				my $ret = "";
 				foreach $item (@ar) {
 					if ($cnt == $cnt2) {
-						if ($up) { $item = uc $item; }
+						if ($up eq "upcase") { $item = uc $item; }
 						else { $item = lc $item; }
 					}
 					$ret .= $item . $ch;
@@ -913,9 +913,9 @@ sub build_self_test_files {
 			if (defined $dtls[3]) { print FILE2 $dtls[3]; }
 			print FILE2 "\n";
 			#if ($type ne "gpg") {
-				print FILE1 PossiblyCaseMangle($dtls[2], 1);
+				print FILE1 PossiblyCaseMangle($dtls[2], "upcase");
 				if ($hash_case_mangle && $mangle) {
-					print FILE1 PossiblyCaseMangle($dtls[2], 0);
+					print FILE1 PossiblyCaseMangle($dtls[2], "lowcase");
 				}
 			#}
 			$cnt += 1;
