@@ -42,6 +42,10 @@ my $show_pass_thru;
 # Set this once and we don't have to care about it anymore
 $ENV{"LC_ALL"} = "C";
 
+# Speed up OpenCL for short runs/many salts
+$ENV{"LWS"} = "8";
+$ENV{"GWS"} = "64";
+
 ###############################################################################
 # MAIN
 ###############################################################################
