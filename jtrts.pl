@@ -841,20 +841,21 @@ sub cleanup {
 	unlink ("tst.pot");
 	unlink ("tst.log");
 	unlink ("tst.ses");
-	unlink ("selftest.dic");
-	unlink ("selftest.in");
+	#unlink ("selftest.dic");
+	#unlink ("selftest.in");
 }
 
 ###############################################################################
 ###############################################################################
-sub PossiblyCaseMangle {
-	my ($hash, $up) = @_;
-	my @ar = split /\$/, $hash, 100;
+sub PossibleCaseMangle1 {
+	my ($hash, $up, $ch, $force) = @_;
+	my $ch1 = "\\".$ch;
+	my @ar = split /$ch1/, $hash, 100;
 	my $cnt; my $cnt2;
 	$cnt = 0;
 	foreach my $item (@ar) {
 		my $len = length($item);
-		if ($len == 32 || $len == 40 || $len == 56 || $len == 64 || $len == 96 || $len == 128) {
+		if ($len == 32 || $len == 40 || $len == 48 || $len == 56 || $len == 64 || $len == 80 || $len == 96 || $len == 128) {
 			# possible hex sizes.  See if this field is 'pure' hex
 			my $s = unpack("H*",pack("H*",$item));
 			if (lc $s eq lc $item) {
@@ -866,50 +867,39 @@ sub PossiblyCaseMangle {
 						if ($up) { $item = uc $item; }
 						else { $item = lc $item; }
 					}
-					$ret .= $item . '$';
+					$ret .= $item . $ch;
 					$cnt2 += 1;
 				}
 				if (length($ret) -1 == length($hash)) { $ret = substr($ret, 0, length($ret)-1); }
-				return $ret;
+				return $ret."\n";
 			}
 		}
 		$cnt += 1;
 	}
-	$cnt = 0;
-	@ar = split /\*/, $hash, 100;
-	foreach my $item (@ar) {
-		my $len = length($item);
-		if ($len == 32 || $len == 40 || $len == 56 || $len == 64 || $len == 96 || $len == 128) {
-			# possible hex sizes.  See if this field is 'pure' hex
-			my $s = unpack("H*",pack("H*",$item));
-			if (lc $s eq lc $item) {
-				#found one
-				my $ret = "";
-				$cnt2 = 0;
-				foreach $item (@ar) {
-					if ($cnt == $cnt2) {
-						if ($up) { $item = uc $item; }
-						else { $item = lc $item; }
-					}
-					$ret .= $item . '*';
-					$cnt2 += 1;
-				}
-				if (length($ret) -1 == length($hash)) { $ret = substr($ret, 0, length($ret)-1); }
-				return $ret;
-			}
-		}
-		$cnt += 1;
-	}
-	return $hash;
+	return "";
 }
-sub build_self_test_files {
+sub PossiblyCaseMangle {
+	my ($hash, $up) = @_;
+	my $val = PossibleCaseMangle1($hash, $up, "\$");
+	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "*"); }
+	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "#"); }
+	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "."); }
+	if (length($val) == 0) { return $hash."\n"; }
+	return $val;
+}
+sub does_hash_split_unifies_case {
 	my $type = $_[0];
-	my $cnt = 0;
 	my $mangle = 0;
 	if ($hash_case_mangle) {
 		my @details = split("\t", $formatDetails{$type});
 		$mangle = hex($details[4]) & 0x00020000; # check for FMT_SPLIT_UNIFIES_CASE
 	}
+	return $mangle;
+}
+sub build_self_test_files {
+	my $type = $_[0];
+	my $cnt = 0;
+	my $mangle = does_hash_split_unifies_case($type);
 	my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null";
 	my $results = `$cmd`;
 	ScreenOutVV("results from -list=format-tests -format=$type = \n$results\n\n");
@@ -922,10 +912,12 @@ sub build_self_test_files {
 			print FILE1 $dtls[2]."\n";
 			if (defined $dtls[3]) { print FILE2 $dtls[3]; }
 			print FILE2 "\n";
-			if ($hash_case_mangle && $mangle) {
-				print FILE1 PossiblyCaseMangle($dtls[2], 1)."\n";
-				print FILE1 PossiblyCaseMangle($dtls[2], 0)."\n";
-			}
+			#if ($type ne "gpg") {
+				print FILE1 PossiblyCaseMangle($dtls[2], 1);
+				if ($hash_case_mangle && $mangle) {
+					print FILE1 PossiblyCaseMangle($dtls[2], 0);
+				}
+			#}
 			$cnt += 1;
 		}
 	}
@@ -1011,8 +1003,16 @@ sub doInternalMode {
 			# first, build our dictionary/input files
 			my $cnt = build_self_test_files($type);
 			# build the @tstdata array with 1 element
-			my $cnt3 = $cnt*3;
-			@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt)(-show$cnt3),($cnt)");
+			if (does_hash_split_unifies_case($type)) {
+				my $cnt3 = $cnt*3;
+				@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt3),($cnt)");
+			} else {
+				my $cnt2 = $cnt;
+				#if ($type ne "7z" && $type ne "gpg") {
+					$cnt2 *= 2;
+				#}
+				@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt2),($cnt)");
+			}
 			ScreenOutVV("Preparing to run internal for type: $type\n");
 			process(1);
 		}
