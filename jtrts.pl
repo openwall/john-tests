@@ -854,7 +854,7 @@ sub cleanup {
 ###############################################################################
 ###############################################################################
 sub PossibleCaseMangle1 {
-	my ($hash, $up, $ch) = @_;
+	my ($hash, $up, $ch, $force) = @_;
 	my $ch1 = "\\".$ch;
 	my @ar = split /$ch1/, $hash, 100;
 	my $cnt; my $cnt2;
@@ -864,7 +864,12 @@ sub PossibleCaseMangle1 {
 		if ($len == 32 || $len == 40 || $len == 48 || $len == 56 || $len == 64 || $len == 80 || $len == 96 || $len == 128) {
 			# possible hex sizes.  See if this field is 'pure' hex
 			my $s = unpack("H*",pack("H*",$item));
-			if (lc $s eq lc $item) {
+			my $useit = 1;
+			if ($force) {
+				if ($up eq "upcase" && uc $s eq $item) { $useit = 0; }
+				elsif ($up eq "lowcase" && lc $s eq $item) { $useit = 0; }
+			}
+			if ($useit == 1 && lc $s eq lc $item) {
 				#found one
 				$cnt2 = 0;
 				my $ret = "";
@@ -886,10 +891,10 @@ sub PossibleCaseMangle1 {
 }
 sub PossiblyCaseMangle {
 	my ($hash, $up, $force) = @_;
-	my $val = PossibleCaseMangle1($hash, $up, "\$");
-	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "*"); }
-	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "#"); }
-	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "."); }
+	my $val = PossibleCaseMangle1($hash, $up, "\$", $force);
+	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "*", $force); }
+	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "#", $force); }
+	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, ".", $force); }
 	if (length($val) == 0) { if ($force) { return ""; } else { return $hash."\n"; } }
 	return $val;
 }
@@ -920,9 +925,7 @@ sub build_self_test_files {
 			print FILE2 "\n";
 			if ($hash_case_mangle) {
 				print FILE1 PossiblyCaseMangle($dtls[2], "upcase", not $mangle);
-				if ($mangle) {
-					print FILE1 PossiblyCaseMangle($dtls[2], "lowcase");
-				}
+				print FILE1 PossiblyCaseMangle($dtls[2], "lowcase", not $mangle);
 			}
 			$cnt += 1;
 		}
