@@ -854,7 +854,7 @@ sub cleanup {
 ###############################################################################
 ###############################################################################
 sub PossibleCaseMangle1 {
-	my ($hash, $up, $ch, $force) = @_;
+	my ($hash, $case, $ch, $force) = @_;
 	my $ch1 = "\\".$ch;
 	my @ar = split /$ch1/, $hash, 100;
 	my $cnt; my $cnt2;
@@ -866,8 +866,8 @@ sub PossibleCaseMangle1 {
 			my $s = unpack("H*",pack("H*",$item));
 			my $useit = 1;
 			if ($force) {
-				if ($up eq "upcase" && uc $s eq $item) { $useit = 0; }
-				elsif ($up eq "lowcase" && lc $s eq $item) { $useit = 0; }
+				if ($case eq "uprcase" && uc $s eq $item) { $useit = 0; }
+				elsif ($case eq "lowcase" && lc $s eq $item) { $useit = 0; }
 			}
 			if ($useit == 1 && lc $s eq lc $item) {
 				#found one
@@ -875,8 +875,8 @@ sub PossibleCaseMangle1 {
 				my $ret = "";
 				foreach $item (@ar) {
 					if ($cnt == $cnt2) {
-						if ($up eq "upcase") { $item = uc $item; }
-						else { $item = lc $item; }
+						if    ($case eq "uprcase") { $item = uc $item; }
+						elsif ($case eq "lowcase") { $item = lc $item; }
 					}
 					$ret .= $item . $ch;
 					$cnt2 += 1;
@@ -924,7 +924,7 @@ sub build_self_test_files {
 			if (defined $dtls[3]) { print FILE2 $dtls[3]; }
 			print FILE2 "\n";
 			if ($hash_case_mangle) {
-				print FILE1 PossiblyCaseMangle($dtls[2], "upcase", not $mangle);
+				print FILE1 PossiblyCaseMangle($dtls[2], "uprcase", not $mangle);
 				print FILE1 PossiblyCaseMangle($dtls[2], "lowcase", not $mangle);
 			}
 			$cnt += 1;
