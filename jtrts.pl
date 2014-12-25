@@ -885,12 +885,12 @@ sub PossibleCaseMangle1 {
 	return "";
 }
 sub PossiblyCaseMangle {
-	my ($hash, $up) = @_;
+	my ($hash, $up, $force) = @_;
 	my $val = PossibleCaseMangle1($hash, $up, "\$");
 	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "*"); }
 	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "#"); }
 	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "."); }
-	if (length($val) == 0) { return $hash."\n"; }
+	if (length($val) == 0) { if ($force) { return ""; } else { return $hash."\n"; } }
 	return $val;
 }
 sub does_hash_split_unifies_case {
@@ -918,12 +918,12 @@ sub build_self_test_files {
 			print FILE1 $dtls[2]."\n";
 			if (defined $dtls[3]) { print FILE2 $dtls[3]; }
 			print FILE2 "\n";
-			#if ($type ne "gpg") {
-				print FILE1 PossiblyCaseMangle($dtls[2], "upcase");
-				if ($hash_case_mangle && $mangle) {
+			if ($hash_case_mangle) {
+				print FILE1 PossiblyCaseMangle($dtls[2], "upcase", not $mangle);
+				if ($mangle) {
 					print FILE1 PossiblyCaseMangle($dtls[2], "lowcase");
 				}
-			#}
+			}
 			$cnt += 1;
 		}
 	}
@@ -1013,13 +1013,10 @@ sub doInternalMode {
 				my $cnt3 = $cnt*3;
 				@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt3),($cnt)");
 			} else {
-				my $cnt2 = $cnt;
-				#if ($type ne "7z" && $type ne "gpg") {
-					$cnt2 *= 2;
-				#}
-				@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt2),($cnt)");
+				@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt),($cnt)");
 			}
-			ScreenOutVV("Preparing to run internal for type: $type\n");
+			ScreenOutV("Preparing to run internal for type: $type\n");
+			ScreenOutV("tstdata = @tstdata\n\n");
 			process(1);
 		}
 	}
