@@ -152,8 +152,8 @@ sub johnPrelims {
 sub johnTest0_one {
 	if (length($_[0]) < 2 || stringInArray($_[0], @types) || stringInArray("enc", @types) || stringInArray("full", @types)) {
 		if (length($_[0]) >= 2) { $_[0] = "--encoding=$_[0]"; }
-		ScreenOutSemi("testing: john -test=0 $_[0]\n");
 		my $sCmd = "$JOHN_EXE -test=0 $_[0] $pass_thru";
+		ScreenOutSemi("testing: $sCmd\n");
 		my $sCmdOut = `$sCmd`;
 		my @CmdLines = split (/\n/, $sCmdOut);
 		foreach my $line(split (/\n/, $sCmdOut)) {
@@ -392,10 +392,10 @@ sub loadAllValidFormatTypeStrings {
 	# Ok, now if we have 'dynamic's, LOAD them
 	if (grepUsage("--list=WHAT") || grepUsage("--subformat=LIST")) {
 		if (grepUsage("--list=WHAT")) {
-			system ("$JOHN_EXE --list=subformats >JohnDynaUsage.Scr 2>/dev/null");
+			system ("$JOHN_EXE $show_pass_thru --list=subformats >JohnDynaUsage.Scr 2>/dev/null");
 		}
 		else {
-			system ("$JOHN_EXE --subformat=LIST >JohnDynaUsage.Scr 2>/dev/null");
+			system ("$JOHN_EXE $show_pass_thru --subformat=LIST >JohnDynaUsage.Scr 2>/dev/null");
 		}
 		open(FILE, "<JohnDynaUsage.Scr") or die $!;
 		my @dyna = <FILE>;
@@ -678,9 +678,8 @@ sub process {
 
 		# Ok, get crack count using --show
 		my $cmdshow = "$JOHN_EXE -show $show_pass_thru $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
-		$cmdshow .= " 2>&1";
-
 		ScreenOutVV("Execute john: $cmdshow\n");
+		$cmdshow .= " 2>&1";
 
 		my $cmd_show_data = `$cmdshow`;
 
@@ -913,7 +912,7 @@ sub build_self_test_files {
 	my $mangle = does_hash_split_unifies_case($type);
 	my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null";
 	my $results = `$cmd`;
-	ScreenOutVV("results from -list=format-tests -format=$type = \n$results\n\n");
+	ScreenOutVV("results from '$cmd' = \n$results\n\n");
 	my @ar1 = split("\n", $results);
 	open (FILE1, "> selftest.in") || die "problem creating selftest.in\n";
 	open (FILE2, "> selftest.dic") || die "problem creating selftest.dic\n";
@@ -962,7 +961,7 @@ sub doInternalMode {
 			ScreenOutVV("Looking for $type\n\n");
 			my $cmd = "$JOHN_EXE -list=formats -format=$type $show_pass_thru 2>/dev/null";
 			my $ret_types = `$cmd`;
-			ScreenOutVV("john -list=formats -format=$type returned $ret_types\n\n");
+			ScreenOutVV("$cmd returned $ret_types\n\n");
 			$ret_types =~ s/\n//g;
 			$ret_types =~ s/ //g;
 			my @typesarr = split(",", $ret_types);
@@ -976,7 +975,7 @@ sub doInternalMode {
 
 	if ($hash_case_mangle) {
 		# build the formatDetails hash (1 time)
-		my $res = `$JOHN_EXE -list=format-details`;
+		my $res = `$JOHN_EXE $show_pass_thru -list=format-details`;
 		my @details = split ("\n", $res);
 		foreach my $detail (@details) {
 			my @indiv = split("\t", $detail);
