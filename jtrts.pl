@@ -3,6 +3,7 @@ use strict;
 use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
+use MIME::Base64;
 
 my $VERSION = "1.13";
 my $RELEASE_DATE = "Dec 21, 2014";
@@ -860,7 +861,8 @@ sub PossibleCaseMangle1 {
 	$cnt = 0;
 	foreach my $item (@ar) {
 		my $len = length($item);
-		if ($len == 32 || $len == 40 || $len == 48 || $len == 56 || $len == 64 || $len == 80 || $len == 96 || $len == 128) {
+		if ($len == 16 || $len == 32 || $len == 40 || $len == 48 || $len == 56 || $len == 64 ||
+		    $len == 80 || $len == 96 || $len == 104 || $len == 112 || $len == 128) {
 			# possible hex sizes.  See if this field is 'pure' hex
 			my $s = unpack("H*",pack("H*",$item));
 			my $useit = 1;
@@ -880,6 +882,7 @@ sub PossibleCaseMangle1 {
 					$ret .= $item . $ch;
 					$cnt2 += 1;
 				}
+				# trim possible redundant trailing $ch value.
 				if (length($ret) -1 == length($hash)) { $ret = substr($ret, 0, length($ret)-1); }
 				return $ret."\n";
 			}
@@ -894,7 +897,25 @@ sub PossiblyCaseMangle {
 	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "*", $force); }
 	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, "#", $force); }
 	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, ".", $force); }
-	if (length($val) == 0) { if ($force) { return ""; } else { return $hash."\n"; } }
+	if (length($val) == 0) { $val = PossibleCaseMangle1($hash, $up, ":", $force); }
+	if (length($val) == 0) {
+		#, ok, there are a couple of FMT_SPLIT_UNI hashes, which have both HEX
+		# and base-64 hashes (pbkdf2-hmac-sha1, raw-sha256 and raw-sha256-ng at
+		# the time of this comment. So to work around these, I look for valid
+		# base-64 hash here (if in non-$force mode). If I do find that string
+		# then return the original hash, instead of "";
+		if (not $force) {
+			if (substr($hash, 0, 9) eq "{PKCS5S2}" || substr($hash, 0, 6) eq '$p5k2$') {
+				# base64 hashes from pbkdf2-hmac-sha1
+				return $hash."\n";
+			}
+			if (substr($hash, 0, 8) eq '$cisco4$' || (length($hash) == 43 && length(decode_base64($hash)) == 32) ) {
+				# base64 hashes from raw-sha256
+				return $hash."\n";
+			}
+		}
+		return "";
+	}
 	return $val;
 }
 sub does_hash_split_unifies_case {
