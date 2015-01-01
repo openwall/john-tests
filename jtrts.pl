@@ -138,7 +138,15 @@ sub grepUsage {
 	}
 	return 0;
 }
-
+sub LoadFormatDetails {
+	# build the formatDetails hash (1 time)
+	my $res = `$JOHN_EXE $show_pass_thru -list=format-details`;
+	my @details = split ("\n", $res);
+	foreach my $detail (@details) {
+		my @indiv = split("\t", $detail);
+		$formatDetails {lc $indiv[0]} = $detail;
+	}
+}
 ###############################################################################
 # here we do prelim work.  This is the multiple calls to -test=0 which should
 # not output ANY error conditions.
@@ -726,9 +734,14 @@ sub process {
 					# we are 'ok' here.
 					my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
 					ScreenOutSemi($str);
+				#} elsif ($orig_crack_cnt < $orig_show_cnt) {
+				#	# I am not 100% sure this logic is correct.  NEEDS more testing.
+				#	my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
+				#	ScreenOutSemi($str);
 				} else {
-					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%-4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 					ScreenOutAlways($str);
+					$error_cnt += 1;
 					if ($stop_on_error) {
 						ScreenOut("Exiting on error.  The pot file $pot contains the found data\n");
 						$cmd =~ s# 2>&1 >/dev/null##;
@@ -849,8 +862,8 @@ sub cleanup {
 	unlink ("tst.pot");
 	unlink ("tst.log");
 	unlink ("tst.ses");
-	unlink ("selftest.dic");
-	unlink ("selftest.in");
+	#unlink ("selftest.dic");
+	#unlink ("selftest.in");
 }
 
 ###############################################################################
@@ -929,6 +942,11 @@ sub does_hash_split_unifies_case {
 	}
 	return $mangle;
 }
+sub is_hash_salted {
+	my $type = $_[0];
+	my @details = split("\t", $formatDetails{$type});
+	return $details[11] > 0;
+}
 sub build_self_test_files {
 	my $type = $_[0];
 	my $cnt = 0;
@@ -972,6 +990,8 @@ sub doInternalMode {
 	}
 
 	ScreenOutSemi("Running JTRTS in -internal mode\n");
+	if ($hash_case_mangle) {ScreenOutSemi("Running hash case manging mode\n");}
+	LoadFormatDetails();
 	ScreenOutVV("\@validFormats\n");
 	ScreenOutVV(@validFormats);
 	ScreenOutVV("\n\n\@types  (before fixups)\n");
@@ -994,16 +1014,6 @@ sub doInternalMode {
 		my %seen = ();
 		@newtypes = grep { ! $seen{ $_ }++ } @newtypes;
 		@types = sort(@newtypes);
-	}
-
-	if ($hash_case_mangle) {
-		# build the formatDetails hash (1 time)
-		my $res = `$JOHN_EXE $show_pass_thru -list=format-details`;
-		my @details = split ("\n", $res);
-		foreach my $detail (@details) {
-			my @indiv = split("\t", $detail);
-			$formatDetails {lc $indiv[0]} = $detail;
-		}
 	}
 
 	ScreenOutVV("\n\n\@types  (after fixups)\n");
