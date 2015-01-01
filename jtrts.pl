@@ -957,12 +957,20 @@ sub build_self_test_files {
 	my @ar1 = split("\n", $results);
 	open (FILE1, "> selftest.in") || die "problem creating selftest.in\n";
 	open (FILE2, "> selftest.dic") || die "problem creating selftest.dic\n";
+	# output some long format 'tester' input words.  We might improve this with time.
+	# sizes I could see:  55, 56, 64, 65, 80, 81, 119, 120, 125, 126 bytes long.
+	print FILE2 "12345678901234567890123456789012345678901234567890123456789012345678901234567890\n";
+	print FILE2 "123456789012345678901234567890123456789012345678901234567\n";
+	print FILE2 "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890\n";
 	foreach my $line (@ar1) {
 		my @dtls = split("\t", $line);
 		if (scalar (@dtls) >= 3) {
 			print FILE1 $dtls[2]."\n";
 			if (defined $dtls[3]) { print FILE2 $dtls[3]; }
 			print FILE2 "\n";
+			if ($cnt < 3) {
+				print FILE2 "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234\n";
+			}
 			if ($hash_case_mangle) {
 				print FILE1 PossiblyCaseMangle($dtls[2], "uprcase", not $mangle);
 				print FILE1 PossiblyCaseMangle($dtls[2], "lowcase", not $mangle);
