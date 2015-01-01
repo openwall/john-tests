@@ -155,6 +155,7 @@ sub johnTest0_one {
 		if (length($_[0]) >= 2) { $_[0] = "--encoding=$_[0]"; }
 		my $sCmd = "$JOHN_EXE -test=0 $_[0] $pass_thru";
 		ScreenOutSemi("testing: $sCmd\n");
+		$sCmd .= " 2>/dev/null";
 		my $sCmdOut = `$sCmd`;
 		my @CmdLines = split (/\n/, $sCmdOut);
 		foreach my $line(split (/\n/, $sCmdOut)) {
@@ -413,11 +414,12 @@ sub loadAllValidFormatTypeStrings {
 	@validFormats = split(/\//, $fmt_str);
 	if (index($fmt_str, "-cuda") != -1)  {
 	    push(@caps, "cuda");
-	    $prelims = 0;
+		# now that $prelims is NOT default, if the user wants them, the user can have them.
+	    #$prelims = 0;
 	}
 	if (index($fmt_str, "-opencl") != -1)  {
 	    push(@caps, "opencl");
-	    $prelims = 0;
+	    #$prelims = 0;
 	}
 	# push (inc), since ALL john versions allow the inc.
 	push(@caps, "inc");
