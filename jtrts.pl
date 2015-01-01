@@ -862,8 +862,8 @@ sub cleanup {
 	unlink ("tst.pot");
 	unlink ("tst.log");
 	unlink ("tst.ses");
-	#unlink ("selftest.dic");
-	#unlink ("selftest.in");
+	unlink ("selftest.dic");
+	unlink ("selftest.in");
 }
 
 ###############################################################################
