@@ -734,6 +734,10 @@ sub process {
 					# we are 'ok' here.
 					my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
 					ScreenOutSemi($str);
+				} elsif ($orig_crack_cnt > $orig_show_cnt && index($ar[10], "($orig_show_cnt)") >= 0) {
+					# I am not 100% sure this logic is correct.  NEEDS more testing.
+					my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
+					ScreenOutSemi($str);
 				#} elsif ($orig_crack_cnt < $orig_show_cnt) {
 				#	# I am not 100% sure this logic is correct.  NEEDS more testing.
 				#	my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
