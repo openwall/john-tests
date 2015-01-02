@@ -690,7 +690,7 @@ sub process {
 		# Ok, get crack count using --show
 		my $cmdshow = "$JOHN_EXE -show $show_pass_thru $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
 		ScreenOutVV("Execute john: $cmdshow\n");
-		$cmdshow .= " 2>&1";
+		$cmdshow .= " 2>/dev/null";
 
 		my $cmd_show_data = `$cmdshow`;
 
@@ -698,10 +698,10 @@ sub process {
 
 		my @cmd_show_lines = split(/\n/, $cmd_show_data);
 		my $cmd_show_line = $cmd_show_lines[scalar (@cmd_show_lines) - 1];
-		if (!defined($cmd_show_line)) { $cmd_show_line = ""; }
+		if (!defined($cmd_show_line)) { $cmd_show_line = "0 FAKE line"; }
 		my @orig_show_words =  split(/\s/, $cmd_show_line);
 		my $orig_show_cnt = $orig_show_words[0];
-		if (!defined($orig_show_cnt)) { $orig_show_cnt = ""; }
+		if (!defined($orig_show_cnt)) { $orig_show_cnt = "0"; }
 		ScreenOutVV("\n\cmd_show_line = \n$cmd_show_line\n\n");
 
 		if (index($ar[10], "($orig_crack_cnt)") lt 0 && index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0) {
