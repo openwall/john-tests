@@ -4,6 +4,7 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 use MIME::Base64;
+use List::Util qw/shuffle/;
 
 my $VERSION = "1.13";
 my $RELEASE_DATE = "Dec 21, 2014";
@@ -33,7 +34,7 @@ my @johnUsageScreen=();
 my @validFormats=();
 my %formatDetails=();
 my @tstdata;
-my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_stderr=0;
+my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_stderr=0; my $randomize = 0;
 my $last_line_len=0; my $internal_testing=0; my $hash_case_mangle=0;
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my @startingTime;
@@ -97,6 +98,7 @@ sub displaySummary {
 sub parseArgs {
 	my @passthru=();
 	my $help = 0;
+	my $rand_seed = 31337;
 	GetOptions(
 		'help|?',          => \$help,
 		'quiet+'           => \$quiet,
@@ -111,6 +113,8 @@ sub parseArgs {
 		'showstderr!'      => \$show_stderr,
 		'internal!'        => \$internal_testing,
 		'case_mangle!'     => \$hash_case_mangle,
+		'random!'          => \$randomize,
+		'seed=n'           => \$rand_seed
 		);
 	if ($basepath ne "") {
 		$JOHN_PATH = $basepath;
@@ -125,6 +129,7 @@ sub parseArgs {
 	foreach my $s (@passthru) { $pass_thru .= " " . $s; }
 	$show_pass_thru = $pass_thru;
 	$show_pass_thru =~ s/--?fork[=:]\d+ ?//;
+	srand($rand_seed);
 }
 
 ###############################################################################
@@ -633,15 +638,20 @@ sub process {
 		my $cmd = "$cmd_head $ar[6]";
 		unless (-e $ar[6]) { next LINE; }
 		$done_cnt = $done_cnt + 1;
-		if ($ar[3] != 10000) {
+		if ($randomize || $ar[3] != 10000) {
 			open (FILE, "<".substr($dict_name,11));
 			my @lines = <FILE>;
 			close(FILE);
 			$dict_name = "--wordlist=$ar[5]-$ar[3].dic";
 			$dict_name_ex = substr($dict_name,11);
+			if ($ar[3] != 10000) {
+				@lines = @lines[0 .. ($ar[3] - 1)];
+			}
+			if ($randomize) {
+				@lines = shuffle @lines;
+			}
 			open (FILE, ">".substr($dict_name,11));
-			my $i;
-			for ($i = 0; $i < $ar[3]; $i += 1) {
+			while ($#lines >= 0) {
 				my $line = shift(@lines);
 				if (defined $line) { print FILE $line; }
 			}
