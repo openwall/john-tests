@@ -74,6 +74,13 @@ exit $error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt;
 # Here are all of the subroutines that get the job done
 ###############################################################################
 
+sub randstr {
+	my @chr = ('.','/','0'..'9','A'..'Z','a'..'z');
+	my $s="";
+	foreach (1..$_[0]) { $s.=$chr[rand @chr]; }
+	return $s;
+}
+
 sub startTime {
 	@startingTime = gmtime(time);
 }
@@ -646,7 +653,17 @@ sub process {
 			if ($ar[3] != 10000) {
 				@lines = @lines[0 .. ($ar[3] - 1)];
 			}
-			if ($randomize) {
+			elsif ($randomize) {
+				# Add some extra lines before we shuffle. This makes sure that
+				# we have lines of each length (the file has all up to 18 already)
+				my $L1 = randstr(136); my $L2 = randstr(136); my $L3 = randstr(136);
+				my $L4 = randstr(136); my $L5 = randstr(136); my $L6 = randstr(136);
+				my $i;
+				for ($i = 18; $i < 136; ++$i) {
+					push @lines, substr($L1, 0, $i)."\n"; push @lines, substr($L2, 0, $i)."\n";
+					push @lines, substr($L3, 0, $i)."\n"; push @lines, substr($L4, 0, $i)."\n";
+					push @lines, substr($L5, 0, $i)."\n"; push @lines, substr($L6, 0, $i)."\n";
+				}
 				srand($rand_seed);
 				@lines = shuffle @lines;
 			}
@@ -870,6 +887,7 @@ sub cleanup {
 	unlink ("tst.ses");
 	unlink ("selftest.dic");
 	unlink ("selftest.in");
+	unlink ("pw-10000.dic");
 }
 
 ###############################################################################
