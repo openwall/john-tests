@@ -4,7 +4,7 @@ use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
 use MIME::Base64;
-use List::Util qw/shuffle/;
+use Digest::MD5 qw(md5);
 
 my $VERSION = "1.13";
 my $RELEASE_DATE = "Dec 21, 2014";
@@ -647,8 +647,8 @@ sub process {
 				@lines = @lines[0 .. ($ar[3] - 1)];
 			}
 			if ($randomize) {
-				srand($rand_seed);
-				@lines = shuffle @lines;
+				#reuse an idea from http://www.perlmonks.org/?node_id=666041
+				@lines = sort { md5($b.$rand_seed) cmp md5($a.$rand_seed) } @lines;
 			}
 			open (FILE, ">".substr($dict_name,11));
 			while ($#lines >= 0) {
