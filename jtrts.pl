@@ -40,6 +40,7 @@ my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero
 my @startingTime;
 my $pass_thru = "";
 my $show_pass_thru;
+my $rand_seed = 31337;
 
 # Set this once and we don't have to care about it anymore
 $ENV{"LC_ALL"} = "C";
@@ -98,7 +99,6 @@ sub displaySummary {
 sub parseArgs {
 	my @passthru=();
 	my $help = 0;
-	my $rand_seed = 31337;
 	GetOptions(
 		'help|?',          => \$help,
 		'quiet+'           => \$quiet,
@@ -129,7 +129,6 @@ sub parseArgs {
 	foreach my $s (@passthru) { $pass_thru .= " " . $s; }
 	$show_pass_thru = $pass_thru;
 	$show_pass_thru =~ s/--?fork[=:]\d+ ?//;
-	srand($rand_seed);
 }
 
 ###############################################################################
@@ -648,6 +647,7 @@ sub process {
 				@lines = @lines[0 .. ($ar[3] - 1)];
 			}
 			if ($randomize) {
+				srand($rand_seed);
 				@lines = shuffle @lines;
 			}
 			open (FILE, ">".substr($dict_name,11));
