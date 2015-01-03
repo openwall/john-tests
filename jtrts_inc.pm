@@ -67,6 +67,9 @@ usage: $0 [-h|-?] [-option[s]]
                    other lines will also get output, mixing the hash case.
                    When run, JtR should skip all the duplicate hashes that
                    are the same other than case.
+    -random        Randomize wordlist entries.
+    -seed <n>      Set random seed to <n>. Default is 31337. This is so we can
+                   get reproducible "random" results.
     -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
                    and other temp files will be left, AND the command line
                    that was run is listed. (default is -nostoponerror).
