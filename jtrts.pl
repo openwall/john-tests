@@ -732,7 +732,7 @@ sub process {
 
 		my $cmd_show_data = `$cmdshow`;
 
-		ScreenOutVV("\n\nCmd_show_data = \n$cmd_show_data\n\n");
+		ScreenOutVVV("\n\nCmd_show_data = \n$cmd_show_data\n\n");
 
 		my @cmd_show_lines = split(/\n/, $cmd_show_data);
 		my $cmd_show_line = $cmd_show_lines[scalar (@cmd_show_lines) - 1];
@@ -845,7 +845,7 @@ sub process {
 			ScreenOutVV("Execute john: $cmdshow2\n");
 			my $cmd_show_data2 = `$cmdshow2`;
 			# ok, now show stderr, if asked to.
-			ScreenOutVV("\n\nCmd_show_data2 = \n$cmd_show_data2\n\n");
+			ScreenOutVVV("\n\nCmd_show_data2 = \n$cmd_show_data2\n\n");
 			my @cmd_show_lines2 = split(/\n/, $cmd_show_data2);
 			my $cmd_show_line2 = $cmd_show_lines2[scalar (@cmd_show_lines2) - 1];
 			my @orig_show_words2 =  split(/\s/, $cmd_show_line2);

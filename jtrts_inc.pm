@@ -9,11 +9,11 @@ my $verbosity;
 our @ISA= qw( Exporter );
 
 # these CAN be exported.
-our @EXPORT_OK = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV DumpFileVV
+our @EXPORT_OK = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV ScreenOutVVV DumpFileVV
                      setVerbosity stringInArray arrayPartInString timeToSecs ScreenOutAlways_ar );
 
 # these are exported by default.
-our @EXPORT = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV DumpFileVV
+our @EXPORT = qw( usage ScreenOut ScreenOutSemi ScreenOutAlways ScreenOutV ScreenOutVV ScreenOutVVV DumpFileVV
                   setVerbosity stringInArray arrayPartInString timeToSecs ScreenOutAlways_ar );
 
 sub setVerbosity {
@@ -152,6 +152,12 @@ sub ScreenOutV {
 # also able to print array's (debugging shit).
 sub ScreenOutVV {
 	if ($verbosity > 3) {
+		print "@_";
+		$last_line_len = 0;
+	}
+}
+sub ScreenOutVVV {
+	if ($verbosity > 4) {
 		print "@_";
 		$last_line_len = 0;
 	}
