@@ -106,7 +106,7 @@ sub displaySummary {
 sub parseArgs {
 	my @passthru=();
 	my $help = 0;
-	GetOptions(
+	my $err = GetOptions(
 		'help|?',          => \$help,
 		'quiet+'           => \$quiet,
 		'verbose+'         => \$verbose,
@@ -123,6 +123,10 @@ sub parseArgs {
 		'random!'          => \$randomize,
 		'seed=n'           => \$rand_seed
 		);
+	if ($err == 0) {
+		print "exiting, due to invalid option\n";
+		exit 1;
+	}
 	if ($basepath ne "") {
 		$JOHN_PATH = $basepath;
 		$JOHN_EXE  = "$JOHN_PATH/john";
