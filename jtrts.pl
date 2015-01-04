@@ -653,18 +653,25 @@ sub process {
 			if ($ar[3] != 10000) {
 				@lines = @lines[0 .. ($ar[3] - 1)];
 			}
-			elsif ($randomize) {
+			if ($randomize) {
 				# Add some extra lines before we shuffle. This makes sure that
 				# we have lines of each length (the file has all up to 18 already)
-				my $L1 = randstr(136); my $L2 = randstr(136); my $L3 = randstr(136);
-				my $L4 = randstr(136); my $L5 = randstr(136); my $L6 = randstr(136);
-				my $i;
-				for ($i = 18; $i < 136; ++$i) {
-					push @lines, substr($L1, 0, $i)."\n"; push @lines, substr($L2, 0, $i)."\n";
-					push @lines, substr($L3, 0, $i)."\n"; push @lines, substr($L4, 0, $i)."\n";
-					push @lines, substr($L5, 0, $i)."\n"; push @lines, substr($L6, 0, $i)."\n";
-				}
 				srand($rand_seed);
+				my $L1 = randstr(136);
+				my $i;
+				if ($ar[3] != 10000) {
+					for ($i = 18; $i < 134; $i += 3) {
+						push @lines, substr($L1, 0, $i)."\n";
+					}
+				} else {
+					my $L2 = randstr(136); my $L3 = randstr(136);
+					my $L4 = randstr(136); my $L5 = randstr(136); my $L6 = randstr(136);
+					for ($i = 18; $i < 136; ++$i) {
+						push @lines, substr($L1, 0, $i)."\n"; push @lines, substr($L2, 0, $i)."\n";
+						push @lines, substr($L3, 0, $i)."\n"; push @lines, substr($L4, 0, $i)."\n";
+						push @lines, substr($L5, 0, $i)."\n"; push @lines, substr($L6, 0, $i)."\n";
+					}
+				}
 				@lines = shuffle @lines;
 			}
 			open (FILE, ">".substr($dict_name,11));
