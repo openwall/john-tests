@@ -35,7 +35,7 @@ my @validFormats=();
 my %formatDetails=();
 my @tstdata;
 my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_stderr=0; my $randomize = 0;
-my $last_line_len=0; my $internal_testing=0; my $hash_case_mangle=0;
+my $last_line_len=0; my $internal_testing=0; my $hash_case_mangle=0; my $ignore_full=0;
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my @startingTime;
 my $pass_thru = "";
@@ -121,6 +121,7 @@ sub parseArgs {
 		'internal!'        => \$internal_testing,
 		'case_mangle!'     => \$hash_case_mangle,
 		'random!'          => \$randomize,
+		'ignore_full!'     => \$ignore_full,
 		'seed=n'           => \$rand_seed
 		);
 	if ($err == 0) {
@@ -544,7 +545,7 @@ sub filterPatterns {
 				if (!stringInArray($ar[7], @types)) {
 					if ($ar[1] ne "(X)") {
 						my @reqs = split(/&/,$ar[1]);
-						if (stringInArray("full_only", @types) && index($ar[1], "(full)") >= 0) {
+						if ((stringInArray("full_only", @types)||$ignore_full) && index($ar[1], "(full)") >= 0) {
 							# we want this one!!
 						} else {
 							$valid = 'f';

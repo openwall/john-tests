@@ -68,6 +68,8 @@ usage: $0 [-h|-?] [-option[s]]
                    When run, JtR should skip all the duplicate hashes that
                    are the same other than case.
     -random        Randomize wordlist entries.
+    -ignore_full   Ignore the (full) type. Useful for doing a single test on
+                   a format that is a (full) type. Here, we ignore the (full).
     -seed <n>      Set random seed to <n>. Default is 31337. This is so we can
                    get reproducible "random" results.
     -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
