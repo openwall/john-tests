@@ -650,4 +650,5 @@
 (base),(X),(jumbo),10000,gost,pw,gost_raw_tst.in,gost,Y,X,(1500),(1500)
 
 (base)(rar),(full),(jumbo),40,rar,pw,rar_tst.in,rar,Y,X,(130),(130)
-(base)(rar),(full),(jumbo),60,rar,pw,rar2_tst.in,rar,Y,X,(297),(297)
+(base)(rar)(rarx2),(full),(jumbo),60,rar,pw,rar2_tst.in,rar,Y,X,(297),(297)
+
