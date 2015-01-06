@@ -386,6 +386,10 @@
 (mssql-utf8)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql-utf8,pw,mssql_tst.in,mssql,Y,-enc=utf8,(1229),(1229)
 (mssql05-utf8)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mssql05-utf8,pw,MSSql05_tst.in,mssql05,Y,-enc=utf8,(1229),(1229)
 
+(base)(sha)(sha2)(cisco4),(X),(jumbo),10000,cisco4,pw,cisco4_tst.in,raw-sha256,Y,X,(1500),(1500)
+(base)(sha)(sha2)(cisco8),(X),(jumbo),70,cisco8,pw,cisco8_tst.in,pbkdf2-hmac-sha256,Y,X,(1500),(1500)
+(base)(sha)(sha2)(cisco9),(full),(jumbo),35,cisco9,pw,cisco9_tst.in,scrypt,Y,X,(1500),(1500)
+
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
 (mschapv2-naive-utf8)(mschapv2-utf8)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mschapv2-naive-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2-naive,Y,-enc=utf8,(1500),(1500)
