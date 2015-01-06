@@ -1,0 +1,1501 @@
+#!comment: Built with pass_gen.pl using RAW mode, 0 to 128 characters dict file=pw.dic
+u0-scrypt:$7$C6..../....e23678901256$VWI/mtLfZTE3XhNwwIAmKA7TWipwwpbfXOi8picic52:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....e23678901256$Ed/Dt3ajhWC17T2rw122CHee8HXCdBi8ou/3/Vay896:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....e23678901256$GbgIrrW79hnMVJsN7zNN99OwDXJCeExkZ2YRE7pUMY6:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....e23678901256$YuWtR8/odJ0ebcMDPYNqUZOcdpn31l9aQMvgt.QPB.D:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....e23678901256$1H7Yh0Pjtq8HR2uYEIKr72Wh./TPOJFP7p5nRH3TaD9:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....e23678901256$gODHMbRwll0kbprNMl6w.wFWRtkMrqGM668aJmxG0b/:5:0:late*night::
+u6-scrypt:$7$C6..../....e23678901256$UkBr/vBnNqIX.ieJq.y.MY9iO3SyRHz9QsL9j.dlUbA:6:0:::
+u7-scrypt:$7$C6..../....e23678901256$DBovOXPFiyILysj0udSbe7TwfXhLF8hFowl7nWyfZ23:7:0: ::
+u8-scrypt:$7$C6..../....e23678901256$BlBJlRgjYMKO3IFvnJe.WCbMZi2ymPy8xiHTgYBRtvD:8:0:1::
+u9-scrypt:$7$C6..../....e23678901256$4Hb5mzr8n8DyHYj6PE20//RtU3xnDH2YtRjgtcPEFx9:9:0:password::
+u10-scrypt:$7$C6..../....e23678901256$Jg3qcyEUJug/iC9WUQStlUYOpYVeKmOaITS7U1Uott/:10:0:test::
+u11-scrypt:$7$C6..../....e23678901256$RMwbph1dTZxNgVX0cjAY4W1C/4qHx6MIKTfn.J14Vb3:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....e23678901256$iJE64VJiI0iGu2LoAjfRr4y2c47vb3if.HA2kaVUU1/:12:0:hello::
+u13-scrypt:$7$C6..../....e23678901256$ILFlukZkeOFFjeMYMRT2bS5LZcofbJ.zhPtxCQ5byWD:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....e23678901256$YrT97sdQtCtO8tulbNPXwS4qf3zfJ0dUzItMJclQk78:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....e23678901256$IvPxno.DjXMy0nHW50wraVCU6wL6UMfVl.z4TWp/XZ1:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....e23678901256$LBU.I4E3z7CtJ55ErzJzciQOLJei7vozOnk/q5LP009:16:0:±::
+u17-scrypt:$7$C6..../....e23678901256$UN4ZPHSjFfA4SEhDrAQqZdOnpYz5TNql7Ov2AGgWA.3:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....e23678901256$TXhSv/S2DpuujCpzy/8DVq8s8djrzRbX0RgR79GMK1C:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....e23678901256$jhTlHFfRYwiWxrkR1.JJoxQRmeQ8WmZGGEK916NLR69:19:0:ôåst::
+u20-scrypt:$7$C6..../....e23678901256$IIAwZH9EL4VfNszsBtzz3xpFp7blhEbPZlgCz0pZHp2:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....e23678901256$BAM9btR7k889/5tD.G6UIzzeqy6GEFw2DSoUSrFNYQD:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....e23678901256$Ig3zq5RIp.mw6BkeXYksItQMng2LwKanxV55Ahx0oe4:22:0:qerwt::
+u23-scrypt:$7$C6..../....e23678901256$35EdDxTkOUlDTFn1no4vONCaHjtdwJ2Wa.cKjgKwNSB:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....e23678901256$bHRbdOJQluGtv56x4gurp6bLXqdvx0SlWLuRSPjZvm4:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....e236a8901256$ikOKv8r.F5YMjOzpfXkVJky/.FySNEYMQzc3TipI3q9:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....e236a8901256$Vzng2ahbnjvi3G8IqPhga1KaVBRxyqzVbdWz.YIkv01:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....e236a8901256$azDccnnPnGgvIvceeQnEuaz2lGFOqnA2jWBdE03iGH1:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....e236a8901256$qQ/kmrgIGGeHH.3vMy2sWt4TVMwOn/JbpavwbJIzNPC:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....e236a8901256$V7NUzcHCApcgC4OIINSjOecXojP9HoiS699dAELILG6:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....e236a8901256$PhcmzirddSJ/kR1rZtsxClE/93B/LQfRv9rppB4X218:5:0:late*night::
+u6-scrypt:$7$C6..../....e236a8901256$e1y24wWYbMt8KVFhRcX2OEQKkksAvBt0Ielc65TKf91:6:0:::
+u7-scrypt:$7$C6..../....e236a8901256$Qx7UjZ0sr6meHsBQ6ZNAKLCbnl8r4w8RyJ56MIGzYV2:7:0: ::
+u8-scrypt:$7$C6..../....e236a8901256$3ogIMNsh8IXkMFDcSQvFeWqVUrLYZ9A.g8ttp1nX1k.:8:0:1::
+u9-scrypt:$7$C6..../....e236a8901256$6sC4BaVQf.Cd1U35N5qJG/c.RyZW2WC4nzKWvljHeO7:9:0:password::
+u10-scrypt:$7$C6..../....e236a8901256$YcPinQLoxOFBE79Df.eQ.ePGEETytjkxO2V63tClZ0.:10:0:test::
+u11-scrypt:$7$C6..../....e236a8901256$MhXugUupkCKhNFVlExkHbhbaj00JBTcw9XotjX5h6a3:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....e236a8901256$neGlkHdxcpxwFlLCs8VwIZFUN/1TfCgzpvQUj88WLg8:12:0:hello::
+u13-scrypt:$7$C6..../....e236a8901256$n7IEONsFk16V3lVaSCjqwd.DLCWyOUBWJgHzcBA7Fl5:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....e236a8901256$WNi5In.7PJm2thmseXQ50lqSNN94krUvktCDyv2ChJ2:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....e236a8901256$pbqJpAQ/1AoMVQI6zMZbvA2XWE3igmycxbQFzesrp7D:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....e236a8901256$zfVYN8ANf1wZtlNP5/dCH2o9N/.L.RgIpAPmitInM21:16:0:±::
+u17-scrypt:$7$C6..../....e236a8901256$DH1rwkYjE9yGslSiNODRF1aa1UQxgFSzvVyGgLij/r6:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....e236a8901256$eQIACzj2tNQVFudkZdj77bKE40Ow.RQEDGB7J.fSgd5:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....e236a8901256$1mYXYeMTJq1aIWw7OKpGhxK08R0VNV9m.nHlwh70fN2:19:0:ôåst::
+u20-scrypt:$7$C6..../....e236a8901256$G4D0sCOyfsqmUgucBTxBKRIoYhyE4PgE2ZldhOQTE5A:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....e236a8901256$SMOaFFQwGYIDCh1kdJVGu2jzZSwrQlvAiIy.pbVg3u.:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....e236a8901256$qDCCx3VVq/UO0kBGDKbOstYzsOGkwNuP0kM9H6btfH.:22:0:qerwt::
+u23-scrypt:$7$C6..../....e236a8901256$.0PBQa5GELd4w2TqI3T7oYjPtmbz1thP7A8U4Eck238:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....e236a8901256$gCLRg0TucXthyr8e4Cq4J4eI0voCJUH203suGTGmJpC:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb3678901256$NqJkEJgJTPNtyxNgaPA4zod67UCNhvOqL/keQxE/1Y1:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb3678901256$d6AmLnDI1.yuH.d.1dLFiJtvA3OLzh2r6ZYp37B16c1:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb3678901256$1MtavUt4ewpsB6pfxmh34jubp46fiAWzyBEfFzFXN42:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb3678901256$lzeLOgR7UI9mr5aYcUeuUiYqMJ/uUXJSiVWV6s5N72C:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb3678901256$g3mGj6vHRilWmTvG2EOUytU0sOMN6TO4DrKtzRYi/e1:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb3678901256$Veyz8OIHlosj/6XVX9Hqltlc6caMGQBAEUVPrqxyII5:5:0:late*night::
+u6-scrypt:$7$C6..../....eb3678901256$xIf0knMZfw2WIq5u/pNnPuk3HnkWs1BDGKstKmdqr71:6:0:::
+u7-scrypt:$7$C6..../....eb3678901256$2IWaeAfBHMtNRyyBrpfBXnu2Y/giITNGSGw3ZqpoSJ4:7:0: ::
+u8-scrypt:$7$C6..../....eb3678901256$RlUN0QPmfSz6aKtdu7DkpG20YLnSP8pnzMvoyXUnqOB:8:0:1::
+u9-scrypt:$7$C6..../....eb3678901256$CwlleB3iXSgUJ3hjEqLboX2z2gTIEz/8D3Uk4jTO4gB:9:0:password::
+u10-scrypt:$7$C6..../....eb3678901256$ZzaRHmg1AEN4IGefjtHL0KfVG9bdZoJX1VKPv5euwJC:10:0:test::
+u11-scrypt:$7$C6..../....eb3678901256$xz8k8DAjHopMiqGfvMQSaec3IFp3tnYwxhMCATBXV65:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb3678901256$vC.S5mf.dqZTb3ytKtKLRv/5a.Fw7djWSNguu7L.E66:12:0:hello::
+u13-scrypt:$7$C6..../....eb3678901256$thEOkC0iVbIFuegxslgdKBlqyGcpQCdzrCWqwMc6wK5:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb3678901256$vseFJE44frRJW6PT2iiRk3D1QfgMrI0mUFxcnIsYleA:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb3678901256$SLY/idtLnzsSUaWnQ8Tcqmkp4cxqtKsSjqitLzUVQkB:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb3678901256$CSiqzSmjnZztpUBLo2uOMakHuqRNODPxoRR..8pb1u1:16:0:±::
+u17-scrypt:$7$C6..../....eb3678901256$r/II/6uuFZ6v1Z4qkUQ80jbIzv7yGCeFkhKp2U7MsV7:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb3678901256$LNjB/9cBhq7IHN5OMysdUWPinPzYfi5PtbUnTLgLGx.:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb3678901256$VlwF5AjwwSTdUrtZp5PT2hUN4Tp9EosCdzxoyX/F6NA:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb3678901256$jjBRjSoR0dmVl6rhvSRYtV.LdqcGWj5Ooe/WkCXdqK4:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb3678901256$qasdPQU0ySbrWjErMmCt.k3E7G7augIIBF1.U/bmMs3:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb3678901256$z541l/QWiPeax5fFn6wkNYqg5.S/ZRGIyNeFgi/cla6:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb3678901256$1sqC71YlfNPMlgBFZX1xx4GS3AACU4lY/dGvPOuJAg.:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb3678901256$c1Yt7EySWifVqvZfQs2AejjNNVXuJsKww8Jin10gqH5:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....ebcfrtgyhuko$e3vbgxHNPeVxpmo7Mkci5IQmQdtYwjR7q6EyLPav56A:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....ebcfrtgyhuko$SQvYaUIr5J2rcb6Ylpx9Pwqw4OonFf4kY40xnbWMZb6:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....ebcfrtgyhuko$MqsLCt24Y99n4LifkjG3Z2dfcL000saQ3Q/FSsq4mRA:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....ebcfrtgyhuko$yKjEokRbErcVke2IvjVbdhzwg5Jhm22N7W3JDiKsL55:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....ebcfrtgyhuko$oHsQAV15vPqtU76CQz/w6EX2dJIGDOhCrAtLvfihHr8:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....ebcfrtgyhuko$qvZ.xvMHOgszUWMhSLm9bilW/PI4eq/NeehuBWfIA86:5:0:late*night::
+u6-scrypt:$7$C6..../....ebcfrtgyhuko$itTayYteAXIRtF0sjk4e6IBP2lF3QfSwmDT3eujQvr3:6:0:::
+u7-scrypt:$7$C6..../....ebcfrtgyhuko$H7CddR6Q/Ek5tf86OmOpAkjiAuVd4LhCx91ChgrVSj6:7:0: ::
+u8-scrypt:$7$C6..../....ebcfrtgyhuko$VIXuPhLqS/rRMAizvLrVrxRLLXHxBHp5qJyYjvdL4DD:8:0:1::
+u9-scrypt:$7$C6..../....ebcfrtgyhuko$eBiAQHGSJVUzNkbgKoAY6PLTDnysQVwztC5jrSDBvk4:9:0:password::
+u10-scrypt:$7$C6..../....ebcfrtgyhuko$oJ2IcIVLm7xYHvkL5isoJ9LgL2jZsK5rhYDknd8MKvC:10:0:test::
+u11-scrypt:$7$C6..../....ebcfrtgyhuko$s6cwfCqfWaS3v7NY65HohcS6y6oxRRjEuWtS5CLHB81:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....ebcfrtgyhuko$yiY8mULJRcKztAM2fs6FaqURDp9mSHJDf0iHOYW8vq5:12:0:hello::
+u13-scrypt:$7$C6..../....ebcfrtgyhuko$nelfhmIfj4p1oGEuM0uUPw99UlooVjjiNb6EgG2qJNA:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....ebcfrtgyhuko$aZmg1pnvRHMkpAYqUF7zTSlLzLFQkCdOvwg7BEArL1B:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....ebcfrtgyhuko$M2YkbuO9OMSw8vGxbKe9bldMCqq8qZDrIMjr3cHPI48:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....ebcfrtgyhuko$SkjUvXZ8WqSaKsCfESZvnB.BICXvwqb7Yxac3vbp7T3:16:0:±::
+u17-scrypt:$7$C6..../....ebcfrtgyhuko$LI5KYNaJhYn6dad9F.IAyZzUzSWw8jJNB7urFd9LH33:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....ebcfrtgyhuko$L7VQ81vGSTJ45geosPIhE8htMkxoHJNnI6AwbjgWStD:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....ebcfrtgyhuko$iE5YEsEREUp0ZRJa7Kp69Wb1vD6R7BbaH5n.sHihUfA:19:0:ôåst::
+u20-scrypt:$7$C6..../....ebcfrtgyhuko$PYyLcxp8rC/zUWhN98g7Ouwsjke28Cy.T.fxNuTkL68:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....ebcfrtgyhuko$FIKokZA5PHBqB2Ks18O0D5/rbCR9wKqpDYLIi77wGy5:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....ebcfrtgyhuko$LFj0eydP4vnV1uP/PCkaTOO63JD4SL.0tH6Rokx9LoA:22:0:qerwt::
+u23-scrypt:$7$C6..../....ebcfrtgyhuko$/fm8p0MbjNQi4TOGAEPaX4H6jbDlCviy7dC.HTiG7./:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....ebcfrtgyhuko$DjCWqn64qNGvHV2m4fULBvmt51P4/GiRfcpsoKemKF1:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb6321rghuko$dAmD40pRpj7g39/DIX6MmlraP6QkjnqcHBTaNKaFv3C:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb6321rghuko$t599cy4YOVkqnnuMtBkLUBYeozw7pRoVFM52HftgLY.:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb6321rghuko$UMOcQnkW0IGK5nPxlONghoSoYoss4lt9DqeUttMctb3:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb6321rghuko$lmiJ3JOyfIEESFOjhzgVRp4W.7kU.VwRdVY3C9WCYy8:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb6321rghuko$AJMHN4jnZOQN6wNxxAiwnf4KEhM/.WKlEgBLrrXGQ38:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb6321rghuko$Q3JXKe8uZH7DNIW9lnjM//v5DgfAc14eKzuemHsLty2:5:0:late*night::
+u6-scrypt:$7$C6..../....eb6321rghuko$NdDOzA3YYY2bAP1f8ufLFe34Fu9/Q4ayIyYU8SYrOp5:6:0:::
+u7-scrypt:$7$C6..../....eb6321rghuko$EzTRcFMMj12U5FW3ekZ8PYz/ssZeJBqaFIpNBLaeJV/:7:0: ::
+u8-scrypt:$7$C6..../....eb6321rghuko$WD8bf1.VC/BCq5txDG0GRFQ20G9RoRJFpY1OO3HACM0:8:0:1::
+u9-scrypt:$7$C6..../....eb6321rghuko$ueFRscET/VdR39z4.NK7ZCtvLAxtz.oZN7Lpon/CPz2:9:0:password::
+u10-scrypt:$7$C6..../....eb6321rghuko$.FiHWAPgRZpkph77TQWTFf9WNq7.MtTgIb8heep0D28:10:0:test::
+u11-scrypt:$7$C6..../....eb6321rghuko$B552GYxnL1blymStonoRFx6XFe651oOxwq8npHE7ei1:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb6321rghuko$D9JBQwHqf9lPepMVNhbYhhFfBLIV6beVdyTlgkEShT.:12:0:hello::
+u13-scrypt:$7$C6..../....eb6321rghuko$3e/vO8apQh5Ikle9LNG04WQtoz/Cu3384eTLwUwDbcB:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb6321rghuko$b6bwKOh/EejKijF7CAfGx7EY4StPvxVrs7uqgh/xPI9:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb6321rghuko$/9fgbAUda4njhdcr2lyIiEjKQhyVbOO9YAED9UPmrtC:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb6321rghuko$uJTTMXw9WO5WU/vwXgOuKfRjoQdRn7sbD2hmQm7Zq8D:16:0:±::
+u17-scrypt:$7$C6..../....eb6321rghuko$vrOkBzOrDIcLbcu8RF/t.l2V3exncn3Ry/AUUzWtprC:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb6321rghuko$HFu6o/Im3yM96DSYKeSHDoboguTtoX7SOWiIMC3dNK6:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb6321rghuko$87uIP/0cU1aObP5sX9lnB5V4DZ8ezebkVDAvIYrIVM9:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb6321rghuko$LvVCWZXaU9ROAnvPAwTvJlWTZSaOqVfvPr1XnbceE4D:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb6321rghuko$fTwDnSM7zUtETo3uxYFQDF6cl1ZnGdpwvpI7o8UjNN0:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb6321rghuko$/Eh3wOG8/DVi93ST5k.8TwnaKAz8aeE7n4iIxTzc8AC:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb6321rghuko$2UvrRy0Ii4wdsWSgvUYiP1u..6/wfyF4R9lbkDZWjl8:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb6321rghuko$DnNucCf4RkiVr8TyYIP3owJ8IFHAfd.BpwJZDJqGuj1:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....e23xyvw01256$ruwBgL4XmgTqJKDIsUHSfCAiFNWqjjl86VSp8lci/v2:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....e23xyvw01256$be5RkenyXCIkUvixg1TfFFdZHQMSTrPDsv1PWoqSY85:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....e23xyvw01256$aqpBSKnpaM2PcvJK0ThrNdUZcnjC3ogLKRo6bFYbw52:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....e23xyvw01256$Cfz36vS7qCrL5nMVLKLvMb7d4cQkOVJcYAtFQ9JoW96:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....e23xyvw01256$3smFvTbTrrsCXuq6BGEKFe5ws2aPSgS7ZMAFh5lnb65:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....e23xyvw01256$VInkUv/cR3p5oLD33C0pXMnRT86HhgrBQk8bh8cZIPA:5:0:late*night::
+u6-scrypt:$7$C6..../....e23xyvw01256$rWaBSbNGX/hIETudeIP9B7AUAWmL4N/4.bX1ToGaB7.:6:0:::
+u7-scrypt:$7$C6..../....e23xyvw01256$x2gM02OpjWTe4pNn/cTjdkn/1Hd004.cQFeJNepF6f7:7:0: ::
+u8-scrypt:$7$C6..../....e23xyvw01256$4NAZLR6DeqhftF6VMudjhD.B6btjO4ldrNa.BNypBqD:8:0:1::
+u9-scrypt:$7$C6..../....e23xyvw01256$nwPXCjR0nu3xO7vwU1S1uvWLSmWr1IF/lu8YNFMuXn1:9:0:password::
+u10-scrypt:$7$C6..../....e23xyvw01256$JoucaJ0lL5lteq1OHenolG4eHSlLzZDEER9sqVNAnhD:10:0:test::
+u11-scrypt:$7$C6..../....e23xyvw01256$IR5uOaPOYgcwWc8ZtiHZNhGawFZ1qh7sllcASMG080.:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....e23xyvw01256$B9ai/D5B5Uv.cq7egEB/8b.YgSnAa1GnsF36h1rGJx6:12:0:hello::
+u13-scrypt:$7$C6..../....e23xyvw01256$dbo6EPxesQHfjqt6JhWWo0lUdvIn63LtTlnF.cRmqH0:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....e23xyvw01256$0GVND9UuPKGPEB6T/xKGiSftrerbA8oWdlu9aiV4tb9:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....e23xyvw01256$1Swki6WbIRiAIexhbVAzxjX.mlmqVfOhYsnAoknzsO.:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....e23xyvw01256$xCybXNYSFvyLoPbYAujZsqiPEtdNpU1Y4ZIbLDly/z8:16:0:±::
+u17-scrypt:$7$C6..../....e23xyvw01256$5Z8EEjlkvJ.NE3GwSqk8hSeTUZm0kXtQvoPggG.n9d0:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....e23xyvw01256$CtPt6jN4PWsBxbp5pD40uWDC9J9U2biMOy3G6cdfgm7:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....e23xyvw01256$Qomvxmzeyx1Zirix5Nn/hhS.tXYNf.owPHbddrlE7OB:19:0:ôåst::
+u20-scrypt:$7$C6..../....e23xyvw01256$FbP59SewlA/ayRTp3AY9yVqSAtMMARFZcSw42ViILUD:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....e23xyvw01256$CiCvabFntVI5QzpYcuLESf80fRF0syTnd6ljdmDrRtC:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....e23xyvw01256$WEXf/HyJ.av92GrkVOcnh0ILMuGNlsRAT3Lt37Aozm8:22:0:qerwt::
+u23-scrypt:$7$C6..../....e23xyvw01256$O/LYyZmil/hsOmLzIx5KCfLrRQFQiNo53jNxTUSGFP1:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....e23xyvw01256$MeqwuEd1i/67V6bN1ZTDyB.O0zZ9m0ZZMMHJ4BqP5n9:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb3wzux01256$mpSGZMPcU5z.Mt8m1cIY1NnphWkHU6RLj.fCjuHu8h9:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb3wzux01256$BkPmrfDKuAvkyLsXXpunPQVtcESgUiy454bSGv0F497:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb3wzux01256$ntjSU1yX2HQuoYToAST3jcvw4XVAsdnc6tcpZhxbRP3:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb3wzux01256$iQ3X7nQMDF.wWgz9GARLWIaKMAOl20NeaOavInzK7z2:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb3wzux01256$lVhO2pNiH/HWgNkz8dpjGLm/V/mlwhpctZLEldYBgH0:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb3wzux01256$MqsApozwQqzyDHAN4/uzs2GEXutrSvTJ3cSDootgJx9:5:0:late*night::
+u6-scrypt:$7$C6..../....eb3wzux01256$x/RU5/fAOXcDKU9C5tYMyDDvbBas1vGs7XNuqRA2xU0:6:0:::
+u7-scrypt:$7$C6..../....eb3wzux01256$/qILZKWdNiJOoisbXjXkcyr1g8CY7Si.y0WqN7tSR31:7:0: ::
+u8-scrypt:$7$C6..../....eb3wzux01256$CQZ1Vz428XS.rCWvp4KtHhcK/IYQx7FdT/rdkOG0cI.:8:0:1::
+u9-scrypt:$7$C6..../....eb3wzux01256$BYBvADLk6rOMQyHZVlTOpjK/IrvgDyv129rXkqepvGC:9:0:password::
+u10-scrypt:$7$C6..../....eb3wzux01256$FCU0AskhA5izCdvDW7xNvGBkibHd6KrGa4Coj81b1SA:10:0:test::
+u11-scrypt:$7$C6..../....eb3wzux01256$GAQiac0EZl5BeVMlvhfDmm6EtDjkehkgkXNz28lS7a5:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb3wzux01256$6YvGdpj.RddSA.ac3A488uvcr6CTYlUutp5Hs.M1aM7:12:0:hello::
+u13-scrypt:$7$C6..../....eb3wzux01256$ZQyyLy4ruKtrdq8gbqHSRraIgs4NvTZM6PtXuRk1kZ8:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb3wzux01256$5kGuawteRvPt1f1wsBPeV.o8ebhju0mhsVp/t.Z7/DC:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb3wzux01256$sC5HXEISd8ku2gCRLDmG7VzHhhyit5gkwlxlV4Dcyc8:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb3wzux01256$49tLjcPZOcDGh.KumvHk4xlZ1x3lfYiumwO9bbpKseA:16:0:±::
+u17-scrypt:$7$C6..../....eb3wzux01256$YFfZkpuNkJGWIwTAD3w/JllvzeXoDDi9ORc/FTsH/d7:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb3wzux01256$lk71t2ZoH3DLsRykD53B18dlYDDpKwIZciouVH8TRS0:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb3wzux01256$oChGbPGnuA63RIgA1eUNIm4QAhObbMGJ/nxXWcN2Xp4:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb3wzux01256$Ww7B9sbV5G0f2P6WH0OKmHZuioKAX7DZPtxkHjWsGf/:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb3wzux01256$rCJbbxR2Km6ibciqzvt8FJX2A4UdP9hWwlNNuhNhIRC:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb3wzux01256$Twgs5wf6y7qlf4a1D9khttsNLt7EqWyPJj0AOuS1Fv6:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb3wzux01256$LQPFoARauXj.gih8nsoH5Zsq2D9NIVmpowLcM2HMwY3:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb3wzux01256$mE7N6Iqbb1p/J9H7YWfHCkCrrkpHr2GbfdZeHa60p.4:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....ebcvatyyhuko$Po9Zw3SVrnLFTQONIGuyO/CS8dON/JJlVd33R.3rVW7:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....ebcvatyyhuko$LMmy8TJZr0mJN0jSmMiDLPDzYFhbg5gJnKpLcWUAzf.:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....ebcvatyyhuko$eLy6OoK9.R.INqwM9/a4dViOn8gGnLwcEcpQ8M8xIR5:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....ebcvatyyhuko$dA48WrlWUnbFEHeY01BfSIkR4ilmkgX5R1TYc4NunRC:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....ebcvatyyhuko$iHZQ887P7YxYacaOE3Jf6XGmwP477YC1S9L6NdvK6Y6:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....ebcvatyyhuko$h/jSV5bjjMKJEWupzeX1cll8OL/X0FrTxSb3eLZw8i/:5:0:late*night::
+u6-scrypt:$7$C6..../....ebcvatyyhuko$3gsnP7genI7OkdUTawOEx7zqGHQi8rkICKFsnsbCl65:6:0:::
+u7-scrypt:$7$C6..../....ebcvatyyhuko$eqjboZtGgjy7H7YPVrzjgyFJnI2HmypaqTOCuF0E1bA:7:0: ::
+u8-scrypt:$7$C6..../....ebcvatyyhuko$NN0f/BeP296tHtdK/aXNmmSF1wFkZNHXq.yiLRfXWh8:8:0:1::
+u9-scrypt:$7$C6..../....ebcvatyyhuko$h3eNOosLXI.X33/JjXla2RZ5BRShV9q66IJcxwpl2v6:9:0:password::
+u10-scrypt:$7$C6..../....ebcvatyyhuko$8Nri8thO7FzIupW54VrfWb7Mk.mStHNDChWk4m/dyV1:10:0:test::
+u11-scrypt:$7$C6..../....ebcvatyyhuko$ZaD8Mo1hpZ38Gx7fa11kDIdpTlv6u0uUQhyr7TYbYv2:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....ebcvatyyhuko$K7nhUHSvCCMTQjjn0lsUnlOwAwHZ0y.c0zMDnNtwS3C:12:0:hello::
+u13-scrypt:$7$C6..../....ebcvatyyhuko$WS6kO/Bjwfpu4NfDi9i62w5Jk7E7y9jFnmOzbiV9Ta/:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....ebcvatyyhuko$izGUebGZSrOss1uNk52R8Kx4AkynkGfFmZzMUza9n/5:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....ebcvatyyhuko$teMDI5Wp9yErw/PHmRVbgK8ACtWXz6YkEcWIq01ABw2:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....ebcvatyyhuko$s85Bz0YpDJaHXqZXYq2I/Y9DAT1F/O293RG3cH3uJM/:16:0:±::
+u17-scrypt:$7$C6..../....ebcvatyyhuko$67lv2Bxgrjj/HRIRDYb/xVgFYg36vEUCdKPLiOcfRc3:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....ebcvatyyhuko$ISzcgVJYE3y66Q2HaDSTOn6RqqoPqAzCFfGq.ROj0X.:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....ebcvatyyhuko$98SQiP9ImRlWOKc1gTpoRnKqUblHelqHU4eF7d7Auy9:19:0:ôåst::
+u20-scrypt:$7$C6..../....ebcvatyyhuko$4IiGLJhfmgBIafMc4XmTsFuiX7RW35ckIBgOWEddJ.8:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....ebcvatyyhuko$ofgd6fYo4xwdJyk.wRMN19Eu/xRt1J74dI//FJXRmT4:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....ebcvatyyhuko$QdCMrZA6p/ypmmnmVuiRatdmgxksUPHY6sSeYyKWI8B:22:0:qerwt::
+u23-scrypt:$7$C6..../....ebcvatyyhuko$A3aQpx3D1gCf8fDr76cMr6C/SHR.nAi.SV8QylCNWA7:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....ebcvatyyhuko$MtPWW1uTrxeVZtVl247kIA9F.uRI9y9rWpGjKHc9B92:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb6ubszghuko$rLcI8oQUCFev1lA9TdPWYg.9bxHkuv79.g3Rftix/E5:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb6ubszghuko$azSQFAh401t6BM2d5fIYTWpO.f2oABRYBpFVAT3hHr8:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb6ubszghuko$JMovLaruGmqvZkV28huzEm3ZqAdBNdD1bBDNkseMm14:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb6ubszghuko$BRxubb2WD5akueWljOW52voW0QVj/OXncuHdID5qjE5:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb6ubszghuko$yhpIkQ3NY9FKwKR8YiLdG5WIin38qqSHvi4xy8zaNB4:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb6ubszghuko$XblUkP5reubndwVrfpOoIeza930PS927CuWHuCgIi.8:5:0:late*night::
+u6-scrypt:$7$C6..../....eb6ubszghuko$eq2bJwCvjBdTIhy95eCMI/DNz8.Ur3LiaL1TEBj66q0:6:0:::
+u7-scrypt:$7$C6..../....eb6ubszghuko$z/WhARQFt7vG7lXhW7u7OLhjyutejwvPyegd64SX4V5:7:0: ::
+u8-scrypt:$7$C6..../....eb6ubszghuko$IN68/.BVaN1FKNVZb1fa/yas1F/YrwGk8/k/6JU9k4C:8:0:1::
+u9-scrypt:$7$C6..../....eb6ubszghuko$WKi3Rhz0IIU8LcO3a6fo3x9DQ.M2e8Oo0XumTAKWJx8:9:0:password::
+u10-scrypt:$7$C6..../....eb6ubszghuko$WOuLDgUf.4dJjwRfD8uuGXhgddliivOIZJoiaohKw/D:10:0:test::
+u11-scrypt:$7$C6..../....eb6ubszghuko$6kySCdjdFpAVDUVl7Q7s/2giRaiYLGX4aNyPpF112E1:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb6ubszghuko$EEDYvrN32nUWelCa9zK4Sm9tmMd2BR1YaaVG/oN8oy5:12:0:hello::
+u13-scrypt:$7$C6..../....eb6ubszghuko$jPhFk06T51iRbfmV.Q/Gw/zqCkUE5eCLFxokqdGM7U5:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb6ubszghuko$koRlmObluULb9bLgqybGsrYWk6kl0XfHtoWl8lykMl.:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb6ubszghuko$uIReRbxF2qsODE/fdotNc/RwBPxbB5YNqM4FrjKxX80:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb6ubszghuko$LvQU1/dsRYmXuMI71E9hu7Er1QBCjWlWM2jYWdYLVg/:16:0:±::
+u17-scrypt:$7$C6..../....eb6ubszghuko$qtds/nItYy/BWZ76MM4Lv1gSDPc6NDfa3aYlajrw7yD:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb6ubszghuko$./6YaRARjYSmn/uoJh5dOBOuWmnIQIU2BmCygSc4UH/:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb6ubszghuko$YbXOw7mIMp.M8WVbK1iyMmJEUslv2SaSd91ePoTo/VD:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb6ubszghuko$q8xk0B56HqhBLVjzuC2hwsB8t/AsWz0c9WoIhBq2Wh7:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb6ubszghuko$LZowIJYYY3IiuqerGhzgz8XHZXJd37jN9gqoadaCmm2:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb6ubszghuko$pMCXFLQUbIR7DP8.ssTcNpa7SE/FV6WEXMPW5buKgk2:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb6ubszghuko$tm0RNj0IF1z4lmnVqePwTPZ8/nvC54crUz8axgF0nUC:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb6ubszghuko$HOR.CduGuc2iKtBok9Ty.w3VI.aAei1fhMAu6TfEIhD:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....e23tcr901k56$e8DZNRjWEebOnjDx3UtjUVzkyXzxI4yaxdPm/zpswrA:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....e23tcr901k56$GUc3zmR8nQp11VvijUoQzGTwd8j6E9vWYI4FaUJ3U2/:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....e23tcr901k56$3AF/imB6ewAkPrEgJ9rtBjLjVl/OUaG2gQsdENiSJb4:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....e23tcr901k56$LB0n2koaar3tJEn/qkSxxaVLoWgPZwmHMMJGjqFrA./:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....e23tcr901k56$4wj.QHfVoUZCBH6zb.7UORjQVabYjCuEyYFYC0QqRvC:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....e23tcr901k56$Ob/sn96BvAAnIy6Z5SkrTZPQnNoSlth5lXQWjnAFcb2:5:0:late*night::
+u6-scrypt:$7$C6..../....e23tcr901k56$Df13z4/ozqrV98fnsreV1XnoMildnFAmlw5zYEmc2TA:6:0:::
+u7-scrypt:$7$C6..../....e23tcr901k56$1RJjkcDYG1.7URxfy0jHC3dKoMQo36xdwOde.OpA6Z0:7:0: ::
+u8-scrypt:$7$C6..../....e23tcr901k56$uk0WZsJ1JKkPv3f4TimnIarJujlQ41MSJQdo5sDoBr8:8:0:1::
+u9-scrypt:$7$C6..../....e23tcr901k56$qkKqLgNsbDDFiOiyqljnwfkxYAAGMsuodLEZeHWird1:9:0:password::
+u10-scrypt:$7$C6..../....e23tcr901k56$uPDifVBdAwjEWAu7sbuQIIn9OzHEfhpwvKb6xw/jIh2:10:0:test::
+u11-scrypt:$7$C6..../....e23tcr901k56$R.1gXcXS3PDEQpmITNo6YAuv6cvvsgyoYQw7BAlgoF1:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....e23tcr901k56$6At//GRAnSDfwDUJr2X1uqEnQra5CsD4djPOhPwVVg6:12:0:hello::
+u13-scrypt:$7$C6..../....e23tcr901k56$xj27s/7pu1mPirPPDc4Irg8WbnMiqyNq9d/iVXe2adA:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....e23tcr901k56$Y6E57iHQJ1WUxRoGxLHh0wZ.HKcXl.7YSvnNBwE7dI/:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....e23tcr901k56$S3S/RyyNN74sEwXY.BonOBp9AFQ6ojD5oVOc8JEp9g0:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....e23tcr901k56$OJbasESCNBxU/5yM/ntoHnePXltZ9151s4bCqoh0OD1:16:0:±::
+u17-scrypt:$7$C6..../....e23tcr901k56$RGJheWlFO2SgNA0nfjBGkjvIQSWRwjTyo2OWS1Ff3c0:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....e23tcr901k56$fGF0GiErOXjlX5Qbf7ldURIWfe1V.KMEPgmUuTrhO8C:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....e23tcr901k56$8G1lSFYfj3U3Z64Y1Dyjt7o/ND8CzHjHO78cFkOZ.u/:19:0:ôåst::
+u20-scrypt:$7$C6..../....e23tcr901k56$CVU7xr37sZSlzN0f1jfzg8Gg9VpQW7HWKwZJZSebBd.:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....e23tcr901k56$qdjN.28x4fQsyR62TZVe8iFw4DQib6I/6azrOApFRR7:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....e23tcr901k56$dNPWjo.a9te8weFev/c05knbKsaQ5JWpiaIS8/BFAc7:22:0:qerwt::
+u23-scrypt:$7$C6..../....e23tcr901k56$EluoKwaRG6TfvLsA158TzzKlar4AG1z8uxwz/MsWqf2:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....e23tcr901k56$6NpwkN/TfpOp9l9Eori0qt/HCcdjE3ORypJnrfvSEd7:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb3sdq911j56$vj.or.JfL/MqWUMjEGtt8Umq7dHCgDAb1ljVXU2Uzx7:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb3sdq911j56$0b4DqzZABLAPY7XBOdQogrX9vmQKQF5JKBQpBHu0tb8:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb3sdq911j56$.7BTZWtUWEjMdvWRDtfKrn/tskk.Q2Veh733tKm6Ei.:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb3sdq911j56$cediJ8tsESQlxljhcvbhPkAykU2ykbMDGxBX9QjqT4B:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb3sdq911j56$bzUI2TfuR.8wDLvrmfeVpRIrYkZgfw/xSnnt4f9khrD:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb3sdq911j56$zn/iPpXVi/9aldf8rfHR/o7DBBsESVfUN.IjKc9Rv02:5:0:late*night::
+u6-scrypt:$7$C6..../....eb3sdq911j56$mFj4349Ygu/QUCfL..uQkz7I.vaXrhKQf8c6x12nVjA:6:0:::
+u7-scrypt:$7$C6..../....eb3sdq911j56$Irb3sUGhh9zVl5/ZD3NdEIeJ6Lru/K7L4wviJeeSA8B:7:0: ::
+u8-scrypt:$7$C6..../....eb3sdq911j56$Mu96XO6T/ESExsr6regn/hgKtkzfv87JQ4LBXLsy.OD:8:0:1::
+u9-scrypt:$7$C6..../....eb3sdq911j56$ceU54gqrcWxgo..K//TPu8T5omsUHwTg5sc/yXCFnO7:9:0:password::
+u10-scrypt:$7$C6..../....eb3sdq911j56$3RxIc17b.NRSn0.ALAXbpSl6REnNyKrAKiMTbiwaLGA:10:0:test::
+u11-scrypt:$7$C6..../....eb3sdq911j56$2f9s8Y4UPNYa50Dg/NfJZOPp.KuXeahalIwQYA.Ehw2:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb3sdq911j56$4IQdgiXJJLoYH3MbwV52tLjKu4Q.fuwKQ49gccrNjv2:12:0:hello::
+u13-scrypt:$7$C6..../....eb3sdq911j56$AkTQBhxVKVJXFol0.HD1s17.6xv/SzUlOhzGviuJCl3:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb3sdq911j56$Kezvi25I.rb.sKKrOIeQV.HtPrDMjjMSDqrUcbJgQ12:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb3sdq911j56$tpBeCdDvcluVkTvPJr53WF/qk8JMww61VsPspoqSFc.:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb3sdq911j56$NS2abtQt6H712sf9H2Rxkas7BXHDv9oWlaWqO/34Mn3:16:0:±::
+u17-scrypt:$7$C6..../....eb3sdq911j56$.wwsbMNJjHH0BtLzGQ4h1PF.D2tp4T7jyN.tYfI4XZ8:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb3sdq911j56$ZtHYBiBqKqDxWs8rQxQO3jpn5FX98wMymargeQweKY4:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb3sdq911j56$jt6CWwjl170poU6Q1RnixqiPPifICIpQYm2DOhnzcS8:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb3sdq911j56$KKH6SiKQIMwMY0UDOwMwnlXjD2cWsSszc7Gw1zpnPO1:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb3sdq911j56$wY6fHt1RrJK6GbQzQgU6LeCDCap2zT.uYC1fAIr5DBD:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb3sdq911j56$VhnRY.fhlqQqkJBNxivddGceizEV4goLBStPhzUdOX0:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb3sdq911j56$nPnpqBuly8LjmIY2eqVFHkAVdS4YAYdxt3U4VuDGI91:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb3sdq911j56$jHjnVtUIKyYIhFiPUqIOEawN9cJ6Dq/zSNWerD1kKs0:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....ebcrepg2hiko$P0xWH2Cs6HoWd70tfWccglliNJtJbEkNUz2MNI/Uar8:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....ebcrepg2hiko$L1K9XTAV75lPgO1n95XuxJB5xe3eyw37rAe8/.mzuH3:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....ebcrepg2hiko$K4G78OuySia9M26LNTLNpyGtCwXbbMUqBP4BT7hHIaC:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....ebcrepg2hiko$1gvfYwPHqaDkSVxoufBXebzAo8gjAvoCB63IJnJrVC1:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....ebcrepg2hiko$2ay8ACHs1V2XajohuwtlXtQ9zY.fEU35YwZJrsYlDH7:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....ebcrepg2hiko$tnOy29OX1d7WHL57LM7GHTh6X04exXQqhCsYlmNCw0/:5:0:late*night::
+u6-scrypt:$7$C6..../....ebcrepg2hiko$1lyb9RC/hU72qUn7fpr.Cv9TLKs6hxlQem9ea3gK0OA:6:0:::
+u7-scrypt:$7$C6..../....ebcrepg2hiko$lW0aZZItvhBjflnHt9IO5f3em2heo7.OyHO/pii0FoA:7:0: ::
+u8-scrypt:$7$C6..../....ebcrepg2hiko$.nVW5VLS6y5L9.smMlORnAL0bMc98SjU0kc2/y.W5o3:8:0:1::
+u9-scrypt:$7$C6..../....ebcrepg2hiko$OHPWtr1SegC1Axs0UhyN818WEhmtLNX7/1LrSoXVtz5:9:0:password::
+u10-scrypt:$7$C6..../....ebcrepg2hiko$iLcfPOlFzwag4x2VeReH.5S9Ala6e7/4H8I9TsHnEQ/:10:0:test::
+u11-scrypt:$7$C6..../....ebcrepg2hiko$VQMkMQe2By4Z2Bl63bAO/oXcxKdY0A1LDrjfKcMLVl1:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....ebcrepg2hiko$BwhCrr/IHGCatrnOPO.AdydImH7swMNNcu1HOdcQTHC:12:0:hello::
+u13-scrypt:$7$C6..../....ebcrepg2hiko$S7HgSQuUPKA.A4p2m5mCkzoFrA5hrYHVquyMCEy9kM8:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....ebcrepg2hiko$ctcYpmVCglBHHqIPk5zYuhWuLu/pNcnmhs0R1c1OYl2:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....ebcrepg2hiko$6UojSJCyhgJNcEzgEOt/yZ1/8NLKla7nNV8QtrTj7o6:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....ebcrepg2hiko$O1y0xAsi4MBFLPO2LAV/c0uxU9GTF/V.uQjfHSe6HOD:16:0:±::
+u17-scrypt:$7$C6..../....ebcrepg2hiko$OZ.SdfZnQpnIpcn3DgoCPfhKbsMHi6y8iQizMbOMXyC:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....ebcrepg2hiko$z1ep0KKjNEGwYCEwKgNpWKosoZQn3nAzS2twbY/22Z5:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....ebcrepg2hiko$EHrR2JJ/HoE5qQJMrqnb7Dsl19q2svLQae0MM2gPTHA:19:0:ôåst::
+u20-scrypt:$7$C6..../....ebcrepg2hiko$fQjqi77CNRB1vrTZux3DHVe8mFRLUj38fxuJ6atLsA.:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....ebcrepg2hiko$t8AL1ndW3zxgt1YLfgQpY01OPIz8wcVgzDgX4ew5P7D:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....ebcrepg2hiko$jdRo6LbiHhYRIyDAOgjpzKHaUJCc0/TfzivYdC1ohY/:22:0:qerwt::
+u23-scrypt:$7$C6..../....ebcrepg2hiko$TFguUcKCX/0Beh1JI7q1Q4aSioH1MnuWeSVi2FOtJI1:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....ebcrepg2hiko$Gzlr7lu0OmIEt3ImZsz4hJ3S3.hPpgBgYw4X9WDffI9:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb6qfor3hhko$Y2Y.MPDDsoaUkIhD7mKT/31ggFJbAr2nDsWO44XeJ3/:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb6qfor3hhko$N.8oQhgkOBsfpci1b9hGfD72jgoa8S5QveNTvnHYDb/:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb6qfor3hhko$qFsBCWNIYDOU5lnxxADIvnPPBe.s6xHNTbvhZLeH74.:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb6qfor3hhko$6nvo9ffQ0Wqe0.oswVgnGZJMjNKwW/QWVQqO2OHbDN3:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb6qfor3hhko$2r6f.BvYOglmHx9UpFt6MIKhtNbEZEzAPZ2QO2rsuQ9:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb6qfor3hhko$RaHSciO6vN2X1YhCzunAYvM3N54v8.uvZHdMxtJBYs1:5:0:late*night::
+u6-scrypt:$7$C6..../....eb6qfor3hhko$juS.x3PCqCKqSx/tCeYmNau7UiVDYr2aO0Zktxsbb87:6:0:::
+u7-scrypt:$7$C6..../....eb6qfor3hhko$p67Vere6c4pekY5GVOpUJLCyBM0uSu28PR475.xw3fD:7:0: ::
+u8-scrypt:$7$C6..../....eb6qfor3hhko$bIsKXOyxxFDm2K4B5AJLuGXMz0kQlqIfP6zjwAvBjW5:8:0:1::
+u9-scrypt:$7$C6..../....eb6qfor3hhko$oWN2Dz2Miwwvg9KvSqgoc7MKmBq.zYRh2MCxPP9JTkA:9:0:password::
+u10-scrypt:$7$C6..../....eb6qfor3hhko$uPnpt2b38M3Y8IGwkEFN6i/54470wNBpX17F5WkkQaC:10:0:test::
+u11-scrypt:$7$C6..../....eb6qfor3hhko$YiQ/MbDCKriPh7a7EzQLcf.eGrWcOcVYHkGM9Uaobj4:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb6qfor3hhko$JlJJ9/zzn9.hWqQVAZXV7u9Kr6Vprgw3zINep0tTBd7:12:0:hello::
+u13-scrypt:$7$C6..../....eb6qfor3hhko$wddXWjTkoSc4uXGCVQgIJ2MseognVnL0ihapDXuaWZ/:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb6qfor3hhko$iWLrmngo3gc0kQ7yy4v2gocL1NrK4gv5uh1pAW1OwuA:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb6qfor3hhko$vjz6BR.CY4TT02DyqHzoYPmbLk3HdkV1qIBxPpsh3mC:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb6qfor3hhko$VhbbZMkTor8HZDO5mVuIkPfvkJvqavKXmVmvsgjiDn3:16:0:±::
+u17-scrypt:$7$C6..../....eb6qfor3hhko$sm1JhOLNhU46Ftzxwf0JHCa8ewBmIH5VPadsunVj844:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb6qfor3hhko$k66ApIQh7D.1p2ytwJQpKW87GghGmZ2yJrqxM1BLIx0:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb6qfor3hhko$HGgoOMs2YnGblhOpf0j2WEb2bT4XwUEPw2G7uWbyWdA:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb6qfor3hhko$K76KcHIHNMKOhn5KZSvXn8Cvqge6JW.1Cwg1LTFGd36:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb6qfor3hhko$dgJvqIj7M.NYdHkXB51k527bsui1JFwiV9pZuVhgC/B:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb6qfor3hhko$0aSZmigjKR2J03fWjmzkyMC0AIoEdcQ7H6vyMu9PjfD:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb6qfor3hhko$QIHHSU7AiO3GwEB4/vb6biyVc.ol3ueY3Ghq3GVyqV8:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb6qfor3hhko$72I3r5KNUq6PnxHLX5pyG0OmST6G53AbtdnFt/rmvG6:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....e23pgn941g56$fLMjilOuaP3pbCZ821skXeRgAAXy9wq3nfq20JXfqkC:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....e23pgn941g56$FnRPI6.IHTC/PbZPrILGd8raKldIwV5OxPQy2W28Kp2:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....e23pgn941g56$IeUYsNciSoIHmWe0RRWQjNqX46ZmaHSmWGCzsn6OHI8:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....e23pgn941g56$UvTMBapON2MCMHGG8B3XOPhob4N6zKG3fOIVoxSzsL9:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....e23pgn941g56$yJaL5Sj.36oPBWanpAvxvBo1rjBx3ZeZdqn9NBe08v3:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....e23pgn941g56$VZRcGz81j6tAnoz0saOC7/q6IVit7KtsFjAi/q4QNSB:5:0:late*night::
+u6-scrypt:$7$C6..../....e23pgn941g56$yS8jd1NFpa59zQ2qyJeuKj3A3evYG2rS2vrA7cO35b6:6:0:::
+u7-scrypt:$7$C6..../....e23pgn941g56$0mp7DF0.815gU/bfG7jC4roppBd2kLJm4dRCZcP3BkD:7:0: ::
+u8-scrypt:$7$C6..../....e23pgn941g56$xBFv90qACL1QqS5mqkoGp6MFgNwiwuFlnya2.hYeF53:8:0:1::
+u9-scrypt:$7$C6..../....e23pgn941g56$MoRlJAvkHtwQofJeGP3nn0H0nvNSjjvzOnZhYH4tH09:9:0:password::
+u10-scrypt:$7$C6..../....e23pgn941g56$59iCj0JSvgbgXxHxcege7ngB9S7B.SpVxwKHeYCACqD:10:0:test::
+u11-scrypt:$7$C6..../....e23pgn941g56$NJZCUbw/5PI9fiHyNsy0njAe/DuGcLq3eSREbmPVq2/:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....e23pgn941g56$H8CuIUMtOVnuALw//QcK1jImh1nPJpKptcwifOc8CO1:12:0:hello::
+u13-scrypt:$7$C6..../....e23pgn941g56$9f9auGhamkkJsTOsdiPNmlzlxrwzkWuriq3VMmqC2S0:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....e23pgn941g56$ZyFEcMUDV.ksd/i392aT.ZIaLexqtivgS7U0YwNXuM6:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....e23pgn941g56$bVMZDlUk1h80N4WbSq026FNACBDRvhAuvw5mWnLkyO7:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....e23pgn941g56$.lbIYseEp79nN5XWR9JqnUJFHJUdiOru3Hm9A2PlUc5:16:0:±::
+u17-scrypt:$7$C6..../....e23pgn941g56$RZCDGonm3NLhUbntGW9jq8Stiiz2Joyn/gCfrttSri/:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....e23pgn941g56$MkRPeL7mXyXUbhmyWObF0bueUqrwPvRgJL1Wqf.LTUB:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....e23pgn941g56$W6QR/uVmMVHLmeGTrSdJFX3efD/YneiFFAbUJ7QO7p9:19:0:ôåst::
+u20-scrypt:$7$C6..../....e23pgn941g56$08dlXlLrvCUIvwupEBYZ7jABzM8L2IF5qyRyjBcpUo.:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....e23pgn941g56$ZLelQvb7PuAz/oc7Ds.Nl41UTHz8Na9JxOXVoX8BsJ0:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....e23pgn941g56$CyPqOxC2UdP4rv3OapfKqFAq6k9/JTqNv0Xn1Wh66y7:22:0:qerwt::
+u23-scrypt:$7$C6..../....e23pgn941g56$/rPnkI3wDAonHzJnea..ZdZZli3Ixrrbq5NxRIkitO6:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....e23pgn941g56$NypeVNQgxSSeHL6SKQxmiJZc34xaYPpktqTPkDeT3h0:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb3ohm95af56$OuIDxVjxY.gbcEdHvYgQIcj/rvpWtDDXgIN72EymhJ2:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb3ohm95af56$l2Jvugy.rP7p.VbR55SQKiteLUo7lSKY.7l/VB8uMe.:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb3ohm95af56$N4V2DYtls76UobfQCk2oGkwNNO4aWYswKsX0aC7sz/4:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb3ohm95af56$ALyRzqrv/6A5GyDRq8NWxc6o34LAjJ4/Bc/kvhzMWJ9:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb3ohm95af56$/o7JbWUM7MD0l6GA1TIlbS4C5xJu11PN64CNRSsy966:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb3ohm95af56$xe8yEzhGP/FU7NzSBks8jeH20qA1ksQzKwj3UGCQFZ9:5:0:late*night::
+u6-scrypt:$7$C6..../....eb3ohm95af56$tWSrvDLBcOLOmJMcU1q0Kl1gKlYbaS5Lp8hyAy7DxH4:6:0:::
+u7-scrypt:$7$C6..../....eb3ohm95af56$uljBKgyVFTjldiDompDzz36a.UaMUN1aKRzqMJrlnv5:7:0: ::
+u8-scrypt:$7$C6..../....eb3ohm95af56$rHBVEBOTFlDKPF7IgRaq/OsedVmTUGT/bs3rp3y/jP2:8:0:1::
+u9-scrypt:$7$C6..../....eb3ohm95af56$UgvDiPearM3tCo/xndxCOwmJcOL/sEAzBbjgZ.VArg3:9:0:password::
+u10-scrypt:$7$C6..../....eb3ohm95af56$1.hZnLbeiqdyT0auetduFAkmBduBQem2F4aGooAZ8i3:10:0:test::
+u11-scrypt:$7$C6..../....eb3ohm95af56$LLVjYFLiwMtY0AdYFQw5.0VDfxmj/s59nqVVkuuE7d9:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb3ohm95af56$QNjlt6rwKbP/4mOrRSf0wDxNXFo73e7gKseyOwqqkIB:12:0:hello::
+u13-scrypt:$7$C6..../....eb3ohm95af56$16wdm/fOJcag.K2iwPfdrFZ79lLmUN1fbgPRwLJZDr0:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb3ohm95af56$KPmE.2nSgoM7zMRrJEzY9OMfqXF/jp8scEvvYcuWAgA:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb3ohm95af56$Na/QlAcgbGeIdop19OI176wVvMhz2FvK9p3YCGW5K97:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb3ohm95af56$rBD4zCijyUigd3UOxwuEJzGI42Bx9ESvQzzBZoR6knA:16:0:±::
+u17-scrypt:$7$C6..../....eb3ohm95af56$x/EzgthtwQgjX/eIEzUN3VkTEDYQu8OsrG/telIQ.0A:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb3ohm95af56$/WtsoeFjNoFHfiVcTID/ZJJe9HSku0VmDmlcl4C9rS6:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb3ohm95af56$IQjWgqpI7MdxyQYU9erxdGgrqbwhWRg1cCZ/Ez8jQ08:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb3ohm95af56$VBHgklhbvGQTTZZe5ywKKVW9L4NlmthNbtABAfTy28/:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb3ohm95af56$ThOVPzFYMW1JUUnrFuxRtR/2pVkG6iqQwnmSgg9RnC5:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb3ohm95af56$PbcJqA2H7o66wnLyvf7wKsFwJvvQbi8IjhAILYcidw/:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb3ohm95af56$Bu9aJXk3WAZVYfK1XMcWBfoEgMvDlm..kA.bsHTN2k8:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb3ohm95af56$95FJLivJoRXLT7ra0zJ7aauQGUx0nJCUbX2.ozIFXHB:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....ebcnilg6beko$QeLAw7niAO5x21mzVVoTOiUrZeKgk1gLYm2L6e0UwT6:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....ebcnilg6beko$ZLia.q.Ee52b2ljEghObdMWvDdxhrWSrYYtjWHbzE42:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....ebcnilg6beko$0acmqpuInnpaL2j94TrL/kOPZgVWhe6YRyU2/uOg5p6:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....ebcnilg6beko$eZBC2JnwwL/MFNrhZ8MDh3Ldx9o.o5orz1xE5X0Xp/2:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....ebcnilg6beko$iaNm9kY4kEA7Q4TCGrvCh8WerNhRlG8sXDJgc6FA4D5:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....ebcnilg6beko$c/nfd4Aw4crchwLxKIt0fzTesLfUwMbElmtizdLW32A:5:0:late*night::
+u6-scrypt:$7$C6..../....ebcnilg6beko$POsjKk3d75g8U1m4dbNtWDLPnTYVvZBvcwmHgxBnta3:6:0:::
+u7-scrypt:$7$C6..../....ebcnilg6beko$JrVp4UGwCxTz2jSETNgtDqgevdSG3YpriViWwD1ocpD:7:0: ::
+u8-scrypt:$7$C6..../....ebcnilg6beko$RWsmNbi3O2re/MJK9X.mU2.X2gVUC91TOSm/VfS9vdC:8:0:1::
+u9-scrypt:$7$C6..../....ebcnilg6beko$QFIZUrN2dcwElrEL4vG0VvQjtcerF4d7iVMHa75Ary5:9:0:password::
+u10-scrypt:$7$C6..../....ebcnilg6beko$vOl8J3Cmo0RbFZEXMyvplHlSvZZBtQVUB2l3BuKJE1B:10:0:test::
+u11-scrypt:$7$C6..../....ebcnilg6beko$nwrqeLGWncLsNKdrC8nj4LQn31bo0mkmx/cZuHdDSO5:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....ebcnilg6beko$BrkkBLTQj3TGOogg9RemXLxBdtZITHF.K4uoyjMGvkC:12:0:hello::
+u13-scrypt:$7$C6..../....ebcnilg6beko$F83XNDg/cbsS7Qrrr8So9wEympHH.j9YSwqAl.oHVm.:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....ebcnilg6beko$qEzHOl4QbFTq7wl64HNfIaeT4QZFwWLntyTKfypKgo1:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....ebcnilg6beko$hHa2s.RrpmvQqnKbytIsI3pRsQDadIQTtWtEiTSKeP6:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....ebcnilg6beko$AKWFYF6MRerjgCa/89u74qT0NYbyYMLvRIJAImea9D7:16:0:±::
+u17-scrypt:$7$C6..../....ebcnilg6beko$IuBjpp3EOBqlgoOvalOMbOiOffRTJkaDw4lmSXB.Rt6:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....ebcnilg6beko$kYacHano0pUQJDwKQ4oeG5eMpbgS3kPoQFbwT0kyaU9:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....ebcnilg6beko$U5wNKpwkXB6oN/kUGWNLJCmjsPrdawvWWuZTykxZEs9:19:0:ôåst::
+u20-scrypt:$7$C6..../....ebcnilg6beko$OrGyQ/HbbwnhWdkRi7aaObm1Ca54PLHpL314UDaS6/B:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....ebcnilg6beko$N3h1wNYY8Zzo1FWCxI/kofZXsBSujoIrgoa0mLWuUt9:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....ebcnilg6beko$C0te3vidVYqFOayYpIjMFl1nvMRjpRowv2x8.gor/v/:22:0:qerwt::
+u23-scrypt:$7$C6..../....ebcnilg6beko$IV2uHsS1DK0yuWg9Xz1kl7JKADNmVwaGQtZ0ToibUmA:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....ebcnilg6beko$.EQgzU7HWrjzAlPH.Cz5nBNGXBUJ/.XBqnMXBxnnJLD:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb6mjkr7cdko$vAPoOH1aoTcr3txibfXysOdQxKjw.6ZIF6nhnzruqx0:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb6mjkr7cdko$9bfVETmWjmvaeSaXTrslVEVMXPdNzmi6pSdLqeYwvg5:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb6mjkr7cdko$DzkpLfMLIKeMY9q55cGbM2AS8JcWylhoa7V.6iwChd4:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb6mjkr7cdko$uohvHCFrTyad6Nwksgj9ch7m7PWOyCiPgwNt/ui/qXB:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb6mjkr7cdko$5F/2NhMp5.dSNHFtdW9Of6ZVAnpq5SEoyN1lpvL0uo0:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb6mjkr7cdko$dnWvgPtqxTCddJOyEqMg5fd6P007n1BiAdw5ohYbzF9:5:0:late*night::
+u6-scrypt:$7$C6..../....eb6mjkr7cdko$t1ttPJAuByUX7AAXC9WwHV34Vmn2DPTkXVWIMf3bOG0:6:0:::
+u7-scrypt:$7$C6..../....eb6mjkr7cdko$A2ClHuITcGnqd39zuZ299LPFyRPp39qO3eer0t/e96A:7:0: ::
+u8-scrypt:$7$C6..../....eb6mjkr7cdko$UddHi9DfJZmoEX4k9iRovgDjFOI5kMy9hUuGyco9IK7:8:0:1::
+u9-scrypt:$7$C6..../....eb6mjkr7cdko$vworb/nC/nhYKWmVeoZG/S5LCMRmBBmIFK6E8pcB2B3:9:0:password::
+u10-scrypt:$7$C6..../....eb6mjkr7cdko$Nvn9qtAmP9XvqSh/PaNO47Pm74oMigyBaFOxR6XfcBC:10:0:test::
+u11-scrypt:$7$C6..../....eb6mjkr7cdko$bTgOoRds2xPZ4iaPTH.Da9pMdSgPt2f8BqvrjyuZJXD:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb6mjkr7cdko$FBwFnT/jyVsvbMDE5GQ1FPHgxQdUVjyc6NIPxtnShZ.:12:0:hello::
+u13-scrypt:$7$C6..../....eb6mjkr7cdko$7kkXt5LfGfdUaTDGooF9zEyBxr1wNNWhDUCY4nSMcP8:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb6mjkr7cdko$VICSe9iDIuoXkOHxw8TJqIG3XbGci0.amXqVc7A49d5:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb6mjkr7cdko$R1TkWOC0/tSUrHUzOWSsCx.y7vpZgwnBuCyHOeGvAVA:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb6mjkr7cdko$k.lMtm/Gy5bTbW0V31vE1Tw2JjqR8XVJcNpG9Wocu41:16:0:±::
+u17-scrypt:$7$C6..../....eb6mjkr7cdko$6gcBkqQVHvnT36Ov7y60KEhxb/WLJDKfQz14txL3g68:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb6mjkr7cdko$fb01joeglUpCz.zT8QDdtVU9st7b0LNOkdPK4Txb/18:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb6mjkr7cdko$AW4WyzvFvWNGTiEnWBx1cRF73CLNsmLQHrM3WXvUV17:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb6mjkr7cdko$.uTJA6FoCubjyLoWClVu/wd.hFohlUaHoGkFUh56sm0:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb6mjkr7cdko$emYeLAGGRkvrHZaDdb6.zrJWFQDpMOQBkO/CEEnAzHD:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb6mjkr7cdko$DUoum2gLXndrPs0xxJdRtrzpnT8iIMB39wHlbzmPsGB:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb6mjkr7cdko$G0xCPCk5gf3uo7H6fNYpPiYJoR9.PSuR22ziuOUBLPD:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb6mjkr7cdko$snLfGpd4mXsWjd.CaDVFbvjx1iPSz9DG/aYcu4hBBm3:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....e2367890dc56$XPjKlZcLBs6vED1VCjTiQM8sfwl3dkbxVgvjQRjA7T9:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....e2367890dc56$TRFgvv9TJWvqqooabIlli8qpBpRYGepBmoQU4k/0ur1:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....e2367890dc56$NdP4iXENALucRHKCFEjqnvCwUSbUzeCuBxSH/hhR4D0:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....e2367890dc56$ha/k99BvfbcWTWWFbyBgvxfrEU.0YNhpWmwRimKnng/:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....e2367890dc56$8nmnjyxno8qiKsvMjycFlXAdlm8rhArRkUDH7kmo3p2:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....e2367890dc56$g46DMTGGJtk.0A.1KgHjaKbX.5epY8aIMbIr.kw0wH9:5:0:late*night::
+u6-scrypt:$7$C6..../....e2367890dc56$vNrpB1dHErS1IipNs3MBLNqDav3xdPWeLe7x3s.b5K6:6:0:::
+u7-scrypt:$7$C6..../....e2367890dc56$tS8dIIj5d31ZiPGDmJpmahGJypHhIqnmP2wUZGeC84D:7:0: ::
+u8-scrypt:$7$C6..../....e2367890dc56$3rWN4J4aHr.8BL7fOIn.5V36PPj1A7sPb0wdOrb6Rc3:8:0:1::
+u9-scrypt:$7$C6..../....e2367890dc56$JI3j62q65/PIMIYY4MLbRmPkcwAcXgLiXjpym3ALDw3:9:0:password::
+u10-scrypt:$7$C6..../....e2367890dc56$Sgiv8B9yXBx71CWQxao/K02bEmUtjm/kTsTRcqZrj8B:10:0:test::
+u11-scrypt:$7$C6..../....e2367890dc56$ezIiltpAxESGGM8Uj5Q5x7f4rrvRVP0ZpDDll4ox8w3:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....e2367890dc56$8sDBMvWMT1FLd2H0LhAGgtcDVRzd.tdU51Dsr6kgSh.:12:0:hello::
+u13-scrypt:$7$C6..../....e2367890dc56$lWy427kEdqLfZEztLOGxPIrQ5oVRLC8aFGsr6kj8A33:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....e2367890dc56$/nvgEiArtDRdjzyk7Gsij1chHm7QtHHw1oVUXASQWz.:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....e2367890dc56$f1MoSfpJ7RTL1ete3vwnNRQ5d9CSgEdRTIUAhFnYtN3:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....e2367890dc56$3fLGg6Ge5//VGWKKAOPWhDP2z05DTJSepthZJj5j6a5:16:0:±::
+u17-scrypt:$7$C6..../....e2367890dc56$GKU/YZwnt5SylHsUc8N.msCft7SLUn/62htACJhqCx9:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....e2367890dc56$42VO3GZMc6JZClr.E1P5gg0cR.LD3FsFjQggxeDhiZ2:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....e2367890dc56$RAdeIIdFX8q/W7fjHeEyMuEcRKWaOhpEDRBsjR6jcN9:19:0:ôåst::
+u20-scrypt:$7$C6..../....e2367890dc56$fJa2ao4yfMseXfdRocDIKZMTuuPtJO9IUERVhujMsq4:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....e2367890dc56$5nLmOdCYnr8Hh/F0wXUv3ZCzz4Remd8zqxVmJ.lS2F6:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....e2367890dc56$01pEPhJ4m4yXlb96Ej8ondTSXhTmEt4oKaXAyRNvur.:22:0:qerwt::
+u23-scrypt:$7$C6..../....e2367890dc56$6sF.4hJEj83g9.u1GIbFDA5.nrIjCLqogi7bRRWy/j.:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....e2367890dc56$aUDrp003L53VI00p5KmT6uW0oElWYN4t8aT.JovPKDD:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb367890eb56$1KCNFbEMrqAroy6zgqE6uX.I9vT2hnzvYJljrUVQJM.:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb367890eb56$zoQRV5pRCkBlp8s/C6YrMv6batyJCofN5EbfdyWWZo7:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb367890eb56$1bSOLriIvnGQwN0YhKF5qe4QTDcK0xIhuAAfAslFES.:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb367890eb56$xCZCmvwdAPl2af8oxeYtHJ/uB4scHdXDtakP/sHwOi0:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb367890eb56$76aMZfMJFyo6RZGuZZCgplYD1j4LXk7HfzxVlzJYFn1:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb367890eb56$OUqT7tIYEMqO5E9hOsu5FZlplTXI9BeQOEuXPZfqPL3:5:0:late*night::
+u6-scrypt:$7$C6..../....eb367890eb56$qjW11kZtVH5nB.QGRYa5.jzkQ6SRK.wlWxQnO/REFj3:6:0:::
+u7-scrypt:$7$C6..../....eb367890eb56$QSMelrQ7qw38zdNk6YZ.inER32gUefkCeLigtU4GAf4:7:0: ::
+u8-scrypt:$7$C6..../....eb367890eb56$g8zP6qQ2AsQngbs3CJ/9n1.oQNs7qFiCklnol55/YEC:8:0:1::
+u9-scrypt:$7$C6..../....eb367890eb56$VkvEzAUMR9esRCYRexd3HBxizc5zDf9xjfZrnwUNub1:9:0:password::
+u10-scrypt:$7$C6..../....eb367890eb56$GUSEaEVHE3PWG6BSixXTluNU13e1GXXnHE9./0ezTh9:10:0:test::
+u11-scrypt:$7$C6..../....eb367890eb56$SG3050AFimq/CVnYXn93oCayRQFJt4iF04qjEpgO1i4:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb367890eb56$WDIjni67ns.uBn.XvYfwfzkb/Fs8y.4itrrMJMTZZG0:12:0:hello::
+u13-scrypt:$7$C6..../....eb367890eb56$b.Hylhi.zaYiMMv.l7ye5NdMdG0ZLo2ShvXfiswdkr9:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb367890eb56$4msStRm1QC4/XP6JRwh2MpK4hELqnES6ulXUBdWbqZ3:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb367890eb56$ooTFG/nhindKEUSxrs/c1C4QD6lPdsmj1Jl2nCBtBX4:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb367890eb56$aYL62zvKNHJ4jzpqdSwVKRtc4AfprRmwmFSv2yMUKMA:16:0:±::
+u17-scrypt:$7$C6..../....eb367890eb56$l2dbnRnsvUaGytCwe3ICN3JiXmaQPRp5RhEaNsOL0A6:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb367890eb56$f5q7ntipKPaimb5cucOiUMrehD55ddodLfRQvcLeeu3:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb367890eb56$psGoHNF66wSDE4tKVS71vzAfnC2M5Y8DW2Bn1fitZA6:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb367890eb56$mUcXFk35ognYfzQ7DPfwipHn.apqTVgEVtSNIQpkLi6:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb367890eb56$XWXdFZNVr7YDxjJcdekOn9TOUL7fSuiYKLrdrRt/6u9:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb367890eb56$tTUui7owNjvaYKazGSTeS.5CJvHgu86dn9xHL0R7qc0:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb367890eb56$GoDZ90hY65U1hAH7EyFqMDtvqs2iGyt1pvtH7aS99X3:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb367890eb56$ajw4/q//EeRovM1cdT19OE9v6ajx6lPONr3fPUH6QA.:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....ebcfrtgyfako$OufBpSladqC3QgbuNmko7S.oKuzKPDEsD06uOK59TV0:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....ebcfrtgyfako$mBYXmeP6CLmgDfNazArAvmB8aZXRIe6crPKycJO0HiD:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....ebcfrtgyfako$DRhQusVZ3jS8uZOarVm6u0sEPj6pbK15m.Mnik1hRaB:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....ebcfrtgyfako$svnMRGBNd4ExLzuFkOlaPY7VI9PpuO1Aa83VQHkKDG/:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....ebcfrtgyfako$Tz6Bo8b9HDKK./U9DbHowio6ca.wvuK7eKGYDwkO54.:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....ebcfrtgyfako$h5WUjnj8lcAkgd1yPOML75c7WmaND5oLXP2fwHnS9P2:5:0:late*night::
+u6-scrypt:$7$C6..../....ebcfrtgyfako$ytenZCZPITMktmh.0VRs6aXDGYQ88IBRRSd5PRv4FLD:6:0:::
+u7-scrypt:$7$C6..../....ebcfrtgyfako$VsCxSDSWn7s.HKuZKnAkfS5VV9LNf5SZVl3IR/qtOu/:7:0: ::
+u8-scrypt:$7$C6..../....ebcfrtgyfako$cB3ssHABWxSDqDhsWhiInNlxLwsVljUMENKc3jQzTQ8:8:0:1::
+u9-scrypt:$7$C6..../....ebcfrtgyfako$EOVnuVFousiKE0RN9NqcmFmBNI2AStm384fjhGjPb5A:9:0:password::
+u10-scrypt:$7$C6..../....ebcfrtgyfako$3mf6/.5K0lunjhgmQwobuK7APzpY8DO1clHPauNdlnA:10:0:test::
+u11-scrypt:$7$C6..../....ebcfrtgyfako$BqF0/pmdF/RlssD.FXj9./X.NJUKT/wpVvhf95jF7WB:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....ebcfrtgyfako$GFycCLPnBziZFjvkatpDKBMA5XHrJZ4SqDbeE7PIGg5:12:0:hello::
+u13-scrypt:$7$C6..../....ebcfrtgyfako$x5StdC.OWKxy1iGMVWZ4fyQbSK9rzZAUe6rZ67ELql4:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....ebcfrtgyfako$pVVg9hMdynHNlL6s.VYjnCXKK4J0zMy/oPrv0IB4vZ6:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....ebcfrtgyfako$hb7H.ZrzlCMqtzT.Tti6GkI6I125rpiOznOjrbsdml9:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....ebcfrtgyfako$oHSvAg.bvJFHsA/jeOOzBmjdHflFrlTvSNaMe2ZI9V5:16:0:±::
+u17-scrypt:$7$C6..../....ebcfrtgyfako$CmagFiP3p2JYxTGNUhofHQDmyHLROVK3JCN4M6a1fBB:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....ebcfrtgyfako$LzXqbXgc8DjLEVF9R0VTy8jqlhY6uR2OtuLZ8KEaST0:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....ebcfrtgyfako$o2Kjuea3EZa5uRcU97qVi8j2jYTqFwbTXJ/1AHa7Bo7:19:0:ôåst::
+u20-scrypt:$7$C6..../....ebcfrtgyfako$9KSrDHQ8/Lrfs.zS1KeYfzXnayPUT3HqhGsIBGVd7IC:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....ebcfrtgyfako$Ywym7UNu9IOpq/NHfR9e0fHPcIyEHAy72KvZtrnDroD:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....ebcfrtgyfako$.43ou21IVOyrdJA59VFaEmfVYRbzpNieaEOrQnRalgD:22:0:qerwt::
+u23-scrypt:$7$C6..../....ebcfrtgyfako$peUfH/YiavatEqvd9TcsOgVFH1UAnpfjSJl6.9E7RZD:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....ebcfrtgyfako$1QPs0alAW8uRr79HUUto6.X9BGv4bYyA9HBglUsfBgC:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb6321rggzko$deIbvjnOOIWGgNDCBb5TEpYBw09se500F0xTD/B8NqB:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb6321rggzko$ytu9hUA/pyOCsqZJFfF3h.10lGNa9Zxa6RzSLrL2Sn7:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb6321rggzko$g.6Y5hDcYY9XYjgTbR.SvrzQGGjZG7u9dLd7cPuL.v7:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb6321rggzko$ncbRlMAopa5n1BUB5GVgbh1rjFsDOG8uJTSHDyJ2tD2:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb6321rggzko$mIopondCVferKlbQqJq.k.pWpAGXQ/oTlYwoKmP0zV9:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb6321rggzko$VyhonWxF7ORpYpQ3Di81.Gx0eyL2wcf8zIiLnAk7um1:5:0:late*night::
+u6-scrypt:$7$C6..../....eb6321rggzko$fbsmjxEq2Mjx5egvDcJipQi4oyH63OgME5l2eNHB8t7:6:0:::
+u7-scrypt:$7$C6..../....eb6321rggzko$ctNAQtxJTtnbFZrWZ8.Yai9IpIu/kcOZ70P9ad4LouC:7:0: ::
+u8-scrypt:$7$C6..../....eb6321rggzko$sIUQ.lgCrUD3zaRl/Q3BOw2MngcpxCMNkIJGR616kmD:8:0:1::
+u9-scrypt:$7$C6..../....eb6321rggzko$IoC0uAgMU.L81ypJnAgBbZYqv7WW5pBCuL5ZI.u0jL2:9:0:password::
+u10-scrypt:$7$C6..../....eb6321rggzko$WCSzcLscC9SLggfEumv3j9Ks8HdZbgy.qZ80bE20iI9:10:0:test::
+u11-scrypt:$7$C6..../....eb6321rggzko$QikqW8k2hHFp8Odhq5kOtUjFJRPJiuSIqIMwqkK4510:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb6321rggzko$GfPhNIOGbA.0j1xHcECaRn1jIBKDi2YOhS3sd3yGwA5:12:0:hello::
+u13-scrypt:$7$C6..../....eb6321rggzko$ar64yhX0lrUiaQ.F/wLXux5gOrYlUTNZAqFo6/ikI5/:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb6321rggzko$yjc4eNinSOCjHJpaSm0d4r2WW.dx9b/2XbFdmSC0nz1:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb6321rggzko$YGyCVGU7ZaQnxygJQhOAE/6oMor0LphzEJEeoOL4uuC:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb6321rggzko$1zsv5sG9QXrs6e.8TTjpR6ePBNyF60E1Cy0.Z1USv49:16:0:±::
+u17-scrypt:$7$C6..../....eb6321rggzko$VrCQGiIBTNn4GWrWzvEG0y.shzjWsZEzewWz87jAqeA:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb6321rggzko$DCsjsus0qKTRVZnG9dLitAbmeHMefUMz76ec1MncGp/:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb6321rggzko$Bq5IlL0n01ok2JGaQ.m9rR15y5F4y1tbY/Ya9vDTEAD:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb6321rggzko$ThlB.XHVR8MsCOLPMjmebr/2ZEyoRRtE2zpGrG9s6x.:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb6321rggzko$8QODRv6FW8yVz5EnaiYAuEe0NCRe7hM2PjdQx6Ddg74:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb6321rggzko$dTnhn/MXW9gxJlohN7QuQbIEq/nuTThYOLXFP5.UQa0:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb6321rggzko$5/7CaeEEFZWITEVH13j7sM6EY5mz3TiUaNqz2e8DsD3:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb6321rggzko$NmZt/vVcOk3xlHS3.AIv4wvt7RskEZ38kEn6Gq9Eg77:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....e23xyvw0hy56$0vkL4XOiXPOOdTipvZ5vwsjCOZk3u75AX927ckYPCe7:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....e23xyvw0hy56$49yQbM5oxm/.TnodS.TH5xgHzn3s6yy.7gJoIZeHaGC:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....e23xyvw0hy56$EnYypA3Cvq78N/.zym.lpfPcuUo7pfkJdyr77oMNH9/:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....e23xyvw0hy56$EfAUAhh7rNO8dXuTwmKgsveXvHhWuDJybgPL7833xDB:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....e23xyvw0hy56$R7MoM9D8HofQnTK1ByLzmTZNmV/Nf2OOCA1F5Ii5iP2:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....e23xyvw0hy56$M9Ja5OicI24JxpfEwUO2c1RPl5y11OoEk3TXHMR17f5:5:0:late*night::
+u6-scrypt:$7$C6..../....e23xyvw0hy56$AjpLIqNmSlt8iF5N0p8e2.WpwPSmihgidsSuTg296d9:6:0:::
+u7-scrypt:$7$C6..../....e23xyvw0hy56$WY8ZDQWKIshh92PMctYRw22gpyLs4GR9NhLS1SCY4CC:7:0: ::
+u8-scrypt:$7$C6..../....e23xyvw0hy56$Itv3lg4SF7qFBaSW0SDbQS2.u1fxtFy6MyZsbDZM.01:8:0:1::
+u9-scrypt:$7$C6..../....e23xyvw0hy56$saUNfWsGBZyP0kSsjKVwVaJkoDwxloosQI5487FFLo3:9:0:password::
+u10-scrypt:$7$C6..../....e23xyvw0hy56$cZsEbRPiotOkr7wbDM8DIYWPQLAHyysG4PVZaEcTdGD:10:0:test::
+u11-scrypt:$7$C6..../....e23xyvw0hy56$lK6UhVMXxlWHMbHs3Wz5xXf3jdeAOo./DRrbH6jaGj9:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....e23xyvw0hy56$l445J.hqLQHwEIDoqN5uA66FhMStdyzcFve17MV62b1:12:0:hello::
+u13-scrypt:$7$C6..../....e23xyvw0hy56$jQqln2Z/NrWCUoi/AwvbQNS2YHUlnm3eod3NexxWb92:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....e23xyvw0hy56$suuts1BneJecmyk3x94WXMYGGmN7MsstS5PizdzP0b8:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....e23xyvw0hy56$1BKcPcc9NSYslvdereOnyYPHyxB9SxlHVtc90t2Rtx0:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....e23xyvw0hy56$zh2sAB3.yMjS17hzYgn8zbwMsUG37lZEbPFrAtSiLe2:16:0:±::
+u17-scrypt:$7$C6..../....e23xyvw0hy56$hIA71OdikN5Z5uQIQQI/ccy4cV3Sj8rNmR96AXgEKPD:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....e23xyvw0hy56$B7XjFWKKbSwZd2DQGlZhGZAXltTaO9Q1lOq9k8eGSj7:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....e23xyvw0hy56$KwaZGvjfMQhqWXMZqDjSv.i13te8X7EbRHKGkOaEXXA:19:0:ôåst::
+u20-scrypt:$7$C6..../....e23xyvw0hy56$D9JYRLvjOlJhQZ5GAsSRCwYkvxynCTfifyXDhgKpfH9:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....e23xyvw0hy56$GwZeOIAeAD.du94Z3r34PSNaevMG5v5zbI2BwfretGD:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....e23xyvw0hy56$mTaOxgT9HzStsSS4g0feDGCERqebp4b40S8oo3coZWB:22:0:qerwt::
+u23-scrypt:$7$C6..../....e23xyvw0hy56$G6WSN5DQSaeIdnw3lfoBc5B7EZ5RZCQ/0jx01WJK9x7:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....e23xyvw0hy56$1xxRej8derguo8vIPMO9KHRaCahkklcnicoZoLcbgI1:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb3wzux0ix56$Cl8rkQvgmjmKs8JvNMX.wp2FR8V4MxJNrJ0kTfGu/z6:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb3wzux0ix56$gaEyLAI/msNC3N2wLxU4uBoK2KTq42.HCpw86Z/kHM5:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb3wzux0ix56$op0u6W/XzfqGUPAdXn1HVi.mRm0PEju01YAfn6OvA58:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb3wzux0ix56$UX/bwEwNonRkq1773eyP4FHOVPr/sfklmlnEpOdFvc0:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb3wzux0ix56$JtghDGIeJBEz5QQhf.cUnZJJUDq1kYF2u94WYyigmr.:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb3wzux0ix56$QTpJC86vi97sALEVwxOzeOVE/pwf.kFN0kzmIhogEaC:5:0:late*night::
+u6-scrypt:$7$C6..../....eb3wzux0ix56$Qd314z9tlqH51.IHWtbL6pFncl2L6VpgNF1.gXT9p2/:6:0:::
+u7-scrypt:$7$C6..../....eb3wzux0ix56$TYW3mKRGv.t/B8D9GJdhyNVeeTi/giILja0QyOqRNX4:7:0: ::
+u8-scrypt:$7$C6..../....eb3wzux0ix56$fjKL0UpQnmPA8ARPxOIvD/fyFj20A/QcVD0AYZL.HA6:8:0:1::
+u9-scrypt:$7$C6..../....eb3wzux0ix56$/gcXwBwQ6QYLjUboLccWq8ZNFHDqW9.t0W34eCWIPbA:9:0:password::
+u10-scrypt:$7$C6..../....eb3wzux0ix56$Xa0EtUyy3PDb3M43wGH6HEjrZWVtIGSx7H6f9qp.us3:10:0:test::
+u11-scrypt:$7$C6..../....eb3wzux0ix56$rdw.VIJIN5LjihaTQniQ3aH51m0nUxqdMVsQaNdITPD:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb3wzux0ix56$V7A8A91LaTRK1uP4NKVRQbWf2QHDgeAQhZoUc3eNxO7:12:0:hello::
+u13-scrypt:$7$C6..../....eb3wzux0ix56$0eCqw7cJkzVpYy0YW//lUcbsD03U1mmIkOUuMJXIu16:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb3wzux0ix56$v6yKAWH9O2j.ArNfE7uY.AdUFs9WP6elTqU.f8N2g.8:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb3wzux0ix56$/jiguzO6VDrmcJLDFd0kArgCWQu9h.Y.nVm5vLAriT4:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb3wzux0ix56$4m7dXeDR.AVE8vAiVtJ2j5VrQG3LsE68/qa7aRlVQd7:16:0:±::
+u17-scrypt:$7$C6..../....eb3wzux0ix56$c/HOAziKIyhtcR1us.ycUvfbKSZnBZS0CNGK0fbPUj3:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb3wzux0ix56$boTeHIKwvcY6WjvcNtjg9DiSzm2gR5XDM2TS5ZCTuB9:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb3wzux0ix56$4Xi.cRSI6oAePqzXkOGzBA5iVYmwOiS1BlibBdao515:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb3wzux0ix56$nhGGjXjnIzUEw.ESmBEHULw1UkvG9m8fRpr09GL0O1C:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb3wzux0ix56$1JshhnMcHrABRnYr91tqApNkNJgpRsQKYa8AZzSHwK8:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb3wzux0ix56$q7HS.2jLDI.bVtoKanyAriM3/ObB9WgBgNIZW8YH6f1:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb3wzux0ix56$6mL3cES8N8hirUinhwrYtAl9qm18ONNgGwrU5gyO.n/:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb3wzux0ix56$/rCGIlQcw62K9b1o64rjz3x65W2khnjP0y2RkoyhRz4:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....ebcvatyyjwko$uVilTz0qSH7n7WYQRhTfMimHQUExQWv2C/VEtanwGy3:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....ebcvatyyjwko$cuWtawOjwB69tsIneoRFdVit88dVj/oDNAiH33MYHV3:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....ebcvatyyjwko$JuY.64ZcmNFaKPbXe06bfHpAqHiHyIEwV2Grvz6KUq/:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....ebcvatyyjwko$Xo6oOrjoSJelslwJ09GDZ3WU14Q9bA/Eo3nteK4GBb.:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....ebcvatyyjwko$EZcwBokdYIsGe.oJ3PkFx5LhB/MMJNCNzI6cLATvm..:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....ebcvatyyjwko$qB/0Oh66csN0U7KSCRRipAI1AvHXqG5.6a3me7LQ2XC:5:0:late*night::
+u6-scrypt:$7$C6..../....ebcvatyyjwko$ae4MQiWrq0KLwJ8O1juj5vblAWGHfbAFZEDGIizkKz2:6:0:::
+u7-scrypt:$7$C6..../....ebcvatyyjwko$vShagtaIoqJ994xLC9u2tiQ4AJ/wg/S8/J9amhOnE0.:7:0: ::
+u8-scrypt:$7$C6..../....ebcvatyyjwko$Lv4Upj3gkP9/C4b/iZ2fBSebQq.tzp7nU9OiLkPd0H/:8:0:1::
+u9-scrypt:$7$C6..../....ebcvatyyjwko$G/5rM.fbqlqFQKF9crc4O8lE.e0pAYgZugtYyCFp1v9:9:0:password::
+u10-scrypt:$7$C6..../....ebcvatyyjwko$.6F9GcppyUgEp/s8MEh82enbXU1ktOd0g4Ubpf2QYB2:10:0:test::
+u11-scrypt:$7$C6..../....ebcvatyyjwko$3S40A/IsJWZLY967YjVEFzH1G7MQeL5XzhLC.CVDfXC:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....ebcvatyyjwko$QLiVo4EFs2QQmjb95zfXc71UvyU5R6nzrYIxuyJavj.:12:0:hello::
+u13-scrypt:$7$C6..../....ebcvatyyjwko$f6StDzVD4c3WnYyN4WvYvGpS.kKpd3uXBmUaJjW/PfB:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....ebcvatyyjwko$a2ZlGO3BZ72EVdNoIkD.LgG2qD2ec80jFNt3SMml7AC:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....ebcvatyyjwko$3ER/aVD5t.0S9SzFDU1C6QOxUT/c.qugTAiLKRb3I11:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....ebcvatyyjwko$YwqEQDeRf62o71MzrUm/JGI.RtEl1iSgNZ1zzf8dJj.:16:0:±::
+u17-scrypt:$7$C6..../....ebcvatyyjwko$WA4zDjJH7e3jFvVGnZZ1CJaNKxCyz2Rd9fd0pb3rqh9:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....ebcvatyyjwko$7MO.E8HMqahzql81X/TxOLfJzHB2jSROGSeAUyHDKP9:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....ebcvatyyjwko$WQjk1tHmP.bvwj7r4MO760ez/GvpY2XtqTtzGqRgZ87:19:0:ôåst::
+u20-scrypt:$7$C6..../....ebcvatyyjwko$BpOyeyBt30TnC5E/3PvRTt1MDfzzNK67hpTmtliIyl.:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....ebcvatyyjwko$lyFZZ.sY8LnvfV1eT8Jb.D7PLKTsOwMZPWlM2P5yTK1:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....ebcvatyyjwko$j5jZKL2Lzzdvi19Gl59TVdtVgncM8X8slEAHFDvssDA:22:0:qerwt::
+u23-scrypt:$7$C6..../....ebcvatyyjwko$W/JITHbt1C9Nta.UV9j/RSdDjdRThxktCwd1sARIHW/:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....ebcvatyyjwko$xJVaQEmdAEr/SC.HIBFUgkw0RwWgbdnyff6OVm9mXo4:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb6ubszgkvko$BhbtUDczdjKJfgErt4rblTSrUsLuUtjD82pbRPxHyh2:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb6ubszgkvko$redEPUxFUnmlwdW0RgRR2S3WQfaa9zHuTD9aSLfLYV8:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb6ubszgkvko$rCZGkzY/NP7vi61EIW/ud86CIC.pciJSiKe.x9Ksy20:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb6ubszgkvko$npjTQxozflP8CM983Jd6sI2K9RjLjjAxE9x3hUwLlB.:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb6ubszgkvko$x27eYjOIqqhruqn58f/WvFfjTxhr8APHNq6iXkIs3N8:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb6ubszgkvko$H2sZTuz3ssrZZIDX/x.ZPBDfGhh2lihdpMN7BtritDA:5:0:late*night::
+u6-scrypt:$7$C6..../....eb6ubszgkvko$fgs1fE78lVF6yZ57TkLoM3LgjLIZ8odhBpDQrgk9vr.:6:0:::
+u7-scrypt:$7$C6..../....eb6ubszgkvko$DmafeXLHCYIzq9fk95c4nOSBFqJ4nCbQ/PNhbne2DcC:7:0: ::
+u8-scrypt:$7$C6..../....eb6ubszgkvko$pAASY/15hkJVMq/N3PPti0lb3/sEe461PQTWn8IZHl1:8:0:1::
+u9-scrypt:$7$C6..../....eb6ubszgkvko$9vyAfgrJUqF71nu2usQziE2HCJwnxPhhBYTGin2IOQC:9:0:password::
+u10-scrypt:$7$C6..../....eb6ubszgkvko$jDoRVFbL9TOLEbDNd9WhIQ2DjtyFdNLwwe2w9uFMIKC:10:0:test::
+u11-scrypt:$7$C6..../....eb6ubszgkvko$ce8Fg1/HCiGc1DysVc/FHTrAmevkuYRWyaF/chTY.p/:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb6ubszgkvko$0Ri66Vnq88/bsdtOFS/bC59ZXYxsHAsS/kn7vLrhej5:12:0:hello::
+u13-scrypt:$7$C6..../....eb6ubszgkvko$IYaejjR2WBlAcTFUzS3.atfn0PO76/4GKcBI6C.x7L.:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb6ubszgkvko$I1WHmUqgMCxllVxx9uoga2FmRKFACtQY8.Q/TwT6MVC:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb6ubszgkvko$Cl.wtkCZBQf1nzgZADxuewZ/Igh9xNa7BA.spd6HrRD:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb6ubszgkvko$I/8A4ZTS49WYoZXbc09Lt6cRiAKfNoKJMnahaG0Fno/:16:0:±::
+u17-scrypt:$7$C6..../....eb6ubszgkvko$T/3nBXn6eq4RAq6jsHb6AO8Qd1tKDyo9IfaFF2OsU8.:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb6ubszgkvko$zeUYCwrpGk6EpvJFFqySR6hQQEGto0sndhHbgyZY.w/:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb6ubszgkvko$hfEBf.bbng4e4vRAWphgKhYpl2S6QX9QU1tDCTAiI42:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb6ubszgkvko$tUxY6H2qx7VLkSzRzeOY4TeoQH/NVu6.luRiXMo3VS6:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb6ubszgkvko$CY7WJK/Gp3YFgJ2ZIrw7GdK4aIy4Js.3qDvjDZ9Frc.:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb6ubszgkvko$d8KHBBAk7ZIGvpUtcLQoga7.pxvCg9Z9gCT4qq6Q6w2:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb6ubszgkvko$MkJkT9fx9UWu2SfjeQ7GxBNpJYJq9JvjC15UcSyokb4:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb6ubszgkvko$HjDo9K0Rw2a56wwvJOSaViaRg/94SUu8Oh8i2kxfI7/:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....e23tcr90lu56$qA7K/sdhgGHHz/UffjEa3xcngBYhEvGXstox.ubTeX4:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....e23tcr90lu56$FZ/MVTItf0XAnZ8/1rbSdbp0oX7n.ssjurA/2Yzjos/:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....e23tcr90lu56$aT2XOgKKS1iaff.oVUDbqvQiKMaMFslQiqzGBxQlz78:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....e23tcr90lu56$vh.CBqB20hN7UzNoMqQMgRM5IOcJdBFH16EBD0ZdvE0:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....e23tcr90lu56$7/jzlGgMQDbhjmAOT59zHkS.FkDb0yYUDoryBa08nkC:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....e23tcr90lu56$d/ijzHnE3uz1HELbv6BpXOz.zJLbnOF8HfrhxmwiJE4:5:0:late*night::
+u6-scrypt:$7$C6..../....e23tcr90lu56$bYwUt1EReQiZH3T2oqdvqkPfZ9umEu9HOn/zf7O9gH9:6:0:::
+u7-scrypt:$7$C6..../....e23tcr90lu56$yvvI8x9JqfU4CPJI.yqDJj8DFWAvnvln5EBpA18Sp6D:7:0: ::
+u8-scrypt:$7$C6..../....e23tcr90lu56$/ILIyXzNmMU0r80d5ax.1.IwoorIeOFk1cP4nq/pauB:8:0:1::
+u9-scrypt:$7$C6..../....e23tcr90lu56$XoVSNxL4OJJ0qIP/kGYNSOd6UgpgGCwzm.BVQAMPnkA:9:0:password::
+u10-scrypt:$7$C6..../....e23tcr90lu56$d2aTTqpi/h4w8zWfyw7P6BPcTUst8Lm2EZTGK5tWhp3:10:0:test::
+u11-scrypt:$7$C6..../....e23tcr90lu56$LaZdy3RpX6EjeQjBsz1PDLNPAj5i0JHNeuUywCd80X7:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....e23tcr90lu56$Uku0EOXYa8qq4vICLXMiz0S.f.n6DgpTciNuXsmGO69:12:0:hello::
+u13-scrypt:$7$C6..../....e23tcr90lu56$lZV0UhpGuFl8xt.IKWctt.Nh5SJo8ArmciBV2sLvIW/:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....e23tcr90lu56$n.xIdtw/c./9gV4FyNNw.pUELUyvD0CdQeETxkXyLl7:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....e23tcr90lu56$gtveeIaQZBTF3IAVjxF6rJwXJR8ir7m5snaJv7LJWT3:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....e23tcr90lu56$5fOw.zjQKPlUoCFFIPA1whfhBApdo0fbeAudlK9BV72:16:0:±::
+u17-scrypt:$7$C6..../....e23tcr90lu56$rYmBKRhkR/eQGDAPyFX3deweIs1m1Ea5y9p4356vhx9:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....e23tcr90lu56$arPxFyPcYDBbiJfsXRIwgk.WiaNIQK.zbHRGVTgS8V5:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....e23tcr90lu56$HqzuPnjoGjA7jv8NWWhm510iBUZEFn0KuexryPvkZd3:19:0:ôåst::
+u20-scrypt:$7$C6..../....e23tcr90lu56$/CGEoH1xE3Kr6cgLmPANzrqtC1dZwmAR0CwQ8MAvLa3:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....e23tcr90lu56$gNSs9DBczWbGPoqPk.pFygw4.GM3RRV9oeFsmaJ/l/.:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....e23tcr90lu56$m6aT.S82EY5YV7kk4CQvAsulPv8JkwV9ztBwNHQuxp8:22:0:qerwt::
+u23-scrypt:$7$C6..../....e23tcr90lu56$5Ywvv/5CnH1Ax8BUhyaaXoo0vyW974RHwT3fWTNgmt5:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....e23tcr90lu56$RDGdClOIDh4Aug6iIKCWSB92LryAEIfx/oe8LcfQVND:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb3sdq91mt56$C/.wJmprWmrOV9Bv6wNBlLCArUw.sjfiAZnnjRML16/:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb3sdq91mt56$JZ8lVXTGqtIUUxhm6DtnlYNMUsh0wQ3w0tqbXDu3fg6:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb3sdq91mt56$YbukvdH1zLpj0d9DBbpG7lvSegENFJwbErSit9y.QN5:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb3sdq91mt56$9uVHSWDxApXWMfz6VV4/Ah29/2HXvRunEUBFImDU3M0:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb3sdq91mt56$wY05KO913Xjxs/ggbRIYy8NuXRuJj0znn.xX92Jqr/3:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb3sdq91mt56$oieWjp7MG5ExzgQsOuXTcH50fpyYyAvzx/o2ak4VUGD:5:0:late*night::
+u6-scrypt:$7$C6..../....eb3sdq91mt56$ctuztzy5csoNKNUaNRdYgUYF8LMY0wXNQy8cMP7/mnA:6:0:::
+u7-scrypt:$7$C6..../....eb3sdq91mt56$lxvRzu.joWv0F6ibdWQ1iGyudXSL0.2aD.rEpLg1b22:7:0: ::
+u8-scrypt:$7$C6..../....eb3sdq91mt56$EgXQLFr2M7Oxj/Tpd1mrZkTyQ2VVrWuh.WYrLym4cd/:8:0:1::
+u9-scrypt:$7$C6..../....eb3sdq91mt56$wKRozF7gkJVtQBhnMwvZ8I1.r0AiI745nnjwtUG69i.:9:0:password::
+u10-scrypt:$7$C6..../....eb3sdq91mt56$ZNkecDZAC4N7GrkIloQ4jG9dziIK8phr3s5sAS1AHHC:10:0:test::
+u11-scrypt:$7$C6..../....eb3sdq91mt56$JsDihFlF73wMl9qm4.uxqeGiv9ZDzRH02LKMQ18iRS5:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb3sdq91mt56$o3.j6y6qCWa5BvXVOYHvLcJ4ATf7ZWkcJhZ59b8nda4:12:0:hello::
+u13-scrypt:$7$C6..../....eb3sdq91mt56$wrjQu/jVmQo7gezzSNU1ailZSTVSqQyYfKTM/ftPGnA:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb3sdq91mt56$QxfhzGM18qM6q1XxT7aX7RkE8HQ1C31W8LzdIZey6b7:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb3sdq91mt56$s69rLayc/n4LazxQ6gjkd1XI2Gny4QC/mw96CQhXGz3:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb3sdq91mt56$KOl.hLjRGPBwRKkSC27KoBsTzeK5hmtOqmywdwBDBK9:16:0:±::
+u17-scrypt:$7$C6..../....eb3sdq91mt56$Brgfzhpm0WmqrzVNrl57tilt0/AhvzLkyyZWZVbd3P1:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb3sdq91mt56$HMlxMvDhPc1up1rnCfXIGnBri1vzMyZ5PILaULFRFp4:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb3sdq91mt56$WuW7lf3eFEwwxuA3KQDKFOzTD9cZxecczIBjtS77zw3:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb3sdq91mt56$e0JsRXCg0xD0n1p47yprBBsx0C3IJm73VdxnEAHu3J.:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb3sdq91mt56$4tVswdm3oFkNyXEC9wltaBkYvP61r4zuKv6ukTEIIY8:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb3sdq91mt56$zFrXWpZaV/3AJ89ZeS.eieDSoaGRw1o4pJzPwBrqQQ8:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb3sdq91mt56$LwCH1e/d1VSlptO1Zl5P/MptlfI5wpvZNuQa2qVvqm5:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb3sdq91mt56$vo4tmJi1dy.pjY1vlhiue/LfGejay2Jkmo37gvwbug6:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....ebcrepg2nsko$D6GVSB1yYIS9erujyxQApt4btq/GTGMIdZgU.xW6EA4:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....ebcrepg2nsko$CNcQGenAPureS0vgOOVydT8m8PZKUq7H69UhKnSCbqD:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....ebcrepg2nsko$bn1ncnnJnJv3lY4INIHhyNoHrKfxvvrX5HsfqVAo/O2:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....ebcrepg2nsko$j1A7F7OghoLvTlXuR6iYk2hCBxeZucSe7oASQYEaGXD:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....ebcrepg2nsko$/gXZ9nybl6SYyJWgVZyZTJmkvmS6qHiqsKqF8ZEFkn4:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....ebcrepg2nsko$DFkQn7xOhMn.eq.dvr7mL3d5/gWXnGvjWNw0CrI8XW/:5:0:late*night::
+u6-scrypt:$7$C6..../....ebcrepg2nsko$jWxQNSPSgaxYWUHuStBXDYZkBuWTwNSvSuGInh3XeRC:6:0:::
+u7-scrypt:$7$C6..../....ebcrepg2nsko$qbwjO77rCGxSm61BrQ79IpqSmjkdd0LNhT.N/9mpvQ/:7:0: ::
+u8-scrypt:$7$C6..../....ebcrepg2nsko$hqg3o3sTwsuwPzrPel.vUfPllK5xWTAu1Pw4YlZZ2F7:8:0:1::
+u9-scrypt:$7$C6..../....ebcrepg2nsko$/kM1dsAGsK3KaqPXYlCEGsMyk3.C2N53dvIhP27f0T4:9:0:password::
+u10-scrypt:$7$C6..../....ebcrepg2nsko$afXFz2saSPHtKBEps7/T4szDBUogZsCS83cPQaeO9P2:10:0:test::
+u11-scrypt:$7$C6..../....ebcrepg2nsko$mtfp3w7/SOl2RBGefzVfUIbTQOUKy/0G2dY4Gj2LAE6:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....ebcrepg2nsko$FSdHwhMbSV4fHGyKqa2Gs6LUMfn4Soemowm58sEBUxD:12:0:hello::
+u13-scrypt:$7$C6..../....ebcrepg2nsko$psysXshVDpt.../4M833kSgTZ.ufy4XwR7AxO9jPdk8:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....ebcrepg2nsko$Q2dcfPdRALH6O.eDSG.J1IU/QcC8nW93GZoY/Q31i.4:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....ebcrepg2nsko$TgCyb24WrHWgzjv7ccBGwiH9ESBjEm/sbM/n0ZIY/2/:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....ebcrepg2nsko$uknjVIsk9LmSU7OooiX9P3GRMIDKBUd.0QlPSbL0Cl9:16:0:±::
+u17-scrypt:$7$C6..../....ebcrepg2nsko$tZVA/zkQdLuZjhbm5x/9cyWNTXFCnbWw7f6fmbPwR52:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....ebcrepg2nsko$sctTf5n1cZNjJn0sjXqulVhgb0Gi3QdrxZAtk48KZh.:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....ebcrepg2nsko$X/bj0Dl8eq1yS8H8l9LPbPg7Fb2DvTTw0KbdHJZ7TkB:19:0:ôåst::
+u20-scrypt:$7$C6..../....ebcrepg2nsko$a9PpsrHe57ydbJ87nUDVIlzz5jweIytq11T7F7ywkD9:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....ebcrepg2nsko$6gmEFjkwui.PLCuAN42LauVNiskMfwkpV1wJnGbTy/8:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....ebcrepg2nsko$R2RYBBt/8SvnRMgukzcaAxqJvtEAFw3rDLXBtBzhkJ0:22:0:qerwt::
+u23-scrypt:$7$C6..../....ebcrepg2nsko$x5kOuxCR6fR6YiMQkzaEpUKokIGOod468EzMNL6ajL7:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....ebcrepg2nsko$QQMyvVjvtc6sNZRewEwjoDiYQtElEohZZBjxbnA7hJ8:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....eb6qfor3orko$auOu5//mLwu/8b4Y6prr6aC40eZ2vCV8QjRM1elVWg3:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....eb6qfor3orko$kA99pqgL8YbROsVY5tKp9IUxgPY/9fCXBP7J2ae/DE7:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....eb6qfor3orko$tqEtiYBrOM1lDyuRorYlR1QXqxUwHE.k14stFIWHiD.:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....eb6qfor3orko$VTbu4Pc3QwbIsJpwg00SzuVLjdODcu/egmDz4INZwC8:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....eb6qfor3orko$JTy0cdaBCvl4E1VuWBbToLeK2kKGqthBus/2UqdSMK/:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....eb6qfor3orko$FE7gpRqpOMjA18qvJopqDxztKX53r43y1lFGo4hJ216:5:0:late*night::
+u6-scrypt:$7$C6..../....eb6qfor3orko$2oMwnMB6IMKfKNNiiYypofFYs/KjdvxbF/48Xrhp7T9:6:0:::
+u7-scrypt:$7$C6..../....eb6qfor3orko$YeiRf.sRw9QY7g4sZYyZ0fU683bdnRU4dUCSQvfRv3B:7:0: ::
+u8-scrypt:$7$C6..../....eb6qfor3orko$FwC1QEair3rK7wnhingnoKWum1KiQMmkIAbO6hh0476:8:0:1::
+u9-scrypt:$7$C6..../....eb6qfor3orko$rr0RGtkDTehUWmqAx7E27fU4NvvRUl2YBoQK6PKbvj4:9:0:password::
+u10-scrypt:$7$C6..../....eb6qfor3orko$GaBvQqc4apiwskceKrP0LUFgzRD0fUii9s4WEOv.qL8:10:0:test::
+u11-scrypt:$7$C6..../....eb6qfor3orko$on9FVEk4XMji8FzzEzICfkKkEBg6isgfDmPwKYPbL5C:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....eb6qfor3orko$zuIzePd7Bav7MBZtWc0nOrPKG5EkrFqZfaDxFiGkrp4:12:0:hello::
+u13-scrypt:$7$C6..../....eb6qfor3orko$0ydt6PeQkFPF.EH5mWYNjbOC7XqKuwoKkWtOVcpNOq2:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....eb6qfor3orko$wYZNJoUSP3Op6IZ8r5FJ00rPX1z40uE.BT/ip5WeJ4A:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....eb6qfor3orko$/zaSJctrHxp/d8u6m.dpon83NRbIWeK.JyVWuKQmtJA:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....eb6qfor3orko$KkoguLqbEk7u6xJS5DlFO6YELf3GVTo9nMTxg8eptYD:16:0:±::
+u17-scrypt:$7$C6..../....eb6qfor3orko$jwpEVt2bAyen1Cf3su3mY4xtMuervEhLH2Oia7Cy5iB:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....eb6qfor3orko$Q8Q5bPgELPOfS5RNsrjbaQqDtbEUj3ZY26RPWZ0BCnC:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....eb6qfor3orko$v80RAQkUjOlcV0RlIoewsBTtMwlzUTdyvQsqvhLCfO8:19:0:ôåst::
+u20-scrypt:$7$C6..../....eb6qfor3orko$GqT82/Xa6DnbSRZ0Txwh84EfLfP.0QJEKq8afY0QYF0:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....eb6qfor3orko$blWYxFOSUlCkjZJ3Pab20GQJX7Mlns8IiTw1tTWz35D:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....eb6qfor3orko$JXlBCEdONRMc2KUuI3EwKKm/yhM0CZjGDcHNcjlr0g6:22:0:qerwt::
+u23-scrypt:$7$C6..../....eb6qfor3orko$VJHVSclmDAhqqXyHmliAYUMi/z8V52igE9RsUGtxWrC:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....eb6qfor3orko$0DuKgeEPGZrBmjURlNzCAivDM/01Hb7fCOZIcoGNQn3:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....e23pgn94pq56$szt/BADu9zR4IKLumlTjFLRBO.BtCkjDSUfIKoIWQ.8:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....e23pgn94pq56$ak5uknj.Mq6h2Lsepyybtkuy9Z0ofGBDp5YGkA6QQg.:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....e23pgn94pq56$8LwG/FovnKC74ALQTwnHTLv2OG2010AiJWfkB75zfoB:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....e23pgn94pq56$i9kJYB73Wcgt0xFhFLOFDhatfidalkBR3wlqQltfY/3:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....e23pgn94pq56$Pu18VdoLzvvzd571oRwu.ZEerSdd0r1ENNWBYWqO5XD:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....e23pgn94pq56$A.ZfhJe6I4TszW.vRIg9skMgKBrOkiAwTn3t78R9TR2:5:0:late*night::
+u6-scrypt:$7$C6..../....e23pgn94pq56$ZCPXRfs3nJhbsxV6mwXrEq4jGsRdpwMVLsQttNamcg8:6:0:::
+u7-scrypt:$7$C6..../....e23pgn94pq56$3/OstOasDda8wGL8iitejKWXwjDG4n89oxYXAEjJIqC:7:0: ::
+u8-scrypt:$7$C6..../....e23pgn94pq56$TezxreAd4PIx7ffUWMBnL.a0HvQOk1ifFwEUTp9f/LB:8:0:1::
+u9-scrypt:$7$C6..../....e23pgn94pq56$v.AiXWrGdiGarykJIni5GZpiTcZHi4V1D.npjsoRR0C:9:0:password::
+u10-scrypt:$7$C6..../....e23pgn94pq56$4hgxUF.hocJkqrEnY1pm3Rjfk.DYvoJWPIoRFGYH3OA:10:0:test::
+u11-scrypt:$7$C6..../....e23pgn94pq56$sKGQHscu4dvrzR7d.GP//Mp33T7IqlL2zlnvr57CjP9:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....e23pgn94pq56$9rCsLHboOcL2vNwo121gxbTqN7v9xqpMh7Z5xTyHnBA:12:0:hello::
+u13-scrypt:$7$C6..../....e23pgn94pq56$jjXwXLu9BQM6yA2ww2SdVjqGUGIKDLD.FzbYrVOzF76:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....e23pgn94pq56$P7zmSBrvaeeGNpJXrZj.CtiLDSz0xf5x8MOs3yZdrn7:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....e23pgn94pq56$w8HvNxU1Pyqpk9/fJ4euiHgcw78H0/A2CnCV4xVnkl6:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....e23pgn94pq56$3exi4.hsBH67/MJWcY1kSRcQRfcWRK21zd0DFjg.iz0:16:0:±::
+u17-scrypt:$7$C6..../....e23pgn94pq56$Pxo9UEnJ6YYtUHrhCwqV59LH.qx6gaqn5dNSqtW/4L0:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....e23pgn94pq56$JzpgDP7fV/VbKfqFLYWNE2rnFQfE9nj/ZCul.X0EbU8:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....e23pgn94pq56$MnBjplm6GJUscc4Tw3FGRPH5qTWoHCv4QaoBwmUrV0D:19:0:ôåst::
+u20-scrypt:$7$C6..../....e23pgn94pq56$8LG2k8XWjkALpp7nx8imdq7KXqiutfgZtkw7.NqJv.0:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....e23pgn94pq56$A.atJv7FApZ1AIG6.Zs0WADhenNdAhRybuy7DKpoFQA:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....e23pgn94pq56$xHM8RVeoiDy901n1eS1.7x0Cpn29BfJYUcSMRJ4wgU1:22:0:qerwt::
+u23-scrypt:$7$C6..../....e23pgn94pq56$Cwdf.STx.MFv/a4YsCVN8g5V0OXAGI4SkISM6/PrKJ7:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....e23pgn94pq56$MvBhQFYl5EClmexPQfXNoEebb/n9/HKNPnnQ2y3Ch6B:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....f23678901256$cMqTqnghpC9yGxKP.BmJ1me8LgQSALwy4vtPVqT..N7:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....f23678901256$mTvHBr6vgGavAO.AQKPx1ZNCpciPz8X7p5F5Cc6tEcC:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....f23678901256$aJWwNMzzYT1SOacEza2B8pYIGV.7BkPIZ5MSEYj.JZ2:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....f23678901256$zRpciWUL9u9Pxix6TY4OQtu0AsnbfzPPv2mii/wbxI6:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....f23678901256$7gN0O1UL7Sx3EJcvBmmPSo0q0fZN3GwJlE5My4MgtR5:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....f23678901256$Sf7JVH39WsOK5y3x6lOC122aO/ofAO8wVtGFDWtOms2:5:0:late*night::
+u6-scrypt:$7$C6..../....f23678901256$c1bz78kL2QZ2hOspQMLw6APmAVUdYku/Faxst02dxg2:6:0:::
+u7-scrypt:$7$C6..../....f23678901256$TUnr6N4CpEnZgNggh2XDV44cKr5/.VG0P0vj6iYtDl7:7:0: ::
+u8-scrypt:$7$C6..../....f23678901256$qXdcZv6xV7Ak0fcHuLdinsWDbT9iy31kKEjhHOPH7F1:8:0:1::
+u9-scrypt:$7$C6..../....f23678901256$vzPX9El2LlupwYwyyipR3dHBEHKBk4racb1jV4J0fS.:9:0:password::
+u10-scrypt:$7$C6..../....f23678901256$9SPkR4tKxLi3jYqWxx1JjxHiLCbJ2THAPsP0XBqtzP7:10:0:test::
+u11-scrypt:$7$C6..../....f23678901256$iwbdwb.vgtdh.4qv1zcg4teVQLqg5DueaAtjW8jOQ14:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....f23678901256$SKSiTrwd08U1889exQ7A0ZY1l4yyFic8mtzRk3emP14:12:0:hello::
+u13-scrypt:$7$C6..../....f23678901256$P7GQ3Os2dRpWNYGYWjvRVE.SYDiOA.DN5p7WdpRMkhC:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....f23678901256$fga.pMw.g0pHNX69uIiR4Y.HxTxXVojMmKjzokfj/z6:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....f23678901256$1X4m7LtRtmb5o2RYNLo57a7932V6F73NPrGXzbbP.TC:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....f23678901256$U5DfJES07hSPmvcmSJ.DyG1OcnRfKAqASBzTIq1jILB:16:0:±::
+u17-scrypt:$7$C6..../....f23678901256$5uUg7wAzSOz6kiFZZowjHHa46Rfjke8ouNMjMZEc.z3:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....f23678901256$UHhCPRf6QhnZ14qWtoo4ux5W3Nf3J9iN.xvpmYzGH76:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....f23678901256$nBkx4L3Byzx5TYruKd8gOSRFaT4E4lv4YaVMVArGOG0:19:0:ôåst::
+u20-scrypt:$7$C6..../....f23678901256$ihnGf.R5M95ZEat4dS.0WNl5vHN8QWvU8OjFPKvfgy3:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....f23678901256$OPTXk5Q/iot205fJrZn6uZ8f/MBQvnavRXocj3U5i19:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....f23678901256$9Qi/.KyP8z7zHGxpIFvIw0fiTYIWqSdei7UqfHgCUi3:22:0:qerwt::
+u23-scrypt:$7$C6..../....f23678901256$0dbzhibaW/UiO4o1Usswz4MUW698Cp4TrQIiA3P/8z6:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....f23678901256$E2NYgG16j8ZR4ctnsz95lTdzNkLGZFe6ZZHRtdYmBr1:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....f236a8901256$waJh7v6IHMQLuAHGTsQb78uA4mz6fQb4BaLVBVX.os9:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....f236a8901256$J3AehCrlIIOdd2qK6Mq01KWD5L8UPw2GFKcLM/HXGo/:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....f236a8901256$mT2cl9M9fdAnSEs9OPonvydsmIPnpwgryuloMaUnDD4:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....f236a8901256$33LWaf2QV40tEBJNDKYYVfqg8NfpyuYMgkR1Fwx3nrA:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....f236a8901256$GKV/RwbFjF/EFJAB29Oe/ogDs6iNZczbN9J4Aib40M0:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....f236a8901256$SRWeIAz3GxUzVbXW150mKFsL38h6JT.qwunZeFbICn/:5:0:late*night::
+u6-scrypt:$7$C6..../....f236a8901256$a8tGm/G6CDaF3rxKgEKqKrm/EQ2z5zUEa8viW/pyQQ6:6:0:::
+u7-scrypt:$7$C6..../....f236a8901256$9i/V1bNMRaEUYrkVZ1c.4YnQW6fkBsdEqChH9D82NIA:7:0: ::
+u8-scrypt:$7$C6..../....f236a8901256$DqLgo5XmNZMsQ/GNRI3M752G9XtlTWAK0EVEyWebJ.2:8:0:1::
+u9-scrypt:$7$C6..../....f236a8901256$oXMsLpJET4JwaAbnnZtuzYmUfci/euKy1o2BQRzQOB4:9:0:password::
+u10-scrypt:$7$C6..../....f236a8901256$LQXHsC3w5To5cnJ.Op0jOqNvQa/um.huPhqbc1WSNq4:10:0:test::
+u11-scrypt:$7$C6..../....f236a8901256$scdX4BXG.QnbG0jWDEuaBJyIdd1i2nX6Ms1K9kuzN27:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....f236a8901256$WiX7RyyZ4uz1BNv5b8C239oIy6Q.zD9WbmzxQyShDR6:12:0:hello::
+u13-scrypt:$7$C6..../....f236a8901256$/nw90RCOVZF8rrPFmzwSVZ6GNH6sWf3HtQQnd9I9zOB:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....f236a8901256$/aiGFXz.NO/2BpB7nIuwXs9uB1TEIzPpUAFeTcM/iZ1:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....f236a8901256$amKTOQ.ePlntAECRtvci3rb1DiUr9ee.F9dW1iZDYc3:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....f236a8901256$YFA.u6aj46jPSs0v2nihhGydA7o.Btij7iGUZg1vpw5:16:0:±::
+u17-scrypt:$7$C6..../....f236a8901256$vFYIucxyQJfsNpjQ1ftqNkKprwwqwg.tvg.Ex6xB9/0:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....f236a8901256$XWxnLJ5z2aIPRWpP.QB0bLT5PTAe6RsNFTqvAtP5WS1:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....f236a8901256$zH.mperJkCvx7DwbTb8JpGRw3SeM809DFIwTrrZVfF.:19:0:ôåst::
+u20-scrypt:$7$C6..../....f236a8901256$pRUhDo7fB0qhKF8TizhOnYYUY2jtycCQuDateUi9tp3:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....f236a8901256$meNlcQ/r3oyEruUqJVbJJI1kxxiMXrbqrBjijhDuZy1:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....f236a8901256$8omFOWvcv3BX604JXUoO2enTyjdUv0mlTi4Pu/tunm.:22:0:qerwt::
+u23-scrypt:$7$C6..../....f236a8901256$o2jMk38Af4eEAg9OybJTkuFJGJSFDaMdj5D15wtmO6C:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....f236a8901256$gE2IZmcyj6m2QPyrHxdJu9lNL1CJsWucuvicThRTl7D:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb3678901256$r6YgeOlQQA3/M.gLjP/J73m1qfk2T6RLIcqIi.MzGdB:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb3678901256$nP08OhSdyg3lIQtsrr.sQnLwQVOUcDjXNjF3hjdssR4:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb3678901256$wcjYNb8b8GUnGTnamNU32R15ClrFTRE11.YBqmSS.DC:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb3678901256$UcOZnRWDs7zL3q3cgKTnSgXKzgrjWCGdxpNn8Tb9hL5:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb3678901256$pJfZq/g.axRwOH31WpaWKU3XRovac0Wh3kxluIlpkzD:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb3678901256$Vw9fPiIXZn44aobf0TS5Y/hPemmwViobsBawv89BFwC:5:0:late*night::
+u6-scrypt:$7$C6..../....fb3678901256$Lmf0uZHJF7Rmj1LrQOT56dGgiGIiqp6Ld372T9cmQzA:6:0:::
+u7-scrypt:$7$C6..../....fb3678901256$L0iWRu9iWjn8w5qm0ypxztGtgiABrmwc1wL0aJItED1:7:0: ::
+u8-scrypt:$7$C6..../....fb3678901256$KeKrX9qkTTDBMAIQ0BVWkOJePUyPUBa2vNsl2PFevh9:8:0:1::
+u9-scrypt:$7$C6..../....fb3678901256$VXtz38lIJROlKLUzF4uHnhxTljAysMvHr0CKFDy4E.D:9:0:password::
+u10-scrypt:$7$C6..../....fb3678901256$MUObx2ZV3az/ohblIcTOTMZbxcQGDl4RFJGQQVmmOW4:10:0:test::
+u11-scrypt:$7$C6..../....fb3678901256$9cRMo6EGGK.vVw9tC6mA0Eay2g6kNQ.hqc2swrbRrm5:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb3678901256$P4kt57carrcowBsjOxc874XTdIyq1F4HLwk92bm3Ug2:12:0:hello::
+u13-scrypt:$7$C6..../....fb3678901256$FaVJyvKbuCTEgGRex9Rb2fPqMivGSfB.D/q8HHIIGVA:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb3678901256$i6UeREotREWfVVIITHrFVDGg/x6cNHj8QHNzcCNu4G0:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb3678901256$Ai5mTQVInTmfOyGFQWRLQ5MzOKI9G8dimfnturqGaB9:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb3678901256$gT9M00xCzyzDELFAFZx4g8VfKn3UAmHFi4uP52aA.HC:16:0:±::
+u17-scrypt:$7$C6..../....fb3678901256$c/LIgWY42kx/84kdjsktZK2CizTlTjQGEzgxDj1W4vD:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb3678901256$7vdmaFYF0E8girZpGZpOF1XsC.yQd./H9O4vycIIsO/:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb3678901256$PO4hMmvbEkTIb6P16MjqjDkuGZ9K.m7Hh8H076v0yF6:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb3678901256$Ja.hMREOhDVVq4aV3PLZ5x96VT5BEICiXZ9Br1Ej416:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb3678901256$UyYWucdGcTcjnIB4opJDED0ogFfAXMNbOhYZfw6EZ1C:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb3678901256$tQpvvLykSORXDdfpi3cqWIRtf83XsKjE7oIlPQsphp.:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb3678901256$NNUw0tn/54DBXl/USOK8xFFDOR6YqlGR1CrCpGBtvmD:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb3678901256$AUpQ02w9LTcuashKXhLWG5HKFU1cNduvg2gZ/9cYF7D:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fbcfrtgyhuko$SvTcHxMtdc52yaZ31.XPgh1cjDH2kDuwam9DOo5qD3C:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fbcfrtgyhuko$EUmXeKEom36vB2ZO/TCoiw/jOMAr94pPW677P6jRBx/:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fbcfrtgyhuko$HFw/WWLv/UXhVPfsFQ78kG1tkYNipedJ9iLs11/FJV2:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fbcfrtgyhuko$Mp/j/aPliCWSC9FGdqm9O5B.l1GbtvUZuIG.b/um0n8:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fbcfrtgyhuko$eXp.gAkr2DTIvQyoMVaZuGgqvqP2oUcWI.y8zGoHMN/:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fbcfrtgyhuko$xua84DfxGZwaWuaqg1LNXPl2YrPXh9HD94SrvXqSlD.:5:0:late*night::
+u6-scrypt:$7$C6..../....fbcfrtgyhuko$pISLQ./csDEpls38M.JHEJW8bUABRwn1q7lQHCfFZYB:6:0:::
+u7-scrypt:$7$C6..../....fbcfrtgyhuko$jTo9sL1lPYZiTNBtBhYspd2GYBI3qETyTC.p7Yasle2:7:0: ::
+u8-scrypt:$7$C6..../....fbcfrtgyhuko$QCD.okPNHrK4XXt6O5emSO.dNpHoBH9SRS3UEiHaUL3:8:0:1::
+u9-scrypt:$7$C6..../....fbcfrtgyhuko$Xy8Wi4KGpvx.4FwVzRpAyiXBnyoFcFHCtO8mKye16eD:9:0:password::
+u10-scrypt:$7$C6..../....fbcfrtgyhuko$Luk3BRbZV8HJXLUuYkzXeOQ1qiuK6eXZb5YmdQknBY0:10:0:test::
+u11-scrypt:$7$C6..../....fbcfrtgyhuko$xcsNYZtd.kpkD.BD5dJ2hnWwGpcUVfe91M/psChCyq3:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fbcfrtgyhuko$v0AK14dYagsIqMaX7SZzbd16Li27AW4zwMLuXsuZmE1:12:0:hello::
+u13-scrypt:$7$C6..../....fbcfrtgyhuko$0Qqg.HNfhLcG5SxRTf3yrA9N7s.W7Ds59Xu79ZSsFh0:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fbcfrtgyhuko$soQxrCIXPzdA/CYyWYPpuPn07O4hzqGSzI/.jTqvGTB:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fbcfrtgyhuko$ZTqEhiXTQLZgex2j1i9gEhrA5OMtAwD4LnYUXmo4HM9:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fbcfrtgyhuko$5OJ16IeAEtHIkxTRT59RzD9vt3vLUH3UMF3NIBnoPa2:16:0:±::
+u17-scrypt:$7$C6..../....fbcfrtgyhuko$L/aSOukeIQQ9FAEduMjRjM8oq0iBXIzojpqCWNfHI13:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fbcfrtgyhuko$4dvmg4HeS07//k4xXKwChhLvqsqaYYMFakrsZN.sY39:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fbcfrtgyhuko$W6TbrKAbDZMceAkA637waf1liC131bejcIpkeVPzJyD:19:0:ôåst::
+u20-scrypt:$7$C6..../....fbcfrtgyhuko$HPGvUIwB4zFnLn6fBJOhMHjkz2Lr5nQIQrZnEmQEoXC:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fbcfrtgyhuko$AS3W0Kmk1Qs4LGmIV9p.8QUE7Ys2vUnQMyccVecuaI8:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fbcfrtgyhuko$dCYr3FAPGmA5ROrGeXL/BMX2nyKEgM/NjZNvklc4go3:22:0:qerwt::
+u23-scrypt:$7$C6..../....fbcfrtgyhuko$youRAmMk2Ekhul7PGbVtO2JXMUIwYjDUzS2QHnzsCO0:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fbcfrtgyhuko$zu33xQ3yijZRFLfxu0Ohcp4Q.yPct00Cf2OdQJebcZB:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb6321rghuko$NIzQQYbsVY7diRl9.cN18fOswCyOck/.qEHS.PnZ9h6:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb6321rghuko$pm1iP3rdV.vvxmOmuwkd9Gd/h71a1Jp2VhLTZWIeIV3:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb6321rghuko$e2E6CcbRypAVinMfEe1cC2lV3tUnWmVFJtDqN4/Qa0/:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb6321rghuko$NrvMBBbWl7yfzmoMHrUD5ioGuxeKsodXyTaCqLvxcF2:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb6321rghuko$.2RJSP16mlXX8u8mUZ/dgfc5ByI6NRFTQJtfFRtLS15:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb6321rghuko$rWCbtGC.dVqD2qLARHavJXj6.xQuwwlZVToddWBbbI4:5:0:late*night::
+u6-scrypt:$7$C6..../....fb6321rghuko$e5M6Ibvxe.r/vgOHnwx2YdHXeYYzjZ35OA/JnV0uuH9:6:0:::
+u7-scrypt:$7$C6..../....fb6321rghuko$hNu6sUOzrrK875sPKlQfgRCN1GxOY.PjoLCue2K.TqC:7:0: ::
+u8-scrypt:$7$C6..../....fb6321rghuko$ZxRbk5jaAf1Fuahq2FDrR0BUmgFwZ0SW2qLmSr/nuq/:8:0:1::
+u9-scrypt:$7$C6..../....fb6321rghuko$kUT/eZ35jwME/I3.pTGyW72DQnR0w.3elQkeMXVDju7:9:0:password::
+u10-scrypt:$7$C6..../....fb6321rghuko$pGtLDugA1U9Ll.E5YUJDJVr/DSaxyan0mF2WrBeQ3G1:10:0:test::
+u11-scrypt:$7$C6..../....fb6321rghuko$g4FeWnybZLCSArgHAObLRmYwjQ/Iya87FmbUhfB53d6:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb6321rghuko$OzANa.cLWQNlYvqPCbeGcCjUytcBgAmoGvrqREcLm59:12:0:hello::
+u13-scrypt:$7$C6..../....fb6321rghuko$kKZ6J8xdOW3yC9FybbJRWmAwxA2ZV.3ijr5o90Xthk8:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb6321rghuko$sDwAUmEaR4IjJdxiA0LnDIdBct/fgvLfPCGhgnYRNe/:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb6321rghuko$xp/hWCZUBis2V3qFS0wdUzAfIuwPPB5kBAU9UuD3E88:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb6321rghuko$PWkf0SjBY2iy9LYWoOlYKSUr3MCr30K82./vjyf4qC2:16:0:±::
+u17-scrypt:$7$C6..../....fb6321rghuko$42mPNVau5FFbmmkz5smuuXsSi57rx6MOrDULMTvxs72:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb6321rghuko$8x7unsOej/5.jvppA7VTggaLhrKd3GPKcjwSor/w5K.:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb6321rghuko$4RSLix3wTiXGgJxr0VEj466OyIrn6eW8sBEuBa.84EA:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb6321rghuko$2FYn8DRFgJQUDYrIP3AbT4Q8QQ6NNw.v3Qn0M1xlDW/:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb6321rghuko$gLi6OzVkngmc/yk.MHLh4nMqhebn89aSK.z8hIv3KtC:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb6321rghuko$Ets7qIO4J41dyMPCrqSKWVfk92wZRNmpHASPsLk1s2/:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb6321rghuko$fGZ6No74SB/GZfHkkkDP/c3NNv3.hIorQS4ZMntiJT6:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb6321rghuko$uPTapfY9l8cXUs8JUoq0c10fUjSgh0zIyIUZYUF9FBA:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....f23xyvw01256$S5JA7ZaTmxufol6No71eDZn9ttncxWwmejfQicyi0f5:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....f23xyvw01256$LTUZnvzPWpG6Ljf6UobW9A8kY3DJ2RiHy7jbjo/qhz5:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....f23xyvw01256$oLi8CUMjLUmTQgFo6YhBSiF/eRAa2KpNzcocIq9R50A:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....f23xyvw01256$TpuMhcosy43/jX/IPQ780Me3En3wKtUX8GLIJEh29r7:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....f23xyvw01256$vFd/AY11VqAd4MfgejqA.naMLhpe.Qw.B1MZJVwz9Y3:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....f23xyvw01256$NBvrxNAqzD/fkBnzfkroXms6Y7NFd.j/2yOmTrdewo0:5:0:late*night::
+u6-scrypt:$7$C6..../....f23xyvw01256$T2yWcyCPVg8IkfES2GBklbC.ThTxVhZCamOGP3ivg30:6:0:::
+u7-scrypt:$7$C6..../....f23xyvw01256$oJbQd9C5PEl.q1eDFs5wuTGTeQCs1Z0rHzYgpPbJGs5:7:0: ::
+u8-scrypt:$7$C6..../....f23xyvw01256$CFrd/6WazUXZJdzIPZwfBI70oRCYqItq2QKl4BhNn/B:8:0:1::
+u9-scrypt:$7$C6..../....f23xyvw01256$ESN86sdRVJS1gY7DG8247B5au4nCZi7KLONmYMnUdtC:9:0:password::
+u10-scrypt:$7$C6..../....f23xyvw01256$IV6mdBHBCsMY8ElaurLhFv.hl17tcJy/1XrNkYGbcs2:10:0:test::
+u11-scrypt:$7$C6..../....f23xyvw01256$Aa0ntDFUPgK/idDdOqVXz2Vy4sJXNif7rYj17aNm6G5:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....f23xyvw01256$bt5bWDE7lIO5/zRpcU3CuSdvCFvoUZghbv4AyXSUV/1:12:0:hello::
+u13-scrypt:$7$C6..../....f23xyvw01256$rIsSA7ECav8h.sJ0IhyStzva8QZ8zLdUxCnvqOUN5a3:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....f23xyvw01256$6SVfjooPs9rB0lDG4I7XveD2F2FV7DN.tH3aos1fcH.:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....f23xyvw01256$rvrmNHmIK4RvhFRG3XSBgyEYo0HhfJ4FR8Kp0UHsMk7:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....f23xyvw01256$XK7DD3EP0Chk5KwjLc9MliWfSSZCi6k/A4gdkPCkTt.:16:0:±::
+u17-scrypt:$7$C6..../....f23xyvw01256$L/ziYv9NTUuiFnxy0d2Lf0GOAAitCwcXynsQyx471/2:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....f23xyvw01256$/caJqNalX0Jg3SxLaxb8p7UtWgBtEn1GufeeX2htL14:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....f23xyvw01256$fi2QskCj6wBfmdX1HmiUoNeVlxEZeVo13pS7isTSpH5:19:0:ôåst::
+u20-scrypt:$7$C6..../....f23xyvw01256$cRO9y4VjchQe2vWVkLRnMOqH1IAGjEmOMEEyI4jQYC2:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....f23xyvw01256$PGjjw1VU9v5NQm/UQ5QZde.rTJg1Yi9KiD2lUocoqN8:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....f23xyvw01256$39NU63PkmfZObEJHYifakR4vyy/kEyVmP5YAwQ.PWx5:22:0:qerwt::
+u23-scrypt:$7$C6..../....f23xyvw01256$/aF0pQi48aWZDOqM.5raxzgTdzv9mi2RAic4g8.fzj7:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....f23xyvw01256$KV5vqXooGYk2fGezHEeOJxc3L9.ds2tmysIcRJIlSg.:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb3wzux01256$kov8E9EPXgnNMgFDWlCaRcQ2mCpVdNkzA5.xB.5y2i.:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb3wzux01256$dAuhKKrboX1JuXwyjBTGrC6A8yaqLCa4Z0qgVow2d7C:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb3wzux01256$MWoEzSRYYg8wb1yOYjs.C5OFd8imKyoxjTrbsk6n4T1:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb3wzux01256$w7/iBFVycnw.xa2b.wuuIvdfq1AAxBdreUY2zBAD0N8:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb3wzux01256$HbzBSyd0gue0ibqubRDmCxEtXwoVcb/pewU4hU80Ys7:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb3wzux01256$fr7FTSqL5puDRGHOeC228wC2FwZ3o/ZThekGTg8Sw21:5:0:late*night::
+u6-scrypt:$7$C6..../....fb3wzux01256$fMF87.t.4SpXlP53.859NSaDS/xkyWi3gBePLPGulJA:6:0:::
+u7-scrypt:$7$C6..../....fb3wzux01256$hR9ZH14ixUEl6w/7MPGIh7ln3K6q7r7/871T8gpJYgA:7:0: ::
+u8-scrypt:$7$C6..../....fb3wzux01256$OXvUvPTyF0zuW5rB2irlgm.AYkT5XfgrHKhKNdMdqW7:8:0:1::
+u9-scrypt:$7$C6..../....fb3wzux01256$OV5XdHTU2zH.hqP1YkrhTGOoIkvyIfKI2sl61Hgim/2:9:0:password::
+u10-scrypt:$7$C6..../....fb3wzux01256$EQc2Q6FL0Gn/p9wnG/CY4kydUxhqqWYEWHAzJRQ0N04:10:0:test::
+u11-scrypt:$7$C6..../....fb3wzux01256$QzztKjo1m1Cm5XC.Bbb2fVEJ300Xx1WcCYzLYp/xRW0:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb3wzux01256$QOYfr8vfJdw.WaI0d5Ixx8R3bCHdssdrBnev876W8y8:12:0:hello::
+u13-scrypt:$7$C6..../....fb3wzux01256$jbKpB2yFdIgom6BDm5N3SJJVZHUYgi0IZ/LoHWI4i77:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb3wzux01256$F71gK/UQTtfQjnCIpzRKc19GgF8WQVDEafQXCS5rIr7:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb3wzux01256$fFU9dDuqNOy.iO1x6M0lhvuG0YLIvlJmm8sBVtcpe/B:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb3wzux01256$eZzP50sX9oKcuN20xJTl0uQ6cjNBVAbf8EUmP1eVi58:16:0:±::
+u17-scrypt:$7$C6..../....fb3wzux01256$euI0cg2XjK30yI2RSwL4jRIxaAGTGPOQVvNNuOhBk88:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb3wzux01256$Jwuo7/WA8CiL1mfa/mdnfluYS1KyioY.5kZkVwNsR0C:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb3wzux01256$zyzYDP6YJ.ZlTPhS.dAyVXjyA279wO8KRL4/jSCTp0D:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb3wzux01256$2v1nL0JI2wPr2i.mSzyq1tDZfn16yU9zkw1GZARCXD4:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb3wzux01256$fLqFoWcocG8S0yLOvNQ1QyAKl.Ocm.9jaQ15/a9R888:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb3wzux01256$sqa9tnHoNw97kE1NQm4gTxEqsje1FyJbBI86SQHqEc1:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb3wzux01256$IspH4.pDa.MSW7FnxjRae380o2ovMoXCNK0qdSRs6mD:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb3wzux01256$WB/A6V2xQtnDXmAL3EVWE2aDY./mzxOyuyLSi0f5v19:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fbcvatyyhuko$HGffANT61G8MFhfvaBYy6vpMyZoruI5dM3Tl0UnHZz5:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fbcvatyyhuko$4oHw/BTkzVKxLOulTvyGH0CR/bfsTxqYHGZ3kUNqiC6:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fbcvatyyhuko$.kqb2O9sky05b/04c/cStMvDjBTAnKKt9sptsc.bn//:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fbcvatyyhuko$LN7jVHo827Z9vm0a4zvfcY2rgSSAxeAT2YzsfTB.L75:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fbcvatyyhuko$DiXNQXoE75hiiyND65c7Az151iSK4W66hqJnDqYQ/7.:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fbcvatyyhuko$mD2sl9LfTvwhOBt7X9lb8yvaIuoHZqAB019rLbJ1U2C:5:0:late*night::
+u6-scrypt:$7$C6..../....fbcvatyyhuko$QNq8p6YF2cDbIf69PjLH1vstJoQFIwTrJig.1Zh.X3.:6:0:::
+u7-scrypt:$7$C6..../....fbcvatyyhuko$8nUwKCaEh.L78r1EAkoAgUCrt0hcblpqxSY8XQYp4S.:7:0: ::
+u8-scrypt:$7$C6..../....fbcvatyyhuko$t74JrHEa0vcUtm4JN3V.cxIWdSETUQaHn/pSRZmxv7A:8:0:1::
+u9-scrypt:$7$C6..../....fbcvatyyhuko$e0IKVxLt4gn5YVeahACStUlry5/IOBUWFx06iDGUxzA:9:0:password::
+u10-scrypt:$7$C6..../....fbcvatyyhuko$Jn4aKdaaP3eWWuRgGobVKghof5i9RQxTttwQ6UnBuj3:10:0:test::
+u11-scrypt:$7$C6..../....fbcvatyyhuko$PV7w4xN5/0e1H6CaxxtK088c36GjaJ25k9jJUZ0J.h4:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fbcvatyyhuko$GJealcAghTgeFtx8dmeZMp2nmk9l8XHF6WmtE4NZXjB:12:0:hello::
+u13-scrypt:$7$C6..../....fbcvatyyhuko$7QmOrxwmtjZmOyDnxmChlirBbs86bHjfdgNdSQ3aeI8:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fbcvatyyhuko$s.ZKqFMudxnQBFlQtMJ/IJko.hplc1XpIFgI7.e94K4:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fbcvatyyhuko$C3DSTiIMO/NVBICrlwNw2pvCOn2KPf4w1ZVTezxwdNB:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fbcvatyyhuko$WXAqje3cKeQMSlbIpfooB./hCVPXSz0QvS/kcbg4iw3:16:0:±::
+u17-scrypt:$7$C6..../....fbcvatyyhuko$52dpKGGwOqWXKdvs4wW2HzGr473cxzTm/u1i4de0t.9:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fbcvatyyhuko$r0wTgDSM7NkA.ja3VlRncwSRkvAgEpvkSx9Gjfp39j0:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fbcvatyyhuko$mZSdHQB0iTHDKQCaE0JvCsBeSNLpGtuks5ILEVpS988:19:0:ôåst::
+u20-scrypt:$7$C6..../....fbcvatyyhuko$sYF8QqF3VDhYcW6kteiW1uTk48XYizcbYJM.3HJGHk/:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fbcvatyyhuko$5RYGP7otUemo6GkuAODMQ2g7UrCcmiKFFEQNnH9rB36:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fbcvatyyhuko$sWunB.SKDGWBeMHhd5xcThvNa4byUMjSTjP7bpmCvu3:22:0:qerwt::
+u23-scrypt:$7$C6..../....fbcvatyyhuko$a4C2WTNCnJ2Jsecjo2YNpJ3tusvsDJo0ZxQwYK.BlB.:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fbcvatyyhuko$8ucDoGgNJotCDafutA8Qbpxw8KNVxgySxLtGh9oMN7B:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb6ubszghuko$7uj9X0XHXj6dpdsF71WsGvmAvqvEPA67lfEPsObPQsA:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb6ubszghuko$KMhYFeCYFI9NrnN/HYu2gu/34dqgwEZO0QaE9Nl.VWC:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb6ubszghuko$1ilDlLBLwv59yy7RU7el/rGP52Z2noCEJ1P3nbi5doD:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb6ubszghuko$5muUAKcQQMboCzeP6ULMKbsLu2hsAZI96h6bQftWt0A:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb6ubszghuko$dhcSEiy0J4kqqbGbrhWJArCTDkdvo/ICg99Rn6kr.GD:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb6ubszghuko$bpNCbkSaY3ul.M5XmEUjFb6qiRP5MumuoxD37Li6rw6:5:0:late*night::
+u6-scrypt:$7$C6..../....fb6ubszghuko$3ATAkaJ30rAPDTxRgUcnK331QT7rDmVFOglgV/hc.u.:6:0:::
+u7-scrypt:$7$C6..../....fb6ubszghuko$KookHg/lRSV/eUGbpFPIYK0mioeFsxYt0mMbQk1DLv9:7:0: ::
+u8-scrypt:$7$C6..../....fb6ubszghuko$/U4hOQulRtIrldSjlkaYV18NBsjBVABMaD6/44oIyB4:8:0:1::
+u9-scrypt:$7$C6..../....fb6ubszghuko$W3d/mUmghJdCfq6vuWO4O9RwtaPUMKAV4xbYibc7Uh1:9:0:password::
+u10-scrypt:$7$C6..../....fb6ubszghuko$F1S46ylvecY/FRWbkrf13tz5zAgDbgZYfds3fYbnVN3:10:0:test::
+u11-scrypt:$7$C6..../....fb6ubszghuko$UMLAxWf/j7OZSucvrHE0MGwIDQDSUVZJ1HY1LGp2aZ7:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb6ubszghuko$NfrNwpsusqwUvwp2QJtHPnInHFa1P.CM72pPKXMEUI4:12:0:hello::
+u13-scrypt:$7$C6..../....fb6ubszghuko$pNQi1jf/WL2DFKPJ/F6dI6XdyP6g49GJgis2KAKYyMD:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb6ubszghuko$Rs8MYaGpmrmMO5J6f9TvWpcfOWZa9/yhjK/tEGvcEv1:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb6ubszghuko$urUIgniO726aQbo.C980tKVuWsSSYj.RyyJrkWrEgG3:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb6ubszghuko$SAzOQ5I4TCevHtdfFctimf6v6G57etkCYBdT7y9PF8A:16:0:±::
+u17-scrypt:$7$C6..../....fb6ubszghuko$NaoOZHAe4/u52imQTyvEbw24aR2d/HtGM0aBbh9H/O9:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb6ubszghuko$yLFsS8BuwwhvswGQYi.SaWczGJC2VUPRCOm8MR/z7lD:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb6ubszghuko$H3cMpCiDVJZ7XAr1x/RF9S5nm8REo17j8Yii4IjbCcA:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb6ubszghuko$ChGaAvRLeZGYAsgrugJ5KRn/ZwhGJuy50OkDAvJq4h3:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb6ubszghuko$kkPHFH6dvMQnktbscG7OaxnJiB0jYkPdLYLmyy1fcX5:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb6ubszghuko$bTqtEETc0ea7whSAtIsVuF.OEc35Hw4lHc7fbBoXnZ3:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb6ubszghuko$MNzRPryiBIakI0Bud8g/LpQsZJq7mwZyH4uCGCgl9ED:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb6ubszghuko$T5m6LmyFiV/201yGbEzVofHOoMFgvf/yGu2TfNH/gJ6:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....f23tcr901k56$uGVQUvA3Ji/iNUHXMFbd0yR3lC2vZN42we.t/yL/GQ/:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....f23tcr901k56$hVXrAUhhobrKM.D6aoOG6810d9AwS6kgPc0rrTBF.4C:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....f23tcr901k56$OTnwRlqHoOLfmBAoznx7gh6ivQKl5493uCj6.Wm/od2:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....f23tcr901k56$M8JVHLdmE8uOjgjxrIITFdVVeTdyTofz5Wfplr.kFC0:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....f23tcr901k56$ukVLEppu.EI5bIc.xLwGSwg1TjbITp.0/SRzanPUpj2:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....f23tcr901k56$SXFBELiI5SW2hVbqeArd.MVXNDkZsLvywPfoa5mgGXA:5:0:late*night::
+u6-scrypt:$7$C6..../....f23tcr901k56$d1708m2DHDLplSDlqqRpOch5enqahttIs1QEb2OikM1:6:0:::
+u7-scrypt:$7$C6..../....f23tcr901k56$nqRB0S9FWjaNnpTXjMfJbZhwUcUmpdc/E9JGv2LDjt1:7:0: ::
+u8-scrypt:$7$C6..../....f23tcr901k56$7hrreWg537CjcBDah.BhukAFh83xk866EH/ehnv9Bu1:8:0:1::
+u9-scrypt:$7$C6..../....f23tcr901k56$xcDlmpUvab.2HLObbJoIe0PT4xtyP1gwYMS6rZgkpa7:9:0:password::
+u10-scrypt:$7$C6..../....f23tcr901k56$tHNI8gLzu/ZDlw9aVR5srIBrl6NUvZ/fjvmOEumi8V7:10:0:test::
+u11-scrypt:$7$C6..../....f23tcr901k56$tBz6LEA98IECHoNvVEplElAsQ6m.TU1ji95QufLlM58:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....f23tcr901k56$xtDZRa1UZGzzIP.XjLrFHku8RbUn0sJBclF9L6Vcku2:12:0:hello::
+u13-scrypt:$7$C6..../....f23tcr901k56$TtsAY4sAiNt6TC8cIeMgbwD4O8bQXd3hKUxpHTA4knC:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....f23tcr901k56$QWvUn2vTw.XjHN5y4Brb/ZW4xNET7KaNt439CNU.UB2:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....f23tcr901k56$cnqpNhI5ZfiMWvohfPF6FAnIkP9iuIa91uw2GBecVP8:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....f23tcr901k56$M4vdHVIez0SEeuJoPTSQxLp6izNK4Tbw40.omFcUK67:16:0:±::
+u17-scrypt:$7$C6..../....f23tcr901k56$V.1hFUxZzIbbCvKbn69VJieQYnIH9vU3T1W.ANjvxk6:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....f23tcr901k56$d.3Uprf4kQ1YVyisrfBrRQG7LYxi0ZvLPu6ZSb.ZEn0:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....f23tcr901k56$TTT0rEafG/u2vyk4wtwJyRl/cbigXK2LkCqoU8BbbPA:19:0:ôåst::
+u20-scrypt:$7$C6..../....f23tcr901k56$jvShElygUnrlSt2VMkGw8sFsZZnNgqS1YbJgZS87Ah8:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....f23tcr901k56$pig6035r9j3BbaC4WPaU/TaGvCPxUTEKB0crn5DE.K7:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....f23tcr901k56$KdyKKQs.MoeznR64VFV9.C0Hw5DCKHU9dsCAgkD0cP4:22:0:qerwt::
+u23-scrypt:$7$C6..../....f23tcr901k56$7TES3i1F8ph8ebqCQCKA0hCKtBH0uAog6ldyWFNm/D2:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....f23tcr901k56$Xqrcef.NjCZ.yOf/ojJRNokzTZRDaL/JGLtQK2a8bXC:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb3sdq911j56$wpAdapQxur1ZgiZ0wl9wJG.qVYQrPWZKqrZCIARON.B:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb3sdq911j56$yKMGpDFgvYLnSYliRP4S3xhWIpLEK65Rey5PFSE6lL5:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb3sdq911j56$ECImz7/biUGMMzqi3I0BDwll3vS2KUUEreeXDiNLmVB:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb3sdq911j56$lOHTwnV8UfD5Ifqw3yjapUi3FnaLzWkChabnf2EvAF3:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb3sdq911j56$ypuuMMPwtmQ2KigDaL94I40dnJMSatQXlJbheZntaM7:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb3sdq911j56$42b8CQ.p.gH8T/1y12j1cxyvjOjbJvcrTcoJ8/5OED2:5:0:late*night::
+u6-scrypt:$7$C6..../....fb3sdq911j56$OSRSaSlrlQ1tgoxiv7Se3Vo9/oNaQ2RSx0ScGXNmq19:6:0:::
+u7-scrypt:$7$C6..../....fb3sdq911j56$Pxiqza4S2W4hbkpzVuWy3FQ67iO7G3pDI7Vnw/tffFD:7:0: ::
+u8-scrypt:$7$C6..../....fb3sdq911j56$aMCiDQ5KX1TmI00VwbXVVhtjPu26O07gZEm2h3cSB38:8:0:1::
+u9-scrypt:$7$C6..../....fb3sdq911j56$oJ25qBcR0lDSc7S24W2j4CvxAuNar85aDZYSTpp8Rx6:9:0:password::
+u10-scrypt:$7$C6..../....fb3sdq911j56$030cjSIo.rHYOw.MXsBrt32Qg6K72x/JO/d5lq1VU8.:10:0:test::
+u11-scrypt:$7$C6..../....fb3sdq911j56$z3MPWmYES07z/XQt8bvshqg/eRhwnHUVEHU8KLcCW/A:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb3sdq911j56$fpqUXvjDa7UCndvipN9AVC.kVcLX7hrHJHWyoCQmdw6:12:0:hello::
+u13-scrypt:$7$C6..../....fb3sdq911j56$bP7RCo4VW0dH8Uz0UaDRXVp4mPmUk4Itui2PJMaBS71:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb3sdq911j56$81naT4V8QUpIqHUDRJPtsn26ohswOEZiswHcuntIwp8:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb3sdq911j56$4F0HFa7GJh09BnyO2heTmhXlm1u99x.wnOZqht5ozF9:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb3sdq911j56$Zu7nSImF4i2gKsJXbXsLzP8aVrry8LvjwQLacnzHbw9:16:0:±::
+u17-scrypt:$7$C6..../....fb3sdq911j56$dgQMDA1LdIADVaK7Rp9ZZbaxQLkWx.rJfETmNYpL/rA:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb3sdq911j56$B48wpUgCxUuXCL2ndEfCA8peGxBokwrtF9ymNUu/at4:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb3sdq911j56$IlVRsirASH2ED6zSedu.X7t/qNGkryHB8AwX8Nw99Z6:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb3sdq911j56$cVyWGkjDHOEpX0EfwOHeyi99.5GCIToYJqj5BnVwT/5:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb3sdq911j56$3laPTXDVUCov8EAbz4IO4Viq2RZjl65AZo.hF/S88nD:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb3sdq911j56$LwZtk1ABU.3ArDePbhUbDu60hBZR/r6N3MHFC.aXqK5:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb3sdq911j56$sUvSjbqhnyLa1RQaTUY5yiAXG/O4Ol0q7fszVhXBOV1:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb3sdq911j56$0.HKz6gsJ08eOreVU0zT79y0sq986NU3KCsWjZIms87:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fbcrepg2hiko$ASXHcJO6I3FGZNJ8ZoLHLXOCNidbwLja9gmRjdRPg3C:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fbcrepg2hiko$DaYR0N4boL1DMHegGOhJWY0gKvZHnW8iZ40zvpwzWM5:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fbcrepg2hiko$9y0ytve7Kz/feK3s3mKavdmT6pgeeEi2KTQYJTHCl15:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fbcrepg2hiko$fa0nAuj39w7T9j5MLJNRDphUHg0lQl8vBSvJPmSl/C1:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fbcrepg2hiko$rpUcCrUvy5IVimgzcJkYX7t.Z3KDVh4/leLd5.Nxml0:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fbcrepg2hiko$zqUbdmP0g7kDtaTAwDcNcmilL4r70Kmpk6YIuAWEWUA:5:0:late*night::
+u6-scrypt:$7$C6..../....fbcrepg2hiko$bTX.Euq5W80Ka0WtxQr1oO738rKTeULVRFt86iNbBt2:6:0:::
+u7-scrypt:$7$C6..../....fbcrepg2hiko$AZ3fkm8C7sSl/6yL.dWU3puLXRsN/UawD7ksrVPWI80:7:0: ::
+u8-scrypt:$7$C6..../....fbcrepg2hiko$gbd.7HoV4Jlr.HLtzdUEzOFpX.qkaxSGQX6rkwdxUd/:8:0:1::
+u9-scrypt:$7$C6..../....fbcrepg2hiko$btU3ErOG.9KiFjEHCOBS8wwEKphD4KDJuMkWP0SX.i5:9:0:password::
+u10-scrypt:$7$C6..../....fbcrepg2hiko$KVRa9pKUjXeuFtnSPQexwhQUoWnY7iB2qWLaa/ZtaJ0:10:0:test::
+u11-scrypt:$7$C6..../....fbcrepg2hiko$PDGoBjLJfw5Ned1LGxais4XjFndSo59vLF0go7fUkTA:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fbcrepg2hiko$FmRnr0Q6i3nON732.rc38lwArgljXqxtqspPXyNA4q5:12:0:hello::
+u13-scrypt:$7$C6..../....fbcrepg2hiko$4cI0K.zgv40nKd4PGBKP7HarMB1mOM2O4TB0BW7o8GB:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fbcrepg2hiko$w9W4wogWjRRx.CPIl5Lc/eA9NQwwrLLDg7KE85W5f/8:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fbcrepg2hiko$LpeWOa8kpV..AWSDLsjih8z3hvYBIptRbRpQAHcPTd4:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fbcrepg2hiko$YJ0Q474T0n6Ft0fjoOlikXysLgedkzboXR1S63pv2BB:16:0:±::
+u17-scrypt:$7$C6..../....fbcrepg2hiko$.kOVshTxoUfRtNbFZdcOydTIV2dqHUSSfiqhIxFq1TC:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fbcrepg2hiko$v5.PHGieu.rIllRytBdGoyGeUI0WBBttDeGg4a43Zn8:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fbcrepg2hiko$TmRjjqSfZhw0s/1emQY01fGmAGousecROy/PZDzqPf5:19:0:ôåst::
+u20-scrypt:$7$C6..../....fbcrepg2hiko$1/r8hAsiTk/5ELWEOVnNMtUb1Ki6sApn3yZg5HfqSGA:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fbcrepg2hiko$fmEZa4KZdjU5wUDLak1kwKcK0ssLnERQ1HtYYVK9Gl8:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fbcrepg2hiko$48bAvOvk5zqkOLBNp/IT6JzyWDCd3IsN.hlw4K9fJO6:22:0:qerwt::
+u23-scrypt:$7$C6..../....fbcrepg2hiko$adFqG0ODkoW7xv6/.3ZIuMTm00bw1OWLzCvSOV94bpB:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fbcrepg2hiko$sDUcRtj18.6CHQGG5LmhOKF7.H1RkkxsylN8PX0oTA4:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb6qfor3hhko$YjnNY9fkqZ/xRok601VQH425WGqvq0cq8yc2xtV9YE4:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb6qfor3hhko$D80TUX1F2FxSrHNjSRGNvJWU53/vskbENwb3YiOESZ9:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb6qfor3hhko$gZRXFAkBEK7VV0nEdMw8mwEMdY2VYAHbhRouiwnNcz6:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb6qfor3hhko$Lgb13IsfhCmRqBP7Nem/dtQ6RLoCgQTx/H0ztIAb1vA:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb6qfor3hhko$mDx9J0dZFhpyNvM3s576mPvWoHx4XTaBfggseWAJ//9:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb6qfor3hhko$B4j87X0lWCQQnLJY88yJGnRal6bARxqoHkuCA92WHC1:5:0:late*night::
+u6-scrypt:$7$C6..../....fb6qfor3hhko$vTxGEgzko9lPWHm0fAMKdF8ZzSEla6TOSiGt52WoC29:6:0:::
+u7-scrypt:$7$C6..../....fb6qfor3hhko$V0EJ/wtJrP6FD4DxIZJHgulSXJFeuOtsLS27R5SSy32:7:0: ::
+u8-scrypt:$7$C6..../....fb6qfor3hhko$zyHwfUzWzAiU.nqlZ5HRSs3GR3jP4mmIFzsEgZA6Om1:8:0:1::
+u9-scrypt:$7$C6..../....fb6qfor3hhko$jGJF0e/vlOoYSvx56aTIsV1bft2p2MTeS05XKI0qrlC:9:0:password::
+u10-scrypt:$7$C6..../....fb6qfor3hhko$V.6rEudHFLBQ3WPYXW9VPjP5dHZtyhuAxc2kaIIi7A9:10:0:test::
+u11-scrypt:$7$C6..../....fb6qfor3hhko$7tZay3VIwef3DVJmt8R22L/UazECt5PR5UA4ZKx3xr.:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb6qfor3hhko$j9OvGdxkL8XzDerXP/ebO4zpYc.8oS0wENXMzQyM2.5:12:0:hello::
+u13-scrypt:$7$C6..../....fb6qfor3hhko$CFvug8Twp2xmgLGePrBjwUx.BKNGGM9gAhyL7jo/hA/:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb6qfor3hhko$5I1lqAYgcx7d/xbx9qmF.adVh6beE5hJtn5Jyfw5/8B:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb6qfor3hhko$h.F1O51Kh6TWHRiSjIn7t6VAtVtGrKdOUGlvh5QZrV1:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb6qfor3hhko$DtthdYhNRaeCku7Vq0D/QJsJVYblch2nqdc19pMwiY6:16:0:±::
+u17-scrypt:$7$C6..../....fb6qfor3hhko$Kdr2tIXB4dGosDS84ZH3RaXTePJfMeWK8lfMS7EcCv5:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb6qfor3hhko$BD/XugXo0Qd2gM47FSOVtxTpr6BOKvj2pmhqUMEb7I0:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb6qfor3hhko$ODRI3wc2TpcjVTeyztRtO9cR7UGtjVKvha8sSzjhv03:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb6qfor3hhko$DnLmSTJZMUG6ocIrL1PPi7ww5OrpVKDZNiRtjZdTtz0:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb6qfor3hhko$etmVuxIi4jcmEu8u17b..ybLnkCKMyGIlDbok8ZyWm0:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb6qfor3hhko$PAUTk/M2GTX6DWTynCPYR73aRfOTVGlHCR/XVIihn68:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb6qfor3hhko$zbN8//ow0NhvajQPt8QInSsrOh/b2S9ZTMe/rrwBKS0:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb6qfor3hhko$B0tbw7pLfUDsdvQS2RCp4N6z.TvXG/OHixu/Yl/aeuB:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....f23pgn941g56$50.sfFt1kcB1MtpbkOPe2XgLDd7J4OKMnpWbwYOPK27:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....f23pgn941g56$JvBT1PCvHP/amRQHwbZja.8FDHiLUyngOIR5QWNa1X0:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....f23pgn941g56$fBCN92AG6EX0o3q/ckRC0Se8Gp2C1lZhBPyfG0iKTo6:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....f23pgn941g56$8PWme5u4wCzMIGUIqRzkQFQ47C.qnDRF7HFP.tMzTu5:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....f23pgn941g56$iQhib0fMEKsz7uitnHnudqSfCsmsd/NrwHjiQMdOT55:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....f23pgn941g56$5.d25KZ6gnPz8eNuf3AQ7Kc9o/oJKkNuWz2Krul7rJ4:5:0:late*night::
+u6-scrypt:$7$C6..../....f23pgn941g56$YyB4LEIQLtNSMmQIpvWLyzcvLMU407bGoM5Og5ZwCR0:6:0:::
+u7-scrypt:$7$C6..../....f23pgn941g56$mA8L4iVi4sEafq7RiZ4spDk1zXHY85W6n/9ePWR5WE1:7:0: ::
+u8-scrypt:$7$C6..../....f23pgn941g56$e3bA7Z0Zt9uoEtk5IrCGqXtwNHCbOL5kVvl2tienfg4:8:0:1::
+u9-scrypt:$7$C6..../....f23pgn941g56$InIn4FLY2XNjOdc0/ei9sW.bAi19b218C8FLBvoQ.10:9:0:password::
+u10-scrypt:$7$C6..../....f23pgn941g56$XSWImMQGuybKWn/GPeVNzDafjGZBm3eXpXmD/peNgb8:10:0:test::
+u11-scrypt:$7$C6..../....f23pgn941g56$IeQzJ2tWFfQV4rG4fbBWjuDLPj4KEcL1ENaOKsjohDC:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....f23pgn941g56$LTtBvcEp76BZOSPvp7e45LuhNL9FGXY8eq96M3P.jK/:12:0:hello::
+u13-scrypt:$7$C6..../....f23pgn941g56$eAKWwZCr1OuD8JnYg.9QIXW4CsHrJSUoT30jwX5.RE4:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....f23pgn941g56$BtvjazG6M6xnO3hqA6V6xw0EkVCL0LHid8eNn2gAksC:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....f23pgn941g56$Zw/C9B9GUP7hw7UxeFm0R9zwKvga4Kay8nsARHWHET/:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....f23pgn941g56$sISkXvuIx/jVqX4tYcVrUVqm0omV4K0v.Gb5euWD859:16:0:±::
+u17-scrypt:$7$C6..../....f23pgn941g56$5ngxzIhiNPM23ykDA1/wu5T2xm174Ht8K6k6js.2SZ8:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....f23pgn941g56$Tpgek0CRipNCYm1LN0oanEOM4hdbfIjXK61dCeWx4V3:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....f23pgn941g56$l7Xg1sJNmlNvDXyqTEDzRTcD7uibhb8gEY1LEWv74xD:19:0:ôåst::
+u20-scrypt:$7$C6..../....f23pgn941g56$gJBEme4n2A0f9SAQ3ATGtAONJX.y4umvlVFgkODrlt.:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....f23pgn941g56$obdxbAS4rja8X/xRaM2manLMH.dVajKT2eSvda3PXHD:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....f23pgn941g56$KmLX5e8YsjEZaV08RpiRT14YQu9KxMuqOroU61ZpNZB:22:0:qerwt::
+u23-scrypt:$7$C6..../....f23pgn941g56$jGL3wrmOXcr08wzGpKB4/sHHw6tLch1x/wsnhzmF8N/:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....f23pgn941g56$6WzsZuy3C8FfKHGewnzoikDfhJ8ZJGAcVj2.IO0W7H8:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb3ohm95af56$Yq4XgP8yh4DoZTnIIBR3ze632Ly3UalRp5RpXyYYsZA:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb3ohm95af56$d4GqaiALDhLnY37kNsdFPZPy7HzfbsM1hJl//ITvE/.:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb3ohm95af56$fVqjxezqKDn8SABdJRhTdpRjAgJQvTr8TxnL0LTBDo9:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb3ohm95af56$.2P1MrIjI7T1MeVJwldiDVGG6X8bl3H8LJ44WSlFdl9:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb3ohm95af56$h3dac1aPPM/ECsBgBik/QRCL3vLEiayRAquMyk8l37/:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb3ohm95af56$5PhOBVmPco3GsWP1xfeRIiBQDiu/hbGURwDzDVh8Dt0:5:0:late*night::
+u6-scrypt:$7$C6..../....fb3ohm95af56$3IHwJmIjcC/bm2JVuJ/ivOd1PVsIpCL2GldIMrcVFxA:6:0:::
+u7-scrypt:$7$C6..../....fb3ohm95af56$TyW/cp8FSf5fsVZA79u3430i4NjRhiKBRaLhmkem0I4:7:0: ::
+u8-scrypt:$7$C6..../....fb3ohm95af56$2xvl3NhCcVTbAn63XCgnt6YUhjAo6c3eJhoWdRP5VH/:8:0:1::
+u9-scrypt:$7$C6..../....fb3ohm95af56$.bS7iNaJlIHdDr1JPTT3WSajoDbQ/qZZyDA5OPTcYaA:9:0:password::
+u10-scrypt:$7$C6..../....fb3ohm95af56$08N2lZTD9lqFYTh8Cpjy7BiGwkNhKwqA7Rm1rIxD0b6:10:0:test::
+u11-scrypt:$7$C6..../....fb3ohm95af56$7WzSSEUiz0bEKpMD0aPMcFb8tASx8cyVwfV5disxvG/:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb3ohm95af56$9X9ao1i.FgYDZY1qrC3BuTu.rIv9nYZTeSikFV5jzz9:12:0:hello::
+u13-scrypt:$7$C6..../....fb3ohm95af56$1ilXN1vmMex6pZVgrk/c05ODYaW4wFzhbxhYhwrtrv.:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb3ohm95af56$IfF3fC5M8On2ul5XNHp5EFAUVoOPFqTo0gl6JITdV1D:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb3ohm95af56$swIZ9uudDmwFTJCs5AGlNBgkKCHwBuMQD9TCXEEZmD/:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb3ohm95af56$KYtPJ9YnkGkt6ghgt5OhIaJ1pwFlWLvas6xiMRFFHoB:16:0:±::
+u17-scrypt:$7$C6..../....fb3ohm95af56$1GQ75SUOziNfUUj/1acaLUJVl7qKH4mFCmZ3JD7CSR6:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb3ohm95af56$7PbnxZ8fzQ2TOdnirNBdx3ObvgN245Vd1JII4CY2iW2:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb3ohm95af56$UsNnER9bu7Uej8MUxDAMhtgY6OXgh9U4DC2Sf82aNW9:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb3ohm95af56$QyurD7EwI607v8nU9EMMe4XONv5wzQGJ71sD9D03hn5:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb3ohm95af56$SgTWa5nlZ37hBOmt9oln2k1Mov63N2Q3GQzttjo9Pt/:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb3ohm95af56$ep9rD3TLiso7IQybwSLoBO46jtOM5zcY8fzWqoP3yRD:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb3ohm95af56$H14nDZyFsnKkl0nMdIsgcMauIVdfGjf1mIj/w8d4wT9:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb3ohm95af56$fZXd9f3rJnv9SRNfF4Dnn/k1HFE7F/eQ6TUzN76knd0:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fbcnilg6beko$STdIfYvDZAUXpPWMrOKiAIEFEHyPMjKHa2IjLchxij6:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fbcnilg6beko$XTNfsAi6pYxJEl9WxGQWJ/a3v98Nv2eChwihEFPtyv7:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fbcnilg6beko$i55OOemzxRKySrVXuFtW8k01iacZmh9bWVGqKpHBdw3:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fbcnilg6beko$8kMKkd6j.Z6BF4k1KY8ZkwHOlKWKoqdrFbJNzz1NMUD:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fbcnilg6beko$DAi/bWz3GZCdSX11X0lmAJjY5vQBN783CZhuq5mqAs6:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fbcnilg6beko$N5Qqb3DG2RpvFADaLWOh5CJ3fBTEusv3FAN6EprVpFB:5:0:late*night::
+u6-scrypt:$7$C6..../....fbcnilg6beko$ZqfAOyGXDSqMjuC1pGM7knvA7A8Td4I8eViUZGED8W1:6:0:::
+u7-scrypt:$7$C6..../....fbcnilg6beko$UwaS3PcpXgy76kOQu/yelLn7z0FzYWv5LxZAGftbay/:7:0: ::
+u8-scrypt:$7$C6..../....fbcnilg6beko$1CX3xbgdXk6qidj4/faMqLuQUsZAz9VtYNAaAU5IiJ5:8:0:1::
+u9-scrypt:$7$C6..../....fbcnilg6beko$Ri.35JYBgFFb/4V8DOfRgCLh8mjuHleqdob6aaIKmB.:9:0:password::
+u10-scrypt:$7$C6..../....fbcnilg6beko$QIimpW.Rli2tktss27NQ1vofWztm1bti6PsgESIS9n3:10:0:test::
+u11-scrypt:$7$C6..../....fbcnilg6beko$Pu3BcKaI3S/qNwqA26NecNxQwrWcmGIv8m4xxzghc4D:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fbcnilg6beko$rk5VKq7vjpxiqLl2Z/IBks2mpJVvlSlYQJvQ.uuC6a/:12:0:hello::
+u13-scrypt:$7$C6..../....fbcnilg6beko$QgPFue80mlljtfvQN3ER/PN32M9K3ceHdO3NIeetIfA:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fbcnilg6beko$I4g4e3w24086WweEzkrCgPOZcBUB4UnTypHSyPKIOc1:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fbcnilg6beko$udq6ozRM5itsf9.qmpBJJPjxdkPrEG0u4TMQH3W.Cc8:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fbcnilg6beko$UwELUskoirRoNc93.CKRoM7IpKR0NAk73iZz0ji6Og8:16:0:±::
+u17-scrypt:$7$C6..../....fbcnilg6beko$cK7gyybU0FnfPAOxxufhnIsWKFdkqa4DKdaJFy4S/1C:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fbcnilg6beko$LeFXpfDn.QD46dRq75YaqbM9AZoSbQB.xzHvITo9pcD:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fbcnilg6beko$EKuKnGOa8L76xsEbd9lFV4tUeKKeWS5mHLm.jhrIx3D:19:0:ôåst::
+u20-scrypt:$7$C6..../....fbcnilg6beko$REh/oHzIsh2AlpPTa14GeyikMXQlg9Po2S8Q0RT.PW3:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fbcnilg6beko$AcPvvhJ4feQ5qpK1f1mQ8t/BRCXYMssHZn1tFFHLAh6:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fbcnilg6beko$NmTOAruTyR2YdkfRUejTa.v8qaCMs/Q34T2vBZxW3g.:22:0:qerwt::
+u23-scrypt:$7$C6..../....fbcnilg6beko$2JCD19FFYypWLrpMX3YPV6zLQl2p9H8u6eYhWRPoFs4:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fbcnilg6beko$x6rJ3SCpT5ePLtdrwRL9otTTglm27WucYSdee0mCFM1:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb6mjkr7cdko$bq80KeY7g/2vM2wg7qwEcf6I.54oRC2svQKJz0JOSy2:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb6mjkr7cdko$/Zv8PHTdUSYo65CvEt0yXyY3MwEQgh3NiLcvxlirCW.:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb6mjkr7cdko$Ov83dngUI2hGg8x/syy.W81a8inwDJte492h4z4eAK4:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb6mjkr7cdko$wTNi9Ujcd59chfjiRyTce4u6skexCeIFBZLJ7J9Ih3C:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb6mjkr7cdko$LLBaut/XbgSkgbJqB8g.ymPkXWnO5ayJu62ZZ3U4YOC:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb6mjkr7cdko$JLmHUHxZ2Y76k49XzZJUGqjgKCBV2UcWpVz/cdr/693:5:0:late*night::
+u6-scrypt:$7$C6..../....fb6mjkr7cdko$qR5ImXP.X5Zd5UOrVbTGdp5MeFL40dr0JK9DMHaaaW6:6:0:::
+u7-scrypt:$7$C6..../....fb6mjkr7cdko$4ErUDW5ZrV45ZJIXyhaw4RPvLAv4qejhbrIbJTthav1:7:0: ::
+u8-scrypt:$7$C6..../....fb6mjkr7cdko$FMPCwq2g10uP3A.EIK98DfBzqFjIZKYnC5H0W/TNRoD:8:0:1::
+u9-scrypt:$7$C6..../....fb6mjkr7cdko$Mne0PBmgW9aaHXCoRzurcWxH1R.nok/1j3Vh7uoxDJ6:9:0:password::
+u10-scrypt:$7$C6..../....fb6mjkr7cdko$3b.0wfZws1.MJ78jJ2ZnUGlC74eGFOwETqmS3wIgI.C:10:0:test::
+u11-scrypt:$7$C6..../....fb6mjkr7cdko$2QBxcAD/0eGQlTowsP6xTy0UKdzNdNgZ9Ovwm3Cm7r7:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb6mjkr7cdko$q11z3mJs42Couxrje7ZGu7AlrhoEhEyaGQ7y8nwiZE5:12:0:hello::
+u13-scrypt:$7$C6..../....fb6mjkr7cdko$fpLKwAmKokPfYxVHrw449.p/hgtKaDOzQwPzaM.zq68:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb6mjkr7cdko$obUd/5/ObGYHYj4OpbiJ.ys5C40deIXUApG3kTAYRS9:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb6mjkr7cdko$NROrRmVHbr8eovBYdPBeeqaf3/4FEK9uGxlM0xB2tJA:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb6mjkr7cdko$LPjsFQQ30VsZXk4YL.vgG8Dxv.3qXBFv1N2u9xo5St6:16:0:±::
+u17-scrypt:$7$C6..../....fb6mjkr7cdko$6760oXejWWF6iOXCX4yInH8zUImK5IczQqQGDKljD4A:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb6mjkr7cdko$6EIqs7KwhX4VNapYEcn54XU2tXfbtBgWZwjnmrZuz79:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb6mjkr7cdko$wmzwiydsYltR/wuAjgfyS3HD2nib/eat6ECZHmII0A/:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb6mjkr7cdko$LTerhy2y5q2EY6MtYEHaRRB3OVo2IkVpra9pk05ODt.:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb6mjkr7cdko$uYM6liE5vCccCwuaJ6s52yxs0iS4P5B41vIfKVQL5AD:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb6mjkr7cdko$8lOPq6Cij3ShSzPhX4zOBFpQ2wSpT/S2GPmWdqiLHZ4:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb6mjkr7cdko$FPet3YqIMVD3xr/lf6t2tvDMMI2HQ/PKr/p0eYDGjG8:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb6mjkr7cdko$WG3Y70mxsu7zcegFdXcr1LvDDUOsm4fZ4BgF6D8eQ.4:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....f2367890dc56$hL.igsd0OL8T.u2l.NNIhiRwM1ZI4IQpDUbvhf/MtyA:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....f2367890dc56$iESpMH.PV7r1GM99RKMrRDgssvRl97Hp.Dqzn7feDe2:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....f2367890dc56$LoAYr8hPVkygM8qV.duMlFl4T5JH7y0PUwF0CIf1SH2:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....f2367890dc56$0WDMWMnGPTCZe8ihTBvWLyZx2WgbyK0dQWuNfJEq9V3:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....f2367890dc56$75asOUnQjRukbnRdIWemxEAvKrliE2l9.WSvRM9x6xB:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....f2367890dc56$7Ij3155KMakGRwzc2uZwnrJnn23Au4Homougz/oWdSB:5:0:late*night::
+u6-scrypt:$7$C6..../....f2367890dc56$CYa3QyOtUB6bteZ2IeewWPuQlY9eopjQFzcn01Jk17D:6:0:::
+u7-scrypt:$7$C6..../....f2367890dc56$1D7hdW8upcGAr5BskUEUMm.z/CLQi8T06x2FUgwyAmC:7:0: ::
+u8-scrypt:$7$C6..../....f2367890dc56$mcVTCqhWautI5w6iMBQqJT.dnfu/hQx98zw0ZHRqaO0:8:0:1::
+u9-scrypt:$7$C6..../....f2367890dc56$QIxZFzcjgJEYR.IRB7/Yr4mtMiijlyGZY.jRUloNiQD:9:0:password::
+u10-scrypt:$7$C6..../....f2367890dc56$iImFqGFuyiIrjhPwaMjon0iXGLaT3/nmmghPnsTEnk2:10:0:test::
+u11-scrypt:$7$C6..../....f2367890dc56$pzvptqdaVBcYMBK9lHOdmhh2q76iu5R0gYiJgDE6HO8:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....f2367890dc56$9UyiWx4O5ih/lGXyJP2sm/9Yi/gPasibVvnmEp7pqx4:12:0:hello::
+u13-scrypt:$7$C6..../....f2367890dc56$rz8thfePpZ.KJrThu3CXCvKxPOU1fUw5jby42l6F1F1:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....f2367890dc56$jzeyCv0MdnYAVb1ryKh4j.z2nlvGV9zW8AttwPnV8m3:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....f2367890dc56$5iD56.3CIhw0/oBPy14WxyJI0T7.3J8JQ2czF.OaYaA:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....f2367890dc56$rRm8fZQoWc3wcZQAaHlRcJ.wbNEsq9k2nTtgtPvArT5:16:0:±::
+u17-scrypt:$7$C6..../....f2367890dc56$MeFZm4rvmJFLUdat351jR2pR2j/2uq4zpTfQWEiH5p0:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....f2367890dc56$hPDF2LsNTz/VGm.JDlStKuPJPzwq5IqvKA4HD.uFSd9:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....f2367890dc56$OsQUsIcYd4bEh4kpsTy4Tc12YHoAaPf9SGViBx3jb79:19:0:ôåst::
+u20-scrypt:$7$C6..../....f2367890dc56$ZBGlaEH/vV1ZvbqvH5tk9PlPH.1vNYTTpjnR/bzo1XA:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....f2367890dc56$I2SEZOxSMtUHjpGbXzM03F7gecULKvQIhzllEy3QMqD:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....f2367890dc56$2HYIOPiT/cLasZ2kp1MPTGjIlxVyYoDzIogOjSDZ0q4:22:0:qerwt::
+u23-scrypt:$7$C6..../....f2367890dc56$o.3k5YJPAYOl/7WkK6XEVd5ubqMyGQiaR1OSXtB6Br8:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....f2367890dc56$8pvNHJpilHRNGA51XMGPCmoSSeLVnOoqezAMNM6w2O6:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb367890eb56$w943HhQz2Ru2V5WysQniRFMQv/TfBIeLOFpzKZhsvS/:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb367890eb56$rVzJ.XA2ZAK1lsPEuLgonO9a6E2LLy4VvjDHONWdWk5:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb367890eb56$9V7IoQWUH.j1uQQZ/iDJJvlCrODB1iReg5CGdJUOnr4:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb367890eb56$3htUWMyxVU/8ubrX0T1bHs/xT01dC9/q5Mpq/Y2TwP1:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb367890eb56$sWFT1eVcVwfQAw8M97Y/f6/ucH9CcFwY0t3OjB/sw58:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb367890eb56$J4nyHaBHpahg.5mxnQDd4xV9uf/Lx2ZEo1MtuxKXgQ.:5:0:late*night::
+u6-scrypt:$7$C6..../....fb367890eb56$J0VVeX08GfrbctLsJI5aglJZXa5ArgMlrwiKHIz6/sD:6:0:::
+u7-scrypt:$7$C6..../....fb367890eb56$a9wfgM9VdiPohaX4Vcf3O63HtXRi3fHeoyNunvGaFY9:7:0: ::
+u8-scrypt:$7$C6..../....fb367890eb56$Fqf69X.k1kf16o0cSi1afRyssxJX9Xns69RU1FWkqv8:8:0:1::
+u9-scrypt:$7$C6..../....fb367890eb56$hYCvD1EvfzoJVL1rYpGZSBpZwUrx5yaYy2qJ9r8o0EC:9:0:password::
+u10-scrypt:$7$C6..../....fb367890eb56$jlC2RqF0jxugJRDPm9fgy3V/yn3PPipGfZgqYJK//R3:10:0:test::
+u11-scrypt:$7$C6..../....fb367890eb56$45b44UxknGn1mAJaOlb0Q9qLWZbb7viqJ2K6GB11pf/:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb367890eb56$b86EpWHh5t9RnZAMI3xOXPlMD2oxoQVPOVvkGx.0TK9:12:0:hello::
+u13-scrypt:$7$C6..../....fb367890eb56$Yy1Fc7Ri2uKH/d4y3lppyIkDR3uYHRWgWrEJHRxDiW8:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb367890eb56$w6VkL1n.NLc2DIDaGi5uoK3Uir34wo.neHObaAw7Y8A:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb367890eb56$Ug4hkZpkumug8I8sobnCuqAUftV6/.KCkQ/hwCeGWt/:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb367890eb56$0ejpTpISUg6KDtcWfJtG0hamtqxw0rV85JhWdOvWUVA:16:0:±::
+u17-scrypt:$7$C6..../....fb367890eb56$/7tM2hB80JsomO6iF7X7xUAu/ECPHKPLxSTB1j3Odo2:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb367890eb56$E.bswOr2D/z9lg44Tds1fhdW9W65.lRQ4aq4NjFshn/:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb367890eb56$rROAWlFlELLfG59KKIO6RnukFvfgTpSiEg55XhZsc42:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb367890eb56$eCyDJwBKCT/bqIFb93o8J6BtnL7E3nYuFvDR8wS3sgC:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb367890eb56$Htc6azGC0BdyGDmS8hUrKylj0WXlpb8L5EQVWL59Cu.:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb367890eb56$iJ2LlLtIxTL2aUTmYaT0npiuyMTaBBkcHHOyyjDw372:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb367890eb56$WnNhNtzlifglQAI99ZFTb.zdDShuvqn/S0LXie5ESI0:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb367890eb56$yss29qNdAZVOXv8X8J3yZi0lIYpDMoH3HlzndtoN333:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fbcfrtgyfako$WksU6QIinDbEU/lGbua.QDWvAOvuyvx2Zq3ILTX7Pa3:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fbcfrtgyfako$dqiFMGuojNa4ANGcajREynVgphZnk1ELXKW9ksAiJb6:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fbcfrtgyfako$iNt8fCdmp2q8zovn/7guCa1Ceo18tqM8.Wsa/.FT4A8:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fbcfrtgyfako$02RbsoW/P1zACRuUONBHk.wiqZKxcg5Ee1nGdlhfrA4:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fbcfrtgyfako$Js5aiiigIuGk5vOlVbtC55YXwZ8OH31y809F1olLEt7:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fbcfrtgyfako$XEf7vYbxQjPxzb0.rdM/mqqVAuiQMJtQU7QEakOkC08:5:0:late*night::
+u6-scrypt:$7$C6..../....fbcfrtgyfako$elvkdBW/En49rLJBRKXpiG9ugjtWrQP75ZMaQaE8RCD:6:0:::
+u7-scrypt:$7$C6..../....fbcfrtgyfako$6IC5XavHYSmq/BoHbozIy/Yi7cOPxEPscybGEUXn2u1:7:0: ::
+u8-scrypt:$7$C6..../....fbcfrtgyfako$RgumhGYDI0nWamMEYDZwpb.oPuoHPw8/lyOkZaRVynD:8:0:1::
+u9-scrypt:$7$C6..../....fbcfrtgyfako$127CCfgvTGRuNz1cHg6T8caiXSY/sLH928F4Yc.oNr7:9:0:password::
+u10-scrypt:$7$C6..../....fbcfrtgyfako$SubwB7danwSYM8xRXAHMsDQ.32tTENO6szLxp4vlxS9:10:0:test::
+u11-scrypt:$7$C6..../....fbcfrtgyfako$WRkEITX.wUIBKcy/G2u68N6qaLTmhiJ3j9IN409kmj6:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fbcfrtgyfako$15TzlfitqNZTeyQBEEou/aNxd.kqfR/jCHVRV6dxH8B:12:0:hello::
+u13-scrypt:$7$C6..../....fbcfrtgyfako$wXiD9v5itu83GafCSJPvpi.LBiTsXGqVwAEz3.sA6b4:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fbcfrtgyfako$70BJrvl7S88B1/baJtolwI4Pmr/9yjlxKL2nV/dJre4:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fbcfrtgyfako$x/smOtwKnQYWUEmegiJWHcx0WMIsSSUvrnvrhWOBRa8:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fbcfrtgyfako$No4ESxpZyW0bHuRX4xZG4Oalxgp47kVef2SGFh92Zx1:16:0:±::
+u17-scrypt:$7$C6..../....fbcfrtgyfako$Pa1UkanzywxnPiIozcmXR6U7bLSqx1FzyWTADRCTYi1:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fbcfrtgyfako$h5BShTr9oGld8.7Z/ncq5PDNcjIi00EzIo40MUUzci5:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fbcfrtgyfako$9ozPkjvrgXcsLB7mXB01C77luD8uAbQt3ZqtYfQBXC4:19:0:ôåst::
+u20-scrypt:$7$C6..../....fbcfrtgyfako$Ko.qhKbkGWQiQi/2JR5IyABEptvn8fKjUkb9X1s1QHA:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fbcfrtgyfako$PSQOSQBLIc6mEq43k7XerBwYqmG7LvchPAbiCacO.s7:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fbcfrtgyfako$RLOY7dam1C.9VQRkdUyOugFBlBUnR8G22gv.N6Um1a1:22:0:qerwt::
+u23-scrypt:$7$C6..../....fbcfrtgyfako$TwBXy9f.gw7cI7CtJcBrJJqr8XOo6AvlfZVsdD6ulRC:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fbcfrtgyfako$GMsc2RL1N7pVpxyifWeQhkJme7rKgFATcXWIh6F.JAC:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb6321rggzko$lw07J3tvAmG05FpcgR9jP4tyzh46U58MASDnuqBkfHD:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb6321rggzko$TVRMyrbd/YstOl5Uu0E2zYXpYaXUGcJ98.molKqVWY7:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb6321rggzko$iEGVNIwCjr.vpi0eDiiCXAjarXzv5mpbWq4XzVxx7S2:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb6321rggzko$SyyzpJ5E4bpugJzc3ChHfUWcVbMznLaWF8kEIHER5R.:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb6321rggzko$2ctXoml0B9r2aTMcTeORE/nfBgGOIGeHYS9d5V9aFM0:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb6321rggzko$5y7SIRbD4NHvRs7U6hiEj3TCwkTkgq72QRcjSfkB3YB:5:0:late*night::
+u6-scrypt:$7$C6..../....fb6321rggzko$WTDgmEZi3A6dVoXSBw./dD79kYtKnQgjmud7BTM9Ei1:6:0:::
+u7-scrypt:$7$C6..../....fb6321rggzko$1hFfYDgkMiBxrhADjmfVjcQW1oGLshz72HKx4CeliN2:7:0: ::
+u8-scrypt:$7$C6..../....fb6321rggzko$WFUNWoobpEZPyAGh5i9EApnSoyxEf./5TBH2e10ftGD:8:0:1::
+u9-scrypt:$7$C6..../....fb6321rggzko$w1EyNlurMk.qtowQ4qGbyRkkVG4lCj7VcnLLLhSI1K0:9:0:password::
+u10-scrypt:$7$C6..../....fb6321rggzko$afSnkYdMZNGeFSdYjun8PdSYLZdpFUURJOTWz5I.U98:10:0:test::
+u11-scrypt:$7$C6..../....fb6321rggzko$o3DRCBotMHIEfialolL1qh1cRXjIjOG.PLAh04/.KX8:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb6321rggzko$8K1ED0Z6JprLcnTtsLiCttbo6hIZw/5x2C2cWqqa991:12:0:hello::
+u13-scrypt:$7$C6..../....fb6321rggzko$9kTbJ7kDRDgyg.X.oWFvlTE8KUrlhIeyrUDtNZiBK85:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb6321rggzko$B6EpZbExfAhmnZO9fQvIDbx8YxrIG3bBtcSDz72uUPB:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb6321rggzko$bEOTMSvMoqaxG7ajFCgHv9SEokSMq4iLeQ8bGPFB904:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb6321rggzko$yCwFe48HfbWp97NhBWioofzeDCwz1rh5UPv.upKQJx3:16:0:±::
+u17-scrypt:$7$C6..../....fb6321rggzko$93NdcbHQDTAL845RzcVpL95SqXGvfC5gtq4mZpDYYA/:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb6321rggzko$HNUXHumhrHySc1onu6.gs7vJElsWMjZwOJlTxxIxTRD:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb6321rggzko$I6cSHYIr2FhNn9f3ZivbIexgD7bTWQ07grs7W2X7/t6:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb6321rggzko$WIwugYs6M.dVgdH6dHWWuX105Y5FVSW/ZGHiySOpUY0:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb6321rggzko$rf6FbNmxYn3iQvjjOTAdZY25u83sWvT5MIEUoW.qXeA:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb6321rggzko$zsENXJDczU9M34/MvvqpRuuyTsDsdBmhmXkY/SkT6CA:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb6321rggzko$rLbuWcOFP4aNwb4x2n3MdXaW6RH/Zk/19husk3qFUV1:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb6321rggzko$aowuzTapxX2P21fGlvRXtZA8HFiXG2WmKWfltzXcPZ3:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....f23xyvw0hy56$6oa.ODWI2lfyd14FeYt/mn7hUVk1y72WhECFzZqp3E1:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....f23xyvw0hy56$yCqLay5nMr1KsL9aJo/XI4af2TxfDPqlwqYcbkY.lV8:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....f23xyvw0hy56$8yrHI4pEiWHvFN5gJuTdfs9lgkVBOVzEn7ikKSTGnt0:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....f23xyvw0hy56$ERan/xLrkB7VqG.S92dwbmz.MgYBeA2pWujrQnxnmU5:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....f23xyvw0hy56$/46WtAfbf8rxxKI1OXByKgnNSQ87ZdZk7kCXPkDO202:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....f23xyvw0hy56$iO/nuClb0xsqYsQZiYWrSCz.2ThfHuxH.eDvZ8QUcL8:5:0:late*night::
+u6-scrypt:$7$C6..../....f23xyvw0hy56$RqTqinqpsxm4nYuKhL3l6i/c5xpBloj03A37Q6jGz11:6:0:::
+u7-scrypt:$7$C6..../....f23xyvw0hy56$nMQNZz9wD1x8pv0p9ZxlmTLI67hpv1XBqnjgV5EBUj1:7:0: ::
+u8-scrypt:$7$C6..../....f23xyvw0hy56$elP6gN2PrpZVDFVnz7ULb23HLcRgvLq0Gq/pgw.vYm9:8:0:1::
+u9-scrypt:$7$C6..../....f23xyvw0hy56$Hb0772e86oMaSoitHjnBLgNwHeEVpGfJkPZDQ.M.dtC:9:0:password::
+u10-scrypt:$7$C6..../....f23xyvw0hy56$7G/Uh931qmU1beMivRLdAMqhQaknFx5D0Wx8JoPTAaC:10:0:test::
+u11-scrypt:$7$C6..../....f23xyvw0hy56$WbgVYU5hXQ/owERVrOo9yS8xraHUlBN.gm0koIpymC/:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....f23xyvw0hy56$pWGQOm8DlkHhmmKA0kBr4Bnq/01Q8f6ymlI4b1PDNiA:12:0:hello::
+u13-scrypt:$7$C6..../....f23xyvw0hy56$XFtBVNFMjjLAAyuP73imRy4ljRTSP1f28s5aM7Tp7L6:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....f23xyvw0hy56$BhOqxQyIOMIDKptQNvmmv8PtK305sMxfdzDoDkpdsM/:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....f23xyvw0hy56$NC48wTTQi9DLxRAICbJNvRTt93Vr9bD2s3zT/epAcI4:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....f23xyvw0hy56$PTUSgkSeUl8Fdk0UkeUE1LW76ygbxtQGxEdl4Z0o2z2:16:0:±::
+u17-scrypt:$7$C6..../....f23xyvw0hy56$nyUmgUY1umxTTlkmWHMphDAceXhOCxOHVaA5wkh.mLA:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....f23xyvw0hy56$c7OEM1rcRVGaV3AUHzsd.oEM0/kweogq6HAZI.ZpwK0:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....f23xyvw0hy56$1lKH5FF6u89LZLOqVQAc80.V3XkZ5WyMPA1utLG.zN5:19:0:ôåst::
+u20-scrypt:$7$C6..../....f23xyvw0hy56$F0dIeDEohmfrvcJHOmX.CIk4otwiDPbxRDgenhY1XP0:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....f23xyvw0hy56$bPFytSgafGO/0fisiUUB2mYDnnXabBQ7pNFMWdX9fP0:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....f23xyvw0hy56$ZaPJfulEwWUXTIdLBzPTcvZ8IUQMYqO9Ze1796GLaiC:22:0:qerwt::
+u23-scrypt:$7$C6..../....f23xyvw0hy56$bTP0fKeB.JYlEfm3cq.XBylK4Wy4/tbcQEMHB805FVD:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....f23xyvw0hy56$sJ6feqw/6mCF7t3cH1Vy89x0tCdvX.gQYHmceEBDaPB:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb3wzux0ix56$SJ22vwjWPpjGpkucj0p/SYJRwkpKPo9ZRyJ2vjvS3f/:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb3wzux0ix56$W1dDAxlh.YMd7Gf0ByuDnkSOqK.cDvCdbI8sG9Smmc.:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb3wzux0ix56$Pyye4xaX.8xUZsvRliRv2FH6MoqNXtoz8YHjG54VtD/:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb3wzux0ix56$HSN5VkP/okiQxOchqbDQJJo.Xgc77gesQFFhnAEeD93:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb3wzux0ix56$ODJp98r85KzX2lY0246lArpb4.AL0t40sNUPaTDA3a3:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb3wzux0ix56$xq/.7GV3w15rv8ZSIv1Xoqa8cGxaiD5W.swlAvsWK5.:5:0:late*night::
+u6-scrypt:$7$C6..../....fb3wzux0ix56$YMzVqu3opbg.Y/BeK/z0mrCrdAEiFCR.4ac5zqGj.A7:6:0:::
+u7-scrypt:$7$C6..../....fb3wzux0ix56$RMK5vf3W.8iwH81S0rFqjY.KkG/YUN6V4qssm7PaR3C:7:0: ::
+u8-scrypt:$7$C6..../....fb3wzux0ix56$du5cumGAUieDabqli81HUJAwPXerzB8MXrEYwGxjluC:8:0:1::
+u9-scrypt:$7$C6..../....fb3wzux0ix56$e.7sblIbhQKNUSLBgVbZj9R8Ad9yhiLJsI7df2ChtH/:9:0:password::
+u10-scrypt:$7$C6..../....fb3wzux0ix56$.BV5lL3LBzpW5YF/ReGKuE13XqUDvCGs.rY5jHd29vC:10:0:test::
+u11-scrypt:$7$C6..../....fb3wzux0ix56$K/NAOal338g6qiHk3Yd3YfRgfRGaYl1mnV.dap4nm93:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb3wzux0ix56$mw2d1tQNv8JLIR3K8U/7LtTsbLATdebkBvyC1PpzMF2:12:0:hello::
+u13-scrypt:$7$C6..../....fb3wzux0ix56$HnRv35j2hwdpuIvBvE9uE0zsUV86mSxn4zbhkQpaN3B:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb3wzux0ix56$7xfiL5ezv7ySRf5Pxk1v163bgtZhyqmW.eWbEtNGlO/:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb3wzux0ix56$KkmiyzYQwNQam.6HudxCyQMo64lvC8Qi0ulsdj9VNqC:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb3wzux0ix56$XYMuoQu1JmLx4NXrVxIQPtEoMDqpPDOkh5YWr7wjT3B:16:0:±::
+u17-scrypt:$7$C6..../....fb3wzux0ix56$gw8r5hcYwToCdsBW69mQ04vQpJ3qZuP02yGZ4WwDw7C:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb3wzux0ix56$NXItu4dFytvB.nrRbJO6MMbxLm45KX7CimJI1QVrym/:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb3wzux0ix56$ss3kNZGoskEQfiT6JHP5LetkZKlYJvCm6v8ILXReu1C:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb3wzux0ix56$RlZAjpd1cktSdqZXjFpArfBdFEOHmfYRo2CAeRl4Zo0:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb3wzux0ix56$SgoX27wnZCs6ECY9O1ANxvFggooLhXHOMKM6R0.qvK9:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb3wzux0ix56$epcaGdv3uCnoZHmEFxtrpXbFzhmPyfhXkD5H1FeDg0.:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb3wzux0ix56$wdTP4JVCfY8ylJG1V5KFgVS2sM3OKwhWbgHuQGnky/9:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb3wzux0ix56$h26SezRIqVtjIAYWIQHklYdtsXZFHdXHPjzmsyEQ5O2:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fbcvatyyjwko$wcRaUIVN6NVFtLrK8rUc6I24/uXDiDa7gO6bVfZkYi2:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fbcvatyyjwko$BtoBW40v0BAiDHW5bj5G.Y0RkC3DlTEW94MiALAUL10:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fbcvatyyjwko$RxkuEeLh7NwSoXfjCRmIJNEDxFB5wFo8RhRP/auj0h.:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fbcvatyyjwko$5vtseb/ZAMEt.6yqGHFP.nZfOCbeFSNT8ZSKYFWjabA:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fbcvatyyjwko$9PUoPulshYRvIIt2l0cIzXPzalIeRnMIViVn2DQvbE5:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fbcvatyyjwko$QBBa2Z8noLDi8Wbz4uKUz2wJbWE2WIPuNyi3oBVC3ND:5:0:late*night::
+u6-scrypt:$7$C6..../....fbcvatyyjwko$h8NgQBuv.x4txxsXbBc7cumspT27AYJqaiGnO.Hp6dB:6:0:::
+u7-scrypt:$7$C6..../....fbcvatyyjwko$dZjwg4noRX4NV/mCTJSpG9KLejpZFhYsLDr9rF/45ZB:7:0: ::
+u8-scrypt:$7$C6..../....fbcvatyyjwko$vR4BcF47BCKC3L0YjL0yOtsnVUD244p.7oQjIQ.nD76:8:0:1::
+u9-scrypt:$7$C6..../....fbcvatyyjwko$8ZrGNc86kIJo8tZXW3mIIYAzMj6Z0//PNaaf1fa.X80:9:0:password::
+u10-scrypt:$7$C6..../....fbcvatyyjwko$kF1av075zDZijbR5.4rIcUqIpIE/K2Gx7PN5lYqvDDD:10:0:test::
+u11-scrypt:$7$C6..../....fbcvatyyjwko$GIRoirJLS5SG.laBs7fTIUEZstcRM.ng1Ge60ax9l98:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fbcvatyyjwko$Q2yCyMZKEtsNutBRkTsIsB0yo3wcLXoHEO4aMsYrkNA:12:0:hello::
+u13-scrypt:$7$C6..../....fbcvatyyjwko$66/LEbF1BfMqybG8eJ5vqFSSbymCtT7l5o2ziQuHfF1:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fbcvatyyjwko$sF0hpXEddrmcd8WDDqxKQN31UEalkHCNA1G8CzCD5t3:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fbcvatyyjwko$XN2QpMVwio6y13vPUl2URujQnt4zBVHdAu6kbVDhF83:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fbcvatyyjwko$HtNJ6aScrW9cj28Ey1E4/nHWjWEwM8PMCv.UUyAPgN8:16:0:±::
+u17-scrypt:$7$C6..../....fbcvatyyjwko$p5bmvAYm2KZ3VYYj3dnEIuBtVdGMFSVDvRvpi2gVa8A:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fbcvatyyjwko$tONr0b9oS71PD8.wvI7w7W4y0PFtoRgRsWi0/H1t/q3:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fbcvatyyjwko$uoiugkUcRzO2L6hgaTuikvKD9js82FphIGP0cFprX77:19:0:ôåst::
+u20-scrypt:$7$C6..../....fbcvatyyjwko$DH4CCdW6f3z.SgJkwRK6N1jSvt4BcQr3SRcucQRvBRA:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fbcvatyyjwko$9sde5Wk3q1HeuH4M0ShCWDhhKms5bu8TExUFPCkBvz9:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fbcvatyyjwko$0pGcxwgEtbhcQ0tcBbcVRzyh3OInyCL8gqiLEZ0A/36:22:0:qerwt::
+u23-scrypt:$7$C6..../....fbcvatyyjwko$rK56WVYu2x150Gi57N5NSC0cdVDKRQ66NdSxrXEEt47:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fbcvatyyjwko$KoJH6iZwS/Gt/ZBT6qLDvxJkBocFJeUXII67hVSyQa3:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb6ubszgkvko$EIKcRusYXZQfGLhPvEY0EVRslxMt/RWN7c974u3Fwn9:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb6ubszgkvko$71Ojz.DOnNSYaR64o1FWu4iRLPVNn6zG1lltXsXkpX8:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb6ubszgkvko$YrEzn15gODEcbf2L6ey/qzeE27Q.09nX7mJI.wluukC:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb6ubszgkvko$lRnsYvJiyNf.ZaP3NZXZ3iNQvZH2d8oSRFU0LhyjDF9:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb6ubszgkvko$Gaw9U04ZzS149fxhLs1T.lGKUVkAY3NnCIFWQLcqRZ6:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb6ubszgkvko$xoFQtlmuVzSnCpBtHzclUcfHg.zmH4qRjm8Qa87gsy/:5:0:late*night::
+u6-scrypt:$7$C6..../....fb6ubszgkvko$9vPWjm.Jy2gWsIqAMlDsHWi0PciA6280anN6gq2zFw7:6:0:::
+u7-scrypt:$7$C6..../....fb6ubszgkvko$XvWIXeNGnB57YrULmaduQZHHv3wyei6FWVKKHHfFk34:7:0: ::
+u8-scrypt:$7$C6..../....fb6ubszgkvko$lph1n/J8RJgise0DgCRue.QvWzVEt1vHhc4t2RvqR1/:8:0:1::
+u9-scrypt:$7$C6..../....fb6ubszgkvko$6..ZbbosfEOKBlD9MOraCD22ctyXHlY3otxUBc8XM73:9:0:password::
+u10-scrypt:$7$C6..../....fb6ubszgkvko$110ls3omZZWt48Ni7z4pTTrTNCDErVOaisOkRiaz1M3:10:0:test::
+u11-scrypt:$7$C6..../....fb6ubszgkvko$H/R2PMv7nfjSktJxzK7WKLiQW80.93KLPcRDXFS7I4/:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb6ubszgkvko$9vEqOyNOziFkIghs6F3YZ2xjscVIYsYHWZGCGia0gEC:12:0:hello::
+u13-scrypt:$7$C6..../....fb6ubszgkvko$Pee41A/4sFvuWP7UwiQHnNbWoVJ14k/kg9mVQNWBr2.:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb6ubszgkvko$NInVBQZUrB4pZhwCHXKxcf.xn.aj8TD4TDpN2K1uD5A:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb6ubszgkvko$ChhvYsGLpKnBw20lmGTardsoRl1sEUPEmvmlsoVPdq/:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb6ubszgkvko$hbtZiu5KgwfI19VBxgUXGrj4lAqwrMqpzZFQNIKRx25:16:0:±::
+u17-scrypt:$7$C6..../....fb6ubszgkvko$T.ymKOJGHX4AeqooX6D312xg2Tc4s1Wv4kM9edkJSE/:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb6ubszgkvko$2XyoeNe4JWzhkZMbJFcdza0OQxs1oY0DI0UCVewUVV4:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb6ubszgkvko$4TI8qGMYZ4cdsx2DRqEMwhkVeXYG1sEaquzRRwBA.j0:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb6ubszgkvko$W1yBChqfSjmxfp6iwn0v/vDnMdO.B4iFI5KaW7lEO49:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb6ubszgkvko$vZCZzD7J6k3vvXekboESet0BMBrO5C7AfO8I29h7gP.:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb6ubszgkvko$o9kzvDQgILazr8jktMbkkzIGCUJxLNOLp8SJ26Nx1u.:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb6ubszgkvko$HAFNAJL18Qux6Smhc0OVPAV.m2aXXjztwrJ8A68obz8:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb6ubszgkvko$g0JHxJBQeYwM2xVmfp3WhxWDpChJARPY.Aahp/UjiI/:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....f23tcr90lu56$afeBoUdB84wewf0bqvDzochx52IdttZowWpjx1MXeW2:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....f23tcr90lu56$/WPOsGeHeDDkfuveCHO13CUO7lZAgRBuFWUKmMFS.k6:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....f23tcr90lu56$wDonDRTjgTqV0Ib5T1Jk0c67r.XEzc6bK161CRJgoD2:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....f23tcr90lu56$bVvtyFFGOB/clhMRIvDuz2HIKkz4FNms.xWgmarAD68:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....f23tcr90lu56$kpzBaGVPP/nF8qaniWH5tUN4kSeyLcX.O8B233VdQD.:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....f23tcr90lu56$vdRZgCAHZ/HwymDTe2qzMksR2Mb3RbV6bJ8yFtpYo7.:5:0:late*night::
+u6-scrypt:$7$C6..../....f23tcr90lu56$df9LV6kno54qq1WxW5yihYxIGVPeRU77oSWp2S2qeWC:6:0:::
+u7-scrypt:$7$C6..../....f23tcr90lu56$k2oEnDSeoOUTThqYUXiRu4.7VbdH0Zzd7kBJD/LUSo8:7:0: ::
+u8-scrypt:$7$C6..../....f23tcr90lu56$b1zvb7DOo1iBDw5RA6ovGpO9uJ6kASrl8qC3Nni2Z7B:8:0:1::
+u9-scrypt:$7$C6..../....f23tcr90lu56$zhg9ZIbZUu5W8KXs0XpUj65S3f1LHhyJNLg0tJ8J/e3:9:0:password::
+u10-scrypt:$7$C6..../....f23tcr90lu56$GJTUZ0BSz.5EBqOWTqStyZpKtUSEPhDj1kxUYvIqhG.:10:0:test::
+u11-scrypt:$7$C6..../....f23tcr90lu56$YSwDWIUT5yJtWd.yYqyuAYpF7dRGzuJD.Vw9glIOGX.:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....f23tcr90lu56$al9IeEUxJpiAD0ZQ7rvm9IQfaEEuCpmoyust45e5UW5:12:0:hello::
+u13-scrypt:$7$C6..../....f23tcr90lu56$Y7EfGx09nP2jDNNUrOHRk6.8BmwuAIeDDM4gJjczRI9:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....f23tcr90lu56$v9/RJP/K7S1zQV/MuP0HdkaNh3OMIGdJPlavLl2J3OD:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....f23tcr90lu56$z6cx3R/Phb1UFvs3Yq5W11/TbkCDtljeg.7rX2H6qND:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....f23tcr90lu56$s3ayjwDJMqLqGDNl/fl.XXjjh8FnjZb5ssU2XAhUeK1:16:0:±::
+u17-scrypt:$7$C6..../....f23tcr90lu56$AePkFoiABSFVeD0JiU6yE51fyXU2hVOgXGynPHZGgw3:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....f23tcr90lu56$Tlj5QQ8JzObXKRE0t6rjlrXxT5LUF8.bp1mBaX.blU.:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....f23tcr90lu56$/wRPFYlRsquMfebb7BMflL9nsQhJxcgHlX9YKuTwKd9:19:0:ôåst::
+u20-scrypt:$7$C6..../....f23tcr90lu56$qHk3fXe5ESxUtLkk0N/uGuT8.Yt3Lg1w9jbnwehOHc7:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....f23tcr90lu56$XPo4sodbJOdheMqN6EbudyhDhLYkt4RE4OfHIRxlObA:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....f23tcr90lu56$SR/58jyoyqpKE6vQNapi4y5l6ETTBmWVHP1VtSbiZzD:22:0:qerwt::
+u23-scrypt:$7$C6..../....f23tcr90lu56$3xmFKf0YCfq9kYCrCh2fnvpIQ7VK6pLIbNsE62zOpbC:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....f23tcr90lu56$R8KB9v1K3ATIjc1XaK8jyVVk9v/MSBobGpWsz9xlFQ9:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb3sdq91mt56$v.EP4hOyUwXuWLxh/yfPMpTYNtD6hcrbNlcx0XXsOb5:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb3sdq91mt56$a7YAbFidpBUeuEN./cPfFxP3/ZBKsr.QNBRpq8LRTC0:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb3sdq91mt56$eWup1b7fvIylGdgt/egaiC.8MSb1W61i2u2TigA7tl6:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb3sdq91mt56$rkemiL9MMqSE8b2YIzMXuXFA3xdEgMaHlGdvnZw1Wb8:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb3sdq91mt56$bbtRdkxAaBhWa.FGh7onuPMZlBUDOteFfiKRVB9f9tA:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb3sdq91mt56$OZrOPS/uDT4Ylx4BebdfjoSgssM8MGv7nf11iiAS6u6:5:0:late*night::
+u6-scrypt:$7$C6..../....fb3sdq91mt56$/TeHQTDpbdUDerWPhvMeUwhSVS1VJggK9ICcEuvKbd/:6:0:::
+u7-scrypt:$7$C6..../....fb3sdq91mt56$Ragcx0MX7E5ep.IBkQ/4p/uTaSkbQs7T5WRqGASW/n.:7:0: ::
+u8-scrypt:$7$C6..../....fb3sdq91mt56$38BhbOk7tZhSC5K12kNCgbCTFYMRWAeBN6l6itJ.sF8:8:0:1::
+u9-scrypt:$7$C6..../....fb3sdq91mt56$REP4a1Fy5qCk6AIMMjXHDkKqaQZ9ia/58Zggt82eAS9:9:0:password::
+u10-scrypt:$7$C6..../....fb3sdq91mt56$VuC8llamUVRgPHv8RzIyOOAXCMcBj/TVyw/mzzXit5.:10:0:test::
+u11-scrypt:$7$C6..../....fb3sdq91mt56$.MN/4nVlDXDIfwbgSmPhNs.wK/SrGfJjWf1pJvbA/14:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb3sdq91mt56$7NCbjSX8.7gSB2GETwivxYHcj3EXOo3VS7b8BWFFDpD:12:0:hello::
+u13-scrypt:$7$C6..../....fb3sdq91mt56$lTvs29wJhRZN.KfDGB06gJvkDvv.b0layqDw5lpHRE9:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb3sdq91mt56$7vCgaoJMp9UTzR88euEjd6Yk5mFRi6TFZvqG2JSMi7.:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb3sdq91mt56$p.z/VWBjJSJ7P2TN174C/TjE3UfK5DpV8DwAQ0dNGeA:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb3sdq91mt56$n7eZaWi/AIEsOHpZKfIxLOxJ/wRBGD4/bZkbqe1Yfw4:16:0:±::
+u17-scrypt:$7$C6..../....fb3sdq91mt56$AfFaARdR0KCP5tGhvYPL8a7q9pjk2BmeCIOq75dZwa8:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb3sdq91mt56$nTxUfnCixS2TgE2NAKIXgcQS2FUHCm0eZl3LQ4lfo0/:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb3sdq91mt56$fKb7vLlR7tUM0qGtXZEsEwXMVyv.S3IfnSOCQu3D216:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb3sdq91mt56$ZQ.uBxQeYZCApytx6L1aljaVAdRu96.rP7T3sMU5Is6:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb3sdq91mt56$JwQSA1bN1R8qhdpV3o5tYbYt9XosUJFiTMx0kvswjv7:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb3sdq91mt56$DsKts2C.fI2D9zIRqcRYyXXNUfGCf1XUq8MGWBwQ4w1:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb3sdq91mt56$OwQg5TuYSm7h7du/3d782uKMRoTEpVhcgrApRfrn765:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb3sdq91mt56$Yc5HaqlQ0hMvtMLK2XvSXnBXOj0VUemDpCdK49cPdk1:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fbcrepg2nsko$nfn0OKxA4gp8R.F4l2QCS7bSLDMFzFrladmgcPfDdg2:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fbcrepg2nsko$g5EuwU/HRXADLGoQluY6PO5I7kCgMi3Cq1p/ZRTvne6:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fbcrepg2nsko$Zt0mNesFVKRn3NmNpvxNz8cB.WKFRX70R5qm2umGLDB:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fbcrepg2nsko$ibQmj25eHCg6nxNp3QdasXOBH5KGGh7luoPEfCyBe.0:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fbcrepg2nsko$27qSWhcR6QcsOcQSWhXgrTq5EcfsMAD9Kx.yOb..KoB:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fbcrepg2nsko$jh/c.iWcxZxeyZ/Tkv9U27txr5uyi3kRFO23h.mOc/1:5:0:late*night::
+u6-scrypt:$7$C6..../....fbcrepg2nsko$4HJdRk2er3DvjySUVq3WZ23cmlu2QF8bw/d3aKkO2G2:6:0:::
+u7-scrypt:$7$C6..../....fbcrepg2nsko$.6R9xzoq7/nZipuzQJayFH3yUG0ByO/xIiMpj1V3JR3:7:0: ::
+u8-scrypt:$7$C6..../....fbcrepg2nsko$hmQLnORygpfbgU93XLIABBNO4pecRzfWdyzJpppoB0B:8:0:1::
+u9-scrypt:$7$C6..../....fbcrepg2nsko$sccb3lDsqdoKOSPyLR1bq0h7GXsEpHT9rggdcc6APD3:9:0:password::
+u10-scrypt:$7$C6..../....fbcrepg2nsko$WWL/ea723n16q88s51QKXcz7eXF6ZLWr26HRzhbjsu5:10:0:test::
+u11-scrypt:$7$C6..../....fbcrepg2nsko$HhrJ0bNincI2BjWxbsGqK6/8lBP76Ki0Po0GNmA2k21:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fbcrepg2nsko$WRquxns1GvGuWuTQoGkEL15wy29xDQu./utCokvxXa7:12:0:hello::
+u13-scrypt:$7$C6..../....fbcrepg2nsko$ZeE.cHdv2eTiJpvwCE0arLmJLGya5xKEi3p8herTn60:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fbcrepg2nsko$xzYCJCwg3h9dH0L72W522zIWXlCXLS07Ty5IDnAf3N0:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fbcrepg2nsko$J812MUXc35nm5QoitoU/lahHRuUtKpSRyisuLZxvP50:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fbcrepg2nsko$pdjseOqniapKj2tiz1QpsnbaVzmMXZ.aNbITmEv32v8:16:0:±::
+u17-scrypt:$7$C6..../....fbcrepg2nsko$M74YpzsQuqanRO5AkriODGG/gcpqx3QrEIgMuuvswGD:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fbcrepg2nsko$leeyMi.qfKFvFdcOSxBtFpUkGr8EOJH9UiyVVJ4/GD4:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fbcrepg2nsko$BiyWv2GpDGm/GnQROujJ3dSFlry45WQTbJOPsM7Lbd4:19:0:ôåst::
+u20-scrypt:$7$C6..../....fbcrepg2nsko$YffHSDpBYP4hna5mCcXfXEtV48xpNpVRmurG2kMgO6.:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fbcrepg2nsko$f6PCgXQe38vtWdwhDY8bR8fsCTngwXpZZegP5b/giDB:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fbcrepg2nsko$vY33ytLXUtzjtJ2z5U.oux.ll0UfEuQl.EZT/UiK0d8:22:0:qerwt::
+u23-scrypt:$7$C6..../....fbcrepg2nsko$QYN8WpjL1zYg1J7/43D9YPI3QQKlQiVN/uYYCmAGWZA:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fbcrepg2nsko$EmwhPSAhfCHPTzIUyK.IgKAXRdWL5MvVpWvcSxgNOXB:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....fb6qfor3orko$bEuvpnNVb1MqdrxQjXAN3O8bGlhFmwCZius8m6vih4C:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....fb6qfor3orko$LxRIpvhlLus0e26rtZa3t9YmA/XPx4AIKcCk/CGzeu3:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....fb6qfor3orko$57tVU8/dXOeZaE0urbiJTWVCJhKhv3ZiZU8pJW6UI/8:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....fb6qfor3orko$dH2N7W6wWmNUgSMal.tk3D6DhssAvPNKff1erj07yU.:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....fb6qfor3orko$5VazZSuXkIZ0HzaXLwsM.XpAh.W0B6ZsUUnf05JjluA:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....fb6qfor3orko$6Dk81wwB05Sxh7krS.U5eTZAMWmocjdhe2GH6M.Kjn4:5:0:late*night::
+u6-scrypt:$7$C6..../....fb6qfor3orko$8ue5aLbx/cJj.ZrFCpmTZGknjz1sExBRtqKVLxc8Q22:6:0:::
+u7-scrypt:$7$C6..../....fb6qfor3orko$3hXJffgcNroe25eODxeWVWjtmi26Gj7lv866.vyO1t4:7:0: ::
+u8-scrypt:$7$C6..../....fb6qfor3orko$Fb9crSgXn0RdLA6hBcl2pYP/PBd7f1hjpQuXAcZw2i/:8:0:1::
+u9-scrypt:$7$C6..../....fb6qfor3orko$P6Hwa8ajs/IpnnOXdyM2CurgbXn/tU4M8uKBrjLYi/.:9:0:password::
+u10-scrypt:$7$C6..../....fb6qfor3orko$i9uO4DHznuO4K1aveJLkMNK6hV2RVwJ7f0SBvehRoYD:10:0:test::
+u11-scrypt:$7$C6..../....fb6qfor3orko$/iM47rDQTuTUPgMFlx1QkEbn9o2oe.9kt5Ry/ueKO.0:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....fb6qfor3orko$lcTZwabSMTzuF5fISHZOK8jhHlfVmYE4356uq6XDl49:12:0:hello::
+u13-scrypt:$7$C6..../....fb6qfor3orko$Tp5pdKy3MZ/CnhB8ObFi8qASdSubbjNfZZgsgIfuHu.:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....fb6qfor3orko$iA3MyfoeqAS5jNz0/reHVwt5jpGNQFM89CcuppBEhY7:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....fb6qfor3orko$H8m4NoWU8jHGDdGq8L7WBXfycVSqT8HoBeC8NNGjk2D:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....fb6qfor3orko$SqCMvZZpjhAG2/iRe.2JPeR.NFj5EVRNdh47/dncEK.:16:0:±::
+u17-scrypt:$7$C6..../....fb6qfor3orko$hblm3dK95L9NZdypAyz7.MsZH2JvC97Y/9EKss/lWr8:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....fb6qfor3orko$72wAoH.W5P7cb4A0LJHdw2iVtwcjE6BvfMHw20B4zV2:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....fb6qfor3orko$6utXwVaYO8/B/bHOetXWWE5.NT2Rs2cGxCjz.F6a19/:19:0:ôåst::
+u20-scrypt:$7$C6..../....fb6qfor3orko$3QNHcR/7zYX0.CjdgNfylc7aMgeDPO/ARilIuk4RIkB:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....fb6qfor3orko$web0Bw6821w6C.5syTWTp7NCm3LroGtqt9F/7/Zkbm2:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....fb6qfor3orko$iUnVOHYc3uTWDP8rzfYZkl53MfIi9dDPwJC2L6wFDqB:22:0:qerwt::
+u23-scrypt:$7$C6..../....fb6qfor3orko$cC4nfRwN/oJmmrHKEbUxbJUSg70/UKdyH1JVrvPJAd5:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....fb6qfor3orko$tsJ8YTdzOEFZUfONGJI0Cw2Pi/OBzKzdm19cUdp4Of2:24:0:dæffffæffæfff::
+u0-scrypt:$7$C6..../....f23pgn94pq56$pak68SiKf6lGR2xptPhI4L7ZDdhVHrxcZL8A0M70y0A:0:0:Skippinç anä*::
+u1-scrypt:$7$C6..../....f23pgn94pq56$2UdVgIAhPCTEx2faEK6Otfw.ZG2.gNfDU2IzvuX.no.:1:0:Skipping and*::
+u2-scrypt:$7$C6..../....f23pgn94pq56$90m0AN1hoT6kJPxEZOajz3zmPDLcdHGNSLovcmL4yu8:2:0:Bert$ErîIE::
+u3-scrypt:$7$C6..../....f23pgn94pq56$Qh53oGdtl1kI6YMqXcK0cWXEynJBubywmnhU6bjShr1:3:0:Bert$ErnIE::
+u4-scrypt:$7$C6..../....f23pgn94pq56$DcYyp2hSbudp..8nVc8QPvCoDbXgAaI/ZhovNEF.Sm3:4:0:bert*ernie::
+u5-scrypt:$7$C6..../....f23pgn94pq56$ITn8kPGa8r7YCF5MNPjUPOSl2/lpdhcVzABHDxA8Kb.:5:0:late*night::
+u6-scrypt:$7$C6..../....f23pgn94pq56$DmAswOTu7tEkyS3zhLvzRTzIWhPy2BPLnuXKdWqaP2B:6:0:::
+u7-scrypt:$7$C6..../....f23pgn94pq56$HeUh2LBq5DeIsytZ9G5NCHwBgWjvh2FAXFwEAo4tTh.:7:0: ::
+u8-scrypt:$7$C6..../....f23pgn94pq56$s1dM80VJvkSc2vs3aFo7DPLIY9xLjxxSrO5uLjgtPw3:8:0:1::
+u9-scrypt:$7$C6..../....f23pgn94pq56$/w3B/0glPKjomgtHxHlvaGii7LLjOxA6U6jGwmqwioC:9:0:password::
+u10-scrypt:$7$C6..../....f23pgn94pq56$aoMaJqL2kh1X70Qot4ZdGHUuZzVgO49KvAlv8ho0/34:10:0:test::
+u11-scrypt:$7$C6..../....f23pgn94pq56$7C9xKlcRXXBVKFruBDAchdTDGJKz5nFPYzMDq/UUzg8:11:0:late*niçhô::
+u12-scrypt:$7$C6..../....f23pgn94pq56$US5tmrTshR9SMUIaVC1EvzAXUd3/wIiKw.4EbWQbMnA:12:0:hello::
+u13-scrypt:$7$C6..../....f23pgn94pq56$SpKYbYB1OvwzgUcQl4KFC3OipSR9tu0XIAF.zpVCFrD:13:0:Skipping and& Dipping::
+u14-scrypt:$7$C6..../....f23pgn94pq56$rbyd8lFedq7Yz/pgedyMcH2F1UkZWE6AmNgdtWPm824:14:0:!!!!!!!!!::
+u15-scrypt:$7$C6..../....f23pgn94pq56$qHH3SjHuBYOzZRiwFMHeaQgKUWGR75HgDDNEUdRjtP5:15:0:ttttttttttt::
+u16-scrypt:$7$C6..../....f23pgn94pq56$/WlQk94HFSA2aQqmJYOxFD/RlkBC8DaG45.L9p8.ldB:16:0:±::
+u17-scrypt:$7$C6..../....f23pgn94pq56$QWZDrnKzAqLKEKWMafvhGkqLiNw0JP1SErN8ZaP1Gd2:17:0:pass÷ord::
+u18-scrypt:$7$C6..../....f23pgn94pq56$dsFeQcWAwItin2azWA45o9zouFPCMC1wknjISCjQFo5:18:0:dffffffffffff::
+u19-scrypt:$7$C6..../....f23pgn94pq56$We09pnWRODAywyRvC8vjYF4qxDc19cMKjXF0ScG/mI9:19:0:ôåst::
+u20-scrypt:$7$C6..../....f23pgn94pq56$1VTY/fVbRtzOiK4ztK8q3gqoMBbDhRVZvxJALIH4Ja9:20:0:Skipðing and& Diðping::
+u21-scrypt:$7$C6..../....f23pgn94pq56$XYg8TegtXV0Qf84lMTG7Jefc/HzOzhQ8JPo9vy.P/o3:21:0:alsfdkja;::
+u22-scrypt:$7$C6..../....f23pgn94pq56$hQDZvt6BkebzqBpGmV85L/bqM3iyTi/qgXfqifdOHT0:22:0:qerwt::
+u23-scrypt:$7$C6..../....f23pgn94pq56$pvHKtBPJ8J2d8n73ENjYcP5kDI2TmqIH7Xx3zWFE4YA:23:0:ôtttttttttô::
+u24-scrypt:$7$C6..../....f23pgn94pq56$lmAqICXuMNilVbAfjW4FblFh0QvDKo6WV9edVZkML94:24:0:dæffffæffæfff::
