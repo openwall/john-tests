@@ -793,6 +793,12 @@ sub process {
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_crack_cnt);
 			ScreenOutAlways($str);
 			$ret_val_non_zero_cnt += 1;
+			if ($stop_on_error) {
+				ScreenOut("Exiting on error.  The pot file $pot contains the found data\n");
+				$cmd =~ s# 2>&1 >/dev/null##;
+				ScreenOut("The command used to run this test was:\n\n$cmd\n");
+				exit(1);
+			}
 		}
 		if ($dict_name_ex ne "") {
 			unlink ($dict_name_ex);
@@ -875,6 +881,12 @@ sub process {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_pot_cnt);
 				ScreenOutAlways($str);
 				$ret_val_non_zero_cnt += 1;
+				if ($stop_on_error) {
+					ScreenOut("Exiting on error.  The pot file $pot contains the found data\n");
+					$cmd =~ s# 2>&1 >/dev/null##;
+					ScreenOut("The command used to run this test was:\n\n$cmd\n");
+					exit(1);
+				}
 			}
 			unlink("$pot");
 			unlink("pw3");
