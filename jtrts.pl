@@ -163,6 +163,15 @@ sub LoadFormatDetails {
 		$formatDetails {lc $indiv[0]} = $detail;
 	}
 }
+sub StopOnError {
+	my $cmd=$_[0]; my $pot=$_[1];
+	if ($stop_on_error) {
+		ScreenOut("Exiting on error. The .pot file $pot continas the found data\n");
+		$cmd =~ s# 2>&1 >/dev/null##;
+		ScreenOut("The command used to run this test was:\n\n$cmd\n");
+		exit(1);
+	}
+}
 ###############################################################################
 # here we do prelim work.  This is the multiple calls to -test=0 which should
 # not output ANY error conditions.
@@ -761,12 +770,7 @@ sub process {
 					ScreenOutAlways("$line\n");
 				}
 			}
-			if ($stop_on_error) {
-				ScreenOut("Exiting on error.  The pot file $pot contains the found data\n");
-				$cmd =~ s# 2>&1 >/dev/null##;
-				ScreenOut("The command used to run this test was:\n\n$cmd\n");
-				exit(1);
-			}
+			StopOnError($cmd, $pot);
 		} elsif ($ret_val == 0) {
 			if ($orig_crack_cnt != $orig_show_cnt) {
 				if (index($ar[10], "(-show$orig_show_cnt)") >= 0 || index($ar[10], "($orig_show_cnt)") >= 0) {
@@ -777,12 +781,7 @@ sub process {
 					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 					ScreenOutAlways($str);
 					$error_cnt += 1;
-					if ($stop_on_error) {
-						ScreenOut("Exiting on error.  The pot file $pot contains the found data\n");
-						$cmd =~ s# 2>&1 >/dev/null##;
-						ScreenOut("The command used to run this test was:\n\n$cmd\n");
-						exit(1);
-					}
+					StopOnError($cmd, $pot);
 				}
 			} else {
 				my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
@@ -793,6 +792,7 @@ sub process {
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_crack_cnt);
 			ScreenOutAlways($str);
 			$ret_val_non_zero_cnt += 1;
+			StopOnError($cmd, $pot);
 		}
 		if ($dict_name_ex ne "") {
 			unlink ($dict_name_ex);
@@ -863,11 +863,7 @@ sub process {
 				}
 				ScreenOutAlways($str);
 				$error_cnt_pot += 1;
-				if ($stop_on_error) {
-					ScreenOut("Exiting on error (reporcessing original .pot file).\n The pot file $pot contains the found data\n");
-					ScreenOut("The command used to run this test was:\n\n$cmd\n");
-					exit(1);
-				}
+				StopOnError($cmd, $pot);
 			} elsif ($ret_val == 0) {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
@@ -875,6 +871,7 @@ sub process {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_pot_cnt);
 				ScreenOutAlways($str);
 				$ret_val_non_zero_cnt += 1;
+				StopOnError($cmd, $pot);
 			}
 			unlink("$pot");
 			unlink("pw3");
