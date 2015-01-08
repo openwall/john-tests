@@ -39,6 +39,7 @@ usage: $0 [-h|-?] [-option[s]]
                    output until run has ended, unless there are errors.
                    -v is the opposite of -q.  -v outputs a lot of information.
                    -v -v  is pretty much debugging level, it outputs a LOT.
+                   -v -v -v dumps even more, also showing Jtr screen output.
                    -q -v together is a no-op.
     -type      <s> Provide selection criteria.
                    Examples:
