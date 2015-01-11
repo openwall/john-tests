@@ -663,4 +663,4 @@
 (base)(tc_sha512)(tc)(truecrypt),(X),(jumbo),40,tc_sha512,pw,tc_sha512_tst.in,tc_sha512,Y,X,(1500),(1500)
 (base)(tc_sha512)(tc)(truecrypt),(full),(jumbo),40,tc_whirlpool,pw,tc_whirlpool_tst.in,tc_whirlpool,Y,X,(1500),(1500)
 (base)(tc_sha512)(tc)(ripemd160),(full),(jumbo),40,tc_ripemd160,pw,tc_ripemd160_tst.in,tc_ripemd160,Y,X,(1500),(1500)
-(base)(ecryptfs),(X),(jumbo),10000,ecryptfs,pw,ecryptfs_tst.in,ecryptfs,Y,X,(1500),(1500)
+(base)(ecryptfs),(full),(jumbo),10000,ecryptfs,pw,ecryptfs_tst.in,ecryptfs,Y,X,(1500),(1500)
