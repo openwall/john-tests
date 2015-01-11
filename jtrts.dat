@@ -660,6 +660,7 @@
 (base)(rar),(full),(jumbo),40,rar,pw,rar_tst.in,rar,Y,X,(130),(130)
 (base)(rar)(rarx2),(full),(jumbo),60,rar,pw,rar2_tst.in,rar,Y,X,(297),(297)
 
-(base)(tc_sha512)(tc)(truecrypt),(X),(jumbo),10000,tc_sha512,pw,tc_sha512_tst.in,tc_sha512,Y,X,(1500),(1500)
-(base)(tc_sha512)(tc)(truecrypt),(full),(jumbo),10000,tc_whirlpool,pw,tc_whirlpool_tst.in,tc_whirlpool,Y,X,(1500),(1500)
-(base)(tc_sha512)(tc)(ripemd160),(full),(jumbo),10000,tc_ripemd160,pw,tc_ripemd160_tst.in,tc_ripemd160,Y,X,(1500),(1500)
+(base)(tc_sha512)(tc)(truecrypt),(X),(jumbo),40,tc_sha512,pw,tc_sha512_tst.in,tc_sha512,Y,X,(1500),(1500)
+(base)(tc_sha512)(tc)(truecrypt),(full),(jumbo),40,tc_whirlpool,pw,tc_whirlpool_tst.in,tc_whirlpool,Y,X,(1500),(1500)
+(base)(tc_sha512)(tc)(ripemd160),(full),(jumbo),40,tc_ripemd160,pw,tc_ripemd160_tst.in,tc_ripemd160,Y,X,(1500),(1500)
+(base)(ecryptfs),(X),(jumbo),40,ecryptfs,pw,ecryptfs_tst.in,ecryptfs,Y,X,(1500),(1500)
