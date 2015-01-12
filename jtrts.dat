@@ -608,6 +608,7 @@
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha256-opencl,pw,rawsha256_tst.in,raw-sha256-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),40,rar-opencl,pw,rar_tst.in,rar-opencl,Y,X,(130),(130)
 (opencl)(gpu),(X),(jumbo)&(opencl),60,rar-opencl,pw,rar_tst.in,rar-opencl,Y,X,(297),(297)
+(opencl)(gpu)(cisco8-opencl),(X),(jumbo),70,pbkdf2-hmac-sha256-opencl,pw,cisco8_tst.in,pbkdf2-hmac-sha256-opencl,Y,X,(1500),(1500)
 
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,rakp-opencl,pw,rakp_tst.in,rakp-opencl,Y,X,(1500)(1451),(1500)(1451)
 (opencl)(gpu),(X),(jumbo),10000,krb5pa-md5-opencl,pw,mskrb5_tst.in,krb5pa-md5-opencl,Y,X,(1500),(1500)
