@@ -391,8 +391,8 @@
 (base)(cisco9),(full),(jumbo),35,cisco9,pw,cisco9_tst.in,scrypt,Y,X,(1500),(1500)
 (base)(django-scrypt)(scrypt),(full),(jumbo),35,django-scrypt,pw,django-scrypt_tst.in,django-scrypt,Y,X,(1500),(1500)
 (base)(scrypt),(full),(jumbo),35,scrypt,pw,scrypt_tst.in,scrypt,Y,X,(1500),(1500)
-(base)(sha),(X),(jumbo),70,pbkdf2-hmac-sha1,pw,pbkdf2-hmac-sha1_tst.in,pbkdf2-hmac-sha1,Y,X,(1500),(1500)
-(base)(sha),(X),(jumbo),70,pbkdf2-hmac-sha256,pw,pbkdf2-hmac-sha256_tst.in,pbkdf2-hmac-sha256,Y,X,(1500),(1500)
+(base)(sha),(X),(jumbo),40,pbkdf2-hmac-sha1,pw,pbkdf2-hmac-sha1_tst.in,pbkdf2-hmac-sha1,Y,X,(1500),(1500)
+(base)(sha2),(full),(jumbo),40,pbkdf2-hmac-sha256,pw,pbkdf2-hmac-sha256_tst.in,pbkdf2-hmac-sha256,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
@@ -611,8 +611,8 @@
 (opencl)(gpu),(X),(jumbo)&(opencl),40,rar-opencl,pw,rar_tst.in,rar-opencl,Y,X,(130),(130)
 (opencl)(gpu),(X),(jumbo)&(opencl),60,rar-opencl,pw,rar_tst.in,rar-opencl,Y,X,(297),(297)
 (opencl)(gpu)(cisco8-opencl),(X),(jumbo),70,pbkdf2-hmac-sha256-opencl,pw,cisco8_tst.in,pbkdf2-hmac-sha256-opencl,Y,X,(1500),(1500)
-(opencl)(gpu),(X),(jumbo),70,pbkdf2-hmac-sha1-opencl,pw,pbkdf2-hmac-sha1_tst.in,pbkdf2-hmac-sha1-opencl,Y,X,(1500),(1500)
-(opencl)(gpu),(X),(jumbo),70,pbkdf2-hmac-sha256-opencl,pw,pbkdf2-hmac-sha256_tst.in,pbkdf2-hmac-sha256-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo),40,pbkdf2-hmac-sha1-opencl,pw,pbkdf2-hmac-sha1_tst.in,pbkdf2-hmac-sha1-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo),40,pbkdf2-hmac-sha256-opencl,pw,pbkdf2-hmac-sha256_tst.in,pbkdf2-hmac-sha256-opencl,Y,X,(1500),(1500)
 
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,rakp-opencl,pw,rakp_tst.in,rakp-opencl,Y,X,(1500)(1451),(1500)(1451)
 (opencl)(gpu),(X),(jumbo),10000,krb5pa-md5-opencl,pw,mskrb5_tst.in,krb5pa-md5-opencl,Y,X,(1500),(1500)
