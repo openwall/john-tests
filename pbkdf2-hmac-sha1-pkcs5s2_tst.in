@@ -1,0 +1,1501 @@
+#!comment: Built with pass_gen.pl using RAW mode, 0 to 128 characters dict file=pw.dic
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dkFMOGN0VGxVbWYxdVBnYkl1AOwCwVw9pKFQiCfV3.PTQg7W:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VkN3RjZidTlMak9DdGhBQjzI5j7H1ysD5WMMYzn/UVxGsR0p:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T3Z1a2F6aFc1NEpFUlFoS0OmqKPawiJ5I/zV2Hfnu3Hr3RXl:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZzJoU1RqM2FwdWt3R3pIQUUlDDWZ.iOmP2WLgyKTYHog44eU:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Qk9Ia3NFZ3ZKT2dudDNJZ3M4M54CyJcDeWgPkdZ5hwVimIZ0:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MVhlOTVNZnkwN0FpRHJyOT24Vrug858d8aB5kimUuzfc3I/M:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UXZwNzZGMkVBOHZVSnJMRR5InxLRXOvJF8zIy2RDco6MflrT:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NzJ2MUdzbWRjUVZDaTVmbXjDh1vKQKQbcQzwjCMwhnEo8zVS:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S3pnM2hWTWRNamJqZ3owOBPpFbqjOUzI21cNRybS4sgPmlx4:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SkxHZ0FVd0JpeG5lSGZxc6x2l60yezQDDBvY6Ymr4usy.fHP:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SjExTXBsYVphdW5DSndUSG2Fh4bzDfvlrQuE9qaQLFo89GnF:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T1Zybk54ZEs4bWw0THpXSbgKHumkH73BnN9YjpvG5ToR1gAT:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NDMxRGtLdmxwVGhLZ01yc7rxeLobyF8QomBPFBMsppzJGmr7:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q2pkU2U1RUJJZTE0MWxHQcYvbBaLahbrQW069UJy5F2Prj/t:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VmhMRTdBNmZDQk1rYUxEQdPfsronhDV5Q11.Q.U2w5g68rkA:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TFhBazdIQVBOV1RoU1JEckAJvSXTLpVztukIEs3dC7yiWygG:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MmN2WlVBMDBGOHoyaHVhOR8MsXdWGFHTRvLTnmIBk.AQLTEn:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aEJ1NVRlU0dndlZyT29JQwiiLlbLsehcKCFT82uX4dkyJk/q:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SkpXNG5QNnZlS2FMQkRNdCO4mJjRitXtZiq8cUrS/DDNRHgr:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OEc4N09peEVCcDVOWkVxYkgJFDWufApCS..ikpTC84lLNqbH:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Sk1SWmFNSGFrRWc5RExabZtWFh1tRshCDJFubtYixI73Co2r:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WXhVNzBvelkyVWhFUVAyVxsJIcvj4BsU1TdKcFLOnVaTsTuT:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YmZYTTVLZm16RThhTmRwWl/QczR50AwaqimeBImHysV6QEmt:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NGFSWGlQOFNOaUdaOW1VNbA0s7wry3OfxswWR5JnvSl1JMwA:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dkdBWWhtRHg4MHJYTE5weeMZXwJw4QgkJ.5nrsPBlpSr6.6Z:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y25BUWV6Wk81aXFOY1FzdLsM8POYIjKf9TS6V5.IvberERnG:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MGRMU05SMkJLQWM4Z1lqQx/0fzDaWT/sQ48lEfx/AC7X5jzO:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eG5mVTJJdVIwUUhCaWx4edAFgUyIRpCQg9cLfRHDokURFNQk:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NHFGZHZVaW1PY0lMNXZQb18BRaE2S5TjdRH9lL9dLVppH2nT:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZzRPb3dSd3lTNHZ6Z2U0bHQCWArOGUcD/UvBy8.qSH4bMatZ:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U1lwSlBqWGhmTTFMTk5oNt2aRY/mzOnwphh3svGSwXBdxx5R:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b3NGb1dkNzEyR1pQeDlzT9ed65cWGQem6CxaBaQ9hxvyJyMI:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Um1naDJBdG5KWklwbjZGeMLQruVe4S2KUuZJcsQ1B5ea9p33:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZGVsSUs1VFJhU1hlTWM5eewcEBDspDgeEizIsTqJ00QfTE8f:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UEl2YmlLRXdJekVsVjZtV6oFfTk2yE.VzMr9cl7tj/fTqhKY:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aVo1S0dmdFhRQTZUS0lWZKykJ50vTiMdtmBCTiab/PftKwR6:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cWozVDFyZ3hmbEdLdTcwWTjPbHwFpkPEe1wuLZSgtZlQ7pBg:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N2ZoVDJhTTduQ0w1SmlMVsl722aaqtgpwVOHroTXtTWpspSV:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q2JjNnh0a3J6SVY4UFhIR09ru5VVADYjCm7umjSrWBylbFzE:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NlIxeWpPOTBJb0NiaGo5OJUhSE3m5R1/WBCa8nSFIPKem8yF:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UXRTVUFTMGZMSm5uQmdkcCosv2FrN0SrQOoC5LgZIzfzzLdd:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a2lKQWM5bTB5RUVSdnVQeiWtr8Fp368AHPSB43k0TLC0IggM:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WVBaeThjNlg0ejhuQnFQTAtVBDlBdtWrAQAZGW0wkE0s4DDO:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dmdRblZud2p3RmVqTzNiceyevd9PrTuoxBi0W66T7EV0vI/1:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WG5kNjZ4YTByQk1UbzdUcWTLqVfeZYEHxClSWc1gs924zXYM:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UWtxbVBRSjN4c3VRNFhVTpch.IGfRFC2Exa8Is/WWk3Z1Ihj:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bFozTGhJZVlDT3IwUGtlM1P6XlJVwmbV2Ic/pUNNskWaacCQ:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MEwxZHBDTndrdkluZUdtbg06Mk2aLUSXBQWnb/i53vILlQ6U:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dzFiOWRhOEtsMDNOZjJhNE1O/YjAFnu4FrXPDlhE4maHeICX:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WHFxbUFPeHY2cjRqcjRlZvb9GW/QV8CO2q5nF013QHKPmURK:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}clh4anhMTzUyZkJlaDZoZ.xatcbjNJ7PlVwL2C4WG0qQe.ia:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WjZZMXp4Z29pMzRUczlXddR8.qw6ACHcuFPJeCgrPAh6MhMw:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WVBBTzlKT2IwMFo2VkRJbEA4y1X7tkdsI1TSW0BeaPyNFOOw:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M0VNODcxbjBkQUhNNXVDMZtly9iU7F53oTJDUgu0U3khOKbC:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TmhRcFNXWVVFMzdtc0VuOUmQxuyoaJI0R0./SpcW8tg98kM8:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dG1IbWFEaWVCNzllZGpmaD/FapB8eaJ5NBm9PoS2qsyGHVLs:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R2VyZWRLSVRxM0RITjZUTM2Sa6di0kLDIGGbuCzd/KlK6.Vi:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OExrRU9ldExVdGJnWWZ5Z//YICeChKUWAXzamLIzRBZQkFah:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MHlPajJXZHhsczVNcXg1Nl73jm.Z6gygFqgYq/Cud7twuE0z:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d2p3SGxvV216SDJzUkNaSVs5N3jyTgD.douAbn2Pv15.CFHq:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RGdzeFBaMExERmRONTdxcP5R1x.dVg0e2B6YSk.3B0OwvgzE:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Yk0wQnZCVzBUZ2JhekV2WW4YKCanzcSi/B1h7fwmok/8kjKg:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q3k5NVBrNEZ0ZkJrb3JORrMXuQ2wDUxhPWyyNlpE/FSn7I6j:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ajM5VWJLZTh6cUNrTGdHNcabKkA5yw30N1SvUO62MgZnejz6:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YWNJbEs3N3JWQXFqbjhRckBQ4IlZx.8dBwRaduz3RGV9kZmq:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S2pkUlljVnBzbXZ3Zng5QsQEIcqGNffNscmC.3DQQ4vDM8Ww:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cVB3cEtNd2QzRnJmWHNLTJm0q9w/vJJ1T71EfvqBKCavu0iQ:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NHRFNFczNkpOemlBZXRhQuVNod6d1YJviiw.0qZ/71rySRJp:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cENiY01kZmg2ZzBud3B4c7vSeAuDL4yYG2KylTPjxU3klDZM:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NmYwZWtoSkpNMmR0VEVxdaUBDYEZhOgtU5pcJ2rcx.up8W58:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U0xkUzdMdVpSNnlsZ1dQcndGbD8naTFpK8GbQ.knH2awxynw:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RWhQcXZLRG1DRWhJMmNmVdehtJqI/dWk0hHkjXV.TVA.QV3O:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aXVTOHVEcWViRlFCQ084d/arvUophHSWeVbaH7KNfQoMEuQT:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dVo1b1RmQmFQaXozN3RNdKuKh3TcWkhV0JnROKX3zzuUvBv1:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SU5URGh0c3dEUFBweG1CNqoWg.XWYdqnT8MPhCLOjaOX5pS0:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U0pFbERhZXJwQ3ZVQU5raYDXVCGub5NcbuYfi8RyZl0Vtl2I:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NEZzekhqclcwOE5iYzJDUWLbyiZTVGw5qzAhRRkxSzJ16Og8:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R0hnZUtuTUJMUlhZOTRzSiAqu0JPtWTUgWU7gHJGfc1PdSpf:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YXo3YWZwM3lMaU42RWZXWmjtUfCxRkRY79unYOYEHUH4zVyr:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bDZ3RXFNeWtacjRiWTQ2Sfhy9aqCvyu2VqJRTZ6u0cLqzdXd:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eUdGZUJpYjJ2M2l1QlZjVuGUGoSJ0POl.yj4Ym06SlnvBzyx:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UG51cFNKVmZFY2ZrZE80NykoJyZrk1kf1qmlWvER3yXkbPCl:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y2s5NUExRE1MQWQybVlOYXbZF40H5b58C6r0ExcCKqtVN4rK:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dm52Q0RvVzhNOHpzcmxmNwrtR6stsX.xTe2MOdGx3e7vgFKl:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dzRHYzFHTXpSRk90cmxGaydjJpFQzQb6eEblWJCA.KVoIBQN:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHJMREdaUERyemZ3b0Mzd1MEuSJy1ozqk2oAPVgOOYOvrA7f:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V2RjTDdLWFFWVHBBdGs2MrIevQIykCqw8zX1x49uDh24ccEp:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eHNFbkMzYVd6a2NodnQ5Z3jirmR8BXwf/Ku8fSdhUyOTp64w:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bHg1UzVuWk5sWE5iVGZaWgILyN.tF.w3DXN/q7BA1OqA1nL/:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Qmd2dXNlOUxRd01keDlUZirIT80Z4rI301YxLlbATJQaeZ2c:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OXJ5REhDVGl2VUwzYVUyS0bzeKqR2REspoW687cF4OwkEc/N:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WFgwQ3NSdDVQOFFJMlExYkbQuEU9X0j2DSUczGqEVq.tvj30:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b3dQVDZFdk41dmpFM3Z3ToNgsFTfWT6NS/XYMHEFpeaPxn9J:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MnYzQkEza3E1bEhrUlNaMDSh0nFlSEl5tWAZdbwylCYDF64V:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZnQ4WXRSdFBBaTBTOTgwaLZiPgp6qTpTovQzik75ppW8wxNQ:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UmxlVzBMMExJSXprdldLNhaRKbODgOxbo0ewJidmhx7DWj9L:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Smx4WTFXOUZvYTlDd096WhIREWsi7wsUvsoDnW2tWpS4uDVc:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NGZPMGNlRFdDUlllSFNaNL/Dx8.k1CwXKGHQnPBAEEFR.39J:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SGl1MVBRSXc1bllsTmNZNW2fAM9gpVKRgv5rt2bDFBirqO7Z:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SGFseGFxdVNxZXBGdHVUeV1n5oPu9qd.6e8cGDNk9v.37uZU:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V3JiUTQ1Mmdzd1hOdHVMYV.ZrHNV.GQposAHXs.ZxJxpAXyy:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cm50UmpvSXFXd050eEtLVJEjW6X9d593002QJ9IxkbxZM3G7:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TzZ3dFlFQ2puNDNWQ3k3OBcJ9gIET3jF8XANUrVPDdD1N/SZ:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OGdNZTdydWFCRXppQW1qWEt6nixjUvtvQSTHP79Rpf2Sa9of:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dXBsdmN3Z0pMa2NpUDFiMMmeRg6UAiMOBhD7PjftEEn.gP2q:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T1pXOTBMUGNySW9QOWs3NvE93KJR8CA6HeYq1e0eBh/XI48n:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VnBPUmFrbE1va3JjcnE1dYX12FXlvB93sdp9P5aEFvbjIyXX:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cTRQcHFISW1jQ3pJYWM1eMC4jVYbyDdTknE6iKnhXDyquCzD:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ck1Pc3hBaUF1bzRYNnV0Zx4QovdXRr8DMsdkwkcBThCKlz2r:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}anVORE5SOEdtNmdhS0diZEbc8KoadDwd98c4WeqXQgl3D5kp:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RlF3OGw1ZE1kb1NvQjRaat0Spn.4Yz1/POh2f6uaTq5J4GDw:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}STl2UVFseG83UzdpMTI3TUiVRkf7RDNHkXyCTUtmThGOEg4h:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z0dLMWJjWWl5VE1WbjNYcrBnP1hk3LgThq.0CiiOZ6pI6MPf:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a3p1RmZlZmhUWkdQUkxERjJ3DFdl3jj3R25YCdztq3O81eTP:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UndIQTB1dWNhVkVnNVhONq5c9PoafKDxdr1M7s1Vhn18A694:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aGF2cGR6Y3EwWlVkOTJLUOfAc2ljvL0SJyCoA.ITCLgy9FUB:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TFptNFZxQkF6QWROOG5NaqffNWEs9GJr6AT0JdfuUkoW5iZU:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z0ZQUGJRRGQza3BiWHh1UdCuHZTTNiiBO8k7tpJ5hz9EMWj3:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M09reUp0OElhbThMYWprVYwA4ihPpci0hH5K/5rYR68Nu/0C:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NDY3UUVOMU1sdFFHNzhCRpvo6C3h7LZ7fjuqd4jwfSIi8E6L:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}amxvcmo2cDJSZ3FMcWdMVDol0Z0a0skYo3I6TNZ881fQFiNs:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZDNsTzBNV0gzbTBoVkpMeZCA050ZpCgfU1TKuA85HS40X53K:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RnZwS1NnMHhqQU9taDNEY4KuSrh.TX/m4NsK4kXJ2MH9GUx/:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M3BmT3V3aWJ0djNRNzZNThFUcHhanwm5qCSVladDItxsf.Q8:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q3padVpQN1hORHFWbkdvdMKWs6.Q6ELhka7r0g.EBcTmr4q.:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TXRURUNQOURoWU5yUGZ4SAwaTWhcLsLkLpLIp6ZvdMtpPpGr:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cnRMb0FJTW9ja3VBbnp1eQ4YKNvTINi.peDy11Hvln5P6C88:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q0c0UFVZMlFhbGpUNXFFarji7hW9Zdlsp0GZghlZPwtmmMOP:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WEl2RE5WZnROa3I0U2pHUkSlDbFSfwlxoVTYGsX2D0jg/lai:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cDU0UkJRQVpiRURoUmQ5RqbVeeyJsXxk1zDeyW9s9vk2.f58:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UzRSZ3l4eDFQbkJ1V1VuZXlavVt8FNF5XRuYHO2ZUiaMvE7u:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Wm5EdDJvMG42cFV0aWFoMeWx51mQ9gRCVY1MdPUTT5BAeJ3I:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SzBKVnczdnRIZlI4ek55WVf0cv0byIJHAY7RP2CIr8nEyLeS:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WnI5dmxhQmV6OHB6bUlKTBUM6c7YDvaKIfsbjdyHWrQdv1Er:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VTR2ak5aVUM0Y083b2NjcGwqc41DSN.YQiVxiYQBhazhivqo:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TnlnMHBJYURCQU9sejY4UC8e3QvGZrqvsHPOgNDfkv9Thz.n:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NnRISTkwVkZHOXV6dUVZRpBteXX6Iiw1453XB.0UtLz.uIry:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZnNhcThNaDJ1UlltdWlLN83uNCRvMQHkO6vrjgR3mYMDRRXL:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VElKYlBxd3laM050Nnh3Uiap3Fal2C706qhW1dckHoAEvvyE:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QUZuTmMxdWhDZXhGcXpSbmOMZcw2g6wNv0LZAtv4ntuTnU/K:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TlM5RlhmZkpMM1lGV0VIU9r1wUGKaGyPCwxO8IWqLbfsu0v0:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y1A4M1VKZG5GSlliTTF2NonevBTK7XgP/AWtEMDQYwdV57yL:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZzFXS294UzN1Uk96ajBobbCOJZlc8vajzCfAEFl2yZZu8Z8O:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Rm5mY0dOTUlGdERQSEpTTYMlmiJ9AzeHSaDDG6qisR0vjZ2U:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}amVzbHNwbXFPVWJTTXBLdoPWDCazuXCK4LrW2yqjDEWRvZly:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}djNFTHNSVjJ5TGE4bDRZak4.3MFf3dRXb2lXrhFtt0StPriG:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NVBnWk9jRmpETVU5THNvMh2u7mzm1b/1tsw7Jq9VYbefr8hM:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZFFnWlRLRFF1VFBJcGxXReWMuXcRdcpa5Vl8QfUdau66DJJE:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NDZGYnJqMzB0bGNyeWhDU2HycIVTwDSyIylFPtvxKDwVJG9I:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NkxJcXlPcHlFUWhkbU9ORt5oqMkaisKssNmerrLERfMlf.OS:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MkZFQ1gwcjdYVW9kcjV6OLkzqMaW4e7T0dYnd.IGIMcpsZwK:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SkxMS1dJY1hSaUVrZ25UcblD2zVdB/6pnOGPWm19.YNjlIGI:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YnRBQ0h0dERad0pqZGtsTN559w9bP1l4uaus0XHpXayK/3Ni:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Wm5HR1M1MU5JYkdqczI5Ufhh1FPAM840PdtGBrJ9VS7a9yvY:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MkNLQzZ4dmVCSHpVSnQ3M5/fhmw.Tfg2WAYDMXFtkBNGvXK.:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cjRBWFdYZlFub1pLZjFNNkQJKqUfTMhVXjvStX9uvpbBMMBI:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dGtUdW9KemJQRm1OcFp2Z2p4GsCXf9Ixv6DGhJVcoV8I0cSc:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eUZ2cjRGZDVuY1VVaFdRNMEZbXbpou/rlgUSndABf6Lm41hH:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V0NFbWdLNE9rZFg1aVRXUnqIr3l5zNXYBr6hoRaGEY3AbSrR:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ckJmN2thc1RpVU1WSFVHRdZE4t4Cid5/HLZMPu7ROKXlcxsr:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dXZoejVQaWtaVDBGT3YzVyHncObMfICMqwqXbt8dU3LzrsF2:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bkI1Q282ZTlGM0s0Uk1ESDc5pwAyRUZhUQPhoDqY6p2zb3bn:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cFhSV1pYeGxMZ3piZHJxQaplHqlJR6avQ7b81c3irFek6m/p:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a2F2bzdrWHd1TjV0OFVsM7RnUwmbfcA5Ng0GzHCTWn9syj8S:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZWk4V0pGcVp4dlBWa2MxUq6c6PQflYL7CYhNM7f6cz.XfCKe:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WDBxUThZVWRYWkllOHpXbuPjnbeDvODRwwxyCrcExI1.AZmB:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ckJTMHZBTXpmZTczVEVQeGOdNbhPHvsof4e5/RPazBFfITzb:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SWx4NEFNUllJRnUwVlBSY1QAVc4gxXDP3znapuT.LamIhawc:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dmRKR25DQVIzelpQY2VpeE81UG5rFcYEfyA6n/Kcn//Ue6NZ:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}clo5QlE0OHpyN3lUQjl0RBUuoyfi/Mk6bLwOICOEcsQoXYiO:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RG5OOE9UQzNNeHc4bWMxYyXwspyNRtanYPMkUQ.CsUViRwNs:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VXk5RHlabXRSbXBSWGprby1LnSn2skQyi6X0aKCF911FQ/k5:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U2JyaU9pOTlsQ041UW4zMMV4QMsjzxiKW/e2FOT5jgEopSpB:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Wjl1bWxqTVo3Z2NydGJvc85gAKd.J5UrLGEE15I68m7ZF78B:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VGY1cjFRbTlyeXpPR1pBcSpGI5MHBnHItk5oglZNZ6FM6vDr:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dVhyUVVyY0tpc0txc2xEM9myrW4b2nsmu3IMDldL0uMMqEYT:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y0JVbGp2RVk5T011UTE4b4FQX9FV5CAdJdB4lfPcgOhBpNTl:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZlJGRUdDRDV2bG5Ua0N4ZLZL3NQ4a4he4g3sYuL1IHN71JRz:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZENFQngzV2NUbnY2eE5BS3f3RF8MOzelN3sAjqypq/kFHbzG:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZHlWd3dSODQ1NFVVRXVlYbfJr7VB3jOStYL3YhkmRnzaaaql:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c044N1NrT0NBVDVBSFBqTRE/bcXc5/ntCPDzbVLgw4iYVqt7:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}em9PQnRFclMybjZBVGYzRlBdv/n98lVu4hL32s0HxnsFVdcy:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Yk5hYXRwZmdmTTdHc2UxMBjg7QUN3441XTVvfruB3AtNnc.d:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MFhKelUxeDUwVTRIWjVYMXu1.1Y8tzvvTXCtsNAKhyqGy74B:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OWtkdXhja1lSWDVyaFh4b.UJGA1FiSPX1Z0mULwO2NGNhLjO:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Qzh0S0xVYndDdnJkOVExeb9yjNw9XeNtYjZLurvK96tpRNcz:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OEU4U0pMSHI5UzdrSzd5Ytk9H9HLcfoQOVGdFARhNFunIA/L:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RmJFaUNxWlJ5bGhkajY4WNieRigOdi/NfK.n98HL6z6QNpmm:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dWlMaE9JMnhlMW83a0VYM36Y8BtnBqWzi44kPhzq5UamoxvI:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}djhrb3h2UHliQXpMTUNxZ8Ozm04Z/bi.Vwyq27SOflwScpZc:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OWdrMzdrTDNoVnpVQ1EwTq9iTF314k2Krzb6ql9.ZzXCKOl0:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aTJ3eVNEekhVZWxmS1hXRNHoUg8Q8KPeax4E66kV7xpYc570:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SHhIeHFSSUZQRzlKdTg3dfZTHAGkoDxkp0IH3yyq9Y2oKXzZ:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NkdYT05VYWRiYklyTEQ0R.gXPm/wDWCCHhcc3GUF9Q7Gn8k/:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDBkVkV5M3VlMk1wTUh4YkjTvR4/.UPaq/3yV6oH3CJcLi0w:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QzZJOEcyZU5aeWRjNWhiUiCrSOteoImvfZZAMRl7CuGTmpcc:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SUtHcktNZEVUUGwzUnJ5UYAfE763NsxbL0G57cqluAabKw.s:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YXUySWxTTGpobWVVZHgyOfEpYnpXQSE1mDEteqTrCDr3Kg73:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dExPRUUwNXpuNWVGR0lKYQCfc2x.lNJq.7fnu..sfGnutqSs:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QzQybzhNdjJIY0twN1BuUYboQRLBFuzX9WNXXi3c2.J8gzTA:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VWptVDN2YUpWQlQ4M2ZQcYk..X6JPcDSQYsIrc4n/lE15qzQ:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eG9wUWRYU1BVVnFRejBLcYa.9WBoUFsJO2R1FCCF2Feh1Zty:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S3dNek5OZUxid3BQMU1iZCXCafyGrj0rEVfZkoug/Bdt.oZN:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VGlNTXh3OG5vc1RWNThDb2.N4.fEHjN6CL.7Biy2psFx0RQz:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dkI1MExlbVFPU0VyNnVDNYdNFIrMaMdmxQkLba19x/eQYW1i:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YUlIYWl5bVBhV0tPWkRWdUW4KaDZxKiqyt1FCk5gKPRGvqWD:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dWhLWTNTeFRINUtPMjlEYVDfaN5CTMGxX1M7gCGas880t6Zr:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OGpMN2FtSmV4YlFhY091TRHfnXr7tup2.AOCUPP2oPpNt4aA:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bUxUOTNOU0hhUVpPWkxpeZ6CwfBkFeH8wBme5UNltpUm5oFe:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WDhid0x6bEtBT1FoTTc5Y1iRq3.MPrxLS.2GmYjCz.4v7Jp3:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NTMwY3VmNkJxb2FQY25FR/L8KmBg8lepqfeNFHWyAWEIcIcl:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SmVqSzJoUFA2blZpUHl4aaPWD2cUls8cIrIWHjjnWeeZPMY4:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RVE5M0g1SmJCRmdQd2FvTuR6Il2YaPr5BqjxIKqLLOi/.84X:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WWZ2SFR4Q3AzTjgxOW1ncoPOLtEn7WnwZeyHJ1cNv3/tMfMx:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MFdOWmpua2VwMTg1OVFuS3cId.isv4ty/ykW1WruIgU9ebsn:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RkloMEhvUE5udllWRHJoeLQHneHmKc4YWPXSqXwyAPTxpnPT:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UERkMmI2cXVyWXl4U2llMJvPFRfBv8jMWKAk0wJU1G1/NYAb:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a3JHSDhqUXZnTnpQZmV1NByVhA.J.7FtKzgwsdh4NHrJGPZr:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d2ZoNk1icVRkbGNYUkpPT/vM9EIj8FHbc2Dunm7EHF/POy//:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QUM4MlU0aFNBMTdKUWx4VpHHKLmwYVWfNttG70MvpWbWkSrN:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Wksyb0tCbEFIdzd4TlRQQ08wlTNTDM3eRWTFpVUL9NBInm8b:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TldwRkNYUkY3WVZkRnEwaBLDaSj4qvSw.iLEYzjL2zmL3xOh:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SEdFSFhOcGVEYTJudVJkTRUICEskleX7AEsrsgGGmZgoUvdS:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OG4wWkpKRGZIMkZmcFlCbt6wD1F1kMk3DKXlGg1/7H4e2y11:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dlZZU0k3cmZvWDlvNFNSbuqo74MYAmugiUgGGw3K2XnEWhUG:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cWt3ZmRKN3hUYUN2aHNndYhWPAKWL5.yPHwkESTY1BtbUksk:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dEtKYnM5bGRtRXpESWM5MGZDqE8KT7btmZaHqlklXjMRWDrN:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHF5Tjc4VmZQdDNsMHRNVkZiTGY9McgL7XzS4jiecGRMlUYM:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YmRkT3oycVU2YmwwSTNjWCm81FVINhCE3r/XOddYZ2Ftiags:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1g4MkdGbHBLQUlhRlc2a80PFmpmPFh4NVV5bon01vIuxekb:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}THVSU1BrV1Q2eTVrRFJZcBjsu0/nS6bz7rDnQHFuK3R/Zc4y:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TkZXVG1XdVc0dGU0ZEthVNr8fS3u9O5gLG/40Mt5hptGny9a:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z204TlMyTmlNZU9GOTVrQlPiTEP6GQMLPkZcunrpa3Sc85pm:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bjFCdjlLUlJQRUVwYmNJWmHNDnEmJ5WLH03oVF0McsSBB4O5:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dWZnM3pHOEVETHpYb0hyVe1Q1Dp1F1p0k4j5MecfBviEoUdr:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHVmZ0NyTTBqcFBwd1pJQtzh6jwSksNecyGr0vNg4rbnxE6s:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aVExUWt2TDMzVmNlS251eJAsrO9lWNP6hX0Uzhnkf/S2Gb6b:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dnhZM2M4RUdQMDBaWjU0TFi3FgUn6TLYzlNcLnn1cQC1yyai:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}akVpOU5YRWdWNEVyemxUTppcFYABSAxW2QuAJdDsN0skmmXU:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YVpxbVVwOUZFb3lJVWwzcAhXjkRym1gdU6EO3cx7cw8yviAS:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UGpzVmpORUhqaXlzd0tESr3BB5rwEQIdqsNZ91T75iz4UJkZ:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SWxrRWEzOVc4UTE0eFlYaIzUKmiWfoyFY/5viEd3kABr.SHS:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VjNET05sN2dNUnNJRHVXaeLeHCGtG2RO89vXJPtCSQRtJEv2:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}THNpd2sxSlZNaTh5R01BYjr2V5w.30py3Cmx4//7zYUClPGN:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M0dCUnB4V1NRaWM3MVIyMLOvmkc/JR0XqelyneeVD3Ab2rsq:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RTRrYjZ5SnZQcWRuVm1QbHCjCvRwM/VFn4u1A.VkfzGaHmO7:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RktJTnY3a2I4UFpydXdoMIcPkulFjoxVnAeT4w3dNLjunzHK:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ekdNQktGdmt5c3RWaVM0ZEbi3UdpfwH/1Izo6zN3OLz1s7RZ:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZW5pbnZzNUVHeUVYd2JzRketZi6x4YCdqoikgCD8SdQwyIdb:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aXMwNWFzZzIyVFZFaVdQOOPlPV.lY5FhDPbg1dSRd/eiN25R:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Skt4eEQ2bW10UnBLZ3JZSNs0n2HW1lR1aP8Gg5PqEzyDHLg.:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T2pFZWRhQzF2OTdOM0g3cvrwpC1qDN7YPdWpwvDry5SEVbBV:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NEVOVnltbU44MkxqSEtXclusxD7sVZYrz3klOwFJwdsg5.p.:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TWFvb3ZFd0pFVzJCOGdHTweN8R4jI24RyYkgMWVnXdgY16pe:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aGplZmx6a1lOdWlOTzgyYhcC.LPxKtOrNOWJthrEspLkLX4b:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SXJkYXZVV3ZrYkxnZERXNsknuR0Yu/yheOnILSGdoBGvyrGp:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RXZWOVNDb29Nc0V6cEl3WpVWmP6ItCSt8LLmiMVp3CZK9na5:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U1VCbkZEVGVKQlNPYjE5R/syicsAF0hcinbLrhXEIIn3.Z0Q:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TEk4U2d0ZVpQSTNKQVlEQsTnmHOnhP.Mz1A/gCtbQpK3HwrX:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TzEya2paT0RSWWFGNFk1cs8QbkB87bV.1LTHbDYhE.KU3o5e:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cm5ObFZCQjR2SkdDdUcySzytTtFoLoddUUDoocGssyZsUMj.:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V21GdFpSMHFoY3FJTU9JRGg637jxwOJTAsAOadraq.gqpQFB:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ck4xcktickxhUmxNUFV3SHQZyBJWnkNRpkbvf5XY0RfEqxtX:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MmdadmFiN3RLSU1kWmVxV3HyxzWsr6PMcWU8yh6lSPnfGk3Y:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dERDM1VOZjdNNjlPdnFwMWANeiV735uCThtzcdPpvXMwuiM/:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aGI3dktiUkVRRjlNZ09vanDWMXlX7T4XtBDXSk5.NJJ3j.im:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UjlJdkw5UFM0S3pENG5peOmP9umS9sO2DjcXgCi6wd306EqZ:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ajJjSVFBRlFuZUMzaFI5WjYC6U472.s6/Y61EuFB6numfgDV:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RFRySjk1cERGQ3BIaXNuQQd8FyvfbQbd/a7voQP5yoqjF58.:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UWo4YnZHQ21PUkh5djF0ZvIWMw4PYb4/DIOASL6jojf69/6t:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZGNBRDRFYVB4aGh4dDBibqd55T6F8EDEKcuCCsc7i810qUSX:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZjhCNkh0b0RuQXY1SGJ0biy3wC4R/8jG.W2kSTL6z.ie02f6:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}emFxbUh6WTlwTFZpVlhWSHxOyDtVw2aR1XlBugtBkmiESMzS:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RWN1Njd5bnFvaVd1NGZOcSFFYVH4Hq5s2T8Ij4ZTW77KmOW1:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WHJxUXpHTEx4aFpFZno4Te.RQ6.5/qCT3xKLqDW.YLCkv0rz:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U1haWU9ESXpDMU9KdUtlWbqD0fwXCR8gK8kZuhTAFmYkdEGx:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bGZJcDVTRHBVUEkwT1hlOFS7vkaYzbq1JZQev/irnxUH9ofb:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1BMS1c3WWRRSWhvWFVXd7cR434VfoGdW3NRM8DY8q3W1kbi:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cWFENmdMYXpmZXB5cTNqQpouiBhC6pZ1MRYMa/uTLA590m9J:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TnVFNncydXFFMmpWRHh2MNbQf7SabqJZ6is02FWsPBuQZtEY:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RzY0RjNlOHV0N2ZJWllkareG4Ed9xI4TqHsGiaBBw3O/qWi7:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U3plTk40SlRkZzFmV2E0RUu9BdDKWPkZQ2VEyYv5ZwtAVyxY:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WTIwUk0zMTdmeGxVQUZjQRh0.Mp5Z9Pk5N5udypm2zg3R./D:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1ppUm1BUXFpS2VESmxTV9Ag/prbXtUm2Cm.NvXQHo6RyyOF:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Rzh5QVA4SVI2YWN3eDUyU0DPCefuK.YFTnsZ3yP1dNYBOkGR:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OWd2QmQ0YU15YlJlM3hIMLEF4yVuWyfLS4c7t0Rb1TzuPLJx:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NW5CdldFZEZocm00Z3VUQrbSsletd5fFb0tH7mV8zQ5YjMUi:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TG9MVjBtbmRET3owQzZ6NQ10GK2JWpKYRYgdPD0V9uLdBumJ:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MTd5OFJ6VmtvMFMzWWZ1aRlTvjeXxZomvcY4brVd9kq24Rm1:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cG1SbU5rTHRRNHFCdUxicKssi6aONXso38mfLUwPRauxIoVh:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T3J6MlVFdWlXS0lXWGFubP1oGqdJfSf7aCWHFLWP5yNhDDRA:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N29YeFJ5N0ZybzBEdWVCMrof4.7buVJZZWhAH/eolCAteAxs:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cHlRdU1SaXpNaTdSSnJIMn96BFvG18RApQwz4pe1UCB9sH/E:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}THpxZWRxS2tGam5QTGxGYnI7cZF0EQIaXsmvFpTBfbuC9XVU:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VU1CaTlrRWZBN1RzRmJUbepQv7TyD6D3elpq7l/oTcHGPnkZ:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TXVrVTRhM3hlTHRFOGpGeo8lyXYAej/3cMw0GO7bpzAfRFad:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y09TWE93c2NVWXpoRnBRVQqBVi1neIgkCt9EiMdL6Wh1OA6h:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YjJwUVdmZmRMS3ZQeXJFNxiYkLvtWXImkNh6sg/t2L.j8pat:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NnI1NG43eGJ0WUF3N05hRg2tnR7IydOCJ6pJwjqkYftH3hws:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c2pISlNWSGt1NUpibjU4Ts7kssUGKFIFRVL0ufZAcY/DpRIp:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c2dLbEg4dWFBMXNyd2Y4Rjg5EOU7H3t/ITJCpp.ziF5wV.4L:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eHh5dmcydWlobVRZQ1JubKSeE2ACzPz94ITrcdPKQ9wr8MNi:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N3NCMXhpalNGZnliVjNXTWNkQAxYl6Ny6cBRgKwUNbQa1nS8:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V2NNZUVhTVQyRkJDcEhOZFlduUSJ9BWh8pQsmNYwGPTedF9q:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bUtYTmltZFpPU0Z1V1ZKcP9ah16xbZI/4txxL5aNN6pRakMd:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}emRlQVpjRVZPckZ6blpVcui.hQcQ3SmVfOtfmH4YcrIqpmSQ:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SzlXa1I1YmZsV2tCeVMxZuW/0zRNOIxH6bkVYEFsAQ5Iob.j:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aklkMDJMTmI1ZnFmVVc0eQCkyXpnKeJe1ztzGLfvAPf0ERiS:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TnlwMVl0azR5N2p4Q3FVSR/GRntXn6GuCrrr4luSkF3hXgBD:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V3lGdjQ3VG9KUDB3N2RJSSnkQaz.z4vj4wnhgLNqtRkyACGR:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VFFCNWo2dGdmVVdHSXd4bo30gL86FN4XeC4C6m.ushaAvLbX:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TVFMbmNqYWpTYWNYRms2d7/65aHDDxMvdVe07Z7ixNvBOxiH:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MFlyTkZxa0ZDTlBOQnZPc5pR5p4ilbwK7/jHgBLQxsOPOu3A:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NERKaTZETTRvVkZ3emxBZQ2tbQEdMZ3FzprkA/Ps.bjq9Lbr:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QmtoQUpvRTc1NXVMUkFPQr.PjlHTldTVM/ulzImUIBd/JqTt:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N2EwcnZKQVdGekRLbmtQcOFaj8n1BS6RCsJvRcJp4bXFBPRa:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dTNuc1hlZ2d0cXFYanNzUGD61KA3QC0NsMC2DIDEQJbah05R:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a2pEZ1pWTGZVSlhmbmNCM8Q6ViwsE0/CjBxctDaG9/qQ.PVG:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SUZDNVpwV0s4YzZuRnFaUARqrQfVMBpx7b8HT2iNsKdv.k9k:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TUE3OUVhUVZBc0dHZmlza1huKIjDN5GeKymQoGg8M0qi7LJl:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cURhaWNLNWRtQXFnTEd3ZfSlOJ8tXXu95UY/29BWGNHP/EN.:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UWprTWJpdDhEdlo2RG5VQaWPnEbgQ9CSs1RH5F3lB25YESeX:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U2toaE1Rb0NTcTNBNDJ1clBeB0S2f6u7Gf1K.dC4.tAypAx4:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z3VYbXpTSXZBQXdJZWtIV7xz2K0d9JpIzuPJx1eaZcZ2BdRW:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z0g2NlR4Z3p2UDlXWU1qbLfna6oC4oHsWldjugp9PK1jaiiM:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Wk9WVWs1VlB3dFczcXZoNQxZY/3DzpKpcObVLKqBMGj.LUtT:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cGUyT0pFNlNIWHliTUU5U/8bFt/1VZAj4yEUN0wDAPUK115W:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SnM2M3JSbXpKZTVPak1oRyz5V8xxfoeDhe7saC/YOOqieAKg:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TGVRMG1KcXNGS3I4TjhwekvDc4h01HBrMHDUwLRps7Zn7PPH:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bTBiZVJlTlIwbzI5emhnc9L6DFnTDLyxbnSHck9Uq1TBA7wL:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}alpkNElod1lFcHdxb29ES6tgBY1gyjOfdI/QW7rlnMKvoNpA:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aTY1WkFWc2VRTFRiaVd2QT.nnfT1j3OW93cibY6.up0QNnGk:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VjRkU2lrTDNCYUQwUFNweoog4YgF.Qec7rl3H/gdKWGrC403:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}alR1Tk9GRVg5dFY0WlhOZWqXQnQCLG4pGKONtZrlofL.B2kz:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VXR4OUM5eW9iM3J2d2VoWWjSPET8UMFVZqqqkBIqeE9cgqXo:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dWhoOGJxblhOY1V4aHhTUk3495mw2HoNt2AZzpfsKoLyebNF:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c2EyMnR2R1pNMzRsV0JDQX0hk48PmAeWKWqStvXfarbZc4OV:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VVM0SVFHbm1zaE9ObjFlSiU24VqmcfcoURvFmB1Zg8bucC0N:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Ykh3ZUM3Umsyd0JCaHBNTutaK/jfYTFQATiaQJwnSVPFafWr:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RXJORGlkcnR1dnVyT2pwTxQww4D2VBnXa2FMODvmawVRWNA.:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YngxYmhLcWZyaHU0SUtyeknHOX4SY1o3RFH6oY5oPKrwqON7:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dDhjSGdDa0M2T0dJTHNOevx3FKtZlL/fzLvkCokyrdNMoQ1g:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NHAySTJ0WlBONFFTRWRmchFjtsjGJNYBTV3oj1Dte5gTXcUI:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VWZFQjV5SWhwcTRHSlBZaisrdjn15beCAjijyxSWFdv/HeXA:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q3F3Um9McVhDRVFoZkFBa57Gz5I1MIClhXJWx6iHY7gO0atC:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WkZHbmVFTjdaYkZPTG1udwdBHM6aqrsSgwNmLD/d4hBbk6jV:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z2NHNVFDRlZmZk5kN0dLdTa0WHvNtJwmsvD/gvvkqP7XO73m:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1FWQnMwNG1jOWJ3M2lJRFDpQai47wreE1xqHEXUeCNdQC6f:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}akV4eklxMUVhRm1Ta2JjYc4/.Kza9U2KIL1X18bpycEbHsGL:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R3pKVVZFQlkwcU8yNDN4S3sdhE1S8ufXniXDmpp7IpvTX8Iz:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WXFtZVpkSmNYQ0FMdUI5eqsY0hXphIaoPDmcMrvKu7Idyt2U:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M09YdFJsd2xvU296Tk10bJddqmD31jFCt0INXz.vIbiwv3w8:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dk1KdVgzOHQ2ZkVFVXFsWvtSVi9FbQoEDaAA6OtMbafxB0BX:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N0dsdHB5MnNQWXZ0NGk5ePc/EmT0naFkoI3h8eGevkQJHHN2:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bmR2NEdTdXFaU1phRE5OTy/.yy9v6Uk.TfK/Kt3Pv4BWBFvh:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dXRZWERVclJBaUM4T3FSYjRQUAdXQwPaCeoMuXMB7moqOF20:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y1NsZVp1RjI4b0dldWdGTGli.ADg9.RloIHejjHBr7JGvN6n:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VG1qRHh4bktjZmVwQWxJNrCFEu/vqZZvC9h/Ny9JtM3G9v2I:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YkdSb2RSUm1JZGswU1FZTPUf6Q/Wpn0wnnPImAJpXNLUx9Yk:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R2VBaW05SElnaVMzbUY4OV5ZXJ3U30G/iS5DNGYhKKaXr13U:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NndhZmp1OGk0QWJ0elJTbrhtMcWie.HadjLoPIhLfh4pHIjL:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b2J3clFhWlFoOVNTbUx1YeTByFWBcvR1ncK.Ww/Kf3IfyyuX:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WmdtWTNGRGJHRzJuZFp4OTVM7IQ9gVMaPWPbPL7QgCCFoO0V:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Yjcxa1pkV1pmM0ZEUnd1Vh3NOFim6I8pfLQJxXWcXTg6JGCr:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NmEybE9iTVBUbEk1WklzQRHQFSjaBXVlkhDLDePHOdhUGNuc:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDlyZXdjN0JsM24wakxrM4qxRijVyCt8bxiQVa.gEQPOIR2e:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SDlYN29XYmlhT2dRMFhhWNH3ovTgqNbOOv2NHfYDkRGnCr6t:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eFRSNElERERkazBkRTN0M3jAFZg/B2uAko5kriniTUxMUV9r:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WXVGZXQ2RDM4VFQwVmJIQ5oTAv5M/QPFhmGlMu4Ct89VYWix:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UXo1YjRENTR3a1VXUW5sWvqw57PKr0jNgLjdmVDx2jI.0P0Y:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U2xiOWE1STA4ZW54ZUVibrIxLsBogkq9oPPdak0JZWw0ckEt:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WGJvRGs1cnkwYkxNeTJBeQtaxmvdQpjh2J2.oE3TEgYTeflk:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZEVQOTMzeFF4WHRDSmRlYThILlq3RooWpoDvxyWB90GtL6gc:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MGY5cmZ6ZUVNV1NON3JjRhfIjZSe6frYBGIszQSkdIc7Jes5:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bVlXUHBpMWh6dUR1UjdCVo0jk47U3WZ3UX7F5zHzAZhcpUsd:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RHJZRXRFWEZtd0NwT2pWR66rwpaGoOfOF7KYnGY7OGqCnX18:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QlhpVXdSODJOMHJ5VE5xZcu0lBCGHtRB4FPN4/bl8uimQgFz:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U3BsSnVYclRkUlEwbnJJNMMLoUG95erf6n8/J77ICHE.HIZQ:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TTA1S0l5a3lTRFBiM0NmOC7UDZQkxqh7TjFFIK6qlXAnZx/L:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bDJkbXlqU1JRVzg3djZZMJQL20eaOkz60//NjB.BK3c9Y22c:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QmtyQ3Y0S25jejFuOVF5UEUWiNI5ceVQMuuVHIM9cRhzyb03:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Rm10UzhuTmJiN1BzakFRTefmL06Eh.tXdVrefNVxN8m/GSx.:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Nkd6ZG5ESkswa2dIUHhxNQlZ6ZztWUZbx7wEXU5u0wspYwmQ:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RnkwQVFrOWtvRU5NNVNoSYqL5Nt611MvdgGGZPl8w.XYf2vy:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d1F5NnhmVTNiVFVtSXZnev6VAIZoOx9BfNOJF3NDXGbdgf2h:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ajBpU3FjTnFxU0hyM0l5eEKw/JvXNydAYY9FbbH23xxhfIWu:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UjVYb20zRjM0RmN1aUNBR2hQssazdzreW4sufkCTVxP85qlD:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bnROcjI1SVNRcElxU25WTylB7HLskiHTZrtWGHf0yrgQrTll:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aVFFTVpFQTM1M3dZQXpkRVMysZscRDSUKTcujgsYw6vMYGHr:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b2xFbVhWZmxIT2I2aWw0UenT9cw9O.KhJ/j.csAUFTYu4EU/:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bTFYSVJlY0xsdDFucWhBalqp6SJyKwlvAk2xIBsJNqAzNh4G:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dDI1enU0MHpIb0d6eU5PeJf0E.35BUJ8dSxPg91SzZ8kK/y8:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Um00ZHdWQ2M0Tk9LRU5xYdoaQAcSng719An9dyojXk8D6Y.V:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZkNpVW9zTnVobDJPME5xSO.Cjvd80wDsih.cPQGqnV97Tznp:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}enlTc2lLd2cwdWtnSU92Yi8eZmMHDS0DWdS9ihJpT7N2B/WV:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RmpXQ2x6a2thV0ppb3dzbYvoMozd9ETMeJLp0N.sXT5EHuo/:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T2tVOGxRMGp3M3ZUaklSRASGsLas9dameeR2ULPC8oMFueFL:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M3c0eTlXU1RHbGRzbTJXevvH0nhaMVJOj1sh2Hgo7yvqskwo:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dWlKTm5rTnBYOVVWbmhZWt22B8ak9H9C089kc2yVLWz72zCC:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VHROSFBCQVB3ZktESDc4NMOeBRb0CM3atImNZmiAFGO8aysW:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ajVyY3M5elNkVVo2SXZpMVVWpYuCcumr4BBztvVFJq3xACJd:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ejRnTXN5dWo4YmdidTZaVnNpaj0fjQFm4IIm0/0bs.t7CrgJ:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NDZnTjdvQW1GT0RzclpwUf7zBNZC1h2/YI3lMjm3FFNptISV:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RTNVejM1NVdidlNkTEtPeQQyEGLOdwvC0Yews.GZ5KiONXNS:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RGUxbEJiWFVIM2Q5ZThkRe/psZP3av5KX9NLuiVVgEM6g7rm:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZDRjcGtWY3loRG50RjVWeEQ/63O/UWbQ8qQBa5Bl5bnlTiRy:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VHlmMTJRRkN1TG9COEpiamOvvziIgyrVSGRQEpiVsOXPi92o:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MlFOMnRpV3RyTzdrUGExU1KQUY2669Ton.WrQBSXR.y3Cj3/:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WDg1bU1XREt3T1Z6cWQ5MRUFa0qQT7s9.ZK5me26HndGbegJ:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZFdMcHQ1OUJtcjhlVXhHTZUko5ULUX68LAWNzm.BpZEKoram:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ODZQZ21Ma3k1VVZPcHRRSeWitH4Tf6gF2JCOHOLwgsa2GQmu:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QWVqZ3gxNnNpaVNPdEk5dImq9G5qguQ/2b8vBh5pyUUzAw/2:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QUVqZE5zUFRiUnlWUU54cvf2Qz03dPNPCSOVXdmi7iMbKRaB:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aEFvaUdiTHBCU3dJR0t4bEVGvHzfaONNALrnLLCX4K4lia60:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bHl5dmdOOTdsa0xmRnR1bAii5ftARZUvlzZhsmoVDtWhnjGO:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UDc2aGgxRUFzeHpIQlA5SikYcAmWKTMyNTcvgGNIVH1QAvxd:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M2tsczVRYjNQb2VibmtEcqeEYfV8ZKUFYt9uE47GfhuXV05i:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N0RUTlRLcEg3UzJibFo5Vt1mMnEMF.5CS2.h2.1uitgDzm96:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VzBUSDEweDFJVXZpQ1ExMMsj/e.h5oe2LbfvZnGCw2skGi50:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NEV1WFhoT0h1V1M5SFBoV0563w82QdB3Yobjn2XcRqjVnEUN:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q3pzeFQzaFNuRWlXdnNvTvSLnrvYqodotEFtV8GxLbpjILBo:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OEJNSUlzQmU5QjFCS2w4ec2e1QNKpD.PVtIabv5oek9lOIX1:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N1lqZUVGRXNSMVRNOGlFV/fysp2cwKLthQonm4hFGG9JIREA:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eXhsNzhVSjNKR0ViVk5nU55xRdqwilS4OMRrt.lc.AdGHsjS:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S1Nqc3lMaEZHT1dHTjFxQjLCJJcJTSRSI0rKjTzvByqcwdyv:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}djEyY3piRU1SaVc2Q2ozMIbtMYN8iXdDzqsyFsIF7L0.1u8e:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZllhTHoyd1NBUWZVTXowbwNX.INV3Ui.tJ5nPDE8.gk4sGMN:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V01JT0xOWThyNnJWc1czNAsng7orIfh5OEdx.zNGU3A3xmLh:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RGpUUFlvaFo2OTJ0UGRYZuBcl7wpkS5ydoXUiSIdkkj4hTDy:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VUpFQWxyT2ZNaWhTOWN2SWU8duIydbKi0LkNsfXSDcAxHNWy:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NFJaU3NwOW92OTBtTnZLSjUmxED3hMpYZF.HW9UU5WzFP3F3:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bW5YYWM1d2lmbDl3amdzdD/WjUyzCkTsqFjbyshvFoY/h3mf:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YTc5NjdQeThJSzBjM0dEM13Ds58cprWROY0uZhjyrsNJcMhY:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WFJlQk5KaU9XN0sxZUJnaqA/MkTJr7LYOL9OgNRgxONiqD7G:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZzZwOGxNQ1hPS3ZVd2RHUXZ/LLytjM7zVbwxJQJW6Npz1i5r:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WDVjemdHTndnNTVERVA3Yuaeq5Gu6QIEiGfcD.XP0Bzh3kvI:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Uk9RejZUTHJQV2pMcGF6WPEJII9SVRYJrpRN6B.eIreFyQA9:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WE0zdURSaFVIcmRKY0dHb/IcXBP6bE7lT8ThATJlC2jsEoZE:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1dlN0dPN2VuQlVmMFRMemwBKJPEo71TYtidKnu53xXNW6MG:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UFE2TUF0VGVMVE5CYXl5cBn7UPGE5BOA6ntbpdOEiwKBBj.I:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}djdxTjhrZlNodTQ3VHVRWm.SU1ee5RRb.gXkwv.lXbch3t5m:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dEZtNWhIdWk2bGhJTjNXU.b4JcZmUADfzwR.HWSbmfqiClec:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d2x6QTdBT0lVbVkxYUdmR4dbWlfYCWdnqTh1XrkvulsgaVKW:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UU5jeVFNSURBNk9YVmI0TWygxSGsJ9eUz1OB1EynD4FFGLnU:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RDAzY0RhdnRJMkhrMm1TMQdRlfTXiEcw6kfoZgugyEE5BCti:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SXQwYVNZeHhUNElhaXZRU3mOKdn0Efj1Gs/Bn9AfZFbLakXs:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Yzdqb1ZnWFFoU2REcXpya88Ap90Zc9Z07NU.h.FsQ4ozwY/L:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SXk0M3c5MG9MdlFJNDJmcAyhU4U/OCfCfIJugwWds8jvIkx/:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SjBzYW53WElEVktsM2V4cVf1WYlSskgMsocB2zzo9fDWPSu1:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YWhlMEc2elZSSWdpMlpXUjZifpwWZgYyU8awhVZxZHDZYOe/:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RzByRmNPczhMRWE1cEpsNKJ4zuwAzk8n.jUwmtpRof23ERoV:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RWdYYUY1Vk5TeERDR0ZWRbRGndZ.pUK554aahNRMOFm6PJcz:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bWRZQ3BrQ3hvYmN2aFpKMVCreqXKjN8WYEkYs6Bn25Kv4552:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UE1vSkRjeG1zNmZSd3F0YXcgm9B0hV1PqG/VVxs2al9EYP6W:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QjlNb2hIRE1Gb0liNlB4YSEGxBI15KxMHhTKRWiwzZRLgRQg:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S1VnZlg2QVI3QnpXVkE0UEC2IwfP6Xnw8qVjBFD6YDws9PS8:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TFp1NnlhM0ZkNmFNWDkxVV8Z63TfMLW/ZgOABQy6kZ5uGeYD:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QkZKNmxhOTFpNmNjd25EU3b6EAuNQVvyRSTQJO8Gx2TWnEH7:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}amFiQTNIZHhTN1pKN0xIbuEyv9nOkimTo94FdlQ4O6UEwbv8:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TmJnYWNNWnZZZWhvUVpRNwLRHd8RoeJbly5bHJYjFoet2IWe:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T0IwbEVmVDY3Qk9LRm5NTXDgfgIyUAXC.eRUnNESAKIclSiQ:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bGtqQTBDNVl5amZQZFdUT31OZpjIqkVPgonomPzaqrexonAA:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eUh0WEE0bDIyNmdQNHRYUwOLL08ntGDjdc5scU99Q/XEwnld:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cmkxSVcwM2pvTTdnckVMSJnzQFHviT.5htgVu0hfQftTE3hd:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ekpkNWFxSFc5b3k1UVZOUABM5Wl2AQw/h2hTjaUGRlYHv72C:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d1hyc3I0VXl6azlRNjNzT/gJZJDj4klupVLzfa3JMiVfqxuL:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a2FxUUVhSWF4NXkwVXFuN7jO0DLdB9PiyEJxzggYHcB8SJM7:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}amRXUlkxRUg3Z1hQRmpJQZHPMuFJ12PMB2B1rftXCa82SKrZ:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T2lFMUZWUjFZVlFGZ1BLTdKscuI/Eui7opaYeZh.ro4ZvZYi:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bjUwVUpjamhCSFluY3VOeLblKz2c2FGmJn7uj1h6XwynPDvH:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z05vdE02VEhxVjNrYmVBTS2Fjzua8iiwS0tKlzQQR9EwEraI:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S09iSkZkTTI3V3U0VXVBZ6aoQn6KrIHDGJDngAh5GQNko6TH:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y0VZbHdpekhwOWhTUU56TWpooL4terkJtQL8/oXR4/SckVOT:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NEl4MGVRWTJGRVd2Zk1UOPHGzEgHgPd2hzpgVfPQOEC4wBHT:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aFZhQ0NNWjRNcFFQdUVaUaT9KSkSSGannYz.7GB/Os6.y8cO:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b0hWamF2TWk5MlUxOEx1Sc1zM6US1.jj3X8EVvur2ASWOVDI:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aENRU2JNQXZSVjB4WGpSbM0qQfaTysmJNWZfHOT5OuSjQPAt:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a3NsaFZMNWdhTExXaUZrVAAVFuYAcpLTb60xHK5CMxtmT3/2:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eTR5QW5zVkprdlVMMmt2MYyh648FBgcuHRhvtlxwI4Ur/kgK:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N3VNM2RWdnRyaVdKOW1nYdyarvfv7wyNqUN1YhXkjcGoftg0:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TXJXaWhNcTJRUmNRNXJvRqi93INOOjEiBCW4qE81G6e36B/z:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a1VZNEFPN1hEbEU0V0tidEI3l4W9cwVR/zvi4KOWdgerHlx2:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NkN2NTFCVlR6VW95dFRoclSMbuwc7NSYpuWHHEXGlQB.lVFY:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MjF6aVZPZWZaeXBobEJDaYLSzf3qc9TIRdG9JcHa4ihjtOqf:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHZwdFFJaHdBMVZaWEwzWt/lDEtFyABuQLMj0Gucn3gXrMbU:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S3J3akVjUzRQSm1Qam5kNsgSDfnQnReeIUFacGa1Kl20iudo:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eURjM3AzWTNOOVRGbGR2ZdnBA/KXSk6jx0eh2k/.D5yqISVc:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M2FFQlJyM1pvMVhseWdxTIY6ZeqenQBr/rQha6MbWWwglxt8:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QUlxenQyd0xwZW1ubWxBc8MwzAMwjexql90BYuDuo6tU2FU3:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SVVlQzhRVHBLQUV0OUJYdEJSB8TN5mzLUWWLJyVU3q4oO/5o:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NDFaOW5ROFFMalpnU3ZCYT3RJZEbfLhW6KNpNxkXB9U5OZ7y:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aXRyYmxlQ2tUbVU1MUFyeNafmrblQawmmbGnPGSsNzF9V0mO:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dElzV1d5dXB1VmRwMWYzNYtfWTLAI1OcF1RJiTRGWKkThPyK:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZG5lQTgzdXpVaGl4dWhOTOn7YlMvNY/sSyo27Ee.MOSKp2TQ:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dlhTVTJmeVk3a0JGVFFmVvo0QfEFmWVWqlzR2R/hfB/6qOBl:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eW5SN3Fuc0xybk5keVowS.hcjqXUHIatRzhQyMMFv8XJfyeu:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SjFKM0diQzU5TjBiNml6bCKeW.36JJ3n.eD8bZbdYWc.IK7Q:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Mm9NZnZvUEcyR2Uxd1VuQxXBqO3NLKc6l6aTe2YLk/iLoTgN:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RjlzTU1EbEFqUkwwUjNEReYsZmjGToXpQ7BPOMaSizCl5mmp:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VW5oNWZORXUxTDJsMzNlU2.dgMuM9jiaH/uzvqgv7Q/KTIWw:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QW95RDAwd0JDazdnVDJTQi5lZHb/7bujP.Urk1S6gTRKG.YQ:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}djIwRzhnZ28zcXl5M2ZXeOxc4Gim6IX2rseAu.jSNgBfFSi3:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QUtjZmludnlLUjdxenpHVMOFatB28uvxxZSfB6VJ3tk/2nuL:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VDBkdDZjRlo4OVlrUjVIRWp0C5aobS/i6HtpOeVOZsVAYPGs:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aktPTjd3VUU3aXpTQWhTYb6nfPgIz8YV/Je5cRZJOhd/jpkx:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NDJSMmZ2eDRGZUVhOTBYaY3Iq.ykRmxumRWQ.VZ8Hhh394Me:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YXNEbVBvR2s5RTFrUXo5NiV8JFqDy5n6Bn7IywnHINA.1.JF:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TklEUmhYbGVsQzlHTXQxOD7fhHGDZYv6kQMNC6sTtw0s2bSt:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QUJkNUUweVhqb09CZGRrb3TfY7Raq.yBiUjgPxANGbUXZdaf:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UDlycHVKOGpjaHdmb2pNS7E.IqM27hYcHbMm19XQ3bY1YSnw:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WEsyZk5OdENGRXJnbGROZZY4.uesG55w2aMBp3Tpq0P0rbFk:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c3kxRjRCMnlGZVc4Zlp6ee3.98nTEHXy8udDSHYJF1zWLcBM:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aGxRdEZQT0pKbmJzNktqS/7cw0nJbBq8Ik/Lwvy8.jyk7jAI:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MVJGaVNySE5YWjZ2MWptUEi/PmxsatWroqpdzfan/u.Y9.6f:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ODVtVEVBQzRoNlFTaEdtUW7RL5nmXaUa0jwOAZA9Z6koKfLp:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WDJ0UU5mMG5RRUllWVgwetA5FJdpMv7TukeEw4yY.ZVy3DmV:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dWNNdFZ2d3R6ektXWGNPM4cbjo7W8nc11dKK6ADMOsYFMjZo:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VHJIb0h4SzAybU5HZGIwc9sOxqhWBq375yRYTidFPhx/U2jG:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Qzl1ZFhhSDhzMEwyOVRxV0McYIJr6LbON4.3/sOVgjKsKNQz:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OVZGaTFnQml2cTN5ZXhkSAYhBC6i35dgvZABzpsLmbiP0/m7:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WThIeFlpdHZPako2MzRxaZHbR4TDi81CzO5LBsfQIEE44x.z:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cFp4dlA0WG9LSVNmQ04xVV5pNUKyrT7v.GmiJKdL59NJqeyv:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OTRsQTRkM0tWTlA1Q3NTMbezCKamnMRYNwNR/unkPcn7vZcz:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T3hXT0I3YmcxT0lEMEdBVcIwE2Jz./IoWiWAkFjpcs5MghD8:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TWlHRXFmVlNsVWpWSzRxT0faSQ9W5AsEGiGpdXe1RcOPDrrW:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VHZUa3ZWRVRWY2pvYlM3U3C3OlFdiRv7EiGw4lS5Oy4KiUIC:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TEgwdTFsTWJHNmNWVkFLWGEerX5UH0Rg4bSeT4ml0U/6lwDu:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UnRlbEt2SG1FdEdWQk9kVFECRGfgUDDnFXqP/2kX2z/699s9:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d01UZ0Z6Q1hFVGhJNnkxUeZ11ndgPrCTkyKdgQVlilXk4BkO:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZmpkZFlSSklrSjA1VXJlRAK.t6i2.otNpLNKl8G4Gpiz.OAJ:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NDdNTnJvQ2d5eXV1bU1YUN1tZpMk0kgDH1GydF2LTn0QuQko:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDJSYXhvWTFUVkNJMnk2crVSdW/8LpFc1XElaL32/ZcIZAte:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RGVhSjRaeW1CMWRaeWI3ZbKoxXMuKxK8/MydoiZ6/Il.gE6/:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N2Z3d0h1cmhvckVPVWxXR3yYb54FFACTDXkceUeFLJpKPVT6:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eTdJSFNXSkluN2dLbVhIa2AFaW8CgBIJWHckQ4vfiFcSubqO:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dHNyR0kxbWhuaWw1Y2NyYlBGncQ/H7yRtdxk.SOBDpbqB9Bv:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RFRYTzZyemZPTkNlNTBpOdMl0iNsN3Gdb9lZRoazH7H90vqN:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QVphczBybzRVbU5STklDS7hHO673aUdtp0MCYYFDnY7lPz2F:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SnFYV0NMWnNIc0hHcng5RmswEYLowZefWnV6b8fXQqOZR8uW:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q3JiNlpDUjNpMkFZeGFlVZR7AX6EMOA9C5nxHSpzvaMh6PQT:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UnhCTGxqYmprNzNkSENxdacWx8WZdTRtXkT4YkF/xOQAlp1K:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MVl0TFRyR01sME1ZdzhzVFDz4pei3au57qQMO8ll0YlVBGLe:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N3lXdWIxYmNUUHRqMFVVWtRgQVZD431stObuRHtzUEs3i1SW:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RVZjQWNTaTNwbzVyTkRqVLhW8IrF6obPbhz9lULjGbjZcdVi:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b2IyR0JlWm5YTm9PVHBIMLL9vgyRkZtX96zKXJKiV9EPKNYM:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cnJuYjkzajFTMTVyQ21pbnoONPIsnWmefB8AxNYq737G7mej:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VFJUcElaZUd3TTNpWWZ1UZfXLnXsPzohoSmYfJ2908BZSx2Q:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eGhITlRIZnRENUw3VnNOU9gqahchGBU9.TOQmlNZQT9d7Z7B:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aW5TRTBTekdtakZOVXpKV4Vvu67JcvTof9dwqNxQMZTfusdD:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N0tkVUR5UDVJVzd3RWxIS6qSCu9va21tf72l8vvMZFfk1Hw.:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TVhxTE5HeWdXUjY2d0lYaOYzHLgPVdr43otbwCLoCZJVAxPJ:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a3RpYzU3SW5YMmlKRU1zRt.T0YTd557VtWHaaRK0/pqRpK.p:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UEtzTG5nb2Ezc25VRVhEaBqITXn.8Who6sHnfJfwgdJJyLPB:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VVpzN1d5Mm5qWjdjRnZmQQNqLAH57K5sDC7Mo200D8KAKvO/:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aThNc2NBNjFDZkxFcWtCQ4mUsprk1ZrTW/G.rk5pjTl8sZkj:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aHRmRGN5cFk4MmNYeFk2Yy.CNgCpJC5pHaz5NfiUjacDhMdB:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OTVvM0QwVlRDYXpiT0VRQTwy6nhByny4JLsan3v15jT1Crvq:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SXBibnpoQ3FBNFdONjN5TtS0J6i65aYbGkM.7iXRJ6xKiURq:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bmZHVFZZUU8yQ1d4RzZxeVsvK3dbEtn.7g4bXCAQTPeMoUoE:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dVFWWW9qWGVqWGFkM1lQRr5tvhcGFjY1fLqHoDS.QUiLta8S:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UjZRbGtpN3h0QjduSzQ0buKrjKV9mxKFcK7GYbKtXaAxQYqp:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c1NaelRSUWhjQ09GSEJ2UU.dMKvu9MqzNaaCtsTw73D8Nf3V:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N1l0Zmh1bzlYWmMzVDlNUI4Sc.PwUOAidQWiBAXD/IIRmpO/:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dGxzWldhYzUydGxzSWJRaQ4.EFzLiz9ak1eQJC3s7pprqy0q:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aXUyUmNvMDFQZEtvV0NqdN1AXUIAor.0VdzAGZYE0k0DiJxB:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}djdjVnVHZEQ5d2hDcUtaRCvs7hf3UQLzMo7JNUtsWrnItbXD:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VEx2amlTUUlSVlFYMDNRdselpliAgiRi5lwsCzATBBDgDjQd:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SHVpQ29nWGhKUHBHVlpJZHMBASZW.2ZKJ8s0QevsqIKosYVd:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SGIzSzNXbjJxZ2JqN3VvOMnm4CuXx62C0Xw67F31d6GZpSZa:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VmJOQWFrbWlpQWN1TlM5VXZ8JKAL/Px5Hz6/FGfb3MOt9y7L:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SFFITUpIYzhWMm53d0F0T9NxlCZjJr1Su2oLImWklS/4I5SZ:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b0NGVlNUNnZUelNCQkFaWnMmMLTo/7SzMZFoId6phloh8knl:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MXk2RnRSUE1kc25KY3ZzNrj5oJvruDDr38Msu0JEGKZFQYeC:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TUFrQTJ4UXZpakMzMWRFVdwP8OEjEg85qNl9qkNH48YiR6nL:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UEFuU3RjMEdtUmMwNEdlbH6kAjbn5vSUxZE5rd5ZwH7sgo55:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}djNVOXNVbmZRanBYOU41SqDICxuLy2IlrGEpxQbT12zm3gTe:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MW95YjFuZkZWTGhCelc0TTwfFwBo5KatXmKRKfd1dFddyu4B:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bUZvQURUNExvalVZZk1iSjoB3xHbgPd8fPitKnHvaKSJbyhS:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}anVQdjJLbDNlWVFZRFJtaDd3gOMgVdA4o09QXtFRjxsbDxHi:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dTFwejZ2M3ZuVllyY1Y0b33oA37HS3oFxQk451DU102p56hy:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RUFnMWJxNThiTHRoRzBUdWeKLYIkMlMrtmgj0uzKp47UnMor:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZmF4QTk3VldKdUJmcG04YxKX3Y0FovHQVmNnP1tzpADAiOGt:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T1QxY2NhSDgwMWhXYmZKeORekY9bKNvuFPzkKqlyJT8lRNfV:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZDVYb2NwakpDM05HeE43WkHMQWxkjN/3mxXHKyUsqLDtCnNY:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UW9MTElzZlFFVDhtRlhWTC6e5EGEx9uvApA3nTWDBRLKeJxS:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YlIxOFNIaXc1d1kwY3RHaROKseFWDUMATsGsv/r80j.yZ9bb:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}enBiZHZCN0VCUWVjeHQ0eRWlG7lV/G3xaqLjEMsTTnY4BA4A:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TkV6Q2plRHZRV0JqeDBaUdppthwrXZmCQPgs2eJxHIlMENkC:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N2VPWWNldVBxMno4T0VLb5me/xSHBT/43CofU0Vu7.88/s3T:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ejlJak5QM3RhNlR1T1pmcDydNlFeEwoWDN0z/ns4rzeB8L3s:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WHRnQ01uMGx3eHFUcXdFTH1vb6E.0fkpO.Ex6M/TwSVSR.KC:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q1FlUUpEMkIya1FvVHloQxuolRSozJW9GeX2jq/FSA0PZKvA:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Wmx4c3FQdVFuRUJWaldsNslKTNo3w9d0VHko81kMRhNT5MPH:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}REdvNlo3VUJmRWY3THkybj5M4MMGMUEZvwV2cNg0qUNRjuNd:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NFBTbjgzUjc4NlFjN2kweY97f6.a35DltDrr69WrjPBs1J4r:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SEN2RHY4cElVMjl3VUhjNtUAtgnJUUtJjkWy/5vlJ/y7.Jgh:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Rk1LNU10M0tBdFNLTnJEWhQ4uqU4rt3oH6y35zXaxydcmDj5:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bHdRWGlwbjlONjZOTHJ5eHuVF0X10alFJi26nywmzSCrENUK:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WElmblZpYWlCaEZlQ3FjSL8F9SRCuOCruf3S1lepS/KkkSv3:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bDFrMUtYYWQ5TzNqWE5Ic62g88JxUQ.LeN9GDf.qboCxOKm1:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eUxYOUZwQUhHUkJ6bVllV3KWrDkWU3l6stxcp8jlTQTmmtX1:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dktKeURlV3Yza3ZEUG41N/nQ5YfqRhLPDjVjWRgwisU.jJ3s:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QXRKVjBWMU1jTHpMc2pLNGy2ChpaNA.0msxSHFaeN9FUf1a/:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VnprSUJ3MWQ1cVMwd3Fmcu233hGyo5ZGJ2u7igLbwckUwcLN:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cHZoWXYwQTBaTW5sUmVxOE2BNTWMOHMBE6aOqLv03BiLKBlh:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VVdXZmlCVWVLSUtDVk5oY09w6r/mYagqv4O3.jyrKoAFUU6C:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c1htYkw0ZHRROVBVUXdtaKpg5YB5Dw9jLGZrNJ3suwlSP37v:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cmxLMm8zdlNoaVh1WUdsQuxS16prvI4aMD.5A1u9uQmGC2oZ:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QmxaSkVmdm8zaHJrNFpKUPdx6RU70uxLyfOqyl5p9.4tz4/t:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WHY1YUF3YldOUEdGT2plMDI/bigVRy3xEH3ddNzKSUaA.6wo:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NkMxNHhOZFNUU1FxcG9pUNjVIJ2.ROLuaWeo2ceTQgxpZlsi:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T1Izb1dZbU44TWNqRmUwStkeZi41gdDxIhVCV6ACz4N6r2DI:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aG15ZG9pd0J6Y29OcWswcKhggKUOCPts0/nBLoKg6x5sI3Pd:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VmpkcHo2V0JxTmV4QjJtYcCYcxxu2lyYX5Vfv.jMkyxRW.dE:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dTJCU0JxOElaR1NJWk14SHPQ68liH9tDUpbGYs5w9yxn6dL7:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SHNXVDVzWWNPTnV0SFBQQqrhiKpYifXNMnEJZJNGrI0bI6xU:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U252Tkx2a0ZYTnpyTExVQ7Q4YeOADDuR6J.6C0fPlt4vewKJ:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YTBHaXVObFlJcVNVbDNzZVmCfoEh6.av6kYh3LsCF5.xRbmZ:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bTFSVmRIUXJpNGVsSWxUajbLiEKpCB9JonsyF.ekO6PRnJOj:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dVBOd1JZTHNtOVY1STZFVSIVsAauXvMie8g3QBEXLMjw8tiE:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}czFWT3ZZeHRrdHZ5dDBKbf.oTyyVcY7r64YHDcHqgDmUROoV:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RTZ6ZmdkRFFUS1JleWZoYTZUSEqJEGyxr82EJobEf5fQPi1o:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1BEVnVCMzRkMGpvUm1yQhlm8csYtgLS11sxoehYTg4vGhpG:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dzhCYkQxY2xDblA5M3JTUGNhvjfSQo9eXYmdTLUyP2rsSWXX:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bTNmNHd5Z0JPeENsMlh2UzhEwjsk4aDvTG.rulpL5Jbbg63Z:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eFpUNkJDZVhZT3JkUzNWVxW1yz9hk4gWvSyqASkasbzl62Wk:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dWZMUG1acHpxdUZMUG40a79HieDqfywmfyHmc6CcaGdEK17S:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WkhGUnZCWVhFWkpGQnpOTHrYdI9LQqIOteJX8B4LzsEAjCvB:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}empwSVFpQ3RQOWdaM1MyevqmKQoNwWeYfCL59lwdYDtWJTsa:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S0VZemlDVzZTNk1aSHRjR/kbeQaRuPy6Q3qPNQpOtg3xoFK.:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SkNjd3lEWW1oSzF5Z0U0NrhpT7ULsS4Ok/Gb4dXHTV3xC9YT:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NWd1U3NSZHBGWlo0ZjhBTbYKJFGzzp6onRenWk2rWNg.BKpW:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eXZDWVJXUXo2dEhUMDUwOcBdJhQjvNrM6vZcSycJeLjcBc9v:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bXFRU3NyYzdiS2FnbDc0c6EGGJp3SyxeNl0Q/f0CqXFfph9D:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TERTN1BuSlg0aTJ2RkVTZEtwEPxppAHYwotQOhGRvmZAPiLF:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U0c3M01FNHhiVU1UWFpYWMbSc0/XxOKUNjN5NtCleQl2D17t:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RENCTnV2TjlqNXZibmpEUgh.OXJ7GlSPdaB7j.y587yo.iIP:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R2dleWNqMkIxRkhmaWtxSrWRm/.dUxytNTIQrsWrwWwXSb61:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ekF3VXhPZ0VWWEJPSGR1U1kcGcNDX17XwlRCejFc/8qdEvTT:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c3FGb3RsdlJpQlBxQWVZbKh2CpNOVhmtIcMNY7mS/cKj6p2e:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHNOdE9IYUx6dnVsUTY1MuNakPqDoMBMTnL/5J0mLHCR2Ck0:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aVJTRmp6MW1jamJBcFU0a5JSHICeJwFphbGcU5KZGUJOPz8U:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHNmb2NVMXZRNzlBV2NpY2eKW0lI8CfedfggTXeX1Y2o5jWO:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SmQ3U0ZGZkh5SFRjak15c/7/OP3Nq7qXdLk5bpslCQA/Sar5:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NzNqYmRzTTZOY05Vek9SWDBnl.ZsS110JKpPOW966XJTxprE:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c0szZW1rQTdoYUJ4OE5uYrslWSzHz7DXRBBRyYriZ.W6EtQA:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NmFTYzFORURZdldLc2ZGSUJr1psmTY3XezqTr5nxRxMvTOX1:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cWJ6V2JCU1BOa1NmdDlUaIistk0Lr4KXmv592jRxHZEd2vD7:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QVlRMWlPcGZMa0ZqckJVbAW0pj8W4Ap5xkrwB/QPz60Rv9Mu:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Rnh1SzFySWhNSFRlWTl1RXltNjGit5DI3uuc8sb.dlo/c/w1:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UDJNVHFxTVRXU0I0UGR2TTGrvy2kESM/ZXW4zEPZtCoCYp2Y:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QzVUbGUwaW1FSnRNNFRCQhz.qGuly6tBNg8xzFzJts61QVhR:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UUtEak5BcEd6OTRVYzBlabBEfatW5r12rijYMv2PnykcZPS1:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T0lTZkE5TGJVcUtiSjVzWPtbmjYffT.shsV0LXOTbNDfcynK:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZlVybTRPRjZaYXQxemlxWarxYOfKETvbU3ibCvaK7wFz5P7z:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UDJESWJob2pLeU9KcXAwZrk.uEQyU57H9v1pB7HnbpSfmmAU:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eTV3Y253UTc3a043WlBuUWWqUrJ0k8yhe2G8GOgvBo56bvAe:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aFNHNmdqRkEzZnFIVnBVadGbUFBHZDvyhkyzxSYjEGh9MQDP:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UDFZQWREbjZvWm10MmIyeMxd0DnGcS0RcjpNmJ0Qke1.k6G3:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aDVmYWE3OUVDM2xIaHNabdgkQ/mwgcg8GD17I/czMvE/6CcO:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d0tuUUMzdkdsRTVDdUZ1RXG3xGakM3HVF4BPWscTUFTSYpyR:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WThTS0VHWTA0OFZLSTRXWn3k.yYPpQmWw/kL5fRc.uEXDc2b:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZkoyZWdMbWp1OGViVWZ6ZBJawhG039PClaB9q4walV1cQZnG:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NEhjU3l3aWhvQXlhaERDN8AG0EBlek2ydXZP.jX81bvdDN/0:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}STlNV2xFZmc0ajBOZjZxdsxze9xyKKr6WsJHkk0MRPCgv8gY:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Ulk5VW5SMTVBR2FBYVJnU6DtwB7hF7.bLFTYXrE6diNVFXM8:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dGZseGs4eXFsUElsZmY0WnNCBel1ENnJ1VOkQLf3.QqBNba3:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aTZqaFlSc1QyYXR6VUFoRSW7eUCymbshfPNPF.qaG6Qmq1Pc:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VlhjN3NkSXdDZ0ViNUFTQ4h16Cowj8z2ZGUMwknKrm0Gv27P:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ejlNY25GaEMxcmx3VnBUSpR1aNFVQKKNHw88m/1dvU5lP03o:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NnU4R2d3TzFMcURKRmNjN9p9c/0WBbYlwssQWmwnf5RPBhE6:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S203VkVDcGJJMlY1YUZuci9rkEUs5TWvgv5xRHiHa0RH6PBc:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SmY5dERRbEN5WGhTMzhNSla7Xj.DX89Cy1xEBjL/waeFNDLq:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TlVKNlEzYk5DRFFPZjdqSj6G6TnORDLYdSUwSqC1llesxLfy:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MXo2bjNyd212YU0zUWVuNpiSbmGDqNOsDMQUui18VjnH6Jdc:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}STRyS2VWN0RqZGpOS09FN2kWrQ.w1mnMjT3L30yrOEXu2qvj:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dExadHNnY0ppTDFZNU0yMPUccW34vLeXRaEZotyaMy0BpXbI:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YlBZU3JiWW5OcGYyS2N3N7eSUYfyOowkxP2ZL4Ql2MqumfsY:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dGhWUnJZTGNXcmxTdXZKaRRfkgLNq1BZtQSxF1o/D5Mt64Mb:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TDJKdE9JNEFGWllsVm1mbUTGwgBDxCrd/wrTfxeUHVgTmNSt:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dW1NSmF5eTExY1c1QWwzNIVkWTANPQWHLxqCvUm7QkcNqOF.:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aTA2ZWE1QU9pUEQxWElPcWTgNABaasLLgTrvC7SYQrF1FiTz:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z3pMRldEMVZMQm1lNjB2UUPkTO0tlHSeLiadM9ta4A6p2.7e:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T2JzUXBwNXZqS09xSXQ0T5uGZ1Rc/hpM0tLQXID/ceXIQtoV:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SnNYNVBIVk5YRWRETFhSMvWXggo1s7YiVej92qum0as6Xgth:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c2lQMEJDNE01QVh4WnU5dZQ4eFpkhNE9T5REVNkF8lVmw4CX:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ejRXVlplTFFWT1l5NEowSoTy8GqDrMqJBrex/bbGq9C8.J9x:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y2phTGVKODFEdlpVMGVkZ9G1wJkOvKMGqY5aVY4wCIxoMc7J:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R0Z6SnBmaVJadmpXOUhhVJsdYKZ4JvJo8Xu6Pm52.dqrcsov:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Tlo1elR6Z1JzRTF4NWtQROU4Hf1zcL58vEHU4SNS/0pxBsJ8:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1VkUmpwOTJmY0J1VnI5NqFi4e56X6K8ksAsSQ73XfdFcnKu:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d1luSWVySDBIT243MjdGTM0sayagYdcLT2116CaNGMD0I2uC:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UWwzNjZjQlJSTmVrZ0U0QQ0ca3lGDoXbCqW9iISBLnvc5A7f:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZEVIbWhhVW9nS0VlTVJXRkiQTMARSMN539ykjG4bX1LKlqCu:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U3MweVU1ckh0UFZMSEo0MHVg6Z4bIUOylkYxPolrQZ1mkogO:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MXhlNzVhY2NqaDNWRFIxQlcZVnl0YbidGDGrHtbHKBIwSkj4:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bUx5SkhDVXBzUE9QWkdCcDrjkO1xMOmX3DpcPCsh2R.uDpXS:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cml4Y0tUdGVBNlBoT21RUcm81Xg39q74DXSKRMSZzr36aRWU:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V0VsMTJqUXY1c0xXYVh0V.vJQr0Mc0Yz0hfbgm4G8iyugSZI:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZHVmV0JmeDRnclpjR2p6bo0EUFgOg6yHlGM6QRxH7vALKsvO:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WHJvMGtPUlR5ZUFOdVNCN/fU6uld6Ti4mGvefvMm9KIkqLip:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eGxpazdhalAwQ2VPVk10d5EoeKTo.5k1/k.lFuTHRxFoPyAG:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bk5KY2VtUzZ6MkV0UFdmbkzsxKZZxyfb8u8dWQmcAOUOHiwp:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YUNVa1RzN1pNR0FLbFRocLMWDrm.GCYWobqUSOSNpY4mKz8K:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TktXeFdUMXFPRzFvcFFFN/tOtZaYEfzuMcyei24U3UMabjUE:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bWhObVB1TjdxVE1Cejg5cv0cPJ.YNAVia6j6oIO9eLeBBKdy:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WXhjbzhEYjBSbE5mTkx1WdMYiFh0yL8En630o658/j.0w3m0:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UjFPQkhnU1hxaWFwUEh5R///MoqcG7lc15ARj9MBEibKCJin:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WlhzM0tNa1JJd2pLWDZWdNL4yD5q.CqWYCM6BxDQKrKJC1xZ:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T1dwNWIyU3IzTlVOdldYMLP50OP.nP9dzQdCxB3pntJYviB1:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aHdUTjVONXpqZms5Wm04efK62w2dE5z4HOZjZG/fbpIz56tG:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZDdlZ2hBTElpaEhnMU9DWSUcAszDfJgySX9AieOguKripdc8:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aHNuODRHUVZyZlNmeDVaVskTeAvUN7fieV858xgOeriX0Tsd:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eWZSN1lEbnRsVzZZd3BPVUEZLyQMpyKJ1Ddg7ldMWAT0qq2V:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bTc3WFNHM1d3Rk9jQnBxVyGCftLIdYinak80x/A9t3mnGJtu:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SlI0cElUZEhqdDZLYkI1R1S1Uds8V8Tczp600TKv1u2ALBGG:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Rms5U1hVOEJRTlRNUUVmdhPf/BC5uSxSCrymoeKDeDz.IVD0:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZVJiaWh0MkZ6dW1La0pZTWb4YKOtt2eA/qotl8HrPoQxKLtc:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Mlg1cWt0bjREZ09CY3Jwbt7.wWroqXLtdwXaz2nMOx0EPUat:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q3JUNG5QUnJkQ3pqNmlOMz6Ulnc9t/rgdc3Hw.7LtPzSdCCR:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UHdMb2N3RUh4ZUVKY1VMc/Dt6Dab1OKU38BqIjB3ONB9YgpV:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y2xid0pVTHZiWHhxNFRJRolQcAbLI5ka6/RDrfr3ZQ.PjxL9:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WDU0YzJFNm4wYTY1c3lwQqpQB2AvSvYEy9VezMkZpEUp0QFP:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NUFROVI5Y1h5OXNtZ1Q3UCpUE4O4mQV8J4/MFR2bEinRhSfb:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SDRFaElvcU01dm90WDNpbOxClD/K8IE1S1avxsGo4cg4uOJ5:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QW44YXJhelpOSXhyZ2k0cqExnp7OhxjXSr8lRo6J2TqQ60SI:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WUVOaE9FbWYwMTd4TVUxYa.RJY3Ay/3GdjjS0KcX3Bl4ddzc:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cFNmOFoxb0hsd29wMFZkTGDvMsIDDpDHwL8URqA32m.HdUZS:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b3ZCcXVRM1Ntb3A1UkNlVIuJXIV83YANTG2R5oY5uPlDEXqW:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDA3TmlFZzR3WXp5SVBsclZyuxzb0m97ufXM/O15t6nwsecL:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SHpXN0FHYzNWazJlNGNxT2G16gAXsNS82T/5HJKojIN63HoO:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T1pGS1lKY25YcERRMXNLWjLYFxpwVbKw7PcX3rLytgJi.4l1:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d2xtb3VXWkt2U0xUcHQ5WpTtEhd9o/dab6uDfh3NzqsbmiT.:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NGlzS2t1ZVU4Ymd3bWVhNFlhIOEMgEM9QMfSqN1Bwp/c9DUQ:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bnRUalpncmU0RjZPdGFXdF1U9yrjTQaKtJFPxMcbQmv89gUF:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TE5nSHU5MEhXUXl3S2pnUsia9BT1joKoLPeBeeVullQtLWvC:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MmRMeUN5MGVMVjFMaWNZYkulasTqka.682/YtTiLuK/OXOFZ:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ak10V0FhUWZ2a051ZENreOAntNor5d1VQ9BTDFDYdmGJc/uq:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZWEyemxoWWNrVWttN3NyMEdPvQVUypOdsfVNj7I3T9hMeU0q:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QWtMcHhVOG41SjBEd25INTUQeHwK4yOWXPFmMpWYYwODJHpF:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dnNVRjBHYTRXNWE1RDhKeSMR9wm0lq00jSHDs53Mi2gaXO5w:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ekd3VFRrMjdiVDYxQUJzZ0ANeIZovkyo.SLTnqcseWLvC7lX:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dGUyT2MxRGdwdWhZN0lhZpU3UF.nzku1o4bE5AB3UbDzJDt9:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cVBKaWQyR1NJS1FHMG1PUTqsQq7.CgPjz1xlYKzSEdXfYOc9:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y0Vzalh6RDdKVG5sNnNMMd1NmF27ufu3MY2CJU4Xjn73HBec:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aTV1MUtuQm9ycmhocVZPVnHsCr233A1VQ6tgomO1iSwa7eEJ:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDVtNkhTcUViYWhyWW9sbQMTJ9wYZkFp8q6bri4s45r/USsa:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1pTY25QemJtNDV6MUJFTbxt/6Bzo1hfg7rU73vM/u.HGTYw:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b1VLMTZ5eEVDdzRUMjVUWRnA4eH6UR1dFYRIbpUxDIyAslMb:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZjlHZ1F1U0Z4cW1sSXhudog5foTGQuJnv/Y/xgBA0L1AQoLe:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TEVCU1BFZWg4a3FDcHJ1SQ0CCLLY.kJDVX4a1eopnU36D6lC:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Umc5Mk4yVlFPUWVBVXlEd0iemzbmHqC.dIed2ZIC/rj0Xp/9:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}enBRQkZPbmxDQXB2NDQzM89vEn9L7BIMRz7YmI5VipqfuQ8Z:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MjVnSE01M2dRYnI0VWF0bJhy5x3jEet.v5KltFMNKvnTuvZf:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZXVLTEtjUUM4emFiYkx4bOGbFk1vQ8Gq0IXVri.Ltep05uME:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bEpWR1g3cHo2bVdlR3JzMifXzwChzxMjw/32Q0Io9aUB2Ndv:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YWcxRkRhVWpHS2xIenN4YT1CWcbCE67oiPPTNRxadYRc0xr8:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SW56WHd3MG42MkppY0I0cvV9QxYf4RA5FqVSTIvoKmuJ8SDZ:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z2hkYm1DNTVQeFZMdVVoQg7B3bn.0y6O727KT1VV2vjCPLJu:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RWJtVk5CWDNmbkZIS0pVTikVNVoTvj6CHAi5qrgOt.I8DV4w:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UHJoTW9sRE9jdnVmdUM3TzOwUfwxkPr5Cy.Xx.oRjw70ylrI:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q1dJNHhMVlRKNGpuTDJ0Rub98dl1HVB0ewBrx34vrIvT2yGj:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}alpZUVVqSmNveVhiUU1kZ3ykULCR5W0b1nEvUaOO78dKAItU:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R0RkMXkwQmc5T2N2eEJuMFGUKPWTURr6lO7Pm4NbkE9hp1JY:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ald2SHltSU1NRGR5ZEtZT0KzeBVUQ//IwW7zEdh/Ju3QnONN:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dk5HT2hZcXg3cXFCdVBHV41X7TBjR3ypFscWDHaYXLRaKQwP:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YmwyM2lPMUlIcmNHNklIcJ8hGSrcIB9xWJ1Q0YVy.MVwUw/T:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}blNDdENoZ1hEZVM4bWZ5UskrtN5rzeX5cuhLMOc/qUq4eMJn:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZFpzN1JFN1dBRFZobk41dn7Lqx.dHS1YGy3pM9zKUo5YSVnT:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UWc0UXZ4a2F4ZUFuTmExNfd3KLtjSGsPAdTLjIa.wyNSWlVv:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aVNaM2VyOGVuNVE3R2hMavzhexbZIqxEwg7XOsE5aBR.qvUD:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}anhyUTJ1M1NEc1FSMENhV2yR0t8AGVgmkddmamIWF0vOEko0:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WWQwY05VQXdZdmR3UG9LRBDzgzQqfz1I6lES8YGonaUIPM5.:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N2E3TGRYbDMxZXMxTjJqbXzPy2yHi8Ubup220o3a9yRIeyHo:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}amNPQnRoSzdZalVnNmI0QYvNkPd3/Pm9w.FZZbic2BQGxX/0:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}anRsQkpVVXNZQ2tmQmx6cZiVNlZIvARdKLWyKVFT88pdVOhG:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VjBicVp1WTdBVldlanRPOZ8jWnJiEDZcxqjfQH6MS.GwOC6b:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Qmc5NWxDaFMySkloWEZ2QdcFyWNkZPF1OJYksbySbVXGo6Yq:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bk43N3dvSTBWOXRLNmF0V0cfhHbpl834BjrBwh721CvZU464:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aXQ1YTN2YmlZY2V3ME14UMvaakp0l1ukYKyBJydf1/UitFvY:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TmRENElGVkl4Z21iVFc4cYULiEoQbu.Eh399mxRAmCpi/CO4:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Ym9pTXdtZWtZWGVJbUNTYTpCWj6OOcOus27nvPKmfZ/C3gtY:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHJkMXRod3NKQ1R6OWR1MWE2n80ex9aaUegnMB32QNm8RxF0:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Tk5YRzJPdGs0ZEV3c2ZEdfn0RO5kg9N/Wz2gPG/3m4VRcmxF:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NzBmbzFvTm5ZY3pzU3NFVNx9AWVdr.C0UwNZWSOiTwKuO4HO:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a1pXdkJEWTR5dmkyOUhpUi8ejBNymrp1ctHBnl5xTX2sMjHB:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S2ZKVWh3Uk5PUUwzdHpRR82wG1J/ReZshOZURVfX0yWpbTqe:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}blU5MGQwWXJaMHlJaVZtNBjHBAPyfongBjerSni2oiObme37:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UVhaTXNaNHFwRTVidXZJSa1z8rkVR5q/XsRKN..ssHMkWAuu:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U3hjYXllOHBWOTBpc2xScI4qZ3w1EZtZ0SxbJhan/8sh2SWP:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NEpTSkgyUDljMjFhT1F4SvNNRMZqb8Yw8whDclkSpS/vQS71:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UzVTelFvcE5ib0EwZHEwelar0UIhF52on/8BQakU3EkrIM/Z:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MGxiUk04OTBlZFl5VHZZWFiMtN8BepA32N6XC1u7geB7FAFz:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d0wwQW9uNnRScHRNUFB5WveWCojuH8MDRqLVOxXZHudXK9OR:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R0tyaFBZR0pHaVNWb3VOUdJSoV79TA2gMBuqD6crFHZE2Pax:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UGtWTFgyb29SakJSdEF3N6YCFM7oorIelqketKRBJnxUq/gz:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZmpTb2xGemhYSTRwSkc1M1cSnoZcay8Rg9isaylbxUZX1Hsp:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SlNyNVh3N1Roa1hmU1p6ZxxjssCUEpYKapDWF/qXFfjouWS3:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NUJTZ1pDQ2NWcEloYktxYmaIgZbtbq2EpK7M3/2oIkU9GKjH:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WU9zdUNNNFlhQW5Ib216ZnPZFuZmz3jkJuHnjwJmaEexMOo7:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bHZDSVY0aXhobndyZjk0RZ2dc.kZXWaimMiN6m9VkBVWlGmL:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aEkxNnVKRnpWNkx0ZlZNV00ewEtZ5Q0YI4ruwQ0m7CF3hEGs:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QWNHRVFSQThDRUVzSWVKM6Id.wXGZ74cTYRwT0Rqt4yzyH9l:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q1AwVldDQUpVVG8wZGRYRa5REByrwwrWDQZcvc6wf8JEnTwy:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bHZEV3ZpSklRM2dtTVdJTpRghL1VZRWvkwZPcwrHV8baxcvP:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aW5tSzNra2gxRGE3S09BQVscnnx5KuEQUvKAlkvuafhEMeqM:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d0gwVm1xZ1hxTFdpdzl4b48wU77hDEA0a/vA4W82lrDXNqei:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QjBEREp5cmowaGs3V3RsQcX9NadG7BVjumIA0fuYtHeC7BOJ:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y3JMRFVYeTJaM2c4N0xYNCVbVymeoX60j8duBxGsbwzlg9IH:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WXdHZEFZZU85b0ZKTVlHNZsoS8a2K8y.aJC37cVi3ejKpr0q:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dExVUktGbnhRdFo2QnZ0OM.ykaYvFravi0YArvX09k4LaRPQ:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d3Vsa2h4YlBiZGRmMGp3VGrSqCo2GN0aej/.0jQcV6fl5dar:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZWdRbU1CMFhVWlNEb1Ywc9akc6k2y2hFvdCaQAmiXVtocL9J:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d0o3NWNSb0FPNUVvVHZEbjml7AOzXDlgUVhj/7s8aWa915As:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Mm43MTFNekx3TmdsWFNvajR6rSzVg7KiYqUW7nq5O03YfCMU:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c091N1ltcHJvQlJpc1lMY/4DuPtU5EGUh/1mkxPP/AqaeFGs:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WEpMZXJUUGJ5VWFjOTlZZu7q61FyTQiE5OETHoXkm/v/6A2b:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OGg5YWd5S01qMDRjQnJwbcfkb2oKvem5u460aeHEPS97eZ32:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ek1mWG1raGtFdmhMVUIzcarJxUyXFojnXyKRdEDsNWxEQd2Y:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YU8xWXMyVXRxam5lUnd6WX.sEesKf2MqDtD.sCcBMxydYk5O:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RG1WaTBoRWd5Wm9KdG56VUouTI4KFQbOcw9YLoCIW8JtCYSM:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SGpab0hKakJhS0dXU0RWZlFfU0Qs7wJgkD.8S3vAXsGYGmo1:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aEMwREM4S21DUUl3WUdycnFhVPaRI./fX/3dBT4JKy64Fjh5:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cE54TkVIb0NTVDNWd08xYmQKZ8G488sZKACyl0eu7lXoez0A:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SU5iYUVYRXV3aEg0eUhlZZvyxhHVJv/muoXlOyPkSPqnLz0z:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}clAwR0VsTWVQR1Q1a2dKTsJvS.8P.m8pZUczmoYPkMF75O1g:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QjlRemdJenlqZkV0Vkkza686RHuXN3u/RMV.gwSjxkNiXxyo:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a0Y1MnU3RzFwb1A2Q3Q2bUUcwQy32XgfJauzia.TlzAPP1d2:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q3NtYlZYTnlEZHhTTTNLNrT80xWWMpU3N1NzSm7ZL/WExbPZ:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TXVxbWpWMXRTQVhMREQ1cICBAFqY3eeTDQTJF0Xh9t1UF88M:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SlZqNUM0VlFDZjlLbUhWRP9sGoEp0.WPSUBo2J4EUJZvb6Xx:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M2x0QVduNGI4dUFlOFBZYQMj/rF03LADN2eCXI.2kx2eJGdl:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bDRla1JXTnBmdHFSS2dCbTxURGYC4T/nRhAjDZJ7dCO9za/l:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NFNkN0s3M2FSTDFjQm9ta0Jp.XNO2JnEIWMrVbqnz4EeZhYP:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QVRabHBNMVhCWlhhdEF4NIoDHR1TlYusK2oGD0f5tJPn8G5N:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b3ZHVE00ekFXelJ4Vk9DeDhJd00Im4bhbcivz1Ci39uqxhJI:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S3F2eEdweFpNUEQwczY4UK.plC08OK/vHQ77UZ6AZS4YnenC:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VXFySllOVG1zVUxhVkpGS.VeCI/LLNhSKqlXe4e77fbSqBPX:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Vmtzc25BVjZydzRXQkFDMYSpTvSQq4.2GwNP2cCYfNGIBWia:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TDVhalY4NmNwZjBWMHBqY3RS5j1O6IhnXErhWycJrZy9PVIV:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WGh3VldjZE5wNDdOZHZpNzyXGMKMAxAl4voavWGl2dg3lad3:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YW5jQ0lVM2swZUJTQmswYVjr.RkgEaw1yYiHwB51kg1PimSV:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d2hHS3RBem04djNpMFhpTyPOzsc5DZhrcxdgW0KFLrPxBz2z:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bWtnN25YbUxHVW11SW5jbekGokSqdMtBqfpugBf8UWNrzkBt:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TEljdW5xOHI1VjNUU2RoRs4AFHeNdpnq.T4MoBvIKmH3QSEu:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bkk3N3FkWWVCWTlhZjIyZdbeXjtPRpiBdXae/BJi1o/plP3T:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UUJtRmoyMklUVmRkb0hFYSAQjOtDe.eKXZK07oXx4kTgOuOi:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YVNvNFZhVnk1cnJPeGFISB94ECMvbvSX6tW6pgaFxI1trhwX:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Mmg2ODNkdzBDTVFMWEtMbumB3ccE0gKMgptRxxna6JpMp0qS:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bEJoM0hlQ1VrbVVKeFM1WIIknqrOsfVjZhzSEnXgaxsYfTuu:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}blBKdnlCcmF5UGdLSjc3eKkEDNYh3P/PBz.z7IOPdeUsowGU:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eHhmWEYySlRHWm45UFNMYtFn/9PS4W.81dZOSv/G4YaLnAfl:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ckRaaU5QR0hrUkhTQjU2dcmAlA8J.USsL.HGUWx1pc1FsurO:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bFU1ZExCcVFlQXRwNk5RZT.HuYj.61Nr0vw90VLaxhp1R3I7:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bjU1eFpib2Y4UnNVVGZaRuOpRym9eFM3KhWE4M5BsthLvF9K:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UXV1bVhYQzE4ZTJka050RAvom3JliAHMSaTLjOJMBnKn2G1B:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S3UxWWNEQnBlM1pHVVhLayR.6U//RICpoPKf38m0dgb7CyKR:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aDFrczNKZDFmMDBiNmFCduVxdy3xdf29vAW7EL2qrhifQujv:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U0JPYzdXVHJHVG5XSERidi6Lv0dfWeRa06BoEE1Pc9h2WXLW:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RXVqaGNHc3V6RXFvQ2h4RTw4Qm5PaIU7GholjsWOz.qNojkc:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TE1iRmMwTjVRY3RPT0l1d0sschJqJczAUxDfxXAe5L6Hix1U:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aExQUWRZcmFiTmlGc1NKdM.GP35YiU.RIgpGugNOnF8XhnvU:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TVdUV085WmFpbU1TTXhXauANlsLT0BM4.Chjn8/3PET67h/P:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z2F3RmZ6d2JOZ1FuaFEyV8rxg5M.TI34LINxmIIxN8Vr4q1M:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RTNvUDRNRUJENVpUT1RobmS99zr78exFSu8zmw05oE1Sg0kV:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eUxCUWxsMlZuZjZxYkIwd3OYc8T6Vvgwm7NoBegQppfyrdlD:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZG5sS0M4YzlJNzlhOUNxQ8D7oRux6koMcOHEOBq6nCSPMKIF:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WlFkSmJvMVF2SDlVTVp1N96m6djKZU1Ln555F81HAoTjJ.uc:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cDhxU2FlcUVGbXdKSUxTRUXTfJcuCxoyFcjMgW4nprj2Gj56:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V1RnTlAyNDZWdXMxUlJ2VR0Pub3N8SGujcfOxNIjNMUM5Wvk:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MTJOelMyWFhzYTlTbU1uOOxKkLYcPQ3mNJjlcdI7lCAqkBm0:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T01qTUYyaWF5UTBxMjFtZEk6NQ7O45S2dAB3vW5JsVZlg2Rl:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T2U4RkNTOHBiMzdHdGlqeaMj1dLwazKW81TQ5CIqp8J6viWZ:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aXk1MWlvd1dQcXhYSlhQbPE3103uslXtaiCYi.XlPeZxxI/O:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZzdkVDBOZVRZcG1YNTJoVgj7o/h6EiSw.qnI3JiH8OvH7Kv5:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SWMwQ0ZDMTlES0UxQmllRigwBVxSD9zRTPSjn3j/W3grVLaG:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SGN0dXVQbzRjTVBkMjFuNtJtxUjttQG9LT3VigV8wMr1AfuT:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b28wVDhoT1NRYTdoa2xobCWgSAHz6x6Lw/ujOhziZwiJ6jK2:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}clJISjRyc2FEOG14N0p4OGCEmNNG.tvvr0guQUwMe2dzybVf:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eGhlUHc1aFpDZEtPaTQ3eaIDq3qpTI6wRHqAK2sfijoGhxTl:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a0tBZmMyQkVySzZORlVpQX3TzAbQBNrssCiHZt2slsEvnVSD:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VnVGdUIzNlU3NVIxdEpuVQR94UrVv/XYqv4iGbbBGIFywbfS:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SkZicFJCM3Vnb1hicjNXdaUEgoYoLpj0oGF3vPs3Crn1Ec/T:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UkRIUEN5TFE4SUZlcmtUUx1cMrXa3GrSAKmGIlM5NqHM1.6P:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QWlHbDhQQk5LOWtyd2tzRuyqBFYASIZ4YMVISp9.DpsyBtha:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YXZGSHBHMHd3MHZpMmpiaAUSF8sLSo.KvTJSepotqN9sgX5A:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VEZmQUFqZ1Bvc043YlNodmPNaVv6XT05y4uzZqWEYKxbkgmg:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UzBoOXZ2OFBlWkV3V0g4RKW2AdVZ6TVp2ok/xSwhG9obO2HH:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}alVEODAzQWs4enprRXJ6N7lebk6POF37.8ggTuWWNg/Mq9.W:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OUZoeVpNN0xaelV0aHNxM4xzMPlLse/EbuzPjbzKgzk9AMBS:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OXB2Q014c2gxRVVRbFpxNbd48AeKBNdMP9aTakvXnmJWJ9Lj:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NVFTVWx6Q2lDZEdtNGVmOfu3RwKtinpR4oYeY/./ngMwCq/9:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cW1JN08wSFN3Y3JGM25FehT5TG2bPEOBCki25KEEc4cLptjf:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R3RDNFFuUXUxYlo2TW1HaM5R3/HErLcr.8u2JqZ3J2PZh/sH:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c0ljSWF2NjMxZHdXeDR0MHfd.1VOGVTLpE4ZFxBsyuQgxMSQ:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RHRWODg4anZMSVQxRmNrVlyKuFeC0MIiWJfVbxheF8cAD1Iy:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dGxVWDYzZDNXd2ttYjJKNiNBWasn9F2QDrlYjFZ3WljKOnjD:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b1FXSWdKcDBsTFBlaFFMcxxE1YRENAPPNEVLN1PAQ6vdZLAG:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S1VkME95REwxNDRSMng0d8zA0utFzWFpfMh8cTMuKR1ilnl3:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V2pocFZtUW41SG5HRTA3UDVPwdASVeRRqjzeyOJphFSUnkCY:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZThwWDhMWjdyeWpScFJGM.Dxub92Mp2qKDOCmCRwk6vkNTKC:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UmRkdUxOeklsVXhyVzBZdChswBMcwQYuJmSVBrFHiaYrlj7h:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bHlYWjh6bmQzVmtDd20zUQzTBd6emePVyRpRl0RT31P1q.zf:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UVVHUDBnSlFnMVFvVThrT4LA0M2HAPCp7.S0jeC0b.L9Y2zt:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}clBqSmdBR1dDazNXTXdMZ011VwScSXXXOOVW6WzsAK18iwTW:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZldRSjVjMGRUUEVDTXZlah5cTD1X1hUFb0.e6rzcEQpZnKSg:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RWN0Tk1XT3U3U3NsendRSYIRixHsgEy1PR/6YoCcn7iqVQVy:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QmYyZWNnOUN0QlF0czdFUZ/Mv8kA3R/qgGRZj4zSKnza0M/f:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bTJ1UjFoNlNKdDRvc245eOE5Npgi30tjxMB5lfk.gQ1q0EpK:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R09zZm5ZOTJUWHMxU0pTOIjyGaAjopOCe7xA79qN3AWs0yqr:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WlhZQ3gzT1FvYmFqVkhPej8j2sSDG6mqfb8YNSh0fAyRgLqw:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WTdSY0pTT055NWxlS2JqRcDXGzY7kpA6NqDJrYl7cug8ElUs:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UlN4NWRQaWxIa3pTVU1ac9a53s7YMJicLpylBT1/ikCFGBCo:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZE5jNWExNE5RMXhNbTZGScsUrYkT/qMpIhnjIXMIKthOxB7B:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MXJySTcwa0VKYWhrbzFnQbRTlqzl7CjX99EVv3PD6MRwVikg:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b1daSlQ1VGlWVk82UW9oZeU68siE3DwL6/dI0K0b9MhTKBDX:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NmU0SWtuUTJiSXd5VUFrVvTgTb9jX8P9nUbl7nB//UoziX/8:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VHh4cmVDS1YxbVYyZzFMTk.lvgmxs9ZDsbWyz36hTUoMEc6d:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZnZLaGtrNjN4UUpvNHNubZKKoVb9VUzitwHlNo8nSC0GYpsf:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WXNTS2c2SjlTdlpDbUVNcZCHkfhkMIiSZ3IEn25DgzryapI4:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VUtnWUNPYnZ3ejI3U01QMbBLzTzoXJ8XiJBeCLH06fqMMdv5:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c0NGRlQ5alRVeXdENURndrnx4rfLc2.p.lr8pH1DLVx.l8EE:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VnVQWUpPSUt0SngwZnlCMIgquN7wveb0nP3KbLwg.zALN0Yd:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TlJFM0VpQ05zU0xjRUV5efEigOoIYeZSJ45gxOwXfDUfI8Lz:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bGZIQnNPaTA2SzlkZXhROXl29kJNwiW24kFgy.riFpwVtBUl:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Zjg2b3BUQWg0cFRaY3l5bkzMni0htWtArNXe4kbfnfmM3vI8:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dXVVckx1bmRwTHZ4a0RvYsYpYQBlCKwPLfiXfnE3VrRhjdml:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YzZwS3dZQmNacW52MkozcH9jdQ7wE.1Ziyv/lbb0xo/ksLs0:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eDRhcGkwVmZmWTFtZEZjNsPRNlF2DAabihmAlntk8GfbNOqA:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHJ1N3VFR21sNFlrQmpoR7anfK9OZZrravROR/MRnDvvyMc2:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SzE5QjA5dmZVNjNKbFBybyxKZwPUkVHSYcpkU.zAR6wJDqTF:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WTgwSUJMZ0JGam5YQVNqYtJxXjLsMSCq2w0zc964s/QzaKUo:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MW9VckpCcHVMQ2RPd0xkaCKpNdldI6NKW.aOwuaGsKhS1e6n:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MFhKcW9oa2ZPR1JBMG5jckL49cHywsMO3Yyy8FdSsRkBbFWM:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QVJxUmN4bjNYMm42Rng0d28eLwAQ.ZKhwrbaKgTZSSx.RawS:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SHdiTEZEVFZ6bEVGVzduN2IMlnA/xnEiADTsOA3WPT16GFoM:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eGRwVXBOMTBmWW1DRVhMZSyFVTdCTq13g4h4iEA0zwlu4Tzh:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dm9aY00wZmFyckJSWkFyaK50m2l8yt/G3Kf4k0odq0LxOF0/:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}azRVVGZqZ3l5RGtKMWF2VoWK0BoVXUCYvBi6ntRBZ1mj1cRZ:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TXR3aGtYOW16RlNSMTV2b74uvuSpHMNsiEIWYoo/BUraw8o/:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TjRDdzFoOFlEUWc5aWhmctXq5fclVt5Y8qe9krWE09238Qwh:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eWVyVTNhSUFSM1lJdWZYN5GMFnsuJk9v43.udPpuQcPyQXA9:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z29hQmhxbHV0eWlFNTRsUvMERMW6rLXCvZG7J/qtflBPDRS4:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dXNyQ2Z0clA2OUxYNGNPRjnoEkGIm4D3rDnkyBzssQnO0eJx:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OEszUHYxaUtHV1lQS0Vra1Jb5/RgQH14M4SGUaMJnPexeKFB:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SUtRV2tVUVJyaFVmMFBuNUaIZbnq1tURc93FKIWMmDh4InKq:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cHZ0WjMyVnpITXREMG83MP8imDkXMaaIU0GBkCYXWTEmK.7Y:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UXB0RVJiNE1NY2JReHdHNNb8dt8lb3Q.16gJH3cpLFp./hnH:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VUFUazM1WDNaR0pZV0liTLtBhy8xUYTdN02oxKtuWNraI/F7:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UGxsZlE2bTN4UWd4OTAxRMnR9gU3Sz55MyYgzi9w89inuzkb:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RWRzZjhCS3hMdTY0cmVGeX2RLYEugH82Aq9XV3tvZXwpJGZE:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bGV3T2oxeG55Z1JHSUNXRP4xeyrMHBTBsnb3GfBzJdXb9yIF:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cHVHdm1NOFpyOVpaSVFGQRUXEnnNVAyrtyyED2ffs13zCXC7:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SWVleG9mOGxtaTNhak9WbShkFu8QkUn6sNhS/JQ/T0ReAsQa:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d2xhSkdRNmJDbmVPbVNDUopstOC017b0sMhUGwGXvj3c7WkU:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SUpobVFmR2lnTzhPSXZPT/R.XYaeO9roU/Tm61sxTaqPfA48:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V3puSkdPM2U5cG5OaDVhadZXnC2/XkyX8WcuTpxsbo3.z5LS:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VnhFR3ZRSGRKeE5ZQXNzRkmxxq4Xp7t3RY5jHzJqS/icjO7K:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aERoSnlKa0FFVTBLWHNpbInq0nGlRP8dbXSNoud7n7zBqKj.:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RFhNaXVhcUxoNHBjMkZ4WPtqLSAfskPWdLBISHxWEN426N2m:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TkpXemNXR1RYOVpDbzlNbRlBKkW6/9nL0cfgSCZQiLeZkDEK:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bmg1WHZXb3NzWkJyd0xqV7GX8GtBr1WvnR9wGoNtoIyPSom3:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M1JWUmxxdXk1N2NxcnRVMpjMD8LoSa.zjGtybgNLB50M91vR:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cHZJeXlQUVBsbUpUekVUZpOBvd4XEiduTc69.0BbtjZtTeov:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VmZWYXBxMEwwa2Q5Q2xUal8gKZ6qhXQfvA82BGH6bCgfsmEP:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TXlUZ3JGc21mTHFXWllzQdUYAobLlZsdj8T3nTzsDT2qJh0i:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}anpnbGliYmRSdGpWcFZ4ZM2pEHprASKcyxzQTm.VTBRvAcqC:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bkk1Z0FGWWsxSUpVN1oyUdYafKNgZyQGzbBoYjBkVdtivV9F:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N0ZJRVNZTm8wRnVqVEtHYjNTNgfP5eAyewSGREcvOZIDa/.h:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dkg0cUdyZW5DUnpSbzliUAgAcIaBfFrsLUVQyozdkIRoO77V:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NjQwaXQ2VHZBQVhQMVlRbqE0apV66RswCa1BGkEu3wQAn.oE:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eU5ER0lkWTc1bU4yWjI5ZzF.tyYallFPBmlnmYqNU/.a4sbt:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VVdOell1RlNRam92ZTdDc2evaSlnFfzqXIWZN8Y2TIPbdrWb:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WURmYk5JM25XMHN5UDhkcm2O015gZpwVNA5zHiGP/KVRfZpa:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UFFncDFZRThXV0tJd1hnawEX.6swGCSa0V4YqelzY1YWoW0U:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cVJCVFJaNlRrRGV3SzBjbFRJ2F/vRwc2obQ7ZoJa16jrohzI:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N3l0dGRXSXdrdG9VMTgzTx04jAn0NQkxHJn7IYUFHOXfh.uV:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TWhtTTF2TTc4a0V1NkdGWKw6/GheFXGQBatkI5AonPyNrjLM:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RTJRczcwTWE3d0g3Zlk3bv4fjYgH/o5hFJYvm4MnUZni1HS/:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MTFWcTlwbGlFT0I5Nk9va9z5ncEZRgp6Hx4Ny8bQKFMCTYN9:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z0Uxd3VyYW84amM2Qld2eYhtOIRSnubJ2hlJFYv.vFOUtf8b:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R0ZLVktHYjBQVXZPSURCaiT4zhav.kvL7AymuLZPOMx.R1og:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QTNlZzBFNTNuZUY1T1ZsZ.eBHGhJhbPxn2uD5IW5/xEPq6kN:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VERmek9BMlZkNGVZdlRpVu8fZ0nmRL6kCyDLrEdv8ptkdAe3:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VEN4anl4VmtQSlg5MWc2du/onaSET0yfVu88QPXj9afLXPoY:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bGlrVllQenhEdW1ac0hLTyguGc9xzlCt7xlIIAMq70Ac0S7/:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RFVyMEJPT1VxdEZ1RDVkYu5fpRiaya732Oh6waqBNWzoYXkY:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDFSWkdXcE9YbFdYbHE4R8Z4Y8TIxz1yk1.H5XuCP4TmywRR:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VmtEdk1oWWhBS3hjMzBwY2y.Wot41cE4wtJcndKGdZy83IBm:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M3docVlWeWFYdDdCeGlaNqAS5IfHXiupZZjlDYMSYhgoBWIB:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QnRnVXY3eXVVeVpqWHlYa2GbPEV1s633FAzPuWisRzXDNeA0:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RmY3U2tZOWd2NGZ4a1lWdLwi9N/qeKpaNVoI2g2MdAsnOE65:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z3JmMUo0YzV0MmxycTRtN3rVX5lHaBlQtydqRhVIyUsigpWD:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V1ZJNTZxeGFHV05yeEQxZwS6ZOt/FodiD5rNgpZak2/vLfGi:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V1c5MkJzNEZtRWREQ2Y1TsvGpmIXlooBCuikJ1D09II9tCHN:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TWJUbzNYU3FkSVNITmpwbdu4FS8Mhtzl1Ar9BaXt4DtH655I:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eHEzUnhxRHdJd0JNazhPNo3.NEqn7JkMKaq8ud5z0P2BTKHK:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VHVNV3RZTGpWdndPOXlNUrw1AHaggX/Nk2tFI/E.RHpekGO8:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OFg4bjBNMEw0RTZvNVJCN31tohD7Ww1Ilmoc3lUHvIupGLCI:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}elF1ZGhZSWJySnRvOG5XTJeu82BlrdaLq9gOL1avpcUP4dYh:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M2o1N05MMVVhY3FKMUR6MGVMRrJuQTVIbfoR7gVrIRnkJOXg:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MFBMME9ZT0VmSVdkWXBYV8V1F8f.W.UV3xd87IxAU/xXLZHX:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bDM4SWRGUnlLcFVTSk9LWmMO7GVZpQCutY3GkflbovQVCOvk:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RmhMNFRkUm83dFFrUHlwVjSf2KfR/6AWUByXazjDpbrAG0Bg:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SjRwR0tnYnRod0dVUmM4QZiUHDET7H.oFE0yGXHC9HPyw9dn:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YTdOZHNwcXFrZmJjNXROOG.hcBstGUv6Ay8Xwm84hw/bZ50C:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OFg5ekZidHNidlJYVnVJOBTBTRHpc9/0fJ770NaqMEzwqb0i:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OEpkUjJMQ0xUYk9wNkxSVjwTQzhJJnwIol3ASms.RfjSezJR:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}anZlMVZGY2xIaEhvZWpWMiAzyLWSW1HjgSIizdbRnS..emJP:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M0JWeHlxcUg0WmtuU1JqRGe43NzVvN5jrt9i4pjBSC1f7r9k:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S1hNUmdUdElyMFNuRjM3aIYHZeoAINlA/BP8q0JiTzhzSZ/4:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TVFWaUhLZTFkMUp4UHB4dZPSC2BIw6tFhfVCeiB0gxcs6lKp:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cFd0bHNqMkFrZmVHYVVoT9iwVJOBBzfT6LVFHAsPKeEqIhoa:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WlM2WnZJaGRvQ1Y5ejBWQ9cA0dIU9kC7PM82LgdBhjrh.W6B:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q1RpajJlSmxsRm1IbmZycxr.vwX08bKoQDFh3aPdW6epiHMD:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aEl1b1oxa2ZabjduYkIzWPhX1evsFQCJ8UMQu8duZY61AGQ5:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VXBadWNDYXhOSktDNG5vSI58ZOXwxtxzKP4Zlzl/0I5DA2xH:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZGx6UVRubnk1cDZUam5zZG9HR5uu6DWpZmmPp8CFLcceApEj:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V09SRWEzVTdqWEtHTHoxOapAZ3Vub5/Gbq5BTtOGTSOnWpgx:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Vk1hNG1BQ3pXeklKU2tqQpXSGzUxVbk9XD0FdraP30q4tJ6K:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bE5pOUxRWG1xNVdIV2o1R3C4nKAH7FsN0PEjkk.xwpJe8J5T:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SGZscFdEZ2k2U01KRmVIVT4ns1qLa2uiGrlHRUNJWKgjTEr1:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SmZJMndzdmtVUUJBSDl0a/KJ3/1s6UdNLwhVoI7xMk7lyTGX:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NVhSOXNET0FEQ3VmbW1JN9gvE1gBIbjYXj71Rq2bfLnmcqLZ:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dzZlRFFYall6RG5qUHRVMfXJpn13BN9Yuftp2lcSBnTJd8F0:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cHZsU0lGQU5iWjg3Tmdsdfb4mfxkoTaGdVcUXvjMXtbmgnc.:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OTJqOVI0S1RJVDVPdlJZQuHJ0OyiFxAjLnkSJzi1PesQ71.k:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MnhOM0VuYWpRWUhiZW9oSxoloMKu.Au9AiterpCeivpm8IPo:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}elpYdWEzanBYYjhuM1FscPEnIVkEf7hPP9kJ5Oqsm9Uhk.G2:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NzBXalFsSWtPelpQSVBHQ9yyGiIDbEntSBk8B7SGui.S4CkW:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M2MwN0RzMXRNbjg2eW92UejngvxF2.ahvrhkv9uuyFZXx1s.:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V3FIMFAxcjFZSGFuSEdheKwrJwcd6nKK2w1FwQ.0L4cVAQFd:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UTNoVXFteDIwSU5pQnhHWpWECJxUwilNd3cOCHCPS9QkJR0y:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YklkTnNCYUlFb2J0NTJxZNstf80MRNQlXOPlc6gc3w/v1lDD:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SmFJVEVXWnZqMmJhM2ZCMNqSBCMPnB32S5ONI6F2CBv0mFus:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Vmd0QjJuV0NmM1pCVlZHM/hGvMC4bkzRo1FfT9f5sD7AwCxj:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b1czUVBKek82WnM2UFRuNxFvIGR/YwpAOzWekdIgQdPrBchJ:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ajFIV3NZYXZaem43WWZzd2Dp0Uese1pRurGURbIwKC21gvpE:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NDl2b3ZXVkw2bWV2R1BJeK3rYEA6Tpawps1E.Fg1.41qZJ7x:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dlQyWTM0UENSNnQxaWlUNnfh0uZ9tVP3Cqnv3Tb102GiDpKW:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dGo0Y0tIUUxaZTVHcFk3cNKb.BkOOodpd.6ONP2y36SPQH.m:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dTNaV3A1dHlMSVlpSmt2NTeLOPMPqjXLJeGvivtj2BqovCct:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VzNQSTJmMVFMcU9FNHhITvxzwd0nppMcXW3ZDoxkP0p.sEw2:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WnZlZUxhNGt6Rlkyc0tDVlBURIBJRQD/gZWf8g6AX8c8QQWI:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MGFNTlAwUzRlelBVeUlQbv08.34rjor80hDyrUg36s1FPaHr:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bEtkVURtS3dGd3g2a2lYQRiR/kBQHexng5/LyPhhc1biA0uJ:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VkpQN0ZMQWo2QmVTaHpueHCJN8zMAOjSSkyljFj46jFhE2Ye:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dUVZVU5XcXhqMFl4alIyZ7fkTtHX7OoLA9zE/OEqpA6h6AMq:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VlpjbFh2YWtnUDRCOVBWWq.aiFgFCp6yzKj6dN1oWmZQidco:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T2NUd3pZYlFwQkJ6T2tSN5e1WbkXdUWHSc5f/WoDrecX83HO:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WnQ4dEF4Sk9LTjh3TEh0aZwhc2DpbYx1M.2IF/W7zh2QUcT8:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VGExQlNWdXdNTjlHd1BPcDbVXn22kx8bjYQb6xkjhZ9NFEwc:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MlRyMzdHYlZQb2drYlFURee7hoNdN4YrDiiJpFWws3q1I2bU:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RlVvWFBsN3J1NUI4M2UxOOdPowpOsZMA4KqoU6xRh0c30B9h:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b1p6eFVCVzBsZ3dlM3ljYn7Z3n2.dC9TeyQGdgWFHWrW67hl:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cFJFV096R2ozdG80UTlyaFcv8eZeWbQZPfGYzQ3dpUxybPT0:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RG1rV2s4ZEVBWjhOUFU4cWve12W4s3C4vKBwJcgkY5L4yIBc:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WEtQaTJrNEtXN3hmS1JGZulwD5pBAuhMU4z/U6EyReOHa121:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZHRrMHptbTdPUURvUEExRGf/.1FI09WZT9poDCe/X.6TLP1c:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NjF5cWdYZGgwbVZXajdrMJ9cQKSs6ee82XCwRT4Q8s5RrNtA:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dlB1Z05ZbzRNVjJMNkFmZtvN8tQgQ8LSotL1mjidNjggZuYH:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M25NVjRCeHppTTJaSXpVM5IJdj5g8.jeAZe32xvlYKDoP7Ij:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cVd2bWV2ZmFHa0hZUmxUaQGeO6Fr4x.GdnrXGnaJKnAS.Lmp:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NXRvUEJFcHpJQ2lLb2xacdTQIeM3hkcYGPrDOTjzbjYUolTj:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}clBxNDQwVTZUVU9pYWJoaSyiHQ6VnfdAH/R58fLaxM92t8MV:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}czl6RjNRVW96V0E0b0J0ep5HsWpHse0ER08ZxvO/lCpSQ/xe:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}amJjSWVNcG5kWERxa1J5NadfF01RBdgZiuZAPe0WgkqWdIFj:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eVE1Y3RCdGM0WXhWdGxqbLgx2zaixZqjf50sl8wi7caK2S89:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MjlzbFBxSnNXcGxJdk44ZE1Yl..59mgupIm4.YvDdGw9LC30:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cEc5Y3JZTU1FbVNqTDJoSnL7snNKxbaPeGwLlmUIglxjR7nI:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TE40N0dPd1BuNnlKWWhvOY993xkSRXCLJ9ddcqXkzI8V6sx1:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bEFtRzRTTDhidHdEb3Y4VXd2Xi.0BVCMpAuz6YpfBchJjzpw:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SDMyenRGR2thb0VOSmQwOUDZ5pEw8OAgVK0u3.F4WJ4KabsA:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NTg3YlNZRkpkek9xd0pQU/h5PeGxp9OdBUq5KEFQ3SmwpHGx:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MHdiNlBVT204MXZSQ1l5V46r1q2vmItKJ85MTICK8m54k41m:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dGJsWTQ5bUFkc0xhQTljNCMMPUhC6y3YPZascGz4TUM8Uzex:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bjdZWGlsOUpCZFZ1Z1VmTETOEnFNnBunZ0oZY2hpZLSx2AiA:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Vnk3cHRQMXZMWlVxY0NoV8BFsPEunxL7dQDP5iZNl67IXdCq:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YWZNZnozY3BBWGlWWU1pN5a7h29yvn45xK7XipI.K90Bfh6m:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YUpoOWx6dk0zMFV2SnNKUAp0UFExVQrZSAeXMzxXsRSJZFEH:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aEVwanducjh0U0YyZFlTRd75KOlTZ/0Z.atXyXzl8/YXFril:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YzJ3OENiRlR6TTJqU0ZheTRge282l11sjudzHB.NC2i4rbip:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b0I0RmpSTmhpSHFPcnZQWPmnpMletpXrYV4NbWiNKmlh4AKR:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}THIwS09zaUlzWnlpWnd2ctADZuVAxEoQsH4VBfsU3zAJ9KVU:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U1duZW9yMFRhMURxQkZLV0csUblGa5E3l4Qa6G/vjKBZ7w71:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OUYwVjl3Q2g5UzI0U3J0Sx7N/WOE8Vn.R2yefFs9bhN5vgAc:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bXRYVk5BMlNjdEV0WmtTTVdkd5WDK8CYrzLo6FZ3LStCvUd5:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MmVodEg1c29ldjVnZVprMkirCA33013Ttv5kwSHoXuyYPGWE:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YUliTFFKQmIyOHhNV0ZoWEeSZFAbN2r1EVL5K4HazchiN4Te:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bFFJNGNjdkJnbld2b21jYbtKZUbYFcM8nFLvbROhNKF.vesX:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cDVyNUd0TkVBeUFwN0I1NVqYouDgBnciA690NoDfB1gQRMYC:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M0lSSFRSYjJYY0F6RllUMnWeO6eBgVAXfsR1a/7ZoInc3IIC:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NHFzYjNOUVlpa0FqR0VnWI4xFf1PAAamdYbsUmKP2hz0VlQ0:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YmRGTVg0SXhmNUxGWEVhWosEX700b9xL3qm5dlbZym97YoQu:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eVY4Nlk0MTlFNThhU3dqaG236ZjH7Dzxy/SdCSbawmx.lBMt:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eG81RjRYQkhTTWxYNU13M/erGpN23Vj1dE7alqy9z13IqBYJ:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z295Ukxpd2VqWk9TSDR0Q7B60I6cYU/BjDK3MDO/YFd2/62b:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UVVZTHBidGdEa0o1Zjl0Tx3OHkg5dI8CiX5.YZVD0sikOOvO:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TVprT1NYRm5uVG1iWDNXY0HiUDpGNexsXPOAA5PWn3pkXbpO:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dFBIYVlsbGRmU3o1bFBmMpij1brurqXULt8yuBWaP7.yRj1s:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cVdYQlUyckx4azlsTzVQTYoUqRs1CNxHkX3qx.U1cwoKVnXQ:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UWZBTkppd3NXT3JGNGc1Wi35dWWREnh0GAfJWa9Pn.J40RXe:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VU40OEo1M2dXaUt2Q1dGOM5TC20YWILeei59crReqbfpcuij:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dFJuZEFIVkJ2UlhqVWh5WFEubeFd3qKFPrSNFDcs746UGOi7:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SVlpTk9RWlpxa28wbkowUoAGFwOKNet1sPsxBUX1B7Awlc22:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZnFMeFBYOGh4c3VOQ1MwV2JyeJOpYVx/pryWrmmd2g0A.N0x:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bG5VTk94TG5RdHFJbjN3bqGtEmDixlPpEmd3f8e.mygX/WR3:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y2V2WGFzemFsdG5zYjNic1LV/q4KXes9wSwnk9gc0B.aCFqb:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TGp2REk4dlZ5V1lUb3lWbCpaAOATcLuSc1b86sLocdEDF5cr:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UE52Um5GY2w2cXBFUFNwYWEJZapYTaJ0HlGNj.qo8lnpvAXw:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z3p3M1VHejVUZmJCbEt4OHiStWhTJiWyda0EU2kwX7y1KDp0:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}em9wa0FsMHVJQXBRUUZsSehsN8nmpv5JgOVwVkp.eCNRxMbQ:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZHdCcHFCRE84czBNUTZUYRLq6C0G2GaKd41fnRBy6uQUNSlh:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b0ptbFhacTVucEV0bFNkT3KxnUEgMNsYWNXv2v2Bc4bbt7xd:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NHNqSElrM3plUk0xUG9kU.xH1K5LZu1QkhPEiRVwiUejQUn9:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TGVoVWExNWlnQ3BZdm43Mlx1hBdWF/wVnT79ywUcGGbtZokG:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MVZBWnMzQ2EzR2xTMXE1eEeHVEqIP1FRdee3tXmVXo9yU0Gj:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TG9hTmlWck5URjlySXNIVVyRfycX444mchbdLMS7GrUZcdkx:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Mm54eDJKRFF2ajAzdDZRegNeIoJNIDrcqLAp9NxPcf.f/cft:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RFVaZHRyTXJ5UlpzaGpUQt5LSsD8NArCVxCmkz1OIwNSIiOq:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SUYxZDQ4dm1YdVpZUkppUwDVYGZ9V3aKEaIQDQ/9JlWAF23t:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ckx5OU96MUtxTEh3VzE4V8GuSee63J8nfL48XDoKNGtx0q42:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZTN3TnRtdW1ENE1oNEcwQnPT20xRCr7bL0eNfLuIP0jcXbJu:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NTUxRGxEWmRVbVpNMGt4NPEP4CtFVYxAv8uEsLY4B1N1aP1F:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YllTcEZiWHdzSFNNam8yVjTdkyX2mEQmn/OSO0ynO/pMV41m:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RWpQM3d6Uzl1Z0txNmppQW9ZherMVOq30mezZ2qQzq7yTpEV:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aHN0dDROd3Z3d05yc0FvWL.MO7hfTfNXMDYiPz6zeRmHlucK:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SnJsYmo3ZWI2aEdQZ1QxRRlTTuKbWsDQHlaJeWCfmGcdbGCS:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RkFzZkpZNjVobkc0M0NXMACV53R.bEvt64AQdXp9eCOaVnpA:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z2dtUlFKcG1vS2ZHU0J6MBXP6a3kF3Vfn.3YIg2WTeZxFnQk:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RnBCa0tjWDRtTDJvejZDb12x6n9qg/n2IjfGOf.ifPYE2W9w:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}czc5NjRlTTVkN0dMNFFEcn7VhffuQIbt4Xr6dex6cc7ZJkgt:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NTJZbUlsY2o0bW9tak1YYc5omR5AlBmA1NNqVexvZX2mP5.Z:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NHdUdmxaWGZZTXp1dVJ3avjxykf9aBsQa6Qxd0TLT0r7FSXU:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZURpd2c5MG5IZ2c4WDlETTeBxEHyWBc..mzfnQFTpbM3jfgm:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Zmw4ZnNnaFZhZzV0MERIVipPJ0CMsZ262xk.PIs9xIzLEyrT:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}clZDWHV4Yk5pOE1rZFZoMREarheOy.Y1x34oluQr6THZb.fE:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a09jclh1MTRjcUpxZE1vMYw05v5XQ2g0B0ga5lDzT99J3Wod:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q1QzNHpXdDlnRzNVTUVBNGjt1zA0H/5IuOSvbS9mKWNEzg4B:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RlNWOFFYRHBqY1o1OGI3RRmQgGzEHb2qaXRQ6N28jslYavz0:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZzE1emh0czE1RU4zb2JJaMelYXTD0Gd6GGX2E.77TXlfaFBR:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eUEyTG91RGtHZnF0Q3NqWrKXjupOIqyZMhjnPf3qxjPKX8jo:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dkpNZFFlM1NBbHVaOXhWZFU3L2IIlD6PjrqYpH/I/Dz46VkD:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M0YyZEd3ejB6ZEExVGNHSJnTJYwcoPzUsgJOFHzV0dEM/TiL:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TG9LQXpoekJzSUtHMXRrdIiGDJpAnT4h7T6W22ZiZuZ9mH6E:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VThJcDQ1R3BMVXhlVWIwZciu/r9vQuFSejB5I7ooA3d2J51x:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZnczaVJSejVuT3NuQXY2eCX1pIPyEbZFlmuiq7QreW7qxERH:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eTg0cGZuQkcxM2E4UjVuQbjKjIa9XjeltViALT4EhaMBGJvh:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YUJDbTVlMXdlUzFmWHhHQo0XQxRooxbpdo9vIVoYYv/XHmmu:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UlBZV3Y1RW5OWVVlbHFXNqFd4h3nKBYge2Cx/h1uJUEuA0NU:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SVNUMFhrclRjU3ZOWUR1MM2qoT/wq3nuk2edLgniZREUY3oq:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TDhKUzhrbnJLTUdxR1U1MRhzgYE/YPGcazSKP6WZI8rGUTn7:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OGhqelBORURSR3BuTURZYm/qXcVC.BSYslFLPuVhDHXqAR3Y:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NFNrYUpDT2tIWmFHcDdqWMqvr52gzmLRHo69ypxWrpJwLYXM:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OXNWZWRWb281TGhyeTZ0V73U2YsN1XsrOQ6aoSCTRUe7Jb7v:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NndJaWowTE12SXJ6VGtkc56U5Q89DA8CbnwXECFyXEM4rvkv:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UXl6bGZ3a1gxczRUellHTWntt9kF0K1QywQvbql6nvtYi.pH:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cDhTV3p2M0ZLR2ZReTFPVappCYmSqHhxOVga9jnNYSotA8pd:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q2lNYmlpYldlclpHdXNMNVkncnK1LMecWEAzfqezXhAglCB4:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VWdwQjlyclpMdThUMFM0QQhaX7gI/n1PAoNMRBIyRFGNQtLN:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZjVwWDhnbHVmU0ppNFFVRLP4UAS1UAF4K/qmuVpBeoLOnHZi:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dXA1Y1pDYTFBRGJVTzZKbaxxD.C2VqRJsjrdMVqnbfDh6SKE:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cjNXZDVYVzJwRmFKSHRZWnuJtcxxZadzaWCIcvJNfXr9cQme:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b0VDZTFNanl2MWpOazZCVfbPFSYF7ukJ2NDVN37qq9yA5/7y:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V3dlTlA4Y2JJODJuMmdWbGWKyW1quVCP9Yp4EelTz/uEmZC2:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b1hVU0RIRUVIWVY2VzBKdQyi4AIvx4nOgouijHQN4CgLQdKI:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YmFVaWN1Z3YxSlpmc2t6dWuYrB8t84ttVbNGwRzQROq3O2FN:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TURxTXh2YkpBTjNJYXVhVCNXV.ovwuvxmNIzdHvpJ9hLhAJZ:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a09oYkhGZU03ZUNjQTNSMM67SF9fu142dW2htWnc1kjUGj4K:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VmpZS3BIYVZtS0xIbGpIbZjj9ri5swAzPN3x0YyOmZrAsel8:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NFNMaVpqSVhlWlF0RW9HRcCp9SeJ4mcO.OVwBvtwpRAMGZLf:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WDZIMVZpWU8xQ2ZMZWw0b5UxZNJx0aXnK5fdfPF3N6F9MKqs:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q2xUWVdDQXhuQmlnWUQ2OWua7rnkO8GXlc8LUY/aVqsjpyGp:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UHR2endLakNJSTZVM2k3eGp6r94Ce6S1v7ef51uQWPyTLigW:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QXdYRVZBa0xiSTN6Y2Y3UpjIob55YGjKtj5Jq2INf6vdrlWX:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WVF0OUN0Y2lIUEZ2aHFacowKEbTyjxFiluI9CN05Wh.1LQzM:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bjdMUE9HSHlSdTdHa2ExZleZDrMg/9D.VwZ40SYoUiAYeYsr:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDhleHgxQ3kwbWI4Wm9QNUvmnvjZcgbBQftNY/DgNnROXYaX:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c2NFem5VOXhrUFdxUmRlUuANd/saEufgd1bdShJ/hURWWjf0:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YXhVZ1VZZUxFUmJGMjBxc4TjQm6FDvJ9ujy7vpG.gqc9YkIL:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZDZCZ3BFNmtkQlRXTERQOcqrTyJguBrzakWhfULvOk5BiZ0q:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Um1JTjZkbXJoejRoUk1XRGT1nMmUDkipT8DOe6erUvnLsUI9:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cDN5c2F2OE1xb0lYV1dwcMcvBQNPFelHhxKEVpT2l422vzRu:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d3FLWnF4Q3FEMENCV3RmN1jrK/SV6/Ln1zV8RKxdAlxF/bRy:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T0ZmWHhpWmxrQzhnY1BIOJAXNuWhc0VAzjfYIWiUUSO8ZwVk:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}emRBOGRWc3c2OGlpQU9tYRg40rJqf8.SLB/29gc4uyxfUTdF:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UXNNcXJpMzhIeENYWnByWYNcl3MvsXmge3PaUB7V6na8MCpq:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YlJDYzdOaGVCelZWbnllaRQh7HFp4NhxFI2.fMxLSCeFpmYZ:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MHRteXBCTmVkSkViZFl3S9cHuHdDOM7akVtDERS1mQFM7UBX:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHpPWEtPS0hwaXJUVFgyNhCo8140sa9X588MqjbP8BgCu3kf:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WkFDYWJsdHY5Ym1ndXVuavEWCbiX0wY0fnJy2Sz7zh3tZll5:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RVU3bEZxRHJpbU5GNG8xYdeJp7Giejz0My.FOIlRWgjiHtxh:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RlVUV3RVUnRKSUlmZ2p5d/LN.728aL/4xFuOohesyBJg8t6x:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a3RnQ0cwUURHNTlZT3VMa/oCQxsEJAdO9mllLOh2LZBoJhOf:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S1E0Y0RaN1hBOVZOdVd6MqO2HlEKuA7Ju1r8Obz2mb.lTO/a:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MHNwTndVMDQ1aTdwa21WNOiukBXgaYZ.VdndLz16OLB6Vr8v:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a2V5N0tJSHhVRXVHZ1Exa8g7M69yQiMm/M6PDyLEPhF4aQ6T:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S3RUVUxUYnh6WmRVemxBZNoiybeBMPh5b9EXCzyG7plUm0Q7:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MWJIMmpEQlhFWHRuTGlSZ3.lw2AUQDEOMjbYXI1YmAJEaD7K:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RnY0dGN3ZllxOERIeVdVSEh5FEtl.aQTjnw6v5OFt29oFxOi:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eHZsbmxoQThFMXFkb2pFdIsnuA7MiqYJ.7p.6jWlwV.CU4G5:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R0duWW94MDBvOWJJUGdYboLBxY7VdPwxvVX43ngqI6pDgUMi:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SjRoQU1wcFhUaGhHNG9RM75Dgk6VJnDv0exUZTrlFXWa8kWs:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c1c5VVFMblJOMDUxaXBuN1tUmNKFN3lOMxZUrjTgeDR.Hma9:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RmdlbWRnWHpKWFpxQ3hMS/bNIFBRlgtxv3GUv0qDsJYxrds8:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZFVUeURtbzJrS1g3UTd0b5dZgkbm3MiLX2oYZMx6borPjOMz:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UkR1TER2c0cxaEswajNrVTrmR/KnsLZTmh3SOjw/oT31X8Hn:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bTF1OUQ4UGREUjJpZzZSbkUiNd2PqpGRz6IYoAivCt82/P2L:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDVQejB4V0JJeENOQmNKQRvOLoRaanZO4E76I21XA0.jiYNj:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dFI2QXJVNzBRcWNmallVUdpYkfSK6rwB.Shsr3IAdTUaogub:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T1o0ZHFNU1h4Z1hzTDhWVdxQ./uorNWjo58HNg8Oj56HKHWq:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S0lSVEpPWFl6Y3djdUZ1VktEtP7iuu6SNyaZxrdGXhaltdCG:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TGFyZGlUZG1LdjNWc05mQgSOH8uqXTsqeVGnz1GaPRBwRGNr:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QWV6b1J6Q1puM0xSTTRobHPeIpzpfaCGaGCyUXVmTqv7jE6X:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NGxlYTh6S20yclBkbXFXTa9wC8XSFjrWlzucDzytK2VJv.oz:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QkkxVXNNT1p1OFBqV3hZNF81IDTHqbMw1IJeuipsvAV8fzzZ:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cm9sOG04V2VHOVBPQ2RPTwKvAlCaFPHT4JLjl60xzKhsxw81:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SHdkcmI1ZlViOTFLRkZac0Am4GEbscaYINZUjekQ12p4JMch:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDUwUVBEWGVFTWtHbnJ6SJgRNvL.h8gZa3Z9HG6yzdoa9TLI:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RTRtVHFmQ2U4SHRnYllmWVBQspp6.aT9JSvYIwmu94If6bW8:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YnZvNGVVZHQ2T0QzOERBbKkmb2LiYVW76RsbzekSH6pIpDdR:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RTNHbWhrdURIdGFuU01uOd/ULDceTjXSbJc2OnHsjZqnl0P3:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SDR3VWwwYXJJSXhLZm9lbEWiEJ8Zvb3t4UwXBjsOq77ffoaQ:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eWdXcHN4djcyQ2NEbzBQam09xiabctbAouwKihB2d6E/33ZM:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cGtUaDNDQzR5SjJiN2hzSE87Pm.BLSE1nJ6QXg1AraOuPL.G:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bXZZMm1kWWNSWTZsSXFkN1Px3bcGHr3S4xuZkipvlHqyl4ZT:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bE43WG1RMkhaZkFGMUJBTbBNp0fJLJAyuIFA8a/LJ3E.Bw71:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VlozYm9wUUdoSlFqU1BzT7D4Dl8ugYF5ZUq1feP3AE3PXFHO:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q09hNWRUbGliNjY4UEdnM89KwQabJFl0hMv8Hm8NHrZKkZaX:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VGo0SHpYUVpJanJ3UFRoM46M/zGwiiTso7ej/SDENfBIedDf:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Qm4wSkR2aTlZNkx5d3ZiOXIIobhDex.F4KWLCkbOyywoe1Gl:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cGtoeTNmNTB3TUVMeUhKZir.yTIqFB7NxhQLm/loncXe38Tm:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z21STEVsMFFzT1Q4dEp3WTE1a12SyhJSLLgKvgiX922MVDyQ:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ekFlSlVIckE5RjhaMEYwTgPDc0Tt3kUgcqYoj5yWds7ScYS5:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dzk3WVN2OGI5SGpPV201awlBNJ8Tv/mClBCjhsTbSTWoTIPE:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dHFxbDhiWWl6N0JSVHNWRgCjc3GJFde0GIcyh1.EZW4nJd7i:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U2cwR1BIc25Va1d3SjAzUjJcSDH37dkEbQKG2Yt2LgILkN40:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TjRDVFo5YjJnOENDYVVBRvlD5PrLkb5CDasMLVAD9sNElPum:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U1ZsV0ZHZmdvSmVZNUVpNBKu5V9iNJEywBUmf3fnY.zFk7aa:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UDB5a0V2aDJXaGM0RkFTcfmrVMKtkZuRv05cwp.syCPqtQM0:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YWxMRERwMTlRQUVHUzZ6YdHPBPZ110kbA0VyP2Zj3ok6XQad:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZGdvdjk2MERQa1lJeWkyZq/njDw8M7c1yQLUssL5uy/KX6eC:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eGUwYlNnZElueVlCSk9kNdJe/6sirtUuhHhcGH4jFOD2i5zp:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WTV5ZktXRnRIejMzVmtlbzRjXHnN.4vn3rgPHrp/ACqrA1gQ:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dkhTa2I3N3lydUYwTHYwZUeV3Np3wFKlw9CkyGdaxLmxid2B:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y3VoUnU5SXZtVnc2MkMxbnOukeOQSooWASWan3aXA/5ceqII:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WXc2a1Z5TU9aTFNXNDZjdOf9KuORBwsTmKz6WHfwZjikZ9Sp:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZDd0aml0d241TFFYVUFVUehGly.uF5qfXxxhNcWOCdBKikJm:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1ZNbVREOW5GelBRVHRRUcnoEjADqXXa4SbZHNHYFjnQnc.P:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ajlxS2FGRXlteHVEdlRTYmuiN3BBwkmj4Jp.aZPk.3FLBjHI:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T2daN0V5UU5JVkk1VWw4dk3ceOfexi2RnHWZxgU.0HkLyR1x:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NzBvSFFXa1F4WjZISnpMcVaPvjRXw/buNySsMFnL16nX511.:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dFI3VjI2dUF3SnA0TzhqbxkUu.wNgRneCmfMasRxYVF6M2Hn:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MEw5V0dVOGpVelhadDZiZuE.IgLbZ/GYeYfmrz1jMLiYkK67:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dHdrUER1a2VITVhSZjlTMe.v8ZLiwsZbeyEmnMdzqiiViYa4:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dmRGZmt4cFdNemtFV29rUyhmljZy2X/qZc0y6J5c9Q8/7S3C:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TXNsZkJEeVk4TGNsQzJnd0vSTR7HLKH4V8RfgxDK.iXBLGUa:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZkFmRTd6clNCNmRKajRQYYrNbxV1G1aNMZxL0DvR3X1J8jWk:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M3dxOEV0aHNzTFkxWUdlcQDTiknbemFRnzvQidk0vYmpFi6F:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eXlBekcyZlZYOGVxZjVhaR86wY5vyEedihQuyJdU9iUEDd/p:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QWpVVWJnM3J5cHN1UGJtaQli0ijgmQ3092WFzwfD15kkYnhE:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WlFvdGl5YUxxSmpqSVhuSMS/6qYkVcClh1uERT7wBSQVBUg9:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WWhFVHZUMXd0OE9yQUlGWDYYGN.t2n1sKqlAlbT15dW0wGoZ:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UFE2UnVKYzY1aTdnTnVtN/FhX/uLWO0LOHO9NYmDuCgm8XTT:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NlpDaHh4ZTFiUVFzZzhjeD0/mwKUAq/1iSJwrOZY/VxMOZZl:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YVNjQnpnT3lqUHdsUGU0chj.1tA52uzbZse9xDmkw1SyD7hf:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VXpwektpcU9URDlvVXV2YZvUI4nz/dje/0QmsGD8qFNEGTNk:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VUZzdXZpeHlaaFN2Rm1pSqWC0SYUWxi3AFnRKQv6M3xDyu8P:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bGY1SXVtN3dZMTFxNWVldcEe8OXm6oGuz/XPWNyrfAyS/CsN:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cWlUNnZsWlU0R210aWRvV0hYem12jrLsipHiSUAnmzf6DXgP:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y1pGeUVaYnZDN1ZLbHBGTjIoh4eOl2oQPDTEV3ZCxtkXKLJP:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NHVEWDd4Rm9FQjg4b2hwVp5Sc.B16B8d7v.KMkob7QQiEh0I:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OGo0MkNYemc0bVAxQXNiVRvXeqsZifXO9rezZYRoGA/B/9VE:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b2ZvWFl3ZVhpZndoclptOauUr7npUVsS5sPL5EPnypY0Vyfb:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dGVNTEIxQnl4allpbzRQVG53XwFsBT/ngEjFIL3WEau8BKY3:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NGlieGgwMFhkWEpnSXlYWXKuNtNXTa9htuvqLHG3oI1K6TvU:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TlZCbllqU2pnc0dJV09kZPN1v8lqLu3c3mWD751OCcrxjcU/:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N2tJSzR4S250QWNkUnFiMl95xEeXkJAP8tiXroB7XqMU.IFB:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZEUzY0p2aGVtRDV0QmpPWp9LkWrKfoXCjjCIq1N0vu7UiHkO:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NVNDWG5aeXRPNTE1UGZUUVsGxRU/AuqaRP9mLnduOnHfmRSF:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R2RWSFRWZXhkUGt4T3pweaPQBGUlxRNClniOKxSFZtIs.dT5:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NWRnZHBTWnJFT0FBdVdQRAf.P7exfeH4srSC6ypiocEOyQP3:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TWMyVUtnZ0dHZVE3NVZPZk5KdzjFUqMc0XJ8UpqqtI9o7E18:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}elZqUEh2ZkRUaDZLYXROVOQokjbd0Tdgx/mV0oM7X7BfcW2K:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}enNsMERnbUF2RXNsZklxeLs13C0V7pkzjFbZxPzRprQ5dTya:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}czdma2RkS2h0a010bUc5TOC5.5c6Bncyfy98MYSpXmnw4h3P:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M3p4VWQyQUk4RjN1N0NYVIZ0BHGw4qBkfsfGKqg31IZG5WvV:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RXVOVXlLZWJibEJ2ZWp1d9bCBakXwmya0t6GQZqvF2jHPQBs:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S3lSb2Vwcm5uM1lPb21JUBJmhLcR0AfpdIzDFQ97D0jYA/tv:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YUN5bklTNkN6VVpmaXQ2bwMl9CjoX46.6OsGeIPUBAvpbXR0:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SThoaVY0QnhWUXhBTmFRSolnymGVzj6z/Rg4LyP3Y7fOZvom:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TG94QlczZWE0elE1T2hEdHHYVhCkwTHyCHGSCto3DDWXDKFp:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eTlSYVhRQklTUGtHakEzWGBsATt//lqSOyGi/yc9N4TpDwKL:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WnlVRWNBWlU4Mnh2cFh1WcKWMJFgANxq0bNIOjH31S0VKPJ0:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N3pENFlMTHg0QnR2TDlsdEska5tGJBIM63UjTrqRy7S16F0D:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WWhDZUV4UHJHbW1LazZ4RFVnDm6skslVs7UsXZYTXWb4.GGr:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WklzTEdiN21nMk9vdWdiVTHfJV9yF3lM3sU8xMvNZPD3Y1N.:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}czljVExrNGF4R1FpMHJwcBjSjjtGWJDNFuQPnIzQZjgftE7H:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RjJ6N0ZGd3VwcThna1pOZS6E.xN6G3lcFSj7Mmk/2Q/pSuYN:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q1R3Q3gzOUM5WnpLZUZkaFxNKWNAlo3JLMBfxQ.Y1zt.al60:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cElvTFRoaTZXcHJZVW03OM1tNV7/Bp8mhxAsa3sa1hmdmZ9a:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UWJERlRiSzlyMFlBQkl6NY69RiFeKvJcwb0DJidRegOJO7Ov:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VEJrdGNvQmwxTkN1WDVFaiOfo5LrOPmmVcR9DcH15IcvyU6Q:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Q3c2OUVjZWVyc08wSVNwZYlhxmgY9C7Hr3gYSV2vNTeMBH3M:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N05jeU5iZXhlNmNmRmpDSoLavrEc.qVjHmWb0jey51inBI.O:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N2JWdmRGTEQ4eEtsWWlubN5IlNvdFSWnj6Ob8wPaYkY5EEip:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZFIxTURrbXd3ZXA0cnhLUxgvYxjAvJbXxk3Fi45NYSrmWRv5:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eFhsSERPTjV0UUwxcWhBR62hHHosRj3wDHICJn30ZxZy1jo/:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TnhEejUzcEJ0M0luOTdzSc1CU0GBXhC2wuAX3xD9v.q5Dmxt:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QUxoYTZMTjhtdFBMdllqUv5t3fJcDu3jw4rMSZpFv..RWXhg:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VVdpU1h0emdGQWlSVjVnZ4yhOX8OvvhEPW3ZTCGpImpIFvh0:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WDJabWJMVDl1NXVLR0VIUNjYMUf7gspR39H5yqqJxLo0lAcL:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SnUxQk5SVlNHOXlmRGV0VfuPMrBCErfUBP73gK4vMNmzLAJB:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WHZNWHpCYkdUa2xycHQzVTKBdiFnhYZsPzA99CArvsh0RxA.:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eXBqekJuSnpSYVhtenVGbVtvZxqxs./MXCRCukAARwR7mlqN:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cm5pWXpLd2NIV3hCYlQ0RSR0D9VbGIE7uner/XE8G5BoLvZy:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dlZEMUdHazl3TVliTkJrdNq5Ax3wVCA9fxj4yvAuEA10rgSj:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WU1Rc1NGYTVsZFhYUXhDTBu/k8CEm4p6eteWzHuRLUT5gLPI:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ejFhRDU0NmQzNThnUWZoeeiNPrc8lSKE2CwG7DXoWJ3YLvdA:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aVBkZ2xLTDlhNEgxOU1tWo9rBPCDvdTipgkEh897ZSrEiMo3:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bVZwN2NxNjhwb3I1VGpsSaFRjMUaJON.7oWLX9RAlpzVmSbc:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MkxFaVN6YWJ0dzZBcEgyMSy5h/i2Tnc1DlJZ0Cl7hkDYZyq2:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YjExaUpOTHVzU0lLb3pHRS8C9BIINYkuBxGEjdkpExw5UaZp:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TU1pUmtNRmpOTjBsd1FGYz8Z0hZ6P0dkouD1R3He.p2frXPq:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T0hCSllIZ2RMbmxNZUV3bB7Y0xYkvf38mTXcdlEjCatYTKN5:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aFJPcEZHV0RJRTNhSmVKNRpLPqqfS4C9feakyD8mLMr1oLAM:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NzE5WXlLbU9lRVMxaWl4SPR38LRdGLHR3h/z5Cul1ACBjlVn:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHRHb0Npd05KMmRWNDRXNfmg3tmFl2oh6U1GuGqQyKda8xTw:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Vk5yMHVOc0RJOFNpc09Jbq86oKp1o0woNj0DcXbVIewX.v1T:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d1JBVms4M2ZTYXkwV20yd90SsUCl/3lZIicNY5J8EV24QNgl:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OHo3cnlzQWJRVTNGR3BtRicejJ/V3HiPuHxteHgiu4xuwlDS:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SkJzZTdXSVVUTHBEMkpnOTeeEPhGycXnmmBQB3i1ESCLtXMc:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U2huOHVISGQ5QUJuRWZBWu0OkmCDpT4VALm9WKuOO3nfmujd:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NEozWWtsVjFIT3h0NDF5NyRp.PxMLOj1bEtdYc5NTJxXILav:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a2k1YklIUDRFd0hNU0FJMm..gBsBdsnP6nf0.wvqJ9gJNFVq:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U1ZGZWs5V1FPS2pkRDUwboeaxlUNwLh0XE1YEGdChofdRXPh:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}aFB5d0U0SFFLWWR1QWEzQ62xBOfmL1yNZHlYgNgncnKupdAe:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YXpuTElHMWdoR3h1eUtDNOKreuxulv8kiAXXt0.qfKueQCA0:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QkZkOW1pNHRKdTdkdFM0SFNObL7xbcuiQsNUz5t9honMxzCX:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QzZQN2JyQlB0MzRIR3BIdRp5kZHg2xdhq.jAdCH0LTitfJgz:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b3BSOTJPQUx4MVpOUmhLao2BM54TzhejsoLNpdvpFq3730Rl:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bGpHMWVIanVscFBuYnd0UdvaigR1cy2pM50epJp/PDPOu.L9:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VFQyeFZuZmFacGRRWmtldV5vkhvmHJBPU/QUmB5Ww.tWj6Po:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TzFveElKU1Bxd1NoZ09GR3orz/CK1WjHlOfBi7TbW233FljP:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZGZQU1YxQm5vb3N5QThBMyjcEydqHww8bZ2zoQQFOd0RAz8x:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TENMdGxHSTRuSE8zbHRYN9WKJAPAj32pXTczwXFjdNVfxHSf:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TjJQRXpncFZ4OUZkckwwQ71i1rvuDSKBjeRQIqzs28akVqOU:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NzBSQ0tjS25ucTZGRjB4RCbp3o3q5R.CHyYNVWtnGlw1l6Di:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RzZCdlRZWXExb2xReTVZZROfj.s4A0JO8L4xuUYum1VP6cZQ:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U2xJakdIRDhSOVJudFhCUxbaXxLT2zwRWS09o5RMuvG4uRXE:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z2xDcWczeDU3bGRZOFF3OPGhUrms4.3Zn2aARW2g7HSby83j:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDJ6eEI4RVVRU3U3ZXZQN2LLqBftg3XGNZ3BO89iizaAhc4j:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bnB3NFlKc2w4NkdWZkFlQdF9BmhOuOv502791jmbpx12HSoJ:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Zk16VlBhV2gzM0J5WHN4Uc.8o4d/Ii5uy7HL.fosFZxZIr1m:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MDlkd0xjS0RUNDhjTFpPOXSyPX7.NIkeKaj/TrmwSf5uVAZ1:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Ylk0NjdDQzdUcER2Z045OTv3iazKu7wz7PoPAObJLQapxT1N:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OVV0U2pod3dab1VzTnJ6UA5JMLCjsJzy5fa1BHmlLBPnogsn:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VUJvWExOTTRaYjBTdkI3WUcIOOM2z4wG7AlckMkln.aj0hQn:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}blp0M0hkRWxHVmVqWlgwdrLiZVjV7ud8F8oebcJIieMBLfh4:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M3kyOWRIYlFXUkZkbUJBWpMIeozk0BzwO3ART4xWJ4pkC5f0:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SVJsWHpTa1lseHZRajZqbCSkHcv5qrvGJ1LJCd8QcmK1cn4c:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cDNzSHBoSWxobUtPSHU4dFmW4yMYvn69yt1cmO9klOexQSPd:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cDhBQ21iZnBuYjNDd1YwaAdP7uufJm0giOgcnXHZTMdQLo1X:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a3BINnJRUldSblh4bkQ3cX9e.YpTpN46NBKf1fw109PmuvS7:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UjNJcFpHT09aS0d0U3dzTTa8FutzEE7JKMBFnJBc53bgkG8k:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UWVIdzVhb2ZKdjhVcHZMa7vObMzkt13to74.cvAMI.6y/9xD:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cEZMbE1nM2d1Q1NSc3h3Uirs36XKcDLmQJ9mSugf/446IkHe:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SFRCdkFRNTZrSHFIOUE1Y29xEKlSTKCvttmcI6Y55coiiEmz:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZkEyalNnRVhlMUdaUnFWZs5P9Q25wLB.LFG9uunRYzjCG1Vs:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WHhGSG5lQzQybkpOMFNybR.3PbrL4Ab9vneRTAoZmidbfEfK:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a3JLbkxydWNnNmJucUJYUBXUUbO4Vf9Z4QgeaSxGhmQb7Ltd:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}eWY0NzJGdDFlU0tHV1ZRcGP./gA9wQ0Nqa4ZM5tX8vo.7D/j:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}alVSYmt0b05CTVJ0UGRRatzscvI0WeyChJYb8Ys6E8o8Df5L:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dVJ4cjhtOHREdmgxQno2VGnNHoiFA5UddF0gfD5j9wgl2eup:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cHFLazlwdmVab2txYjVuNV.B51meRmnTIG7PAfiOfhQLtNXZ:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d0RKY1Z2Tm9kUjh5cFFxVT4speKb5wPpJL2GPS9u0/NSlxw/:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a0hIeE1aemtORlB5VktwRYr8Yo8ZeI4DC4WwLSHpwirdyvB6:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MWJDV1Fib1BoTlBIWVFvMgBTOc5iQ.kgUhc.1uqtebYPLoh.:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RFdYd1FPMlo4SzBseEtZNPn5RPka31w.poN6N9P/dJDIXWHt:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RWNxTlV5Y0pNS1pCa1VXZhhKUf8sebzz3XchN2j8/40U0uoC:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OVRneU9tdDhRMDI5UnJIdYCzeAcWtRI2VhJUcm6dEK6I2mwi:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MldrdUhLVjVpZXVOb0p6RFBys2jbP6UY4rAb7J7/drn5an6U:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z3N4Q0FiTWdlMTZkRjhxbgAHOkUkt5Rk6gfinCUkiY9OrU.a:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SnpsdUI5cHRycXRDVnJrNUK6xMYG/kc0vxDgXX9SASl37rSw:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a2ZpbENvUkxYeGRmdUQyUVcYFTNYt4n.U2NSrfCfr4h87QXI:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YWVLNFhJZVRoakNQcERuQytzRJts.ooXlB4LUauw7CerT/zZ:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OTdremNXYThVeVpCckNncsShWGQWU7ueREMQa70ErEN/sPuH:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}azZEQWRnTm9rV1NyeGh6U8ScjVHg8Yo5AQL0P3Yesnv9iR.i:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}elRydzlaNGNNSVg2VGVYawmF.Ip7u5fGXOjZ8UhVET7Siwrd:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S1NweEtiQTBoNDdITWNYWYKlaz6bKbT/2BWw4RDaqfxiQZjR:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b3pJWW40SFRKdzkzUUpoNNS68JWzZOs6yYfNcgkRUiPul6K7:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Z1VyMEYxYXpmVGJoVEpzbTjFAdm1OlKdD6URKWeXzLd6.EAs:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Qk1MV0FvcmZNQ21XWjZyQddNJ/vI73ol0tKcPYZGj4NjYv6n:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WDBKSmlGMlZSaFV3dVFoYXUVjikQcEZreq.nhiBlOCZnrMxm:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TU1IbzZNMFVhMnBjclJ0Wq8T/ROAFvhluQUT0nI7F7VqrwQy:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MVR3QUVqalRKWHlZa2t1deh58QghUUGQELkVdPOfM9EvT0ae:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UEZaeUlZbEpBeWxKZVRueiXoURsqRSdKpTbMSjidiniwDtW4:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}S2FkU3pXcUZRZDZVTUN5YZyrKDZUDPQJERnhU4uQEJD0sGbQ:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M2FXZERwRzBxVEd5c2Ntb9sQjRx5eRod3cCYl79r/Edyu6MF:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bjUwSVVMdTBrRzZnYkdQeNQMTotXG55JmlULCqX1P.rTJHRT:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M05qZ2xzbGRwSjNzZ0x5N1hZGD6J4w4hJ5qnwcu9ZtUrW.w2:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R0xJSGR2eFRPNk50T2JKSL..nKiNjYY2bz16HO73ewv1bdTg:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NEhKMGxOR3h3SHJJN2N4a695Rgq8tP1ssMJMxtxHh4TDB78O:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RWxIWTJvVE1LNHRpV0dwbBHH8sNHdZfTfPHUKOhSJBjmKfll:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dUljc09ERWJUcTlEckdvR8I1d2H.xGilIKHGvqaWDyF8ZNX/:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dW1pNXR0UHhLSmduZ2NFTUIWTuJIQntHPS9c.Bb5z.dX9E2L:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}QkRGM1hNY3lIbElQQlZINdDboz6rK1Xl0rSCYEH2W2h99R5D:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MVlZdE5KY09yaktQTVA2MFedXCI.JLGzpyxTM/UZbWzE5Ebo:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OENweGlQUzhBMHFob0U2SGh6MLAlj.Zg8ibzMzMIuf87kEFQ:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d3hlS2plbkdmSE9JTkkxOQXgEuUCqFOpsjTc8y6HIwz5rB1s:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZGl2U01yc25jakNNTnlQbAqz2YF6HseciohiPujY7GB1AYao:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZmNyZkdtTU5wdnZlQ21ZbZXpKyzhGGtIAH.mybwU3HfPYAEe:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MFZpRlpDM2U1RW8xczltVzUWnRHxOESFupI1N6XJbeiUpxTo:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V3hxYURmZkVveGZ6cGY5T0N.6RiC8HxiosUwge5KO0DtEOCa:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SkUwOVVycDd2SGhqb2xPckHgr1Yb1/VvI61j62dmAUHaeezX:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U09LTHBTUm1JVXZVcHB3QVBXeRh5gHOPXdyOK1KqS23dn7aD:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b1JmQ01ITFBGMmdXazNIeNipa76QdfLgUDYu2PTAnWliWLiQ:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V3A1MUNvdEI4cFUzMmRGRzVeOaQCmb21P9SwnAI1na4MULSY:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TFNOeXdXUUNJcFFtb2pqYkNxU8aq6v2M/NIYfE6t.aD3BUDC:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YVE1cFY0TWRnSkpqRllzTDBagCZX8I0jRWVIrrYpzp8qBh34:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZXFjNGl5dWRrVXBKaXRrS2c8FJ.R87DeG0y9z0xy7Sl2l9oc:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cDBlNzBDOUh6TFZXNFRlNywVsgCyTMXl38hTqpJ.Ro15tp36:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TENDYXpmbGUyTENwWTVoVMz53Jgs1JHha2zqeep3AcSEl/tW:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bVFscnFTUXdMUW5PQlAybzBMZCQ0zwhsJDdb2He7aAElx2aZ:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TUp3ZWpxZGwzWGFYSEU4ZJXfh/7veRR67MtHBThhIvpfSMos:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SEtqSmxmTXdrRzJoVUtjSHIWh9XJCspKEl9tOL.QTyFr3QBP:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}a3J1MmtwWTN5MEVZRGFxShhhEkQ1Niwe0N1Q2jC5LHE/4PGO:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZTJSOHRNNWswbHdWU08yeenLZHy3666NTHF2wHR/rnEwKrt5:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Wm05bVNwNWpJZkQ4aTdobhVs/7CqSNSXuLSKPRSQIVFqH7EZ:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NUdtZVliN3BZUHNTUjFGaV2luOdC4egpmfyzEE0fiLqg6YF5:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R3lzSmFJOWYzdmUxd2lVRpr4TDWQ7wpjqJn7Sr7ASL7p7VZ0:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZnYweWM3VFZPVzJZREpKOaQa/w.fVqCPkFLXDXSkMNgusZKo:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bVQyVjRSNXEyNEE1YWVaOfKUch9PZI5ikZCOwL3ay/ZX96PP:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MzQ5aUxuV3ZzWjlIZk1PMmDdCqUbS79IpTBbqYMA8seGBC8C:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}bFF0OXFOOGZSZmFiZk1CUnN9ObvpYNZrHAnNfR9goD4V9g6e:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Mk9UaXhjUjZKWXlRUWRYU4qJX2thb9GlLKhckjh0Yk7W6bx7:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SzBaTmZhdzVsdm1BRnc2Zs0QkhHj3Sbj.7E9WTteRPdbsYFx:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SjZua1V5dHhlUEZtOG5pNVR3tWMNt2w.k9Ra5BxilZskJen5:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NlBlc3dLSHR0T1EwM3VlYXLFteaSxG62bTbOu7/NJT95qGGC:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d0VBZnpRN3c5NGRmWm12cF.WPBfRn8Os7cyH/.R1oKb9mP/q:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}akxxYUF4aFo0UmR1Wnh3SuWQOvTmMcv6AWJ71nKvXijq.4Sr:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d0xIaWl5dXRzeWhTV0N5UaIJ5GVSI4fL.l3gOBRAo0v22ZVC:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TE9ONDU0dzlibzg0OGlTbLnS3HkIGeGLIiTUqxBMI9UKzYiK:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}czExaXRrRERaRWg3TDZaVJwyFPF9Mcqsxvq1uJ69rxaXue5B:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VXNuN3hwb1h0bkpIVUZwdHA8OdOTsTvxv/qlB8ltlfly5V37:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}d1BvNXkwQzlZc3FVSXVJV5q7amrwJk5mSST8Lv2nhlG2Lf2X:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UVZXc25ucHZzcUpENlFCeo3jZOMrZFiSyM7o07btiMWMLWIA:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b2tlS2M4YW9teTRQN1ppWThvcmRRResuZBmGzoucfe9d4cJc:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cFV2RE5uUWVGWEQ1UzJ0UPI4aeKUBGm8SWNre4pI8F9/f4MJ:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}M2M2N3FqMzlFSXRaeDlCbIZPD3quOyh6yGmpHdFEFEVhOIk0:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cGNuNVZKZlp1ZTNycFZnZ.quarC/bWobq1mXO1ocQrMwIHAT:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VFprblV5RGNiOFUxMXlOdct9gNPQafmSz5RnXJfVDu35ZRfH:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Wk1ocjFUbDg0QXNYa3drZ6WkF1jcLvXnf5wSB1vnLXTRBYog:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Vm9MWnlJM3I1dVFJQ244NpxKIoXf6qFpBDWr7UwcdzgE6bCe:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZzFQSlZvTGNJQVJhZTRRUYvGVq7sZyA6EMHh4DZ3GLc4SdcZ:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cEZyb2FoZXdwT1dLUjQ1SjyKY5qnTF/rIAHMXWifoz2./CDj:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VkpXS1hoRHMzY1hiVmc0YnJbt8lEmB3V4hK4t/EGT3C8o6rP:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}ZHZEYml0RWVUcE14bU5yV1HIUiUQlXKHWcgNwut.3Ip27Vq4:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}cjlDODNxQU92QVgzWlNiZTCjzCX9UTJC.olEqIDCs6HnTCz5:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MFN3RFFHOWtzZjhYa0xqWVqiEmjqhCDQAZMDi0tRLOcGTyun:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VjR2bVdPZEhQaFlic0hFZJHqAiD07GyfKqMZ5lAHKpuM8xwA:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SERVbG1FbksxY0hDakFZemokLvEU5jlFDg3FWJfBaddedFwL:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}U1ZqMmVTaUFackZxb3A1WbPO/P5HUROpUcHzt1Ot4CDxVzcT:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MzNVbU9XZk5jaG5GMlg3YuwAe0ZlqprI7I7AWSL9wtlymkjm:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YzlyMmk4MzNZdFdTdWF5V3seENoVrVfVg0JWEWYxfXPJikHc:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RGNiaVcyR1pQVlZNeWI0RrlG7uqaULi7lcGLMLK/2nDMLZm7:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UHR3TTNUMHdaUTE2djloVia3SkWNxSN9WTUst3p.9aQ46ChD:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VmxqNWREaFlvazVVd1h6bC0sHTd6Z5wRb8fug4xIm6nl/o45:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UHo2dXNrWHZBY25wU0w2c1Fjcbk580/qijlIhy2R5TEjkrW6:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VlZESHNGZDR2QTNYSVlwTjC6G/E/nQvHYZeKW8I5tA76V/qd:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}OEduQVd0Rng1Q2ZvWU40OH6PL4Huq52EUHwB8drqSF90.0zi:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R05hcU9zYlNYN3VxTVNITQY680T5PY/IMhl81mdzVcAJa7ys:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}RHBVVkNKd0Faa1ZxRWdUalQzI.tZOnYL1AFEmeZvVK66AWY9:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dTA1OUNGd3c1UVBWNzI1WVzS/h6WAULuDY1sM5zT.ZYdUeng:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WENyZ25pUWRNc3ZDdWN2VwnGAln9wxx5987dY6EmV0nnRHwe:24:0:dæffffæffæfff::
+u0-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}VEJzeVhwWEVMa2VzRkYwVWJkD.He.YXVhzcnvrfSXeddHJzW:0:0:Skippinç anä*::
+u1-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}STJtbjVKR0NHN1dpMUFxbn5LMrHkZETjQ7m0Qac6wJFe/luI:1:0:Skipping and*::
+u2-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SXNUZWFVUmQ1QnV5M09yM0p9arYVl6hgEzLKx4eruEB/O8En:2:0:Bert$ErîIE::
+u3-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}WUtZUE5SRW9UNXFqTDdoZVOsOB/v7ovID2Ph18TFQ0x9.i0Z:3:0:Bert$ErnIE::
+u4-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UUFNS21kOWNVR2Rsc3N4QwzcRFVy2gHYpYkWcTs8ysMRln/T:4:0:bert*ernie::
+u5-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}b1pndHlMS2ZvR2hvVlhTb7ZzcD/.3GnE3h.82fkQh/JPDaf3:5:0:late*night::
+u6-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UVB2bWs3Tk1wdExPUll5NSFGJ6eSovWTcxq7H47eB6vLslQS:6:0:::
+u7-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}NGxuZUpoR0tTMThGRU9tQz0bzm4gR4qLl1fnY5958vCXLx6K:7:0: ::
+u8-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TWFrU2ZZWndtT09BSnpyd/Yu71jfelU8bwyh5AGl0qcj2gha:8:0:1::
+u9-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}SHE3c1E4ZmJWR0F4cjkxNgyX29mzxH7ua4aUY/7OhxXqbHT5:9:0:password::
+u10-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}YlVTSU5aR2Z5SkJ2T2JkWfoeCwbmyv8lAQbmQJD78dO6XFCT:10:0:test::
+u11-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}V3JFeVBkTkxYTlJRVEUzbL8MZ0pHeMPrI48I.nHzWLGMj8fn:11:0:late*niçhô::
+u12-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}R01BYWxCSkNOekx3d3FKVCRpWvAkvW/hQ4N1qua7WtdBBIub:12:0:hello::
+u13-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MlJjNkdWSVBKd2NLdlBLZWW3LejvvkD2aXRsouG8kawbSeKi:13:0:Skipping and& Dipping::
+u14-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}MWNteEkyYjVER1NBSzg1M3m6vRucSLiAYAmNPaQ.OqTqstGu:14:0:!!!!!!!!!::
+u15-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UUJoMjNtOUcyNm1GU3dTUFfoah4ppgDRlVFFPyHiizKtfugR:15:0:ttttttttttt::
+u16-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}T0UzcjM3N0xCZXlWYVRobDhgfW5WUv.DqaMPS6zAByeT89ZF:16:0:±::
+u17-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}UXo2blp5QnU1aVUyV0dnc7Eh4BQUWQuFM1IKyUtlmtbWarIs:17:0:pass÷ord::
+u18-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}dW5mMmhkSnZpanViUWlGOElOZgl0nLnL9bN2ACvnlZk9JJkq:18:0:dffffffffffff::
+u19-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}TEJtU0V5MFFTeEIydzVFbrQtnxEvW5LIFJfOHHaaRV6lpQ/x:19:0:ôåst::
+u20-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}N1BRcHptUTNTZFA2QjF6QwxIlEK24jOqqSF0v/CNK5nlZ8QY:20:0:Skipðing and& Diðping::
+u21-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Y0ljb2p6dW5zanA4MmFNUYLXuxItKmiQdzVANeC9SeObIjhP:21:0:alsfdkja;::
+u22-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}c0RUUnVIRGZwN3dWck1KdW6HsMQA.kuDAf9aDrqo1vq0b4SU:22:0:qerwt::
+u23-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}Rk5GNzhQQzAzbU5JdFBHS5YYxKOT7wEv008TiU/kvibDjt4b:23:0:ôtttttttttô::
+u24-pbkdf2-hmac-sha1_pkcs5s2:{PKCS5S2}THFvbWJUNGtIUThsUDFQUKrFA0gI6SaZVNUpM2cwnWoQjeYz:24:0:dæffffæffæfff::
