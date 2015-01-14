@@ -395,6 +395,7 @@
 (base)(sha)(pbkdf2-hmac-sha1),(X),(jumbo),40,pbkdf2-hmac-sha1-p5k2,pw,pbkdf2-hmac-sha1-p5k2_tst.in,pbkdf2-hmac-sha1,Y,X,(1500),(1500)
 (base)(sha)(pbkdf2-hmac-sha1),(full),(jumbo),40,pbkdf2-hmac-sha1-pkcs5s2,pw,pbkdf2-hmac-sha1-pkcs5s2_tst.in,pbkdf2-hmac-sha1,Y,X,(1500),(1500)
 (base)(sha2),(full),(jumbo),40,pbkdf2-hmac-sha256,pw,pbkdf2-hmac-sha256_tst.in,pbkdf2-hmac-sha256,Y,X,(1500),(1500)
+(base)(sha2),(X),(jumbo),40,pbkdf2-hmac-sha512,pw,pbkdf2-hmac-sha512_tst.in,pbkdf2-hmac-sha512,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
@@ -617,6 +618,7 @@
 (opencl)(gpu)(pbkdf2-hmac-sha1-opencl),(X),(jumbo),40,pbkdf2-hmac-sha1-p5k2-opencl,pw,pbkdf2-hmac-sha1-p5k2_tst.in,pbkdf2-hmac-sha1-opencl,Y,X,(1500),(1500)
 (opencl)(gpu)(pbkdf2-hmac-sha1-opencl),(X),(jumbo),40,pbkdf2-hmac-sha1-pkcs5s2-opencl,pw,pbkdf2-hmac-sha1-pkcs5s2_tst.in,pbkdf2-hmac-sha1-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo),40,pbkdf2-hmac-sha256-opencl,pw,pbkdf2-hmac-sha256_tst.in,pbkdf2-hmac-sha256-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo),40,pbkdf2-hmac-sha512-opencl,pw,pbkdf2-hmac-sha512_tst.in,pbkdf2-hmac-sha512-opencl,Y,X,(1500),(1500)
 
 (opencl)(gpu),(X),(jumbo)&(opencl),10000,rakp-opencl,pw,rakp_tst.in,rakp-opencl,Y,X,(1500)(1451),(1500)(1451)
 (opencl)(gpu),(X),(jumbo),10000,krb5pa-md5-opencl,pw,mskrb5_tst.in,krb5pa-md5-opencl,Y,X,(1500),(1500)
