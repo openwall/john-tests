@@ -206,12 +206,16 @@ sub showTypeData {
 	# Get all the 'types'.  NOTE, full/full_only were removed from element 0
 	# so we 'add' it to 'seed' the list, and also add base.
 	my @typeddata = ("base", "full", "full_only");
+	my @formatswedo = ();
 
 	{
 		LINE: foreach my $line(@tstdata) {
 			my @ar = split(',', $line);
 			my $cnt = @ar;
 			if ($cnt == 12) {
+				if (stringInArray($ar[7], @validFormats) && !stringInArray($ar[7], @formatswedo)) {
+					push(@formatswedo, $ar[7]);
+				}
 				my @types = split('\)', $ar[0]);
 				my @types_fixed = ();
 				TYPE: foreach my $type (@types) {
@@ -231,6 +235,7 @@ sub showTypeData {
 	}
 	ScreenOutAlways_ar("\nHere are all of the type values in this test suite:\n", @typeddata);
 	ScreenOutAlways_ar("\nThese are the valid formats in this john (also valid as types):\n", @validFormats);
+	ScreenOutAlways_ar("\nThese are the formats jtrts processes (also valid as types):\n", sort @formatswedo);
 
 	ScreenOutAlways("\nIf there is no types given, then '-type base -type utf8 -type koi8r'\n");
 	ScreenOutAlways("will be the type used if this is a john-jumbo build, and -type full\n");
