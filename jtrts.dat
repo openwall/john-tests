@@ -256,6 +256,10 @@
 ,(X),(core),220,md5crypt,pw,md5_1_tst.in,md5crypt,N,X,(1500),(1500)
 ,(X),(core),220,md5_apr1,pw,md5_apr1_tst.in,md5,N,X,(1500),(1500)
 ,(X),(core),220,md5_apr1,pw,md5_apr1_tst.in,md5crypt,N,X,(1500),(1500)
+,(X),(core),80,md5_smd5,pw,md5crypt-smd5_tst.in,md5crypt,Y,X,(1500),(1500)
+,(X),(jumbo),80,aix_smd5,pw,md5crypt-smd5_tst.in,aix-smd5,Y,X,(1500),(1500)
+,(X),(jumbo),80,aix_smd5_1,pw,md5_1_tst.in,aix-smd5,Y,X,(1500),(1500)
+
 ,(X),(core),220,BSDI,pw,BSDI_tst.in,bsdi,N,X,(1500),(1500)
 ,(full),(core),40,BF,pw,BF_tst.in,bf,N,X,(1500),(1500)
 ,(full),(core),40,BF_broken,pw,BFx_tst.in,bf,N,X,(1500),(1500)
