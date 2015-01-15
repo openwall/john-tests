@@ -649,6 +649,9 @@
 (opencl)(gpu)(zip-opencl),(X),(jumbo),40,zip-type3,pw,zip_3_tst.in,zip-opencl,Y,X,(1500),(1500)
 (opencl)(gpu)(zip-opencl),(X),(jumbo),40,zip,pw,zip_123_tst.in,zip-opencl,Y,X,(1500),(1500)
 
+(opencl)(gpu),(full),(core),40,Bcrypt-opencl,pw,BF_tst.in,bcrypt-opencl,N,X,(1500),(1500)
+(opencl)(gpu),(full),(core),40,Bcrypt_broken-opencl,pw,BFx_tst.in,bcrypt-opencl,N,X,(1500),(1500)
+
 # This is a very slow, and VERY large input file hash.
 (ssh),(full),(jumbo),1600,ssh,pass,ssh_1500_tst.in,ssh,N,X,(1500),(1500)
 #
