@@ -618,7 +618,7 @@
 (opencl)(gpu),(X),(jumbo)&(encode_valid)&(opencl),10000,netntlmv2-koi8r,pw-koi8r,netntlmv2_tst_koi8r.in,ntlmv2-opencl,Y,-enc=koi8r,(1429)(1500),(1429)(1500)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha256-opencl,pw,rawsha256_tst.in,raw-sha256-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo)&(opencl),40,rar-opencl,pw,rar_tst.in,rar-opencl,Y,X,(130),(130)
-(opencl)(gpu),(X),(jumbo)&(opencl),60,rar-opencl,pw,rar_tst.in,rar-opencl,Y,X,(297),(297)
+(opencl)(gpu),(X),(jumbo)&(opencl),60,rar-opencl,pw,rar2_tst.in,rar-opencl,Y,X,(297),(297)
 (opencl)(gpu)(cisco8-opencl),(X),(jumbo),70,pbkdf2-hmac-sha256-opencl,pw,cisco8_tst.in,pbkdf2-hmac-sha256-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo),40,pbkdf2-hmac-sha1-opencl,pw,pbkdf2-hmac-sha1_tst.in,pbkdf2-hmac-sha1-opencl,Y,X,(1500),(1500)
 (opencl)(gpu)(pbkdf2-hmac-sha1-opencl),(X),(jumbo),40,pbkdf2-hmac-sha1-p5k2-opencl,pw,pbkdf2-hmac-sha1-p5k2_tst.in,pbkdf2-hmac-sha1-opencl,Y,X,(1500),(1500)
