@@ -411,6 +411,8 @@
 (base)(zip),(X),(jumbo),40,zip-type2,pw,zip_2_tst.in,zip,Y,X,(1500),(1500)
 (base)(zip),(X),(jumbo),40,zip-type3,pw,zip_3_tst.in,zip,Y,X,(1500),(1500)
 (base)(zip),(X),(jumbo),40,zip,pw,zip_123_tst.in,zip,Y,X,(1500),(1500)
+(base)(rsvp),(X),(jumbo),10000,rsvp-md5,pw,rsvp_tst.in,rsvp,Y,X,(1500),(1500)
+(base)(rsvp),(X),(jumbo),10000,rsvp-sha1,pw,rsvp_2_tst.in,rsvp,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
