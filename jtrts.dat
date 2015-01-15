@@ -402,6 +402,7 @@
 (base)(office)(office_2010),(full),(jumbo),40,office_2010,pw,office_2010_tst.in,office,Y,X,(1500),(1500)
 (base)(office)(office_2013),(full),(jumbo),40,office_2013,pw,office_2013_tst.in,office,Y,X,(1500),(1500)
 (base)(office)(office-2k),(full),(jumbo),40,office,pw,office_2k7_2k10_2k13_tst.in,office,Y,X,(1500),(1500)
+(base)(sip),(full),(jumbo),10000,sip,pw,sip_tst.in,sip,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
