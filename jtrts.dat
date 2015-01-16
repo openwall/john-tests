@@ -430,6 +430,9 @@
 (base),(X),(jumbo),500,wowsrp,pw,wowsrp2_tst.in,wowsrp,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,tiger,pw,raw-tiger_tst.in,tiger,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,whirlpool,pw,raw-whirlpool_tst.in,whirlpool,Y,X,(1500),(1500)
+(base),(X),(jumbo),10000,dummy,pw,dummy_tst.in,dummy,Y,X,(1500),(1500)
+(base),(X),(jumbo),40,sunmd5,pw,sunmd5_tst.in,sunmd5,Y,X,(1500),(1500)
+(base),(X),(jumbo),50,wpapsk,pw,wpapsk_tst.in,wpapsk,Y,X,(500),(500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
