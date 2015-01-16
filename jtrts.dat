@@ -426,8 +426,10 @@
 (base),(X),(jumbo),200,skey-md5,pw,skey-md5_tst.in,skey,Y,X,(1500),(1500)
 (base),(X),(jumbo),200,skey-sha1,pw,skey-sha1_tst.in,skey,Y,X,(1500),(1500)
 (base),(X),(jumbo),200,skey-ripemd160,pw,skey-ripemd160_tst.in,skey,Y,X,(1500),(1500)
-(base),(X),(jumbo),10000,wowsrp (0 Lpad),pw,wowsrp_tst.in,wowsrp,Y,X,(1500),(1500)
-(base),(X),(jumbo),10000,wowsrp,pw,wowsrp2_tst.in,wowsrp,Y,X,(1500),(1500)
+(base),(X),(jumbo),500,wowsrp (0 Lpad),pw,wowsrp_tst.in,wowsrp,Y,X,(1500),(1500)
+(base),(X),(jumbo),500,wowsrp,pw,wowsrp2_tst.in,wowsrp,Y,X,(1500),(1500)
+(base),(X),(jumbo),10000,tiger,pw,raw-tiger_tst.in,tiger,Y,X,(1500),(1500)
+(base),(X),(jumbo),10000,whirlpool,pw,raw-whirlpool_tst.in,whirlpool,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
