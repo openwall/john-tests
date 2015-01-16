@@ -292,8 +292,10 @@
 # Data added June 28 2012
 (base)(sha)(sha2),(X),(jumbo),10000,raw-sha224,pw,rawsha224_tst.in,raw-sha224,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,raw-sha256,pw,rawsha256_tst.in,raw-sha256,Y,X,(1500),(1500)
+(base)(sha)(sha2)(raw-sha256),(X),(jumbo),10000,raw-sha256-ng,pw,rawsha256_tst.in,raw-sha256-ng,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,raw-sha384,pw,rawsha384_tst.in,raw-sha384,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,raw-sha512,pw,rawsha512_tst.in,raw-sha512,Y,X,(1500),(1500)
+(base)(sha)(sha2)(raw-sha512),(X),(jumbo),10000,raw-sha512-ng,pw,rawsha512_tst.in,raw-sha512-ng,Y,X,(1500),(1500)
 (base)(sha)(sha1)(hmac),(X),(jumbo),10000,hmac-sha1,pw,hmacSHA1_tst.in,hmac-sha1,Y,X,(1500),(1500)
 (base)(sha)(sha2)(hmac),(X),(jumbo),10000,hmac-sha224,pw,hmacSHA224_tst.in,hmac-sha224,Y,X,(1500),(1500)
 (base)(sha)(sha2)(hmac),(X),(jumbo),10000,hmac-sha256,pw,hmacSHA256_tst.in,hmac-sha256,Y,X,(1500),(1500)
