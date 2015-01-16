@@ -422,6 +422,10 @@
 (base)(ripemd),(X),(jumbo),10000,ripemd-160,pw,ripemd160_tst.in,ripemd-160,N,X,(1500),(1500)
 (base)(ripemd),(X),(jumbo),10000,ripemd-128,pw,ripemd128_tst.in,ripemd-128,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,osc,pw,osc_tst.in,osc,Y,X,(1500),(1500)
+(base),(full),(jumbo),200,skey-md4,pw,skey-md4_tst.in,skey,Y,X,(1500),(1500)
+(base),(full),(jumbo),200,skey-md5,pw,skey-md5_tst.in,skey,Y,X,(1500),(1500)
+(base),(full),(jumbo),200,skey-sha1,pw,skey-sha1_tst.in,skey,Y,X,(1500),(1500)
+(base),(full),(jumbo),200,skey-ripemd160,pw,skey-ripemd160_tst.in,skey,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
