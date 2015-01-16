@@ -1,0 +1,1501 @@
+#!comment: Built with pass_gen.pl using RAW mode, 0 to 128 characters dict file=pw.dic
+u0-sha1crypt:$sha1$5000$e2367890$hqonO5.md7rnFR7hZ6z/kZoODn4T:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$e2367890$Pahf3aA.odFndenhEdKL.JGDiagl:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$e2367890$8z1I/kMbaqQFg9FljCEh./3EEJGq:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$e2367890$33dzV2Ia02V2Gmpe/ydl4zCNyrvY:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$e2367890$KlWB5lpzwh6gxWbI1viVeUrfqsKp:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$e2367890$j/NfsNhWoDnvXDkIyo4GaZTMhuj8:5:0:late*night::
+u6-sha1crypt:$sha1$5000$e2367890$K.EYvtF6l84FeDTRF36H26IFF0PF:6:0:::
+u7-sha1crypt:$sha1$5000$e2367890$nwrZU7Ta/5LLYgQJYIKRdb6jL8Gx:7:0: ::
+u8-sha1crypt:$sha1$5000$e2367890$UkBGj5lsfZ0SUDoDCHW9ebLe6Fw7:8:0:1::
+u9-sha1crypt:$sha1$5000$e2367890$dcXztpeFW8gwrhgSb2um8.x3yTGu:9:0:password::
+u10-sha1crypt:$sha1$5000$e2367890$ANCe2aahfU4SCUREMVHZw1mFcW/r:10:0:test::
+u11-sha1crypt:$sha1$5000$e2367890$Xudlgrta1Wt.XAClrvxyxG5I4TBU:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$e2367890$VNjPJzxaYqY/M/VAxErtr12ai3sI:12:0:hello::
+u13-sha1crypt:$sha1$5000$e2367890$slZ6wxbUy2LSoYYZSR0Mz5SvWMjC:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$e2367890$gkZntw68vFVispA7mYM0bb/oCDbw:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$e2367890$DVXTbG9NflUoVshvClS6wDo7y/WS:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$e2367890$8MO2Prv3DIuzdMc7Zb21znL6Fc5A:16:0:±::
+u17-sha1crypt:$sha1$5000$e2367890$FKAMQzg/1L8mMoLOe2B8XG/cUd.5:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$e2367890$3w6ZfJb3uC.U38gKLSY057qyIetX:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$e2367890$rk5a90K5958BvbHDzkbhDxMLMu7m:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$e2367890$Ac3/LZ5luOsBC1opTyhPbbeo2A7l:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$e2367890$iRxsl.UiY2G5CgTpNVz3p0DoXv4v:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$e2367890$LgIfztOXqcp7ZpG3vN/Ck3y8haqw:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$e2367890$ZoNbYYDco5UKeXbL/krwv/E9Rq/R:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$e2367890$.DjWYPxX7Ye4k03w6pXkE7BX8OJ.:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$e236a890$Fhvw5f55axDdjZqLngrBsXz2nTBt:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$e236a890$1sqmovPrgEx/GKY9T4yDAGnz9f62:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$e236a890$LpNSt8quY61d7Xf/A1l2q2P3tJWZ:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$e236a890$cAT/iPaNzchM6ENTGjljUQqn3cMx:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$e236a890$ioqGyGMctAAj7WEDJLlH9zRx9l8M:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$e236a890$W.28AyNhN4a6ixjfLR.c.3H4cElo:5:0:late*night::
+u6-sha1crypt:$sha1$5000$e236a890$2GPqjzDMVgOtCjbK0Pd4HqCoNjuQ:6:0:::
+u7-sha1crypt:$sha1$5000$e236a890$xkOTn5oOfJ8mUYRBnd01zC2UxR4p:7:0: ::
+u8-sha1crypt:$sha1$5000$e236a890$sCRIPMsAKfYYmksASFLEYgThF7Tq:8:0:1::
+u9-sha1crypt:$sha1$5000$e236a890$GCLt86K2CBmJoNoSVCsIXL6SZDGs:9:0:password::
+u10-sha1crypt:$sha1$5000$e236a890$2QbpCul2E57Tu4KQjuyBEzhdKPay:10:0:test::
+u11-sha1crypt:$sha1$5000$e236a890$MmVTCNq1dCUWMOBGBg9mA6ZvyFbg:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$e236a890$qQRNmsl0YAiD6J6ST2R2rCuUZldp:12:0:hello::
+u13-sha1crypt:$sha1$5000$e236a890$67wOUfdCd4ilxiRc/xgX3aC2f3bs:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$e236a890$n6CqKVICA.LSxHYJugNoy0hJMzfg:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$e236a890$mqDwhiNDELOKACqtLZj/bYVKk9FR:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$e236a890$Sjsh527Mchu6LzuHPZFtLRAVrisE:16:0:±::
+u17-sha1crypt:$sha1$5000$e236a890$VshWj42sbUJ.zNEjneb/mxRR8uYw:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$e236a890$n8t5MrUcH6e04u3NBpvMHbM2Tk4N:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$e236a890$v5kRne9AusJ4gawDEBcHmENsrRBz:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$e236a890$s.ERLCnsDnEjCWN8TEdqqKp9ph07:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$e236a890$R6FPLFOo3KfQvsXDKN3F.cvKhhHY:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$e236a890$BeQVw9y5p9HIv.NCbyCGlD5Y3KYI:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$e236a890$qIFGznUum.Z8HonhdTLOkE5O73od:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$e236a890$S4K7WXeyELEEmhZxVUdBoE76ZYo8:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb367890$C2OmTzOp0dWMzZE6qYl/KqMH7XFj:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb367890$KjYXJSTg/BZZSX0j3gy99NAyCKMi:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb367890$erUzRJ3tjcPhhKVkc1g0LhoDy5jc:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb367890$3i.iRhM6vMrS9xsx3eWl5T/rsWXR:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb367890$OJRmDgPQSTCKpHMGuph6aVX.7fPn:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb367890$iLLMWZD/6f40eckIvhDF537HV3lv:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb367890$LSZ1RI32Ist07KYFm6q5vTqqCUUV:6:0:::
+u7-sha1crypt:$sha1$5000$eb367890$5ofXeBykOmclOxwVJIYtQPfrCGIf:7:0: ::
+u8-sha1crypt:$sha1$5000$eb367890$IRIRkWBW.33L0W9uKqGvEIY3phYb:8:0:1::
+u9-sha1crypt:$sha1$5000$eb367890$kDvwLoxu4tfM9rJesxln2Wy6nH.V:9:0:password::
+u10-sha1crypt:$sha1$5000$eb367890$fuoIwJP2pFjeFGDTawYYX35DHdkz:10:0:test::
+u11-sha1crypt:$sha1$5000$eb367890$7/hCHDBXGl94ZecUUuSdyKj6usQK:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb367890$WF07/pcqEZ6YqrMJgSY5ULArYYYY:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb367890$BcitQPXa2wbfQjmM4Ob13Iwua9F3:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb367890$sAiz1bAMf9V86L00sl2fqeSxyLVY:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb367890$1RnwZ2lLGw5vZVSiawRmgwMMnHfO:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb367890$2pDbOieRC6G65PXTQmoWeXeGQi7d:16:0:±::
+u17-sha1crypt:$sha1$5000$eb367890$oCyGrD1htdBje7yyua2MIY7z9htU:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb367890$iJXS6gXHtJbUlp7bvkZtrv1kuNhb:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb367890$.bmqhxsJoNu9PJQVY.07KMm1P9vy:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb367890$PORUi5GkS47SkoYENcOq70T9/WmR:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb367890$W7P6jeqTSlTkqksDGFn/6dvPVY0U:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb367890$uSRlyhfxgCBeKMEF/jsWnlTQ3H6V:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb367890$Y2VvgrOzwqKK0Fg4FvuCYQrEivc5:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb367890$UafqMnOBGi4wTDbZ8eoGzLgrOrkC:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$ebcfrtgy$QYRtDKHYO1YpuY6dtbHcIQbVZH/q:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$ebcfrtgy$.wLuE/PpcWlCKgvnrCu8AVZnd1DG:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$ebcfrtgy$h7p.YtpzD2GRGuDaP0YMhZpv1ww3:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$ebcfrtgy$uLX4Z8iIPZE.9st5vgqfEM.NOYPW:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$ebcfrtgy$0mHGjbleiGdy.G65iMc.4Xfg7Rgg:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$ebcfrtgy$ORKrshWAbWlXdQKKLm9fdBcYRnDL:5:0:late*night::
+u6-sha1crypt:$sha1$5000$ebcfrtgy$3yN4OOVtev5xrFzw1QS072xENUDr:6:0:::
+u7-sha1crypt:$sha1$5000$ebcfrtgy$HOi5FlD14ekETShz5uWsctjJS6Ti:7:0: ::
+u8-sha1crypt:$sha1$5000$ebcfrtgy$yBekCFM6uUOxt7ufVQ4sJwUf0v.N:8:0:1::
+u9-sha1crypt:$sha1$5000$ebcfrtgy$m6yO5a/KyZ/GMWZxas4tzE2LfdVP:9:0:password::
+u10-sha1crypt:$sha1$5000$ebcfrtgy$Khr5pqLyQLvsXIuUCek2XM/vTwLc:10:0:test::
+u11-sha1crypt:$sha1$5000$ebcfrtgy$KKBDltrgKVu8b/E6UJf7SyzGwk3d:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$ebcfrtgy$80J36mRQcG.xe5lv39xHiTSfJ6Iv:12:0:hello::
+u13-sha1crypt:$sha1$5000$ebcfrtgy$mLXMkmtgxjEHQ.Ki9VIt7AejWRA2:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$ebcfrtgy$r1Cfp2JqhMz6f6z/.xe/4.AEgqvg:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$ebcfrtgy$ad/a.2UK50N6QTONAlPZddaaMuzW:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$ebcfrtgy$c.88fOkX6ueceG2CSJ38mtNscEx0:16:0:±::
+u17-sha1crypt:$sha1$5000$ebcfrtgy$8E8bYjU9C09PjRu.F7B2g2R5Q0Al:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$ebcfrtgy$JqJ3lfzHNqDmrC21MzrLF1dHJwsp:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$ebcfrtgy$0evkUj9HraCPo5movjR7Rhyd1Tc3:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$ebcfrtgy$RWv/Z4xWAlH0/E7tivPfjR855wtS:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$ebcfrtgy$oSUBmVBgrIIQ/o3fZGQWE3TPq2wg:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$ebcfrtgy$rL36CCiS6RmWsoHfksDwseSjUsoO:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$ebcfrtgy$bE/nU9qRnJg9462M5dxzy7vZAD4m:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$ebcfrtgy$5Xe9P.XMDpMbqIQSiBAOkFCVigJH:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb6321rg$v6QuySvvi6G2yG2OCm.2dWU8dPTX:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb6321rg$9WQxOoKewKYQJiP3psMDz.5cpHae:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb6321rg$8mjEPg0SGL5v5igdN7MeGjmT0Vxu:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb6321rg$4kEZGRIwxbL6gDCHwRPz33cEJ8Fw:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb6321rg$Iawvc/NpScJ0fvkRrFbib5XhjraA:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb6321rg$k2A7HbQ1JbCpTW3y8nLRql35YYw9:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb6321rg$gsbIAznmY9/TgQRiFvRpb/AeGVXg:6:0:::
+u7-sha1crypt:$sha1$5000$eb6321rg$uIEw1gksNDk7CaMKBgnwxkDKlX9t:7:0: ::
+u8-sha1crypt:$sha1$5000$eb6321rg$vHGP3aRVyVUzIOotsNGnt.P5hV6q:8:0:1::
+u9-sha1crypt:$sha1$5000$eb6321rg$FNhxh6Q8FQEiDsPvRivFqV1UqXr1:9:0:password::
+u10-sha1crypt:$sha1$5000$eb6321rg$ADUZ1OhoE07zqdrbZFQU.jTVKau7:10:0:test::
+u11-sha1crypt:$sha1$5000$eb6321rg$JTcxPUa4K7cHEzmOipgXcaVMqfes:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb6321rg$MmsV4g14B8xsei9Nj.elGrZo5S1A:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb6321rg$RsfX6x2.XzzIt/htYQyQ3kljCuqH:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb6321rg$ZHWqTIsB49jF32jPh8JW3ChbOT/1:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb6321rg$jPHhQglev2VB8hcV/HRPOZsspi7z:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb6321rg$Cn02DW2x.NjDUPCoeJfwOY6kEcYw:16:0:±::
+u17-sha1crypt:$sha1$5000$eb6321rg$RLMco8G96tZvYg46mC7/1X4vVypq:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb6321rg$TkIOjiF9Xg3kAWZatOMNbK1pdhLX:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb6321rg$qKpdduqhcNiIoTS17MNll30Vbq4J:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb6321rg$tRohYAZraN1krrf3PkoQ2zE2rqdN:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb6321rg$LGslqB3IS80WltKC/NEZQu7v51Re:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb6321rg$7JTXkE40UMvucZBIyuxofGe7BC09:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb6321rg$yMBpv.zj6rfcIGlJlv5Lv.U/IrIq:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb6321rg$KUyPwv3kxDi8chUPiTuGf04sjlSR:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$e23xyvw0$YmA6ppfjBFTVqopOi.uBC4jFUsNJ:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$e23xyvw0$swtwh4p.YEL6Dqg0Se6bnSFznHz4:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$e23xyvw0$WZoR/cfXG7fC5VUc2S8GvIAerFPY:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$e23xyvw0$/7/II1.Y86DBtJGZcL4T7vZTElHe:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$e23xyvw0$p7uj6HhqArqwP0y6Qm4v9xU0zSgg:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$e23xyvw0$lydwKygdf7yaG3W.R7d0Sb53mjV5:5:0:late*night::
+u6-sha1crypt:$sha1$5000$e23xyvw0$qyVzVE135K5IYmCs0Ue2qxHKy5O5:6:0:::
+u7-sha1crypt:$sha1$5000$e23xyvw0$34YXCiz7j8qOqNFYlZRuHpAqCWZV:7:0: ::
+u8-sha1crypt:$sha1$5000$e23xyvw0$WnhTGn45iW086xa6wMkoC7iryJ6a:8:0:1::
+u9-sha1crypt:$sha1$5000$e23xyvw0$nXQW9oW6oEOcEdiA08KMKWb078/f:9:0:password::
+u10-sha1crypt:$sha1$5000$e23xyvw0$vIiHkXuhHcOrQAUH2mJpI8exCxh5:10:0:test::
+u11-sha1crypt:$sha1$5000$e23xyvw0$xV7JG7aSotwHfi9vmKqAQ3SrIBLy:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$e23xyvw0$yUSrzhz3tg0cxF8s5RqV7iNgRz4P:12:0:hello::
+u13-sha1crypt:$sha1$5000$e23xyvw0$wBMd62YvF4yw2UJMZg7XqEDsZmyN:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$e23xyvw0$xcPeGuAHYzzdawXy20NcnD/tde9K:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$e23xyvw0$OvpVp7Gq9K.N7RMzwWvWj4fn5WV4:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$e23xyvw0$43.cS0acOEYPUGqQOKOe616QUq6W:16:0:±::
+u17-sha1crypt:$sha1$5000$e23xyvw0$hS11mcuqFMA0yS3oeocNxU.uAI2b:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$e23xyvw0$m4JIzfXWBryfahNeKUOInccuFpkR:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$e23xyvw0$QJDDjp/F6C2MsCKFXRNdEBdawAVr:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$e23xyvw0$Yern21GzG7cHxuY.j7tcnHfDDPxK:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$e23xyvw0$WKS3klUtwBaLI24Fw0pw46/8Jo/q:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$e23xyvw0$708HdxDYDMb6wkLlrmbmYB6rA3.L:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$e23xyvw0$4dfNLmLwlWUCxSIu.tsQ3NuPaxXJ:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$e23xyvw0$NhFTyhRGSc5tI9PTd0pj93F3xNcr:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb3wzux0$/fLOXETeQafphGrFp/Hcur6CdhEH:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb3wzux0$vdV.iDp4YJ73fXEbK7/lBpng0Ix8:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb3wzux0$pieLFnpxPtO6qOKhbTeW2qwhSliL:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb3wzux0$B/M.R64tCGcPTs80Fv0JS/DQ/gh0:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb3wzux0$HDV0dICloo.SDG2BhsoSTaee8MLZ:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb3wzux0$0eSpvWdE5XizMmmxw99BDesBJ9GD:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb3wzux0$o.oidVpgAlDo7PmlwEKbnKYtvejU:6:0:::
+u7-sha1crypt:$sha1$5000$eb3wzux0$uiDo8A4GEnPBhHmpuoeb0rCqEbBN:7:0: ::
+u8-sha1crypt:$sha1$5000$eb3wzux0$BtR0eVC6dUmV2QuP2XcqQIen7ISC:8:0:1::
+u9-sha1crypt:$sha1$5000$eb3wzux0$ypOus6jeeySVp4H85ub2t90OdXyo:9:0:password::
+u10-sha1crypt:$sha1$5000$eb3wzux0$Matn.Zgc/r0tmu7Qpmop8r2PDXXK:10:0:test::
+u11-sha1crypt:$sha1$5000$eb3wzux0$Yjv7Aq5yocvL4H/s8GDM91JObc4v:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb3wzux0$PQc9XcKKTGqyayQBWgbJW3fIiMq3:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb3wzux0$Pi9IhZWK1sMBoG7EkN.bWZGvEl7b:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb3wzux0$OXi4k9pSXQGpTYwqwnETE8pBOU2m:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb3wzux0$ZykUyWIic2ce5h9.nei.VXC91C.d:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb3wzux0$J7IaM56NJ1RBlVPy1/y/CKJuNacN:16:0:±::
+u17-sha1crypt:$sha1$5000$eb3wzux0$pQzTCQfhBsevjTQdpRXEsIEOzVSP:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb3wzux0$CziW24Ux./Y.2b/TWDXivcnK8uSc:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb3wzux0$1gHv7L7nxbvRfwATiGtIFKJ.hPMh:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb3wzux0$feVZbbBoVt1BIBkDDJItasDNKWX0:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb3wzux0$Fk0TDaZrjCg9jCbpTWrcTNRlwJrw:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb3wzux0$rbZ1hhAj85rORGHuz32auC6qCggK:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb3wzux0$LPMg8njeirSdX8rP./X0at6OlGhG:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb3wzux0$HsExUm299LGniTx0GFRvgan0pjTz:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$ebcvatyy$NMDJDy6jgBtE2cxZcVzzE/97INhY:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$ebcvatyy$7ZJX8Dk8cJK7B2HcDl2TxrYaBmiz:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$ebcvatyy$aZX8qROwVta.ZP/MnemfiHiteog5:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$ebcvatyy$p55AJOTqhgfjvFDtPXCm8tF0kAKY:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$ebcvatyy$KVlfWUiI0BdiLAQHZZ8Jw1onjSPX:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$ebcvatyy$haz0933zVV/71.vrzpGbYZtI9MY7:5:0:late*night::
+u6-sha1crypt:$sha1$5000$ebcvatyy$SZx/nBM9rNf7jPcrbDMAtkfx5gFo:6:0:::
+u7-sha1crypt:$sha1$5000$ebcvatyy$9qi6rpeuj.bJOB24ZMmpOAn9WwZl:7:0: ::
+u8-sha1crypt:$sha1$5000$ebcvatyy$505pAfGeblej0Z73BDWlfp0vIfqK:8:0:1::
+u9-sha1crypt:$sha1$5000$ebcvatyy$pWi2WrbLuavJ06y8LBaIx/VpGsJR:9:0:password::
+u10-sha1crypt:$sha1$5000$ebcvatyy$N/n9UG7A4SuwBCSWnADUwWOEjsVx:10:0:test::
+u11-sha1crypt:$sha1$5000$ebcvatyy$h5.2T./PDKJvL0HISgVX3/FzEMrP:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$ebcvatyy$Owd2VjPW3sMAZ02tIzug/NzBGQ6I:12:0:hello::
+u13-sha1crypt:$sha1$5000$ebcvatyy$c1/g4eVts/WGd7ILhcmIwvRZk4iD:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$ebcvatyy$veDsO77gUvwozHUlZqHueQu7UbLD:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$ebcvatyy$K2EqYAEuV8tmHT03PjxpYY6oNrRz:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$ebcvatyy$mPHwavaIjgX4ulcKdNw4DQullbvM:16:0:±::
+u17-sha1crypt:$sha1$5000$ebcvatyy$AmTGSH5/3uW3jXUlhWj4W6Dm7tg4:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$ebcvatyy$P.8vOrGhB.NkVDuzBCslkq6OgnyE:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$ebcvatyy$287Znd1XMkkx4PLHbAUMjqetI0YP:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$ebcvatyy$9zMXyZ2wcb2NyrRhHJCbgsScBqU3:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$ebcvatyy$uf8BxnSg4IkMdr72kEJXR8byocSd:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$ebcvatyy$pJ5Re9V7BY67PMtb3vPajhQLoNbn:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$ebcvatyy$cFlxKek80mnppdX/xHfmkp2Pr9W.:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$ebcvatyy$qAaZdKLbdyB5kycXEEmcIp8tKSDp:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb6ubszg$ss8rHBvEF3m6RzFg06wFrsJEQL8v:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb6ubszg$/UPi/l/wcYHcWxtiz5lsSGdqtiEx:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb6ubszg$AyWHKUEHwr4smg/ytwCba/IPCRT5:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb6ubszg$ZLKe3o7JgWjXCC0SYo41Z9iOdSe3:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb6ubszg$UE.ODl0vMYdK2p0DG6j4dfHLcdJO:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb6ubszg$XtKL8kXPH5z0QmU1VFokWSA9Rpn4:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb6ubszg$1Y9lQefqLAOHIqS/g1j47ZuP2LCS:6:0:::
+u7-sha1crypt:$sha1$5000$eb6ubszg$KYpnQBEw6JSYx25IzSwDoH3mDLBE:7:0: ::
+u8-sha1crypt:$sha1$5000$eb6ubszg$QrqeEJzhGO73I3QLksjDbkUjfy.6:8:0:1::
+u9-sha1crypt:$sha1$5000$eb6ubszg$axMewGRkJ7y0wsiMKDYUZgxEdiyr:9:0:password::
+u10-sha1crypt:$sha1$5000$eb6ubszg$lF.A2fxOB34TFopaajHfMXvlkkmL:10:0:test::
+u11-sha1crypt:$sha1$5000$eb6ubszg$4pEYCYGzM3UX2B5noBhEJusiFiZ5:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb6ubszg$wfBXa8f2qGDpWMUEHEh4TKxkA0g0:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb6ubszg$VtHXNPl10VKXAfhR5O7bOX5ZBiAS:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb6ubszg$sSN05XbRrjRr5z4zAwM8VGrG7cwx:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb6ubszg$8QciPG36EYRon7cJvXxxSJKsuGFN:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb6ubszg$iVinyAbVFlmn4WbzPbUJSZxWCn09:16:0:±::
+u17-sha1crypt:$sha1$5000$eb6ubszg$Pq5kiuo656Wj96ZdMBmaDNKh.fZu:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb6ubszg$ahWOTQDGneiifBo./vTvPyuLeNnF:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb6ubszg$sBhc9iJNIuFqL9tx.CPdBATYW4tp:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb6ubszg$S9HQOuIU6jicVuu0dNg9GWopl7t6:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb6ubszg$NoegP3RDhXMBNdGI7PaAFsqLmCEM:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb6ubszg$VqfptvYAD6lA8.O7C4NtyuQZKzEx:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb6ubszg$Z4.8ofl7ZDb/ZRImp3Bq53tpcUvp:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb6ubszg$uFDDqEIt5zDpQQyc9ihTES0TwUuO:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$e23tcr90$TDmeT7VbjBhQeGE0UUvWCwf2fSO1:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$e23tcr90$BF7dbKqbQiQEiwgNn6izcK7pYOcK:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$e23tcr90$Nno5CDKDLXY9t.N.9raSv37VTcWT:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$e23tcr90$IUvdfiTIio8F7RPda.Xrub3ob4Vz:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$e23tcr90$Ucyb1AuvAiVXlrxgGKWeiDkdTCXi:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$e23tcr90$zL0ldKpX.XidChlWpzkhxqe82XiB:5:0:late*night::
+u6-sha1crypt:$sha1$5000$e23tcr90$zHSuVzJ9uQXuSqVCltEjyx.WdXxJ:6:0:::
+u7-sha1crypt:$sha1$5000$e23tcr90$CqfAdp7OZWR12UK97VZRAppYmkB/:7:0: ::
+u8-sha1crypt:$sha1$5000$e23tcr90$n67.rjB2ufLLNOYrj4bBJi/h.cw7:8:0:1::
+u9-sha1crypt:$sha1$5000$e23tcr90$/EryWSGB400mBq2knVgBafvBvnNq:9:0:password::
+u10-sha1crypt:$sha1$5000$e23tcr90$KJvIbOO0FfCY.EFc3Qb9h7jrHZ04:10:0:test::
+u11-sha1crypt:$sha1$5000$e23tcr90$AuG2pfNWnjtnQ7XvEWu88I.qFAws:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$e23tcr90$yBOeEH7tgJMVLXTuxrAsOaeOdCUW:12:0:hello::
+u13-sha1crypt:$sha1$5000$e23tcr90$6qvlXifgIi8zp2P9VPDkTbcN5j8z:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$e23tcr90$hgkkj56S/gVBYzRDBAEMR8/E1LA.:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$e23tcr90$aHwnb2F8.2DpRc2t3h84DourD1Fo:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$e23tcr90$26jACPm83urR9oL2kENxQ8zTm2Zz:16:0:±::
+u17-sha1crypt:$sha1$5000$e23tcr90$Rj7/WJ1taShFx5w8/2MsFDhh2orU:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$e23tcr90$n.gBjmFhhfk2.GwCrUy3ZIv7qgPg:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$e23tcr90$bi6ovUtJ0omYJ8AD4Rdn8ZOLEngr:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$e23tcr90$KHXs9rM9SgDjj.L79mljEhPdWfJV:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$e23tcr90$vTqGHOVBFgNF1.uIp8Ik018z9Zqo:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$e23tcr90$IfFNOdqlDapHhqZJqe5LcchPZJ1k:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$e23tcr90$p9Bp/Tp8SDpRYcETUwmg2nGfIXD6:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$e23tcr90$rGofL8t99umcv06psiiPcDVojuJP:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb3sdq91$kpGZM9kYLd5jDkxcDl7KO8yVJesR:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb3sdq91$2.yA3O.UTts6qT.h8s3oZ9kQnsmk:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb3sdq91$O0syms4pvi/C7LNSy6MdTxwGvjJl:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb3sdq91$f2SIdyW2V8C7uyOHPZl3VYHSF/jM:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb3sdq91$NJxDNzK1U6A4MYKimwKEom7jzQsk:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb3sdq91$3x7sVCD/XoI0hn5JO1m6CShhUHlL:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb3sdq91$co1cYfqo/eazMrHP.m7kFhsZUqpt:6:0:::
+u7-sha1crypt:$sha1$5000$eb3sdq91$MwnJ6cdr.AmNPRC.HFFGLQcJLFEQ:7:0: ::
+u8-sha1crypt:$sha1$5000$eb3sdq91$7WYuQcqmKaf40k0kNpjTg/xlef5j:8:0:1::
+u9-sha1crypt:$sha1$5000$eb3sdq91$3u/q8dHZJBtMbB/0P2FHsguqMjMX:9:0:password::
+u10-sha1crypt:$sha1$5000$eb3sdq91$K9ThtCL/Lw/zeKm4dFUN6ykUpegW:10:0:test::
+u11-sha1crypt:$sha1$5000$eb3sdq91$Lr6crZNcq6INCjryDcyHTTI9UCdP:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb3sdq91$Ht0QC73mt/KTQK8RpWvVVQiakNCA:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb3sdq91$YnOhPwrFt2SrqWF6P4sYG8fbp4u2:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb3sdq91$OdoKaoArgtnY1ftdI4iKkDL9PxU8:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb3sdq91$LVasof.Ca1bkyvBcc52rtJR8WXv/:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb3sdq91$UiQectsiM5l2v.rsTEK9ZXLpdOHK:16:0:±::
+u17-sha1crypt:$sha1$5000$eb3sdq91$NCVdFzjF7TFaKcnaL9n1AX4BaWw8:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb3sdq91$HzZ2NNbGSxFk4qeFc0pRcXXlGsIW:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb3sdq91$NysJNQCmESCsPsmTn0mnlalMLxjM:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb3sdq91$h7tCKgraibguDLh64qnNSETsvIPt:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb3sdq91$O8LuoI0u.CvKqUjjsR18GW3vdjYs:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb3sdq91$w9fK8IOTfzhEk32OzBThaaRBO7GM:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb3sdq91$ORHnfeYEEXnP2QxfGB4OGHCiBPfM:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb3sdq91$qpuScKgqV/rt7RLrzIAXkk2QvtPi:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$ebcrepg2$m59WvFEPhndtqz35E2S6GCxe6iDc:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$ebcrepg2$7qBRFkQzX1JGWCTjmuEN9xHJod85:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$ebcrepg2$gLEQCuCPbIpZ4wpReALna3NqltF2:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$ebcrepg2$GDwbN6L1DV8bd.liOEDmYZvNTaP.:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$ebcrepg2$g6HBCm2UZcnDmbFIgTKiBqP.pQds:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$ebcrepg2$tN0wDlmGAV4KdAC2CZVR3YdnkX28:5:0:late*night::
+u6-sha1crypt:$sha1$5000$ebcrepg2$IAunIkD9VO4rsDjFtrjrK14oDPpc:6:0:::
+u7-sha1crypt:$sha1$5000$ebcrepg2$.F56rM4J0fxHI4S3FeJE6Zt7UgZ/:7:0: ::
+u8-sha1crypt:$sha1$5000$ebcrepg2$CvFhY67bt4dwrcdW5c3uWZE/pmN4:8:0:1::
+u9-sha1crypt:$sha1$5000$ebcrepg2$5nthhw2OvCL0vkLvFSwgCmUHraD5:9:0:password::
+u10-sha1crypt:$sha1$5000$ebcrepg2$BfJl5xnnMbk/M7Cc9puLQHO.39PB:10:0:test::
+u11-sha1crypt:$sha1$5000$ebcrepg2$W2a8thCNrrYSRnEvEd1kmhdweQfG:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$ebcrepg2$1UIKbetLi0f/oFiI7t5EFAYGNtCb:12:0:hello::
+u13-sha1crypt:$sha1$5000$ebcrepg2$qlMt8a0jb6W2KIJIn.aI1je5Z9CD:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$ebcrepg2$qv4CsC.t/8Fsv.DwueUpJ1h2s.uc:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$ebcrepg2$kJMPa5jFd0JKJnE6vd4GqJuth32D:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$ebcrepg2$2wYTj2Bsw4Hl3ypKoH3VnY3oyplI:16:0:±::
+u17-sha1crypt:$sha1$5000$ebcrepg2$.VA8weAiU2kH2KPnHtHwOKj6cQaG:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$ebcrepg2$yOHrE5p.fgtiAHkQUXddPBNIRLxR:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$ebcrepg2$NXSTVQXPfTNIEJtmi26mmpJixFB/:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$ebcrepg2$chXvAl74WKmpNRiiRtdX0yoeir6O:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$ebcrepg2$I1EW5kXPM6P2W.RGYe.TXToj7Wcs:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$ebcrepg2$0ab7bENLhYzK7QMIbs1KE78haMrK:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$ebcrepg2$LKE8BR6DBB7vxWfyUUaXKEnpdQGT:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$ebcrepg2$1MPX3SIbwOpykqtaWPnKaE5wBeyB:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb6qfor3$ejoqIHMPW6jXpMHsVDUweS51PjKp:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb6qfor3$pEV4wDdxm5ivRnLZ2ofOv3QuOc3d:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb6qfor3$LfSWnrPJ8Ie06/EbeFglo9Ak78SZ:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb6qfor3$hNQpEMwbtIgvPEZ11ZlD3wRzJfMv:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb6qfor3$tYJPl1mt2ibgT7BKuS4WWJjkh3GZ:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb6qfor3$T52nuenHQNK1JzdW45coHRl7APOj:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb6qfor3$TXQaAncsYq5zW9Lct/AAnCSqNKHn:6:0:::
+u7-sha1crypt:$sha1$5000$eb6qfor3$5mKD3/mlDR5nVZmvoPLhX5lyx2Kv:7:0: ::
+u8-sha1crypt:$sha1$5000$eb6qfor3$.YDA.BV0YJaRXOjmnkCw7iafk6S2:8:0:1::
+u9-sha1crypt:$sha1$5000$eb6qfor3$RvuGDTttOaGlO5xWp1lSaBmt9VDL:9:0:password::
+u10-sha1crypt:$sha1$5000$eb6qfor3$ljBMZh674BaBPs.j1O9tBHF6UZ/n:10:0:test::
+u11-sha1crypt:$sha1$5000$eb6qfor3$2cq5RWAD2cRTEq6hfHBBBh3PTcru:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb6qfor3$DBWbd1DanvmmfkAgiuCznnvVSCte:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb6qfor3$PlRpnrWp4ec0PAluCzFH/qdnJ1zs:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb6qfor3$mbka9q4Xhuda2loO/EYeAXSHP0BV:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb6qfor3$QAkEQAyxRd4xPjaSpoZwBl0F1R1Q:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb6qfor3$nScSPp722JqE.VF91SiQttOxuJDv:16:0:±::
+u17-sha1crypt:$sha1$5000$eb6qfor3$UemqHUvEq4dFdy/QI3Xu00joPnBH:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb6qfor3$Yuke2EAo./CPoQ3SzBJAHO43feUL:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb6qfor3$r/8ZLVlDlCPNBDq7xOG9NioGI8fa:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb6qfor3$zg1qnzixAb71j3q2S25PoL4mMXwJ:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb6qfor3$YtnEenGTjAdiFT73/o8nct5d1thv:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb6qfor3$Pezhv9Hb7qzMmqDw/ue4YlqKrSSd:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb6qfor3$mysvAYwEA6HTrMNSLbJLAyE2jnQj:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb6qfor3$eVxduEg/MIfTW9DIlfxGdDzdbeyX:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$e23pgn94$rJUkSUYglCZVEWqoGv1xwh770LH4:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$e23pgn94$S0f/QL0P4hp/fUmeo2Lj/Ws/4c9B:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$e23pgn94$XSBYgR63SQYS3QP0PHRjMTtPEuFP:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$e23pgn94$hq.GHrdeEsjBFap4Lp.owAjT6/Aq:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$e23pgn94$dMwSTTwUc1dkZDE8ErDzt50Tv7Rd:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$e23pgn94$aweWXRlGM0.0./3sPwYfatM18ie7:5:0:late*night::
+u6-sha1crypt:$sha1$5000$e23pgn94$xz3PJN6OZ2biX9cgcoYf3Y5hgtID:6:0:::
+u7-sha1crypt:$sha1$5000$e23pgn94$eyg.V248MuVXphgsVJHPN2y.0.UW:7:0: ::
+u8-sha1crypt:$sha1$5000$e23pgn94$OPp8mgNWagAmnIOuR7roLM5ffEqy:8:0:1::
+u9-sha1crypt:$sha1$5000$e23pgn94$k802faxEfmHwJlQ7M9.siNTxEMip:9:0:password::
+u10-sha1crypt:$sha1$5000$e23pgn94$YHj1YtBiZSiWX5h/83r04GhdC25x:10:0:test::
+u11-sha1crypt:$sha1$5000$e23pgn94$/buPnViaEZ3Ol393jhX5biR7jVGd:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$e23pgn94$VveIghowTtcrOM9x1xbN9FaDGhft:12:0:hello::
+u13-sha1crypt:$sha1$5000$e23pgn94$PRWmucEBhjsR7jrqEB4ASfu98HNk:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$e23pgn94$57VsFZLjxfmAdSOKnrGIzlIiWjD0:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$e23pgn94$HhcHUQN228jZxN6xcYSWLOVVCRQz:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$e23pgn94$D3b0iIB83eXUdG5txb1JhBRa8wdz:16:0:±::
+u17-sha1crypt:$sha1$5000$e23pgn94$NXglYVpZX.YHHINCCUHG5v6U4rEe:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$e23pgn94$hYP9c7SlPhr5wP0Yw3cZ/FBHhstP:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$e23pgn94$.sWm9guM0RzIfdday5T3xG1j8Hyd:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$e23pgn94$3IWRGwLqAh6cd1Kd7Tm0Pepmqdss:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$e23pgn94$/e5WOZy9cvLU7zxub6iyNmh.6iq.:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$e23pgn94$WiRB4bBGFeH78rfceSCASrHMpom1:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$e23pgn94$DxLg6gn02sEu4DmXizD.Om.zlWXP:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$e23pgn94$Y.IOjF5jxmJSmsxCTCIrZ8Nhdxmk:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb3ohm95$m2Bof7qlFJqySowQf94E9tNBEDGX:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb3ohm95$SjC.pcFIFQCcV31WltKRJLqn.wFz:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb3ohm95$DIkwqGw4ks2ZLrp66IGn7OOHnDV7:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb3ohm95$QK99trABP2P001SQ6QhFN7uUgQ9V:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb3ohm95$6uYsqEFAW.X4nrlX2hzt3wlQWbgR:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb3ohm95$9zd6ujUWrkR0/ibELz4.8g4/WwtS:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb3ohm95$KPuehqi5hVBEez8NcSGSWP68faWg:6:0:::
+u7-sha1crypt:$sha1$5000$eb3ohm95$3Xkljz81Y4tGsCC3zMTsbD0n5Xn.:7:0: ::
+u8-sha1crypt:$sha1$5000$eb3ohm95$Vf0KSmybuqdNTFRU23xN7XRXM/Q8:8:0:1::
+u9-sha1crypt:$sha1$5000$eb3ohm95$e./Vqar6yWIHYJYgMA3epeeV20w.:9:0:password::
+u10-sha1crypt:$sha1$5000$eb3ohm95$ghOpueCl0CwTO.SPOMZqj.QZJ5U9:10:0:test::
+u11-sha1crypt:$sha1$5000$eb3ohm95$iFAUf0qQH8fSlWumtgspbrgo.K6y:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb3ohm95$BLhppsZFnRTnw7e.i4Sl3UDtKTZv:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb3ohm95$dXi68THmtkbmIFSeFeWT0NGyWwtL:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb3ohm95$oV7FBOyZmw./3e25iZKIONG22J7F:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb3ohm95$ADmWA0vg1dbj2sKTq5qEPrCH9Gq9:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb3ohm95$zcCrgxseaVV.itDk65v4loHTQfFt:16:0:±::
+u17-sha1crypt:$sha1$5000$eb3ohm95$l/Jm9z.FNUWqtdOSJ5vnqlwa7vgk:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb3ohm95$eaVRBXExvnGag/I7LodRPO0IqFid:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb3ohm95$w6TebPYSkbx5NODaZPuRwNq.dKNM:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb3ohm95$aqs/u.erxgXN31pBXqSfRAUI5UM1:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb3ohm95$cJPozh3Did81jw8k7IG14.hMF54Q:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb3ohm95$inwAz9UM/9MaExnyHRz7e4GInYaD:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb3ohm95$TqVAtoKbFIPUU5qWapcsYnFRmcgY:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb3ohm95$HjL5KSKT2UhIcU/woglXHV2SRQCT:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$ebcnilg6$5qOWnTanwBJlK2gRL0Sjt.P/7i1n:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$ebcnilg6$mXlpYA91XA6zrqmoGhhE76/jL1if:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$ebcnilg6$Ar4kDjQBAvfAU4WvQeKuKorG.Xbz:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$ebcnilg6$kzSjJmH6TAbaKBqYRd950UwmxGrX:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$ebcnilg6$H/1JPZhfC64YT.pWzFI7p.UmIpic:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$ebcnilg6$C3zMcz/Z2i9HVNfizHa4.sa6XVnM:5:0:late*night::
+u6-sha1crypt:$sha1$5000$ebcnilg6$i3X34z4ntZpdkIkVHekZ1zE5KQ6H:6:0:::
+u7-sha1crypt:$sha1$5000$ebcnilg6$rMtJUGsjVTbjGXvtXMCUkNVtLlJ1:7:0: ::
+u8-sha1crypt:$sha1$5000$ebcnilg6$ExVrIBAnCRDl85hXlcfYGmDTS92K:8:0:1::
+u9-sha1crypt:$sha1$5000$ebcnilg6$/OUJJ/0WwYzKtNrSjT/JHD/PKNLi:9:0:password::
+u10-sha1crypt:$sha1$5000$ebcnilg6$M6IzgUeorg0sNtQ3OmkV4xyDx5z4:10:0:test::
+u11-sha1crypt:$sha1$5000$ebcnilg6$6lj7wzkMIIjGjbVraZ8iXLxUaw7/:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$ebcnilg6$rWWFRA7EM2s4jxIUKpeT2w4H4hQ.:12:0:hello::
+u13-sha1crypt:$sha1$5000$ebcnilg6$szHe3WchGtrtqMqE8L1GAOF/d4Ur:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$ebcnilg6$8sZ9NRqDagOwXI5ZSV9OpZnsiImE:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$ebcnilg6$ws5ldb9xzAMyPIEFsc/RZL8C2for:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$ebcnilg6$O0fWQWMM2YvmHKuxHbnaLRRc8m0B:16:0:±::
+u17-sha1crypt:$sha1$5000$ebcnilg6$YpPx/svmLQEqUFPMDoJ8bVmLp9YY:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$ebcnilg6$ZM16LNk3lJTALTxrfMeUyYUUUsKY:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$ebcnilg6$UALDEYbSpcGAlSxgZ2HsuWIJxcXH:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$ebcnilg6$1qv5cTK0gDymKHUuda15cGd3TchT:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$ebcnilg6$A46arjYy54BZYssDiEBdoq4kMuQh:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$ebcnilg6$MLaDoOQVDy/Dzyira9rSWzMjywMS:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$ebcnilg6$C4Kl/TVOXRMEMtAboAswdFjj3rdG:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$ebcnilg6$//7.xfJIsCASBrmm3y2yobk..kQf:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb6mjkr7$mKtglz5T46kANMA36kKdD1O1nagK:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb6mjkr7$mAnmQeZT11ZdDnbcmqH6H4YI99ab:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb6mjkr7$3unuEQCW1SUnYnfYdiL8KVPyfX8S:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb6mjkr7$JrFKv561CXkgryzuyLFraPwpNBYa:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb6mjkr7$ErA1B.fQdK2boFqN/YTQBogYAwPu:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb6mjkr7$i2aB/mpP8I9sUTBX5lfSRv42q2po:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb6mjkr7$SXVWmbXQemq51sTmLxO4oIAl8OyX:6:0:::
+u7-sha1crypt:$sha1$5000$eb6mjkr7$Bfz.KyCxbCpHvQjp8ZMDtwIl1UE8:7:0: ::
+u8-sha1crypt:$sha1$5000$eb6mjkr7$kiAoCZg4qqFQQIC2x.DRpzItEzQC:8:0:1::
+u9-sha1crypt:$sha1$5000$eb6mjkr7$xSDuHh0MKgp13gUM4ZVOXam1cP5x:9:0:password::
+u10-sha1crypt:$sha1$5000$eb6mjkr7$tU55Uelmh5b3jDJCpa0MALw2QcNF:10:0:test::
+u11-sha1crypt:$sha1$5000$eb6mjkr7$1vaGs8Py.3jYo8J.FH5z6bJL8t6W:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb6mjkr7$SIqCwuD/aeRScdrJszhAhGcWvcns:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb6mjkr7$NvxqR13x4qO9jRqm1LZXhl9lPbLR:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb6mjkr7$A91O0.Xpb8SdgSJSeG6MYIs7c/iD:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb6mjkr7$Foa6its/ggYbbsycyPigGLeAWA/4:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb6mjkr7$r.BmKnVLTK6aBTQN5HFucVzE69.M:16:0:±::
+u17-sha1crypt:$sha1$5000$eb6mjkr7$VYFKJbfuiWDFnEJ/RYINnHvKNpLQ:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb6mjkr7$sLfViFO8aOTI.5QLZ4z6mdmG44hV:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb6mjkr7$U2C.75ct7KuBiVvGA9rLJBIv.QNQ:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb6mjkr7$xf9fjCQdVCV.WIJxWh0jVUdoguHJ:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb6mjkr7$sf822h1G5sHBF1S0kyWQO1jXE6Ec:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb6mjkr7$BnzXffuzzYF50x8gRepxhpgjDmNH:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb6mjkr7$9T1IGHVBwqzM2yF0hseoFnydEVMx:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb6mjkr7$jx7e5Jja.zdKhonbkoXNr5alcibu:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$e2367890$hqonO5.md7rnFR7hZ6z/kZoODn4T:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$e2367890$Pahf3aA.odFndenhEdKL.JGDiagl:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$e2367890$8z1I/kMbaqQFg9FljCEh./3EEJGq:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$e2367890$33dzV2Ia02V2Gmpe/ydl4zCNyrvY:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$e2367890$KlWB5lpzwh6gxWbI1viVeUrfqsKp:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$e2367890$j/NfsNhWoDnvXDkIyo4GaZTMhuj8:5:0:late*night::
+u6-sha1crypt:$sha1$5000$e2367890$K.EYvtF6l84FeDTRF36H26IFF0PF:6:0:::
+u7-sha1crypt:$sha1$5000$e2367890$nwrZU7Ta/5LLYgQJYIKRdb6jL8Gx:7:0: ::
+u8-sha1crypt:$sha1$5000$e2367890$UkBGj5lsfZ0SUDoDCHW9ebLe6Fw7:8:0:1::
+u9-sha1crypt:$sha1$5000$e2367890$dcXztpeFW8gwrhgSb2um8.x3yTGu:9:0:password::
+u10-sha1crypt:$sha1$5000$e2367890$ANCe2aahfU4SCUREMVHZw1mFcW/r:10:0:test::
+u11-sha1crypt:$sha1$5000$e2367890$Xudlgrta1Wt.XAClrvxyxG5I4TBU:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$e2367890$VNjPJzxaYqY/M/VAxErtr12ai3sI:12:0:hello::
+u13-sha1crypt:$sha1$5000$e2367890$slZ6wxbUy2LSoYYZSR0Mz5SvWMjC:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$e2367890$gkZntw68vFVispA7mYM0bb/oCDbw:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$e2367890$DVXTbG9NflUoVshvClS6wDo7y/WS:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$e2367890$8MO2Prv3DIuzdMc7Zb21znL6Fc5A:16:0:±::
+u17-sha1crypt:$sha1$5000$e2367890$FKAMQzg/1L8mMoLOe2B8XG/cUd.5:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$e2367890$3w6ZfJb3uC.U38gKLSY057qyIetX:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$e2367890$rk5a90K5958BvbHDzkbhDxMLMu7m:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$e2367890$Ac3/LZ5luOsBC1opTyhPbbeo2A7l:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$e2367890$iRxsl.UiY2G5CgTpNVz3p0DoXv4v:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$e2367890$LgIfztOXqcp7ZpG3vN/Ck3y8haqw:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$e2367890$ZoNbYYDco5UKeXbL/krwv/E9Rq/R:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$e2367890$.DjWYPxX7Ye4k03w6pXkE7BX8OJ.:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb367890$C2OmTzOp0dWMzZE6qYl/KqMH7XFj:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb367890$KjYXJSTg/BZZSX0j3gy99NAyCKMi:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb367890$erUzRJ3tjcPhhKVkc1g0LhoDy5jc:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb367890$3i.iRhM6vMrS9xsx3eWl5T/rsWXR:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb367890$OJRmDgPQSTCKpHMGuph6aVX.7fPn:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb367890$iLLMWZD/6f40eckIvhDF537HV3lv:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb367890$LSZ1RI32Ist07KYFm6q5vTqqCUUV:6:0:::
+u7-sha1crypt:$sha1$5000$eb367890$5ofXeBykOmclOxwVJIYtQPfrCGIf:7:0: ::
+u8-sha1crypt:$sha1$5000$eb367890$IRIRkWBW.33L0W9uKqGvEIY3phYb:8:0:1::
+u9-sha1crypt:$sha1$5000$eb367890$kDvwLoxu4tfM9rJesxln2Wy6nH.V:9:0:password::
+u10-sha1crypt:$sha1$5000$eb367890$fuoIwJP2pFjeFGDTawYYX35DHdkz:10:0:test::
+u11-sha1crypt:$sha1$5000$eb367890$7/hCHDBXGl94ZecUUuSdyKj6usQK:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb367890$WF07/pcqEZ6YqrMJgSY5ULArYYYY:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb367890$BcitQPXa2wbfQjmM4Ob13Iwua9F3:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb367890$sAiz1bAMf9V86L00sl2fqeSxyLVY:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb367890$1RnwZ2lLGw5vZVSiawRmgwMMnHfO:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb367890$2pDbOieRC6G65PXTQmoWeXeGQi7d:16:0:±::
+u17-sha1crypt:$sha1$5000$eb367890$oCyGrD1htdBje7yyua2MIY7z9htU:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb367890$iJXS6gXHtJbUlp7bvkZtrv1kuNhb:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb367890$.bmqhxsJoNu9PJQVY.07KMm1P9vy:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb367890$PORUi5GkS47SkoYENcOq70T9/WmR:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb367890$W7P6jeqTSlTkqksDGFn/6dvPVY0U:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb367890$uSRlyhfxgCBeKMEF/jsWnlTQ3H6V:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb367890$Y2VvgrOzwqKK0Fg4FvuCYQrEivc5:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb367890$UafqMnOBGi4wTDbZ8eoGzLgrOrkC:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$ebcfrtgy$QYRtDKHYO1YpuY6dtbHcIQbVZH/q:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$ebcfrtgy$.wLuE/PpcWlCKgvnrCu8AVZnd1DG:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$ebcfrtgy$h7p.YtpzD2GRGuDaP0YMhZpv1ww3:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$ebcfrtgy$uLX4Z8iIPZE.9st5vgqfEM.NOYPW:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$ebcfrtgy$0mHGjbleiGdy.G65iMc.4Xfg7Rgg:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$ebcfrtgy$ORKrshWAbWlXdQKKLm9fdBcYRnDL:5:0:late*night::
+u6-sha1crypt:$sha1$5000$ebcfrtgy$3yN4OOVtev5xrFzw1QS072xENUDr:6:0:::
+u7-sha1crypt:$sha1$5000$ebcfrtgy$HOi5FlD14ekETShz5uWsctjJS6Ti:7:0: ::
+u8-sha1crypt:$sha1$5000$ebcfrtgy$yBekCFM6uUOxt7ufVQ4sJwUf0v.N:8:0:1::
+u9-sha1crypt:$sha1$5000$ebcfrtgy$m6yO5a/KyZ/GMWZxas4tzE2LfdVP:9:0:password::
+u10-sha1crypt:$sha1$5000$ebcfrtgy$Khr5pqLyQLvsXIuUCek2XM/vTwLc:10:0:test::
+u11-sha1crypt:$sha1$5000$ebcfrtgy$KKBDltrgKVu8b/E6UJf7SyzGwk3d:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$ebcfrtgy$80J36mRQcG.xe5lv39xHiTSfJ6Iv:12:0:hello::
+u13-sha1crypt:$sha1$5000$ebcfrtgy$mLXMkmtgxjEHQ.Ki9VIt7AejWRA2:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$ebcfrtgy$r1Cfp2JqhMz6f6z/.xe/4.AEgqvg:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$ebcfrtgy$ad/a.2UK50N6QTONAlPZddaaMuzW:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$ebcfrtgy$c.88fOkX6ueceG2CSJ38mtNscEx0:16:0:±::
+u17-sha1crypt:$sha1$5000$ebcfrtgy$8E8bYjU9C09PjRu.F7B2g2R5Q0Al:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$ebcfrtgy$JqJ3lfzHNqDmrC21MzrLF1dHJwsp:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$ebcfrtgy$0evkUj9HraCPo5movjR7Rhyd1Tc3:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$ebcfrtgy$RWv/Z4xWAlH0/E7tivPfjR855wtS:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$ebcfrtgy$oSUBmVBgrIIQ/o3fZGQWE3TPq2wg:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$ebcfrtgy$rL36CCiS6RmWsoHfksDwseSjUsoO:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$ebcfrtgy$bE/nU9qRnJg9462M5dxzy7vZAD4m:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$ebcfrtgy$5Xe9P.XMDpMbqIQSiBAOkFCVigJH:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb6321rg$v6QuySvvi6G2yG2OCm.2dWU8dPTX:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb6321rg$9WQxOoKewKYQJiP3psMDz.5cpHae:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb6321rg$8mjEPg0SGL5v5igdN7MeGjmT0Vxu:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb6321rg$4kEZGRIwxbL6gDCHwRPz33cEJ8Fw:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb6321rg$Iawvc/NpScJ0fvkRrFbib5XhjraA:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb6321rg$k2A7HbQ1JbCpTW3y8nLRql35YYw9:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb6321rg$gsbIAznmY9/TgQRiFvRpb/AeGVXg:6:0:::
+u7-sha1crypt:$sha1$5000$eb6321rg$uIEw1gksNDk7CaMKBgnwxkDKlX9t:7:0: ::
+u8-sha1crypt:$sha1$5000$eb6321rg$vHGP3aRVyVUzIOotsNGnt.P5hV6q:8:0:1::
+u9-sha1crypt:$sha1$5000$eb6321rg$FNhxh6Q8FQEiDsPvRivFqV1UqXr1:9:0:password::
+u10-sha1crypt:$sha1$5000$eb6321rg$ADUZ1OhoE07zqdrbZFQU.jTVKau7:10:0:test::
+u11-sha1crypt:$sha1$5000$eb6321rg$JTcxPUa4K7cHEzmOipgXcaVMqfes:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb6321rg$MmsV4g14B8xsei9Nj.elGrZo5S1A:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb6321rg$RsfX6x2.XzzIt/htYQyQ3kljCuqH:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb6321rg$ZHWqTIsB49jF32jPh8JW3ChbOT/1:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb6321rg$jPHhQglev2VB8hcV/HRPOZsspi7z:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb6321rg$Cn02DW2x.NjDUPCoeJfwOY6kEcYw:16:0:±::
+u17-sha1crypt:$sha1$5000$eb6321rg$RLMco8G96tZvYg46mC7/1X4vVypq:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb6321rg$TkIOjiF9Xg3kAWZatOMNbK1pdhLX:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb6321rg$qKpdduqhcNiIoTS17MNll30Vbq4J:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb6321rg$tRohYAZraN1krrf3PkoQ2zE2rqdN:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb6321rg$LGslqB3IS80WltKC/NEZQu7v51Re:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb6321rg$7JTXkE40UMvucZBIyuxofGe7BC09:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb6321rg$yMBpv.zj6rfcIGlJlv5Lv.U/IrIq:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb6321rg$KUyPwv3kxDi8chUPiTuGf04sjlSR:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$e23xyvw0$YmA6ppfjBFTVqopOi.uBC4jFUsNJ:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$e23xyvw0$swtwh4p.YEL6Dqg0Se6bnSFznHz4:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$e23xyvw0$WZoR/cfXG7fC5VUc2S8GvIAerFPY:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$e23xyvw0$/7/II1.Y86DBtJGZcL4T7vZTElHe:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$e23xyvw0$p7uj6HhqArqwP0y6Qm4v9xU0zSgg:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$e23xyvw0$lydwKygdf7yaG3W.R7d0Sb53mjV5:5:0:late*night::
+u6-sha1crypt:$sha1$5000$e23xyvw0$qyVzVE135K5IYmCs0Ue2qxHKy5O5:6:0:::
+u7-sha1crypt:$sha1$5000$e23xyvw0$34YXCiz7j8qOqNFYlZRuHpAqCWZV:7:0: ::
+u8-sha1crypt:$sha1$5000$e23xyvw0$WnhTGn45iW086xa6wMkoC7iryJ6a:8:0:1::
+u9-sha1crypt:$sha1$5000$e23xyvw0$nXQW9oW6oEOcEdiA08KMKWb078/f:9:0:password::
+u10-sha1crypt:$sha1$5000$e23xyvw0$vIiHkXuhHcOrQAUH2mJpI8exCxh5:10:0:test::
+u11-sha1crypt:$sha1$5000$e23xyvw0$xV7JG7aSotwHfi9vmKqAQ3SrIBLy:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$e23xyvw0$yUSrzhz3tg0cxF8s5RqV7iNgRz4P:12:0:hello::
+u13-sha1crypt:$sha1$5000$e23xyvw0$wBMd62YvF4yw2UJMZg7XqEDsZmyN:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$e23xyvw0$xcPeGuAHYzzdawXy20NcnD/tde9K:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$e23xyvw0$OvpVp7Gq9K.N7RMzwWvWj4fn5WV4:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$e23xyvw0$43.cS0acOEYPUGqQOKOe616QUq6W:16:0:±::
+u17-sha1crypt:$sha1$5000$e23xyvw0$hS11mcuqFMA0yS3oeocNxU.uAI2b:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$e23xyvw0$m4JIzfXWBryfahNeKUOInccuFpkR:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$e23xyvw0$QJDDjp/F6C2MsCKFXRNdEBdawAVr:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$e23xyvw0$Yern21GzG7cHxuY.j7tcnHfDDPxK:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$e23xyvw0$WKS3klUtwBaLI24Fw0pw46/8Jo/q:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$e23xyvw0$708HdxDYDMb6wkLlrmbmYB6rA3.L:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$e23xyvw0$4dfNLmLwlWUCxSIu.tsQ3NuPaxXJ:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$e23xyvw0$NhFTyhRGSc5tI9PTd0pj93F3xNcr:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb3wzux0$/fLOXETeQafphGrFp/Hcur6CdhEH:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb3wzux0$vdV.iDp4YJ73fXEbK7/lBpng0Ix8:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb3wzux0$pieLFnpxPtO6qOKhbTeW2qwhSliL:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb3wzux0$B/M.R64tCGcPTs80Fv0JS/DQ/gh0:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb3wzux0$HDV0dICloo.SDG2BhsoSTaee8MLZ:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb3wzux0$0eSpvWdE5XizMmmxw99BDesBJ9GD:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb3wzux0$o.oidVpgAlDo7PmlwEKbnKYtvejU:6:0:::
+u7-sha1crypt:$sha1$5000$eb3wzux0$uiDo8A4GEnPBhHmpuoeb0rCqEbBN:7:0: ::
+u8-sha1crypt:$sha1$5000$eb3wzux0$BtR0eVC6dUmV2QuP2XcqQIen7ISC:8:0:1::
+u9-sha1crypt:$sha1$5000$eb3wzux0$ypOus6jeeySVp4H85ub2t90OdXyo:9:0:password::
+u10-sha1crypt:$sha1$5000$eb3wzux0$Matn.Zgc/r0tmu7Qpmop8r2PDXXK:10:0:test::
+u11-sha1crypt:$sha1$5000$eb3wzux0$Yjv7Aq5yocvL4H/s8GDM91JObc4v:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb3wzux0$PQc9XcKKTGqyayQBWgbJW3fIiMq3:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb3wzux0$Pi9IhZWK1sMBoG7EkN.bWZGvEl7b:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb3wzux0$OXi4k9pSXQGpTYwqwnETE8pBOU2m:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb3wzux0$ZykUyWIic2ce5h9.nei.VXC91C.d:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb3wzux0$J7IaM56NJ1RBlVPy1/y/CKJuNacN:16:0:±::
+u17-sha1crypt:$sha1$5000$eb3wzux0$pQzTCQfhBsevjTQdpRXEsIEOzVSP:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb3wzux0$CziW24Ux./Y.2b/TWDXivcnK8uSc:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb3wzux0$1gHv7L7nxbvRfwATiGtIFKJ.hPMh:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb3wzux0$feVZbbBoVt1BIBkDDJItasDNKWX0:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb3wzux0$Fk0TDaZrjCg9jCbpTWrcTNRlwJrw:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb3wzux0$rbZ1hhAj85rORGHuz32auC6qCggK:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb3wzux0$LPMg8njeirSdX8rP./X0at6OlGhG:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb3wzux0$HsExUm299LGniTx0GFRvgan0pjTz:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$ebcvatyy$NMDJDy6jgBtE2cxZcVzzE/97INhY:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$ebcvatyy$7ZJX8Dk8cJK7B2HcDl2TxrYaBmiz:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$ebcvatyy$aZX8qROwVta.ZP/MnemfiHiteog5:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$ebcvatyy$p55AJOTqhgfjvFDtPXCm8tF0kAKY:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$ebcvatyy$KVlfWUiI0BdiLAQHZZ8Jw1onjSPX:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$ebcvatyy$haz0933zVV/71.vrzpGbYZtI9MY7:5:0:late*night::
+u6-sha1crypt:$sha1$5000$ebcvatyy$SZx/nBM9rNf7jPcrbDMAtkfx5gFo:6:0:::
+u7-sha1crypt:$sha1$5000$ebcvatyy$9qi6rpeuj.bJOB24ZMmpOAn9WwZl:7:0: ::
+u8-sha1crypt:$sha1$5000$ebcvatyy$505pAfGeblej0Z73BDWlfp0vIfqK:8:0:1::
+u9-sha1crypt:$sha1$5000$ebcvatyy$pWi2WrbLuavJ06y8LBaIx/VpGsJR:9:0:password::
+u10-sha1crypt:$sha1$5000$ebcvatyy$N/n9UG7A4SuwBCSWnADUwWOEjsVx:10:0:test::
+u11-sha1crypt:$sha1$5000$ebcvatyy$h5.2T./PDKJvL0HISgVX3/FzEMrP:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$ebcvatyy$Owd2VjPW3sMAZ02tIzug/NzBGQ6I:12:0:hello::
+u13-sha1crypt:$sha1$5000$ebcvatyy$c1/g4eVts/WGd7ILhcmIwvRZk4iD:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$ebcvatyy$veDsO77gUvwozHUlZqHueQu7UbLD:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$ebcvatyy$K2EqYAEuV8tmHT03PjxpYY6oNrRz:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$ebcvatyy$mPHwavaIjgX4ulcKdNw4DQullbvM:16:0:±::
+u17-sha1crypt:$sha1$5000$ebcvatyy$AmTGSH5/3uW3jXUlhWj4W6Dm7tg4:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$ebcvatyy$P.8vOrGhB.NkVDuzBCslkq6OgnyE:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$ebcvatyy$287Znd1XMkkx4PLHbAUMjqetI0YP:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$ebcvatyy$9zMXyZ2wcb2NyrRhHJCbgsScBqU3:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$ebcvatyy$uf8BxnSg4IkMdr72kEJXR8byocSd:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$ebcvatyy$pJ5Re9V7BY67PMtb3vPajhQLoNbn:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$ebcvatyy$cFlxKek80mnppdX/xHfmkp2Pr9W.:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$ebcvatyy$qAaZdKLbdyB5kycXEEmcIp8tKSDp:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb6ubszg$ss8rHBvEF3m6RzFg06wFrsJEQL8v:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb6ubszg$/UPi/l/wcYHcWxtiz5lsSGdqtiEx:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb6ubszg$AyWHKUEHwr4smg/ytwCba/IPCRT5:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb6ubszg$ZLKe3o7JgWjXCC0SYo41Z9iOdSe3:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb6ubszg$UE.ODl0vMYdK2p0DG6j4dfHLcdJO:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb6ubszg$XtKL8kXPH5z0QmU1VFokWSA9Rpn4:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb6ubszg$1Y9lQefqLAOHIqS/g1j47ZuP2LCS:6:0:::
+u7-sha1crypt:$sha1$5000$eb6ubszg$KYpnQBEw6JSYx25IzSwDoH3mDLBE:7:0: ::
+u8-sha1crypt:$sha1$5000$eb6ubszg$QrqeEJzhGO73I3QLksjDbkUjfy.6:8:0:1::
+u9-sha1crypt:$sha1$5000$eb6ubszg$axMewGRkJ7y0wsiMKDYUZgxEdiyr:9:0:password::
+u10-sha1crypt:$sha1$5000$eb6ubszg$lF.A2fxOB34TFopaajHfMXvlkkmL:10:0:test::
+u11-sha1crypt:$sha1$5000$eb6ubszg$4pEYCYGzM3UX2B5noBhEJusiFiZ5:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb6ubszg$wfBXa8f2qGDpWMUEHEh4TKxkA0g0:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb6ubszg$VtHXNPl10VKXAfhR5O7bOX5ZBiAS:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb6ubszg$sSN05XbRrjRr5z4zAwM8VGrG7cwx:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb6ubszg$8QciPG36EYRon7cJvXxxSJKsuGFN:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb6ubszg$iVinyAbVFlmn4WbzPbUJSZxWCn09:16:0:±::
+u17-sha1crypt:$sha1$5000$eb6ubszg$Pq5kiuo656Wj96ZdMBmaDNKh.fZu:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb6ubszg$ahWOTQDGneiifBo./vTvPyuLeNnF:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb6ubszg$sBhc9iJNIuFqL9tx.CPdBATYW4tp:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb6ubszg$S9HQOuIU6jicVuu0dNg9GWopl7t6:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb6ubszg$NoegP3RDhXMBNdGI7PaAFsqLmCEM:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb6ubszg$VqfptvYAD6lA8.O7C4NtyuQZKzEx:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb6ubszg$Z4.8ofl7ZDb/ZRImp3Bq53tpcUvp:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb6ubszg$uFDDqEIt5zDpQQyc9ihTES0TwUuO:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$e23tcr90$TDmeT7VbjBhQeGE0UUvWCwf2fSO1:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$e23tcr90$BF7dbKqbQiQEiwgNn6izcK7pYOcK:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$e23tcr90$Nno5CDKDLXY9t.N.9raSv37VTcWT:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$e23tcr90$IUvdfiTIio8F7RPda.Xrub3ob4Vz:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$e23tcr90$Ucyb1AuvAiVXlrxgGKWeiDkdTCXi:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$e23tcr90$zL0ldKpX.XidChlWpzkhxqe82XiB:5:0:late*night::
+u6-sha1crypt:$sha1$5000$e23tcr90$zHSuVzJ9uQXuSqVCltEjyx.WdXxJ:6:0:::
+u7-sha1crypt:$sha1$5000$e23tcr90$CqfAdp7OZWR12UK97VZRAppYmkB/:7:0: ::
+u8-sha1crypt:$sha1$5000$e23tcr90$n67.rjB2ufLLNOYrj4bBJi/h.cw7:8:0:1::
+u9-sha1crypt:$sha1$5000$e23tcr90$/EryWSGB400mBq2knVgBafvBvnNq:9:0:password::
+u10-sha1crypt:$sha1$5000$e23tcr90$KJvIbOO0FfCY.EFc3Qb9h7jrHZ04:10:0:test::
+u11-sha1crypt:$sha1$5000$e23tcr90$AuG2pfNWnjtnQ7XvEWu88I.qFAws:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$e23tcr90$yBOeEH7tgJMVLXTuxrAsOaeOdCUW:12:0:hello::
+u13-sha1crypt:$sha1$5000$e23tcr90$6qvlXifgIi8zp2P9VPDkTbcN5j8z:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$e23tcr90$hgkkj56S/gVBYzRDBAEMR8/E1LA.:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$e23tcr90$aHwnb2F8.2DpRc2t3h84DourD1Fo:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$e23tcr90$26jACPm83urR9oL2kENxQ8zTm2Zz:16:0:±::
+u17-sha1crypt:$sha1$5000$e23tcr90$Rj7/WJ1taShFx5w8/2MsFDhh2orU:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$e23tcr90$n.gBjmFhhfk2.GwCrUy3ZIv7qgPg:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$e23tcr90$bi6ovUtJ0omYJ8AD4Rdn8ZOLEngr:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$e23tcr90$KHXs9rM9SgDjj.L79mljEhPdWfJV:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$e23tcr90$vTqGHOVBFgNF1.uIp8Ik018z9Zqo:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$e23tcr90$IfFNOdqlDapHhqZJqe5LcchPZJ1k:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$e23tcr90$p9Bp/Tp8SDpRYcETUwmg2nGfIXD6:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$e23tcr90$rGofL8t99umcv06psiiPcDVojuJP:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb3sdq91$kpGZM9kYLd5jDkxcDl7KO8yVJesR:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb3sdq91$2.yA3O.UTts6qT.h8s3oZ9kQnsmk:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb3sdq91$O0syms4pvi/C7LNSy6MdTxwGvjJl:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb3sdq91$f2SIdyW2V8C7uyOHPZl3VYHSF/jM:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb3sdq91$NJxDNzK1U6A4MYKimwKEom7jzQsk:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb3sdq91$3x7sVCD/XoI0hn5JO1m6CShhUHlL:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb3sdq91$co1cYfqo/eazMrHP.m7kFhsZUqpt:6:0:::
+u7-sha1crypt:$sha1$5000$eb3sdq91$MwnJ6cdr.AmNPRC.HFFGLQcJLFEQ:7:0: ::
+u8-sha1crypt:$sha1$5000$eb3sdq91$7WYuQcqmKaf40k0kNpjTg/xlef5j:8:0:1::
+u9-sha1crypt:$sha1$5000$eb3sdq91$3u/q8dHZJBtMbB/0P2FHsguqMjMX:9:0:password::
+u10-sha1crypt:$sha1$5000$eb3sdq91$K9ThtCL/Lw/zeKm4dFUN6ykUpegW:10:0:test::
+u11-sha1crypt:$sha1$5000$eb3sdq91$Lr6crZNcq6INCjryDcyHTTI9UCdP:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb3sdq91$Ht0QC73mt/KTQK8RpWvVVQiakNCA:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb3sdq91$YnOhPwrFt2SrqWF6P4sYG8fbp4u2:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb3sdq91$OdoKaoArgtnY1ftdI4iKkDL9PxU8:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb3sdq91$LVasof.Ca1bkyvBcc52rtJR8WXv/:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb3sdq91$UiQectsiM5l2v.rsTEK9ZXLpdOHK:16:0:±::
+u17-sha1crypt:$sha1$5000$eb3sdq91$NCVdFzjF7TFaKcnaL9n1AX4BaWw8:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb3sdq91$HzZ2NNbGSxFk4qeFc0pRcXXlGsIW:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb3sdq91$NysJNQCmESCsPsmTn0mnlalMLxjM:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb3sdq91$h7tCKgraibguDLh64qnNSETsvIPt:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb3sdq91$O8LuoI0u.CvKqUjjsR18GW3vdjYs:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb3sdq91$w9fK8IOTfzhEk32OzBThaaRBO7GM:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb3sdq91$ORHnfeYEEXnP2QxfGB4OGHCiBPfM:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb3sdq91$qpuScKgqV/rt7RLrzIAXkk2QvtPi:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$ebcrepg2$m59WvFEPhndtqz35E2S6GCxe6iDc:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$ebcrepg2$7qBRFkQzX1JGWCTjmuEN9xHJod85:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$ebcrepg2$gLEQCuCPbIpZ4wpReALna3NqltF2:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$ebcrepg2$GDwbN6L1DV8bd.liOEDmYZvNTaP.:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$ebcrepg2$g6HBCm2UZcnDmbFIgTKiBqP.pQds:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$ebcrepg2$tN0wDlmGAV4KdAC2CZVR3YdnkX28:5:0:late*night::
+u6-sha1crypt:$sha1$5000$ebcrepg2$IAunIkD9VO4rsDjFtrjrK14oDPpc:6:0:::
+u7-sha1crypt:$sha1$5000$ebcrepg2$.F56rM4J0fxHI4S3FeJE6Zt7UgZ/:7:0: ::
+u8-sha1crypt:$sha1$5000$ebcrepg2$CvFhY67bt4dwrcdW5c3uWZE/pmN4:8:0:1::
+u9-sha1crypt:$sha1$5000$ebcrepg2$5nthhw2OvCL0vkLvFSwgCmUHraD5:9:0:password::
+u10-sha1crypt:$sha1$5000$ebcrepg2$BfJl5xnnMbk/M7Cc9puLQHO.39PB:10:0:test::
+u11-sha1crypt:$sha1$5000$ebcrepg2$W2a8thCNrrYSRnEvEd1kmhdweQfG:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$ebcrepg2$1UIKbetLi0f/oFiI7t5EFAYGNtCb:12:0:hello::
+u13-sha1crypt:$sha1$5000$ebcrepg2$qlMt8a0jb6W2KIJIn.aI1je5Z9CD:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$ebcrepg2$qv4CsC.t/8Fsv.DwueUpJ1h2s.uc:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$ebcrepg2$kJMPa5jFd0JKJnE6vd4GqJuth32D:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$ebcrepg2$2wYTj2Bsw4Hl3ypKoH3VnY3oyplI:16:0:±::
+u17-sha1crypt:$sha1$5000$ebcrepg2$.VA8weAiU2kH2KPnHtHwOKj6cQaG:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$ebcrepg2$yOHrE5p.fgtiAHkQUXddPBNIRLxR:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$ebcrepg2$NXSTVQXPfTNIEJtmi26mmpJixFB/:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$ebcrepg2$chXvAl74WKmpNRiiRtdX0yoeir6O:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$ebcrepg2$I1EW5kXPM6P2W.RGYe.TXToj7Wcs:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$ebcrepg2$0ab7bENLhYzK7QMIbs1KE78haMrK:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$ebcrepg2$LKE8BR6DBB7vxWfyUUaXKEnpdQGT:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$ebcrepg2$1MPX3SIbwOpykqtaWPnKaE5wBeyB:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$eb6qfor3$ejoqIHMPW6jXpMHsVDUweS51PjKp:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$eb6qfor3$pEV4wDdxm5ivRnLZ2ofOv3QuOc3d:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$eb6qfor3$LfSWnrPJ8Ie06/EbeFglo9Ak78SZ:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$eb6qfor3$hNQpEMwbtIgvPEZ11ZlD3wRzJfMv:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$eb6qfor3$tYJPl1mt2ibgT7BKuS4WWJjkh3GZ:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$eb6qfor3$T52nuenHQNK1JzdW45coHRl7APOj:5:0:late*night::
+u6-sha1crypt:$sha1$5000$eb6qfor3$TXQaAncsYq5zW9Lct/AAnCSqNKHn:6:0:::
+u7-sha1crypt:$sha1$5000$eb6qfor3$5mKD3/mlDR5nVZmvoPLhX5lyx2Kv:7:0: ::
+u8-sha1crypt:$sha1$5000$eb6qfor3$.YDA.BV0YJaRXOjmnkCw7iafk6S2:8:0:1::
+u9-sha1crypt:$sha1$5000$eb6qfor3$RvuGDTttOaGlO5xWp1lSaBmt9VDL:9:0:password::
+u10-sha1crypt:$sha1$5000$eb6qfor3$ljBMZh674BaBPs.j1O9tBHF6UZ/n:10:0:test::
+u11-sha1crypt:$sha1$5000$eb6qfor3$2cq5RWAD2cRTEq6hfHBBBh3PTcru:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$eb6qfor3$DBWbd1DanvmmfkAgiuCznnvVSCte:12:0:hello::
+u13-sha1crypt:$sha1$5000$eb6qfor3$PlRpnrWp4ec0PAluCzFH/qdnJ1zs:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$eb6qfor3$mbka9q4Xhuda2loO/EYeAXSHP0BV:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$eb6qfor3$QAkEQAyxRd4xPjaSpoZwBl0F1R1Q:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$eb6qfor3$nScSPp722JqE.VF91SiQttOxuJDv:16:0:±::
+u17-sha1crypt:$sha1$5000$eb6qfor3$UemqHUvEq4dFdy/QI3Xu00joPnBH:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$eb6qfor3$Yuke2EAo./CPoQ3SzBJAHO43feUL:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$eb6qfor3$r/8ZLVlDlCPNBDq7xOG9NioGI8fa:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$eb6qfor3$zg1qnzixAb71j3q2S25PoL4mMXwJ:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$eb6qfor3$YtnEenGTjAdiFT73/o8nct5d1thv:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$eb6qfor3$Pezhv9Hb7qzMmqDw/ue4YlqKrSSd:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$eb6qfor3$mysvAYwEA6HTrMNSLbJLAyE2jnQj:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$eb6qfor3$eVxduEg/MIfTW9DIlfxGdDzdbeyX:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$e23pgn94$rJUkSUYglCZVEWqoGv1xwh770LH4:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$e23pgn94$S0f/QL0P4hp/fUmeo2Lj/Ws/4c9B:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$e23pgn94$XSBYgR63SQYS3QP0PHRjMTtPEuFP:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$e23pgn94$hq.GHrdeEsjBFap4Lp.owAjT6/Aq:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$e23pgn94$dMwSTTwUc1dkZDE8ErDzt50Tv7Rd:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$e23pgn94$aweWXRlGM0.0./3sPwYfatM18ie7:5:0:late*night::
+u6-sha1crypt:$sha1$5000$e23pgn94$xz3PJN6OZ2biX9cgcoYf3Y5hgtID:6:0:::
+u7-sha1crypt:$sha1$5000$e23pgn94$eyg.V248MuVXphgsVJHPN2y.0.UW:7:0: ::
+u8-sha1crypt:$sha1$5000$e23pgn94$OPp8mgNWagAmnIOuR7roLM5ffEqy:8:0:1::
+u9-sha1crypt:$sha1$5000$e23pgn94$k802faxEfmHwJlQ7M9.siNTxEMip:9:0:password::
+u10-sha1crypt:$sha1$5000$e23pgn94$YHj1YtBiZSiWX5h/83r04GhdC25x:10:0:test::
+u11-sha1crypt:$sha1$5000$e23pgn94$/buPnViaEZ3Ol393jhX5biR7jVGd:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$e23pgn94$VveIghowTtcrOM9x1xbN9FaDGhft:12:0:hello::
+u13-sha1crypt:$sha1$5000$e23pgn94$PRWmucEBhjsR7jrqEB4ASfu98HNk:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$e23pgn94$57VsFZLjxfmAdSOKnrGIzlIiWjD0:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$e23pgn94$HhcHUQN228jZxN6xcYSWLOVVCRQz:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$e23pgn94$D3b0iIB83eXUdG5txb1JhBRa8wdz:16:0:±::
+u17-sha1crypt:$sha1$5000$e23pgn94$NXglYVpZX.YHHINCCUHG5v6U4rEe:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$e23pgn94$hYP9c7SlPhr5wP0Yw3cZ/FBHhstP:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$e23pgn94$.sWm9guM0RzIfdday5T3xG1j8Hyd:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$e23pgn94$3IWRGwLqAh6cd1Kd7Tm0Pepmqdss:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$e23pgn94$/e5WOZy9cvLU7zxub6iyNmh.6iq.:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$e23pgn94$WiRB4bBGFeH78rfceSCASrHMpom1:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$e23pgn94$DxLg6gn02sEu4DmXizD.Om.zlWXP:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$e23pgn94$Y.IOjF5jxmJSmsxCTCIrZ8Nhdxmk:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$f2367890$pSKO8wTZYEXPQB.NSrat2kj/dtYN:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$f2367890$KqfIFxfcaXJKyPP4i4.JgTPVGB/k:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$f2367890$rcgls93cF9V4W5IWrB.THJUx4LfJ:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$f2367890$3pq3HOos8trYee5DeIikEqFtLwj4:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$f2367890$KoHHylrM8omCIpyjJ5aOJtoSBBiI:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$f2367890$y/XfK//mR4veaexQT61xBok2ieiY:5:0:late*night::
+u6-sha1crypt:$sha1$5000$f2367890$oxqRzLvbkJWl.4UM5ST4LV4orZze:6:0:::
+u7-sha1crypt:$sha1$5000$f2367890$/Rj6rRXOpKEAgFcXA30zVKMUWMVI:7:0: ::
+u8-sha1crypt:$sha1$5000$f2367890$nQvQXKOBADeFtzgqAKwLKF9tnBUJ:8:0:1::
+u9-sha1crypt:$sha1$5000$f2367890$tgcVpbf3Ssu5c6su6FepSl5a4i6h:9:0:password::
+u10-sha1crypt:$sha1$5000$f2367890$NHzXgplw7EVVL4LeH2E41N8hDKHE:10:0:test::
+u11-sha1crypt:$sha1$5000$f2367890$Dz3J62nWBiNRc06wAMiKd64KIZnm:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$f2367890$MvYybLc3aouecec5nuqkzg7quXaO:12:0:hello::
+u13-sha1crypt:$sha1$5000$f2367890$gCM4lLSoC4vN9bG3rB5uUtJ9NApD:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$f2367890$Kun3X7GQ/vgRWMQqInuy4Ez1LsRP:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$f2367890$m.xGROHnZDjl5xR3Lduqicm/9BiQ:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$f2367890$qtsIEYdneQ9lS8rAfzK4nNtiHNos:16:0:±::
+u17-sha1crypt:$sha1$5000$f2367890$1nqfsIYv/7bNv5jFVWYsbhnJjCo5:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$f2367890$42xfSrAjNI4Te.TNnwh9aVxAjGsL:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$f2367890$oARM.D3ZX6ZkYMLfCYRp6HQ0V7Np:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$f2367890$twhLE4Su2mK8l066491qc9YPSZId:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$f2367890$tJoREyhrnqQzps71KtG7x2CUrxu1:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$f2367890$Wr9yxdRRfu/BI9VojgpvnRjes1H0:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$f2367890$oJBv7V/2G68qjKRlrGb525sfg506:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$f2367890$KpwgL5iDQPpWgbaLRn2o9c5An04T:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$f236a890$S9iPrH2fz4q.SzWXR6gHWjz3iNCr:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$f236a890$A5szooyyTqU9AayzIhq5HIXFzPpU:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$f236a890$yZMLyi1gkqx/ZJ7L20VnJ8XnRFpv:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$f236a890$xptGr264VtSiAbTGw.B0faM/9pLL:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$f236a890$2d20hOttqJLng49OOc/rvFmF6AnA:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$f236a890$oKpFHpvOdZa1a8wH49.NF7Bg5dsB:5:0:late*night::
+u6-sha1crypt:$sha1$5000$f236a890$LExP2f1uqXFBAQF8GEhfhaEqj3xF:6:0:::
+u7-sha1crypt:$sha1$5000$f236a890$cXBW9qjPjlWAQrN1OkVzBDO46yTt:7:0: ::
+u8-sha1crypt:$sha1$5000$f236a890$QbblK.8cIFQvD6eOB3eR0LUX4v3l:8:0:1::
+u9-sha1crypt:$sha1$5000$f236a890$YsT9ssXmPP8jskYVANIJHKEMh2e0:9:0:password::
+u10-sha1crypt:$sha1$5000$f236a890$2mRInIeWlAR91Os8fh8RPgikFBm5:10:0:test::
+u11-sha1crypt:$sha1$5000$f236a890$dJuiMnFS3oeVuLWsj0bwU95Iv8Wx:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$f236a890$Kx34i.Jab7y12GGPXPbyFjXSM6uy:12:0:hello::
+u13-sha1crypt:$sha1$5000$f236a890$13TZRbyYib/4aZWfjEEx7eLVJKuJ:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$f236a890$9qr6VcILQJ1mETkOKreaIeigXE/V:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$f236a890$D3QWm5/PxNWOn/qcBEyUH29w7OAK:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$f236a890$CUA4ydvAWYTjmTkOhY7STdjeM..m:16:0:±::
+u17-sha1crypt:$sha1$5000$f236a890$tCqisG.B4LgQT0K1DTsu5cCPvibT:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$f236a890$ZEwyq82/BpqcYHi8H7h2IEpXvzGP:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$f236a890$Z/.argM4.OXqZ0hCqJSyq1qJM4DN:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$f236a890$Z42IImeMgkrO/bNPXhxgLR4EEhpa:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$f236a890$Sme1o1sd8kgq7plz2ZNl4yL5CQjA:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$f236a890$xMfdr4DKzQM1lcaA0pxxqgLxaSUi:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$f236a890$s7RI2JsGbwnKzvi7rSa73mf0FBtK:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$f236a890$juCVDkFF2iRKvsG7np6TZUJ/2Svq:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb367890$OddRh/6/yuU0yBTNeoqxCnj.qpRb:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb367890$ijs7najZSiIlVmpLTsDXA.EobI7v:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb367890$6dW7mrtlBYrEENRC42q2BN8DaQy2:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb367890$uCDHxJZJBtIBGDDluFi0wvh3AR3I:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb367890$NUxjJoN.nhxTps5TtUED0ZWfzq2s:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb367890$To/ehOBTtMmASMZZxzZs02hFcuIH:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb367890$E7Ttcsb9n/xQo0VTKkSckO3iZzQM:6:0:::
+u7-sha1crypt:$sha1$5000$fb367890$CB79wCrcO1STdHBxKaAYjD04gMSX:7:0: ::
+u8-sha1crypt:$sha1$5000$fb367890$nU/0UKdIP2TAKB56YagbTbO16EbQ:8:0:1::
+u9-sha1crypt:$sha1$5000$fb367890$LQLyXqMfV7Ex5Iyke//F2TGCt99Y:9:0:password::
+u10-sha1crypt:$sha1$5000$fb367890$7VYt89fehM1NtPk3topzQltSaraC:10:0:test::
+u11-sha1crypt:$sha1$5000$fb367890$Khq6D7WC/Athhq3odNJ0k56aXMvM:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb367890$/h/n2EYF0dUmuYCTafI4ubIMADgX:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb367890$xnmOckDfeAwOjI.LCLE3mNFZfZGe:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb367890$FEoIIams8zLCErGcXgonJnElH3QT:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb367890$jCd9KWSQcGPICXd7eVGRYeA5ikya:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb367890$NggcE8Og3x1RpEMVw8ZwLUY/WKen:16:0:±::
+u17-sha1crypt:$sha1$5000$fb367890$gdfBl1mNxthpdNwAJk6e/tUIqY7X:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb367890$iO44zGV/An0mkBLbuNiEu0JdMg1i:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb367890$lhR95hJPpikua3ecKAeKccRehEEU:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb367890$aXQExIlIiYh1XfXcoS9U.PR4/tF1:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb367890$FwtUn0G0nklqon87MRn6WY751GNE:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb367890$kkumnvZvp.Cm0xMYEdcLD4R79PeF:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb367890$g1ibaNxJpvXyUr8k8pq.0nFNSutX:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb367890$VJJe5aOHBitIXKLYDPbtxm3VdqEz:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fbcfrtgy$fRtQGFttS8DX.k0jp35cSNoxnlm7:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fbcfrtgy$OMy4570FqvgJfyGh.gY7NTmqPIxp:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fbcfrtgy$fOnZ3oezX0wHEzSmJmBmVPtsLm9D:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fbcfrtgy$CcxmYr.UrbK9KL0WdDhLY8WE9H2D:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fbcfrtgy$aTKZquurYXocV3NUvRCH1KQPJ8Mr:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fbcfrtgy$WPgPMfZIke76l0kHjuFAHaSCi33c:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fbcfrtgy$gsQp84oDvJdWtIKbNEZ97eKoJX12:6:0:::
+u7-sha1crypt:$sha1$5000$fbcfrtgy$sfFg2CAJb29hBjLCPP2KLHwSl0aL:7:0: ::
+u8-sha1crypt:$sha1$5000$fbcfrtgy$dYOiW71XTBcAsHJwvWiiIhamt84U:8:0:1::
+u9-sha1crypt:$sha1$5000$fbcfrtgy$Y7PUQhaOeXN8pihCxvwESQo0/erz:9:0:password::
+u10-sha1crypt:$sha1$5000$fbcfrtgy$HZvziMuMWAJS32xvZ.FYiu/yzjbj:10:0:test::
+u11-sha1crypt:$sha1$5000$fbcfrtgy$XS456it4ZCf7lC8l0a4b7SfGQgJV:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fbcfrtgy$4NiKQKnJfyJ7lR6JqoPOmYJoOBs1:12:0:hello::
+u13-sha1crypt:$sha1$5000$fbcfrtgy$YVjfCDdzfBtLdtSgalYqnb6ii4Ro:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fbcfrtgy$ZhTpaV0VEYIQOyE.WOpeWI.VJnpB:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fbcfrtgy$GtE4jdjvZAWI.GFKBEW6CYkHNMJg:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fbcfrtgy$aop03b10pTcOSsDZMMb7E/dC9Myb:16:0:±::
+u17-sha1crypt:$sha1$5000$fbcfrtgy$8XHFiW0GR/ZQkP85cGjE8Q1K3dMK:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fbcfrtgy$0GJ15xPwSoWjCvMO5l5zbcCEBgP1:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fbcfrtgy$OWDpEUEsswFpj6F1dqRvwbgdIv1E:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fbcfrtgy$fGLxTBmr5BcyCKwBSS4iZRNCpj3g:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fbcfrtgy$zSm9GHionMWxG3.iT4V.juHhjMd/:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fbcfrtgy$np7tGHjAbgt7x92NZfTcTybNYzHp:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fbcfrtgy$ulcbj25eWM3nv3GEIXkX/XYzSGJZ:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fbcfrtgy$sqZhZW1tbdyp0zi5EHOMrkM0qG7P:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb6321rg$vrAKjCe7F/epdkFiGr4X9Ki7MBfX:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb6321rg$w1oje/MzWEyriPuc8WpjVMX1zuS8:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb6321rg$Q2uNxn764dfKQwWxHyWaprSYbVJT:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb6321rg$SXmSGNZb/PEDFQJInFsnC5lAvV7s:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb6321rg$TwVqI/WNH0wtN5B2IshI9jVsOXax:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb6321rg$mzJSUnynWZ5GYwV2ssrdP3t9t7Vz:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb6321rg$ugDTUWF6MWeMPbTVsojg8kQ7wplp:6:0:::
+u7-sha1crypt:$sha1$5000$fb6321rg$I744IQJMdef5XoIXAklzoGLVM6G/:7:0: ::
+u8-sha1crypt:$sha1$5000$fb6321rg$UDWu0IGXbYuNVAS3PK3QcdBLe51r:8:0:1::
+u9-sha1crypt:$sha1$5000$fb6321rg$uXCZGu7VU1jONCUhsZSqenDLICtV:9:0:password::
+u10-sha1crypt:$sha1$5000$fb6321rg$w4XPqx0hXYKWWachsG.mutuViJJV:10:0:test::
+u11-sha1crypt:$sha1$5000$fb6321rg$qe61c3qEZKjZ/SRkwMP64FZ5Aw11:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb6321rg$m9d9A6x5rQGxrKe9QjGNNmTwiMUO:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb6321rg$usaTPB0TRsvwxTDabKk0xAuJylf7:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb6321rg$vYFiXtJzL2gGapRm8zLF4zgltCzJ:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb6321rg$3Dd8/aQZ1B60NX.0gmbdG81fewnz:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb6321rg$hAHNw/vlQ0psjPbxdvy9prDSZpJo:16:0:±::
+u17-sha1crypt:$sha1$5000$fb6321rg$8lUqLzKT2zdeIj47SaqSM5FDOXyj:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb6321rg$Nc/R8YDMlzqHVTfcH3ys6BqpoNRe:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb6321rg$o4YLcgjJFNlqxNjDRy0AtraXSFVS:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb6321rg$xD3aI5hUJQcTIMCKwACwn6swMu/f:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb6321rg$Y/P5LPRYG3JAiZffJD6TkmUJRcL9:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb6321rg$ax05nKpRlNXMT/v1T1e9Q6RfQIQf:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb6321rg$NEiJq8mfLUleu1sTyQ9fkKetKJpV:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb6321rg$05kek6DkVzRWTY5M4Zw3ouY5faKH:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$f23xyvw0$rXEePlRrrgrHk1vuWiAnkjj3dSPh:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$f23xyvw0$cQ3lcDPnDpCkchZ6vuxRy4l02DPJ:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$f23xyvw0$jVyGSgen1Lxxgj44.OnI84IJ9tB/:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$f23xyvw0$a9ea3hsvGwS9VLVSmBPn.OLaO484:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$f23xyvw0$oOf5FHKZ78HCiz6BvrsXh0kqSo8.:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$f23xyvw0$8O7U2pP09hF.VNCNCqIJSfch.G9c:5:0:late*night::
+u6-sha1crypt:$sha1$5000$f23xyvw0$CI3gZbDHSN0KtycR153.86RDkakS:6:0:::
+u7-sha1crypt:$sha1$5000$f23xyvw0$i1jQgocjUS8YoNT7RXRYSwh0mVUk:7:0: ::
+u8-sha1crypt:$sha1$5000$f23xyvw0$0gfwxjF6ABe/ugjBw0K3WNdhm5AD:8:0:1::
+u9-sha1crypt:$sha1$5000$f23xyvw0$Dmwvzp0YclzVOZ.OIvS02HI.jfc0:9:0:password::
+u10-sha1crypt:$sha1$5000$f23xyvw0$yJ8v1Ql89j2uAWVhD.pUwICkgXYQ:10:0:test::
+u11-sha1crypt:$sha1$5000$f23xyvw0$8/iwbDecMu6iplbsPqyGpigLmbd/:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$f23xyvw0$Pib9TK/EVl0g9XHWtcpkrivgikj2:12:0:hello::
+u13-sha1crypt:$sha1$5000$f23xyvw0$.IhdGPsvD9Y6B71iy9HUUuOFa4Xl:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$f23xyvw0$qFV9YRfsAyvBrtkvFUwh8R.aiwDT:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$f23xyvw0$F8jxwZQQwBL9xP6Swn3K/po8qP7m:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$f23xyvw0$C8vrAXpGQinhXs4CJh.MoZC5Tb/v:16:0:±::
+u17-sha1crypt:$sha1$5000$f23xyvw0$1g8AHxsyO1XHKLaFbDOJE3iQkAO3:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$f23xyvw0$e3ZGn6rYoAb2/V9JZqdFYYIQ8RjQ:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$f23xyvw0$6797g3i0i7b2Wwpq5XaWUBjkYY0.:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$f23xyvw0$gG9fwe08tmQDFFTLCyySBv1TgSJ5:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$f23xyvw0$ei5B2sn4.dE6fAewgdARMOqSocPt:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$f23xyvw0$zMUNaBHgfGEuXK0YlrNiIZyFaFmC:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$f23xyvw0$4t1h691tuFibV0Q5NGWvhHpjoSgK:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$f23xyvw0$xjbjoN.80In3gDx.LaVRizUbyiKc:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb3wzux0$ohJFzKXZ/dryWUMnsZyiVU1k3ViY:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb3wzux0$JIf0c8roJb38nWUrq3BclvX28go8:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb3wzux0$ujS5TUJ4ztbwvJuImZImidAHRUfy:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb3wzux0$2NtyIRftqhhc7h1tVYr940gJvHOT:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb3wzux0$ADh..lk6.2c.bfc8fdtWeVi20I6i:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb3wzux0$SoX4hjAbjTl.ZKxXduraxsZkO2Rb:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb3wzux0$BzBlDaNPhfGCAuEheteeo8O62L9k:6:0:::
+u7-sha1crypt:$sha1$5000$fb3wzux0$zknOLBo9NShyeFyLE5dMFo7PflpG:7:0: ::
+u8-sha1crypt:$sha1$5000$fb3wzux0$HcGbJu190m3s1KCX2beh6.Z/RSc6:8:0:1::
+u9-sha1crypt:$sha1$5000$fb3wzux0$KDLWkM3nVYWTn1LX5mE61o6V7OZm:9:0:password::
+u10-sha1crypt:$sha1$5000$fb3wzux0$ejBQFTq6eG19zQd7CSUmVSzik/pL:10:0:test::
+u11-sha1crypt:$sha1$5000$fb3wzux0$iE83Vq9m0H7w.HnninQEvsGrIkLq:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb3wzux0$axSivRR6NtEktx3vF9fuR6yhtCsH:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb3wzux0$3n7ubfQrv/k349rz9iDo8SxhcHEG:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb3wzux0$gztQhk9USkyScFkN96KrZTi.ntui:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb3wzux0$fZ0zj.olap8ZHFon4uDJMTG1wX4N:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb3wzux0$ihs0Y6c6.dSwL8hE0hxVXht49kDs:16:0:±::
+u17-sha1crypt:$sha1$5000$fb3wzux0$3DxE1VghnxCj/nxOWP35K1gg1BVk:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb3wzux0$hDjFzyYrUkmA5Qf3q49ufvOT4/kn:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb3wzux0$Wntrt6ri4QK8C8pXA6aqWW2nTbfe:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb3wzux0$QSUn6lyopcUjRI2RvFVg58jWCHjc:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb3wzux0$41H1bPJ5BEh19/XPkilalNGzBMcW:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb3wzux0$wKacE0O3xZ.NfjbMfm5d/WTCWKNv:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb3wzux0$tM4Lk6IAe7tumfR3w2f.LHqeQhZu:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb3wzux0$Pfj6vkG.F6/ZwCTidZl4Gs/BWkDU:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fbcvatyy$ApSRjz5Ur0wwPQNl/CRGc9G6pZyV:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fbcvatyy$BIJI4fFkLMWDUB2Mx4FxPyNxFlC5:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fbcvatyy$tJVsA8y.osIdXw33g17D4lidWjO8:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fbcvatyy$alYGTmJPvx9hevB0rI9LUN5W8h80:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fbcvatyy$bpyrH1vMxdmCVtU9f6Abm/tbTfgI:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fbcvatyy$g3BuMPs.Qf5rlr9lmDsFE68kc1mB:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fbcvatyy$L7baEv/keMPuNvmWMez2w9FiOOiD:6:0:::
+u7-sha1crypt:$sha1$5000$fbcvatyy$.UMz4CPGhke.5fBvLgr3qbJRxD/B:7:0: ::
+u8-sha1crypt:$sha1$5000$fbcvatyy$inLlKpk341rdCbGAOesvUfpg3bI5:8:0:1::
+u9-sha1crypt:$sha1$5000$fbcvatyy$I2JCK2L5DFCmpLgTOD2InYt1t6WI:9:0:password::
+u10-sha1crypt:$sha1$5000$fbcvatyy$0cDUyOKizyVEzKnoy6.X.mbG.8Cq:10:0:test::
+u11-sha1crypt:$sha1$5000$fbcvatyy$dc/wP580caTpGWFGk.gjkXphkflv:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fbcvatyy$cUO49b/7HpbnROtVLE926BjDNkIy:12:0:hello::
+u13-sha1crypt:$sha1$5000$fbcvatyy$h0d/GvKZfk3Exm.Ceo1pSOZL4AA3:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fbcvatyy$DL09PlZw15tJaFhQDF82Z327gImE:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fbcvatyy$Wl3BXl3HPCjvLZtLYbSD/BEqocya:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fbcvatyy$XAZmgWauzuKCt3Z7fIIcRQjg8rS8:16:0:±::
+u17-sha1crypt:$sha1$5000$fbcvatyy$hLbpxx5MIHc3S/jRmBlmsQ7oKL6v:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fbcvatyy$HJWRSThhBAPlZ5PdLrLp8lWwqJK/:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fbcvatyy$Hogz3EV.hhz6zfACfwCcK.HAyfmk:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fbcvatyy$ookEkwRYe01Z0Zqa99sEvnk61pUm:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fbcvatyy$lQNjeohU2CM7IMriHbroYdSix4nE:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fbcvatyy$4SDGtTdho2a3xYhrNvzJDGxx6Voh:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fbcvatyy$1RMisKMK4sszdIQYZ2FhgXSlt4tS:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fbcvatyy$NYHz3tNcmn2SzBW6LrLjDV.2xD7v:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb6ubszg$kPEJixMDBJAjllNal7irO3M0JhDB:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb6ubszg$DUoxdwvTQLQKh9qs4wOyYEQ8rDnI:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb6ubszg$rNW6jAANT/ABv5MiJjdvswMgWwgl:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb6ubszg$oazv35Jdu7Kxy0pIQsqHVH5KjH25:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb6ubszg$PcXHK8p3zVKVEyqE9aBY/YaIChki:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb6ubszg$ZFDN8YOTRqSzA8.tcRdsHrvKYVl3:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb6ubszg$P4hZmivD2cpWXCCFKac98Y8IKiiO:6:0:::
+u7-sha1crypt:$sha1$5000$fb6ubszg$IwNJQx5Mhp19PWvar.IE2.iFJFj/:7:0: ::
+u8-sha1crypt:$sha1$5000$fb6ubszg$3wl.C6YDNGUfEhVrkN7tAQfU1QWH:8:0:1::
+u9-sha1crypt:$sha1$5000$fb6ubszg$W.X/HJn3qu755LoSXm0RDHct4gmE:9:0:password::
+u10-sha1crypt:$sha1$5000$fb6ubszg$Cqr7KS7XxHIQDHQv1yw9jKcnbUC7:10:0:test::
+u11-sha1crypt:$sha1$5000$fb6ubszg$M8TT/P5BPrv96dWEroyC3lUTxpdL:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb6ubszg$PDPvp6yDA6j.iNm4H7NiLxZLhvdv:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb6ubszg$CTd5xFCwV69PBxs5RkJsbwLrSoRw:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb6ubszg$Eu1UIg4qebV6SZLqeoHmal1Y.mbt:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb6ubszg$EOP88tJCxzkbKcYLexvne0H0dkpj:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb6ubszg$Pmp1N/Xc/SbeBhHY4UamCB/ADU6z:16:0:±::
+u17-sha1crypt:$sha1$5000$fb6ubszg$cmYtLU7u3gbO2h6iCJ3nDoWkaPXq:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb6ubszg$vo.k0joJgyWX3cj/e0BAonLD.rMX:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb6ubszg$IxTcqcxiAHZnlJd0Xz7faPVhVO6V:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb6ubszg$iWzf.i5RO9RhA6m8Y23pP0xTjG8g:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb6ubszg$KSkkMyUQdd/ozTDwgqWiTO691HHV:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb6ubszg$Wmh49GRjSSoJaVTDDZRci6iMOo1a:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb6ubszg$rnHpzdn9R0ryIn.i2a1Io/PfJXJw:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb6ubszg$W1aKao1wKEgis2KN63CQnXmJOlZD:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$f23tcr90$E9xcNBXDzTp6sXJdhY2XBhGkXWh4:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$f23tcr90$5Kk9XZePBuYhaVOnwi4sBbkLj2pg:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$f23tcr90$76TUItyXm4me7YSy8cGiRA5e/yvh:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$f23tcr90$SixnwUmVTpNupZ8mT2wzifhIDPI4:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$f23tcr90$3w5ut1DghSS3Npm1hrATwwbccfyl:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$f23tcr90$O12Z9a.YW03m6tOCa/c8LpAEIyqv:5:0:late*night::
+u6-sha1crypt:$sha1$5000$f23tcr90$T5w1GhiYfDh1W.QYuVQf7lzXDsPp:6:0:::
+u7-sha1crypt:$sha1$5000$f23tcr90$z/19WobQHlX26yoTusg.DDVxgE13:7:0: ::
+u8-sha1crypt:$sha1$5000$f23tcr90$ErA/kp./34h7VipvvhgDXKFf2cuA:8:0:1::
+u9-sha1crypt:$sha1$5000$f23tcr90$V8Kt/M4i4pwSWPu2h/52p/aRZbbd:9:0:password::
+u10-sha1crypt:$sha1$5000$f23tcr90$DeBue.wiWMSOR0hJjb.d63JQcfTY:10:0:test::
+u11-sha1crypt:$sha1$5000$f23tcr90$aKZ/PA4YKWiVq/MK8KgYR3dT4UAr:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$f23tcr90$uQTmk.QWCyd9yRbHfA.9fqJQ7LV4:12:0:hello::
+u13-sha1crypt:$sha1$5000$f23tcr90$Kvb6mrFlBEpKK5CkMhUz6AHxWAp0:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$f23tcr90$eg.DKMHOLmiz6t1YT6xoK6N.wYYU:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$f23tcr90$qY48ADZOeZlzwXY.oS51gktMckwe:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$f23tcr90$jlCSjaDONPxr3uNuuakqMRess3Ry:16:0:±::
+u17-sha1crypt:$sha1$5000$f23tcr90$x/QVfMMYNkD9p/QIJHMTpb4x3CV2:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$f23tcr90$ztIYHqTkDq6XQIcoKAzL2DFbFmUa:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$f23tcr90$AV4MI3l/T2Ykl6DqErkvseXLUNi6:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$f23tcr90$ZrNd8PoQNO/kbsuabNfTKh9pZuHs:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$f23tcr90$iFLYoUQA.aC7ChNva/w5rCtIFmnD:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$f23tcr90$6mqFuxVzTwvTN7TDAXZvATgc536H:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$f23tcr90$ShGJgxg87R2xF3vklft5XQjnJJtY:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$f23tcr90$wYAZK2vVORr5cCpikB/dDEPeIScL:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb3sdq91$pdESnZO/DyKoqXtwKqZPXHH0tFKW:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb3sdq91$.2.c4cR9eHMwKm3DRHw1A8k7UG6r:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb3sdq91$n9jCk/OAildmfdW9lAr3YdS5uwsw:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb3sdq91$erWDJoq9r21/Xz/94E4eoV.HysnF:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb3sdq91$YIKdiF.rItPpx0qPRh19LhPLZGk7:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb3sdq91$vjsc39dCVPUJtiSKvszjJxzAXOr7:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb3sdq91$f1xi1nu4cxRtUq8xSnpIREXVvypm:6:0:::
+u7-sha1crypt:$sha1$5000$fb3sdq91$3/R7PHzjkM3PHDleodZMbdYgZEby:7:0: ::
+u8-sha1crypt:$sha1$5000$fb3sdq91$x2plnJUPFYYggW0kVG/TJdTw55Mb:8:0:1::
+u9-sha1crypt:$sha1$5000$fb3sdq91$FWXickMVjUcdXIbYjiTD6GRcuSHZ:9:0:password::
+u10-sha1crypt:$sha1$5000$fb3sdq91$Ml7gybXuNwrb8cSQ/G90XBVaki6U:10:0:test::
+u11-sha1crypt:$sha1$5000$fb3sdq91$z2ZIn6FQ32l8/t2OFnAOm1r7G3y0:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb3sdq91$j8HR9dtcEENbhuDVlQPimQwgpVI9:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb3sdq91$NLDqBj73Id/TBWh2WicevejTMDhY:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb3sdq91$OaxNeqYmcfDWS3CYDqnzUeIhbZsE:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb3sdq91$fdcCHc8rM2weLAsBva.uSIfcuEAL:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb3sdq91$SD2RzgzNbkNEqIl5CilvTq1coZbp:16:0:±::
+u17-sha1crypt:$sha1$5000$fb3sdq91$RyWJGKIk8bcwDOsXPHv8ccNfK3FF:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb3sdq91$tCT8VnhHaF9YaFVxjTJy1vBedcJX:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb3sdq91$9fBf7vJw7C2IN.vNMCSLsEBGg0qW:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb3sdq91$35Xlk7j5CV/Bn4U3JCjQN4Tw4HtH:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb3sdq91$u0cibm3lH97dKiP/YvWSha7OuehG:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb3sdq91$edQucrhDjGhpkln8r/t1Q/Igd1OW:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb3sdq91$oFfRyan.1OgqzxAezHrSZWDeqBXs:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb3sdq91$mwWT/4rCLSXD32rGK3.vjQSbyBp3:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fbcrepg2$LELTMhYKvrsmMFl1atQZO4pMxBiN:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fbcrepg2$c2Ge3N/Oyk3UqSjI/MbVJMu5dOGY:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fbcrepg2$QYL4RV7DO.U.RxMnrRdOX3jsNAHq:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fbcrepg2$lYXzuqCeqXCnVR12lQSIVkHWyDEu:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fbcrepg2$7ylHEGGc5T54h8eE7DI1G9UID7eC:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fbcrepg2$q4F/0E8rKLLwAAtvegAqa7Y336tF:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fbcrepg2$ofTCSlLVXIglQFvej9AAa.jdtUpj:6:0:::
+u7-sha1crypt:$sha1$5000$fbcrepg2$av8/UrhnCzOGqJ9tpiMMerna26kD:7:0: ::
+u8-sha1crypt:$sha1$5000$fbcrepg2$cvTtuF1VOCkJkdfR0UGC6Y1/ZTED:8:0:1::
+u9-sha1crypt:$sha1$5000$fbcrepg2$X6gihwTISY21LPwfplkt.QD3uqG5:9:0:password::
+u10-sha1crypt:$sha1$5000$fbcrepg2$40SOQsv8XdZMURXkDNIoGQ7mdNi.:10:0:test::
+u11-sha1crypt:$sha1$5000$fbcrepg2$Y6AlqRH08/zZZR1UK0NHUH/F2nzQ:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fbcrepg2$I8gj5/tiYa3XkFcevy6SubgGySdb:12:0:hello::
+u13-sha1crypt:$sha1$5000$fbcrepg2$/SYsAs7.KOBNhaSr0UP7mfAuWjI0:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fbcrepg2$YPBUhKb3cpsF.xfVngEKwUqW.qp0:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fbcrepg2$VX7tn8RsJwZWAX51Phz18MT6YnWH:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fbcrepg2$YQdDwlrHIrvZm7jgpaDRBez2y.iq:16:0:±::
+u17-sha1crypt:$sha1$5000$fbcrepg2$GTQktlRr2/tfSqc.nyHaPw4D/5Gl:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fbcrepg2$jIEdgwvJ64XFdPMoW2BbR0NTZiWE:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fbcrepg2$Z4sMO.mlnPr.bot5UD8mU/1pXdjz:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fbcrepg2$nEO93OuG7hWWKOwfJuJa4HZIh2e2:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fbcrepg2$KEZJfLjGY/d0V7Zga.vPO.btK39V:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fbcrepg2$AcDW36AUaDvj13EHVAFuYMc36aiM:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fbcrepg2$rUyRVu12z.VucxH0WqcMk1PxrpVU:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fbcrepg2$/.nuPBnfisbRVDGseSWDgJxLfbcd:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb6qfor3$EQBeIJFeGpbLORAzb1qE61igcKiS:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb6qfor3$SjlSCUQGrWLoxKSnl0SZDG20vBrQ:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb6qfor3$RvWfo/pAj0s2Eyl8Xx4RBznGiWNB:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb6qfor3$e5FLHcie2qKDflod0pzA8f7.RRwq:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb6qfor3$r/1fVUboAfLOABFB8eS04Y9qgixF:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb6qfor3$fLa38oZduKGiIHAzJDpeCJteKM8V:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb6qfor3$vOJUcAZwQiM3tKePyTPL5Sg1/0Pt:6:0:::
+u7-sha1crypt:$sha1$5000$fb6qfor3$WVApY0ePrpLk6WuQTYeVSQU4IHSb:7:0: ::
+u8-sha1crypt:$sha1$5000$fb6qfor3$B3i4HJXE7EavSpY/Dx4nDtlNOc5B:8:0:1::
+u9-sha1crypt:$sha1$5000$fb6qfor3$0ggc4AdPTqVgoUQfdUvwAr3CWyGF:9:0:password::
+u10-sha1crypt:$sha1$5000$fb6qfor3$sErWZixFkMnpITBoxaTZz7VX9m/X:10:0:test::
+u11-sha1crypt:$sha1$5000$fb6qfor3$bJ8m9GYlvmBVBc3FMUFhxtvt6fjR:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb6qfor3$thc461OOKDssaWAKzM1.xsFlOorn:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb6qfor3$F6ECC0SYgNmt7bQb04n/I3j/t6PH:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb6qfor3$Mk22PxLzB.Z5bOP5YHbKOLh0E6Cl:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb6qfor3$ZkQRnmosuIEh1DCMUAAcNWU/pF30:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb6qfor3$eTM0y/k8RCI.TxXtLN042/YD720.:16:0:±::
+u17-sha1crypt:$sha1$5000$fb6qfor3$gqV3A20k4.5Medy0.umfUcUOKUrd:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb6qfor3$OkXpMtfInvyTRAvS5h5tVO9NKvIb:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb6qfor3$E1CI4.1neiex.G9ynGOBMPX2EBY2:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb6qfor3$Z6CGzrK2ZAocZa2XWRC58q8X63ag:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb6qfor3$qo2J3RFWHtqusW8wrPuKltHxINrF:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb6qfor3$.sRwp5mnjXOYWNv.IElNChiJlXmk:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb6qfor3$hd/dzcqZ9SaZaUjX2UG2dj/OYiLc:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb6qfor3$eZ8dFW6kpudUBHIbLqDnSyauY8uL:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$f23pgn94$fHwhmN.2Abun4pAUoBy8g2lbrybd:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$f23pgn94$ZkhZ.KQjKx6qNiEJoq9el5WGKWAY:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$f23pgn94$fB1j.TY.rOTwilveMbgBACxTwCbQ:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$f23pgn94$nnlWy0NCPDv4cQA93YdR./N39OLX:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$f23pgn94$rqP/U.FJgP3G4NQi.bXhVOoo3o0N:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$f23pgn94$5MkLh2m13q30vFXVP51AetXKT7be:5:0:late*night::
+u6-sha1crypt:$sha1$5000$f23pgn94$s.cGkDzcaElBEUBSx8WOywKi8ZPD:6:0:::
+u7-sha1crypt:$sha1$5000$f23pgn94$xrdFBRmMDQD3CSope298zMQT4lAg:7:0: ::
+u8-sha1crypt:$sha1$5000$f23pgn94$4zUDAwtB8uYCgLYExJViQZG7y6hY:8:0:1::
+u9-sha1crypt:$sha1$5000$f23pgn94$gP/VMF/NpC9AdswCLbCuBXbS2Sw5:9:0:password::
+u10-sha1crypt:$sha1$5000$f23pgn94$KvsfjA8yCEZ0Q6zdEA1vwhbVjqKu:10:0:test::
+u11-sha1crypt:$sha1$5000$f23pgn94$JyhWyO7DtC.3IWcl2777lLU68mek:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$f23pgn94$CrFqww3S.L6aE4uG7WFsuyKuNXdP:12:0:hello::
+u13-sha1crypt:$sha1$5000$f23pgn94$GV1xYpUayeud7CTzvtEwNr8HozZE:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$f23pgn94$VM2ZMfsZLMUUHneehXnXp4YYI4kW:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$f23pgn94$ycwve1MYD632urNA6q3GZ1bFjLr3:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$f23pgn94$Prsv7uYhxMjJ12S1n2VAycJyjHQi:16:0:±::
+u17-sha1crypt:$sha1$5000$f23pgn94$hMzVVB2M0i2nISXIiFjIO/We5OUh:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$f23pgn94$.4JJ//RZC69N2TMpyom9esQdJ/eT:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$f23pgn94$3/Cw7UPBiF0oqrGrUw8qW5Fykn5J:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$f23pgn94$0YbZPFcoPTwaGGx/EiwPpSoEKmpT:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$f23pgn94$Ag0RzlkQfTt7cVaBTX0lglhsopCo:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$f23pgn94$F1u5DZclQGZ6rcj6rL.hcnb0TUCS:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$f23pgn94$SZMlLzkUvl7C3pklHq/C573W31qQ:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$f23pgn94$3CIytK8GhQHvSq93Z7nRW7WotfZv:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb3ohm95$3AUIzEF.r6iq1y5EiWwe5s9WGJOR:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb3ohm95$FVT.f0fPJnu8sPFWNRHYNfpo/.Bq:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb3ohm95$dmIajKntc7qcZSNozVzwGiFiN0tj:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb3ohm95$V7ZlnQIXO01bqGRTtinw8KEF4zFE:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb3ohm95$POss9qSeNGgjCcdzRHpp3yopXDPf:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb3ohm95$4sA0qhv6CdRB6kyxIPe80uaS62J.:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb3ohm95$cZxJ9XyPVH4Qy9vItC6mbmkvL3dA:6:0:::
+u7-sha1crypt:$sha1$5000$fb3ohm95$JB3trVmmZ/ge7iV5Jo1ZRHxIYXCj:7:0: ::
+u8-sha1crypt:$sha1$5000$fb3ohm95$.YUm7cSg77UBaSR2yCDAC6vr8r2I:8:0:1::
+u9-sha1crypt:$sha1$5000$fb3ohm95$7RSrwoyeztmTqfrD11aArgwNRnVG:9:0:password::
+u10-sha1crypt:$sha1$5000$fb3ohm95$4174U1KC7F.KOCng0NKRM1FOMEUI:10:0:test::
+u11-sha1crypt:$sha1$5000$fb3ohm95$K7Th0uZ7IiZCiZB8/.W8qm4rpW7f:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb3ohm95$xJ8v0mVXa2NSnQ1Yv02UgyCSgffN:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb3ohm95$eLSBrGLDOPPeYSGlHF7IfYhHpIbr:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb3ohm95$BVPtM6aWAJJ6ccRK3KhIOZwzZ5I.:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb3ohm95$GGht7JCs4yc4XqiUnjmOSUkqa96Y:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb3ohm95$EeNn/oIKGVVDzuqMlUvsaTL0BTPr:16:0:±::
+u17-sha1crypt:$sha1$5000$fb3ohm95$Hn4k0tTDOZFeaEA5D91PMou9.fpv:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb3ohm95$Rx4AD6B0wD6oFVKArk9KmcL/kkbG:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb3ohm95$wJ2BHLheaD1rCQkKp2l.DMQZoEfZ:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb3ohm95$3.KzX9wHVrxJDt9OOqdBktv1xnfz:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb3ohm95$L9GvX98Yc3fGQHk5PoHB2JVkhD4N:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb3ohm95$NEKj0XHhw9TON8gecR6qOD7bx0W2:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb3ohm95$RsOKKL8MbONN.uBjphX/QXCWNRoG:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb3ohm95$4.r1/P9oCbtYwyq4ZJpp95iHDsm1:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fbcnilg6$9tpB1L6onGa11zqMFfHiNJy0rQ5B:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fbcnilg6$lUOixVg2liApwwdD/QW743GCtC3N:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fbcnilg6$TXUXdLEX67refpgPkv7wxBAICqhX:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fbcnilg6$TFcSRfGyJ72E2cezwikuecCfuV8N:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fbcnilg6$vCecN8ZDl7IS0/RTHm2AxgZaW0IZ:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fbcnilg6$IWKLSiv0xf21wff7h1PW0gQERV4C:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fbcnilg6$JapYbswUs4VmnFDXw9grG7XKHyNF:6:0:::
+u7-sha1crypt:$sha1$5000$fbcnilg6$V3IEAhHmzWn96luWFfwBNbtZ/V/c:7:0: ::
+u8-sha1crypt:$sha1$5000$fbcnilg6$BWG1TEgJ2uHl0/0XCGSXeR22BgFp:8:0:1::
+u9-sha1crypt:$sha1$5000$fbcnilg6$r7090l7SLt.gwzj/L0E/ucsRgUGi:9:0:password::
+u10-sha1crypt:$sha1$5000$fbcnilg6$.pu.3A2JtlkQep06okHdGDeo1IiK:10:0:test::
+u11-sha1crypt:$sha1$5000$fbcnilg6$l0tyr7xUsYkAaIaB5cQkg/hjvfId:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fbcnilg6$pA6nSKfcGNFLe7jYQsW4C4NnAHc/:12:0:hello::
+u13-sha1crypt:$sha1$5000$fbcnilg6$ODDwpTUpu.1d5CM1uxEQ4EqckfOP:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fbcnilg6$SG7f/Hbqnlr5jF/81hxyKbHbgaTI:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fbcnilg6$hEWYEHtv.8q/ABwVLG9a5Oc5G8i8:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fbcnilg6$Zyayvim8QT38nPKWGoj5yewJuTAK:16:0:±::
+u17-sha1crypt:$sha1$5000$fbcnilg6$ypotcnsERmCZFRMSdjDzyJEebXH7:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fbcnilg6$GhcdBSnDnV4MJ4BBeUOAzqSUaGXu:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fbcnilg6$pMEpqMJWz4sseAdtociHQYHMJT6b:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fbcnilg6$GJLa3HfsEoRKjwWk.g5YG2VcNKTV:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fbcnilg6$IdLaWJwRkFVfaOgCv0uGy8oaNC4p:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fbcnilg6$4FzeiZ0L/Fieb7L9em.x3Y0QfGCL:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fbcnilg6$Qa3l8Ti3oQXnfuw8YNTx0MMX2jK8:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fbcnilg6$ZgJ2JpvobdFuqJpj9AzsdOYyFIdk:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb6mjkr7$oERPz9RRHoytCAVc1EdSz0o1hN6r:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb6mjkr7$Cs9YYwPsyZ8tSIag9k0NCcrfESuC:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb6mjkr7$jKp0Vc1tBKSk1DH3b6KMBorL9cSp:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb6mjkr7$04ImTw/fQ7CGGQaxu.anafp97n19:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb6mjkr7$cJD.45.2KH3d66IDahRyzX7u.oTz:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb6mjkr7$o0U5Pa8nCHh2cG4DgGxe0qURSsdO:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb6mjkr7$xEpPR85fWtYMY9wtZjIy4Pzljhz.:6:0:::
+u7-sha1crypt:$sha1$5000$fb6mjkr7$sDPakwZ.puYO6lxJvw6YR5IqNiJt:7:0: ::
+u8-sha1crypt:$sha1$5000$fb6mjkr7$YFQWhAr5HOQuy45v6NG0Eu2z70Eo:8:0:1::
+u9-sha1crypt:$sha1$5000$fb6mjkr7$xHMnLUnJUnBDxEcrtLIfIaGaBHLl:9:0:password::
+u10-sha1crypt:$sha1$5000$fb6mjkr7$1kRKcgtrRtszLC59cEME7Y6qNNXK:10:0:test::
+u11-sha1crypt:$sha1$5000$fb6mjkr7$XkECvsnzsTtutZdGZ8DAoSlgtE5X:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb6mjkr7$99Vc7cSb7U8PGxHT9CIuebkqWqJX:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb6mjkr7$hEHmIEA98RLUo/AxPN43yecZ7XsC:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb6mjkr7$IvE9pFN6cVn8oWAilBLfynxgh.nB:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb6mjkr7$8J6ftlfVVznzWoDNm8jqIShcgSx3:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb6mjkr7$QBUrAxQNcE24Qj8oVJjaDBTVSX.1:16:0:±::
+u17-sha1crypt:$sha1$5000$fb6mjkr7$A.H4ecENuizGAEYquNc9s5x6NMl5:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb6mjkr7$E76eOhZKMF7wleG0Li9M3Hd5c4Hu:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb6mjkr7$Uw3gTKM7Z1RdZvMxdg1iqoBEkC1p:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb6mjkr7$sN.T.5528n.73xOL4EJKyWHwwVjR:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb6mjkr7$LFIVOv1ueSgB9R5KFdPrYpas3ClH:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb6mjkr7$4zyqVujXJKyAWEkKWsyNaia7PnSo:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb6mjkr7$YXKKn2b559SFAxAqx1owbeSaNhc3:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb6mjkr7$KorZo81SwZVNZAB2/qUaBZXLLivW:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$f2367890$pSKO8wTZYEXPQB.NSrat2kj/dtYN:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$f2367890$KqfIFxfcaXJKyPP4i4.JgTPVGB/k:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$f2367890$rcgls93cF9V4W5IWrB.THJUx4LfJ:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$f2367890$3pq3HOos8trYee5DeIikEqFtLwj4:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$f2367890$KoHHylrM8omCIpyjJ5aOJtoSBBiI:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$f2367890$y/XfK//mR4veaexQT61xBok2ieiY:5:0:late*night::
+u6-sha1crypt:$sha1$5000$f2367890$oxqRzLvbkJWl.4UM5ST4LV4orZze:6:0:::
+u7-sha1crypt:$sha1$5000$f2367890$/Rj6rRXOpKEAgFcXA30zVKMUWMVI:7:0: ::
+u8-sha1crypt:$sha1$5000$f2367890$nQvQXKOBADeFtzgqAKwLKF9tnBUJ:8:0:1::
+u9-sha1crypt:$sha1$5000$f2367890$tgcVpbf3Ssu5c6su6FepSl5a4i6h:9:0:password::
+u10-sha1crypt:$sha1$5000$f2367890$NHzXgplw7EVVL4LeH2E41N8hDKHE:10:0:test::
+u11-sha1crypt:$sha1$5000$f2367890$Dz3J62nWBiNRc06wAMiKd64KIZnm:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$f2367890$MvYybLc3aouecec5nuqkzg7quXaO:12:0:hello::
+u13-sha1crypt:$sha1$5000$f2367890$gCM4lLSoC4vN9bG3rB5uUtJ9NApD:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$f2367890$Kun3X7GQ/vgRWMQqInuy4Ez1LsRP:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$f2367890$m.xGROHnZDjl5xR3Lduqicm/9BiQ:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$f2367890$qtsIEYdneQ9lS8rAfzK4nNtiHNos:16:0:±::
+u17-sha1crypt:$sha1$5000$f2367890$1nqfsIYv/7bNv5jFVWYsbhnJjCo5:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$f2367890$42xfSrAjNI4Te.TNnwh9aVxAjGsL:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$f2367890$oARM.D3ZX6ZkYMLfCYRp6HQ0V7Np:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$f2367890$twhLE4Su2mK8l066491qc9YPSZId:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$f2367890$tJoREyhrnqQzps71KtG7x2CUrxu1:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$f2367890$Wr9yxdRRfu/BI9VojgpvnRjes1H0:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$f2367890$oJBv7V/2G68qjKRlrGb525sfg506:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$f2367890$KpwgL5iDQPpWgbaLRn2o9c5An04T:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb367890$OddRh/6/yuU0yBTNeoqxCnj.qpRb:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb367890$ijs7najZSiIlVmpLTsDXA.EobI7v:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb367890$6dW7mrtlBYrEENRC42q2BN8DaQy2:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb367890$uCDHxJZJBtIBGDDluFi0wvh3AR3I:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb367890$NUxjJoN.nhxTps5TtUED0ZWfzq2s:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb367890$To/ehOBTtMmASMZZxzZs02hFcuIH:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb367890$E7Ttcsb9n/xQo0VTKkSckO3iZzQM:6:0:::
+u7-sha1crypt:$sha1$5000$fb367890$CB79wCrcO1STdHBxKaAYjD04gMSX:7:0: ::
+u8-sha1crypt:$sha1$5000$fb367890$nU/0UKdIP2TAKB56YagbTbO16EbQ:8:0:1::
+u9-sha1crypt:$sha1$5000$fb367890$LQLyXqMfV7Ex5Iyke//F2TGCt99Y:9:0:password::
+u10-sha1crypt:$sha1$5000$fb367890$7VYt89fehM1NtPk3topzQltSaraC:10:0:test::
+u11-sha1crypt:$sha1$5000$fb367890$Khq6D7WC/Athhq3odNJ0k56aXMvM:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb367890$/h/n2EYF0dUmuYCTafI4ubIMADgX:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb367890$xnmOckDfeAwOjI.LCLE3mNFZfZGe:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb367890$FEoIIams8zLCErGcXgonJnElH3QT:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb367890$jCd9KWSQcGPICXd7eVGRYeA5ikya:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb367890$NggcE8Og3x1RpEMVw8ZwLUY/WKen:16:0:±::
+u17-sha1crypt:$sha1$5000$fb367890$gdfBl1mNxthpdNwAJk6e/tUIqY7X:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb367890$iO44zGV/An0mkBLbuNiEu0JdMg1i:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb367890$lhR95hJPpikua3ecKAeKccRehEEU:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb367890$aXQExIlIiYh1XfXcoS9U.PR4/tF1:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb367890$FwtUn0G0nklqon87MRn6WY751GNE:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb367890$kkumnvZvp.Cm0xMYEdcLD4R79PeF:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb367890$g1ibaNxJpvXyUr8k8pq.0nFNSutX:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb367890$VJJe5aOHBitIXKLYDPbtxm3VdqEz:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fbcfrtgy$fRtQGFttS8DX.k0jp35cSNoxnlm7:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fbcfrtgy$OMy4570FqvgJfyGh.gY7NTmqPIxp:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fbcfrtgy$fOnZ3oezX0wHEzSmJmBmVPtsLm9D:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fbcfrtgy$CcxmYr.UrbK9KL0WdDhLY8WE9H2D:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fbcfrtgy$aTKZquurYXocV3NUvRCH1KQPJ8Mr:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fbcfrtgy$WPgPMfZIke76l0kHjuFAHaSCi33c:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fbcfrtgy$gsQp84oDvJdWtIKbNEZ97eKoJX12:6:0:::
+u7-sha1crypt:$sha1$5000$fbcfrtgy$sfFg2CAJb29hBjLCPP2KLHwSl0aL:7:0: ::
+u8-sha1crypt:$sha1$5000$fbcfrtgy$dYOiW71XTBcAsHJwvWiiIhamt84U:8:0:1::
+u9-sha1crypt:$sha1$5000$fbcfrtgy$Y7PUQhaOeXN8pihCxvwESQo0/erz:9:0:password::
+u10-sha1crypt:$sha1$5000$fbcfrtgy$HZvziMuMWAJS32xvZ.FYiu/yzjbj:10:0:test::
+u11-sha1crypt:$sha1$5000$fbcfrtgy$XS456it4ZCf7lC8l0a4b7SfGQgJV:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fbcfrtgy$4NiKQKnJfyJ7lR6JqoPOmYJoOBs1:12:0:hello::
+u13-sha1crypt:$sha1$5000$fbcfrtgy$YVjfCDdzfBtLdtSgalYqnb6ii4Ro:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fbcfrtgy$ZhTpaV0VEYIQOyE.WOpeWI.VJnpB:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fbcfrtgy$GtE4jdjvZAWI.GFKBEW6CYkHNMJg:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fbcfrtgy$aop03b10pTcOSsDZMMb7E/dC9Myb:16:0:±::
+u17-sha1crypt:$sha1$5000$fbcfrtgy$8XHFiW0GR/ZQkP85cGjE8Q1K3dMK:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fbcfrtgy$0GJ15xPwSoWjCvMO5l5zbcCEBgP1:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fbcfrtgy$OWDpEUEsswFpj6F1dqRvwbgdIv1E:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fbcfrtgy$fGLxTBmr5BcyCKwBSS4iZRNCpj3g:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fbcfrtgy$zSm9GHionMWxG3.iT4V.juHhjMd/:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fbcfrtgy$np7tGHjAbgt7x92NZfTcTybNYzHp:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fbcfrtgy$ulcbj25eWM3nv3GEIXkX/XYzSGJZ:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fbcfrtgy$sqZhZW1tbdyp0zi5EHOMrkM0qG7P:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb6321rg$vrAKjCe7F/epdkFiGr4X9Ki7MBfX:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb6321rg$w1oje/MzWEyriPuc8WpjVMX1zuS8:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb6321rg$Q2uNxn764dfKQwWxHyWaprSYbVJT:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb6321rg$SXmSGNZb/PEDFQJInFsnC5lAvV7s:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb6321rg$TwVqI/WNH0wtN5B2IshI9jVsOXax:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb6321rg$mzJSUnynWZ5GYwV2ssrdP3t9t7Vz:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb6321rg$ugDTUWF6MWeMPbTVsojg8kQ7wplp:6:0:::
+u7-sha1crypt:$sha1$5000$fb6321rg$I744IQJMdef5XoIXAklzoGLVM6G/:7:0: ::
+u8-sha1crypt:$sha1$5000$fb6321rg$UDWu0IGXbYuNVAS3PK3QcdBLe51r:8:0:1::
+u9-sha1crypt:$sha1$5000$fb6321rg$uXCZGu7VU1jONCUhsZSqenDLICtV:9:0:password::
+u10-sha1crypt:$sha1$5000$fb6321rg$w4XPqx0hXYKWWachsG.mutuViJJV:10:0:test::
+u11-sha1crypt:$sha1$5000$fb6321rg$qe61c3qEZKjZ/SRkwMP64FZ5Aw11:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb6321rg$m9d9A6x5rQGxrKe9QjGNNmTwiMUO:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb6321rg$usaTPB0TRsvwxTDabKk0xAuJylf7:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb6321rg$vYFiXtJzL2gGapRm8zLF4zgltCzJ:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb6321rg$3Dd8/aQZ1B60NX.0gmbdG81fewnz:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb6321rg$hAHNw/vlQ0psjPbxdvy9prDSZpJo:16:0:±::
+u17-sha1crypt:$sha1$5000$fb6321rg$8lUqLzKT2zdeIj47SaqSM5FDOXyj:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb6321rg$Nc/R8YDMlzqHVTfcH3ys6BqpoNRe:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb6321rg$o4YLcgjJFNlqxNjDRy0AtraXSFVS:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb6321rg$xD3aI5hUJQcTIMCKwACwn6swMu/f:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb6321rg$Y/P5LPRYG3JAiZffJD6TkmUJRcL9:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb6321rg$ax05nKpRlNXMT/v1T1e9Q6RfQIQf:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb6321rg$NEiJq8mfLUleu1sTyQ9fkKetKJpV:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb6321rg$05kek6DkVzRWTY5M4Zw3ouY5faKH:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$f23xyvw0$rXEePlRrrgrHk1vuWiAnkjj3dSPh:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$f23xyvw0$cQ3lcDPnDpCkchZ6vuxRy4l02DPJ:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$f23xyvw0$jVyGSgen1Lxxgj44.OnI84IJ9tB/:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$f23xyvw0$a9ea3hsvGwS9VLVSmBPn.OLaO484:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$f23xyvw0$oOf5FHKZ78HCiz6BvrsXh0kqSo8.:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$f23xyvw0$8O7U2pP09hF.VNCNCqIJSfch.G9c:5:0:late*night::
+u6-sha1crypt:$sha1$5000$f23xyvw0$CI3gZbDHSN0KtycR153.86RDkakS:6:0:::
+u7-sha1crypt:$sha1$5000$f23xyvw0$i1jQgocjUS8YoNT7RXRYSwh0mVUk:7:0: ::
+u8-sha1crypt:$sha1$5000$f23xyvw0$0gfwxjF6ABe/ugjBw0K3WNdhm5AD:8:0:1::
+u9-sha1crypt:$sha1$5000$f23xyvw0$Dmwvzp0YclzVOZ.OIvS02HI.jfc0:9:0:password::
+u10-sha1crypt:$sha1$5000$f23xyvw0$yJ8v1Ql89j2uAWVhD.pUwICkgXYQ:10:0:test::
+u11-sha1crypt:$sha1$5000$f23xyvw0$8/iwbDecMu6iplbsPqyGpigLmbd/:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$f23xyvw0$Pib9TK/EVl0g9XHWtcpkrivgikj2:12:0:hello::
+u13-sha1crypt:$sha1$5000$f23xyvw0$.IhdGPsvD9Y6B71iy9HUUuOFa4Xl:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$f23xyvw0$qFV9YRfsAyvBrtkvFUwh8R.aiwDT:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$f23xyvw0$F8jxwZQQwBL9xP6Swn3K/po8qP7m:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$f23xyvw0$C8vrAXpGQinhXs4CJh.MoZC5Tb/v:16:0:±::
+u17-sha1crypt:$sha1$5000$f23xyvw0$1g8AHxsyO1XHKLaFbDOJE3iQkAO3:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$f23xyvw0$e3ZGn6rYoAb2/V9JZqdFYYIQ8RjQ:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$f23xyvw0$6797g3i0i7b2Wwpq5XaWUBjkYY0.:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$f23xyvw0$gG9fwe08tmQDFFTLCyySBv1TgSJ5:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$f23xyvw0$ei5B2sn4.dE6fAewgdARMOqSocPt:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$f23xyvw0$zMUNaBHgfGEuXK0YlrNiIZyFaFmC:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$f23xyvw0$4t1h691tuFibV0Q5NGWvhHpjoSgK:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$f23xyvw0$xjbjoN.80In3gDx.LaVRizUbyiKc:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb3wzux0$ohJFzKXZ/dryWUMnsZyiVU1k3ViY:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb3wzux0$JIf0c8roJb38nWUrq3BclvX28go8:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb3wzux0$ujS5TUJ4ztbwvJuImZImidAHRUfy:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb3wzux0$2NtyIRftqhhc7h1tVYr940gJvHOT:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb3wzux0$ADh..lk6.2c.bfc8fdtWeVi20I6i:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb3wzux0$SoX4hjAbjTl.ZKxXduraxsZkO2Rb:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb3wzux0$BzBlDaNPhfGCAuEheteeo8O62L9k:6:0:::
+u7-sha1crypt:$sha1$5000$fb3wzux0$zknOLBo9NShyeFyLE5dMFo7PflpG:7:0: ::
+u8-sha1crypt:$sha1$5000$fb3wzux0$HcGbJu190m3s1KCX2beh6.Z/RSc6:8:0:1::
+u9-sha1crypt:$sha1$5000$fb3wzux0$KDLWkM3nVYWTn1LX5mE61o6V7OZm:9:0:password::
+u10-sha1crypt:$sha1$5000$fb3wzux0$ejBQFTq6eG19zQd7CSUmVSzik/pL:10:0:test::
+u11-sha1crypt:$sha1$5000$fb3wzux0$iE83Vq9m0H7w.HnninQEvsGrIkLq:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb3wzux0$axSivRR6NtEktx3vF9fuR6yhtCsH:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb3wzux0$3n7ubfQrv/k349rz9iDo8SxhcHEG:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb3wzux0$gztQhk9USkyScFkN96KrZTi.ntui:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb3wzux0$fZ0zj.olap8ZHFon4uDJMTG1wX4N:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb3wzux0$ihs0Y6c6.dSwL8hE0hxVXht49kDs:16:0:±::
+u17-sha1crypt:$sha1$5000$fb3wzux0$3DxE1VghnxCj/nxOWP35K1gg1BVk:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb3wzux0$hDjFzyYrUkmA5Qf3q49ufvOT4/kn:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb3wzux0$Wntrt6ri4QK8C8pXA6aqWW2nTbfe:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb3wzux0$QSUn6lyopcUjRI2RvFVg58jWCHjc:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb3wzux0$41H1bPJ5BEh19/XPkilalNGzBMcW:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb3wzux0$wKacE0O3xZ.NfjbMfm5d/WTCWKNv:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb3wzux0$tM4Lk6IAe7tumfR3w2f.LHqeQhZu:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb3wzux0$Pfj6vkG.F6/ZwCTidZl4Gs/BWkDU:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fbcvatyy$ApSRjz5Ur0wwPQNl/CRGc9G6pZyV:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fbcvatyy$BIJI4fFkLMWDUB2Mx4FxPyNxFlC5:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fbcvatyy$tJVsA8y.osIdXw33g17D4lidWjO8:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fbcvatyy$alYGTmJPvx9hevB0rI9LUN5W8h80:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fbcvatyy$bpyrH1vMxdmCVtU9f6Abm/tbTfgI:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fbcvatyy$g3BuMPs.Qf5rlr9lmDsFE68kc1mB:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fbcvatyy$L7baEv/keMPuNvmWMez2w9FiOOiD:6:0:::
+u7-sha1crypt:$sha1$5000$fbcvatyy$.UMz4CPGhke.5fBvLgr3qbJRxD/B:7:0: ::
+u8-sha1crypt:$sha1$5000$fbcvatyy$inLlKpk341rdCbGAOesvUfpg3bI5:8:0:1::
+u9-sha1crypt:$sha1$5000$fbcvatyy$I2JCK2L5DFCmpLgTOD2InYt1t6WI:9:0:password::
+u10-sha1crypt:$sha1$5000$fbcvatyy$0cDUyOKizyVEzKnoy6.X.mbG.8Cq:10:0:test::
+u11-sha1crypt:$sha1$5000$fbcvatyy$dc/wP580caTpGWFGk.gjkXphkflv:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fbcvatyy$cUO49b/7HpbnROtVLE926BjDNkIy:12:0:hello::
+u13-sha1crypt:$sha1$5000$fbcvatyy$h0d/GvKZfk3Exm.Ceo1pSOZL4AA3:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fbcvatyy$DL09PlZw15tJaFhQDF82Z327gImE:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fbcvatyy$Wl3BXl3HPCjvLZtLYbSD/BEqocya:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fbcvatyy$XAZmgWauzuKCt3Z7fIIcRQjg8rS8:16:0:±::
+u17-sha1crypt:$sha1$5000$fbcvatyy$hLbpxx5MIHc3S/jRmBlmsQ7oKL6v:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fbcvatyy$HJWRSThhBAPlZ5PdLrLp8lWwqJK/:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fbcvatyy$Hogz3EV.hhz6zfACfwCcK.HAyfmk:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fbcvatyy$ookEkwRYe01Z0Zqa99sEvnk61pUm:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fbcvatyy$lQNjeohU2CM7IMriHbroYdSix4nE:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fbcvatyy$4SDGtTdho2a3xYhrNvzJDGxx6Voh:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fbcvatyy$1RMisKMK4sszdIQYZ2FhgXSlt4tS:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fbcvatyy$NYHz3tNcmn2SzBW6LrLjDV.2xD7v:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb6ubszg$kPEJixMDBJAjllNal7irO3M0JhDB:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb6ubszg$DUoxdwvTQLQKh9qs4wOyYEQ8rDnI:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb6ubszg$rNW6jAANT/ABv5MiJjdvswMgWwgl:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb6ubszg$oazv35Jdu7Kxy0pIQsqHVH5KjH25:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb6ubszg$PcXHK8p3zVKVEyqE9aBY/YaIChki:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb6ubszg$ZFDN8YOTRqSzA8.tcRdsHrvKYVl3:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb6ubszg$P4hZmivD2cpWXCCFKac98Y8IKiiO:6:0:::
+u7-sha1crypt:$sha1$5000$fb6ubszg$IwNJQx5Mhp19PWvar.IE2.iFJFj/:7:0: ::
+u8-sha1crypt:$sha1$5000$fb6ubszg$3wl.C6YDNGUfEhVrkN7tAQfU1QWH:8:0:1::
+u9-sha1crypt:$sha1$5000$fb6ubszg$W.X/HJn3qu755LoSXm0RDHct4gmE:9:0:password::
+u10-sha1crypt:$sha1$5000$fb6ubszg$Cqr7KS7XxHIQDHQv1yw9jKcnbUC7:10:0:test::
+u11-sha1crypt:$sha1$5000$fb6ubszg$M8TT/P5BPrv96dWEroyC3lUTxpdL:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb6ubszg$PDPvp6yDA6j.iNm4H7NiLxZLhvdv:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb6ubszg$CTd5xFCwV69PBxs5RkJsbwLrSoRw:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb6ubszg$Eu1UIg4qebV6SZLqeoHmal1Y.mbt:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb6ubszg$EOP88tJCxzkbKcYLexvne0H0dkpj:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb6ubszg$Pmp1N/Xc/SbeBhHY4UamCB/ADU6z:16:0:±::
+u17-sha1crypt:$sha1$5000$fb6ubszg$cmYtLU7u3gbO2h6iCJ3nDoWkaPXq:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb6ubszg$vo.k0joJgyWX3cj/e0BAonLD.rMX:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb6ubszg$IxTcqcxiAHZnlJd0Xz7faPVhVO6V:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb6ubszg$iWzf.i5RO9RhA6m8Y23pP0xTjG8g:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb6ubszg$KSkkMyUQdd/ozTDwgqWiTO691HHV:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb6ubszg$Wmh49GRjSSoJaVTDDZRci6iMOo1a:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb6ubszg$rnHpzdn9R0ryIn.i2a1Io/PfJXJw:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb6ubszg$W1aKao1wKEgis2KN63CQnXmJOlZD:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$f23tcr90$E9xcNBXDzTp6sXJdhY2XBhGkXWh4:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$f23tcr90$5Kk9XZePBuYhaVOnwi4sBbkLj2pg:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$f23tcr90$76TUItyXm4me7YSy8cGiRA5e/yvh:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$f23tcr90$SixnwUmVTpNupZ8mT2wzifhIDPI4:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$f23tcr90$3w5ut1DghSS3Npm1hrATwwbccfyl:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$f23tcr90$O12Z9a.YW03m6tOCa/c8LpAEIyqv:5:0:late*night::
+u6-sha1crypt:$sha1$5000$f23tcr90$T5w1GhiYfDh1W.QYuVQf7lzXDsPp:6:0:::
+u7-sha1crypt:$sha1$5000$f23tcr90$z/19WobQHlX26yoTusg.DDVxgE13:7:0: ::
+u8-sha1crypt:$sha1$5000$f23tcr90$ErA/kp./34h7VipvvhgDXKFf2cuA:8:0:1::
+u9-sha1crypt:$sha1$5000$f23tcr90$V8Kt/M4i4pwSWPu2h/52p/aRZbbd:9:0:password::
+u10-sha1crypt:$sha1$5000$f23tcr90$DeBue.wiWMSOR0hJjb.d63JQcfTY:10:0:test::
+u11-sha1crypt:$sha1$5000$f23tcr90$aKZ/PA4YKWiVq/MK8KgYR3dT4UAr:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$f23tcr90$uQTmk.QWCyd9yRbHfA.9fqJQ7LV4:12:0:hello::
+u13-sha1crypt:$sha1$5000$f23tcr90$Kvb6mrFlBEpKK5CkMhUz6AHxWAp0:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$f23tcr90$eg.DKMHOLmiz6t1YT6xoK6N.wYYU:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$f23tcr90$qY48ADZOeZlzwXY.oS51gktMckwe:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$f23tcr90$jlCSjaDONPxr3uNuuakqMRess3Ry:16:0:±::
+u17-sha1crypt:$sha1$5000$f23tcr90$x/QVfMMYNkD9p/QIJHMTpb4x3CV2:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$f23tcr90$ztIYHqTkDq6XQIcoKAzL2DFbFmUa:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$f23tcr90$AV4MI3l/T2Ykl6DqErkvseXLUNi6:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$f23tcr90$ZrNd8PoQNO/kbsuabNfTKh9pZuHs:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$f23tcr90$iFLYoUQA.aC7ChNva/w5rCtIFmnD:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$f23tcr90$6mqFuxVzTwvTN7TDAXZvATgc536H:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$f23tcr90$ShGJgxg87R2xF3vklft5XQjnJJtY:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$f23tcr90$wYAZK2vVORr5cCpikB/dDEPeIScL:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb3sdq91$pdESnZO/DyKoqXtwKqZPXHH0tFKW:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb3sdq91$.2.c4cR9eHMwKm3DRHw1A8k7UG6r:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb3sdq91$n9jCk/OAildmfdW9lAr3YdS5uwsw:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb3sdq91$erWDJoq9r21/Xz/94E4eoV.HysnF:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb3sdq91$YIKdiF.rItPpx0qPRh19LhPLZGk7:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb3sdq91$vjsc39dCVPUJtiSKvszjJxzAXOr7:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb3sdq91$f1xi1nu4cxRtUq8xSnpIREXVvypm:6:0:::
+u7-sha1crypt:$sha1$5000$fb3sdq91$3/R7PHzjkM3PHDleodZMbdYgZEby:7:0: ::
+u8-sha1crypt:$sha1$5000$fb3sdq91$x2plnJUPFYYggW0kVG/TJdTw55Mb:8:0:1::
+u9-sha1crypt:$sha1$5000$fb3sdq91$FWXickMVjUcdXIbYjiTD6GRcuSHZ:9:0:password::
+u10-sha1crypt:$sha1$5000$fb3sdq91$Ml7gybXuNwrb8cSQ/G90XBVaki6U:10:0:test::
+u11-sha1crypt:$sha1$5000$fb3sdq91$z2ZIn6FQ32l8/t2OFnAOm1r7G3y0:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb3sdq91$j8HR9dtcEENbhuDVlQPimQwgpVI9:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb3sdq91$NLDqBj73Id/TBWh2WicevejTMDhY:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb3sdq91$OaxNeqYmcfDWS3CYDqnzUeIhbZsE:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb3sdq91$fdcCHc8rM2weLAsBva.uSIfcuEAL:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb3sdq91$SD2RzgzNbkNEqIl5CilvTq1coZbp:16:0:±::
+u17-sha1crypt:$sha1$5000$fb3sdq91$RyWJGKIk8bcwDOsXPHv8ccNfK3FF:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb3sdq91$tCT8VnhHaF9YaFVxjTJy1vBedcJX:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb3sdq91$9fBf7vJw7C2IN.vNMCSLsEBGg0qW:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb3sdq91$35Xlk7j5CV/Bn4U3JCjQN4Tw4HtH:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb3sdq91$u0cibm3lH97dKiP/YvWSha7OuehG:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb3sdq91$edQucrhDjGhpkln8r/t1Q/Igd1OW:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb3sdq91$oFfRyan.1OgqzxAezHrSZWDeqBXs:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb3sdq91$mwWT/4rCLSXD32rGK3.vjQSbyBp3:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fbcrepg2$LELTMhYKvrsmMFl1atQZO4pMxBiN:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fbcrepg2$c2Ge3N/Oyk3UqSjI/MbVJMu5dOGY:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fbcrepg2$QYL4RV7DO.U.RxMnrRdOX3jsNAHq:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fbcrepg2$lYXzuqCeqXCnVR12lQSIVkHWyDEu:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fbcrepg2$7ylHEGGc5T54h8eE7DI1G9UID7eC:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fbcrepg2$q4F/0E8rKLLwAAtvegAqa7Y336tF:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fbcrepg2$ofTCSlLVXIglQFvej9AAa.jdtUpj:6:0:::
+u7-sha1crypt:$sha1$5000$fbcrepg2$av8/UrhnCzOGqJ9tpiMMerna26kD:7:0: ::
+u8-sha1crypt:$sha1$5000$fbcrepg2$cvTtuF1VOCkJkdfR0UGC6Y1/ZTED:8:0:1::
+u9-sha1crypt:$sha1$5000$fbcrepg2$X6gihwTISY21LPwfplkt.QD3uqG5:9:0:password::
+u10-sha1crypt:$sha1$5000$fbcrepg2$40SOQsv8XdZMURXkDNIoGQ7mdNi.:10:0:test::
+u11-sha1crypt:$sha1$5000$fbcrepg2$Y6AlqRH08/zZZR1UK0NHUH/F2nzQ:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fbcrepg2$I8gj5/tiYa3XkFcevy6SubgGySdb:12:0:hello::
+u13-sha1crypt:$sha1$5000$fbcrepg2$/SYsAs7.KOBNhaSr0UP7mfAuWjI0:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fbcrepg2$YPBUhKb3cpsF.xfVngEKwUqW.qp0:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fbcrepg2$VX7tn8RsJwZWAX51Phz18MT6YnWH:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fbcrepg2$YQdDwlrHIrvZm7jgpaDRBez2y.iq:16:0:±::
+u17-sha1crypt:$sha1$5000$fbcrepg2$GTQktlRr2/tfSqc.nyHaPw4D/5Gl:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fbcrepg2$jIEdgwvJ64XFdPMoW2BbR0NTZiWE:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fbcrepg2$Z4sMO.mlnPr.bot5UD8mU/1pXdjz:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fbcrepg2$nEO93OuG7hWWKOwfJuJa4HZIh2e2:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fbcrepg2$KEZJfLjGY/d0V7Zga.vPO.btK39V:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fbcrepg2$AcDW36AUaDvj13EHVAFuYMc36aiM:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fbcrepg2$rUyRVu12z.VucxH0WqcMk1PxrpVU:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fbcrepg2$/.nuPBnfisbRVDGseSWDgJxLfbcd:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$fb6qfor3$EQBeIJFeGpbLORAzb1qE61igcKiS:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$fb6qfor3$SjlSCUQGrWLoxKSnl0SZDG20vBrQ:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$fb6qfor3$RvWfo/pAj0s2Eyl8Xx4RBznGiWNB:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$fb6qfor3$e5FLHcie2qKDflod0pzA8f7.RRwq:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$fb6qfor3$r/1fVUboAfLOABFB8eS04Y9qgixF:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$fb6qfor3$fLa38oZduKGiIHAzJDpeCJteKM8V:5:0:late*night::
+u6-sha1crypt:$sha1$5000$fb6qfor3$vOJUcAZwQiM3tKePyTPL5Sg1/0Pt:6:0:::
+u7-sha1crypt:$sha1$5000$fb6qfor3$WVApY0ePrpLk6WuQTYeVSQU4IHSb:7:0: ::
+u8-sha1crypt:$sha1$5000$fb6qfor3$B3i4HJXE7EavSpY/Dx4nDtlNOc5B:8:0:1::
+u9-sha1crypt:$sha1$5000$fb6qfor3$0ggc4AdPTqVgoUQfdUvwAr3CWyGF:9:0:password::
+u10-sha1crypt:$sha1$5000$fb6qfor3$sErWZixFkMnpITBoxaTZz7VX9m/X:10:0:test::
+u11-sha1crypt:$sha1$5000$fb6qfor3$bJ8m9GYlvmBVBc3FMUFhxtvt6fjR:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$fb6qfor3$thc461OOKDssaWAKzM1.xsFlOorn:12:0:hello::
+u13-sha1crypt:$sha1$5000$fb6qfor3$F6ECC0SYgNmt7bQb04n/I3j/t6PH:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$fb6qfor3$Mk22PxLzB.Z5bOP5YHbKOLh0E6Cl:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$fb6qfor3$ZkQRnmosuIEh1DCMUAAcNWU/pF30:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$fb6qfor3$eTM0y/k8RCI.TxXtLN042/YD720.:16:0:±::
+u17-sha1crypt:$sha1$5000$fb6qfor3$gqV3A20k4.5Medy0.umfUcUOKUrd:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$fb6qfor3$OkXpMtfInvyTRAvS5h5tVO9NKvIb:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$fb6qfor3$E1CI4.1neiex.G9ynGOBMPX2EBY2:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$fb6qfor3$Z6CGzrK2ZAocZa2XWRC58q8X63ag:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$fb6qfor3$qo2J3RFWHtqusW8wrPuKltHxINrF:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$fb6qfor3$.sRwp5mnjXOYWNv.IElNChiJlXmk:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$fb6qfor3$hd/dzcqZ9SaZaUjX2UG2dj/OYiLc:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$fb6qfor3$eZ8dFW6kpudUBHIbLqDnSyauY8uL:24:0:dæffffæffæfff::
+u0-sha1crypt:$sha1$5000$f23pgn94$fHwhmN.2Abun4pAUoBy8g2lbrybd:0:0:Skippinç anä*::
+u1-sha1crypt:$sha1$5000$f23pgn94$ZkhZ.KQjKx6qNiEJoq9el5WGKWAY:1:0:Skipping and*::
+u2-sha1crypt:$sha1$5000$f23pgn94$fB1j.TY.rOTwilveMbgBACxTwCbQ:2:0:Bert$ErîIE::
+u3-sha1crypt:$sha1$5000$f23pgn94$nnlWy0NCPDv4cQA93YdR./N39OLX:3:0:Bert$ErnIE::
+u4-sha1crypt:$sha1$5000$f23pgn94$rqP/U.FJgP3G4NQi.bXhVOoo3o0N:4:0:bert*ernie::
+u5-sha1crypt:$sha1$5000$f23pgn94$5MkLh2m13q30vFXVP51AetXKT7be:5:0:late*night::
+u6-sha1crypt:$sha1$5000$f23pgn94$s.cGkDzcaElBEUBSx8WOywKi8ZPD:6:0:::
+u7-sha1crypt:$sha1$5000$f23pgn94$xrdFBRmMDQD3CSope298zMQT4lAg:7:0: ::
+u8-sha1crypt:$sha1$5000$f23pgn94$4zUDAwtB8uYCgLYExJViQZG7y6hY:8:0:1::
+u9-sha1crypt:$sha1$5000$f23pgn94$gP/VMF/NpC9AdswCLbCuBXbS2Sw5:9:0:password::
+u10-sha1crypt:$sha1$5000$f23pgn94$KvsfjA8yCEZ0Q6zdEA1vwhbVjqKu:10:0:test::
+u11-sha1crypt:$sha1$5000$f23pgn94$JyhWyO7DtC.3IWcl2777lLU68mek:11:0:late*niçhô::
+u12-sha1crypt:$sha1$5000$f23pgn94$CrFqww3S.L6aE4uG7WFsuyKuNXdP:12:0:hello::
+u13-sha1crypt:$sha1$5000$f23pgn94$GV1xYpUayeud7CTzvtEwNr8HozZE:13:0:Skipping and& Dipping::
+u14-sha1crypt:$sha1$5000$f23pgn94$VM2ZMfsZLMUUHneehXnXp4YYI4kW:14:0:!!!!!!!!!::
+u15-sha1crypt:$sha1$5000$f23pgn94$ycwve1MYD632urNA6q3GZ1bFjLr3:15:0:ttttttttttt::
+u16-sha1crypt:$sha1$5000$f23pgn94$Prsv7uYhxMjJ12S1n2VAycJyjHQi:16:0:±::
+u17-sha1crypt:$sha1$5000$f23pgn94$hMzVVB2M0i2nISXIiFjIO/We5OUh:17:0:pass÷ord::
+u18-sha1crypt:$sha1$5000$f23pgn94$.4JJ//RZC69N2TMpyom9esQdJ/eT:18:0:dffffffffffff::
+u19-sha1crypt:$sha1$5000$f23pgn94$3/Cw7UPBiF0oqrGrUw8qW5Fykn5J:19:0:ôåst::
+u20-sha1crypt:$sha1$5000$f23pgn94$0YbZPFcoPTwaGGx/EiwPpSoEKmpT:20:0:Skipðing and& Diðping::
+u21-sha1crypt:$sha1$5000$f23pgn94$Ag0RzlkQfTt7cVaBTX0lglhsopCo:21:0:alsfdkja;::
+u22-sha1crypt:$sha1$5000$f23pgn94$F1u5DZclQGZ6rcj6rL.hcnb0TUCS:22:0:qerwt::
+u23-sha1crypt:$sha1$5000$f23pgn94$SZMlLzkUvl7C3pklHq/C573W31qQ:23:0:ôtttttttttô::
+u24-sha1crypt:$sha1$5000$f23pgn94$3CIytK8GhQHvSq93Z7nRW7WotfZv:24:0:dæffffæffæfff::

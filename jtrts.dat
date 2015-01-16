@@ -433,6 +433,8 @@
 (base),(X),(jumbo),10000,dummy,pw,dummy_tst.in,dummy,Y,X,(1500),(1500)
 (base),(X),(jumbo),40,sunmd5,pw,sunmd5_tst.in,sunmd5,Y,X,(1500),(1500)
 (base),(X),(jumbo),50,wpapsk,pw,wpapsk_tst.in,wpapsk,Y,X,(500),(500)
+(base),(x),(jumbo),40,keychain,pw,keychain_tst.in,keychain,Y,X,(1500),(1500)
+(base),(x),(jumbo),40,sha1crypt,pw,sha1crypt_tst.in,sha1crypt,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
@@ -668,9 +670,13 @@
 (opencl)(gpu)(zip-opencl),(X),(jumbo),40,zip-type2,pw,zip_2_tst.in,zip-opencl,Y,X,(1500),(1500)
 (opencl)(gpu)(zip-opencl),(X),(jumbo),40,zip-type3,pw,zip_3_tst.in,zip-opencl,Y,X,(1500),(1500)
 (opencl)(gpu)(zip-opencl),(X),(jumbo),40,zip,pw,zip_123_tst.in,zip-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo),50,wpapsk-opencl,pw,wpapsk_tst.in,wpapsk-opencl,Y,X,(500),(500)
+(opencl)(gpu),(X),(jumbo),40,keychain-opencl,pw,keychain_tst.in,keychain-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo),40,sha1crypt-opencl,pw,sha1crypt_tst.in,sha1crypt-opencl,Y,X,(1500),(1500)
 
-(opencl)(gpu),(full),(core),40,Bcrypt-opencl,pw,BF_tst.in,bcrypt-opencl,N,X,(1500),(1500)
-(opencl)(gpu),(full),(core),40,Bcrypt_broken-opencl,pw,BFx_tst.in,bcrypt-opencl,N,X,(1500),(1500)
+(opencl)(gpu),(X),(core),40,Bcrypt-opencl,pw,BF_tst.in,bcrypt-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(core),40,Bcrypt_broken-opencl,pw,BFx_tst.in,bcrypt-opencl,Y,X,(1500),(1500)
+
 
 # This is a very slow, and VERY large input file hash.
 (ssh),(full),(jumbo),1600,ssh,pass,ssh_1500_tst.in,ssh,N,X,(1500),(1500)
