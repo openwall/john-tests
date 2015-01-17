@@ -444,7 +444,7 @@
 (base),(x),(jumbo),10000,citrix_ns10,pw,citrix-ns10_tst.in,citrix_ns10,Y,X,(1500),(1500)
 (base),(x),(jumbo),500,clipperz,pw,clipperz-srp_tst.in,clipperz,Y,X,(1500),(1500)
 (base),(x),(jumbo),500,clipperz (0 Lpad),pw,clipperz2-srp_tst.in,clipperz,Y,X,(1500),(1500)
-
+(base),(x),(jumbo),10000,dahua,pw,dahua_tst.in,dahua,Y,X,(1500),(1500)
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
 (mschapv2-naive-utf8)(mschapv2-utf8)(utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,mschapv2-naive-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2-naive,Y,-enc=utf8,(1500),(1500)
