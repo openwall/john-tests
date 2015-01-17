@@ -48,7 +48,8 @@
 (dynamic),(full),(jumbo),150,dynamic_17,pw,dynamic_17_tst.in,dynamic_17,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_18,pw,dynamic_18_tst.in,dynamic_18,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_19,pw,dynamic_19_tst.in,dynamic_19,N,X,(1500),(1500)
-(dynamic)(base),(X),(jumbo),10000,dynamic_20,pw,dynamic_20_tst.in,dynamic_20,N,X,(1500),(1500)
+(dynamic)(base)(asa-md5),(X),(jumbo),10000,dynamic_20,pw,dynamic_20_tst.in,dynamic_20,N,X,(1500),(1500)
+(dynamic)(base),(X),(jumbo),10000,asa-md5,pw,dynamic_20_tst.in,asa-md5,Y,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_21,pw,dynamic_21_tst.in,dynamic_21,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_22,pw,dynamic_22_tst.in,dynamic_22,N,X,(1500),(1500)
 (dynamic)(base)(sha1),(X),(jumbo),10000,dynamic_23,pw,dynamic_23_tst.in,dynamic_23,N,X,(1500),(1500)
@@ -202,6 +203,7 @@
 (dynamic)(base),(X),(jumbo),10000,dynamic_1007,pw,dynamic_1007_tst.in,dynamic_1007,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1008,pw,dynamic_1008_tst.in,dynamic_1008,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1009,pw,dynamic_1009_tst.in,dynamic_1009,N,X,(1500),(1500)
+(dynamic)(base),(X),(jumbo),10000,dynamic_1010,pw,dynamic_1010_tst.in,dynamic_1010,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1011,pw,dynamic_1011_tst.in,dynamic_1011,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1012,pw,dynamic_1012_tst.in,dynamic_1012,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1013,pw,dynamic_1013_tst.in,dynamic_1013,N,X,(1500),(1500)
@@ -435,6 +437,9 @@
 (base),(X),(jumbo),50,wpapsk,pw,wpapsk_tst.in,wpapsk,Y,X,(500),(500)
 (base),(x),(jumbo),40,keychain,pw,keychain_tst.in,keychain,Y,X,(1500),(1500)
 (base),(x),(jumbo),40,sha1crypt,pw,sha1crypt_tst.in,sha1crypt,Y,X,(1500),(1500)
+(base),(x),(jumbo),10000,hsrp,pw,hsrp_tst.in,hsrp,Y,X,(1500),(1500)
+(base),(x),(jumbo),10000,known_hosts,pw,known_hosts_tst.in,known_hosts,Y,X,(1500),(1500)
+(base),(x),(jumbo),10000,chap,pw,chap_tst.in,chap,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
