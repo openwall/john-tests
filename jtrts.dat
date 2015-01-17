@@ -440,6 +440,8 @@
 (base),(x),(jumbo),10000,hsrp,pw,hsrp_tst.in,hsrp,Y,X,(1500),(1500)
 (base),(x),(jumbo),10000,known_hosts,pw,known_hosts_tst.in,known_hosts,Y,X,(1500),(1500)
 (base),(x),(jumbo),10000,chap,pw,chap_tst.in,chap,Y,X,(1500),(1500)
+(base),(x),(jumbo),10000,blackberry-es10,pw,bbes10_tst.in,blackberry-es10,Y,X,(1500),(1500)
+(base),(x),(jumbo),10000,citrix_ns10,pw,citrix-ns10_tst.in,citrix_ns10,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
