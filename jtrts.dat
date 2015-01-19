@@ -406,7 +406,7 @@
 (base)(aix)(aix-ssha),(X),(jumbo),40,aix-ssha1,pw,aix-ssha1_tst.in,aix-ssha1,Y,X,(1500),(1500)
 (base)(aix)(aix-ssha),(X),(jumbo),40,aix-ssha256,pw,aix-ssha256_tst.in,aix-ssha256,Y,X,(1500),(1500)
 (base)(aix)(aix-ssha),(X),(jumbo),40,aix-ssha512,pw,aix-ssha512_tst.in,aix-ssha512,Y,X,(1500),(1500)
-(base)(office)(office_2007),(full),(jumbo),40,office_2007,pw,office_2007_tst.in,office,Y,X,(1500),(1500)
+(base)(office)(office_2007),(full),(jumbo),200,office_2007,pw,office_2007_tst.in,office,Y,X,(1500),(1500)
 (base)(office)(office_2010),(full),(jumbo),40,office_2010,pw,office_2010_tst.in,office,Y,X,(1500),(1500)
 (base)(office)(office_2013),(full),(jumbo),40,office_2013,pw,office_2013_tst.in,office,Y,X,(1500),(1500)
 (base)(office)(office-2k),(full),(jumbo),40,office,pw,office_2k7_2k10_2k13_tst.in,office,Y,X,(1500),(1500)
