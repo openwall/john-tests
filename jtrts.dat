@@ -455,6 +455,9 @@
 (base),(X),(jumbo),10000,postgres,pw,postgres_tst.in,postgres,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,pst,pw,pst_tst.in,pst,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-blake2,pw,raw-blake2_tst.in,raw-blake2,Y,X,(1500),(1500)
+(base)(keccak),(X),(jumbo),10000,raw-keccak-512,pw,raw-keccak_tst.in,raw-keccak,Y,X,(1500),(1500)
+(base)(keccak),(X),(jumbo),10000,raw-keccak-256,pw,raw-keccak256_tst.in,raw-keccak-256,Y,X,(1500),(1500)
+(base)(keccak),(X),(jumbo),10000,raw-sha1-linkedin,pw,raw-sha1linkedin_tst.in,raw-sha1-linkedin,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
