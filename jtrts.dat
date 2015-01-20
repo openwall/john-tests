@@ -452,6 +452,7 @@
 (base),(X),(jumbo),10000,mongodb,pw,mongodb_tst.in,mongodb,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,mysqlna,pw,mysqlna_tst.in,mysqlna,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,o5logon,pw,o5logon_tst.in,o5logon,Y,X,(1500),(1500)
+(base),(X),(jumbo),10000,postgres,pw,postgres_tst.in,postgres,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
