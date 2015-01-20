@@ -448,6 +448,8 @@
 (base),(x),(jumbo),10000,fortigate,pw,fortigate_tst.in,fortigate,Y,X,(1500),(1500)
 (base),(x),(jumbo),10000,lastpass,pw,lp_tst.in,lp,Y,X,(1500),(1500)
 (base),(x),(jumbo),10000,lastpass-sniffed,pw,lastpass_tst.in,lastpass,Y,X,(1500),(1500)
+(base),(x),(jumbo),10000,md2,pw,md2_tst.in,md2,Y,X,(1500),(1500)
+(base),(x),(jumbo),10000,mongodb,pw,mongodb_tst.in,mongodb,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
