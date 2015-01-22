@@ -701,6 +701,7 @@
 (opencl)(gpu),(X),(jumbo),40,keychain-opencl,pw,keychain_tst.in,keychain-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo),40,sha1crypt-opencl,pw,sha1crypt_tst.in,sha1crypt-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(jumbo),10000,o5logon-opencl,pw,o5logon_tst.in,o5logon-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(jumbo),35,strip-opencl,pw,strip_tst.in,strip-opencl,Y,X,(1500),(1500)
 
 (opencl)(gpu),(X),(core),40,Bcrypt-opencl,pw,BF_tst.in,bcrypt-opencl,Y,X,(1500),(1500)
 (opencl)(gpu),(X),(core),40,Bcrypt_broken-opencl,pw,BFx_tst.in,bcrypt-opencl,Y,X,(1500),(1500)
