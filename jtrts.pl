@@ -632,6 +632,22 @@ sub ExtraArgs_Show { #($ar[9]);
 	return $ret;
 }
 
+my $sub_cnt=0;
+sub pot_match_pass {
+	# line will be "password  (password)"  or something else.
+	my $line = $_[0];
+	chomp $line;
+	#print "$line\n";
+	if (substr($line, length($line)-1, 1) ne ")" || index($line, " (") < 0) { return 1; }
+	if (index($line, "Loaded ") == 0) { return 1;}
+	my $idx = index($line, " (");
+	my $s = substr($line, $idx+2);
+	$s = substr($s, 0, length($s)-1);
+	#return substr($line, 0, length($s)) eq $s;
+	#if (index($line, $s) == 0) { $sub_cnt+=1; print "*** good $sub_cnt\n"; return 2;}
+	if (index($line, $s) == 0) { return 2;}
+	return 0;
+}
 ###############################################################################
 ###############################################################################
 sub process {
@@ -805,26 +821,42 @@ sub process {
 
 		# now do the .pot check.
 		if (-f $pot) {
-			unlink ("pw3");
-			if ($ar[8] eq "\'-fie=\\x1F\'") {
-				my $cmd2 = sprintf("cut -f 2- -d\"%c\" -s < $pot | $UNIQUE pw3 > /dev/null", 31);
-				system($cmd2);
-			} else {
-				my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
-				system($cmd2);
+			open(POTFILE, "tst.pot");
+			my @pot_lines = <POTFILE>;
+			close(POTFILE);
+			unlink ("tst.in");
+			open(NEWFILE, ">> tst.in");
+			foreach my $line (@pot_lines) {
+				chomp $line;
+				my @elems = split(":", $line);
+				if (scalar @elems == 2) {
+					print NEWFILE "$elems[1]:$elems[0]\n";
+				} else {
+					print NEWFILE ":$elems[0]\n";
+				}
 			}
-			$cmd =~ s/$dict_name/--wordlist=pw3/;
+			close(NEWFILE);
+			unlink ("pw3");
+			my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
+			system($cmd2);
+			$cmd2 = $cmd;
+			$cmd2 =~ s/$dict_name/--wordlist=pw3/;
+			$cmd2 =~ s/$ar[6]/tst.in/;
+			$cmd2 =~ s/2>&1 >\/dev\/null/2>&1/;
 
 			ScreenOutVV("Execute john (.pot check): $cmd\n");
 			unlink ($pot);
-			$cmd_data = `$cmd`;
+			$cmd_data = `$cmd2`;
 			$ret_val = $?;
+
 			# ok, now show stderr, if asked to.
 			if ($show_stderr == 1) { print $cmd_data; }
 			ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
 
 			@crack_xx = ();
 			@crack_cnt = split (/\n/, $cmd_data);
+			my $invalid_pass = 0;
+			my $valid_pass = 0;
 			foreach $line (@crack_cnt) {
 				# cut away progress indicator
 				$line =~ s/.*\x08//;
@@ -838,6 +870,14 @@ sub process {
 					} else {
 						@crack_xx = split (/ /, $line);
 					}
+				}
+				#ok, see if this is a password crack line, if so make
+				#sure the PW 'matches' what it is supposed to be
+				my $v = pot_match_pass($line);
+				if (!$v) {
+					$invalid_pass += 1;
+				} elsif ($v == 2) {
+					$valid_pass += 1;
 				}
 			}
 			while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
@@ -856,12 +896,14 @@ sub process {
 			my $cmd_show_line2 = $cmd_show_lines2[scalar (@cmd_show_lines2) - 1];
 			my @orig_show_words2 =  split(/\s/, $cmd_show_line2);
 			my $orig_show_cnt2 = $orig_show_words2[0];
-			ScreenOutVV("\n\cmd_show_line2 = \n$cmd_show_line2\n\n");
+			ScreenOutVV("\n\cmd_show_line2 = \n$cmd_show_line2\n$invalid_pass invalid passwords\n$valid_pass valid passwords\n\n");
 
-			if (index($ar[11], "($crack_xx[1])") lt 0 && $orig_pot_cnt ne $orig_crack_cnt && index($ar[10], "($orig_show_cnt2)") lt 0 && index($ar[10], "(-show$orig_show_cnt2)") lt 0) {
+			if (index($ar[11], "($crack_xx[1])") lt 0 && $orig_pot_cnt ne $orig_crack_cnt && index($ar[10], "($orig_show_cnt2)") lt 0 && index($ar[10], "(-show$orig_show_cnt2)") lt 0 || $invalid_pass != 0) {
 				my $str;
-				if ($ret_val == 0) {
+				if ($ret_val == 0 || $invalid_pass != 0) {
 					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+				} elsif ($invalid_pass != 0) {
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11] INVALID cracks=$invalid_pass  [!!!FAILED!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 				} else {
 					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!! return code $ret_val]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 					$ret_val_non_zero_cnt += 1;
@@ -870,7 +912,7 @@ sub process {
 				$error_cnt_pot += 1;
 				StopOnError($cmd, $pot);
 			} elsif ($ret_val == 0) {
-				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_pot_cnt);
+				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED] ($valid_pass val-pwd)\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
 			} else {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_pot_cnt);
