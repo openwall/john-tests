@@ -35,7 +35,6 @@
 (dynamic)(base),(X),(jumbo),10000,dynamic_5,pw,dynamic_5_tst.in,dynamic_5,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_6,pw,dynamic_6_tst.in,dynamic_6,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_6-1salt,pw,dynamic_6_1salt_tst.in,dynamic_6,N,X,(1500),(1500)
-(dynamic)(base),(X),(jumbo)(field_sep_valid),10000,dynamic_7,pw,dynamic_7_tst.in,dynamic_7,N,'-fie=\x1F',(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_8,pw,dynamic_8_tst.in,dynamic_8,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_9,pw,dynamic_9_tst.in,dynamic_9,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_10,pw,dynamic_10_tst.in,dynamic_10,N,X,(1500),(1500)
