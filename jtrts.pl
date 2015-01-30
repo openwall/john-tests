@@ -922,6 +922,7 @@ sub process {
 			}
 			unlink("$pot");
 			unlink("pw3");
+			unlink("tst.in");
 		}
 	}
 	# in -internal mode, we do not want the extra \n
