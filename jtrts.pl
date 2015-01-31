@@ -842,11 +842,16 @@ sub process {
 			$cmd2 = $cmd;
 			$cmd2 =~ s/$dict_name/--wordlist=pw3/;
 			$cmd2 =~ s/$ar[6]/tst.in/;
-			$cmd2 =~ s/2>&1 >\/dev\/null/2>&1/;
+			$cmd2 =~ s/2>&1 >\/dev\/null/2>_stderr/;
 
-			ScreenOutVV("Execute john (.pot check): $cmd\n");
+			ScreenOutVV("Execute john (.pot check): $cmd2\n");
 			unlink ($pot);
 			$cmd_data = `$cmd2`;
+			open (FILE, "_stderr");
+			my @stde = <FILE>;
+			close(FILE);
+			foreach my $s (@stde) { $cmd_data .= $s; }
+			unlink ("_stderr");
 			$ret_val = $?;
 
 			# ok, now show stderr, if asked to.
