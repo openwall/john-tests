@@ -13,6 +13,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // random routines (from mt.cpp)
 unsigned long genrand_int32();
@@ -77,6 +78,22 @@ int main (int argc, char **argv) {
 		pass = gen_next(4+rnd(130), tot);
 		print_if_meet_criteria(pass, cnt);
 		len += 3;
+	}
+	for (i = 12; i < 134; i++) {
+		pass = gen_next(i, tot);
+		print_if_meet_criteria(pass, cnt);
+	}
+	for (; i > 12; i--) {
+		pass = gen_next(i, tot);
+		print_if_meet_criteria(pass, cnt);
+	}
+	for (; i < 134; i++) {
+		pass = gen_next(i, tot);
+		print_if_meet_criteria(pass, cnt);
+	}
+	for (; i > 12; i--) {
+		pass = gen_next(i, tot);
+		print_if_meet_criteria(pass, cnt);
 	}
 	len = 12;
 	for (i = 0; i < 134; i+=3) {
@@ -148,6 +165,10 @@ char *gen_next(int len, unsigned &tot) {
 			this_word[idx] = val;
 		}
 	}
+	// having a " (" within the password causes problems within jtrts.pl, so we simply
+	// remove any of those words.
+	if (strstr(this_word, " ("))
+		return gen_next(len, --tot);
 	this_word[len] = 0;
 	return this_word;
 }
