@@ -901,7 +901,7 @@ sub process {
 			if (index($ar[11], "($crack_xx[1])") lt 0 && $orig_pot_cnt ne $orig_crack_cnt && index($ar[10], "($orig_show_cnt2)") lt 0 && index($ar[10], "(-show$orig_show_cnt2)") lt 0 || $invalid_pass != 0) {
 				my $str;
 				if ($ret_val == 0 || $invalid_pass != 0) {
-					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]  ($valid_pass val-pwd)\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 				} elsif ($invalid_pass != 0) {
 					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11] INVALID cracks=$invalid_pass  [!!!FAILED!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 				} else {
