@@ -166,7 +166,7 @@ sub LoadFormatDetails {
 sub StopOnError {
 	my $cmd=$_[0]; my $pot=$_[1];
 	if ($stop_on_error) {
-		ScreenOut("Exiting on error. The .pot file $pot continas the found data\n");
+		ScreenOut("Exiting on error. The .pot file $pot contains the found data\n");
 		$cmd =~ s# 2>&1 >/dev/null##;
 		ScreenOut("The command used to run this test was:\n\n$cmd\n");
 		exit(1);
@@ -639,13 +639,16 @@ sub pot_match_pass {
 	chomp $line;
 	#print "$line\n";
 	if (substr($line, length($line)-1, 1) ne ")" || index($line, " (") < 0) { return 1; }
-	if (index($line, "Loaded ") == 0) { return 1;}
+	if (index($line, "Loaded ") == 0) { return 1; }
+	if (index($line, "Will run ") == 0 && index($line, "OpenMP") > 0) { return 1; }
+	if (index($line, "Node numbers ") == 0) { return 1; }
 	my $idx = index($line, " (");
 	my $s = substr($line, $idx+2);
 	$s = substr($s, 0, length($s)-1);
 	#return substr($line, 0, length($s)) eq $s;
 	#if (index($line, $s) == 0) { $sub_cnt+=1; print "*** good $sub_cnt\n"; return 2;}
 	if (index($line, $s) == 0) { return 2;}
+	ScreenOutV("FAILED line = $_[0]\n");
 	return 0;
 }
 ###############################################################################
@@ -863,6 +866,7 @@ sub process {
 			my $invalid_pass = 0;
 			my $valid_pass = 0;
 			foreach $line (@crack_cnt) {
+				#print ("line = $line\n");
 				# cut away progress indicator
 				$line =~ s/.*\x08//;
 				# convert to legacy format, take care of --fork=
