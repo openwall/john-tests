@@ -824,7 +824,7 @@ sub process {
 
 		# now do the .pot check.
 		if (-f $pot) {
-			open(POTFILE, "tst.pot");
+			open(POTFILE,  $pot);
 			my @pot_lines = <POTFILE>;
 			close(POTFILE);
 			unlink ("tst.in");
