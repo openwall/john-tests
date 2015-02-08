@@ -642,7 +642,7 @@ sub is_format_8bit {
 }
 sub stripHi {
 	my $is_8bit = $_[1];
-	return if ($is_8bit);
+	return if ($core_only || $is_8bit);
 	my @chars = split(//, $_[0]);
 	for (my $i = 0; $i < length($_[0]); ++$i) {
 		if (ord($chars[$i]) > ord('~')) { $chars[$i] = chr(ord($chars[$i])-0x80); }
