@@ -41,6 +41,7 @@ my @startingTime;
 my $pass_thru = "";
 my $show_pass_thru;
 my $rand_seed = 31337;
+my $core_only = 0;
 
 # Set this once and we don't have to care about it anymore
 $ENV{"LC_ALL"} = "C";
@@ -291,9 +292,11 @@ sub setup {
 		push(@caps, "jumbo");
 		push(@caps, "core");  # note, jumbo can do both CORE and JUMBO formats
 		ScreenOut("John Jumbo build detected.\n");
+		LoadFormatDetails();
 	} else {
 		push(@caps, "core");  # core john can ONLY do core formats.
 		ScreenOut("John CORE build detected.  Only core formats can be tested.\n");
+		$core_only = 1;
 	}
 	# load all the format strings we 'can' use.
 	loadAllValidFormatTypeStrings();
@@ -631,13 +634,29 @@ sub ExtraArgs_Show { #($ar[9]);
 	}
 	return $ret;
 }
-
+sub is_format_8bit {
+	my $type = $_[0];
+	my @details = split("\t", $formatDetails{$type});
+	my $_8bit = hex($details[4]) & 0x00000002; # check for FMT_8_BIT
+	return $_8bit;
+}
+sub stripHi {
+	my $is_8bit = $_[1];
+	return if ($is_8bit);
+	my @chars = split(//, $_[0]);
+	for (my $i = 0; $i < length($_[0]); ++$i) {
+		if (ord($chars[$i]) > ord('~')) { $chars[$i] = chr(ord($chars[$i])-0x80); }
+	}
+	$_[0] = join('', @chars);
+}
 my $sub_cnt=0;
 sub pot_match_pass {
 	# line will be "password  (password)"  or something else.
 	my $line = $_[0];
+	my $is_8bit = $_[1];
 	chomp $line;
 	#print "$line\n";
+	stripHi($line, $is_8bit);
 	if (substr($line, length($line)-1, 1) ne ")" || index($line, " (") < 0) { return 1; }
 	if (index($line, "Loaded ") == 0) { return 1; }
 	if (index($line, "Will run ") == 0 && index($line, "OpenMP") > 0) { return 1; }
@@ -650,6 +669,13 @@ sub pot_match_pass {
 	if (index($line, $s) == 0) { return 2;}
 	ScreenOutV("FAILED line = $_[0]\n");
 	return 0;
+}
+sub create_file_if_not_exist {
+	my $filename = $_[0];
+	if (-e $filename) { return; }
+	open(FILE, ">".$filename);
+	#print FILE "\n";
+	close(FILE);
 }
 ###############################################################################
 ###############################################################################
@@ -726,6 +752,12 @@ sub process {
 
 		ScreenOutVV("Execute john: $cmd\n");
 		unlink($pot);
+		# we create the .pot file. This is a work around for a known issue in vboxfs fs
+		# under virtualbox using -fork=n mode. If the file is there (even empty), then
+		# forking locking works. If the file is not there, locking will 'see' multiple
+		# files many times (depending upon race conditions). This is a bug in virtualbox
+		# vm's, but this works around it, and cause no other side effects for other OS's.
+		create_file_if_not_exist($pot);
 		my $cmd_data = `$cmd`;
 		my $ret_val = $?;
 		# ok, now show stderr, if asked to.
@@ -780,9 +812,9 @@ sub process {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
 			my $str;
 			if ($ret_val == 0) {
-				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED1!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 			} else {
-				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!  return code $ret_val]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED2!!!  return code $ret_val]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 				$ret_val_non_zero_cnt += 1;
 			}
 			ScreenOutAlways($str);
@@ -802,7 +834,7 @@ sub process {
 					my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_show_cnt);
 					ScreenOutSemi($str);
 				} else {
-					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED3!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 					ScreenOutAlways($str);
 					$error_cnt += 1;
 					StopOnError($cmd, $pot);
@@ -849,6 +881,7 @@ sub process {
 
 			ScreenOutVV("Execute john (.pot check): $cmd2\n");
 			unlink ($pot);
+			create_file_if_not_exist($pot);
 			$cmd_data = `$cmd2`;
 			open (FILE, "_stderr");
 			my @stde = <FILE>;
@@ -865,6 +898,7 @@ sub process {
 			@crack_cnt = split (/\n/, $cmd_data);
 			my $invalid_pass = 0;
 			my $valid_pass = 0;
+			my $is_8bit = is_format_8bit($ar[7]);
 			foreach $line (@crack_cnt) {
 				#print ("line = $line\n");
 				# cut away progress indicator
@@ -882,7 +916,7 @@ sub process {
 				}
 				#ok, see if this is a password crack line, if so make
 				#sure the PW 'matches' what it is supposed to be
-				my $v = pot_match_pass($line);
+				my $v = pot_match_pass($line, $is_8bit);
 				if (!$v) {
 					$invalid_pass += 1;
 				} elsif ($v == 2) {
@@ -910,11 +944,11 @@ sub process {
 			if (index($ar[11], "($crack_xx[1])") lt 0 && $orig_pot_cnt ne $orig_crack_cnt && index($ar[10], "($orig_show_cnt2)") lt 0 && index($ar[10], "(-show$orig_show_cnt2)") lt 0 || $invalid_pass != 0) {
 				my $str;
 				if ($ret_val == 0 || $invalid_pass != 0) {
-					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!!]  ($valid_pass val-pwd)\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED4!!!]  ($valid_pass val-pwd  $invalid_pass inval-pwd)\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 				} elsif ($invalid_pass != 0) {
-					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11] INVALID cracks=$invalid_pass  [!!!FAILED!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11] INVALID cracks=$invalid_pass  [!!!FAILED5!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 				} else {
-					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED!!! return code $ret_val]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED6!!! return code $ret_val]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 					$ret_val_non_zero_cnt += 1;
 				}
 				ScreenOutAlways($str);
@@ -1080,16 +1114,13 @@ sub build_self_test_files {
 # this function does not return, it cleans up, and exits with proper errorlevel.
 ###############################################################################
 sub doInternalMode {
-	if (grepUsage("--pot=NAME")) {
-		# we are OK, we run only on jumbo mode.
-	} else {
+	if ($core_only == 0) {
 		ScreenOut("John CORE build detected.\n The -internal mode ONLY works for jumbo build of john.\n");
 		exit 1;
 	}
 
 	ScreenOutSemi("Running JTRTS in -internal mode\n");
 	if ($hash_case_mangle) {ScreenOutSemi("Running hash case manging mode\n");}
-	LoadFormatDetails();
 	ScreenOutVV("\@validFormats\n");
 	ScreenOutVV(@validFormats);
 	ScreenOutVV("\n\n\@types  (before fixups)\n");
