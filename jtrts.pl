@@ -400,16 +400,27 @@ sub loadAllValidFormatTypeStrings {
 	foreach my $line(@johnUsageScreen) {
 		if ($in_fmt == 0) {
 			if (index($line, "--format=NAME") == 0) {
-				$in_fmt = 1;
-				while (substr($line, 0, 1) ne ":") {
-					$line = substr($line, 1, length($line)-1);
+				if (index($line, ":") < 0) {
+					# new format layout does not use format names on usage
+					# screen. The new method forces us to use --list=formats
+					my @ar = `$JOHN_EXE --list=formats`;
+					foreach $line (@ar) {
+						chomp $line; $line =~ s/\r$//;
+						$line =~ s/, /\//g;
+						$fmt_str = $fmt_str . $line;
+					}
+				} else {
+					$in_fmt = 1;
+					while (substr($line, 0, 1) ne ":") {
+						$line = substr($line, 1, length($line)-1);
+					}
+					$line = substr($line, 2, length($line)-2);
+					chomp($line);
+					$line =~ s/\r$//;  # strip CR for non-Windows
+					$line = $line . '/';
+					$line =~ s/ /\//g;
+					$fmt_str = $fmt_str . $line;
 				}
-				$line = substr($line, 2, length($line)-2);
-				chomp($line);
-				$line =~ s/\r$//;  # strip CR for non-Windows
-				$line = $line . '/';
-				$line =~ s/ /\//g;
-				$fmt_str = $fmt_str . $line;
 			}
 		} else {
 			if (index($line, '-') == 0) { last; }
