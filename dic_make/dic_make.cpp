@@ -32,7 +32,7 @@ int main (int argc, char **argv) {
 	// first few, are 'special'. These are the most important, since we have some formats
 	// that only use a very FEW value.
 	char *pass;
-	unsigned tot=0, i, len=4, cnt=0;
+	unsigned tot=0, i, len, cnt=0;
 
 	unsigned long init[4]={0x123, 0x234, 0x345, 0x456}, length=4;
     init_by_array(init, length);
@@ -49,29 +49,36 @@ int main (int argc, char **argv) {
 		starts[i] = val;
 	}
 
-	// grow from 4 to 54
-	for (i = 0; i < 10; ++i) {
-		pass = gen_next(len, tot);
+	// grow from 5 to 85
+	for (i = 0; i < 16; ++i) {
+		pass = gen_next(i*5+5, tot);
 		print_if_meet_criteria(pass, cnt);
-		len += 5;
 	}
 	print_if_meet_criteria("", cnt);
 	pass = gen_next(9, tot);
 	print_if_meet_criteria(pass, cnt);
 	print_if_meet_criteria("p", cnt);
-
-	// zig-zag lengths 4-56 9-45. .... 
+	pass = gen_next(16, tot);
+	print_if_meet_criteria("123", cnt);
+	pass = gen_next(18, tot);
+	print_if_meet_criteria(pass, cnt);
+	print_if_meet_criteria("32", cnt);
+	// zig-zag lengths 4-125 9-120. ....
 	len = 4;
-	for (i = 0; i < 10; ++i) {
+	for (i = 0; i < 15; ++i) {
 		pass = gen_next(len, tot);
 		print_if_meet_criteria(pass, cnt);
-		pass = gen_next(60-len, tot);
+		pass = gen_next(129-len, tot);
 		print_if_meet_criteria(pass, cnt);
 		len += 5;
 	}
 	for (i = 0; i < 50; ++i) {
 		len = 4+rnd(16);
 		pass = gen_next(len, tot);
+		print_if_meet_criteria(pass, cnt);
+	}
+	for (i = 12; i < 134; i++) {
+		pass = gen_next(i, tot);
 		print_if_meet_criteria(pass, cnt);
 	}
 	for (i = 0; i < 400; i+=3) {
