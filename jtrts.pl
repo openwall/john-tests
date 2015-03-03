@@ -1125,7 +1125,7 @@ sub build_self_test_files {
 # this function does not return, it cleans up, and exits with proper errorlevel.
 ###############################################################################
 sub doInternalMode {
-	if ($core_only == 0) {
+	if ($core_only == 1) {
 		ScreenOut("John CORE build detected.\n The -internal mode ONLY works for jumbo build of john.\n");
 		exit 1;
 	}
