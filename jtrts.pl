@@ -672,6 +672,7 @@ sub pot_match_pass {
 	if (index($line, "Loaded ") == 0) { return 1; }
 	if (index($line, "Will run ") == 0 && index($line, "OpenMP") > 0) { return 1; }
 	if (index($line, "Node numbers ") == 0) { return 1; }
+	if (index($line, "guesses: ") == 0) { return 1; }
 	my $idx = index($line, " (");
 	my $s = substr($line, $idx+2);
 	$s = substr($s, 0, length($s)-1);
