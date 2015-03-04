@@ -26,7 +26,7 @@
 #  into rules that need it.  Most times, -show maches -crack mode.
 (dynamic)(base),(X),(jumbo),10000,dynamic_0,pw,dynamic_0_tst.in,dynamic_0,N,X,(1500)(-show1502),(1500)
 (new)(dynamic)(base),(X),(jumbo),10000,dynamic_0,pw-new,dynamic_0_new_tst.in,dynamic_0,N,X,(1500)(920),(1500)
-(dynamic)(base),(X),(jumbo),10000,dynamic_0,pw-new,dynamic_0_new55_tst.in,dynamic_0,N,X,(1500),(1500)
+(new)(dynamic)(base),(X),(jumbo),10000,dynamic_0,pw-new,dynamic_0_new55_tst.in,dynamic_0,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_0-raw,pw,dynamic_0_raw_tst.in,dynamic_0,Y,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1,pw,dynamic_1_tst.in,dynamic_1,N,X,(1500),(1500)
 (new)(dynamic)(base),(X),(jumbo),10000,dynamic_1,pw-new,dynamic_1_new_tst.in,dynamic_1,N,X,(1500)(923),(1500)
