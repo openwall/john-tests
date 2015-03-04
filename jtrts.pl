@@ -889,6 +889,7 @@ sub process {
 			$cmd2 =~ s/$dict_name/--wordlist=pw3/;
 			$cmd2 =~ s/$ar[6]/tst.in/;
 			$cmd2 =~ s/2>&1 >\/dev\/null/2>_stderr/;
+			$cmd2 =~ s/-fork [0-9]+ //;
 
 			ScreenOutVV("Execute john (.pot check): $cmd2\n");
 			unlink ($pot);
