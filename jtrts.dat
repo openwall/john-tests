@@ -611,7 +611,7 @@
 (base)(office)(office_2007),(X),(jumbo),200,office_2007,pw,office_2007_tst.in,office,Y,X,(1500),(1500)
 (base)(office)(office_2010),(X),(jumbo),12,office_2010,pw,office_2010_tst.in,office,Y,X,(48),(48)
 (base)(office)(office_2013),(X),(jumbo),12,office_2013,pw,office_2013_tst.in,office,Y,X,(48),(48)
-(base)(office)(office-2k),(full),(jumbo),200,office_all-2k7-2k13,pw,office_2k7_2k10_2k13_tst.in,office,Y,X,(1500),(1500)
+(new)(base)(office)(office-2k),(full),(jumbo),200,office_all-2k7-2k13_new,pw-new,office_2k7_2k10_2k13_new_tst.in,office,Y,X,(1500),(1500)
 (base)(sip),(X),(jumbo),10000,sip,pw,sip_tst.in,sip,Y,X,(1500),(1500)
 (base)(saph),(X),(jumbo),80,saph-sha1,pw,saph_sha1_tst.in,saph,Y,X,(1500),(1500)
 (base)(saph),(X),(jumbo),80,saph-sha256,pw,saph_sha256_tst.in,saph,Y,X,(1500),(1500)
