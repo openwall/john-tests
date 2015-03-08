@@ -504,6 +504,7 @@
 (base)(sha)(sha2),(X),(jumbo),40,sha256crypt,pw,SHA256crypt_tst.in,sha256crypt,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),40,sha512crypt,pw,SHA512crypt_tst.in,sha512crypt,Y,X,(1500),(1500)
 (new)(base)(sha)(sha2),(X),(jumbo),600,sha256crypt-new,pw-new,sha256crypt_new_tst.in,sha256crypt,Y,X,(1500),(1500)
+(new)(base)(sha)(sha2),(X),(jumbo),600,sha256crypt-new-xsalt,pw-new,sha256crypt_Xsalts_new_tst.in,sha256crypt,Y,X,(1600),(1600)
 (new)(base)(sha)(sha2),(X),(jumbo),170,sha512crypt-new,pw-new,sha512crypt_new_tst.in,sha512crypt,Y,X,(1500),(1500)
 (base)(sha)(sha2),(X),(jumbo),10000,XSHA512,pw,XSHA512_tst.in,xsha512,Y,X,(1500),(1500)
 (sha)(sha2),(X),(jumbo),40,pwsafe,pw,pwsafe_tst.in,pwsafe,Y,X,(1485),(1485)
