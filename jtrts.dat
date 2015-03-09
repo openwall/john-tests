@@ -879,7 +879,7 @@
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),10000,raw-sha512-opencl,pw,rawsha512_tst.in,raw-sha512-opencl,Y,X,(1500),(1500)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),50,sha256crypt-opencl,pw,SHA256crypt_tst.in,sha256crypt-opencl,Y,X,(1389)(1500),(1389)(1500)
 (opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),50,sha512crypt-opencl,pw,SHA512crypt_tst.in,sha512crypt-opencl,Y,X,(1389)(1500),(1389)(1500)
-(new)(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),600,sha256crypt-opencl-new,pw-new,sha256crypt_new_tst.in,sha256crypt-opencl,Y,X,(1030),(1030)
+(new)(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),600,sha256crypt-opencl-new,pw-new,sha256crypt_new_tst.in,sha256crypt-opencl,Y,X,(1070),(1070)
 (new)(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),260,sha256crypt-opencl-xsalt,pw-new,sha256crypt_Xsalts_new_tst.in,sha256crypt-opencl,Y,X,(1296),(1296)
 (new)(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),170,sha512crypt-opencl-new,pw-new,sha512crypt_new_tst.in,sha512crypt-opencl,Y,X,(760),(760)
 (new)(opencl)(gpu)(sha)(sha2),(X),(jumbo)&(opencl),130,sha512crypt-opencl-xsalt,pw-new,sha512crypt_Xsalts_new_tst.in,sha512crypt-opencl,Y,X,(1184),(1184)
