@@ -840,6 +840,7 @@ sub process {
 			}
 			StopOnError($cmd, $pot);
 		} elsif ($ret_val == 0) {
+			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
 			if ($orig_crack_cnt != $orig_show_cnt) {
 				if (index($ar[10], "(-show$orig_show_cnt)") >= 0 || index($ar[10], "($orig_show_cnt)") >= 0) {
 					# we are 'ok' here. Display show count.
@@ -857,6 +858,7 @@ sub process {
 			}
 		} else {
 			if (!defined $crack_xx[3]) {ScreenOutAlways("\n");}
+			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_crack_cnt);
 			ScreenOutAlways($str);
 			$ret_val_non_zero_cnt += 1;
