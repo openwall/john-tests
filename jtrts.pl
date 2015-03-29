@@ -771,7 +771,7 @@ sub process {
 		# vm's, but this works around it, and cause no other side effects for other OS's.
 		create_file_if_not_exist($pot);
 		my $cmd_data = `$cmd`;
-		my $ret_val = $?;
+		my $ret_val = $? >> 8;
 		# ok, now show stderr, if asked to.
 		if ($show_stderr == 1) { print $cmd_data; }
 		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
@@ -903,7 +903,7 @@ sub process {
 			close(FILE);
 			foreach my $s (@stde) { $cmd_data .= $s; }
 			unlink ("_stderr");
-			$ret_val = $?;
+			$ret_val = $? >> 8;
 
 			# ok, now show stderr, if asked to.
 			if ($show_stderr == 1) { print $cmd_data; }
