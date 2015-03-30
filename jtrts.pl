@@ -96,7 +96,7 @@ sub displaySummary {
 		my $s = "Some tests had Errors. Performed $done_cnt tests.";
 		unless ($error_cnt == 0) { $s = $s . "  $error_cnt errors"; }
 		unless ($error_cnt_pot == 0) { $s = $s . "  $error_cnt_pot errors reprocessing the .POT files"; }
-		unless ($ret_val_non_zero_cnt == 0) { $s = $s . "  $ret_val_non_zero_cnt runs had non-zero return code (cores?)"; }
+		unless ($ret_val_non_zero_cnt == 0) { $s = $s . "  $ret_val_non_zero_cnt runs had non-clean exit"; }
 		ScreenOutAlways ("$s\nTime used was $secs seconds\n");
 	}
 }
@@ -691,6 +691,19 @@ sub create_file_if_not_exist {
 }
 ###############################################################################
 ###############################################################################
+sub exit_cause {
+	my ($ret_val) = @_;
+	my $exit_cause = "";
+
+	if ($ret_val & 128) {
+		$exit_cause = sprintf("segfault, signal %d%s", $ret_val & 127,
+				      $ret_val & 128 ? " (core dumped)" : "");
+	} else {
+		$exit_cause = sprintf("exited, return code %d", $ret_val >> 8);
+	}
+	return $exit_cause;
+}
+
 sub process {
 	my $skip = shift(@_);
 	my $pot = "./tst.pot";
@@ -771,7 +784,7 @@ sub process {
 		# vm's, but this works around it, and cause no other side effects for other OS's.
 		create_file_if_not_exist($pot);
 		my $cmd_data = `$cmd`;
-		my $ret_val = $? >> 8;
+		my $ret_val = $?;
 		# ok, now show stderr, if asked to.
 		if ($show_stderr == 1) { print $cmd_data; }
 		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
@@ -826,7 +839,7 @@ sub process {
 			if ($ret_val == 0) {
 				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED1!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 			} else {
-				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED2!!!  return code $ret_val]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED2!!! %s]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt, exit_cause($ret_val));
 				$ret_val_non_zero_cnt += 1;
 			}
 			ScreenOutAlways($str);
@@ -859,7 +872,7 @@ sub process {
 		} else {
 			if (!defined $crack_xx[3]) {ScreenOutAlways("\n");}
 			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
-			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_crack_cnt);
+			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but %s]\n", $ar[4], $orig_crack_cnt, exit_cause($ret_val));
 			ScreenOutAlways($str);
 			$ret_val_non_zero_cnt += 1;
 			StopOnError($cmd, $pot);
@@ -903,7 +916,7 @@ sub process {
 			close(FILE);
 			foreach my $s (@stde) { $cmd_data .= $s; }
 			unlink ("_stderr");
-			$ret_val = $? >> 8;
+			$ret_val = $?;
 
 			# ok, now show stderr, if asked to.
 			if ($show_stderr == 1) { print $cmd_data; }
@@ -963,7 +976,7 @@ sub process {
 				} elsif ($invalid_pass != 0) {
 					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11] INVALID cracks=$invalid_pass  [!!!FAILED5!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 				} else {
-					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED6!!! return code $ret_val]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED6!!! %s]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2, exit_cause($ret_val));
 					$ret_val_non_zero_cnt += 1;
 				}
 				ScreenOutAlways($str);
@@ -973,7 +986,7 @@ sub process {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED] ($valid_pass val-pwd)\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
 			} else {
-				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but return code $ret_val]\n", $ar[4], $orig_pot_cnt);
+				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but %s]\n", $ar[4], $orig_pot_cnt, exit_cause($ret_val));
 				ScreenOutAlways($str);
 				$ret_val_non_zero_cnt += 1;
 				StopOnError($cmd, $pot);
