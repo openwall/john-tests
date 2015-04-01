@@ -486,7 +486,7 @@
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
 (utf8)(utf-8)(enc),(X),(jumbo)&(encode_valid),10000,raw-md5u-utf8,pw-utf8,rawmd5u_tst_utf8.in,raw-md5u,Y,--encoding=utf-8,(1500),(1500)
 (base)(sha)(sha1),(X),(jumbo),10000,raw-sha1,pw,rawsha1_tst.in,raw-sha1,Y,X,(1500),(1500)
-(raw-sha1)(sha)(sha1),(X),(jumbo),10000,rawsha1-ng,pw,rawsha1_tst.in,raw-sha1-ng,Y,X,(1430),(1430)
+(raw-sha1)(sha)(sha1),(X),(jumbo),10000,rawsha1-ng,pw,rawsha1_tst.in,raw-sha1-ng,Y,X,(1430)(1500),(1430)(1500)
 (sha1-gens)(base)(sha)(sha1),(X),(jumbo),10000,sha1-gens,pw,sha1s_tst.in,sha1-gen,Y,X,(1500),(1500)
 (sha1-genp)(base)(sha)(sha1),(X),(jumbo),10000,sha1-genp,pw,sha1p_tst.in,sha1-gen,Y,X,(1500),(1500)
 # Data added June 28 2012
