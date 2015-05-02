@@ -926,7 +926,8 @@ sub process {
 			@crack_cnt = split (/\n/, $cmd_data);
 			my $invalid_pass = 0;
 			my $valid_pass = 0;
-			my $is_8bit = is_format_8bit($ar[7]);
+			my $is_8bit = 0;
+			if ($core_only == 0) { $is_8bit = is_format_8bit($ar[7]); }
 			foreach $line (@crack_cnt) {
 				#print ("line = $line\n");
 				# cut away progress indicator
