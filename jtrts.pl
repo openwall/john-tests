@@ -142,6 +142,8 @@ sub parseArgs {
 	foreach my $s (@passthru) { $pass_thru .= " " . $s; }
 	$show_pass_thru = $pass_thru;
 	$show_pass_thru =~ s/--?fork[=:]\d+ ?//;
+	$show_pass_thru =~ s/--?mkpc?[=:]\d+ ?//;
+	$show_pass_thru =~ s/--?sk[ip\-selft]* ?//;
 }
 
 ###############################################################################
