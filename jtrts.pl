@@ -250,9 +250,9 @@ sub showTypeData {
 	ScreenOutAlways("      NOTE, full_only will test ONLY the (full) formats.\n");
 }
 ###############################################################################
-# Setup the program to run.  Parses through params, strtok's the ./john screen
-# output, and also possilby ./john --subformat=LIST (deprecated) or
-# ./john --list=subformats and ./john --encoding=LIST to find
+# Setup the program to run.  Parses through params, strtok's the john screen
+# output, and also possilby john --subformat=LIST (deprecated) or
+# john --list=subformats and john --encoding=LIST to find
 # internal 'variable' data built into jumbo, which can be added to, or removed
 # over time, and between builds.
 ###############################################################################
@@ -266,7 +266,7 @@ sub setup {
 		exit;
 	}
 
-	# we store a ./john error string to this file.  We will use this data in several ways, later.
+	# we store a john error string to this file.  We will use this data in several ways, later.
 	system ("$JOHN_EXE >JohnUsage.Scr 2>&1");
 	open(FILE, "<JohnUsage.Scr") or die $!;
 	@johnUsageScreen = <FILE>;
@@ -289,7 +289,7 @@ sub setup {
 	ScreenOutVV("John 'usage' data is:\n");
 	ScreenOutVV(@johnUsageScreen);
 
-	# can we use -pot=./tst.pot ?
+	# can we use -pot=tst.pot ?
 	if (grepUsage("--pot=NAME")) {
 		push(@caps, "jumbo");
 		push(@caps, "core");  # note, jumbo can do both CORE and JUMBO formats
@@ -312,7 +312,7 @@ sub setup {
 		push(@caps, "dupe_suppression");
 		ScreenOutV("--dupe-suppression option is valid\n");
 	}
-	# can we use --config=./john.conf ?
+	# can we use --config=john.conf ?
 	if (grepUsage("--config=FILE")) { push(@caps, "config_valid");
 		ScreenOutV("--config=FILE option is valid\n");
 	}
@@ -708,13 +708,13 @@ sub exit_cause {
 
 sub process {
 	my $skip = shift(@_);
-	my $pot = "./tst.pot";
+	my $pot = "tst.pot";
 	my $pot_opt = "";
 	my $cmd_head = "$JOHN_EXE -ses=tst $pass_thru";
 	if ($skip) { $cmd_head .= " -skip" }
 	if (stringInArray("nolog_valid", @caps)) { $cmd_head = "$cmd_head -nolog"; }
-	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=./john.conf"; }
-	if (stringInArray("local_pot_valid", @caps)) { $cmd_head .= $pot_opt = " -pot=./tst.pot"; }
+	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=john.conf"; }
+	if (stringInArray("local_pot_valid", @caps)) { $cmd_head .= $pot_opt = " -pot=tst.pot"; }
 	else {
 		# handle john 'core' behavior.  We save off existing john.pot, then it is overwritten
 		unlink $JOHN_PATH."/john.ptt";
