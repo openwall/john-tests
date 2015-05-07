@@ -710,7 +710,7 @@ sub process {
 	my $skip = shift(@_);
 	my $pot = "./tst.pot";
 	my $pot_opt = "";
-	my $cmd_head = "$JOHN_EXE -ses=./tst $pass_thru";
+	my $cmd_head = "$JOHN_EXE -ses=tst $pass_thru";
 	if ($skip) { $cmd_head .= " -skip" }
 	if (stringInArray("nolog_valid", @caps)) { $cmd_head = "$cmd_head -nolog"; }
 	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=./john.conf"; }
