@@ -483,9 +483,9 @@ sub loadAllValidFormatTypeStrings {
 	push(@caps, "inc");
 	if ($verbosity > 3) {
 		my $cnt = @validFormats;
-		ScreenOutVV("There are $cnt formats this john build can handle. These are:\n");
-		foreach my $line(@validFormats) { ScreenOutVV($line . ","); }
-		ScreenOutVV("\n");
+		ScreenOutVVV("There are $cnt formats this john build can handle. These are:\n");
+		foreach my $line(@validFormats) { ScreenOutVVV($line . ","); }
+		ScreenOutVVV("\n");
 	}
 }
 sub loadAllValidEncodings {
@@ -544,9 +544,9 @@ sub readData {
 	}
 	if ($verbosity > 3) {
 		my $cnt = @tstdata;
-		ScreenOutVV("Running data-dictionary. $cnt items (jtrts.dat):\n");
-		foreach my $line(@tstdata) { ScreenOutVV($line . "\n"); }
-		ScreenOutVV("\n");
+		ScreenOutVVV("Running data-dictionary. $cnt items (jtrts.dat):\n");
+		foreach my $line(@tstdata) { ScreenOutVVV($line . "\n"); }
+		ScreenOutVVV("\n");
 	}
 }
 ###############################################################################
@@ -561,17 +561,17 @@ sub filterPatterns {
 			if ($cnt == 12) {
 				# determine if our build of john 'can' do this format:
 				if (!stringInArray($ar[7], @validFormats)) {
-					ScreenOutVV("Line [$line] filtered out, because format ${ar[7]} can not be processed by this build of john\n");
+					ScreenOutVVV("Line [$line] filtered out, because format ${ar[7]} can not be processed by this build of john\n");
 					next LINE;
 				}
 				# Now, make sure that this is something 'requested'
 				if (!arrayPartInString($ar[0], @types)) {
-					ScreenOutVV("Line [$line] filtered out, no requests [$ar[0]] in [@types] were satisfied\n");
+					ScreenOutVVV("Line [$line] filtered out, no requests [$ar[0]] in [@types] were satisfied\n");
 					next LINE;
 				}
 				# Now, make sure that nothing from the is something 'non-requested' is set
 				if (arrayPartInString($ar[0], @nontypes)) {
-					ScreenOutVV("Line [$line] filtered out. A non request [@types] was found\n");
+					ScreenOutVVV("Line [$line] filtered out. A non request [@types] was found\n");
 					next LINE;
 				}
 				# Now, make sure that ALL of the required types are satisfied.
@@ -585,7 +585,7 @@ sub filterPatterns {
 							$valid = 'f';
 							foreach my $req(@reqs) { # note, these are already wrapped in ()
 								if (!stringInArray(substr($req, 1, length($req)-2), @types)) {
-									ScreenOutVV("Line [$line] filtered out, required option [@reqs] not satisfied in [@types]\n");
+									ScreenOutVVV("Line [$line] filtered out, required option [@reqs] not satisfied in [@types]\n");
 									next LINE;
 								}
 							}
@@ -596,7 +596,7 @@ sub filterPatterns {
 				my @reqs = split(/&/,$ar[2]);
 				foreach my $req(@reqs) {
 					if (!stringInArray(substr($req, 1, length($req)-2), @caps)) {
-						ScreenOutVV("Line [$line] filtered out, required build option option [@reqs] not satisfied in [@caps]\n");
+						ScreenOutVVV("Line [$line] filtered out, required build option option [@reqs] not satisfied in [@caps]\n");
 						next LINE;
 					}
 				}
@@ -604,7 +604,7 @@ sub filterPatterns {
 				# OK, make sure the dictionary file 'exists'
 				unless (-e "${ar[5]}.dic") {
 					if (substr($ar[5],0,10) ne "INCREMENT_") {
-						ScreenOutVV("Line [$line] filtered out, because dictionary ${ar[5]}.dic not found\n");
+						ScreenOutVVV("Line [$line] filtered out, because dictionary ${ar[5]}.dic not found\n");
 						next LINE;
 					}
 				}
@@ -621,9 +621,9 @@ sub filterPatterns {
 
 	if ($verbosity > 3) {
 		my $cnt = @tstdata;
-		ScreenOutVV("Filtered items from the data-dictionary. $cnt items (jtrts.dat):\n");
-		foreach my $line(@tstdata) { ScreenOutVV($line . "\n"); }
-		ScreenOutVV("\n");
+		ScreenOutVVV("Filtered items from the data-dictionary. $cnt items (jtrts.dat):\n");
+		foreach my $line(@tstdata) { ScreenOutVVV($line . "\n"); }
+		ScreenOutVVV("\n");
 	}
 
 }
@@ -1156,19 +1156,19 @@ sub doInternalMode {
 
 	ScreenOutSemi("Running JTRTS in -internal mode\n");
 	if ($hash_case_mangle) {ScreenOutSemi("Running hash case manging mode\n");}
-	ScreenOutVV("\@validFormats\n");
-	ScreenOutVV(@validFormats);
-	ScreenOutVV("\n\n\@types  (before fixups)\n");
-	ScreenOutVV(@types);
+	ScreenOutVVV("\@validFormats\n");
+	ScreenOutVVV(@validFormats);
+	ScreenOutVVV("\n\n\@types  (before fixups)\n");
+	ScreenOutVVV(@types);
 	if (scalar @types == 3 && $types[0] eq "base" && $types[1] eq "koi8r" && $types[2] eq "utf8") {
 		@types = @validFormats;
 	} else {
 		my @newtypes;
 		foreach my $type (@types) {
-			ScreenOutVV("Looking for $type\n\n");
+			ScreenOutVVV("Looking for $type\n\n");
 			my $cmd = "$JOHN_EXE -list=formats -format=$type $show_pass_thru 2>/dev/null";
 			my $ret_types = `$cmd`;
-			ScreenOutVV("$cmd returned $ret_types\n\n");
+			ScreenOutVVV("$cmd returned $ret_types\n\n");
 			$ret_types =~ s/\n//g;
 			$ret_types =~ s/ //g;
 			my @typesarr = split(",", $ret_types);
@@ -1180,10 +1180,10 @@ sub doInternalMode {
 		@types = sort(@newtypes);
 	}
 
-	ScreenOutVV("\n\n\@types  (after fixups)\n");
-	ScreenOutVV(@types);
-	ScreenOutVV("\n\n\@nontypes\n");
-	ScreenOutVV(@nontypes);
+	ScreenOutVVV("\n\n\@types  (after fixups)\n");
+	ScreenOutVVV(@types);
+	ScreenOutVVV("\n\n\@nontypes\n");
+	ScreenOutVVV(@nontypes);
 
 	# now process the internal stuff.
 	foreach my $type (@types) {
@@ -1200,8 +1200,8 @@ sub doInternalMode {
 
 		# make sure we have this type as a valid type in JtR
 		my @match = grep { /^$type$/ } @validFormats;
-		ScreenOutVV("\n\nsearch of type in validFormats resulted in:\n");
-		ScreenOutVV("type=[$type] match=[@match]\n");
+		ScreenOutVVV("\n\nsearch of type in validFormats resulted in:\n");
+		ScreenOutVVV("type=[$type] match=[@match]\n");
 		if (scalar(@match) == 0) { $doit = 0; }
 
 		if ($doit == 1) {
