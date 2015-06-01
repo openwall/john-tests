@@ -633,6 +633,7 @@ sub ExtraArgs_Run { #($ar[8], $ar[7], $ar[9]);
 	#if ($ar[9] ne 'X') { $cmd .= "$cmd $ar[9]"; }
 	my $ret = "";
 	if ($_[0] eq 'Y') { $ret .= " -form=$_[1]"; }
+	if ($core_only) { return $ret; }
 	if ($_[2] ne 'X') {
 		my $x = "";
 		if (substr($_[2], 0, 1) eq 'X') {
@@ -651,6 +652,7 @@ sub ExtraArgs_RunPot { #($ar[8], $ar[7], $ar[9]);
 	#if ($ar[9] ne 'X') { $cmd .= "$cmd $ar[9]"; }
 	my $ret = "";
 	if ($_[0] eq 'Y') { $ret .= " -form=$_[1]"; }
+	if ($core_only) { return $ret; }
 	if ($_[2] ne 'X') {
 		my $x = "";
 		if (substr($_[2], 0, 1) eq 'X') {
@@ -672,6 +674,7 @@ sub ExtraArgs_RunPot { #($ar[8], $ar[7], $ar[9]);
 sub ExtraArgs_Show { #($ar[9]);
 	#if ($ar[9] ne 'X') { $cmd .= "$cmd $ar[9]"; }
 	my $ret = "";
+	if ($core_only) { return $ret; }
 	if (substr($_[0], 0, 1) ne 'X') {
 		my @a = split('\|', $_[0]);
 		$ret .= " " . $a[0];
