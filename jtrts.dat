@@ -369,6 +369,8 @@
 (new)(dynamic)(base),(X),(jumbo),10000,dynamic_1015,pw-new,dynamic_1015_new_tst.in,dynamic_1015,N,X,(1500)(1241),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1016,pw,dynamic_1016_tst.in,dynamic_1016,N,X,(1500),(1500)
 (new)(dynamic)(base),(X),(jumbo),10000,dynamic_1016,pw-new,dynamic_1016_new_tst.in,dynamic_1016,N,X,(1500),(1500)
+(dynamic)(base),(X),(jumbo),10000,dynamic_1017,pw,dynamic_1017_tst.in,dynamic_1017,N,X,(1500),(1500)
+(new)(dynamic)(base),(X),(jumbo),10000,dynamic_1017,pw-new,dynamic_1017_new_tst.in,dynamic_1017,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1018,pw,dynamic_1018_tst.in,dynamic_1018,N,X,(1500),(1500)
 (new)(dynamic)(base),(X),(jumbo),10000,dynamic_1018,pw-new,dynamic_1018_new_tst.in,dynamic_1018,N,X,(1500)(920),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_1019,pw,dynamic_1019_tst.in,dynamic_1019,N,X,(1500),(1500)
