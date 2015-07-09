@@ -144,7 +144,7 @@ sub parseArgs {
 	$show_pass_thru =~ s/--?fork[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?mkpc?[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?sk[ip\-selft]* ?//;
-	$show_pass_thru =~ s/--?d[upe\-srion]* ?//;
+	$show_pass_thru =~ s/--?du[pe\-surion]* ?//;
 	$show_pass_thru =~ s/--?me[mfile\-sz]*[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?fix[-staedly]*[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?pro[gres\-vry]*[=:]\d+ ?//;
