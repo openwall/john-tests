@@ -1,6 +1,7 @@
 *.log
 *.pot
 *.rec
+_stderr
 pw-150.dic
 pw-200.dic
 pw-40.dic
@@ -13,3 +14,4 @@ pw-utf8-160.dic
 JohnUsage.Scr
 opencl_*.h
 pw3
+tst.in
