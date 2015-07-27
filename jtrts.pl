@@ -669,9 +669,9 @@ sub ExtraArgs_RunPot { #($ar[8], $ar[7], $ar[9]);
 		if (scalar(@a) > 1) {
 			$ret .= " " . $a[1];
 		}
-		if (index($ret, "-enc") < 0) {
-			$ret .= " -enc=utf8";
-		}
+		#if (index($ret, "-enc") < 0) {
+		#	$ret .= " -enc=utf8";
+		#}
 	}
 	return $ret;
 }
@@ -944,17 +944,20 @@ sub process {
 			my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
 			system($cmd2);
 
-#			$cmd2 = $cmd;
-#			# NOTE, we may not be able to harvest off $cmd.  We may have different run args for a .pot re-check.
-#			# this was seen were we use -encode=raw
-#			$cmd2 =~ s/$dict_name/--wordlist=pw3/;
-#			$cmd2 =~ s/$ar[6]/tst.in/;
-#			$cmd2 =~ s/2>&1 >\/dev\/null/2>_stderr/;
-#			$cmd2 =~ s/[\-]+fork=[0-9]+ //;
+			$cmd2 = $cmd;
+			# NOTE, we may not be able to harvest off $cmd.  We may have different run args for a .pot re-check.
+			# this was seen were we use -encode=raw
+			$cmd2 =~ s/$dict_name/--wordlist=pw3/;
+			$cmd2 =~ s/$ar[6]/tst.in/;
+			$cmd2 =~ s/2>&1 >\/dev\/null/2>_stderr/;
+			$cmd2 =~ s/[\-]+fork=[0-9]+ //;
+
+# went back to original method, and have scrapped this ExtraArgs_RunPot() stuff since we now
+# have john-local.pot that removes the utf8 default crap.
 
 #			$cmd2 rebuilt.  We force -enc=utf8, and simply rebuild, vs re-using original $cmd.
 #			Also, we 'X' out the original. We likely need to change this.
-			$cmd2 = "$cmd_head tst.in --wordlist=pw3 " . ExtraArgs_RunPot($ar[8], $ar[7], $ar[9]);
+			#$cmd2 = "$cmd_head tst.in --wordlist=pw3 " . ExtraArgs_RunPot($ar[8], $ar[7], $ar[9]);
 			if ($show_stderr != 1) { $cmd2 .= " 2>_stderr"; }
 			# this will switch stderr and stdout (vs joining them), so we can grab stderr BY ITSELF.
 			else { $cmd2 .= " 3>&1 1>&2 2>&3 >/dev/null"; }
