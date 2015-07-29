@@ -664,7 +664,7 @@ sub ExtraArgs_Run { #($ar[8], $ar[7], $ar[9]);
 	#if ($ar[8] eq 'Y') { $cmd = "$cmd -form=$ar[7]"; }
 	#if ($ar[9] ne 'X') { $cmd .= "$cmd $ar[9]"; }
 	my $ret = "";
-	if ($_[0] eq 'Y') { $ret .= " -form=$_[1]"; }
+	if ($_[0] eq 'Y' || substr($_[1],0,8) eq "dynamic_") { $ret .= " -form=$_[1]"; }
 	if ($core_only) { return $ret; }
 	if ($_[2] ne 'X') {
 		my $x = "";
@@ -683,7 +683,7 @@ sub ExtraArgs_RunPot { #($ar[8], $ar[7], $ar[9]);
 	#if ($ar[8] eq 'Y') { $cmd = "$cmd -form=$ar[7]"; }
 	#if ($ar[9] ne 'X') { $cmd .= "$cmd $ar[9]"; }
 	my $ret = "";
-	if ($_[0] eq 'Y') { $ret .= " -form=$_[1]"; }
+	if ($_[0] eq 'Y' || substr($_[1],0,8) eq "dynamic_") { $ret .= " -form=$_[1]"; }
 	if ($core_only) { return $ret; }
 	if ($_[2] ne 'X') {
 		my $x = "";
