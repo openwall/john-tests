@@ -715,7 +715,9 @@ sub ExtraArgs_Show { #($ar[9]);
 }
 sub is_format_8bit {
 	my $type = $_[0];
-	my @details = split("\t", $formatDetails{$type});
+	my $details = $formatDetails{$type};
+	if (!defined($details)) { return 0; }
+	my @details = split("\t", $details);
 	my $_8bit = hex($details[4]) & 0x00000002; # check for FMT_8_BIT
 	return $_8bit;
 }
