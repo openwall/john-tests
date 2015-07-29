@@ -62,6 +62,8 @@ usage: $0 [-h|-?] [-option[s]]
                    from a john jumbo build. This allows doing 'some' testing
                    on formats not yet in the TS, by using the internal test
                    strings from the format itself.
+    -dynamic <s>   What type dynamic do we want. valid is normal, none and
+                   all.  Default is normal.
     -case_mangle   ONLY works in -internal mode. In this mode, if testing a
                    a format that has FMT_SPLIT_UNIFIES_CASE set, and we can
                    detect a raw hex hash, then that line will get output, and
