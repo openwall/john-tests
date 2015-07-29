@@ -37,6 +37,7 @@ my @tstdata;
 my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_stderr=0; my $randomize = 0;
 my $last_line_len=0; my $internal_testing=0; my $hash_case_mangle=0; my $ignore_full=0;
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
+my $dyanmic_wanted="normal";
 my @startingTime;
 my $pass_thru = "";
 my $show_pass_thru;
@@ -115,6 +116,7 @@ sub parseArgs {
 		'nontype=s'        => \@nontypes,
 		'showtypes'        => \$showtypes,
 		'basepath=s'       => \$basepath,
+		'dynamic=s'        => \$dyanmic_wanted,
 		'prelims!'         => \$prelims,
 		'passthru=s'       => \@passthru,
 		'stoponerror!'     => \$stop_on_error,
@@ -455,21 +457,46 @@ sub loadAllValidFormatTypeStrings {
 	$fmt_str =~ s/\/dynamic_n//g;
 
 	# Ok, now if we have 'dynamic's, LOAD them
-	if (grepUsage("--list=WHAT") || grepUsage("--subformat=LIST")) {
-		if (grepUsage("--list=WHAT")) {
-			system ("$JOHN_EXE $show_pass_thru --list=subformats >JohnDynaUsage.Scr 2>/dev/null");
-		}
-		else {
-			system ("$JOHN_EXE $show_pass_thru --subformat=LIST >JohnDynaUsage.Scr 2>/dev/null");
-		}
-		open(FILE, "<JohnDynaUsage.Scr") or die $!;
-		my @dyna = <FILE>;
-		close(FILE);
-		unlink("JohnDynaUsage.Scr");
-		foreach my $line (@dyna) {
-			my @ar = split(/ /, $line);
-			if (index($ar[2], "dynamic_") == 0) {
-				$fmt_str = $fmt_str . "/" . $ar[2];
+	if ($dyanmic_wanted ne "none") {
+		if (grepUsage("--list=WHAT") || grepUsage("--subformat=LIST")) {
+			my $more = 1;
+			if ($dyanmic_wanted eq "all") {
+				system ("$JOHN_EXE $show_pass_thru --list=formats --format=dynamic-all >JohnDynaUsage.Scr 2>/dev/null");
+				open(FILE, "<JohnDynaUsage.Scr") or die $!;
+				my @dyna = <FILE>;
+				close(FILE);
+				unlink("JohnDynaUsage.Scr");
+				if (defined($dyna[0]) && substr($dyna[0], 0, 10) eq "dynamic_0,") {
+					$more = 0;
+					foreach my $line (@dyna) {
+						chomp $line;
+						$line =~ s/\r$//;
+						$line =~ s/,//g;
+						my @ar = split(/ /, $line);
+						foreach my $item (@ar) {
+							$fmt_str = $fmt_str . "/" . $item;
+						}
+					}
+				}
+			}
+			if ($more > 0) {
+				if (grepUsage("--list=WHAT")) {
+					system ("$JOHN_EXE $show_pass_thru --list=subformats >JohnDynaUsage.Scr 2>/dev/null");
+				}
+				else {
+					system ("$JOHN_EXE $show_pass_thru --subformat=LIST >JohnDynaUsage.Scr 2>/dev/null");
+				}
+				system ("$JOHN_EXE $show_pass_thru --subformat=LIST >JohnDynaUsage.Scr 2>/dev/null");
+				open(FILE, "<JohnDynaUsage.Scr") or die $!;
+				my @dyna = <FILE>;
+				close(FILE);
+				unlink("JohnDynaUsage.Scr");
+				foreach my $line (@dyna) {
+					my @ar = split(/ /, $line);
+					if (index($ar[2], "dynamic_") == 0) {
+						$fmt_str = $fmt_str . "/" . $ar[2];
+					}
+				}
 			}
 		}
 	}
@@ -1214,13 +1241,16 @@ sub doInternalMode {
 	} else {
 		my @newtypes;
 		foreach my $type (@types) {
-			ScreenOutVVV("Looking for $type\n\n");
+			ScreenOutVV("Looking for $type\n");
 			my $cmd = "$JOHN_EXE -list=formats -format=$type $show_pass_thru 2>/dev/null";
+			ScreenOutVV("Running:  $cmd\n");
 			my $ret_types = `$cmd`;
-			ScreenOutVVV("$cmd returned $ret_types\n\n");
+			ScreenOutVV("$cmd returned $ret_types\n");
 			$ret_types =~ s/\n//g;
 			$ret_types =~ s/ //g;
+			ScreenOutVV("fixed ret_types = $ret_types\n");
 			my @typesarr = split(",", $ret_types);
+			ScreenOutVV("typesarr=@typesarr\n\n");
 			foreach $type (@typesarr) { push (@newtypes, lc $type); }
 		}
 		# uniq newtypes
@@ -1229,10 +1259,10 @@ sub doInternalMode {
 		@types = sort(@newtypes);
 	}
 
-	ScreenOutVVV("\n\n\@types  (after fixups)\n");
-	ScreenOutVVV(@types);
-	ScreenOutVVV("\n\n\@nontypes\n");
-	ScreenOutVVV(@nontypes);
+	ScreenOutVV("\n\n\@types  (after fixups)\n");
+	ScreenOutVV(@types);
+	ScreenOutVV("\n\n\@nontypes\n");
+	ScreenOutVV(@nontypes);
 
 	# now process the internal stuff.
 	foreach my $type (@types) {
