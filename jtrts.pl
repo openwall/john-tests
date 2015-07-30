@@ -171,10 +171,13 @@ sub grepUsage {
 sub LoadFormatDetails {
 	# build the formatDetails hash (1 time)
 	my $res = `$JOHN_EXE $show_pass_thru -list=format-details`;
+	$res .= `$JOHN_EXE $show_pass_thru -list=format-details -format=dynamic-all`;
 	my @details = split ("\n", $res);
 	foreach my $detail (@details) {
 		my @indiv = split("\t", $detail);
-		$formatDetails {lc $indiv[0]} = $detail;
+		if (scalar @indiv > 12) {
+			$formatDetails {lc $indiv[0]} = $detail;
+		}
 	}
 }
 sub StopOnError {
