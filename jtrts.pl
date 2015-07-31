@@ -281,10 +281,11 @@ sub setup {
 	}
 
 	# we store a john error string to this file.  We will use this data in several ways, later.
-	system ("$JOHN_EXE >JohnUsage.Scr 2>&1");
-	open(FILE, "<JohnUsage.Scr") or die $!;
+	system ("$JOHN_EXE >tst-JohnUsage.Scr 2>&1");
+	open(FILE, "<tst-JohnUsage.Scr") or die $!;
 	@johnUsageScreen = <FILE>;
 	close(FILE);
+	unlink ("tst-JohnUsage.Scr");
 
 	ScreenOutAlways("-------------------------------------------------------------------------------\n");
 	ScreenOutAlways("- JtR-TestSuite (jtrts). Version $VERSION, $RELEASE_DATE.  By, Jim Fougeron & others\n");
@@ -303,7 +304,7 @@ sub setup {
 	ScreenOutVV("John 'usage' data is:\n");
 	ScreenOutVV(@johnUsageScreen);
 
-	# can we use -pot=tst.pot ?
+	# can we use -pot=tst-.pot ?
 	if (grepUsage("--pot=NAME")) {
 		push(@caps, "jumbo");
 		push(@caps, "core");  # note, jumbo can do both CORE and JUMBO formats
@@ -400,7 +401,7 @@ sub setup {
 }
 
 ###############################################################################
-# we parse the JohnUsage.Scr file, for the --format=NAME line, and ALL lines
+# we parse the tst-JohnUsage.Scr file, for the --format=NAME line, and ALL lines
 # up to the next param. We then chop out all of the 'valid' formats which this
 # build of john claims to be able to handle.  Then we can later compare when
 # running, and simply about a run, if this build does not support it.
@@ -780,13 +781,13 @@ sub exit_cause {
 
 sub process {
 	my $skip = shift(@_);
-	my $pot = "tst.pot";
+	my $pot = "tst-.pot";
 	my $pot_opt = "";
-	my $cmd_head = "$JOHN_EXE -ses=tst $pass_thru";
+	my $cmd_head = "$JOHN_EXE -ses=tst- $pass_thru";
 	if ($skip) { $cmd_head .= " -skip" }
 	if (stringInArray("nolog_valid", @caps)) { $cmd_head = "$cmd_head -nolog"; }
 	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=john.conf"; }
-	if (stringInArray("local_pot_valid", @caps)) { $cmd_head .= $pot_opt = " -pot=tst.pot"; }
+	if (stringInArray("local_pot_valid", @caps)) { $cmd_head .= $pot_opt = " -pot=tst-.pot"; }
 	else {
 		# handle john 'core' behavior.  We save off existing john.pot, then it is overwritten
 		unlink $JOHN_PATH."/john.ptt";
@@ -811,7 +812,7 @@ sub process {
 			open (FILE, "<".substr($dict_name,11));
 			my @lines = <FILE>;
 			close(FILE);
-			$dict_name = "--wordlist=$ar[5]-$ar[3].dic";
+			$dict_name = "--wordlist=tst-$ar[5]-$ar[3].dic";
 			$dict_name_ex = substr($dict_name,11);
 			if ($ar[3] != 10000) {
 				@lines = @lines[0 .. ($ar[3] - 1)];
@@ -960,8 +961,8 @@ sub process {
 			open(POTFILE,  $pot);
 			my @pot_lines = <POTFILE>;
 			close(POTFILE);
-			unlink ("tst.in");
-			open(NEWFILE, ">> tst.in");
+			unlink ("tst-tst.in");
+			open(NEWFILE, ">> tst-tst.in");
 			foreach my $line (@pot_lines) {
 				chomp $line;
 				my @elems = split(":", $line);
@@ -972,15 +973,15 @@ sub process {
 				}
 			}
 			close(NEWFILE);
-			unlink ("pw3");
-			my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE pw3 > /dev/null");
+			unlink ("tst-pw3");
+			my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE tst-pw3 > /dev/null");
 			system($cmd2);
 
 			$cmd2 = $cmd;
 			# NOTE, we may not be able to harvest off $cmd.  We may have different run args for a .pot re-check.
 			# this was seen were we use -encode=raw
-			$cmd2 =~ s/$dict_name/--wordlist=pw3/;
-			$cmd2 =~ s/$ar[6]/tst.in/;
+			$cmd2 =~ s/$dict_name/--wordlist=tst-pw3/;
+			$cmd2 =~ s/$ar[6]/tst-tst.in/;
 			$cmd2 =~ s/2>&1 >\/dev\/null/2>_stderr/;
 			$cmd2 =~ s/[\-]+fork=[0-9]+ //;
 
@@ -1080,8 +1081,8 @@ sub process {
 				StopOnError($cmd, $pot);
 			}
 			unlink("$pot");
-			unlink("pw3");
-			unlink("tst.in");
+			unlink("tst-pw3");
+			unlink("tst-tst.in");
 		}
 	}
 	# in -internal mode, we do not want the extra \n
@@ -1097,13 +1098,7 @@ sub process {
 # cleanup temp files, etc
 ###############################################################################
 sub cleanup {
-	unlink ("JohnUsage.Scr");
-	unlink ("tst.pot");
-	unlink ("tst.log");
-	unlink ("tst.ses");
-	unlink ("selftest.dic");
-	unlink ("selftest.in");
-	unlink ("pw-10000.dic");
+	unlink glob('tst-*');
 }
 
 ###############################################################################
