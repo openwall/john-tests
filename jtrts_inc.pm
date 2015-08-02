@@ -62,6 +62,9 @@ usage: $0 [-h|-?] [-option[s]]
                    from a john jumbo build. This allows doing 'some' testing
                    on formats not yet in the TS, by using the internal test
                    strings from the format itself.
+    -restore       Runs a single test, in -restore mode. To do this, we run
+                   john a few seconds, then resume this run until we have
+                   completed the work, then check that all are properly cracked
     -dynamic <s>   What type dynamic do we want. valid is normal, none and
                    all.  Default is normal.
     -case_mangle   ONLY works in -internal mode. In this mode, if testing a

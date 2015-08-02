@@ -35,7 +35,7 @@ my @validFormats=();
 my %formatDetails=();
 my @tstdata;
 my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_stderr=0; my $randomize = 0;
-my $last_line_len=0; my $internal_testing=0; my $hash_case_mangle=0; my $ignore_full=0;
+my $last_line_len=0; my $internal_testing=0; my $restore_testing=0; my $hash_case_mangle=0; my $ignore_full=0;
 my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my $dyanmic_wanted="normal";
 my @startingTime;
@@ -62,6 +62,7 @@ readData();
 if ($showtypes) { showTypeData(); exit 0; }
 johnPrelims();
 if ($internal_testing) { doInternalMode(); }
+if ($restore_testing)  { doRestoreMode(); }
 filterPatterns();
 process(0);
 cleanup();
@@ -122,6 +123,7 @@ sub parseArgs {
 		'stoponerror!'     => \$stop_on_error,
 		'showstderr!'      => \$show_stderr,
 		'internal!'        => \$internal_testing,
+		'restore!'         => \$restore_testing,
 		'case_mangle!'     => \$hash_case_mangle,
 		'random!'          => \$randomize,
 		'ignore_full!'     => \$ignore_full,
@@ -1302,4 +1304,59 @@ sub doInternalMode {
 	cleanup();
 	displaySummary();
 	exit $error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt;
+}
+
+#../run/john -w=pw-new.dic md5crypt_restart_tst.in -pot=tst-.pot -ses=tst- -max-run=10
+#../run/john -res=tst-
+###############################################################################
+# Restore mode. This will run john for 10s at a time, then restore the session
+# and keep restoring, until 'done'.  Once done, we process the .pot file the
+# the same way, making sure we have our 1994 values.
+#
+# this function does not return, it cleans up, and exits with proper errorlevel.
+###############################################################################
+sub doRestoreMode {
+	if ($core_only == 1) {
+		ScreenOut("John CORE build detected.\n The -max-run-time mode ONLY works for jumbo build of john.\n");
+		exit 1;
+	}
+	ScreenOutSemi("Running JTRTS in -restore mode (against a 1994 candidate ms5crypt input file\n");
+	`rm -f tst-*`;
+	my $cmd = "$JOHN_EXE -ses=tst- $pass_thru -w=pw-new.dic md5crypt_restart_tst.in -pot=tst-.pot -max-run=10 -form=md5crypt 2>&1";
+	ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
+	my $results = `$cmd`;
+	my $ret = $?;
+	ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
+	if ($verbose < 2) { show_eta($results); }
+	$cmd = "$JOHN_EXE -res=tst- 2>&1";
+	while ( ($ret>>8) == 1) {
+		ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
+		$results = `$cmd`;
+		$ret = $?;
+		`stty echo >/dev/null 2>/dev/null`;
+		ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
+		if ($verbose < 2) { show_eta($results); }
+	}
+	# now compute if we got them all.
+	print ("Done with run\n");
+	$results = `wc tst-.pot`;
+	print ("\nResults (should be 1994) : $results\n");
+	cleanup();
+	exit $error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt;
+}
+
+#use String::Scanf;
+sub show_eta {
+	#my $tot = 0; my $cnt = 0; my $jnk; my $jnk2; my $val;
+	my $results = $_[0];
+	my @ar = split("\n", $results);
+	foreach my $str (@ar) {
+		if (index($str, "ETA") > 0 && index($str, "\.\.") > 0) {
+			ScreenOut ($str."\n");
+			#$cnt += 1;
+			#($jnk, $val, $jnk2) = sscanf("%d %dg %s", $str);
+			#$tot += $val;
+		}
+	}
+	#if ($cnt > 1) { ScreenOut("cur total: $tot\n"); }
 }
