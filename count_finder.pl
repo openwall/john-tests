@@ -6,17 +6,19 @@ use strict;
 # how many passwords are of the shorter lengths.  So, ./count_finder.pl 110 55 will list
 # 1500 for length 110, and then 1120 (or how even many it is) for length 55.
 
-if (scalar @ARGV != 3 && scalar @ARGV != 2) { die print "usage: ./count_finder.pl max_len shorter_len [count]\n"; }
+if (scalar @ARGV > 4 || scalar @ARGV < 2) { die print "usage: ./count_finder.pl max_len shorter_len [count [pw file]]\n"; }
 my $count = 1500;
+my $pw_name = "pw-new.dic";
 my $len = $ARGV[0];
 my $short = $ARGV[1];
-if ($len <= $short) { die print "error! shorter_len was not shorter\nusage: ./count_finder.pl max_len shorter_len [count]\n"; }
+if ($len <= $short) { die print "error! shorter_len was not shorter\nusage: ./count_finder.pl max_len shorter_len [count [pw file]]\n"; }
 my $short_cnt = 0;
 if (scalar @ARGV == 3) {$count = $ARGV[2];}
+if (scalar @ARGV == 4) {$pw_name = $ARGV[3];}
 my $orig_count = $count;
 my $line_cnt = 0;
 
-open (FILE, "< pw-new.dic");
+open (FILE, "< $pw_name");
 my @words = <FILE>;
 close(FILE);
 foreach my $word (@words) {
