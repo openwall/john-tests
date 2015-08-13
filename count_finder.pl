@@ -13,7 +13,7 @@ my $len = $ARGV[0];
 my $short = $ARGV[1];
 if ($len <= $short) { die print "error! shorter_len was not shorter\nusage: ./count_finder.pl max_len shorter_len [count [pw file]]\n"; }
 my $short_cnt = 0;
-if (scalar @ARGV == 3) {$count = $ARGV[2];}
+if (scalar @ARGV > 2) {$count = $ARGV[2];}
 if (scalar @ARGV == 4) {$pw_name = $ARGV[3];}
 my $orig_count = $count;
 my $line_cnt = 0;
