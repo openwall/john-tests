@@ -5,6 +5,8 @@ use jtrts_inc;
 use Digest::MD5;
 use MIME::Base64;
 use List::Util qw/shuffle/;
+use JSON::XS qw(encode_json decode_json);
+use File::Slurp qw(read_file write_file);
 
 my $VERSION = "1.13";
 my $RELEASE_DATE = "Dec 21, 2014";
@@ -25,7 +27,6 @@ my $JOHN_PATH = "../run";
 my $JOHN_EXE  = "$JOHN_PATH/john";
 my $UNIQUE    = "$JOHN_PATH/unique";
 my $verbosity  = 2;
-my $quiet = 0; my $verbose = 0;
 my @types=();
 my @nontypes=();
 my @caps=();
@@ -33,10 +34,11 @@ my @encs=();
 my @johnUsageScreen=();
 my @validFormats=();
 my %formatDetails=();
+my %opts=(line_num => 0);
 my @tstdata;
-my $showtypes=0, my $basepath=""; my $prelims=0, my $stop_on_error=0, my $show_stderr=0; my $randomize = 0;
-my $last_line_len=0; my $internal_testing=0; my $restore_testing=0; my $hash_case_mangle=0; my $ignore_full=0;
-my $error_cnt = 0, my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
+my $show_stderr=0;
+my $last_line_len=0;
+my $error_cnt = 0; my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my $dyanmic_wanted="normal";
 my @startingTime;
 my $pass_thru = "";
@@ -57,15 +59,16 @@ if (!defined($ENV{"GWS"})) { $ENV{"GWS"} = "64"; }
 
 startTime();
 parseArgs();
-setup();
+setup();     # this function taks a while!!
 readData();
-if ($showtypes) { showTypeData(); exit 0; }
+if (defined $opts{showtypes} && $opts{showtypes} > 0) { showTypeData(); unlink_restore(); exit 0; }
 johnPrelims();
-if ($internal_testing) { doInternalMode(); }
-if ($restore_testing)  { doRestoreMode(); }
+if (defined $opts{internal} && $opts{internal} > 0) { doInternalMode(); unlink_restore(); }
+if (defined $opts{restore} && $opts{restore} > 0)  { doRestoreMode(); unlink_restore(); }
 filterPatterns();
 process(0);
 cleanup();
+unlink_restore();
 displaySummary();
 exit $error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt;
 
@@ -109,37 +112,53 @@ sub displaySummary {
 sub parseArgs {
 	my @passthru=();
 	my $help = 0;
-	my $err = GetOptions(
-		'help|?',          => \$help,
-		'quiet+'           => \$quiet,
-		'verbose+'         => \$verbose,
-		'type=s'           => \@types,
-		'nontype=s'        => \@nontypes,
-		'showtypes'        => \$showtypes,
-		'basepath=s'       => \$basepath,
-		'dynamic=s'        => \$dyanmic_wanted,
-		'prelims!'         => \$prelims,
-		'passthru=s'       => \@passthru,
-		'stoponerror!'     => \$stop_on_error,
-		'showstderr!'      => \$show_stderr,
-		'internal!'        => \$internal_testing,
-		'restore!'         => \$restore_testing,
-		'case_mangle!'     => \$hash_case_mangle,
-		'random!'          => \$randomize,
-		'ignore_full!'     => \$ignore_full,
-		'seed=n'           => \$rand_seed
+	my $resume = 0;
+	my $err = GetOptions(\%opts,
+		'help|?'             => \$help,
+		'quiet+'         ,#  => \$quiet,
+		'verbose+'       ,#  => \$verbose,
+		'type=s'         ,#  => \@types,
+		'nontype=s'      ,#  => \@nontypes,
+		'showtypes'      ,#  => \$showtypes,
+		'basepath=s'     ,#  => \$basepath,
+		'dynamic=s'      ,#  => \$dyanmic_wanted,
+		'prelims!'       ,#  => \$prelims,
+		'passthru=s'     ,#  => \@passthru,
+		'stoponerror!'   ,#  => \$stop_on_error,
+		'showstderr!'    ,#  => \$show_stderr,
+		'internal!'      ,#  => \$internal_testing,
+		'restore!'       ,#  => \$restore_testing,
+		'resume!'            => \$resume,
+		'case_mangle!'   ,#  => \$hash_case_mangle,
+		'random!'        ,#  => \$randomize,
+		'ignore_full!'   ,#  => \$ignore_full,
+		'seed=n'         ,#  => \$rand_seed
 		);
 	if ($err == 0) {
 		print "exiting, due to invalid option\n";
 		exit 1;
 	}
-	if ($basepath ne "") {
-		$JOHN_PATH = $basepath;
+	if ($help) { usage($JOHN_PATH); }
+	if (@ARGV) {$opts{argv} = \@ARGV; }
+	if ($resume != 0) { ResumeState(); $opts{resume}=1; }
+	else { SaveState(); }
+
+	if (defined $opts{argv})        {@ARGV              = @{$opts{argv}}; }
+	if (defined $opts{type})        {@types             = @{$opts{type}}; }
+	if (defined $opts{nontype})     {@nontypes          = @{$opts{nontype}}; }
+	if (defined $opts{dynamic})     {$dyanmic_wanted    = $opts{dynamic}; }
+	if (defined $opts{passthru})    {@passthru          = @{$opts{passthru}}; }
+	if (defined $opts{showstderr})  {$show_stderr       = $opts{showstderr}; }
+	if (defined $opts{seed})        {$rand_seed         = $opts{seed}; }
+
+	if (defined $opts{basepath}) {
+		$JOHN_PATH = $opts{basepath};
 		$JOHN_EXE  = "$JOHN_PATH/john";
 		$UNIQUE    = "$JOHN_PATH/unique";
 	}
-	if ($help) { usage($JOHN_PATH); }
-	$verbosity = 2 + $verbose - $quiet;
+	$verbosity = 2;
+	if (defined $opts{verbose}) { $verbosity += $opts{verbose} }
+	if (defined $opts{quiet})   { $verbosity -= $opts{quiet} }
 	setVerbosity($verbosity);
 	if (@ARGV) { push @types, @ARGV; }
 	foreach my $i (0..$#types) { $types[$i] = lc($types[$i]); }
@@ -157,6 +176,18 @@ sub parseArgs {
 	$show_pass_thru =~ s/--?me[mfile\-sz]*[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?fix[-staedly]*[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?pro[gres\-vry]*[=:]\d+ ?//;
+}
+
+sub ResumeState {
+	my $json = read_file('jtrts_resume.json', { binmode => ':raw' });
+    %opts = %{ decode_json $json };
+}
+sub SaveState {
+	my $json = encode_json \%opts;
+	write_file('jtrts_resume.json', { binmode => ':raw' }, $json);
+}
+sub unlink_restore {
+	unlink ('jtrts_resume.json');
 }
 
 ###############################################################################
@@ -184,7 +215,7 @@ sub LoadFormatDetails {
 }
 sub StopOnError {
 	my $cmd=$_[0]; my $pot=$_[1];
-	if ($stop_on_error) {
+	if (defined $opts{stoponerror} && $opts{stoponerror} > 0) {
 		ScreenOut("Exiting on error. The .pot file $pot contains the found data\n");
 		$cmd =~ s# 2>&1 >/dev/null##;
 		ScreenOut("The command used to run this test was:\n\n$cmd\n");
@@ -196,8 +227,7 @@ sub StopOnError {
 # not output ANY error conditions.
 ###############################################################################
 sub johnPrelims {
-	return unless $prelims;
-
+	return unless ( defined $opts{prelims} && $opts{prelims}>0 );
 	johnTest0_one(" ");
 	foreach my $item (@encs) {johnTest0_one($item);}
 	if ($verbosity < 2) {ScreenOutSemi(" \n");}
@@ -294,7 +324,6 @@ sub setup {
 	ScreenOutAlways("- Testing:  $johnUsageScreen[0]"); # note the line ends in a \n, so do not add one.
 	ScreenOutAlways("--------------------------------------------------------------------------------\n");
 	ScreenOut("\n");
-
 	# now use the john error screen to determine if this is a jumbo john, or
 	# a core john. Then use this data to figure out what formats ARE and are NOT
 	# able to be run by this build (so we can later skip formats NOT built in
@@ -354,7 +383,6 @@ sub setup {
 			push(@caps, @encs );
 		}
 	}
-
 	# ok, now load the md5's of the all.chr and alnum.chr files. These end up being 'required' types for the inc to run.
 	my $file = $JOHN_PATH . "/all.chr";
     if (open(FILE, $file)) {
@@ -510,12 +538,9 @@ sub loadAllValidFormatTypeStrings {
 	@validFormats = split(/\//, $fmt_str);
 	if (index($fmt_str, "-cuda") != -1)  {
 	    push(@caps, "cuda");
-		# now that $prelims is NOT default, if the user wants them, the user can have them.
-	    #$prelims = 0;
 	}
 	if (index($fmt_str, "-opencl") != -1)  {
 	    push(@caps, "opencl");
-	    #$prelims = 0;
 	}
 	# push (inc), since ALL john versions allow the inc.
 	push(@caps, "inc");
@@ -567,7 +592,7 @@ sub readData {
 			my @ar = split(',', $line);
 			my $cnt = @ar;
 			if ($cnt == 12) {
-				if (!$showtypes) {
+				if (!defined $opts{showtypes} || $opts{showtypes}==0) {
 					if (index($ar[0], "($ar[7])") lt 0) {
 						$line = "($ar[7])$line";
 					}
@@ -617,7 +642,7 @@ sub filterPatterns {
 				if (!stringInArray($ar[7], @types)) {
 					if ($ar[1] ne "(X)") {
 						my @reqs = split(/&/,$ar[1]);
-						if ((stringInArray("full_only", @types)||$ignore_full) && index($ar[1], "(full)") >= 0) {
+						if ((stringInArray("full_only", @types)||(defined $opts{ignore_full} && $opts{ignore_full} > 0)) && index($ar[1], "(full)") >= 0) {
 							# we want this one!!
 						} else {
 							$valid = 'f';
@@ -785,6 +810,7 @@ sub process {
 	my $skip = shift(@_);
 	my $pot = "tst-.pot";
 	my $pot_opt = "";
+	my $line_num = 0;
 	my $cmd_head = "$JOHN_EXE -ses=tst- $pass_thru";
 	if ($skip) { $cmd_head .= " -skip" }
 	if (stringInArray("nolog_valid", @caps)) { $cmd_head = "$cmd_head -nolog"; }
@@ -801,6 +827,21 @@ sub process {
 	my $line = "";
 
 	LINE: foreach my $line(@tstdata) {
+		# start of -resume code (pretty trivial, I just count line#'s)
+		++$line_num;
+		if (defined $opts{resume} && $opts{resume} > 0 && defined $opts{line_num}) {
+			if ($line_num < $opts{line_num}) {
+				ScreenOutV("resuming. Skipping line $line_num = $line\n");
+				next LINE;
+			}
+		}
+		# end of -resume code.
+
+		# mark that we are starting a new line. If we crash here,
+		# a -resume picks up where we left off, i.e. on this test.
+		$opts{line_num} = $line_num;
+		SaveState();
+
 		my @ar = split(',', $line);
 		if (substr($ar[5],0,10) eq "INCREMENT_") {
 			$dict_name = "--incremental=" . substr($ar[5],10);
@@ -810,7 +851,7 @@ sub process {
 		my $cmd = "$cmd_head $ar[6]";
 		unless (-e $ar[6]) { next LINE; }
 		$done_cnt = $done_cnt + 1;
-		if ($randomize || $ar[3] != 10000) {
+		if ((defined $opts{random} && $opts{random} > 0) || $ar[3] != 10000) {
 			open (FILE, "<".substr($dict_name,11));
 			my @lines = <FILE>;
 			close(FILE);
@@ -819,7 +860,7 @@ sub process {
 			if ($ar[3] != 10000) {
 				@lines = @lines[0 .. ($ar[3] - 1)];
 			}
-			if ($randomize) {
+			if (defined $opts{random} && $opts{random} > 0) {
 				# Add some extra lines before we shuffle. This makes sure that
 				# we have lines of each length (the file has all up to 18 already)
 				srand($rand_seed);
@@ -1173,7 +1214,7 @@ sub PossiblyCaseMangle {
 sub does_hash_split_unifies_case {
 	my $type = $_[0];
 	my $mangle = 0;
-	if ($hash_case_mangle) {
+	if (defined $opts{case_mangle} && $opts{case_mangle} > 0) {
 		my @details = split("\t", $formatDetails{$type});
 		$mangle = hex($details[4]) & 0x00020000; # check for FMT_SPLIT_UNIFIES_CASE
 	}
@@ -1208,7 +1249,7 @@ sub build_self_test_files {
 			if ($cnt < 3) {
 				print FILE2 "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234\n";
 			}
-			if ($hash_case_mangle) {
+			if (defined $opts{case_mangle} && $opts{case_mangle} > 0) {
 				print FILE1 PossiblyCaseMangle($dtls[2], "uprcase", not $mangle);
 				print FILE1 PossiblyCaseMangle($dtls[2], "lowcase", not $mangle);
 			}
@@ -1233,7 +1274,9 @@ sub doInternalMode {
 	}
 
 	ScreenOutSemi("Running JTRTS in -internal mode\n");
-	if ($hash_case_mangle) {ScreenOutSemi("Running hash case manging mode\n");}
+	if (defined $opts{case_mangle} && $opts{case_mangle} > 0) {
+		ScreenOutSemi("Running hash case manging mode\n");
+	}
 	ScreenOutVVV("\@validFormats\n");
 	ScreenOutVVV(@validFormats);
 	ScreenOutVVV("\n\n\@types  (before fixups)\n");
@@ -1327,7 +1370,7 @@ sub doRestoreMode {
 	my $results = `$cmd`;
 	my $ret = $?;
 	ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
-	if ($verbose < 2) { show_eta($results); }
+	if ($verbosity > 2) { show_eta($results); }
 	$cmd = "$JOHN_EXE -res=tst- 2>&1";
 	while ( ($ret>>8) == 1) {
 		ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
@@ -1335,7 +1378,7 @@ sub doRestoreMode {
 		$ret = $?;
 		`stty echo >/dev/null 2>/dev/null`;
 		ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
-		if ($verbose < 2) { show_eta($results); }
+		if ($verbosity > 2) { show_eta($results); }
 	}
 	# now compute if we got them all.
 	print ("Done with run\n");
