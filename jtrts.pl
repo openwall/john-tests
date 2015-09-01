@@ -952,7 +952,7 @@ sub process {
 		ScreenOutVV("\n\cmd_show_line = \n$cmd_show_line\n\n");
 
 		if (index($ar[10], "($orig_crack_cnt)") lt 0 && index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0) {
-			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
+			while (not defined $crack_xx[4]) { push (@crack_xx, "N/A"); }
 			my $str;
 			if ($ret_val == 0) {
 				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED1!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
@@ -971,7 +971,7 @@ sub process {
 			}
 			StopOnError($cmd, $pot);
 		} elsif ($ret_val == 0) {
-			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
+			while (not defined $crack_xx[4]) { push (@crack_xx, "N/A"); }
 			if ($orig_crack_cnt != $orig_show_cnt) {
 				if (index($ar[10], "(-show$orig_show_cnt)") >= 0 || index($ar[10], "($orig_show_cnt)") >= 0) {
 					# we are 'ok' here. Display show count.
@@ -989,7 +989,7 @@ sub process {
 			}
 		} else {
 			if (!defined $crack_xx[3]) {ScreenOutAlways("\n");}
-			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
+			while (not defined $crack_xx[4]) { push (@crack_xx, "N/A"); }
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but %s]\n", $ar[4], $orig_crack_cnt, exit_cause($ret_val));
 			ScreenOutAlways($str);
 			$ret_val_non_zero_cnt += 1;
@@ -1085,7 +1085,7 @@ sub process {
 			}
 			while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
 			my $orig_pot_cnt = $crack_xx[1];
-			while (not defined $crack_xx[4]) { push (@crack_xx, "unk"); }
+			while (not defined $crack_xx[4]) { push (@crack_xx, "N/A"); }
 			$crack_xx[4] =~ s/%/%%/;
 
 			# Ok, get pot count using --show
