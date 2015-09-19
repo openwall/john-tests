@@ -174,10 +174,11 @@ sub parseArgs {
 	$show_pass_thru =~ s/--?max-r[un\-time]*[=:]\d+ ?//;
 	# --dupe-suppression on GPU builds or on CPU builds:
 	$show_pass_thru =~ s/--?du[pe\-surion]* ?//;
-	# a possible --dupe-suppression abbreviation on non-GPU builds,
-	# for now this is only dropped if it is not the last option,
-	# correct fix will be done later:
-	$show_pass_thru =~ s/--?d ?//;
+	# a possible --dupe-suppression abbreviation on noAn-GPU builds,
+	# this will drop the abbreviated option if followed by other options:
+	$show_pass_thru =~ s/--?d //;
+	# this will drop --d at the end of -passthru="...":
+	$show_pass_thru =~ s/--?d$//;
 	$show_pass_thru =~ s/--?me[mfile\-sz]*[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?fix[\-staedly]*[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?pro[gres\-vry]*[=:]\d+ ?//;
