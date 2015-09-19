@@ -65,6 +65,11 @@ usage: $0 [-h|-?] [-option[s]]
     -restore       Runs a single test, in -restore mode. To do this, we run
                    john a few seconds, then resume this run until we have
                    completed the work, then check that all are properly cracked
+    -resume        This is NOT a running 'state'. This will resume the TS where
+                   it left off on the last run (whether by exit due to -stoponerr
+                   or by user ^C exit. This is useful for when deep in the run
+                   there was an error, and you then 'fix' the error, and want
+                   to start tests off where you left off at.
     -dynamic <s>   What type dynamic do we want. valid is normal, none and
                    all.  Default is normal.
     -case_mangle   ONLY works in -internal mode. In this mode, if testing a
