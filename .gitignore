@@ -2,5 +2,6 @@
 *.pot
 *.rec
 _stderr
+jtrts_resume.json
 opencl_*.h
 tst-*
