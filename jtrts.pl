@@ -143,14 +143,15 @@ sub parseArgs {
 	if ($resume != 0) { ResumeState(); $opts{resume}=1; }
 	else { SaveState(); }
 
-	if (defined $opts{argv})        {@ARGV              = @{$opts{argv}}; }
-	if (defined $opts{type})        {@types             = @{$opts{type}}; }
-	if (defined $opts{nontype})     {@nontypes          = @{$opts{nontype}}; }
+	#if (defined $opts{argv})        {@ARGV              = @{$opts{argv}}; }
+	if (defined $opts{argv})        {@ARGV              = split /\s+/, $opts{argv}; }
+	if (defined $opts{type})        {@types             = split /\s+/, $opts{type}; }
+	if (defined $opts{nontype})     {@nontypes          = split /\s+/, $opts{nontype}; }
 	if (defined $opts{dynamic})     {$dyanmic_wanted    = $opts{dynamic}; }
 	# not sure why needed, but it is. The only think I can see is that the passthru
 	# object starts with a '-' character. But if we leave it in strict mode perl
 	# exits out trying to handle the next expression.
-	if (defined $opts{passthru})    {no strict 'refs'; @passthru = @{$opts{passthru}}; use strict; }
+	if (defined $opts{passthru})    {@passthru          = split /\s+/, $opts{passthru}; }
 	if (defined $opts{showstderr})  {$show_stderr       = $opts{showstderr}; }
 	if (defined $opts{seed})        {$rand_seed         = $opts{seed}; }
 
@@ -170,14 +171,15 @@ sub parseArgs {
 	$show_pass_thru =~ s/--?fork[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?mkpc?[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?sk[ip\-selft]* ?//;
+	$show_pass_thru =~ s/--?max-r[un\-time]*[=:]\d+ ?//;
 	# --dupe-suppression on GPU builds or on CPU builds:
 	$show_pass_thru =~ s/--?du[pe\-surion]* ?//;
 	# a possible --dupe-suppression abbreviation on non-GPU builds,
 	# for now this is only dropped if it is not the last option,
 	# correct fix will be done later:
-	$show_pass_thru =~ s/--?d //;
+	$show_pass_thru =~ s/--?d ?//;
 	$show_pass_thru =~ s/--?me[mfile\-sz]*[=:]\d+ ?//;
-	$show_pass_thru =~ s/--?fix[-staedly]*[=:]\d+ ?//;
+	$show_pass_thru =~ s/--?fix[\-staedly]*[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?pro[gres\-vry]*[=:]\d+ ?//;
 }
 
