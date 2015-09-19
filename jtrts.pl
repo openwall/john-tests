@@ -147,7 +147,10 @@ sub parseArgs {
 	if (defined $opts{type})        {@types             = @{$opts{type}}; }
 	if (defined $opts{nontype})     {@nontypes          = @{$opts{nontype}}; }
 	if (defined $opts{dynamic})     {$dyanmic_wanted    = $opts{dynamic}; }
-	if (defined $opts{passthru})    {@passthru          = @{$opts{passthru}}; }
+	# not sure why needed, but it is. The only think I can see is that the passthru
+	# object starts with a '-' character. But if we leave it in strict mode perl
+	# exits out trying to handle the next expression.
+	if (defined $opts{passthru})    {no strict 'refs'; @passthru = @{$opts{passthru}}; use strict; }
 	if (defined $opts{showstderr})  {$show_stderr       = $opts{showstderr}; }
 	if (defined $opts{seed})        {$rand_seed         = $opts{seed}; }
 
