@@ -143,8 +143,7 @@ sub parseArgs {
 	if ($resume != 0) { ResumeState(); $opts{resume}=1; }
 	else { SaveState(); }
 
-	#if (defined $opts{argv})        {@ARGV              = @{$opts{argv}}; }
-	if (defined $opts{argv})        {@ARGV              = split /\s+/, $opts{argv}; }
+	if (defined $opts{argv})        {@ARGV              = @{$opts{argv}}; }
 	if (defined $opts{type})        {@types             = split /\s+/, $opts{type}; }
 	if (defined $opts{nontype})     {@nontypes          = split /\s+/, $opts{nontype}; }
 	if (defined $opts{dynamic})     {$dyanmic_wanted    = $opts{dynamic}; }
