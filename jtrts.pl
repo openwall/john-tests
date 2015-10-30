@@ -1368,7 +1368,7 @@ sub doRestoreMode {
 		ScreenOut("John CORE build detected.\n The -max-run-time mode ONLY works for jumbo build of john.\n");
 		exit 1;
 	}
-	ScreenOutSemi("Running JTRTS in -restore mode (against a 1994 candidate ms5crypt input file\n");
+	ScreenOutSemi("Running JTRTS in -restore mode (against a 1994 candidate md5crypt input file\n");
 	`rm -f tst-*`;
 	my $cmd = "$JOHN_EXE -ses=tst- $pass_thru -w=pw-new.dic md5crypt_restart_tst.in -pot=tst-.pot -max-run=10 -form=md5crypt 2>&1";
 	ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
