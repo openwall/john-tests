@@ -25,7 +25,7 @@ my $RELEASE_DATE = "Dec 21, 2014";
 my $JOHN_PATH = "../run";
 # NOTE, john built on Windows 'may' need this lines changed to "$JOHN_PATH/john.exe" IF the script will not run properly.
 my $JOHN_EXE  = "$JOHN_PATH/john";
-my $UNIQUE    = "$JOHN_PATH/unique";
+my $UNIQUE    = "$JOHN_PATH/unique -mem=20";
 my $verbosity  = 2;
 my @types=();
 my @nontypes=();
@@ -157,7 +157,7 @@ sub parseArgs {
 	if (defined $opts{basepath}) {
 		$JOHN_PATH = $opts{basepath};
 		$JOHN_EXE  = "$JOHN_PATH/john";
-		$UNIQUE    = "$JOHN_PATH/unique";
+		$UNIQUE    = "$JOHN_PATH/unique -mem=20";
 	}
 	$verbosity = 2;
 	if (defined $opts{verbose}) { $verbosity += $opts{verbose} }
