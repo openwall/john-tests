@@ -5,7 +5,8 @@ use jtrts_inc;
 use Digest::MD5;
 use MIME::Base64;
 use List::Util qw/shuffle/;
-use JSON::XS qw(encode_json decode_json);
+#use JSON::XS;
+use JSON::PP;
 use File::Slurp qw(read_file write_file);
 
 my $VERSION = "1.13";
@@ -228,8 +229,8 @@ sub StopOnError {
 	}
 }
 ###############################################################################
-# here we do prelim work.  This is the multiple calls to -test=0 which should
-# not output ANY error conditions.
+# here we do prelim work.  This is the multiple calls to -test=0 (-test-full=0
+# for jumbo) which should not output ANY error conditions.
 ###############################################################################
 sub johnPrelims {
 	return unless ( defined $opts{prelims} && $opts{prelims}>0 );
@@ -240,7 +241,12 @@ sub johnPrelims {
 sub johnTest0_one {
 	if (length($_[0]) < 2 || stringInArray($_[0], @types) || stringInArray("enc", @types) || stringInArray("full", @types)) {
 		if (length($_[0]) >= 2) { $_[0] = "--encoding=$_[0]"; }
-		my $sCmd = "$JOHN_EXE -test=0 $_[0] $pass_thru";
+		my $sCmd;
+		if ($core_only == 1) {
+			$sCmd = "$JOHN_EXE -test=0 $_[0] $pass_thru";
+		} else {
+			$sCmd = "$JOHN_EXE -test-full=0 $_[0] $pass_thru";
+		}
 		ScreenOutSemi("testing: $sCmd\n");
 		$sCmd .= " 2>/dev/null";
 		my $sCmdOut = `$sCmd`;
