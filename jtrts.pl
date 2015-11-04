@@ -1374,9 +1374,20 @@ sub doRestoreMode {
 		ScreenOut("John CORE build detected.\n The -max-run-time mode ONLY works for jumbo build of john.\n");
 		exit 1;
 	}
-	ScreenOutSemi("Running JTRTS in -restore mode (against a 1994 candidate md5crypt input file\n");
+	ScreenOutSemi("Running JTRTS in -restore mode (against a 1994 candidate md5crypt input file)\n  ** NOTE: may take a couple minutes to run\n\n");
 	`rm -f tst-*`;
-	my $cmd = "$JOHN_EXE -ses=tst- $pass_thru -w=pw-new.dic md5crypt_restart_tst.in -pot=tst-.pot -max-run=10 -form=md5crypt 2>&1";
+	# grow the pw-new.dic file:
+	open (FILE, 'pw-new.dic');
+	open (FILEo, '> tst-pw-new.dic');
+	my $val=67891235;
+	while (<FILE>) {
+		chomp;
+		print FILEo "$val-1\n$val-2\n$val-3\n$_\n$val-4\n";
+		++$val;
+	}
+	close(FILE);
+	close(FILEo);
+	my $cmd = "$JOHN_EXE -ses=tst- $pass_thru -w=tst-pw-new.dic md5crypt_restart_tst.in -pot=tst-.pot -max-run=8 -form=md5crypt 2>&1";
 	ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
 	my $results = `$cmd`;
 	my $ret = $?;
@@ -1393,10 +1404,43 @@ sub doRestoreMode {
 	}
 	# now compute if we got them all.
 	print ("Done with run\n");
-	$results = `wc tst-.pot`;
+	$results = `LC_ALL='C' sort tst-.pot | LC_ALL='C' uniq | LC_ALL='C' wc -l`;
 	print ("\nResults (should be 1994) : $results\n");
 	cleanup();
-	exit $error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt;
+	unlink("tst-pw-new.dic");
+	if ($error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt != 0) {
+		exit 1;
+	}
+
+	# now test wordlist + rules.
+	# ../../run/john -w=../pw-new.dic salted-sha1-rules_PrependNumNumNum.txt -rules=PrependNumNumNum -ses=tst -pot=./tst.pot
+	ScreenOutSemi("Running JTRTS in -restore mode (against a 3200 candidate salted-sha1 input file with rules)\n  ** NOTE: may take a couple minutes to run\n\n");
+	`rm -f tst-*`;
+	$cmd = "$JOHN_EXE -ses=tst- $pass_thru -w=pw-new.dic salted-sha1-rules_PrependNumNumNum.txt -rules=PrependNumNumNum -pot=tst-.pot -max-run=10 2>&1";
+	ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
+	$results = `$cmd`;
+	$ret = $?;
+	ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
+	if ($verbosity > 2) { show_eta($results); }
+	$cmd = "$JOHN_EXE -res=tst- 2>&1";
+	while ( ($ret>>8) == 1) {
+		ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
+		$results = `$cmd`;
+		$ret = $?;
+		`stty echo >/dev/null 2>/dev/null`;
+		ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
+		if ($verbosity > 2) { show_eta($results); }
+	}
+	# now compute if we got them all.
+	print ("Done with run\n");
+	$results = `LC_ALL='C' sort tst-.pot | LC_ALL='C' uniq | LC_ALL='C' wc -l`;
+	print ("\nResults (should be 3200) : $results\n");
+	cleanup();
+	if ($error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt != 0) {
+		exit 1;
+	}
+
+	exit 0;
 }
 
 #use String::Scanf;
