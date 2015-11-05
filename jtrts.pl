@@ -1365,18 +1365,18 @@ sub doInternalMode {
 # types of restore test, so a common function was written to do any of them.
 ###############################################################################
 sub doOneRestore {
-	my ($dic, $hashes, $cnt, $runtime, $form, $exargs) = @_;
+	my ($type, $dic, $hashes, $cnt, $runtime, $form, $exargs) = @_;
 
-	ScreenOutSemi("\nRunning JTRTS in -restore mode (against a $cnt candidate $form input file $exargs)\n  ** NOTE: may take a couple minutes to run\n");
-	my $cmd = "$JOHN_EXE -ses=tst- $pass_thru $exargs -w=$dic $hashes -pot=tst-.pot -max-run=$runtime -form=$form 2>&1";
-	ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
+	ScreenOutSemi("\nRunning JTRTS in -restore mode (against a $cnt candidate $form input file \'$type Mode\')\n  ** NOTE: may take a couple minutes to run\n");
+	my $cmd = "$JOHN_EXE -ses=tst- $pass_thru $exargs $dic $hashes -pot=tst-.pot -max-run=$runtime -form=$form 2>&1";
+	ScreenOutV("Running 1st restore command, command line\n\n$cmd\n\n");
 	my $results = `$cmd`;
 	my $ret = $?;
 	ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
 	if ($verbosity > 2) { show_eta($results); }
 	$cmd = "$JOHN_EXE -res=tst- 2>&1";
 	while ( ($ret>>8) == 1) {
-		ScreenOutV("Running continuing retore commands.  Cmd line: $cmd\n");
+		ScreenOutV("Running continuing restore commands.  Cmd line: $cmd\n");
 		$results = `$cmd`;
 		$ret = $?;
 		`stty echo >/dev/null 2>/dev/null`;
@@ -1387,7 +1387,6 @@ sub doOneRestore {
 	$results = `LC_ALL='C' sort tst-.pot | LC_ALL='C' uniq | LC_ALL='C' wc -l`;
 	chomp $results;
 	print ("Done with run.  Results (should be $cnt) : $results   ");
-	cleanup();
 
 	if ($results != $cnt) {
 		print "FAIL!\n";
@@ -1398,7 +1397,7 @@ sub doOneRestore {
 		exit 1;
 	}
 	print "PASS\n";
-	`rm -f tst-*`;
+	cleanup();
 }
 ###############################################################################
 # Restore mode. This will run john for 10s at a time, then restore the session
@@ -1412,19 +1411,27 @@ sub doRestoreMode {
 		ScreenOut("John CORE build detected.\n The -max-run-time mode ONLY works for jumbo build of john.\n");
 		exit 1;
 	}
-	`rm -f tst-*`;
+	cleanup();
 
 	# grow the pw-new.dic file:
 	my $cmd = "$JOHN_EXE -rules=appendNumNum --stdout --w=bitcoin_restart_rules_tst.dic > tst-pw-new.dic 2>/dev/null";
 	$cmd = `$cmd`;
-	doOneRestore("tst-pw-new.dic", "bitcoin_restart_rules_tst.in", 2000, 10, "bitcoin", "");
+	doOneRestore("Wordlist", "-w=tst-pw-new.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "");
 	unlink("tst-pw-new.dic");
 
 	# now test wordlist + rules.
-	doOneRestore("bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 10, "bitcoin", "-rules=appendNumNum");
-
+	doOneRestore("Wordlist+Rules", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rules=appendNumNum");
 	# now test wordlist + mask.
-	doOneRestore("bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 10, "bitcoin", "-mask=?w?d?d");
+	doOneRestore("Wordlist+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=?w?d?d");
+	# now test single mode.
+	doOneRestore("Single", "", "bitcoin_restart_single_tst.in", 2000, 20, "bitcoin", "");
+	# now test pure mode.
+	doOneRestore("Pure Mask", "", "bitcoin_restart_rules_tst.in", 1000, 20, "bitcoin", "-mask=11111?d?d?d");
+	doOneRestore("Pure Mask", "", "bitcoin_restart_rules_tst.in", 1000, 20, "bitcoin", "-mask=11112?d?d?d");
+	# now test pure rexgen mode.
+	doOneRestore("Pure RexGen", "", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rexgen=1111[1-2][0-9][0-9][0-9]");
+	# now test wordlist + rexgen mode.
+	doOneRestore("Wordlist+RexGen", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rexgen=/0[0-9][0-9]");
 
 	exit 0;
 }
