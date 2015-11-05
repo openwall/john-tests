@@ -1360,8 +1360,46 @@ sub doInternalMode {
 	exit $error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt;
 }
 
-#../run/john -w=pw-new.dic md5crypt_restart_tst.in -pot=tst-.pot -ses=tst- -max-run=10
-#../run/john -res=tst-
+###############################################################################
+# Restore mode. This function does the actual restore 'test'. There are several
+# types of restore test, so a common function was written to do any of them.
+###############################################################################
+sub doOneRestore {
+	my ($dic, $hashes, $cnt, $runtime, $form, $exargs) = @_;
+
+	ScreenOutSemi("\nRunning JTRTS in -restore mode (against a $cnt candidate $form input file $exargs)\n  ** NOTE: may take a couple minutes to run\n");
+	my $cmd = "$JOHN_EXE -ses=tst- $pass_thru $exargs -w=$dic $hashes -pot=tst-.pot -max-run=$runtime -form=$form 2>&1";
+	ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
+	my $results = `$cmd`;
+	my $ret = $?;
+	ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
+	if ($verbosity > 2) { show_eta($results); }
+	$cmd = "$JOHN_EXE -res=tst- 2>&1";
+	while ( ($ret>>8) == 1) {
+		ScreenOutV("Running continuing retore commands.  Cmd line: $cmd\n");
+		$results = `$cmd`;
+		$ret = $?;
+		`stty echo >/dev/null 2>/dev/null`;
+		ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
+		if ($verbosity > 2) { show_eta($results); }
+	}
+	# now compute if we got them all.
+	$results = `LC_ALL='C' sort tst-.pot | LC_ALL='C' uniq | LC_ALL='C' wc -l`;
+	chomp $results;
+	print ("Done with run.  Results (should be $cnt) : $results   ");
+	cleanup();
+
+	if ($results != $cnt) {
+		print "FAIL!\n";
+		exit 1;
+	}
+	if ($error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt != 0) {
+		print "Some error status.\n";
+		exit 1;
+	}
+	print "PASS\n";
+	`rm -f tst-*`;
+}
 ###############################################################################
 # Restore mode. This will run john for 10s at a time, then restore the session
 # and keep restoring, until 'done'.  Once done, we process the .pot file the
@@ -1374,71 +1412,19 @@ sub doRestoreMode {
 		ScreenOut("John CORE build detected.\n The -max-run-time mode ONLY works for jumbo build of john.\n");
 		exit 1;
 	}
-	ScreenOutSemi("Running JTRTS in -restore mode (against a 1994 candidate md5crypt input file)\n  ** NOTE: may take a couple minutes to run\n\n");
 	`rm -f tst-*`;
+
 	# grow the pw-new.dic file:
-	open (FILE, 'pw-new.dic');
-	open (FILEo, '> tst-pw-new.dic');
-	my $val=67891235;
-	while (<FILE>) {
-		chomp;
-		print FILEo "$val-1\n$val-2\n$val-3\n$_\n$val-4\n";
-		++$val;
-	}
-	close(FILE);
-	close(FILEo);
-	my $cmd = "$JOHN_EXE -ses=tst- $pass_thru -w=tst-pw-new.dic md5crypt_restart_tst.in -pot=tst-.pot -max-run=8 -form=md5crypt 2>&1";
-	ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
-	my $results = `$cmd`;
-	my $ret = $?;
-	ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
-	if ($verbosity > 2) { show_eta($results); }
-	$cmd = "$JOHN_EXE -res=tst- 2>&1";
-	while ( ($ret>>8) == 1) {
-		ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
-		$results = `$cmd`;
-		$ret = $?;
-		`stty echo >/dev/null 2>/dev/null`;
-		ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
-		if ($verbosity > 2) { show_eta($results); }
-	}
-	# now compute if we got them all.
-	print ("Done with run\n");
-	$results = `LC_ALL='C' sort tst-.pot | LC_ALL='C' uniq | LC_ALL='C' wc -l`;
-	print ("\nResults (should be 1994) : $results\n");
-	cleanup();
+	my $cmd = "$JOHN_EXE -rules=appendNumNum --stdout --w=bitcoin_restart_rules_tst.dic > tst-pw-new.dic 2>/dev/null";
+	$cmd = `$cmd`;
+	doOneRestore("tst-pw-new.dic", "bitcoin_restart_rules_tst.in", 2000, 10, "bitcoin", "");
 	unlink("tst-pw-new.dic");
-	if ($error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt != 0) {
-		exit 1;
-	}
 
 	# now test wordlist + rules.
-	# ../../run/john -w=../pw-new.dic salted-sha1-rules_PrependNumNumNum.txt -rules=PrependNumNumNum -ses=tst -pot=./tst.pot
-	ScreenOutSemi("Running JTRTS in -restore mode (against a 3200 candidate salted-sha1 input file with rules)\n  ** NOTE: may take a couple minutes to run\n\n");
-	`rm -f tst-*`;
-	$cmd = "$JOHN_EXE -ses=tst- $pass_thru -w=pw-new.dic salted-sha1-rules_PrependNumNumNum.txt -rules=PrependNumNumNum -pot=tst-.pot -max-run=10 2>&1";
-	ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
-	$results = `$cmd`;
-	$ret = $?;
-	ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
-	if ($verbosity > 2) { show_eta($results); }
-	$cmd = "$JOHN_EXE -res=tst- 2>&1";
-	while ( ($ret>>8) == 1) {
-		ScreenOutV("Running 1st retore command, command line\n\n$cmd\n\n");
-		$results = `$cmd`;
-		$ret = $?;
-		`stty echo >/dev/null 2>/dev/null`;
-		ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
-		if ($verbosity > 2) { show_eta($results); }
-	}
-	# now compute if we got them all.
-	print ("Done with run\n");
-	$results = `LC_ALL='C' sort tst-.pot | LC_ALL='C' uniq | LC_ALL='C' wc -l`;
-	print ("\nResults (should be 3200) : $results\n");
-	cleanup();
-	if ($error_cnt+$error_cnt_pot+$ret_val_non_zero_cnt != 0) {
-		exit 1;
-	}
+	doOneRestore("bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 10, "bitcoin", "-rules=appendNumNum");
+
+	# now test wordlist + mask.
+	doOneRestore("bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 10, "bitcoin", "-mask=?w?d?d");
 
 	exit 0;
 }
