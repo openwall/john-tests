@@ -1424,14 +1424,13 @@ sub doRestoreMode {
 	# now test single mode.
 	doOneRestore("Single", "", "bitcoin_restart_single_tst.in", 2000, 20, "bitcoin", "");
 	# now test pure mode.
-	doOneRestore("Pure Mask", "", "bitcoin_restart_rules_tst.in", 1000, 20, "bitcoin", "-mask=11111?d?d?d");
-	doOneRestore("Pure Mask", "", "bitcoin_restart_rules_tst.in", 1000, 20, "bitcoin", "-mask=11112?d?d?d");
+	doOneRestore("Pure Mask", "", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=1111[12]?d?d?d");
 	# now test pure rexgen mode.
-	doOneRestore("Pure RexGen", "", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rexgen=1111[1-2][0-9][0-9][0-9]");
+	doOneRestore("Pure RexGen", "", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rexgen=1111[12][0-9][0-9][0-9]");
 	# now test wordlist + rexgen mode.
 	doOneRestore("Wordlist+RexGen", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rexgen=/0[0-9][0-9]");
 
-	# now test wordlist + mask.
+	# now test wordlist + mask.  (This one currently fails the TS!!)
 	doOneRestore("Wordlist+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=?w?d?d");
 
 	exit 0;
