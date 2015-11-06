@@ -1367,21 +1367,21 @@ sub doInternalMode {
 sub doOneRestore {
 	my ($type, $dic, $hashes, $cnt, $runtime, $form, $exargs) = @_;
 
-	ScreenOutSemi("\nRunning JTRTS in -restore mode (against a $cnt candidate $form input file \'$type Mode\')\n  ** NOTE: may take a couple minutes to run\n");
+	ScreenOutSemi("\nRunning JTRTS in \'$type Mode\' -restore mode (against a $cnt candidate $form input file)\n  ** NOTE: may take a couple minutes to run\n");
 	my $cmd = "$JOHN_EXE -ses=tst- $pass_thru $exargs $dic $hashes -pot=tst-.pot -max-run=$runtime -form=$form 2>&1";
-	ScreenOutV("Running 1st restore command, command line\n\n$cmd\n\n");
+	ScreenOutV("Running initial command.  Cmd line:\n\n$cmd\n\n");
 	my $results = `$cmd`;
 	my $ret = $?;
 	ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
-	if ($verbosity > 2) { show_eta($results); }
+	if ($verbosity > 1) { show_eta($results); }
 	$cmd = "$JOHN_EXE -res=tst- 2>&1";
 	while ( ($ret>>8) == 1) {
-		ScreenOutV("Running continuing restore commands.  Cmd line: $cmd\n");
+		ScreenOutV("Continuing session.  Cmd line: $cmd\n");
 		$results = `$cmd`;
 		$ret = $?;
 		`stty echo >/dev/null 2>/dev/null`;
 		ScreenOutVV("Results of this run are: $results\n return code [".($ret>>8)."]\n\n");
-		if ($verbosity > 2) { show_eta($results); }
+		if ($verbosity > 1) { show_eta($results); }
 	}
 	# now compute if we got them all.
 	$results = `LC_ALL='C' sort tst-.pot | LC_ALL='C' uniq | LC_ALL='C' wc -l`;
@@ -1416,22 +1416,28 @@ sub doRestoreMode {
 	# grow the pw-new.dic file:
 	my $cmd = "$JOHN_EXE -rules=appendNumNum --stdout --w=bitcoin_restart_rules_tst.dic > tst-pw-new.dic 2>/dev/null";
 	$cmd = `$cmd`;
+
+	# now test pure mask
+	doOneRestore("Pure Mask", "", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=1111[12]?d?d?d");
+
+	# now test wordlist + mask.
+	doOneRestore("Wordlist+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=?w?d?d");
+
+	# now test wordlist
 	doOneRestore("Wordlist", "-w=tst-pw-new.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "");
 	unlink("tst-pw-new.dic");
 
 	# now test wordlist + rules.
 	doOneRestore("Wordlist+Rules", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rules=appendNumNum");
-	# now test single mode.
-	doOneRestore("Single", "", "bitcoin_restart_single_tst.in", 2000, 20, "bitcoin", "");
-	# now test pure mode.
-	doOneRestore("Pure Mask", "", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=1111[12]?d?d?d");
-	# now test pure rexgen mode.
-	doOneRestore("Pure RexGen", "", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rexgen=1111[12][0-9][0-9][0-9]");
-	# now test wordlist + rexgen mode.
-	doOneRestore("Wordlist+RexGen", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rexgen=/0[0-9][0-9]");
 
-	# now test wordlist + mask.  (This one currently fails the TS!!)
-	doOneRestore("Wordlist+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=?w?d?d");
+	# now test single mode.
+	doOneRestore("Single", "-single", "bitcoin_restart_single_tst.in", 2000, 20, "bitcoin", "");
+
+	# now test pure rexgen mode. DISABLED - PURE REGEX HAS NO RESUME YET
+	#doOneRestore("Pure RexGen", "-regex=1111[1-2][0-9][0-9][0-9]", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "");
+
+	# now test wordlist + rexgen mode.
+	doOneRestore("Wordlist+RexGen", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-regex=\\\\0[0-9][0-9]");
 
 	exit 0;
 }
