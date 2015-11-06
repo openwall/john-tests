@@ -1435,6 +1435,9 @@ sub doRestoreMode {
 
 	# now test wordlist + rules + mask.
 	doOneRestore("Wordlist+Rules+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rules=appendNum -mask=?w?d");
+	`echo "1111"> tst-pw-new.dic`;
+	doOneRestore("Wordlist+Rules+Mask #2", "-w=tst-pw-new.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rules=append12Num -mask=?w?d?d");
+	unlink("tst-pw-new.dic");
 
 	# now test single mode.
 	doOneRestore("Single", "-single", "bitcoin_restart_single_tst.in", 2000, 20, "bitcoin", "");
