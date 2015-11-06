@@ -1404,11 +1404,12 @@ sub doOneRestore {
 	cleanup();
 }
 ###############################################################################
-# Restore mode. This will run john for 10s at a time, then restore the session
-# and keep restoring, until 'done'.  Once done, we process the .pot file the
-# the same way, making sure we have our 1994 values.
+# Restore mode. This will run john for X seconds at a time, then restore the
+# session and keep restoring, until 'done'.  Once done, we process the .pot file
+# the same way, making sure we have the expected values.
 #
 # this function does not return, it cleans up, and exits with proper errorlevel.
+# when it calls doOneRestore, that function can also exit, returning errorlevel.
 ###############################################################################
 sub doRestoreMode {
 	if ($core_only == 1) {
