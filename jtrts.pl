@@ -1424,7 +1424,7 @@ sub doRestoreMode {
 	doOneRestore("Wordlist+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=?w?d?d");
 
 	# now test wordlist
-	# grow the pw-new.dic file:
+	# grow the tst-pw-new.dic file from pw file using rules:
 	my $cmd = "$JOHN_EXE -rules=appendNumNum --stdout --w=bitcoin_restart_rules_tst.dic > tst-pw-new.dic 2>/dev/null";
 	$cmd = `$cmd`;
 	doOneRestore("Wordlist", "-w=tst-pw-new.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "");
@@ -1432,6 +1432,9 @@ sub doRestoreMode {
 
 	# now test wordlist + rules.
 	doOneRestore("Wordlist+Rules", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rules=appendNumNum");
+
+	# now test wordlist + rules + mask.
+	doOneRestore("Wordlist+Rules+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rules=appendNum -mask=?w?d");
 
 	# now test single mode.
 	doOneRestore("Single", "-single", "bitcoin_restart_single_tst.in", 2000, 20, "bitcoin", "");
