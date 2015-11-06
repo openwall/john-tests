@@ -382,6 +382,10 @@ sub setup {
 		push(@caps, "local_pot_valid");
 		ScreenOutV("--pot=NAME option is valid\n");
 	}
+	if (grepUsage("--regex=")) {
+		push(@caps, "regex");
+		ScreenOutV("--regex mode exists\n");
+	}
 	# can we use --encoding=utf8, --encoding=koi8r, etc.
 	if (grepUsage("--encoding=NAME")) {
 		push(@caps, "encode_valid");
@@ -1413,10 +1417,6 @@ sub doRestoreMode {
 	}
 	cleanup();
 
-	# grow the pw-new.dic file:
-	my $cmd = "$JOHN_EXE -rules=appendNumNum --stdout --w=bitcoin_restart_rules_tst.dic > tst-pw-new.dic 2>/dev/null";
-	$cmd = `$cmd`;
-
 	# now test pure mask
 	doOneRestore("Pure Mask", "", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=1111[12]?d?d?d");
 
@@ -1424,6 +1424,9 @@ sub doRestoreMode {
 	doOneRestore("Wordlist+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=?w?d?d");
 
 	# now test wordlist
+	# grow the pw-new.dic file:
+	my $cmd = "$JOHN_EXE -rules=appendNumNum --stdout --w=bitcoin_restart_rules_tst.dic > tst-pw-new.dic 2>/dev/null";
+	$cmd = `$cmd`;
 	doOneRestore("Wordlist", "-w=tst-pw-new.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "");
 	unlink("tst-pw-new.dic");
 
@@ -1433,11 +1436,13 @@ sub doRestoreMode {
 	# now test single mode.
 	doOneRestore("Single", "-single", "bitcoin_restart_single_tst.in", 2000, 20, "bitcoin", "");
 
-	# now test pure rexgen mode. DISABLED - PURE REGEX HAS NO RESUME YET
-	#doOneRestore("Pure RexGen", "-regex=1111[1-2][0-9][0-9][0-9]", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "");
+	if (stringInArray("regex", @caps)) {
+		# now test pure rexgen mode. DISABLED - PURE REGEX HAS NO RESUME YET
+		#doOneRestore("Pure RexGen", "-regex=1111[1-2][0-9][0-9][0-9]", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "");
 
-	# now test wordlist + rexgen mode.
-	doOneRestore("Wordlist+RexGen", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-regex=\\\\0[0-9][0-9]");
+		# now test wordlist + rexgen mode.
+		doOneRestore("Wordlist+RexGen", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-regex=\\\\0[0-9][0-9]");
+	}
 
 	exit 0;
 }
