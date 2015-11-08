@@ -1424,6 +1424,14 @@ sub doRestoreMode {
 	# now test wordlist + mask.
 	doOneRestore("Wordlist+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-mask=?w?d?d");
 
+	if (stringInArray("regex", @caps)) {
+		# now test pure rexgen mode. DISABLED - PURE REGEX HAS NO RESUME YET
+		#doOneRestore("Pure RexGen", "-regex=1111[1-2][0-9][0-9][0-9]", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "");
+
+		# now test wordlist + rexgen mode.
+		doOneRestore("Wordlist+RexGen", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-regex=\\\\0[0-9][0-9]");
+	}
+
 	# now test wordlist
 	# grow the tst-pw-new.dic file from pw file using rules:
 	my $cmd = "$JOHN_EXE -rules=appendNumNum --stdout --w=bitcoin_restart_rules_tst.dic > tst-pw-new.dic 2>/dev/null";
@@ -1435,21 +1443,13 @@ sub doRestoreMode {
 	doOneRestore("Wordlist+Rules", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rules=appendNumNum");
 
 	# now test wordlist + rules + mask.
-	doOneRestore("Wordlist+Rules+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rules=appendNum -mask=?w?d");
+	doOneRestore("Wordlist+Rules+Mask", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 40, "bitcoin", "-rules=appendNum -mask=?w?d");
 	`echo "1111"> tst-pw-new.dic`;
 	doOneRestore("Wordlist+Rules+Mask #2", "-w=tst-pw-new.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-rules=append12Num -mask=?w?d?d");
 	unlink("tst-pw-new.dic");
 
 	# now test single mode.
 	doOneRestore("Single", "-single", "bitcoin_restart_single_tst.in", 2000, 20, "bitcoin", "");
-
-	if (stringInArray("regex", @caps)) {
-		# now test pure rexgen mode. DISABLED - PURE REGEX HAS NO RESUME YET
-		#doOneRestore("Pure RexGen", "-regex=1111[1-2][0-9][0-9][0-9]", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "");
-
-		# now test wordlist + rexgen mode.
-		doOneRestore("Wordlist+RexGen", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-regex=\\\\0[0-9][0-9]");
-	}
 
 	exit 0;
 }
