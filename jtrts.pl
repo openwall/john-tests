@@ -6,7 +6,8 @@ use Digest::MD5;
 use MIME::Base64;
 use List::Util qw/shuffle/;
 #use JSON::XS;
-use JSON::PP;
+#use JSON::PP;
+use Storable;
 use File::Slurp qw(read_file write_file);
 
 my $VERSION = "1.13";
@@ -185,15 +186,18 @@ sub parseArgs {
 }
 
 sub ResumeState {
-	my $json = read_file('jtrts_resume.json', { binmode => ':raw' });
-    %opts = %{ decode_json $json };
+#	my $json = read_file('jtrts_resume.json', { binmode => ':raw' });
+#	%opts = %{ decode_json $json };
+	%opts = %{retrieve('jtrts.resume')};
 }
 sub SaveState {
-	my $json = encode_json \%opts;
-	write_file('jtrts_resume.json', { binmode => ':raw' }, $json);
+#	my $json = encode_json \%opts;
+#	write_file('jtrts_resume.json', { binmode => ':raw' }, $json);
+	store \%opts, 'jtrts.resume';
 }
 sub unlink_restore {
-	unlink ('jtrts_resume.json');
+#	unlink ('jtrts_resume.json');
+	unlink ('jtrts.resume');
 }
 
 ###############################################################################
