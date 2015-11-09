@@ -1428,6 +1428,12 @@ sub doRestoreMode {
 		doOneRestore("Wordlist+RexGen", "-w=bitcoin_restart_rules_tst.dic", "bitcoin_restart_rules_tst.in", 2000, 20, "bitcoin", "-regex=\\\\0[0-9][0-9]");
 	}
 
+	# now test markov.
+	doOneRestore("Markov", "-markov", "markov_resume_tst.in", 2000, 20, "bitcoin", "");
+
+	# now test markov+mask.
+	doOneRestore("Markov", "-markov", "markov_mask_resume_tst.in", 2000, 20, "bitcoin", "-mask:?w?d?d");
+
 	# now test wordlist
 	# grow the tst-pw-new.dic file from pw file using rules:
 	my $cmd = "$JOHN_EXE -rules=appendNumNum --stdout --w=bitcoin_restart_rules_tst.dic > tst-pw-new.dic 2>/dev/null";
