@@ -7,8 +7,8 @@ use MIME::Base64;
 use List::Util qw/shuffle/;
 #use JSON::XS;
 #use JSON::PP;
+#use File::Slurp qw(read_file write_file);
 use Storable;
-use File::Slurp qw(read_file write_file);
 
 my $VERSION = "1.13";
 my $RELEASE_DATE = "Dec 21, 2014";
