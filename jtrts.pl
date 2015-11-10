@@ -165,6 +165,7 @@ sub parseArgs {
 	if (@ARGV) { push @types, @ARGV; }
 	foreach my $i (0..$#types) { $types[$i] = lc($types[$i]); }
 	foreach my $s (@passthru) { $pass_thru .= " " . $s; }
+	$pass_thru =~ s/--?sa[ve\-mory]*[=:]\d+ ?//;  # save memory is simply not allowed in the TS.
 	$show_pass_thru = $pass_thru;
 	$show_pass_thru =~ s/--?fork[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?mkpc?[=:]\d+ ?//;
