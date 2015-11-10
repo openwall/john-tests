@@ -760,6 +760,7 @@ sub is_format_8bit {
 	my $details = $formatDetails{$type};
 	if (!defined($details)) { return 0; }
 	my @details = split("\t", $details);
+	if (scalar @details < 5) { return 0; }
 	my $_8bit = hex($details[4]) & 0x00000002; # check for FMT_8_BIT
 	return $_8bit;
 }
