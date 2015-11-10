@@ -217,11 +217,12 @@ sub LoadFormatDetails {
 	}
 }
 sub StopOnError {
-	my $cmd=$_[0]; my $pot=$_[1];
+	my $cmd=$_[0]; my $pot=$_[1]; my $show=$_[2];
 	if (defined $opts{stoponerror} && $opts{stoponerror} > 0) {
 		ScreenOut("Exiting on error. The .pot file $pot contains the found data\n");
 		$cmd =~ s# 2>&1 >/dev/null##;
 		ScreenOut("The command used to run this test was:\n\n$cmd\n");
+		if (length($show) > 0) {ScreenOut("and\n$show\n");}
 		exit(1);
 	}
 }
@@ -982,7 +983,7 @@ sub process {
 					ScreenOutAlways("$line\n");
 				}
 			}
-			StopOnError($cmd, $pot);
+			StopOnError($cmd, $pot, $cmdshow);
 		} elsif ($ret_val == 0) {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "N/A"); }
 			if ($orig_crack_cnt != $orig_show_cnt) {
@@ -994,7 +995,7 @@ sub process {
 					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED3!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 					ScreenOutAlways($str);
 					$error_cnt += 1;
-					StopOnError($cmd, $pot);
+					StopOnError($cmd, $pot, $cmdshow);
 				}
 			} else {
 				my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_crack_cnt);
@@ -1006,7 +1007,7 @@ sub process {
 			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but %s]\n", $ar[4], $orig_crack_cnt, exit_cause($ret_val));
 			ScreenOutAlways($str);
 			$ret_val_non_zero_cnt += 1;
-			StopOnError($cmd, $pot);
+			StopOnError($cmd, $pot, $cmdshow);
 		}
 		if ($dict_name_ex ne "") {
 			unlink ($dict_name_ex);
@@ -1126,7 +1127,7 @@ sub process {
 				}
 				ScreenOutAlways($str);
 				$error_cnt_pot += 1;
-				StopOnError($cmd, $pot);
+				StopOnError($cmd, $pot, $cmdshow2);
 			} elsif ($ret_val == 0) {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED] ($valid_pass val-pwd)\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
@@ -1134,7 +1135,7 @@ sub process {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but %s]\n", $ar[4], $orig_pot_cnt, exit_cause($ret_val));
 				ScreenOutAlways($str);
 				$ret_val_non_zero_cnt += 1;
-				StopOnError($cmd, $pot);
+				StopOnError($cmd, $pot, $cmdshow2);
 			}
 			unlink("$pot");
 			unlink("tst-pw3");
