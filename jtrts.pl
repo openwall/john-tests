@@ -223,6 +223,8 @@ sub StopOnError {
 		$cmd =~ s# 2>&1 >/dev/null##;
 		ScreenOut("The command used to run this test was:\n\n$cmd\n");
 		if (length($show) > 0) {ScreenOut("and\n$show\n");}
+		my $str = `grep Terminating tst-.log`;
+		if (length($str)>0) { print "\nFrom tst-.log file:\n$str\n"; }
 		exit(1);
 	}
 }
