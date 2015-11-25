@@ -633,7 +633,7 @@
 (base)(rsvp),(X),(jumbo),10000,rsvp-md5,pw,rsvp_tst.in,rsvp,Y,X,(1500),(1500)
 (base)(rsvp),(X),(jumbo),10000,rsvp-sha1,pw,rsvp_2_tst.in,rsvp,Y,X,(1500),(1500)
 (base)(ripemd),(X),(jumbo),10000,ripemd-160,pw,ripemd160_tst.in,ripemd-160,N,X,(1500),(1500)
-(base)(ripemd),(X),(jumbo),10000,ripemd-128,pw,ripemd128_tst.in,ripemd-128,N,X,(1500),(1500)
+(base)(ripemd),(X),(jumbo),10000,ripemd-128,pw,ripemd128_tst.in,ripemd-128,Y,X,(1500),(1500)
 (base)(dynamic),(X),(jumbo),10000,osc,pw,osc_tst.in,osc,Y,X,(1500),(1500)
 (new)(base)(dynamic),(X),(jumbo),10000,osc,pw-new,osc_new_tst.in,osc,Y,X,(1500)(916),(1500)
 (base),(X),(jumbo),200,skey-md4,pw,skey-md4_tst.in,skey,Y,X,(1500),(1500)
