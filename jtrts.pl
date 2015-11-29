@@ -1259,6 +1259,7 @@ sub build_self_test_files {
 	foreach my $line (@ar1) {
 		my @dtls = split("\t", $line);
 		if (scalar (@dtls) >= 3) {
+			if ($dtls[2] !~ m/:/) { $dtls[2] = "vec_" . $dtls[1] . ":" . $dtls[2]; }
 			print FILE1 $dtls[2]."\n";
 			if (defined $dtls[3]) { print FILE2 $dtls[3]; }
 			print FILE2 "\n";
