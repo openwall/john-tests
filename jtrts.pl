@@ -220,7 +220,12 @@ sub StopOnError {
 	my $cmd=$_[0]; my $pot=$_[1]; my $show=$_[2];
 	if (defined $opts{stoponerror} && $opts{stoponerror} > 0) {
 		ScreenOut("Exiting on error. The .pot file $pot contains the found data\n");
-		$cmd =~ s# 2>&1 >/dev/null##;
+		$cmd =~ s# 2>&1##;
+		$cmd =~ s# >/dev/null##;
+		$cmd =~ s# 2>_stderr##g;
+		$show =~ s# 2>&1##;
+		$show =~ s# >/dev/null##;
+		$show =~ s# 2>_stderr##g;
 		ScreenOut("The command used to run this test was:\n\n$cmd\n");
 		if (length($show) > 0) {ScreenOut("and\n$show\n");}
 		my $str = `grep Terminating tst-.log`;
@@ -1129,7 +1134,7 @@ sub process {
 				}
 				ScreenOutAlways($str);
 				$error_cnt_pot += 1;
-				StopOnError($cmd, $pot, $cmdshow2);
+				StopOnError($cmd2, $pot, $cmdshow2);
 			} elsif ($ret_val == 0) {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED] ($valid_pass val-pwd)\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
