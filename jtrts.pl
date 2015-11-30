@@ -502,7 +502,7 @@ sub loadAllValidFormatTypeStrings {
 		}
 	}
 	# strip off the 'final' / char
-	$fmt_str = substr($fmt_str, 0, -1);
+	if ($in_fmt) { $fmt_str = substr($fmt_str, 0, -1); }
 
 	# Make all format labels listed from JtR lower case.
 	$fmt_str = lc($fmt_str);
