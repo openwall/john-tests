@@ -221,10 +221,10 @@ sub StopOnError {
 	if (defined $opts{stoponerror} && $opts{stoponerror} > 0) {
 		ScreenOut("Exiting on error. The .pot file $pot contains the found data\n");
 		$cmd =~ s# 2>&1##;
-		$cmd =~ s# >/dev/null##;
+		$cmd =~ s# 2?>/dev/null##g;
 		$cmd =~ s# 2>_stderr##g;
 		$show =~ s# 2>&1##;
-		$show =~ s# >/dev/null##;
+		$show =~ s# 2?>/dev/null##g;
 		$show =~ s# 2>_stderr##g;
 		ScreenOut("The command used to run this test was:\n\n$cmd\n");
 		if (length($show) > 0) {ScreenOut("and\n$show\n");}
@@ -956,9 +956,8 @@ sub process {
 		ScreenOutSemi("\n");
 
 		# Ok, get crack count using --show
-		my $cmdshow = "$JOHN_EXE -show $show_pass_thru $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]);
+		my $cmdshow = "$JOHN_EXE -show $show_pass_thru $pot_opt $ar[6] -form=$ar[7]" . ExtraArgs_Show($ar[9]) . " 2>/dev/null";
 		ScreenOutVV("Execute john: $cmdshow\n");
-		$cmdshow .= " 2>/dev/null";
 
 		my $cmd_show_data = `$cmdshow`;
 
