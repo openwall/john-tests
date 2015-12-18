@@ -929,6 +929,7 @@ sub process {
 		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
 
 		my @crack_cnt = split (/\n/, $cmd_data);
+		my $runtime_err = index($cmd_data, "runtime error") != -1;
 
 		my @crack_xx = ();
 		foreach $line (@crack_cnt) {
@@ -960,6 +961,7 @@ sub process {
 		ScreenOutVV("Execute john: $cmdshow\n");
 
 		my $cmd_show_data = `$cmdshow`;
+		if (!$runtime_err) { $runtime_err = index($cmd_show_data, "runtime error") != -1; }
 
 		ScreenOutVVV("\n\nCmd_show_data = \n$cmd_show_data\n\n");
 
@@ -971,7 +973,7 @@ sub process {
 		if (!defined($orig_show_cnt)) { $orig_show_cnt = "0"; }
 		ScreenOutVV("\n\cmd_show_line = \n$cmd_show_line\n\n");
 
-		if (index($ar[10], "($orig_crack_cnt)") lt 0 && index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0) {
+		if ($runtime_err || (index($ar[10], "($orig_crack_cnt)") lt 0 && index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0)) {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "N/A"); }
 			my $str;
 			if ($ret_val == 0) {
