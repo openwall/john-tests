@@ -186,6 +186,11 @@ sub parseArgs {
 	$show_pass_thru =~ s/--?ru[les]*[:=]?[^\s]* ?//;
 	# Allow -passthru="--mask='?w'" and drop --mask from --show options
 	$show_pass_thru =~ s/--?mask?[:=]?[^\s]* ?//;
+	# --regex needs to be dropped as well
+	$show_pass_thru =~ s/--?regex[:=][^\s]* ?//;
+	# And finally, --external needs to be dropped
+	# (in jumbo, the shortest abbreviation is -ex, in core it is -e)
+	$show_pass_thru =~ s/--?e[xternal]*[:=][^\s]* ?//;
 }
 
 sub ResumeState {
