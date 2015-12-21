@@ -1050,7 +1050,7 @@ sub process {
 			# this was seen were we use -encode=raw
 			$cmd2 =~ s/$dict_name/--wordlist=tst-pw3/;
 			$cmd2 =~ s/$ar[6]/tst-tst.in/;
-			$cmd2 =~ s/2>&1 >\/dev\/null/2>_stderr/;
+			$cmd2 =~ s/2>&1 >\/dev\/null//;
 			$cmd2 =~ s/[\-]+fork=[0-9]+ //;
 
 # went back to original method, and have scrapped this ExtraArgs_RunPot() stuff since we now
