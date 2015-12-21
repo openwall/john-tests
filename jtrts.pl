@@ -849,6 +849,9 @@ sub process {
 
 	LINE: foreach my $line(@tstdata) {
 		# start of -resume code (pretty trivial, I just count line#'s)
+		unlink $pot;
+		unlink "tst-.log";
+		unlink "tst-.rec";
 		++$line_num;
 		if (defined $opts{resume} && $opts{resume} > 0 && defined $opts{line_num}) {
 			if ($line_num < $opts{line_num}) {
