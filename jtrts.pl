@@ -1258,8 +1258,8 @@ sub build_self_test_files {
 	my $results = `$cmd`;
 	ScreenOutVV("results from '$cmd' = \n$results\n\n");
 	my @ar1 = split("\n", $results);
-	open (FILE1, "> selftest.in") || die "problem creating selftest.in\n";
-	open (FILE2, "> selftest.dic") || die "problem creating selftest.dic\n";
+	open (FILE1, "> tst-.in") || die "problem creating tst-.in\n";
+	open (FILE2, "> tst-.dic") || die "problem creating tst-.dic\n";
 	# output some long format 'tester' input words.  We might improve this with time.
 	# sizes I could see:  55, 56, 64, 65, 80, 81, 119, 120, 125, 126 bytes long.
 	print FILE2 "12345678901234567890123456789012345678901234567890123456789012345678901234567890\n";
@@ -1283,14 +1283,14 @@ sub build_self_test_files {
 		}
 	}
 	close(FILE2); close(FILE1);
-	DumpFileVV("selftest.dic"); DumpFileVV("selftest.in");
+	DumpFileVV("tst-.dic"); DumpFileVV("tst-.in");
 	return $cnt;
 }
 ###############################################################################
 # Internal mode. This will generate a file from the format itself
 # using:
-#    john -format=$fmt -list=format-tests | cut -f3 > selftest.in
-#    john -format=$fmt -list=format-tests | cut -f4 > selftest.dic
+#    john -format=$fmt -list=format-tests | cut -f3 > tst-.in
+#    john -format=$fmt -list=format-tests | cut -f4 > tst-.dic
 # this function does not return, it cleans up, and exits with proper errorlevel.
 ###############################################################################
 sub doInternalMode {
@@ -1360,9 +1360,9 @@ sub doInternalMode {
 			# build the @tstdata array with 1 element
 			if (does_hash_split_unifies_case($type)) {
 				my $cnt3 = $cnt*3;
-				@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt3),($cnt)");
+				@tstdata = ("($type),(X),(jumbo),10000,$type,tst-,tst-.in,$type,Y,X,($cnt)(-show$cnt3),($cnt)");
 			} else {
-				@tstdata = ("($type),(X),(jumbo),10000,$type,selftest,selftest.in,$type,Y,X,($cnt)(-show$cnt),($cnt)");
+				@tstdata = ("($type),(X),(jumbo),10000,$type,tst-,tst-.in,$type,Y,X,($cnt)(-show$cnt),($cnt)");
 			}
 			ScreenOutV("Preparing to run internal for type: $type\n");
 			ScreenOutV("tstdata = @tstdata\n\n");
