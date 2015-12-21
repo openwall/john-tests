@@ -822,6 +822,7 @@ sub create_file_if_not_exist {
 sub exit_cause {
 	my ($ret_val) = @_;
 	my $exit_cause = "";
+	if (!$ret_val) { return $exit_cause; }
 
 	if ($ret_val & 128) {
 		$exit_cause = sprintf("segfault, signal %d%s", $ret_val & 127,
@@ -984,10 +985,13 @@ sub process {
 		if ($runtime_err || (index($ar[10], "($orig_crack_cnt)") lt 0 && index($ar[10], "($orig_show_cnt)") lt 0 && index($ar[10], "(-show$orig_show_cnt)") lt 0)) {
 			while (not defined $crack_xx[4]) { push (@crack_xx, "N/A"); }
 			my $str;
-			if ($ret_val == 0) {
-				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED1!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
-			} else {
-				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED2!!! %s]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt, exit_cause($ret_val));
+			if ($ret_val == 0 && $runtime_err==0) {
+				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED1!!!  ret_val=0]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+			} elsif($runtime_err) {
+				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED7!!! ret_val=$ret_val %s]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt, exit_cause($ret_val));
+				$ret_val_non_zero_cnt += 1;
+			}else {
+				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED2!!! ret_val=$ret_val %s]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt, exit_cause($ret_val));
 				$ret_val_non_zero_cnt += 1;
 			}
 			ScreenOutAlways($str);
@@ -1008,7 +1012,7 @@ sub process {
 					my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED]\n", $ar[4], $orig_show_cnt);
 					ScreenOutSemi($str);
 				} else {
-					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED3!!!]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
+					my $str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED3!!!  ret_val=0]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
 					ScreenOutAlways($str);
 					$error_cnt += 1;
 					StopOnError($cmd, $pot, $cmdshow);
@@ -1020,7 +1024,7 @@ sub process {
 		} else {
 			if (!defined $crack_xx[3]) {ScreenOutAlways("\n");}
 			while (not defined $crack_xx[4]) { push (@crack_xx, "N/A"); }
-			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but %s]\n", $ar[4], $orig_crack_cnt, exit_cause($ret_val));
+			my $str = sprintf("form=%-28.28s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but   ret_val=$ret_val =%s]\n", $ar[4], $orig_crack_cnt, exit_cause($ret_val));
 			ScreenOutAlways($str);
 			$ret_val_non_zero_cnt += 1;
 			StopOnError($cmd, $pot, $cmdshow);
@@ -1134,11 +1138,11 @@ sub process {
 			if (index($ar[11], "($crack_xx[1])") lt 0 && $orig_pot_cnt ne $orig_crack_cnt && index($ar[10], "($orig_show_cnt2)") lt 0 && index($ar[10], "(-show$orig_show_cnt2)") lt 0 || $invalid_pass != 0) {
 				my $str;
 				if ($ret_val == 0 || $invalid_pass != 0) {
-					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED4!!!]  ($valid_pass val-pwd  $invalid_pass inval-pwd)\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED4!!!   ret_val=0]  ($valid_pass val-pwd  $invalid_pass inval-pwd)\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 				} elsif ($invalid_pass != 0) {
-					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11] INVALID cracks=$invalid_pass  [!!!FAILED5!!!]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11] INVALID cracks=$invalid_pass  [!!!FAILED5!!!   ret_val=$ret_val]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2);
 				} else {
-					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED6!!! %s]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2, exit_cause($ret_val));
+					$str = sprintf(".pot CHK:%-24.24s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[11]  [!!!FAILED6!!!   ret_val=$ret_val %s]\n", $ar[4], $orig_pot_cnt, $orig_show_cnt2, exit_cause($ret_val));
 					$ret_val_non_zero_cnt += 1;
 				}
 				ScreenOutAlways($str);
@@ -1148,7 +1152,7 @@ sub process {
 				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [PASSED] ($valid_pass val-pwd)\n", $ar[4], $orig_pot_cnt);
 				ScreenOutSemi($str);
 			} else {
-				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but %s]\n", $ar[4], $orig_pot_cnt, exit_cause($ret_val));
+				my $str = sprintf(".pot CHK:%-24.24s guesses: %4.4s $crack_xx[3] $crack_xx[4]  [pass, but ret_val=$ret_val =%s]\n", $ar[4], $orig_pot_cnt, exit_cause($ret_val));
 				ScreenOutAlways($str);
 				$ret_val_non_zero_cnt += 1;
 				StopOnError($cmd, $pot, $cmdshow2);
