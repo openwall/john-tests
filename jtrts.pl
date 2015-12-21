@@ -987,9 +987,8 @@ sub process {
 			my $str;
 			if ($ret_val == 0 && $runtime_err==0) {
 				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED1!!!  ret_val=0]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt);
-			} elsif($runtime_err) {
+			} elsif($ret_val == 0 && $runtime_err) {
 				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED7!!! ret_val=$ret_val %s]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt, exit_cause($ret_val));
-				$ret_val_non_zero_cnt += 1;
 			}else {
 				$str = sprintf("form=%-28.28s guesses: %4.4s -show=%4.4s $crack_xx[3] $crack_xx[4] : Expected count(s) $ar[10]  [!!!FAILED2!!! ret_val=$ret_val %s]\n", $ar[4], $orig_crack_cnt, $orig_show_cnt, exit_cause($ret_val));
 				$ret_val_non_zero_cnt += 1;
@@ -1032,6 +1031,7 @@ sub process {
 		if ($dict_name_ex ne "") {
 			unlink ($dict_name_ex);
 		}
+		if ($orig_show_cnt == 0) { next LINE; }
 
 		# now do the .pot check.
 		if (-f $pot) {
@@ -1127,6 +1127,7 @@ sub process {
 			$cmdshow2 .= " 2>&1";
 			ScreenOutVV("Execute john: $cmdshow2\n");
 			my $cmd_show_data2 = `$cmdshow2`;
+			if (not defined $cmd_show_data2) { $cmd_show_data2 = "no screen output from john run"; }
 			# ok, now show stderr, if asked to.
 			ScreenOutVVV("\n\nCmd_show_data2 = \n$cmd_show_data2\n\n");
 			my @cmd_show_lines2 = split(/\n/, $cmd_show_data2);
