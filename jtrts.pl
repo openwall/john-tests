@@ -184,6 +184,8 @@ sub parseArgs {
 	# --rules=none might help to find UbSan or ASan bugs in rpp.c,
 	# that's why drop that for --show as well, just in case
 	$show_pass_thru =~ s/--?ru[les]*[:=]?[^\s]* ?//;
+	# Allow -passthru="--mask='?w'" and drop --mask from --show options
+	$show_pass_thru =~ s/--?mask?[:=]?[^\s]* ?//;
 }
 
 sub ResumeState {
