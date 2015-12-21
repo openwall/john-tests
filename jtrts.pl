@@ -181,6 +181,9 @@ sub parseArgs {
 	$show_pass_thru =~ s/--?me[mfile\-sz]*[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?fix[\-staedly]*[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?pro[gres\-vry]*[=:]\d+ ?//;
+	# --rules=none might help to find UbSan or ASan bugs in rpp.c,
+	# that's why drop that for --show as well, just in case
+	$show_pass_thru =~ s/--?ru[les]*[:=]?[^\s]* ?//;
 }
 
 sub ResumeState {
