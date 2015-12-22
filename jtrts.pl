@@ -735,6 +735,9 @@ sub ExtraArgs_Run { #($ar[8], $ar[7], $ar[9]);
 			$x = $_[2];
 		}
 		my @a = split('\|', $x);
+		# adusting -enc=xxx into '-encoding=x -internal-codepage=xxx' only
+		# needed on the 'Run'  It does not appear to be needed in RunPot or Show
+		$a[0] =~ s/-enc=([a-zA-Z0-9\-_]+)/-encoding=$1 -internal-codepage=$1 /;
 		$ret .= " " . $a[0];
 	}
 	return $ret;
