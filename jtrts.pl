@@ -1068,7 +1068,7 @@ sub process {
 			$cmd2 =~ s/$dict_name/--wordlist=tst-pw3/;
 			$cmd2 =~ s/$ar[6]/tst-tst.in/;
 			$cmd2 =~ s/2>&1 >\/dev\/null//;
-			$cmd2 =~ s/[\-]+fork=[0-9]+ //;
+			$cmd2 =~ s/--?fork[=:][0-9]+ //;
 
 # went back to original method, and have scrapped this ExtraArgs_RunPot() stuff since we now
 # have john-local.pot that removes the utf8 default crap.
