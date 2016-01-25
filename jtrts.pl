@@ -166,7 +166,10 @@ sub parseArgs {
 	foreach my $i (0..$#types) { $types[$i] = lc($types[$i]); }
 	foreach my $s (@passthru) { $pass_thru .= " " . $s; }
 	$pass_thru =~ s/--?sa[ve\-mory]*[=:]\d+ ?//;  # save memory is simply not allowed in the TS.
-	$show_pass_thru = $pass_thru;
+	$show_pass_thru = strip_pass_thru_to_show($pass_thru);
+}
+sub strip_pass_thru_to_show {
+	my $show_pass_thru = $_[0];
 	$show_pass_thru =~ s/--?fork[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?mkpc?[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?sk[ip\-selft]* ?//;
@@ -194,6 +197,7 @@ sub parseArgs {
 	# And finally, --external needs to be dropped
 	# (in jumbo, the shortest abbreviation is -ex, in core it is -e)
 	$show_pass_thru =~ s/--?e[xternal]*[:=][^\s]* ?//;
+	return $show_pass_thru;
 }
 
 sub ResumeState {
@@ -778,6 +782,7 @@ sub ExtraArgs_Show { #($ar[9]);
 		my @a = split('\|', $_[0]);
 		$ret .= " " . $a[0];
 	}
+	$ret = strip_pass_thru_to_show($ret);
 	return $ret;
 }
 sub is_format_8bit {
