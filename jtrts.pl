@@ -36,6 +36,7 @@ my %formatDetails=();
 my %opts=(line_num => 0);
 my @tstdata;
 my $show_stderr=0;
+my $only_1_type=0;
 my $last_line_len=0;
 my $error_cnt = 0; my $error_cnt_pot = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my $dyanmic_wanted="normal";
@@ -163,7 +164,9 @@ sub parseArgs {
 	if (defined $opts{quiet})   { $verbosity -= $opts{quiet} }
 	setVerbosity($verbosity);
 	if (@ARGV) { push @types, @ARGV; }
-	foreach my $i (0..$#types) { $types[$i] = lc($types[$i]); }
+	my $cnt=0;
+	foreach my $i (0..$#types) { ++$cnt; $types[$i] = lc($types[$i]); }
+	if ($cnt == 1) { $only_1_type = 1; }
 	foreach my $s (@passthru) { $pass_thru .= " " . $s; }
 	$pass_thru =~ s/--?sa[ve\-mory]*[=:]\d+ ?//;  # save memory is simply not allowed in the TS.
 	$show_pass_thru = strip_pass_thru_to_show($pass_thru);
@@ -685,8 +688,11 @@ sub filterPatterns {
 							$valid = 'f';
 							foreach my $req(@reqs) { # note, these are already wrapped in ()
 								if (!stringInArray(substr($req, 1, length($req)-2), @types)) {
-									ScreenOutVVV("Line [$line] filtered out, required option [@reqs] not satisfied in [@types]\n");
-									next LINE;
+									# if only 1 type was given, then we IGNORE 'full' requirements.
+									if ($only_1_type == 0) {
+										ScreenOutVVV("Line [$line] filtered out, required option [@reqs] not satisfied in [@types]\n");
+										next LINE;
+									}
 								}
 							}
 						}
