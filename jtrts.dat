@@ -578,6 +578,10 @@
 #(new)(base)(qnx_sha512),(X),(jumbo),10000,qnx_sha512,pw-new,qnx_sha512_new_tst.in,qnx,N,X,(1500),(1500)
 (new)(base)(vdi_128),(full),(jumbo),30,vdi_128,pw-new,vdi_128_new_tst.in,vdi,N,X,(1500),(1500)
 (new)(base)(vdi_256),(full),(jumbo),30,vdi_256,pw-new,vdi_256_new_tst.in,vdi,N,X,(1500),(1500)
+(new)(base),(X),(jumbo),200,azuread,pw-new,azuread_new_tst.in,azuread,N,X,(1500),(1500)
+(new)(base)(raw-sha3-512)(rawsha3-512),(X),(jumbo),10000,rawsha3-512,pw-new,rawsha3_512_new_tst.in,raw-sha3,Y,X,(1500),(1500)
+(new)(base),(X),(jumbo),200,blockchain,pw-new,blockchain_new_tst.in,blockchain,Y,X,(1500),(1500)
+(new)(opencl)(gpu),(X),(jumbo)&(opencl),200,blockchain-opencl,pw-new,blockchain_new_tst.in,blockchain-opencl,Y,X,(1310),(1310)
 
 (base),(X),(jumbo),10000,hdaa,pw,hdaa_tst.in,hdaa,N,X,(1500),(1500)
 (base),(full),(jumbo),10000,netntlm,pw,netntlm_tst.in,netntlm,N,X,(1500),(1500)
