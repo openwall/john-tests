@@ -573,9 +573,9 @@
 
 (new)(base),(X),(jumbo),40,agilekeychain,pw-new,agilekeychain_new_tst.in,agilekeychain,Y,X,(1500),(1500)
 (new)(opencl)(gpu),(X),(jumbo)&(opencl),40,agilekeychain-opencl,pw-new,agilekeychain_new_tst.in,agilekeychain-opencl,Y,X,(1500),(1500)
-(new)(base)(qnx_md5),(X),(jumbo),10000,qnx_md5,pw-new,qnx_md5_new_tst.in,qnx,N,X,(1500),(1500)
-(new)(base)(qnx_sha256),(X),(jumbo),10000,qnx_sha256,pw-new,qnx_sha256_new_tst.in,qnx,N,X,(1500),(1500)
-#(new)(base)(qnx_sha512),(X),(jumbo),10000,qnx_sha512,pw-new,qnx_sha512_new_tst.in,qnx,N,X,(1500),(1500)
+(new)(base)(qnx_md5),(X),(jumbo),90,qnx_md5,pw-new,qnx_md5_new_tst.in,qnx,N,X,(1500),(1500)
+(new)(base)(qnx_sha256),(X),(jumbo),90,qnx_sha256,pw-new,qnx_sha256_new_tst.in,qnx,N,X,(1500),(1500)
+(new)(base)(qnx_sha512),(X),(jumbo),400,qnx_sha512,pw-new,qnx_sha512_new_tst.in,qnx,N,X,(1500),(1500)
 (new)(base)(vdi_128),(full),(jumbo),30,vdi_128,pw-new,vdi_128_new_tst.in,vdi,N,X,(1500),(1500)
 (new)(base)(vdi_256),(full),(jumbo),30,vdi_256,pw-new,vdi_256_new_tst.in,vdi,N,X,(1500),(1500)
 (new)(base),(X),(jumbo),200,azuread,pw-new,azuread_new_tst.in,azuread,N,X,(1500),(1500)
