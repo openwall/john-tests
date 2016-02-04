@@ -655,6 +655,7 @@
 (new)(opencl)(gpu),(X),(jumbo)&(opencl),200,blockchain-opencl,pw-new,blockchain_new_tst.in,blockchain-opencl,Y,X,(1310),(1310)
 (new)(base),(X),(jumbo),40,sxc,pw-new,sxc_new_tst.in,sxc,Y,X,(1500),(1500)
 (new)(opencl)(gpu),(X),(jumbo)&(opencl),40,sxc-opencl,pw-new,sxc_new_tst.in,sxc-opencl,Y,X,(1200),(1200)
+(new)(base),(X),(jumbo),10000,vnc,pw-new,vnc_new_tst.in,vnc,Y,X,(1500),(1500)
 
 (base),(X),(jumbo),10000,hdaa,pw,hdaa_tst.in,hdaa,N,X,(1500),(1500)
 (base),(full),(jumbo),10000,netntlm,pw,netntlm_tst.in,netntlm,N,X,(1500),(1500)
