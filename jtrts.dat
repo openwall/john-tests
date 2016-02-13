@@ -658,6 +658,8 @@
 (new)(base),(X),(jumbo),10000,vnc,pw-new,vnc_new_tst.in,vnc,N,X,(1500),(1500)
 (new)(base),(X),(jumbo),50,vtp,pw-new,vtp_new_tst.in,vtp,N,X,(1500),(1500)
 (new)(base),(X),(jumbo),30,cloudkeychain,pw-new,cloudkeychain_new_tst.in,cloudkeychain,N,X,(1500),(1500)
+(new)(base),(X),(jumbo),10000,keystore,pw-new,keystore_new_tst.in,keystore,N,X,(1500),(1500)
+(new)(base),(X),(jumbo),10000,keystore,pw-new,keystore_new_tst.in,keystore-opencl,Y,X,(1500),(1500)
 
 (base),(X),(jumbo),10000,hdaa,pw,hdaa_tst.in,hdaa,N,X,(1500),(1500)
 (base),(full),(jumbo),10000,netntlm,pw,netntlm_tst.in,netntlm,N,X,(1500),(1500)
