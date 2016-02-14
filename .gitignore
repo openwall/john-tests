@@ -6,3 +6,4 @@ jtrts_resume.json
 jtrts.resume
 opencl_*.h
 tst-*
+*.tmp
