@@ -765,6 +765,8 @@
 (base),(X),(jumbo),10000,tcp-md5,pw,tcp-md5_tst.in,tcp-md5,Y,X,(1500),(1500)
 (base),(full),(jumbo),35,strip,pw,strip_tst.in,strip,Y,X,(1500),(1500)
 (base),(X),(jumbo),35,bitcoin,pw,bitcoin_tst.in,bitcoin,Y,X,(325),(325)
+(base),(X),(jumbo),10000,hmac-md5,pw-new,hmacMD5_longsalt_new_tst.in,hmac-md5,Y,X,(1500),(1500)
+(base),(X),(jumbo),10000,hmac-sha256,pw-new,hmacSHA256_longsalt_new_tst.in,hmac-sha256,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
