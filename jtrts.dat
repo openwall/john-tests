@@ -770,6 +770,7 @@
 (base),(X),(jumbo),10000,hmac-sha224-longsalt,pw-new,hmacSHA224_longsalt_new_tst.in,hmac-sha224,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,hmac-sha384-longsalt,pw-new,hmacSHA384_longsalt_new_tst.in,hmac-sha384,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,hmac-sha512-longsalt,pw-new,hmacSHA512_longsalt_new_tst.in,hmac-sha512,Y,X,(1500),(1500)
+(base)(whirlpool),(X),(jumbo),10000,whirlpool1,pw-new,raw-whirlpool1_new_tst.in,whirlpool1,Y,X,(1500),(1500)
 
 ###############################################
 (mschapv2-utf8)(utf8)(utf-8)(enc),(full),(jumbo)&(encode_valid),10000,mschapv2-utf8,pw-utf8,mschapv2_tst_utf8.in,mschapv2,Y,-enc=utf8,(1442)(1500),(1442)(1500)
