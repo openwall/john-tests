@@ -5,25 +5,35 @@
 # -q for 'quiet' mode.
 
 T=yes
-F=0
+FAILS=0
 Q=N
+TOTAL=0
 if [ x$1 = "x-q" ] ; then Q=Y ; fi
+
+function Base64_Conv_Func {
+   local out_var=$1;
+   shift
+   local ret_str
+   ret_str=`../run/base64conv 2>/dev/null $*`
+   ((TOTAL++))
+   eval $out_var=\$ret_str;
+}
 
 # simple test cycling through the types.  $MEM and $V9 should be same in the end
 MEM=123456789aBCDefGHJ
-V1=`../run/base64conv 2>/dev/null -i raw -q -e -o hex $MEM`
-V2=`../run/base64conv 2>/dev/null -i hex -q -e -o mime $V1`
-V3=`../run/base64conv 2>/dev/null -i mime -q -e -o crypt $V2`
-V4=`../run/base64conv 2>/dev/null -i crypt -q -e -o cryptBS $V3`
-V5=`../run/base64conv 2>/dev/null -i cryptBS -q -e -o mime $V4`
-V6=`../run/base64conv 2>/dev/null -i mime -q -e -o cryptBS $V5`
-V7=`../run/base64conv 2>/dev/null -i cryptBS -q -e -o crypt $V6`
-V8=`../run/base64conv 2>/dev/null -i crypt -q -e -o hex $V7`
-V9=`../run/base64conv 2>/dev/null -i hex -q -e -o raw $V8`
+Base64_Conv_Func V1 -i raw -q -e -o hex $MEM
+Base64_Conv_Func V2 -i hex -q -e -o mime $V1
+Base64_Conv_Func V3 -i mime -q -e -o crypt $V2
+Base64_Conv_Func V4 -i crypt -q -e -o cryptBS $V3
+Base64_Conv_Func V5 -i cryptBS -q -e -o mime $V4
+Base64_Conv_Func V6 -i mime -q -e -o cryptBS $V5
+Base64_Conv_Func V7 -i cryptBS -q -e -o crypt $V6
+Base64_Conv_Func V8 -i crypt -q -e -o hex $V7
+Base64_Conv_Func V9 -i hex -q -e -o raw $V8
 if [ x$MEM != x$V9 ];
 then
-    F=1
-    echo "Simple test failed.  '$MEM' not same as '$9'"
+    ((FAILS++))
+    echo "Simple test failed.  '$MEM' not same as '$V9'"
     echo "MEM='$MEM'"
     echo "V1 ='$V1'"
     echo "V2 ='$V2'"
@@ -47,66 +57,74 @@ function known {
     kC=$4
     kM=$3
     kB=$2
-    B=`../run/base64conv 2>/dev/null -i raw -q -e -o cryptBS $1`
-    C=`../run/base64conv 2>/dev/null -i raw -q -e -o crypt $1`
-    M=`../run/base64conv 2>/dev/null -i raw -q -e -o mime $1`
+    Base64_Conv_Func B -i raw -q -e -o cryptBS $1
+    Base64_Conv_Func C -i raw -q -e -o crypt $1
+    Base64_Conv_Func M -i raw -q -e -o mime $1
     T=yes
     if [ x$B != x$kB ];
     then
         echo "Known test failed (cryptBS). '$1' should be '$kB' not '$B'"
         T=no
+        ((FAILS++))
     fi
     if [ x$M != x$kM ];
     then
         echo "Known test failed (mime). '$1' should be '$kM' not '$M'"
         T=no
+        ((FAILS++))
     fi
     if [ x$C != x$kC ];
     then
         echo "Known test failed (crypt). '$1' should be '$kC' not '$C'"
         T=no
+        ((FAILS++))
     fi
-    C2=`../run/base64conv 2>/dev/null -i cryptBS -q -e -o crypt $B`
-    M2=`../run/base64conv 2>/dev/null -i cryptBS -q -e -o mime $B`
+    Base64_Conv_Func C2 -i cryptBS -q -e -o crypt $B
+    Base64_Conv_Func M2 -i cryptBS -q -e -o mime $B
     if [ x$M2 != x$kM ];
     then
         echo "Known test failed (cryptBS->mime). '$1' should be '$kM' not '$M2'"
         T=no
+        ((FAILS++))
     fi
     if [ x$C2 != x$kC ];
     then
         echo "Known test failed (cryptBS->crypt). '$1' should be '$kC' not '$C2'"
         T=no
+        ((FAILS++))
     fi
-    B2=`../run/base64conv 2>/dev/null -i crypt -q -e -o cryptBS $C`
-    M2=`../run/base64conv 2>/dev/null -i crypt -q -e -o mime $C`
+    Base64_Conv_Func B2 -i crypt -q -e -o cryptBS $C
+    Base64_Conv_Func M2 -i crypt -q -e -o mime $C
     if [ x$M2 != x$kM ];
     then
         echo "Known test failed (crypt->mime). '$1' should be '$kM' not '$M2'"
         T=no
+        ((FAILS++))
     fi
     if [ x$B2 != x$kB ];
     then
         echo "Known test failed (crypt->cryptBS). '$1' should be '$kB' not '$B2'"
         T=no
-    fi
-    B2=`../run/base64conv 2>/dev/null -i mime -q -e -o cryptBS $M`
-    C2=`../run/base64conv 2>/dev/null -i mime -q -e -o crypt $M`
+         ((FAILS++))
+   fi
+    Base64_Conv_Func B2 -i mime -q -e -o cryptBS $M
+    Base64_Conv_Func C2 -i mime -q -e -o crypt $M
     if [ x$C2 != x$kC ];
     then
         echo "Known test failed (mime->crypt). '$1' should be '$kC' not '$C2'"
         T=no
+        ((FAILS++))
     fi
     if [ x$B2 != x$kB ];
     then
         echo "Known test failed (mime->cryptBS). '$1' should be '$kB' not '$B2'"
         T=no
-    fi
+         ((FAILS++))
+   fi
     if [ x$T = "xyes" ];
     then
         if [ $Q = "N" ] ; then echo "Success known test param = $1" ; fi
     else
-        F=1
         echo "Failure known test param = $1"
     fi
 }
@@ -131,33 +149,33 @@ if [ $Q = "N" ] ; then echo "performing NULL checks" ; fi
 T=yes
 B2=000000000000
 C2=........
-B=`../run/base64conv 2>/dev/null -q -i hex -o crypt $B2`
-C=`../run/base64conv 2>/dev/null -q -o hex -i crypt $C2`
+Base64_Conv_Func B -q -i hex -o crypt $B2
+Base64_Conv_Func C -q -o hex -i crypt $C2
 if [ x$B != "x$C2" -o x$C != "x$B2" ];
 then
     echo "failed! crypt";
     T=no
+    ((FAILS++))
 fi
-B=`../run/base64conv 2>/dev/null -q -i hex -o cryptBS $B2`
-C=`../run/base64conv 2>/dev/null -q -o hex -i cryptBS $C2`
+Base64_Conv_Func B -q -i hex -o cryptBS $B2
+Base64_Conv_Func C -q -o hex -i cryptBS $C2
 if [ x$B != "x$C2" -o x$C != "x$B2" ];
 then
     echo "failed! cryptBS";
     T=no
+    ((FAILS++))
 fi
 C2=AAAAAAAA
-B=`../run/base64conv 2>/dev/null -q -i hex -o mime $B2`
-C=`../run/base64conv 2>/dev/null -q -o hex -i mime $C2`
+Base64_Conv_Func B -q -i hex -o mime $B2
+Base64_Conv_Func C -q -o hex -i mime $C2
 if [ x$B != "x$C2" -o x$C != "x$B2" ];
 then
     echo "failed! mime";
     T=no
+    ((FAILS++))
 fi
-if [ x$T = "xyes" ];
-then
+if [ x$T = "xyes" ]; then
     if [ $Q = "N" ] ; then echo "ALL null tests were valid" ; fi
-else
-    F=1
 fi
 
 #########################################
@@ -171,44 +189,44 @@ function comp {
     then
         echo "$3: '$1' is not equal to '$2'"
         T=no
+        ((FAILS++))
     fi
 }
 
 function tst {
     T=yes
-    B=`../run/base64conv 2>/dev/null -i raw -q -e -o cryptBS $1`
-    C=`../run/base64conv 2>/dev/null -i raw -q -e -o crypt $1`
-    M=`../run/base64conv 2>/dev/null -i raw -q -e -o mime $1`
+    Base64_Conv_Func B -i raw -q -e -o cryptBS $1
+    Base64_Conv_Func C -i raw -q -e -o crypt $1
+    Base64_Conv_Func M -i raw -q -e -o mime $1
 
-    R=`../run/base64conv 2>/dev/null -i crypt -q -e -o cryptBS $C`
-    R=`../run/base64conv 2>/dev/null -i cryptBS -q -e -o raw $R`
+    Base64_Conv_Func R -i crypt -q -e -o cryptBS $C
+    Base64_Conv_Func R -i cryptBS -q -e -o raw $R
     comp x$1 x$R "crypt_cryptBS (1)"
 
-    R=`../run/base64conv 2>/dev/null -i mime -q -e -o cryptBS $M`
-    R=`../run/base64conv 2>/dev/null -i cryptBS -q -e -o raw $R`
+    Base64_Conv_Func R -i mime -q -e -o cryptBS $M
+    Base64_Conv_Func R -i cryptBS -q -e -o raw $R
     comp x$1 x$R "mime_cryptBS (2)"
 
-    R=`../run/base64conv 2>/dev/null -i cryptBS -q -e -o crypt $B`
-    R=`../run/base64conv 2>/dev/null -i crypt -q -e -o raw $R`
+    Base64_Conv_Func R -i cryptBS -q -e -o crypt $B
+    Base64_Conv_Func R -i crypt -q -e -o raw $R
     comp x$1 x$R "cryptBS_crypt (3)"
 
-    R=`../run/base64conv 2>/dev/null -i mime -q -e -o crypt $M`
-    R=`../run/base64conv 2>/dev/null -i crypt -q -e -o raw $R`
+    Base64_Conv_Func R -i mime -q -e -o crypt $M
+    Base64_Conv_Func R -i crypt -q -e -o raw $R
     comp x$1 x$R "mime_crypt (4)"
 
-    R=`../run/base64conv 2>/dev/null -i cryptBS -q -e -o mime $B`
-    R=`../run/base64conv 2>/dev/null -i mime -q -e -o raw $R`
+    Base64_Conv_Func R -i cryptBS -q -e -o mime $B
+    Base64_Conv_Func R -i mime -q -e -o raw $R
     comp a$1 a$R "cryptBS_mime (5)"
 
-    R=`../run/base64conv 2>/dev/null -i crypt -q -e -o mime $C`
-    R=`../run/base64conv 2>/dev/null -i mime -q -e -o raw $R`
+    Base64_Conv_Func R -i crypt -q -e -o mime $C
+    Base64_Conv_Func R -i mime -q -e -o raw $R
     comp b$1 b$R "crypt_mime (6)"
 
     if [ x$T = "xyes" ];
     then
         if [ $Q = "N" ] ; then echo "Success multi-convert test param = $1" ; fi
     else
-        F=1
         echo "Failure multi-convert test param = $1"
     fi
 }
@@ -397,5 +415,9 @@ tst $P
 
 # if there were no failures, then list so. This is so there
 # is SOME output in -q mode, if all tests passed.
-if [ x$F = "x0" ] ; then echo "All tests succeeded" ; fi
+if [ x$FAILS = "x0" ] ; then
+    echo "All tests succeeded. $TOTAL calls to ../run/base64conv"
+else
+    echo "There were $FAILS failures, from $TOTAL calls to ../run/base64conv"
+fi
 
