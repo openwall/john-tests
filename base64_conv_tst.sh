@@ -2,10 +2,14 @@
 #
 # Test script for the base64conv program.
 #
+# -q for 'quiet' mode.
 
 T=yes
+F=0
+Q=N
+if [ x$1 = "x-q" ] ; then Q=Y ; fi
 
-# simple test cycling through the types.  $MEM and $9 should be same in the end
+# simple test cycling through the types.  $MEM and $V9 should be same in the end
 MEM=123456789aBCDefGHJ
 V1=`../run/base64conv 2>/dev/null -i raw -q -e -o hex $MEM`
 V2=`../run/base64conv 2>/dev/null -i hex -q -e -o mime $V1`
@@ -18,6 +22,7 @@ V8=`../run/base64conv 2>/dev/null -i crypt -q -e -o hex $V7`
 V9=`../run/base64conv 2>/dev/null -i hex -q -e -o raw $V8`
 if [ x$MEM != x$V9 ];
 then
+    F=1
     echo "Simple test failed.  '$MEM' not same as '$9'"
     echo "MEM='$MEM'"
     echo "V1 ='$V1'"
@@ -30,7 +35,7 @@ then
     echo "V8 ='$V8'"
     echo "V9 ='$V9'"
 else
-    echo "Simple test success"
+    if [ $Q = "N" ] ; then echo "Simple test success" ; fi
 fi
 
 
@@ -99,8 +104,9 @@ function known {
     fi
     if [ x$T = "xyes" ];
     then
-        echo "Success known test param = $1"
+        if [ $Q = "N" ] ; then echo "Success known test param = $1" ; fi
     else
+        F=1
         echo "Failure known test param = $1"
     fi
 }
@@ -121,7 +127,7 @@ known abcdefghijklmnopqrstuvwxyz123456789012345 V7qMYJaNbVKOeh4PhtqPk3bQnFLRqR5S
 known abcdefghijklmnopqrstuvwxyz1234567890123456 V7qMYJaNbVKOeh4PhtqPk3bQnFLRqR5StdLAmA1BpMnBsY1Al6nAoIXB YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXoxMjM0NTY3ODkwMTIzNDU2 MK7XN4JaNqVdOahgPKtjQ53mQrFpRbRsSLclAXAoBHMrC1YkAH6nB1Iq
 
 # null check.  Make sure we can properly handle NULL buffers.
-echo "performing NULL checks"
+if [ $Q = "N" ] ; then echo "performing NULL checks" ; fi
 T=yes
 B2=000000000000
 C2=........
@@ -149,7 +155,9 @@ then
 fi
 if [ x$T = "xyes" ];
 then
-    echo "ALL null tests were valid"
+    if [ $Q = "N" ] ; then echo "ALL null tests were valid" ; fi
+else
+    F=1
 fi
 
 #########################################
@@ -198,8 +206,9 @@ function tst {
 
     if [ x$T = "xyes" ];
     then
-        echo "Success multi-convert test param = $1"
+        if [ $Q = "N" ] ; then echo "Success multi-convert test param = $1" ; fi
     else
+        F=1
         echo "Failure multi-convert test param = $1"
     fi
 }
@@ -385,4 +394,8 @@ P={Sa,u/{d=.rWKc3{8ygV!cyIVA*=3H
 tst $P
 P=c5LZJcSu8HhpH%7=BdEIo}2#iMS4fwS
 tst $P
+
+# if there were no failures, then list so. This is so there
+# is SOME output in -q mode, if all tests passed.
+if [ x$F = "x0" ] ; then echo "All tests succeeded" ; fi
 
