@@ -1053,25 +1053,16 @@
 #
 # had to recreate these. Here is the commands used to build the dic files
 #
-#  ../run/john -inc:ascii -stdout | perl -e '$i=0; while ($s=<STDIN>) {++$i; if($i%1000==888){print $s;if(++$k==1500){exit(0);}}}' > alnum_qwk.dic
-#  ../run/john -inc:ascii -stdout | perl -e '$i=0; while ($s=<STDIN>) {++$i; if($i%25000==888){print $s;if(++$k==1500){exit(0);}}}' > alnum_full.dic
+#  ../run/john -inc:alnum -stdout | perl -e '$i=0; while ($s=<STDIN>) {++$i; if($i%1000==888){print $s;if(++$k==1500){exit(0);}}}' > alnum_qwk.dic
+#  ../run/john -inc:ascii -stdout | perl -e '$i=0; while ($s=<STDIN>) {++$i; if($i%25000==888){print $s;if(++$k==1500){exit(0);}}}' > ascii_full.dic
 #
 (inc)(base),(X),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,dyn_0-inc_ascii_qwk,INCREMENT_ascii,dynamic_0_inc_ascii_qwk_tst.in,dynamic_0,N,X,(500),(500)
 (inc)(base),(X),(jumbo)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,dyn_0-inc_alnum_qwk,INCREMENT_alnum,dynamic_0_inc_alnum_qwk_tst.in,dynamic_0,N,X,(500),(500)
 (inc)(base),(X),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,NT-inc_ascii_qwk,INCREMENT_ascii,NT_inc_ascii_qwk_tst.in,nt,N,X,(500),(500)
 (inc)(base),(X),(jumbo)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,NT-inc_alnum_qwk,INCREMENT_alnum,NT_inc_alnum_qwk_tst.in,nt,N,X,(500),(500)
-(inc)(base),(X),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_ascii_qwk,INCREMENT_ascii,descrypt_iXXXnc_ascii_qwk_tst.in,descrypt,N,X,(1500),(1500)
-(inc)(base),(X),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,descrypt-inc_alnum_qwk,INCREMENT_alnum,descrypt_iXXXnc_alnum_qwk_tst.in,descrypt,N,X,(1500),(1500)
-#
-# these are SLOW. Will only be run if inc is the 'type' listed.
-(inc),(inc),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,dyn_0-inc_ascii,INCREMENT_ascii,dynamic_0_inc_ascii_tst.in,dynamic_0,N,X,(1500),(1500)
-(inc),(inc),(jumbo)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,dyn_0-inc_alnum,INCREMENT_alnum,dynamic_0_inc_alnum_tst.in,dynamic_0,N,X,(1500),(1500)
-(inc),(inc),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,NT-inc_ascii,INCREMENT_ascii,NT_inc_ascii_tst.in,nt,N,X,(1500),(1500)
-(inc),(inc),(jumbo)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,NT-inc_alnum,INCREMENT_alnum,NT_inc_alnum_tst.in,nt,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_ascii,INCREMENT_ascii,DES_inc_ascii_tst.in,descrypt,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,descrypt-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,descrypt,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_ascii,INCREMENT_ascii,DES_inc_ascii_tst.in,descrypt,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,descrypt-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,descrypt,N,X,(1500),(1500)
+(inc)(base),(X),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_ascii_qwk,INCREMENT_ascii,descrypt_inc_ascii_qwk_tst.in,descrypt,N,X,(500),(500)
+(inc)(base),(X),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,descrypt-inc_alnum_qwk,INCREMENT_alnum,descrypt_inc_alnum_qwk_tst.in,descrypt,N,X,(500),(500)
+
 #
 #types,required_types,sys_caps,dict_cnt,scr_output,dict,input,-form=string,Y/N_FmtStr_req,addtionalParams,correct_Cracks_num(s),.pot_crack_num(s)
 # sapG (== sapF) is supposed to run in ascii or UTF-8, never 8-bit CP
