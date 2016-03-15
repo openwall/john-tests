@@ -1051,27 +1051,26 @@
 # to change these from a base run, at a later time.  Also, we may want to use --max-run-time=X to cause
 # a lockup to not happen. However, this switch is ONLY in the bleeding edge john jumbo right now.
 #
-(inc)(base),(X),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,dyn_0-inc_all_qwk,INCREMENT_ascii,dynamic_0_inc_all_qwk_tst.in,dynamic_0,N,X,(500),(500)
+# had to recreate these. Here is the commands used to build the dic files
+#
+#  ../run/john -inc:ascii -stdout | perl -e '$i=0; while ($s=<STDIN>) {++$i; if($i%1000==888){print $s;if(++$k==1500){exit(0);}}}' > alnum_qwk.dic
+#  ../run/john -inc:ascii -stdout | perl -e '$i=0; while ($s=<STDIN>) {++$i; if($i%25000==888){print $s;if(++$k==1500){exit(0);}}}' > alnum_full.dic
+#
+(inc)(base),(X),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,dyn_0-inc_ascii_qwk,INCREMENT_ascii,dynamic_0_inc_ascii_qwk_tst.in,dynamic_0,N,X,(500),(500)
 (inc)(base),(X),(jumbo)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,dyn_0-inc_alnum_qwk,INCREMENT_alnum,dynamic_0_inc_alnum_qwk_tst.in,dynamic_0,N,X,(500),(500)
-(inc)(base),(X),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,NT-inc_all_qwk,INCREMENT_ascii,NT_inc_all_qwk_tst.in,nt,N,X,(500),(500)
+(inc)(base),(X),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,NT-inc_ascii_qwk,INCREMENT_ascii,NT_inc_ascii_qwk_tst.in,nt,N,X,(500),(500)
 (inc)(base),(X),(jumbo)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,NT-inc_alnum_qwk,INCREMENT_alnum,NT_inc_alnum_qwk_tst.in,nt,N,X,(500),(500)
-(inc)(base),(X),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,DES-inc_all_qwk,INCREMENT_ascii,DES_inc_all_qwk_tst.in,des,N,X,(1500),(1500)
-(inc)(base),(X),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,DES-inc_alnum_qwk,INCREMENT_alnum,DES_inc_alnum_qwk_tst.in,des,N,X,(1500),(1500)
-(inc)(base),(X),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_all_qwk,INCREMENT_ascii,DES_inc_all_qwk_tst.in,descrypt,N,X,(1500),(1500)
-(inc)(base),(X),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,descrypt-inc_alnum_qwk,INCREMENT_alnum,DES_inc_alnum_qwk_tst.in,descrypt,N,X,(1500),(1500)
+(inc)(base),(X),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_ascii_qwk,INCREMENT_ascii,descrypt_iXXXnc_ascii_qwk_tst.in,descrypt,N,X,(1500),(1500)
+(inc)(base),(X),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,descrypt-inc_alnum_qwk,INCREMENT_alnum,descrypt_iXXXnc_alnum_qwk_tst.in,descrypt,N,X,(1500),(1500)
 #
 # these are SLOW. Will only be run if inc is the 'type' listed.
-(inc),(inc),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,dyn_0-inc_all,INCREMENT_ascii,dynamic_0_inc_all_tst.in,dynamic_0,N,X,(1500),(1500)
+(inc),(inc),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,dyn_0-inc_ascii,INCREMENT_ascii,dynamic_0_inc_ascii_tst.in,dynamic_0,N,X,(1500),(1500)
 (inc),(inc),(jumbo)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,dyn_0-inc_alnum,INCREMENT_alnum,dynamic_0_inc_alnum_tst.in,dynamic_0,N,X,(1500),(1500)
-(inc),(inc),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,NT-inc_all,INCREMENT_ascii,NT_inc_all_tst.in,nt,N,X,(1500),(1500)
+(inc),(inc),(jumbo)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,NT-inc_ascii,INCREMENT_ascii,NT_inc_ascii_tst.in,nt,N,X,(1500),(1500)
 (inc),(inc),(jumbo)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,NT-inc_alnum,INCREMENT_alnum,NT_inc_alnum_tst.in,nt,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,DES-inc_all,INCREMENT_ascii,DES_inc_all_tst.in,des,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,DES-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,des,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,DES-inc_all,INCREMENT_ascii,DES_inc_all_tst.in,des,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,DES-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,des,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_all,INCREMENT_ascii,DES_inc_all_tst.in,descrypt,N,X,(1500),(1500)
+(inc),(inc),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_ascii,INCREMENT_ascii,DES_inc_ascii_tst.in,descrypt,N,X,(1500),(1500)
 (inc),(inc),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,descrypt-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,descrypt,N,X,(1500),(1500)
-(inc),(inc),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_all,INCREMENT_ascii,DES_inc_all_tst.in,descrypt,N,X,(1500),(1500)
+(inc),(inc),(core)&(inc_ascii_72acb6963bf12701dfb06c8d1b00cad4),10000,descrypt-inc_ascii,INCREMENT_ascii,DES_inc_ascii_tst.in,descrypt,N,X,(1500),(1500)
 (inc),(inc),(core)&(inc_alnum_ee8763c850dee8e4b88ef547a8ed39b8),10000,descrypt-inc_alnum,INCREMENT_alnum,DES_inc_alnum_tst.in,descrypt,N,X,(1500),(1500)
 #
 #types,required_types,sys_caps,dict_cnt,scr_output,dict,input,-form=string,Y/N_FmtStr_req,addtionalParams,correct_Cracks_num(s),.pot_crack_num(s)

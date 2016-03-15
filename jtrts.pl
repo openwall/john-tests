@@ -423,16 +423,16 @@ sub setup {
 			push(@caps, @encs );
 		}
 	}
-	# ok, now load the md5's of the all.chr and alnum.chr files. These end up being 'required' types for the inc to run.
-	my $file = $JOHN_PATH . "/all.chr";
+	# ok, now load the md5's of the ascii.chr and alnum.chr files. These end up being 'required' types for the inc to run.
+	my $file = $JOHN_PATH . "/ascii.chr";
     if (open(FILE, $file)) {
 	    binmode(FILE);
-		my $sHash = "inc_all_" . Digest::MD5->new->addfile(*FILE)->hexdigest;
+		my $sHash = "inc_ascii_" . Digest::MD5->new->addfile(*FILE)->hexdigest;
 	    close(FILE);
 		push(@caps, $sHash);
-		ScreenOutV("all.chr found, $sHash added as a capability\n");
+		ScreenOutV("ascii.chr found, $sHash added as a capability\n");
 	} else {
-		ScreenOutV("all.chr ($file) not found\n");
+		ScreenOutV("ascii.chr ($file) not found\n");
 	}
 	$file = $JOHN_PATH . "/alnum.chr";
     if (open(FILE, $file)) {
