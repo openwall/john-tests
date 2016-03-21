@@ -12,18 +12,16 @@ my $RELEASE_DATE = "March 21, 2016";
 my $JOHN_PATH = "../run";
 # NOTE, john built on Windows 'may' need this lines changed to "$JOHN_PATH/john.exe" IF the script will not run properly.
 my $JOHN_EXE  = "$JOHN_PATH/john";
-my $UNIQUE    = "$JOHN_PATH/unique -mem=20";
 my $verbosity  = 2;
 my @rules;
 my @caps=();
-my @encs=();
+my @encs=();  # we 'may' need to handle encodings for rules (we do not do so yet).
 my @johnUsageScreen=();
 my %opts=(line_num => 0);
-my @tstdata;
+my @rulesdata;
 my $show_stderr=0;
-my $only_1_type=0;
 my $last_line_len=0;
-my $core_only=0; # assume jumbo john
+my $core_only=0; # assume jumbo john. Actually at this time we ONLY work with jumbo.
 my $error_cnt = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
 my @startingTime;
 
@@ -39,7 +37,7 @@ parseArgs();
 setup();
 readData();
 #filterPatterns();
-process(0);
+process();
 cleanup();
 unlink_restore();
 displaySummary();
@@ -94,7 +92,6 @@ sub parseArgs {
 	if (defined $opts{basepath}) {
 		$JOHN_PATH = $opts{basepath};
 		$JOHN_EXE  = "$JOHN_PATH/john";
-		$UNIQUE    = "$JOHN_PATH/unique -mem=20";
 	}
 	$verbosity = 2;
 	if (defined $opts{verbose}) { $verbosity += $opts{verbose} }
@@ -143,44 +140,11 @@ sub ScreenOut {
 		$last_line_len = 0;
 	}
 }
-# this screen output output 1 line, and overwrite it, if in 'q' quiet mode. In 'qq' it will
-# output nothing.  In 'normal mode', it will call ScreenOut
-sub ScreenOutSemi {
-	if ($verbosity < 1) { return; }
-	if ($verbosity == 1) {
-		printf ("\r%$last_line_len.${last_line_len}s\r", " ");
-		my $s = $_[0];
-		chomp $s;
-		print $s;
-		$last_line_len = length($s);
-		print "\r";
-	} else { ScreenOut(@_); }
-}
 # output to screen no matter what mode we are in.  This is used to show
 # errors. Either script not setup or called right, OR a test failure error.
 sub ScreenOutAlways {
 	print "@_";
 	use strict;
-	$last_line_len = 0;
-}
-sub ScreenOutAlways_ar {
-	my $len = length($_[0]);
-	if (substr($_[0], length($_[0])-1, 1) eq "\n") { $len = 0; }
-	print shift;
-	my $first = 1;
-	my $s;
-	foreach $s (@_) {
-		if ($len + length($s) + 2 > 78) { print("\n"); $len = 0; }
-		if ($len && !$first) {
-			print ", $s";
-			$len += length($s)+2;
-		} else {
-			print "  $s";
-			$len += length($s)+2;
-		}
-		$first = 0;
-	}
-	if ($len) { print "\n"; }
 	$last_line_len = 0;
 }
 # print verbose 'v' messages
@@ -209,15 +173,6 @@ sub stringInArray {
 	my $str = shift;
 	foreach my $elem(@_) {
 		if ($str eq $elem) {
-			return 1;
-		}
-	}
-	return 0;
-}
-sub arrayPartInString {
-	my $str = shift;
-	foreach my $elem(@_) {
-		if (index($str, "($elem)") ge 0) {
 			return 1;
 		}
 	}
@@ -273,6 +228,7 @@ sub setup {
 		push(@caps, "core" );
 		ScreenOut("John CORE build detected.  Only core formats can be tested.\n");
 		$core_only = 1;
+		die print "at this time, this script ONLY works with john jumbo\n";
 	}
 	# can we use -nolog option
 	if (grepUsage("--nolog")) {
@@ -333,14 +289,14 @@ sub readData {
 			my $cnt = @ar;
 			if ($cnt == 4) {
 				# we may have to deal with rules that are not in core.
-				push(@tstdata, $line);
+				push(@rulesdata, $line);
 			}
 		}
 	}
 	if ($verbosity > 3) {
-		my $cnt = @tstdata;
+		my $cnt = @rulesdata;
 		ScreenOutVVV("Running data-dictionary. $cnt items (rule_tst.dat):\n");
-		foreach my $line(@tstdata) { ScreenOutVVV($line . "\n"); }
+		foreach my $line(@rulesdata) { ScreenOutVVV($line . "\n"); }
 		ScreenOutVVV("\n");
 	}
 }
@@ -370,7 +326,7 @@ sub UpdateLocalConfig {
 }
 sub WriteInputFile {
 	my $s = $_[0];
-	$s =~ s/~/\n/g;
+	$s =~ s/\\n/\n/g;
 	# write the local file again.
 	open(FILE, ">tst-.in") or die $!;
 	print FILE $s;
@@ -378,7 +334,7 @@ sub WriteInputFile {
 }
 sub CreateExpected {
 	my $s = $_[0];
-	$s =~ s/~/\n/g;
+	$s =~ s/\\n/\n/g;
 	# write the local file again.
 	open(FILE, ">tst-.exp") or die $!;
 	print FILE $s."\n";
@@ -388,13 +344,13 @@ sub cleanup {
 	unlink glob('tst-*');
 }
 sub ResumeState {
-	%opts = %{retrieve('jtrts.resume')};
+	%opts = %{retrieve('rules_tst.resume')};
 }
 sub SaveState {
-	store \%opts, 'jtrts.resume';
+	store \%opts, 'rules_tst.resume';
 }
 sub unlink_restore {
-	unlink ('jtrts.resume');
+	unlink ('rules_tst.resume');
 }
 sub StopOnError {
 	my $cmd=$_[0];
@@ -407,20 +363,19 @@ sub StopOnError {
 		exit(1);
 	}
 }
-
 sub process {
-	my $skip = shift(@_);
 	my $line_num = 0;
 	my $cmd_head = "$JOHN_EXE -stdout -rules=cur_tst -w=tst-.in";
 	if (stringInArray("nolog_valid", @caps)) { $cmd_head = "$cmd_head -nolog"; }
 	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=john.conf"; }
-	if (stringInArray("local_pot_valid", @caps)) { }
+	if (stringInArray("local_pot_valid", @caps)) {
+	}
 	else {
 		# handle john 'core' behavior.  We save off existing john.pot, then it is overwritten
 	}
 	my $line = "";
 
-	LINE: foreach my $line(@tstdata) {
+	LINE: foreach my $line(@rulesdata) {
 		# start of -resume code (pretty trivial, I just count line#'s)
 		++$line_num;
 		if (defined $opts{resume} && $opts{resume} > 0 && defined $opts{line_num}) {
@@ -468,8 +423,6 @@ sub process {
 			StopOnError($cmd);
 		}
 	}
-	# in -internal mode, we do not want the extra \n
-	if (!$skip) { ScreenOutSemi("\n"); }
 	if (!stringInArray("local_pot_valid", @caps)) {
 		# handle john 'core' behavior.  then we delete the pot we just made, then rename the 'saved' version.
 	}
