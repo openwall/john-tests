@@ -1,0 +1,17 @@
+######################################################################
+#  rule_tst.dat
+#
+#  This is input data for the rule_tst.pl script. It provides rules,
+#  input data and expected results for testing jtr's rules engine.
+######################################################################
+# format:
+#   rule\t\tcomment\tinput\texpected
+#
+#  input and expected can be multi-line. if multi-line, then insert ~ between each line.
+######################################################################
+
+:	Blank	password	password
+l	lower case	password~xyZ~PPPP~132Ss8aB	password~xyz~pppp~132ss8ab
+u	lower case	password~xyZ~PPPP~132Ss8aB	PASSWORD~XYZ~PPPP~132SS8AB
+l	busted lower case	password~xyZ~PPPP~132Ss8aB	password~xYz~pppp~132ss8ab
+c	Upcase	password~xyZ~PPPP~132Ss8aB	Password~Xyz~Pppp~132ss8ab
