@@ -59,7 +59,7 @@ if (!defined($ENV{"GWS"})) { $ENV{"GWS"} = "64"; }
 
 startTime();
 parseArgs();
-setup();     # this function taks a while!!
+setup();     # this function takes a while!!
 readData();
 if (defined $opts{showtypes} && $opts{showtypes} > 0) { showTypeData(); unlink_restore(); exit 0; }
 johnPrelims();
@@ -350,6 +350,7 @@ sub setup {
 
 	# we store a john error string to this file.  We will use this data in several ways, later.
 	system ("$JOHN_EXE >tst-JohnUsage.Scr 2>&1");
+	system ("$JOHN_EXE --list=hidden-options >>tst-JohnUsage.Scr 2>&1");
 	open(FILE, "<tst-JohnUsage.Scr") or die $!;
 	@johnUsageScreen = <FILE>;
 	close(FILE);
