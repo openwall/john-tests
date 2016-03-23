@@ -7,8 +7,7 @@
 # format:
 #   rule<tab>comment
 ######################################################################
-
--[c:] \p[c:] Az"19[0-1][0-1]" <+
+-[c:] \p[c:] Azq201[0-1][^&()_+\-={}|[\]\\;'":,/<>?`~*]q <+
 
 :	Blank
 l	lower case
@@ -139,35 +138,35 @@ A0"19[3-9][0-9]"
 #[List.Rules:AppendCurrentYearSpecial]
 -[c:] \p[c:] Az"201[0-9][!$@#%.]" <+
 -[c:] \p[c:] Azq201[0-9][^&()_+\-={}|[\]\\;'":,/<>?`~*]q <+
-#[List.Rules:Append4Num]
--[c:] \p[c:] Az"[0-9][0-9][0-9][0-9]" <+
-#[List.Rules:Append5Num]
--[c:] \p[c:] Az"[0-9][0-9][0-9][0-9][0-9]" <+
-#[List.Rules:Append6Num]
--[c:] \p[c:] Az"[0-9][0-9][0-9][0-9][0-9][0-9]" <+
-#[List.Rules:AppendSpecial3num]
--[c:] \p[c:] Az"[!$@#%.][0-9][0-9][0-9]" <+
--[c:] \p[c:] Azq[^&()_+\-={}|[\]\\;'":,/<>?`~*][0-9][0-9][0-9]q <+
-#[List.Rules:AppendSpecial4num]
--[c:] \p[c:] Az"[!$@#%.][0-9][0-9][0-9][0-9]" <+
--[c:] \p[c:] Azq[^&()_+\-={}|[\]\\;'":,/<>?`~*][0-9][0-9][0-9][0-9]q <+
+#[List.Rules:Append4Num] (takes way to long in perl)
+#-[c:] \p[c:] Az"[0-9][0-9][0-9][0-9]" <+
+#[List.Rules:Append5Num] (takes way to long in perl)
+#-[c:] \p[c:] Az"[0-9][0-9][0-9][0-9][0-9]" <+
+#[List.Rules:Append6Num]  (takes way to long in perl)
+#-[c:] \p[c:] Az"[0-9][0-9][0-9][0-9][0-9][0-9]" <+
+#[List.Rules:AppendSpecial3num]  (takes way to long in perl)
+#-[c:] \p[c:] Az"[!$@#%.][0-9][0-9][0-9]" <+
+#-[c:] \p[c:] Azq[^&()_+\-={}|[\]\\;'":,/<>?`~*][0-9][0-9][0-9]q <+
+##[List.Rules:AppendSpecial4num]  (takes way to long in perl)
+#-[c:] \p[c:] Az"[!$@#%.][0-9][0-9][0-9][0-9]" <+
+#-[c:] \p[c:] Azq[^&()_+\-={}|[\]\\;'":,/<>?`~*][0-9][0-9][0-9][0-9]q <+
 #[List.Rules:PrependCAPCAPAppendSpecial]
 A0"[A-Z][A-Z]" <* $[!$@#%.]
-A0"[A-Z][A-Z]" <* $[^&()_+\-={}|[\]\\;'":,/<>?`~*]
+A0"[A-F][A-D]" <* $[^&()_+\-={}|[\]\\;'":,/<>?`~*]
 #[List.Rules:PrependNumNumAppendSpecial]
 -[c:] \p[c:] A0"[0-9][0-9]" <* $[!$@#%.]
 -[c:] \p[c:] A0"[0-9][0-9]" <* $[^&()_+\-={}|[\]\\;'":,/<>?`~*]
 #[List.Rules:PrependNumNum]
 -[c:] \p[c:] A0"[0-9][0-9]"
-#[List.Rules:PrependNumNumNum]
--[c:] \p[c:] A0"[0-9][0-9][0-9]"
-#[List.Rules:PrependNumNumNumNum]
--[c:] \p[c:] A0"[0-9][0-9][0-9][0-9]"
+##[List.Rules:PrependNumNumNum]   (takes way to long in perl)
+#-[c:] \p[c:] A0"[0-9][0-9][0-9]"
+##[List.Rules:PrependNumNumNumNum]  (takes way to long in perl)
+#-[c:] \p[c:] A0"[0-9][0-9][0-9][0-9]"
 #[List.Rules:PrependNumNumSpecial]
 -[c:] \p[c:] A0"[0-9][0-9][!$@#%.]"
 -[c:] \p[c:] A0q[0-9][0-9][^&()_+\-={}|[\]\\;'":,/<>?`~*]q
 #[List.Rules:Prepend2NumbersAppend2Numbers]
--[c:] \p[c:] A0"[0-9][0-9]" <- Az"[0-9][0-9]"
+#-[c:] \p[c:] A0"[0-9][0-9]" <- Az"[0-9][0-9]"
 #[List.Rules:PrependSpecialSpecial]
 -[c:] \p[c:] A0q[!$@#%.^&()_+\-={}|[\]\\;'":,/<>?`~*][!$@#%.^&()_+\-={}|[\]\\;'":,/<>?`~*]q
 #[List.Rules:AppendSpecialNumberNumber]
@@ -190,15 +189,15 @@ A0"[A-Z][A-Z]" <* $[^&()_+\-={}|[\]\\;'":,/<>?`~*]
 -c <- Az"[A-Z][A-Z]"
 -c <- Az"[a-z][A-Z]"
 -c <- Az"[A-Z][a-z]"
-#[List.Rules:Prepend4NumAppendSpecial]
--[c:] \p[c:] A0"[0-9][0-9][0-9][0-9]" <- $[!$@#%.]
--[c:] \p[c:] A0"[0-9][0-9][0-9][0-9]" <- Azq[^&()_+\-={}|[\]\\;'":,/<>?`~*]q
-#[List.Rules:Append4NumSpecial]
--[c:] \p[c:] Az"[0-9][0-9][0-9][0-9][!$@#%.]" <+
--[c:] \p[c:] Azq[0-9][0-9][0-9][0-9][^&()_+\-={}|[\]\\;'":,/<>?`~*]q <+
-#[List.Rules:Append3NumSpecial]
--[c:] \p[c:] Az"[0-9][0-9][0-9][!$@#%.]" <+
--[c:] \p[c:] Azq[0-9][0-9][0-9][^&()_+\-={}|[\]\\;'":,/<>?`~*]q <+
+##[List.Rules:Prepend4NumAppendSpecial]
+#-[c:] \p[c:] A0"[0-9][0-9][0-9][0-9]" <- $[!$@#%.]
+#-[c:] \p[c:] A0"[0-9][0-9][0-9][0-9]" <- Azq[^&()_+\-={}|[\]\\;'":,/<>?`~*]q
+##[List.Rules:Append4NumSpecial]
+#-[c:] \p[c:] Az"[0-9][0-9][0-9][0-9][!$@#%.]" <+
+#-[c:] \p[c:] Azq[0-9][0-9][0-9][0-9][^&()_+\-={}|[\]\\;'":,/<>?`~*]q <+
+##[List.Rules:Append3NumSpecial]
+#-[c:] \p[c:] Az"[0-9][0-9][0-9][!$@#%.]" <+
+#-[c:] \p[c:] Azq[0-9][0-9][0-9][^&()_+\-={}|[\]\\;'":,/<>?`~*]q <+
 #[List.Rules:Append2NumSpecial]
 -[c:] \p[c:] Az"[0-9][0-9][!$@#%.]" <+
 -[c:] \p[c:] Azq[0-9][0-9][^&()_+\-={}|[\]\\;'":,/<>?`~*]q <+
@@ -208,8 +207,8 @@ A0"[A-Z][A-Z]" <* $[^&()_+\-={}|[\]\\;'":,/<>?`~*]
 -[c:] <* >1 \p[c:] ^[0-9]
 -[c:] <- >1 \p[c:] Az"[0-9][0-9]"
 -[c:] <- >1 \p[c:] A0"[0-9][0-9]"
--[c:] >1 \p[c:] Az"[0-9][0-9][0-9]" <+
--[c:] >1 \p[c:] Az"[0-9][0-9][0-9][0-9]" <+
+#-[c:] >1 \p[c:] Az"[0-9][0-9][0-9]" <+
+#-[c:] >1 \p[c:] Az"[0-9][0-9][0-9][0-9]" <+
 #[List.Rules:DevProdTestUAT]
 -\r[::cc] <* A\p\r[0l0l]"dev" \p\r[::TT]\p\r[::0l]
 -\r[::cc] <* A\p\r[0l0l]"uat" \p\r[::TT]\p\r[::0l]
@@ -217,12 +216,12 @@ A0"[A-Z][A-Z]" <* $[^&()_+\-={}|[\]\\;'":,/<>?`~*]
 -\r[::cc] <* A\p\r[0l0l]"test" \p\r[::TT]\p\r[::0l]
 #[List.Rules:PrependAndAppendSpecial]
 -[c:] <- \p[c:] ^[!$@#%.^&()_+\-={}|[\]\\;'":,/<>?`~*] $[!$@#%.^&()_+\-={}|[\]\\;'":,/<>?`~*]
-#[List.Rules:AppendJustNumbers]
--[c:] <* \p[c:] $[0-9]
--[c:] <- \p[c:] Az"[0-9][0-9]"
--[c:] \p[c:] Az"[0-9][0-9][0-9]" <+
--[c:] \p[c:] Az"[0-9][0-9][0-9][0-9]" <+
-#[List.Rules:AppendNumbers_and_Specials_Simple]
+##[List.Rules:AppendJustNumbers]
+#-[c:] <* \p[c:] $[0-9]
+#-[c:] <- \p[c:] Az"[0-9][0-9]"
+#-[c:] \p[c:] Az"[0-9][0-9][0-9]" <+
+#-[c:] \p[c:] Az"[0-9][0-9][0-9][0-9]" <+
+##[List.Rules:AppendNumbers_and_Specials_Simple]
 # cap first letter then add a 0  2 6 9 ! *  to the end
 -[c:] <* \p[c:] $[0-9]
 -[c:] <* \p[c:] $[!$@#%.^&()_+\-={}|[\]\\;'":,/<>?`~*]

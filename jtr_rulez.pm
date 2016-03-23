@@ -383,42 +383,15 @@ sub esc_remove {
 	my $p = index($w, "\\");
 	while ($p >= 0) {
 		#print "w=$w p=$p ";
-		if (substr($w,$p+1,1) eq "\\") {++$p;} # \\ so keep the first one intact
+#		if (substr($w,$p+1,1) eq "\\") {++$p;} # \\ so keep the first one intact
+#		if (substr($w,$p+1,1) eq "-") {++$p;} # keep \- intact
 		$w = substr($w,0,$p).substr($w,$p+1);
 		#print "now w=$w\n";
-		$p = index($w, "\\", $p);
+		$p = index($w, "\\", $p+1);
 	}
 	return $w;
 }
-sub get_items_old {
-	my $s = $_[0];
-	if (length($_[0]) < 3) {return ""; }
-	my $chars_raw = esc_remove(substr($s, 1, length($s)-2));
-	dbg(2, "in get_items() request for $s chars_raw = $chars_raw \n");
-	if (index($chars_raw, '-')==-1) {return $chars_raw;}
-	my $chars = "";
-	my @ch = split("", $chars_raw);
-	# note, we do not check for some invalid ranges, like [-b] or [ab-] or [z-a]
-	for (my $i = 0; $i < length($chars_raw); ++$i) {
-		if ($ch[$i+1] ne '-' || ($ch[$i] eq '\\' && $ch[$i+1] eq '-')) {
-			# \xhh escape, replace with 'real' character
-			if ($ch[$i] eq '\\' && $ch[$i+1] eq "x") {
-				$i += 2;
-				my $s = $ch[++$i]; $s .= $ch[$i];
-				($ch[$i]) = sscanf($s, "%X");
-				$ch[$i] = chr($ch[$i]);
-			}
-			$chars .= $ch[$i];
-			next;
-		}
-		dbg(4, "doing range fix for $ch[$i]$ch[$i+1]$ch[$i+2]\n");
-		for (my $c = ord($ch[$i]); $c <= ord($ch[$i+2]); ++$c) {
-			$chars .= chr($c);
-		}
-		$i += 2;
-	}
-	return $chars;
-}
+
 sub get_items {
 	my ($s, $pos) = (@_);
 	$_[2] = index($s, ']', $pos);
@@ -428,30 +401,41 @@ sub get_items {
 	}
 	if ($pos+2 >= $_[2])  { return ""; }
 	$s = substr($s, $pos+1, $_[2]-$pos-1);
-	my $chars_raw = esc_remove($s);
-	dbg(2, "in get_items() request for $s chars_raw = $chars_raw \n");
-	if (index($chars_raw, '-')==-1) {return $chars_raw;}
-	my $chars = "";
-	my @ch = split('', $chars_raw);
+	if (index($s, '-')==-1) {return esc_remove($s);}
+	my @ch = split('', $s);
+
 	# note, we do not check for some invalid ranges, like [-b] or [ab-] or [z-a]
-	for (my $i = 0; $i < length($chars_raw); ++$i) {
-		if ($ch[$i+1] ne '-' || ($ch[$i] eq '\\' && $ch[$i+1] eq '-')) {
+	my $i = 0;
+	my $chars = "";
+	for ($i = 0; $i < length($s); ++$i) {
+		if ($i>0 && $ch[$i] eq '-' && $ch[$i-1] ne "\\") {
+			dbg(4, "doing range fix for $ch[$i-1]-$ch[$i+1]\n");
+			for (my $c = ord($ch[$i-1])+1; $c <= ord($ch[$i+1]); ++$c) {
+				$chars .= chr($c);
+			}
+			++$i;
+		} else {
 			# \xhh escape, replace with 'real' character
-			if ($ch[$i] eq '\\' && $ch[$i+1] eq "x") {
-				$i += 2;
-				my $s = $ch[++$i]; $s .= $ch[$i];
-				($ch[$i]) = sscanf($s, "%X");
-				$ch[$i] = chr($ch[$i]);
+			if ($ch[$i] eq "\\") {
+				if ($ch[$i+1] eq "x") {
+					$i += 2;
+					my $s = $ch[++$i]; $s .= $ch[$i];
+					($ch[$i]) = sscanf($s, "%X");
+					$ch[$i] = chr($ch[$i]);
+				} else {
+					++$i;
+				}
 			}
 			$chars .= $ch[$i];
-			next;
 		}
-		dbg(4, "doing range fix for $ch[$i]$ch[$i+1]$ch[$i+2]\n");
-		for (my $c = ord($ch[$i]); $c <= ord($ch[$i+2]); ++$c) {
-			$chars .= chr($c);
-		}
-		$i += 2;
 	}
+	# we must 'unique' the data (jtr will do that)
+	dbg(2, "get_item returning: chars=$chars\n");
+	$chars = reverse $chars;
+	$chars =~ s/(.)(?=.*?\1)//g;
+	$chars = reverse $chars;
+	dbg(2, "get_item returning: chars=$chars\n");
+#	exit(0);
 	return $chars;
 }
 
@@ -467,7 +451,9 @@ sub jtr_rule_pp_init { my ($pre_pp_rule, $len) = (@_);
 	pp_rule(purge($pre_pp_rule,' '), 0, 0);
 	dbg(4, "There were ".scalar @pp_rules." created\n"); 
 	
-	foreach my $s (@pp_rules) { print "$s\n"; } exit(0);
+	if ($debug>3) {
+		foreach my $s (@pp_rules) { print "$s\n"; } exit(0);
+	}
 
 	if (scalar @pp_rules > 0) {
 		return $pp_rules[0];
@@ -584,7 +570,7 @@ sub pp_rule_old { my ($rules, $which_group, %all_idx) = (@_);
 }
 
 sub pp_rule { my ($rules, $which_group, $idx) = (@_);
-	my $total = 1;
+	my $total = 0;
 	dbg(3, "** entered pp_rule($rules, $which_group, $idx, $total)\n");
 	my $pos = index($rules, '[');
 	if ($pos == -1) { $rules=handle_rule_rej($rules); push(@pp_rules,$rules); return 0; }
@@ -604,8 +590,9 @@ sub pp_rule { my ($rules, $which_group, $idx) = (@_);
 		dbg(4, "before sub=$s\n");
 		substr($s, $pos, $pos2-$pos+1) = $c;
 		dbg(4, "after sub=$s\n");
-		my $s2 = handle_backref($which_group, $c, $pos2, $s, $idx, $total++);
-		if ($s2 ne $s) {dbg(4, "before handle_backref($which_group, $idx, $s)\nhandle_backref returned     $s2\n"); }
+		my $s2 = handle_backref($which_group, $c, $pos2, $s, $idx, $total);
+		if ($s2 ne $s) {dbg(4, "before handle_backref($which_group, $c, $pos2, $s, $total)\nhandle_backref returned     $s2\n"); }
+		++$total;
 		dbg(4, "*** entering      recurse pp_rule($rules, $which_group, $idx, $total) pos=$pos pos2=$pos2\n");
 		if (pp_rule($s2, $which_group, $idx, $_[6])) { return 1; }
 		$_[6]++;

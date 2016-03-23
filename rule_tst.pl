@@ -85,8 +85,8 @@ sub parseArgs {
 	}
 	if ($help) { usage($JOHN_PATH); }
 	if (@ARGV) {$opts{argv} = \@ARGV; }
-###	if ($resume != 0) { ResumeState(); $opts{resume}=1; }
-###	else { SaveState(); }
+	if ($resume != 0) { ResumeState(); $opts{resume}=1; }
+	else { SaveState(); }
 
 	if (defined $opts{argv})        {@ARGV              = @{$opts{argv}}; }
 	if (defined $opts{showstderr})  {$show_stderr       = $opts{showstderr}; }
@@ -376,13 +376,16 @@ sub cleanup {
 	unlink glob('tst-*');
 }
 sub ResumeState {
-	%opts = %{retrieve('rules_tst.resume')};
+	%opts = %{retrieve('rule_tst.resume')};
+	foreach my $k (keys(%opts)) {
+		print ("$k=$opts{$k}\n");
+	}
 }
 sub SaveState {
-	store \%opts, 'rules_tst.resume';
+	store \%opts, 'rule_tst.resume';
 }
 sub unlink_restore {
-	unlink ('rules_tst.resume');
+	unlink ('rule_tst.resume');
 }
 sub StopOnError {  my ($cmd) = (@_);
 	if (defined $opts{stoponerror} && $opts{stoponerror} > 0) {
@@ -406,15 +409,15 @@ sub process {
 	}
 	my $line = "";
 
-	jtr_dbg_level(4);
+	#jtr_dbg_level(4);
 	
-	LINE: foreach my $line(@rulesdata) {
+	foreach my $line(@rulesdata) {
 		# start of -resume code (pretty trivial, I just count line#'s)
 		++$line_num;
 		if (defined $opts{resume} && $opts{resume} > 0 && defined $opts{line_num}) {
 			if ($line_num < $opts{line_num}) {
-				ScreenOutV("resuming. Skipping line $line_num = $line\n");
-				next LINE;
+				ScreenOut("resuming. Skipping line $line_num = $line\n");
+				next;
 			}
 		}
 		# end of -resume code.
