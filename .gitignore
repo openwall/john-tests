@@ -7,3 +7,4 @@ jtrts.resume
 opencl_*.h
 tst-*
 *.tmp
+*.resume
