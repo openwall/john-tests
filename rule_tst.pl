@@ -335,9 +335,13 @@ sub one_rule { my ($rule_cnt, $rule, $word, $x, $y, $last) = (@_);
 	return $s;
 }
 sub build_files { my ($_rule) = (@_);
-	my $sw=""; my $sm=""; my $last;
+	my $sw=""; my $sm=""; my $last; my $cnt=500;
 	#jtr_dbg_level(2);
-	my $rule = jtr_rule_pp_init($_rule, 125); # use 125 byte 'format' for our tests.
+	my $rule = jtr_rule_pp_init($_rule, 125, $cnt); # use 125 byte 'format' for our tests.
+	if ($cnt>500) {
+		print ("Skipped, too many PP rules\n");
+		return 0;
+	}
 	my $rule_cnt = 0;
 	while (defined ($rule) && length($rule)>0) {
 		$last = one_rule($rule_cnt, $rule, "test this", $sw, $sm, "");
@@ -371,6 +375,7 @@ sub build_files { my ($_rule) = (@_);
 	}
 	WriteTheFile("tst-.exp", $sm);
 	WriteTheFile("tst-.in", $sw);
+	return 1;
 }
 sub cleanup {
 	unlink glob('tst-*');
@@ -409,7 +414,7 @@ sub process {
 	}
 	my $line = "";
 
-	#jtr_dbg_level(4);
+	jtr_dbg_level(4);
 	
 	foreach my $line(@rulesdata) {
 		# start of -resume code (pretty trivial, I just count line#'s)
@@ -436,31 +441,35 @@ sub process {
 			next;
 		}
 		UpdateLocalConfig($ar[0]);
-		build_files($ar[0]);
+		my $working = build_files($ar[0]);
 		my $cmd = $cmd_head;
 
-		ScreenOut("Testing Rule:  $ar[0]		($ar[1])\n");
-		if ($show_stderr != 1) { $cmd .= " > tst-.out 2> /dev/null"; }
-		# this will switch stderr and stdout (vs joining them), so we can grab stderr BY ITSELF.
-		else { $cmd .= " > tst-.out 3>&1 1>&2 2>&3 >/dev/null"; }
+		if ($working == 0) {
+			ScreenOut("Skipped Rule:  $ar[0]		($ar[1])\n");
+		} else {
+			ScreenOut("Testing Rule:  $ar[0]		($ar[1])\n");
+			if ($show_stderr != 1) { $cmd .= " > tst-.out 2> /dev/null"; }
+			# this will switch stderr and stdout (vs joining them), so we can grab stderr BY ITSELF.
+			else { $cmd .= " > tst-.out 3>&1 1>&2 2>&3 >/dev/null"; }
 
-		ScreenOutVV("Execute john: $cmd\n");
-		my $cmd_data = `$cmd`;
-		my $ret_val = $?;
-		if ($ret_val != 0) { $ret_val_non_zero_cnt += 1; }
-		# ok, now show stderr, if asked to.
-		if ($show_stderr == 1) { print $cmd_data; }
-		ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
+			ScreenOutVV("Execute john: $cmd\n");
+			my $cmd_data = `$cmd`;
+			my $ret_val = $?;
+			if ($ret_val != 0) { $ret_val_non_zero_cnt += 1; }
+			# ok, now show stderr, if asked to.
+			if ($show_stderr == 1) { print $cmd_data; }
+			ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
 
-		# we can later on come up with something better, but for this
-		# POC, a simple diff test is just fine.
-		my $s = `diff tst-.out tst-.exp`;
-		++$done_cnt;
-		if (length($s) > 0) {
-			print "problem found with rule \"$ar[1]\" = $ar[0]\n";
-			print $s;
-			$error_cnt += 1;
-			StopOnError($cmd);
+			# we can later on come up with something better, but for this
+			# POC, a simple diff test is just fine.
+			my $s = `diff tst-.out tst-.exp`;
+			++$done_cnt;
+			if (length($s) > 0) {
+				print "problem found with rule \"$ar[1]\" = $ar[0]\n";
+				print $s;
+				$error_cnt += 1;
+				StopOnError($cmd);
+			}
 		}
 	}
 	if (!stringInArray("local_pot_valid", @caps)) {

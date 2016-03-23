@@ -393,7 +393,7 @@ sub esc_remove {
 }
 
 sub get_items {
-	my ($s, $pos) = (@_);
+	my ($s, $pos, $esc_r) = (@_);
 	$_[2] = index($s, ']', $pos);
 	if ($_[2] < 0) { return ""; }
 	while ($pos < $_[2] && substr($s, $_[2]-1, 1) eq "\\") {
@@ -401,7 +401,7 @@ sub get_items {
 	}
 	if ($pos+2 >= $_[2])  { return ""; }
 	$s = substr($s, $pos+1, $_[2]-$pos-1);
-	if (index($s, '-')==-1) {return esc_remove($s);}
+	if (index($s, '-')==-1) { return esc_remove($s); }
 	my @ch = split('', $s);
 
 	# note, we do not check for some invalid ranges, like [-b] or [ab-] or [z-a]
@@ -415,14 +415,15 @@ sub get_items {
 			}
 			++$i;
 		} else {
-			# \xhh escape, replace with 'real' character
 			if ($ch[$i] eq "\\") {
 				if ($ch[$i+1] eq "x") {
+					# \xhh escape, replace with 'real' character
 					$i += 2;
 					my $s = $ch[++$i]; $s .= $ch[$i];
 					($ch[$i]) = sscanf($s, "%X");
 					$ch[$i] = chr($ch[$i]);
 				} else {
+					# handles all other escaped characters.
 					++$i;
 				}
 			}
@@ -431,6 +432,7 @@ sub get_items {
 	}
 	# we must 'unique' the data (jtr will do that)
 	dbg(2, "get_item returning: chars=$chars\n");
+	if (defined($esc_r) && $esc_r) { return $chars; } # if magic \r was seen, we do NOT unique the group.
 	$chars = reverse $chars;
 	$chars =~ s/(.)(?=.*?\1)//g;
 	$chars = reverse $chars;
@@ -442,12 +444,16 @@ sub get_items {
 # preprocessor.  We have an array of rules that get built. Then
 # we keep count of which have been handled, so we eat them one
 # at a time, in order.
-sub jtr_rule_pp_init { my ($pre_pp_rule, $len) = (@_);
+sub jtr_rule_pp_init { my ($pre_pp_rule, $len, $max_cnt) = (@_);
 	$pp_idx = 0;
 	if (!defined($len) || $len==0) {$rules_max_length = 0;}
 	else {$rules_max_length = $len; }
 	@pp_rules = ();
-	dbg(4, "calling pp_rule() to prepare our rules\n"); 
+	if (defined $max_cnt) {
+		my $cnt = pp_rule_cnt(purge($pre_pp_rule,' '), 0, 0);
+		if ($cnt > $max_cnt) { $_[2] = $cnt; return ""; }
+	}
+	dbg(4, "calling pp_rule() to prepare our rules\n");
 	pp_rule(purge($pre_pp_rule,' '), 0, 0);
 	dbg(4, "There were ".scalar @pp_rules." created\n"); 
 	
@@ -508,12 +514,25 @@ sub handle_backref { my ($gnum, $c, $pos, $s, $idx, $total) = @_;
 		}
 	}
 
+	# find any \p\r[ and step them. The step is $total
+	$i = index($s, "\\p\\r[");
+	while ($i >= 0) {
+		my $chars = get_items($s, $i+4, $i2, 1);
+		#print "in \\p\\r[ and found $chars with total=$total\n";
+		if ($i2 == -1) { print STDERR "invalid \\p\\r[] found in rule\n"; die; }
+		my @a = split('', $chars);
+		my $c;
+		if (scalar @a <= $total) { $total = scalar @a - 1; }
+		substr($s, $i, $i2-$i+1) = $a[$total];
+		$i = index($s, "\\p\\r[");
+	}
+
 	# find any \p[ and step them. The step is $total
 	$i = index($s, "\\p[");
 	while ($i >= 0) {
 		my $chars = get_items($s, $i+2, $i2);
 		#print "in \\p[ and found $chars with total=$total\n";
-		if ($i2 == -1) { print STDERR "invalid \\p found in rule\n"; die; }
+		if ($i2 == -1) { print STDERR "invalid \\p[] found in rule\n"; die; }
 		my @a = split('', $chars);
 		my $c;
 		if (scalar @a <= $total) { $total = scalar @a - 1; }
@@ -537,38 +556,6 @@ sub handle_rule_rej {
 	if ($v eq '>') { return substr($rule, 3); }
 	return $rule;
 }
-#
-# pre-processor: handles [] \xHH and \# and \p# backreferences. NOTE, recursive!
-#
-sub pp_rule_old { my ($rules, $which_group, %all_idx) = (@_);
-	dbg(4, "PP: rule(s) $rules\n");
-	my $pos = index($rules, '[');
-	if ($pos == -1) {dbg(4, "      rule saved $rules\n"); push(@pp_rules, $rules); return; }
-	my $pos2 = index($rules, ']');
-	if ($pos > $pos2)  {dbg(4, "      rule saved $rules\n"); push(@pp_rules, $rules); return; }
-	while ($pos < $pos2 && substr($rules, $pos2-1, 1) eq "\\") {
-		$pos2 = index($rules, ']', $pos2+1);
-	}
-	if ($pos > $pos2)  {dbg(4, "      rule saved $rules\n"); push(@pp_rules, $rules); return; }
-	my $Chars = get_items(substr($rules, $pos, $pos2-$pos+1));
-	dbg(4, "  item return is $Chars from $rules with sub=".substr($rules, $pos, $pos2-$pos+1)."\n");
-	my @chars = split("", $Chars);
-	my $idx = 0;
-	$which_group += 1;
-	foreach my $c (@chars) {
-		$idx++;
-		$all_idx{$which_group} = $idx;
-		#my $s = handle_backref($which_group, $c, $pos2, $rules, %all_idx);
-		#if ($s ne $rules) { }# dbg(0, "     before handle_backref($which_group, $idx, $rules)\nhandle_backref returned $s\n"); }
-		my $s = $rules;
-		dbg(4, "    before sub=$s\n");
-		substr($s, $pos, $pos2-$pos+1) = $c;
-		dbg(4, "    after sub=$s (recurse now)\n");
-		if (pp_rule($s, $which_group, %all_idx)) { return 1; }
-	}
-	return 0;
-}
-
 sub pp_rule { my ($rules, $which_group, $idx) = (@_);
 	my $total = 0;
 	dbg(3, "** entered pp_rule($rules, $which_group, $idx, $total)\n");
@@ -578,7 +565,12 @@ sub pp_rule { my ($rules, $which_group, $idx) = (@_);
 		$pos = index($rules, '[', $pos+1);
 	}
 	my $pos2;
-	my $Chars = get_items($rules, $pos, $pos2);
+	my $esc_r = 0;
+	if ($pos > 1 && substr($rules, $pos-2,2) eq "\\r") {
+		$esc_r = 1;
+		#substr($rules, $pos-2,2) = "";
+	}
+	my $Chars = get_items($rules, $pos, $pos2, $esc_r);
 	if ($pos > $pos2)  { $rules=handle_rule_rej($rules); push(@pp_rules,$rules); return 0;}
 	my @chars = split('', $Chars);
 	$idx = 0;
@@ -600,6 +592,31 @@ sub pp_rule { my ($rules, $which_group, $idx) = (@_);
 		dbg(3, "*** returned from recurse pp_rule($rules, $which_group, $idx, $total) pos=$pos pos2=$pos2\n");
 	}
 	return 0;
+}
+# we simply find how many items are in each group, and multiply total, returning that total.
+sub pp_rule_cnt{ my ($rules, $which_group, $idx) = (@_);
+	my $total = 1;
+	dbg(3, "** entered pp_rule_cnt($rules, $which_group, $idx, $total)\n");
+	my $pos = index($rules, '[');
+	if ($pos == -1) { return 1; }
+	do {
+		while ($pos >= 0 && substr($rules, $pos-1, 1) eq "\\") {
+			$pos = index($rules, '[', $pos+1);
+		}
+		my $pos2;
+		my $esc_r = 0;
+		if ($pos > 1 && substr($rules, $pos-2,2) eq "\\r") {
+			$esc_r = 1;
+		}
+		my $Chars = get_items($rules, $pos, $pos2, $esc_r);
+
+		if ($pos > $pos2)  { return $total; }
+		$rules = substr($rules, $pos2);
+		$Chars = esc_remove($Chars);
+		$total *= length($Chars);
+		$pos = index($rules, '[');
+	} while ($pos > 0);
+	return $total;
 }
 
 sub load_classes {

@@ -7,7 +7,10 @@
 # format:
 #   rule<tab>comment
 ######################################################################
--[c:] \p[c:] Azq201[0-1][^&()_+\-={}|[\]\\;'":,/<>?`~*]q <+
+-\r[::cc] <* A\p\r[0l0l]"dev" \p\r[::TT]\p\r[::0l]
+-\r[::cc] <* A\p\r[0l0l]"uat" \p\r[::TT]\p\r[::0l]
+-\r[::cc] <* A\p\r[0l0l]"prod" \p\r[::TT]\p\r[::0l]
+-\r[::cc] <* A\p\r[0l0l]"test" \p\r[::TT]\p\r[::0l]
 
 :	Blank
 l	lower case
