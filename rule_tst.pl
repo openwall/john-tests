@@ -5,6 +5,7 @@
 use strict;
 use Getopt::Long;
 use Storable;
+use jtr_rulez;
 
 my $VERSION = "0.01-\x{3B1}";
 my $RELEASE_DATE = "March 21, 2016";
@@ -280,17 +281,17 @@ sub readData {
 	open(FILE, "<rule_tst.dat") or die $!;
 	my @lines = <FILE>;
 	close(FILE);
+	my $line_cnt = 0;
 	foreach my $line(@lines) {
 		chomp($line);
 		$line =~ s/\r$//;  # strip CR for non-Windows
-		if (length($line) > 0 && substr($line, 0, 1) ne "#") {
+		++$line_cnt;
+		if (length($line) > 0) {
 			#$line = "(*)" . $line;  # we have now added the "base", so there is no reason for this one.
 			my @ar = split('	', $line);
 			my $cnt = @ar;
-			if ($cnt == 4) {
-				# we may have to deal with rules that are not in core.
-				push(@rulesdata, $line);
-			}
+			if ($cnt == 2 || substr($line, 0, 1) eq "#") { push(@rulesdata, $line); }
+			else { push(@rulesdata, $line."	line count: $line_cnt"); }
 		}
 	}
 	if ($verbosity > 3) {
@@ -299,6 +300,13 @@ sub readData {
 		foreach my $line(@rulesdata) { ScreenOutVVV($line . "\n"); }
 		ScreenOutVVV("\n");
 	}
+}
+sub WriteTheFile {
+	my $fname = shift;
+	# write the local file again.
+	open(FILE, "> $fname") or die $!;
+	print FILE @_;
+	close(FILE);
 }
 sub UpdateLocalConfig {
 	open(FILE, "<john-local.conf") or die $!;
@@ -318,27 +326,51 @@ sub UpdateLocalConfig {
 	# add the cur_tst rule
 	push(@fixed, "[List.Rules:cur_tst]\n");
 	push(@fixed, "$_[0]\n");
-
-	# write the local file again.
-	open(FILE, ">john-local.conf") or die $!;
-	print FILE @fixed;
-	close(FILE);
+	WriteTheFile("john-local.conf", @fixed);
 }
-sub WriteInputFile {
-	my $s = $_[0];
-	$s =~ s/\\n/\n/g;
-	# write the local file again.
-	open(FILE, ">tst-.in") or die $!;
-	print FILE $s;
-	close(FILE);
+sub one_rule { my ($rule_cnt, $rule, $word, $x, $y, $last) = (@_);
+	if ($rule_cnt == 0) { $_[3] .= "$word\n"; }
+	my $s = jtr_run_rule($rule, $word);
+	if (length($s) && $s ne $last) { $_[4] .= $s."\n"; }
+	return $s;
 }
-sub CreateExpected {
-	my $s = $_[0];
-	$s =~ s/\\n/\n/g;
-	# write the local file again.
-	open(FILE, ">tst-.exp") or die $!;
-	print FILE $s."\n";
-	close(FILE);
+sub build_files { my ($_rule) = (@_);
+	my $sw=""; my $sm=""; my $last;
+	#jtr_dbg_level(2);
+	my $rule = jtr_rule_pp_init($_rule, 125); # use 125 byte 'format' for our tests.
+	my $rule_cnt = 0;
+	while (defined ($rule) && length($rule)>0) {
+		$last = one_rule($rule_cnt, $rule, "test this", $sw, $sm, "");
+		$last = one_rule($rule_cnt, $rule, "HapYYr 1235\txte l", $sw, $sm, $last);
+		$last = one_rule($rule_cnt, $rule, "12345", $sw, $sm, $last);
+		$last = one_rule($rule_cnt, $rule, "12345;/", $sw, $sm, $last);
+		my $s = ""; my $i;
+		for ($i = 1; $i < 0x1d; $i++) {
+			if ($i != 0x0A && $i != 0x0D) {
+				$s .= chr($i);
+			}
+		}
+		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		$last = one_rule($rule_cnt, $rule, " ", $sw, $sm, $last);
+		$s = ""; for (; $i < 40; $i++) { $s .= chr($i); }
+		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		$s = ""; for (; $i < 60; $i++) { $s .= chr($i); }
+		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		$s = ""; for (; $i < 65; $i++) { $s .= chr($i); }
+		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		$s = ""; for (; $i < 85; $i++) { $s .= chr($i); }
+		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		$s = ""; for (; $i < 125; $i++) { $s .= chr($i); }
+		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		$s = ""; for (; $i < 135; $i++) { $s .= chr($i); }
+		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		$s = ""; for (; $i < 255; $i++) { $s .= chr($i); }
+		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		++$rule_cnt;
+		$rule = jtr_rule_pp_next();
+	}
+	WriteTheFile("tst-.exp", $sm);
+	WriteTheFile("tst-.in", $sw);
 }
 sub cleanup {
 	unlink glob('tst-*');
@@ -352,8 +384,7 @@ sub SaveState {
 sub unlink_restore {
 	unlink ('rules_tst.resume');
 }
-sub StopOnError {
-	my $cmd=$_[0];
+sub StopOnError {  my ($cmd) = (@_);
 	if (defined $opts{stoponerror} && $opts{stoponerror} > 0) {
 		ScreenOut("Exiting on error.\n");
 		$cmd =~ s# 2>&1##;
@@ -375,6 +406,8 @@ sub process {
 	}
 	my $line = "";
 
+	jtr_dbg_level(4);
+	
 	LINE: foreach my $line(@rulesdata) {
 		# start of -resume code (pretty trivial, I just count line#'s)
 		++$line_num;
@@ -395,11 +428,15 @@ sub process {
 		SaveState();
 
 		my @ar = split('	', $line);
+		if (scalar @ar == 1) {
+			print "$line\n";
+			next;
+		}
 		UpdateLocalConfig($ar[0]);
-		WriteInputFile($ar[2]);
-		my @expected = CreateExpected($ar[3]);
+		build_files($ar[0]);
 		my $cmd = $cmd_head;
 
+		ScreenOut("Testing Rule:  $ar[0]		($ar[1])\n");
 		if ($show_stderr != 1) { $cmd .= " > tst-.out 2> /dev/null"; }
 		# this will switch stderr and stdout (vs joining them), so we can grab stderr BY ITSELF.
 		else { $cmd .= " > tst-.out 3>&1 1>&2 2>&3 >/dev/null"; }
