@@ -18,7 +18,7 @@ if (scalar @ARGV == 4) {$pw_name = $ARGV[3];}
 my $orig_count = $count;
 my $line_cnt = 0;
 
-open FILE, '<:encoding(UTF-8)', $pw_name or die "Can't open '$pw_name' for reading: $!"; 
+open FILE, '<:encoding(UTF-8)', $pw_name or die "Can't open '$pw_name' for reading: $!";
 my @words = <FILE>;
 close(FILE);
 foreach my $word (@words) {
