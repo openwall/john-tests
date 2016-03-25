@@ -3,17 +3,18 @@
 # this script with the rule_tst.dat will test jtr rules
 
 use strict;
-use Getopt::Long;
+use Getopt::Long 'GetOptionsFromArray';
 use Storable;
 use jtr_rulez;
+use Text::Tabs;
 
-my $VERSION = "0.01-\x{3B1}";
-my $RELEASE_DATE = "March 21, 2016";
+my $VERSION = "0.02-\x{3B1}";
+my $RELEASE_DATE = "March 24, 2016";
 
 my $JOHN_PATH = "../run";
 # NOTE, john built on Windows 'may' need this lines changed to "$JOHN_PATH/john.exe" IF the script will not run properly.
 my $JOHN_EXE  = "$JOHN_PATH/john";
-my $verbosity  = 2;
+my $verbosity = 2;
 my @rules;
 my @caps=();
 my @encs=();  # we 'may' need to handle encodings for rules (we do not do so yet).
@@ -24,11 +25,13 @@ my $show_stderr=0;
 my $last_line_len=0;
 my $core_only=0; # assume jumbo john. Actually at this time we ONLY work with jumbo.
 my $error_cnt = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
+my $max_pp = 5000;
 my @startingTime;
 
-# Set this once and we don't have to care about it anymore
+# Set these once and we don't have to care about them anymore
 $ENV{"LC_ALL"} = "C";
 binmode STDOUT, ":utf8";
+binmode STDERR, ":utf8";
 ###############################################################################
 # MAIN (much code borrowed from jtrts.pl)
 ###############################################################################
@@ -68,6 +71,7 @@ sub displaySummary {
 ###############################################################################
 sub parseArgs {
 	my @passthru=();
+	my @args = @ARGV;
 	my $help = 0;
 	my $resume = 0;
 	my $err = GetOptions(\%opts,
@@ -77,6 +81,9 @@ sub parseArgs {
 		'basepath=s'     ,#  => \$basepath,
 		'stoponerror!'   ,#  => \$stop_on_error,
 		'showstderr!'    ,#  => \$show_stderr,
+		'full!'          ,#  => \$full,
+		'dump_rules!',   ,#  => \$dump_rules_only,
+		'lib_dbg_lvl=i'  ,#  => \$lib_dbg_lvl
 		'resume!'            => \$resume,
 		);
 	if ($err == 0) {
@@ -88,6 +95,18 @@ sub parseArgs {
 	if ($resume != 0) { ResumeState(); $opts{resume}=1; }
 	else { SaveState(); }
 
+	# re-get command args, so these 'can' override what was in save file.
+	GetOptionsFromArray(\@args, \%opts,
+		'quiet+'         ,#  => \$quiet,
+		'verbose+'       ,#  => \$verbose,
+		'stoponerror!'   ,#  => \$stop_on_error,
+		'showstderr!'    ,#  => \$show_stderr,
+		'full!'          ,#  => \$full,
+		'dump_rules!',   ,#  => \$dump_rules_only,
+		'lib_dbg_lvl=i'  ,#  => \$lib_dbg_lvl
+		);
+
+	if (defined $opts{full})        { $max_pp = 99999999; }
 	if (defined $opts{argv})        {@ARGV              = @{$opts{argv}}; }
 	if (defined $opts{showstderr})  {$show_stderr       = $opts{showstderr}; }
 	if (defined $opts{basepath}) {
@@ -105,33 +124,30 @@ sub parseArgs {
 sub usage {
 die <<"UsageHelp";
 
-JtR Rules tester, command usage:
+JtR Rules tester $VERSION - $RELEASE_DATE
 
 usage: $0 [-h|-?] [-option[s]]
     Options can be abbreviated!
 
     Options are:
-    -basepath  <s> set the basepath where john exe is located. By default
-                   this is set to $_[0]
+    -basepath  <s> set the basepath where john exe is located. By default this is set to $_[0]
     -quiet+        Makes JtRTest Suite more 'quiet' or more verbose. -q
-    -verbose+      is a good level to run.  -q -q is very quiet, does not
-                   output until run has ended, unless there are errors.
-                   -v is the opposite of -q.  -v outputs a lot of information.
-                   -v -v  is pretty much debugging level, it outputs a LOT.
-                   -v -v -v dumps even more, also showing Jtr screen output.
-                   -q -v together is a no-op.
-    -resume        This is NOT a running 'state'. This will resume the TS where
-                   it left off on the last run (whether by exit due to -stoponerr
-                   or by user ^C exit. This is useful for when deep in the run
-                   there was an error, and you then 'fix' the error, and want
-                   to start tests off where you left off at.
-    -stoponerror   Causes JtRts to stop if any error is seen.  The .pot file
-                   and other temp files will be left, AND the command line
-                   that was run is listed. (default is -nostoponerror).
-    -showstderr    Allows any stderr writing to 'show' on screen. Usually not
-                   wanted, but for some usage, like memory leak checking, or
-                   other errors, any display of stderr is needed.
+    -verbose+      is a good level to run.  -q -q is very quiet, does not output until run has
+                   ended, unless there are errors. -v is the opposite of -q.  -v outputs more
+                   -v -v even more.  -q -v together is a no-op.
+    -resume        This is NOT a running 'state'. This will resume the TS where it left off on
+                   the last run (whether by exit due to -stoponerr or by user ^C exit. This is
+                   useful for when deep in the run there was an error, and you then 'fix' the
+                   error, and want to start tests off where you left off at.
+    -stoponerror   Causes rule_tst.pl to stop if any error is seen. (default is -nostoponerror).
+    -showstderr    Allows any stderr writing to 'show' on screen. Usually not wanted. default off.
+    -full          tests all rules. Some take a while to build in perl. Normally, where the rule
+                   would preproc to more than 5000 rules it is skipped. This flag processes these.
+    -dump_rules    if set, then the script will load the first rule, and simply print all items
+                   which the preprocessor built.
+    -lib_dbg_lvl=i Sets the debugging level in the jtr_rulez.pm code (debugging output).
     -help|?        shows this help screen.
+
 UsageHelp
 }
 # this is the 'normal' screen output
@@ -155,6 +171,21 @@ sub ScreenOutV {
 		print "@_";
 		$last_line_len = 0;
 	}
+}
+# this screen output output 1 line, and overwrite it, if in 'q' quiet mode. In 'qq' it will
+# output nothing.  In 'normal mode', it will call ScreenOut
+sub ScreenOutSemi {
+	if ($verbosity < 1) { return; }
+	if ($verbosity == 1) {
+		my $s = ' ' x $last_line_len;
+		print "\r$s\r";
+		$s = $_[0];
+		chomp $s;
+		$s = expand($s); # remove tabs
+		print $s;
+		$last_line_len = length($s);
+		print "\r";
+	} else { ScreenOut(@_); }
 }
 # print verbose 'vv' messages
 # also able to print array's (debugging shit).
@@ -210,10 +241,10 @@ sub setup {
 	close(FILE);
 	unlink ("tst-JohnUsage.Scr");
 
-	ScreenOutAlways("-------------------------------------------------------------------------------\n");
+	ScreenOutAlways("--------------------------------------------------------------------------------------\n");
 	ScreenOutAlways("- JtR-Rules tester (rules_tst). Version $VERSION, $RELEASE_DATE.  By, Jim Fougeron\n");
 	ScreenOutAlways("- Testing:  $johnUsageScreen[0]"); # note the line ends in a \n, so do not add one.
-	ScreenOutAlways("--------------------------------------------------------------------------------\n");
+	ScreenOutAlways("---------------------------------------------------------------------------------------\n");
 	ScreenOut("\n");
 	# now use the john error screen to determine if this is a jumbo john, or
 	# a core john.
@@ -284,7 +315,7 @@ sub readData {
 	my $line_cnt = 0;
 	foreach my $line(@lines) {
 		chomp($line);
-		$line =~ s/\r$//;  # strip CR for non-Windows
+		$line =~ s/[ \t\r]*$//;  # strip CR for non-Windows, and 'ltrim', so that blank lines (with white space) are skipped.
 		++$line_cnt;
 		if (length($line) > 0) {
 			#$line = "(*)" . $line;  # we have now added the "base", so there is no reason for this one.
@@ -331,45 +362,44 @@ sub UpdateLocalConfig {
 sub one_rule { my ($rule_cnt, $rule, $word, $x, $y, $last) = (@_);
 	if ($rule_cnt == 0) { $_[3] .= "$word\n"; }
 	my $s = jtr_run_rule($rule, $word);
-	if (length($s) && $s ne $last) { $_[4] .= $s."\n"; }
-	return $s;
+	if (length($s) && $s ne $last) { $_[4] .= $s."\n"; $_[5] = $s;}
 }
 sub build_files { my ($_rule) = (@_);
-	my $sw=""; my $sm=""; my $last; my $cnt=500;
-	#jtr_dbg_level(2);
+	my $sw=""; my $sm=""; my $last; my $cnt=$max_pp;
 	my $rule = jtr_rule_pp_init($_rule, 125, $cnt); # use 125 byte 'format' for our tests.
-	if ($cnt>500) {
-		print ("Skipped, too many PP rules\n");
+	if (defined $_[1]) { $_[1] = $cnt; }
+	if ($cnt>$max_pp) {
 		return 0;
 	}
 	my $rule_cnt = 0;
+	$last = "";
 	while (defined ($rule) && length($rule)>0) {
-		$last = one_rule($rule_cnt, $rule, "test this", $sw, $sm, "");
-		$last = one_rule($rule_cnt, $rule, "HapYYr 1235\txte l", $sw, $sm, $last);
-		$last = one_rule($rule_cnt, $rule, "12345", $sw, $sm, $last);
-		$last = one_rule($rule_cnt, $rule, "12345;/", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "test this", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "HapYYr 1235\txte l", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "12345", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "12345;/", $sw, $sm, $last);
 		my $s = ""; my $i;
 		for ($i = 1; $i < 0x1d; $i++) {
 			if ($i != 0x0A && $i != 0x0D) {
 				$s .= chr($i);
 			}
 		}
-		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
-		$last = one_rule($rule_cnt, $rule, " ", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, " ", $sw, $sm, $last);
 		$s = ""; for (; $i < 40; $i++) { $s .= chr($i); }
-		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
 		$s = ""; for (; $i < 60; $i++) { $s .= chr($i); }
-		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
 		$s = ""; for (; $i < 65; $i++) { $s .= chr($i); }
-		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
 		$s = ""; for (; $i < 85; $i++) { $s .= chr($i); }
-		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
 		$s = ""; for (; $i < 125; $i++) { $s .= chr($i); }
-		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
 		$s = ""; for (; $i < 135; $i++) { $s .= chr($i); }
-		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
 		$s = ""; for (; $i < 255; $i++) { $s .= chr($i); }
-		$last = one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
 		++$rule_cnt;
 		$rule = jtr_rule_pp_next();
 	}
@@ -414,8 +444,11 @@ sub process {
 	}
 	my $line = "";
 
-	jtr_dbg_level(4);
-	
+	if (defined $opts{full}) { $max_pp = 99999999; }
+	if (defined $opts{dump_rules}) { jtr_std_out_rules_set(); }
+	if (defined $opts{lib_dbg_lvl}) { jtr_dbg_level($opts{lib_dbg_lvl}); }
+
+	#/^ s^[!@#$%&*()\-=_+\\|;:'",./?><]
 	foreach my $line(@rulesdata) {
 		# start of -resume code (pretty trivial, I just count line#'s)
 		++$line_num;
@@ -437,17 +470,24 @@ sub process {
 
 		my @ar = split('	', $line);
 		if (scalar @ar == 1) {
-			print "$line\n";
+			ScreenOutSemi("$line\n");
 			next;
 		}
+		# Ok, we try to reduce some overly bloated rules.  this allows many
+		# more to be tested side by side against JtR in this slow perl script
+		$ar[0] =~ s/\[0\-9\]/\[0\-2\]/g;
+		$ar[0] =~ s/\[A\-Z\]/\[A\-C\]/g;
+		$ar[0] =~ s/\[a\-z\]/\[a\-c\]/g;
 		UpdateLocalConfig($ar[0]);
-		my $working = build_files($ar[0]);
+		my $pp_cnt=0;
+		my $working = build_files($ar[0], $pp_cnt);
 		my $cmd = $cmd_head;
 
 		if ($working == 0) {
-			ScreenOut("Skipped Rule:  $ar[0]		($ar[1])\n");
+			ScreenOutSemi(" ");
+			print ("Skipped Rule ($pp_cnt PP items):  $ar[0]		($ar[1])\n");
 		} else {
-			ScreenOut("Testing Rule:  $ar[0]		($ar[1])\n");
+			ScreenOutSemi("Testing Rule:  $ar[0]		($ar[1])\n");
 			if ($show_stderr != 1) { $cmd .= " > tst-.out 2> /dev/null"; }
 			# this will switch stderr and stdout (vs joining them), so we can grab stderr BY ITSELF.
 			else { $cmd .= " > tst-.out 3>&1 1>&2 2>&3 >/dev/null"; }
@@ -455,7 +495,7 @@ sub process {
 			ScreenOutVV("Execute john: $cmd\n");
 			my $cmd_data = `$cmd`;
 			my $ret_val = $?;
-			if ($ret_val != 0) { $ret_val_non_zero_cnt += 1; }
+			if ($ret_val != 0) { ScreenOutAlways("Non-zero return from john $ret_val\n  Rule: $ar[0]\n\n"); $ret_val_non_zero_cnt += 1; }
 			# ok, now show stderr, if asked to.
 			if ($show_stderr == 1) { print $cmd_data; }
 			ScreenOutVV("\n\nCmd_data = \n$cmd_data\n\n");
@@ -465,7 +505,8 @@ sub process {
 			my $s = `diff tst-.out tst-.exp`;
 			++$done_cnt;
 			if (length($s) > 0) {
-				print "problem found with rule \"$ar[1]\" = $ar[0]\n";
+				ScreenOutSemi(" ");
+				ScreenOutAlways("problem found with rule \"$ar[1]\" = $ar[0]\n");
 				print $s;
 				$error_cnt += 1;
 				StopOnError($cmd);

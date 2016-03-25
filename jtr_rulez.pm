@@ -4,6 +4,7 @@ use warnings;
 use Exporter;
 
 my $debug = 0;
+my $stdout_rules = 0;
 my $failed = 0;
 my $rejected = 0;
 my $rules_max_length;
@@ -12,10 +13,10 @@ my $l;
 our @ISA= qw( Exporter );
 
 # these CAN be exported.
-our @EXPORT_OK = qw( debug failed rejected jtr_run_rule jtr_dbg_level jtr_rule_pp_init jtr_rule_pp_next );
+our @EXPORT_OK = qw( debug stdout_rules failed rejected jtr_run_rule jtr_dbg_level jtr_rule_pp_init jtr_rule_pp_next );
 
 # these are exported by default.
-our @EXPORT = qw( jtr_run_rule  jtr_dbg_level jtr_rule_pp_init jtr_rule_pp_next );
+our @EXPORT = qw( jtr_run_rule  jtr_dbg_level jtr_std_out_rules_set jtr_rule_pp_init jtr_rule_pp_next );
 
 my $M="";
 my %cclass=(); load_classes();
@@ -30,11 +31,12 @@ sub dbg {
 		}
 	}
 }
-
 sub jtr_dbg_level {
 	$debug = $_[0];
 }
-
+sub jtr_std_out_rules_set {
+	$stdout_rules = 1;
+}
 sub case_all_words { # turn john or "JOHn THE ruppor$$abc" into "John The Ruppor$$Abc"
 	my $w = lc $_[0];
 	$w =~ s/\b(\w)/\U$1/g;
@@ -50,13 +52,12 @@ sub case { # turn john or JOHn into John or JOHn THE ruppor$$abc" into "John the
 }
 
 sub toggle_case {  # turn jOhN into JoHn
-	my @a = split("", $_[0]);
-	my $w = "";
-	foreach my $c (@a) {
-		if (ord($c) >= ord('a') && ord($c) <= ord('z')) { $w .= uc $c; }
-		elsif (ord($c) >= ord('A') && ord($c) <= ord('Z')) { $w .= lc $c; }
-		else { $w .= $c; }
-	}
+	my $w = $_[0];
+	# found online, unicode toggle code. Need to test for speed.
+	$w =~ s/ (\p{CWU}) | (\p{CWL}) /defined $1 ? uc $1 : lc $2/gex;
+	#
+	# only valid for 7-bit ascii.
+	#$w =~ tr/A-Za-z/a-zA-Z/g;
 	return $w;
 }
 sub rev { # turn john into nhoj   (inlining reverse was having side effects so we function this)
@@ -70,8 +71,11 @@ sub purge {  #  purge out a set of characters. purge("test123john","0123456789")
 	return $w;
 }
 sub replace_chars {
-	my ($w, $ch, $chars) = @_;
-	$w =~ s/[$chars]/$ch/g;
+	my ($w, $ch, $c) = @_;
+	if ($c eq '^') { $c = '\\^'; }
+	if ($ch eq '\\') { $ch = '\\\\'; }
+	if (substr($c,length($c)-1,1) eq '\\' && (length($c)==1 || substr($c,length($c)-2,2) eq '\\\\')) { $c .= '\\'; }
+	$w =~ s/[$c]/$ch/g;
 	return $w;
 }
 sub shift_case { # S	shift case: "Crack96" -> "cRACK(^"
@@ -89,6 +93,8 @@ sub keyboard_right { # R	shift each character right, by keyboard: "Crack96" -> "
 	my ($w) = @_;
 	# same behavior as john1.8.0.3-jumbo. I do not think all on the far right are 'quite' right, but at least it matches.
 	# it's a very obsure rule, and not likely to have too many real world passwording implications.
+	# the only 'real' use is if someone sets a password,and then it does not work. Were their fingers 1 key
+	# to left, or 1 key to right?  If so, then they can guess with these rules
 	$w =~ tr/`~1qaz!QAZ2wsx@WSX3edc#EDC4rfv$RFV5tgb%TGB6yhn^YHN7ujm&UJM8ik,*IK<9ol.(OL>0p;)P:\-[_{=+\/?/1!2wsx@WSX3edc#EDC4rfv$RFV5tgb%TGB6yhn^YHN7ujm&UJM8ik,*IK<9ol.(OL>0p;\/)P:?\-['_{"=]+}\\|\\|/;
 	return $w;
 }
@@ -102,16 +108,10 @@ sub find_any_chars {
 	# this function probably could be optimized, but as written, it works
 	# well for all = / ? ( ) % type rejection rules.
 	my ($w, $c) = @_;
-	if (!defined $c) { return $w; }
-	# some 'corrections' are needed to get a string to play nice in the reg-x we have
-	
-	# this is done in the load_classes initializion now.
-#	$c =~ s/\\/\\\\/g; # change \ into \\
-#	$c =~ s/\^/\\\^/g; # change ^ into \^
-#	$c =~ s/\-/\\\-/g; # change - into \-
-#	$c =~ s/\]/\\\]/g; # change ] into \]
-
-	$w =~ s/[^$c]*//g; # The main regex. will change w the characters that were seen in original $c value.
+	if (!defined ($c) || length($c) == 0) { return ""; }
+	if (substr($c,length($c)-1,1) eq '\\' && (length($c)==1 || substr($c,length($c)-2,2) eq '\\\\')) { $c .= '\\'; }
+#	dbg(3,"find_any_chars: w=$w  c=$c  s/[^$c]*//g;\n");
+	$w =~ s/[^$c]*//g;
 	return length($w);
 }
 sub jtr_run_rule { my ($rule, $word) = @_;
@@ -122,6 +122,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 	$rejected = 0;
 	dbg(2, "checking word $word with rule $rule\n");
 	my @rc = split('', $rule);
+	dbg(2, "after split\n");
 	for (my $i = 0; $i < scalar(@rc); ++$i) {
 		if (length($word) == 0) { return ""; } # in jtr, this is a 'reject'
 		my $c = $rc[$i];
@@ -134,8 +135,8 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		if ($c eq 'd') { $word = $word.$word; next; }
 		if ($c eq 'r') { $word = rev($word); next; }
 		if ($c eq 'f') { $word = $word.rev($word); next; }
-		if ($c eq '$') { $word .= $rc[++$i]; next; }
-		if ($c eq '^') { $word = $rc[++$i].$word; next; }
+		if ($c eq '$') { ++$i; $word .= $rc[$i];  next; } #if ($rc[$i] eq '\\' && defined $rc[$i+1]) {++$i;}
+		if ($c eq '^') { ++$i; $word = $rc[$i].$word; next; }
 		if ($c eq '{') { $word = rotl($word); next; }
 		if ($c eq '}') { $word = rotr($word); next; }
 		if ($c eq '[') { if (length($word)) {$word = substr($word, 1);} next; }
@@ -153,11 +154,12 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		#   Not sure how to handle these, since we do not have a running john environment
 		#   to probe to know what/how these impact us.
 		#
+		# actually these are removed in the pp (for this code).
 		if ($c eq '-') {
 			++$i;
 			$c = $rc[$i];
 			if ($c eq ':') {
-				next;   # this one actually is done, lol.
+				next;   # this one actually is done and correct, lol.
 			}
 			# these are place holders now, until I can figure them out.
 			if ($c eq 'c') { next; }
@@ -175,7 +177,8 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			my $chars = "";
 			if ($rc[++$i] eq "?") { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
-			my $ch = $rc[++$i];
+			++$i;
+			my $ch = $rc[$i];
 			$word=replace_chars($word, $ch, $chars);
 			next;
 		}
@@ -197,7 +200,8 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		if ($c eq 'i') { # iNX
 			my $pos = get_num_val($rc[++$i], $word);
 			if ($pos >= 0 && $pos <= length($word)) {
-				substr($word, $pos,0) = $rc[++$i];
+				++$i;
+				substr($word, $pos,0) = $rc[$i];
 			}
 			next;
 		}
@@ -290,7 +294,8 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		if ($c eq 'o') { # oNX
 			my $pos = get_num_val($rc[++$i], $word);
 			if ($pos >= 0 && $pos < length($word)) {
-				substr($word, $pos,1) = $rc[++$i];
+				++$i;
+				substr($word, $pos,1) = $rc[$i];
 			}
 		}
 		if ($c eq 'T') { # TN  (toggle case of letter at N)
@@ -378,22 +383,19 @@ sub get_num_val { my ($p, $w) = (@_);
 	if ($p > length($w)) { return -1; }
 	return $p;
 }
-sub esc_remove {
-	my $w = $_[0];
-	my $p = index($w, "\\");
-	while ($p >= 0) {
-		#print "w=$w p=$p ";
-#		if (substr($w,$p+1,1) eq "\\") {++$p;} # \\ so keep the first one intact
-#		if (substr($w,$p+1,1) eq "-") {++$p;} # keep \- intact
-		$w = substr($w,0,$p).substr($w,$p+1);
-		#print "now w=$w\n";
-		$p = index($w, "\\", $p+1);
+sub esc_remove { my ($w) = (@_);
+	my $s = "";
+	my $i = 0;
+	my @ch = split('', $w);
+	while ($i < scalar @ch) {
+		if ($ch[$i] eq '\\' && $i+1 < scalar @ch) {++$i;}
+		$s .= $ch[$i];
+		++$i;
 	}
-	return $w;
+	return $s;
 }
-
 sub get_items {
-	my ($s, $pos, $esc_r) = (@_);
+	my ($s, $pos, $pos2, $esc_r) = (@_);
 	$_[2] = index($s, ']', $pos);
 	if ($_[2] < 0) { return ""; }
 	while ($pos < $_[2] && substr($s, $_[2]-1, 1) eq "\\") {
@@ -401,9 +403,9 @@ sub get_items {
 	}
 	if ($pos+2 >= $_[2])  { return ""; }
 	$s = substr($s, $pos+1, $_[2]-$pos-1);
-	if (index($s, '-')==-1) { return esc_remove($s); }
 	my @ch = split('', $s);
 
+	# convert ranges into 'raw' values.  de-escape values (i.e. \\ or \[ become \ or [ )
 	# note, we do not check for some invalid ranges, like [-b] or [ab-] or [z-a]
 	my $i = 0;
 	my $chars = "";
@@ -430,14 +432,16 @@ sub get_items {
 			$chars .= $ch[$i];
 		}
 	}
+	if (defined($esc_r) && $esc_r) {
+		# if magic \r was seen, we do NOT unique the group.
+		dbg(2, "get_item returning (no-dedupe): chars=$chars\n");
+		return $chars;
+	}
 	# we must 'unique' the data (jtr will do that)
-	dbg(2, "get_item returning: chars=$chars\n");
-	if (defined($esc_r) && $esc_r) { return $chars; } # if magic \r was seen, we do NOT unique the group.
 	$chars = reverse $chars;
 	$chars =~ s/(.)(?=.*?\1)//g;
 	$chars = reverse $chars;
 	dbg(2, "get_item returning: chars=$chars\n");
-#	exit(0);
 	return $chars;
 }
 
@@ -446,19 +450,37 @@ sub get_items {
 # at a time, in order.
 sub jtr_rule_pp_init { my ($pre_pp_rule, $len, $max_cnt) = (@_);
 	$pp_idx = 0;
+	my $stripped = purge($pre_pp_rule,' ');
+	# normalize all \r\p[] or \r\px[] into \p\r[] and \px\r[]
+	$stripped =~ s/\\r\\p\[/\\p\\r\[/g;
+	$stripped =~ s/\\r\\p([0-9])\[/\\p\0\\r\[/g;
+	# strip out \\ etc outside of groups []
 	if (!defined($len) || $len==0) {$rules_max_length = 0;}
 	else {$rules_max_length = $len; }
 	@pp_rules = ();
 	if (defined $max_cnt) {
-		my $cnt = pp_rule_cnt(purge($pre_pp_rule,' '), 0, 0);
+		my $cnt = pp_rule_cnt($stripped);
 		if ($cnt > $max_cnt) { $_[2] = $cnt; return ""; }
 	}
-	dbg(4, "calling pp_rule() to prepare our rules\n");
-	pp_rule(purge($pre_pp_rule,' '), 0, 0);
-	dbg(4, "There were ".scalar @pp_rules." created\n"); 
-	
-	if ($debug>3) {
-		foreach my $s (@pp_rules) { print "$s\n"; } exit(0);
+	dbg(4, "calling pp_rule() to prepare our rule:\n\n$pre_pp_rule\n\n");
+	pp_rule($stripped, 0, 0);
+	dbg(4, "There were ".scalar @pp_rules." created\n");
+
+	# do a final strip of all \ values from the finished rule.
+	my @p=();
+	foreach my $s (@pp_rules) {
+		dbg(3, "   before esc_remove: $s\n");
+		$s = esc_remove($s);
+		dbg(3, "   after  esc_remove: $s\n");
+		push(@p,$s);
+	}
+	@pp_rules = @p;
+
+	if ($debug>2||$stdout_rules) {
+		foreach my $s (@pp_rules) {
+			print "$s\n";
+		}
+		if ($debug>3||$stdout_rules) { exit(0); }
 	}
 
 	if (scalar @pp_rules > 0) {
@@ -470,80 +492,121 @@ sub jtr_rule_pp_next { my () = (@_);
 	if (scalar @pp_rules == $pp_idx) { return ""; }
 	return $pp_rules[++$pp_idx];
 }
-sub handle_backref { my ($gnum, $c, $pos, $s, $idx, $total) = @_;
+sub handle_backref { my ($gnum, $c, $s, $total, $idx) = (@_);
 	my $i; my $i2; my $n;
 
 	# find any \$gnum and replace with $c
 	$s =~ s/\\$gnum/$c/g;
 
 	# find any \p$gnum[] and replace with the $gnum from it's group
-	$i = index($s, "\\p${gnum}[");
+	$i = index($s, "\\p$gnum"."[");
 	while ($i >= 0) {
 		my $chars = get_items($s, $i+3, $i2);
-		if ($i2 == -1) { print STDERR "invalid \\p${gnum}[..] found in rule\n"; die; }
+		if ($i2 == -1) { print STDERR "invalid \\p$gnum"."[..] found in rule\n"; die; }
 		my @a = split('', $chars);
 		my $c;
 		my $i3 = $idx;
-		if (scalar @a <= $i3) { $i3 = scalar @a - 1; }
+		$i3 %= scalar @a;
 		substr($s, $i, $i2-$i+1) = $a[$i3];
-		$i = index($s, "\\p${gnum}[");
+		$i = index($s, "\\p$gnum"."[");
 	}
 
-	# now that all the stray ['s are gone, we can look for \p[ and \0
-	$i = index($s, "\\p0[");
+	# find any \p$gnum\r[] and replace with the $gnum from it's non-dedup'd group
+	$i = index($s, "\\p$gnum\\r[");
 	while ($i >= 0) {
-		my $chars = get_items($s, $i+3, $i2);
-		if ($i2 == -1) { print STDERR "invalid \\p0[..] found in rule\n"; die; }
+		my $chars = get_items($s, $i+5, $i2, 1);
+		if ($i2 == -1) { print STDERR "invalid \\p$gnum\\r[..] found in rule\n"; die; }
 		my @a = split('', $chars);
 		my $c;
 		my $i3 = $idx;
-		if (scalar @a < $i3) { $i3 = scalar @a - 1; }
+		$i3 %= scalar @a;
 		substr($s, $i, $i2-$i+1) = $a[$i3];
-		$i = index($s, "\\p0[");
+		$i = index($s, "\\p$gnum\\r[");
 	}
 
-	# find any \0 before the next [  and replace with $c
-	$i = index($s, "\\0");
-	#print "i for \\0 = $i  (s=$s)\n";
+	# now that all the stray ['s are gone, we can look for \p[] \p\r[] and \0
+	# NOTE, there must not be ANY groups ahead of this, else we leave it for later.
+	$i = index($s, "\\p[");
 	while ($i >= 0) {
-		$i2 = index($s, "[");
-		if ($i2 > -1 && $i > $i2) { $i = -1; }
-		else {
-			substr($s, $i, 2) = $c;
-			$i = index($s, "\\0");
+		$i2 = index($s, '[');
+		if ($i > 0 && $i2 >= 0 && $i2 < $i) {
+			while ($i2 < $i) {
+				if ($i2 == 0) { $i = -1; }
+				elsif (substr($s, $i2-1, 1) eq '\\') {
+					$i2 = index($s, '[', $i2+1);
+				} else {
+					$i = -1;
+				}
+			}
+		}
+		if ($i > 0) {
+			my $chars = get_items($s, $i+2, $i2);
+			if ($i2 == -1) { print STDERR "invalid \\p0[..] found in rule\n"; die; }
+			my @a = split('', $chars);
+			my $c;
+			my $i3 = $idx;
+			$i3 %= scalar @a;
+			substr($s, $i, $i2-$i+1) = $a[$i3];
+			$i = index($s, "\\p[");
 		}
 	}
 
 	# find any \p\r[ and step them. The step is $total
 	$i = index($s, "\\p\\r[");
 	while ($i >= 0) {
-		my $chars = get_items($s, $i+4, $i2, 1);
-		#print "in \\p\\r[ and found $chars with total=$total\n";
-		if ($i2 == -1) { print STDERR "invalid \\p\\r[] found in rule\n"; die; }
-		my @a = split('', $chars);
-		my $c;
-		if (scalar @a <= $total) { $total = scalar @a - 1; }
-		substr($s, $i, $i2-$i+1) = $a[$total];
-		$i = index($s, "\\p\\r[");
+		$i2 = index($s, '[');
+		if ($i > 0 && $i2 >= 0 && $i2 < $i) {
+			while ($i2 < $i) {
+				if ($i2 == 0) { $i = -1; }
+				elsif (substr($s, $i2-1, 1) eq '\\') {
+					$i2 = index($s, '[', $i2+1);
+				} else {
+					$i = -1;
+				}
+			}
+		}
+		if ($i >= 0) {
+			my $chars = get_items($s, $i+4, $i2, 1);
+			#print "in \\p\\r[ and found $chars with total=$total\n";
+			if ($i2 == -1) { print STDERR "invalid \\p\\r[] found in rule\n"; die; }
+			my @a = split('', $chars);
+			my $c;
+			$total %= scalar @a;
+			substr($s, $i, $i2-$i+1) = $a[$total];
+			$i = index($s, "\\p\\r[");
+		}
 	}
 
-	# find any \p[ and step them. The step is $total
-	$i = index($s, "\\p[");
+	# find any \0 before the next [  and replace with $c
+	$i = index($s, "\\0");
+	#print "i for \\0 = $i  (s=$s)\n";
 	while ($i >= 0) {
-		my $chars = get_items($s, $i+2, $i2);
-		#print "in \\p[ and found $chars with total=$total\n";
-		if ($i2 == -1) { print STDERR "invalid \\p[] found in rule\n"; die; }
-		my @a = split('', $chars);
-		my $c;
-		if (scalar @a <= $total) { $total = scalar @a - 1; }
-		substr($s, $i, $i2-$i+1) = $a[$total];
-		$i = index($s, "\\p[");
+		$i2 = index($s, '[');
+		if ($i > 0 && $i2 >= 0 && $i2 < $i) {
+			while ($i2 < $i) {
+				if ($i2 == 0) { $i = -1; }
+				elsif (substr($s, $i2-1, 1) eq '\\') {
+					$i2 = index($s, '[', $i2+1);
+				} else {
+					$i = -1;
+				}
+			}
+		}
+		if ($i >= 0) {
+			substr($s, $i, 2) = $c;
+			$i = index($s, "\\0");
+		}
 	}
 	return $s;
 }
 sub handle_rule_rej {
 	my $rule = $_[0];
-	if (substr($rule, 0, 1) ne '-') {return $rule;}
+	dbg(3, "Entering handle_rule_rej rule=$rule\n");
+	# remove our 3 hacks for problem letters
+	$rule =~ s/\\([ -~])``~/\\$1/g;
+
+	dbg(3, "Leaving  handle_rule_rej rule=$rule\n");
+	if (substr($rule, 0, 1) ne '-') { return $rule;}
 	my $v = substr($rule,1,1);
 	if ($v eq ':') { return substr($rule, 2); }
 	if ($v eq 'c') { return substr($rule, 2); }
@@ -556,49 +619,71 @@ sub handle_rule_rej {
 	if ($v eq '>') { return substr($rule, 3); }
 	return $rule;
 }
+sub is_pnum_r { my ($w) = (@_);
+	if (substr($w, 0, 2) ne '\\p') { return 0; }
+	if (substr($w, 3) ne '\\r')    { return 0; }
+	return 1;
+}
 sub pp_rule { my ($rules, $which_group, $idx) = (@_);
 	my $total = 0;
 	dbg(3, "** entered pp_rule($rules, $which_group, $idx, $total)\n");
 	my $pos = index($rules, '[');
-	if ($pos == -1) { $rules=handle_rule_rej($rules); push(@pp_rules,$rules); return 0; }
-	while ($pos >= 0 && substr($rules, $pos-1, 1) eq "\\") {
+	if ($pos == -1) { $rules=handle_rule_rej($rules); dbg(3, "**** This rule being saved: $rules\n"); push(@pp_rules,$rules); return 0; }
+	while ($pos > 0 && substr($rules, $pos-1, 1) eq "\\" && ($pos == 1 || substr($rules, $pos-2, 2) ne "\\\\")) {
 		$pos = index($rules, '[', $pos+1);
 	}
-	my $pos2;
+	if ($pos < 0)  { $rules=handle_rule_rej($rules); dbg(3, "**** This rule being saved: $rules\n"); push(@pp_rules,$rules); return 0;}
 	my $esc_r = 0;
 	if ($pos > 1 && substr($rules, $pos-2,2) eq "\\r") {
 		$esc_r = 1;
-		#substr($rules, $pos-2,2) = "";
+		if ($pos > 3 && substr($rules, $pos-4,4) eq "\\p\\r") {
+			# we leave these alone \p\r  , they are needed for the handle-backref logic
+		} elsif ($pos > 4 && is_pnum_r(substr($rules, $pos-5,5))) {
+			# we leave these alone \p1\r , they are needed for the handle-backref logic
+		} else {
+			# remove the \r we 'know' it is there, it now serves no purpose from here on.
+			substr($rules, $pos-2,2) = "";
+			$pos -= 2;
+		}
 	}
+	my $pos2;
+	dbg(3,"calling get_items($rules, $pos, pos2, $esc_r);\n");
 	my $Chars = get_items($rules, $pos, $pos2, $esc_r);
-	if ($pos > $pos2)  { $rules=handle_rule_rej($rules); push(@pp_rules,$rules); return 0;}
+	if ($pos > $pos2)  { $rules=handle_rule_rej($rules); dbg(3, "**** This rule being saved: $rules\n"); push(@pp_rules,$rules); return 0;}
 	my @chars = split('', $Chars);
 	$idx = 0;
 	$which_group += 1;
-	$idx++;
-	#print " * before foreach loop. rules=$rules\n";
+	dbg(2," * before foreach loop. rules=$rules Chars=$Chars\n");
 	foreach my $c (@chars) {
 		my $s = $rules;
-		dbg(4, "before sub=$s\n");
+		# note handling \ chars in a group is a bitch, since we remove them
+		# 1 at a time, and then continue to process the line. THUS, these
+		# 'look' like stray \, so this [\\x][01] end up doing this
+		#    \[01] during one level of recursion. Thus the crux of the problem.
+		# We change any \ returned from a group, into \\``~ and then later undo
+		# that problem (when the rule is complete), and the \\ is used as our
+		# signal that this is NOT part of any escaping.
+		#  We have to do same type shit with [ ] chars also :(
+		if (index('\\\[\]', $c) != -1)  { $c = "\\".$c."``~"; }
 		substr($s, $pos, $pos2-$pos+1) = $c;
-		dbg(4, "after sub=$s\n");
-		my $s2 = handle_backref($which_group, $c, $pos2, $s, $idx, $total);
-		if ($s2 ne $s) {dbg(4, "before handle_backref($which_group, $c, $pos2, $s, $total)\nhandle_backref returned     $s2\n"); }
+		my $s2 = handle_backref($which_group, $c, $s, $total, $idx);
+		if ($s2 ne $s) {dbg(3, "before handle_backref($which_group, $c, $s, $total, $idx)\nhandle_backref returned     $s2\n"); }
+		else { dbg(3, "  handle_backref nothing changed ($which_group, $c, $s, $total, $idx)\n"); }
 		++$total;
-		dbg(4, "*** entering      recurse pp_rule($rules, $which_group, $idx, $total) pos=$pos pos2=$pos2\n");
+		dbg(3, "*** entering      recurse pp_rule($s2, $which_group, $idx, $total) pos=$pos pos2=$pos2\n");
 		if (pp_rule($s2, $which_group, $idx, $_[6])) { return 1; }
 		$_[6]++;
 		$idx++;
-		dbg(3, "*** returned from recurse pp_rule($rules, $which_group, $idx, $total) pos=$pos pos2=$pos2\n");
+		dbg(3, "*** returned from recurse pp_rule($s2, $which_group, $idx, $total) pos=$pos pos2=$pos2\n");
 	}
 	return 0;
 }
 # we simply find how many items are in each group, and multiply total, returning that total.
-sub pp_rule_cnt{ my ($rules, $which_group, $idx) = (@_);
+sub pp_rule_cnt{ my ($rules) = (@_);
 	my $total = 1;
-	dbg(3, "** entered pp_rule_cnt($rules, $which_group, $idx, $total)\n");
 	my $pos = index($rules, '[');
 	if ($pos == -1) { return 1; }
+	dbg(3, "** entered pp_rule_cnt($rules)\n");
 	do {
 		while ($pos >= 0 && substr($rules, $pos-1, 1) eq "\\") {
 			$pos = index($rules, '[', $pos+1);
@@ -610,12 +695,19 @@ sub pp_rule_cnt{ my ($rules, $which_group, $idx) = (@_);
 		}
 		my $Chars = get_items($rules, $pos, $pos2, $esc_r);
 
-		if ($pos > $pos2)  { return $total; }
+		if ($pos > $pos2)  { dbg(3, "** Returning pp_rule_cnt $total rules\n\n"); return $total; }
+		my $skip = 0; # skip will be set to 1 for any parallel groups.
+		if (($pos > 1 && substr($rules, $pos-2,2) eq "\\p")) { $skip = 1; }  # skip \p[]
+		if (($pos > 3 && substr($rules, $pos-4,4) eq "\\p\\r")) { $skip = 1; }  # skip \p\r[]
+		if (($pos > 2 && substr($rules, $pos-3,2) eq "\\p") && ord(substr($rules, $pos-1,1)) >= ord('0') && ord(substr($rules, $pos-1,1)) <= ord('9')) { $skip = 1; }  # skip \p0[] to \p9[]
+		if ($skip==0) {
+			dbg(3, "    This string part of count multiplier: $Chars\n\n");
+			$total *= length($Chars);
+		}
 		$rules = substr($rules, $pos2);
-		$Chars = esc_remove($Chars);
-		$total *= length($Chars);
 		$pos = index($rules, '[');
 	} while ($pos > 0);
+	dbg(3, "** Returning pp_rule_cnt $total rules\n\n");
 	return $total;
 }
 
@@ -641,7 +733,7 @@ sub load_classes {
 	foreach my $c (split("","bvcwpsludaxo")) {
 		my $C = uc $c;
 		$cclass{$C}=purge($cclass{z}, $cclass{$c});
-		
+
 		# some 'corrections' are needed to get a string to play nice in the reg-x we have
 		$cclass{$C} =~ s/\\/\\\\/g; # change \ into \\
 		$cclass{$C} =~ s/\^/\\\^/g; # change ^ into \^
