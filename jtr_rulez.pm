@@ -57,7 +57,7 @@ sub toggle_case {  # turn jOhN into JoHn
 	$w =~ s/ (\p{CWU}) | (\p{CWL}) /defined $1 ? uc $1 : lc $2/gex;
 	#
 	# only valid for 7-bit ascii.
-	#$w =~ tr/A-Za-z/a-zA-Z/g;
+	#$w =~ tr/A-Za-z/a-zA-Z/;
 	return $w;
 }
 sub rev { # turn john into nhoj   (inlining reverse was having side effects so we function this)
@@ -73,7 +73,7 @@ sub purge {  #  purge out a set of characters. purge("test123john","0123456789")
 sub replace_chars {
 	my ($w, $ch, $c) = @_;
 	if ($c eq '^') { $c = '\\^'; }
-	if ($ch eq '\\') { $ch = '\\\\'; }
+#	if ($ch eq '\\') { $ch = '\\\\'; }  # this causes problems. Not sure why, I would think it should be this way, but obviously not.
 	if (substr($c,length($c)-1,1) eq '\\' && (length($c)==1 || substr($c,length($c)-2,2) eq '\\\\')) { $c .= '\\'; }
 	$w =~ s/[$c]/$ch/g;
 	return $w;
