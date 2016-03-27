@@ -9,7 +9,7 @@ my $failed = 0;
 my $rejected = 0;
 my $rules_max_length;
 my $l;
-
+my %nums;	# these hold variables a ... k (used in the v command, or in get_length)
 our @ISA= qw( Exporter );
 
 # these CAN be exported.
@@ -56,7 +56,7 @@ sub toggle_case {  # turn jOhN into JoHn
 	# found online, unicode toggle code. Need to test for speed.
 	$w =~ s/ (\p{CWU}) | (\p{CWL}) /defined $1 ? uc $1 : lc $2/gex;
 	#
-	# only valid for 7-bit ascii.
+	# only valid for 7-bit ascii. Now using the unicode correct version.
 	#$w =~ tr/A-Za-z/a-zA-Z/;
 	return $w;
 }
@@ -73,20 +73,19 @@ sub purge {  #  purge out a set of characters. purge("test123john","0123456789")
 sub replace_chars {
 	my ($w, $ch, $c) = @_;
 	if ($c eq '^') { $c = '\\^'; }
-#	if ($ch eq '\\') { $ch = '\\\\'; }  # this causes problems. Not sure why, I would think it should be this way, but obviously not.
 	if (substr($c,length($c)-1,1) eq '\\' && (length($c)==1 || substr($c,length($c)-2,2) eq '\\\\')) { $c .= '\\'; }
 	$w =~ s/[$c]/$ch/g;
 	return $w;
 }
 sub shift_case { # S	shift case: "Crack96" -> "cRACK(^"
 	my ($w) = @_;
-	$w =~ tr/A-Za-z0-9)!@#$%^&*(\-_=+\[{\]};:'",<.>\/?/a-zA-Z)!@#$%^&*(0-9_\-+={\[}\]:;"'<,>.?\//;
+	$w =~ tr/A-Za-z`~0-9)!@#$%^&*(\-_=+[{]}\\|;:'",<.>\/?/a-zA-Z~`)!@#$%^&*(0-9_\-+={[}]|\\:;"'<,>.?\//;
 	return $w;
 }
 sub vowel_case { # V	lowercase vowels, uppercase consonants: "Crack96" -> "CRaCK96"
 	my ($w) = @_;
 	$w =~ tr/b-z/B-Z/;
-	$w =~ tr/EIOU/eiou/;
+	$w =~ tr/AEIOU/aeiou/;
 	return $w;
 }
 sub keyboard_right { # R	shift each character right, by keyboard: "Crack96" -> "Vtsvl07"
@@ -95,15 +94,75 @@ sub keyboard_right { # R	shift each character right, by keyboard: "Crack96" -> "
 	# it's a very obsure rule, and not likely to have too many real world passwording implications.
 	# the only 'real' use is if someone sets a password,and then it does not work. Were their fingers 1 key
 	# to left, or 1 key to right?  If so, then they can guess with these rules
-	$w =~ tr/`~1qaz!QAZ2wsx@WSX3edc#EDC4rfv$RFV5tgb%TGB6yhn^YHN7ujm&UJM8ik,*IK<9ol.(OL>0p;)P:\-[_{=+\/?/1!2wsx@WSX3edc#EDC4rfv$RFV5tgb%TGB6yhn^YHN7ujm&UJM8ik,*IK<9ol.(OL>0p;\/)P:?\-['_{"=]+}\\|\\|/;
+	$w =~ tr/`~1qaz!QAZ2wsx@WSX3edc#EDC4rfv$RFV5tgb%TGB6yhn^YHN7ujm&UJM8ik,*IK<9ol.(OL>0p;)P:\-[_{+=?\//1!2wsx@WSX3edc#EDC4rfv$RFV5tgb%TGB6yhn^YHN7ujm&UJM8ik,*IK<9ol.(OL>0p;\/)P:?\-['_{"=]+}|\\|\\/;
 	return $w;
 }
 sub keyboard_left { # L	shift each character left, by keyboard: "Crack96" -> "Xeaxj85"
 	my ($w) = @_;
 	# idential output as john1.8.0.3-jumbo
-	$w =~ tr/2wsx3edc4rfv5tgb6yhn7ujm8ik,9ol.0p;\/@WSX#EDC$RFV%TGB^YHN&UJM*IK<(OL>)P:?1!\-[_{=]+}'"/1qaz2wsx3edc4rfv5tgb6yhn7ujm8ik,9ol.!QAZ@WSX#EDC$RFV%TGB^YHN&UJM*IK<(OL>`~0p)P\-[_{;:/;
+	$w =~ tr/2wsx3edc4rfv5tgb6yhn7ujm8ik,9ol.0p;\/@WSX#EDC$RFV%TGB^YHN&UJM*IK<(OL>)P:?1!\-[_{=]+}'"\\|/1qaz2wsx3edc4rfv5tgb6yhn7ujm8ik,9ol.!QAZ@WSX#EDC$RFV%TGB^YHN&UJM*IK<(OL>`~0p)P\-[_{;:=+/;
 	return $w;
 }
+# pluralize: "crack" -> "cracks", etc. (lowercase only)
+# plural code is direct port from jtr rules.c
+sub pluralizes { my ($word) = (@_);
+	my $len = length($word);
+	if ($len<2) { return $word; }
+	my $last=substr($word, length($word)-1,1);
+	my $last2=substr($word, length($word)-2,1);
+	if (find_any_chars("sxz", $last) > 0 ||
+		($len > 1 && $last eq 'h' &&
+		($last2 eq 'c' || $last2 eq 's'))) {
+		return $word . "es";
+	} elsif ($last eq 'f' && $last2 ne 'f') {
+		return $word . "ves";
+	} elsif ($len > 1 &&
+		$last eq 'e' && $last2 eq 'f') {
+		return $word . "ves";
+	} elsif ($len  > 1 && $last eq 'y') {
+		if (find_any_chars("aeiou", $last2) > 0) {
+			return $word . "s";
+		}
+		return $word . "ies";
+	}
+	return $word . "s";
+}
+# "crack" -> "cracked", etc. (lowercase only)
+sub pluralized { my ($word) = (@_);
+	my $len = length($word);
+	if ($len<2) { return $word; }
+	my $last=substr($word, length($word)-1,1);
+	my $last2=substr($word, length($word)-2,1);
+	if ($last eq 'd' && $last2 eq 'e')  { return $word; }
+	if ($last eq 'y') {
+		substr($word, length($word)-1,1) = 'i';
+	} elsif (find_any_chars("bgp", $last) && !find_any_chars("bgp", $last)) {
+		$word .= $last;
+	}
+	if ($last eq 'e') {
+		$word .= 'd';
+	} else {
+		$word .= 'ed';
+	}
+	return $word;
+}
+# "crack" -> "cracking", etc. (lowercase only)
+sub pluralizing { my ($word) = (@_);
+	my $len = length($word);
+	if ($len<3) { return $word; }
+	my $last=substr($word, length($word)-1,1);
+	my $last2=substr($word, length($word)-2,1);
+	my $last3=substr($word, length($word)-3,1);
+	if ($last eq 'g' && $last2 eq 'n' && $last3 eq 'i')  { return $word; }
+	if (find_any_chars("aeiou", $last)) {
+		return substr($word,0,length($word)-2) . "ing";
+	}
+	if (find_any_chars("bgp", $last) && !find_any_chars("bgp", $last2)) {
+		$word .= $last;
+	}
+	return $word . "ing";
+}
+
 sub find_any_chars {
 	# this function probably could be optimized, but as written, it works
 	# well for all = / ? ( ) % type rejection rules.
@@ -118,6 +177,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 	dbg(1, "jtr_run_rule called with debug level $debug\n");
 	$M = $word;  # memory
 	$l = length($M);
+	%nums = ( 'a'=>0,'b'=>0,'c'=>0,'d'=>0,'e'=>0,'f'=>0,'g'=>0,'h'=>0,'i'=>0,'k'=>0 );
 	$failed = 0;
 	$rejected = 0;
 	dbg(2, "checking word $word with rule $rule\n");
@@ -141,6 +201,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		if ($c eq '}') { $word = rotr($word); next; }
 		if ($c eq '[') { if (length($word)) {$word = substr($word, 1);} next; }
 		if ($c eq ']') { if (length($word)) {$word = substr($word, 0, length($word)-1);} next; }
+		if ($c eq 'D') { my $n=get_num_val_raw($rc[++$i],$word); if ($n<length($word)) {substr($word, $n, 1)="";} next; }
 		if ($c eq 'S') { $word = shift_case($word); next; }
 		if ($c eq 'V') { $word = vowel_case($word); next; }
 		if ($c eq 'R') { $word = keyboard_right($word); next; }
@@ -149,6 +210,9 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		if ($c eq '<') { my $n=get_num_val_raw($rc[++$i],$word); if(length($word)>=$n){$rejected=1; return ""; }    next; }
 		if ($c eq '_') { my $n=get_num_val_raw($rc[++$i],$word); if(length($word)!=$n){$rejected=1; return ""; }    next; }
 		if ($c eq '\''){ my $n=get_num_val_raw($rc[++$i],$word); if(length($word)> $n){ $word=substr($word,0,$n); } next; }
+		if ($c eq 'p') { $word=pluralizes($word); next; }
+		if ($c eq 'P') { $word=pluralized($word); next; }
+		if ($c eq 'I') { $word=pluralizing($word); next; }
 		#
 		#   -c -8 -s -p -u -U ->N -<N -: (rejection)
 		#   Not sure how to handle these, since we do not have a running john environment
@@ -173,6 +237,28 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			dbg(1, "unknown length rejection rule: -$c character $c not valid.\n");
 			next;
 		}
+		if ($c eq 'o') { # oNX
+			my $n=get_num_val_raw($rc[++$i],$word);
+			++$i;
+			dbg(2, "o$n$rc[$i]\n");
+			if ($n < length($word)) { substr($word, $n, 1) = $rc[$i]; }
+			next;
+		}
+		if ($c eq 'i') { # iNX
+			my $n=get_num_val_raw($rc[++$i],$word);
+			++$i;
+			if ($n > length($word)) { $word .= $rc[$i]; }
+			else { substr($word, $n, 0) = $rc[$i]; }
+			next;
+		}
+		if ($c eq 'x') { # xNM
+			my $n=get_num_val_raw($rc[++$i],$word);
+			my $m=get_num_val_raw($rc[++$i],$word);
+			if ($n>length($word)) { $rejected = 1; return ""; }
+			if ($n+$m>length($word)) { $m = length($word)-$n; }
+			$word = substr($word, $n, $m);
+			next;
+		}
 		if ($c eq 's') { #   sXY & s?CY
 			my $chars = "";
 			if ($rc[++$i] eq "?") { $chars = get_class($rc[++$i]); }
@@ -194,7 +280,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			my $len = get_num_val_raw($rc[++$i], $word);
 			if ($pos >= 0 && $pos <= length($word)) {
 				$word = substr($word, $pos, $len);
-			}
+			} else { return ""; } # this is how jtr does it but it is undefined.
 			next;
 		}
 		if ($c eq 'i') { # iNX
@@ -274,10 +360,10 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		}
 		if ($c eq '%') { # %NX  %N?C  (rejection)
 			my $chars;
-			my $n = get_num_val($rc[++$i]);
+			my $n = get_num_val($rc[++$i], $word);
 			if ($rc[++$i] eq '?') { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
-			if (find_any_chars(substr($word,length($word)-1,1), $chars) < $n) {
+			if (find_any_chars($word, $chars) < $n) {
 				$rejected = 1;
 				return "";
 			}
@@ -290,6 +376,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			if ($posM >= 0 && $len > 0 && $posI >= 0) {
 				substr($word, $posI, 0) = substr($M, $posM, $len);
 			}
+			next;
 		}
 		if ($c eq 'o') { # oNX
 			my $pos = get_num_val($rc[++$i], $word);
@@ -297,6 +384,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 				++$i;
 				substr($word, $pos,1) = $rc[$i];
 			}
+			next;
 		}
 		if ($c eq 'T') { # TN  (toggle case of letter at N)
 			my $pos = get_num_val($rc[++$i], $word);
@@ -318,7 +406,6 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			my $pos = get_num_val($rc[++$i], $word);
 			if ($pos < 0) {next;}
 			my $delim = $rc[++$i];
-			dbg(2,"delim=$delim\n");
 			my $s = "";
 			while ($rc[$i+1] ne $delim) {
 				if ($rc[$i] eq '\\' && $rc[$i+1] eq "x") {
@@ -334,10 +421,20 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			substr($word, $pos, 0) = $s;
 			next;
 		}
-		dbg(1, "Do not know how to handle character $c in the rule\n");
+		if ($c eq 'v') { # vVNM numeric handling
+			# first update $l
+			$l = length($word);
+			my $V = $rc[++$i];
+			my $N = get_num_val_raw($rc[++$i], $word);
+			my $M = get_num_val_raw($rc[++$i], $word);
+			$nums{$V} = $N-$M;
+			next;
+		}
+		print "\nDo not know how to handle character $c in $rule\n");
+		exit(-1);
 	}
 	if (length($word) > 125) { return substr($word, 0, 125); }
-	dbg(1, "resultant word after rule $rule is: $word\n");
+	dbg(2, "resultant word after rule $rule is: $word\n");
 	return $word;
 }
 sub rotl {
@@ -371,7 +468,7 @@ sub get_num_val_raw { my ($p, $w) = (@_);
 	if ($p eq '*') { return $rules_max_length; }
 	if ($p eq '-') { return $rules_max_length-1; }
 	if ($p eq '+') { return $rules_max_length+1; }
-#	if ($p eq 'a...k') {}
+	if ($p eq 'a...k') { return $nums{$p}; }
 	if ($p eq 'z') {return length($w);}
 	if ($p eq 'l') { return $l; }
 	if ($p eq 'm') { my $m = length($M); if ($m>0){$m-=1;} return $m; }
@@ -403,6 +500,25 @@ sub get_items {
 	}
 	if ($pos+2 >= $_[2])  { return ""; }
 	$s = substr($s, $pos+1, $_[2]-$pos-1);
+	# remove escapes here \v and \xHH
+	my $idx = index($s, '\\x');
+	while ($idx > -1) {
+		my $n = substr($s, $idx+2, 2);
+		my $v = hex($n);
+		substr($s, $idx, 4) = chr($v);
+		$idx = index($s, '\\x', $idx+1);
+	}
+	$idx = index($s, '\\');
+	while ($idx > -1) {
+		# remove all \C except for  \-  We have to keep that one.
+		if (substr($s, $idx, 2) ne '\\-') {
+			substr($s, $idx, 2) = substr($s, $idx+1, 1);
+		} else { ++$idx; }
+		if (substr($s, $idx, 1) eq '\\') { ++$idx; }
+		$idx = index($s, '\\', $idx);
+	}
+
+	# now $s is raw characters in the range, no escapes.
 	my @ch = split('', $s);
 
 	# convert ranges into 'raw' values.  de-escape values (i.e. \\ or \[ become \ or [ )
@@ -410,25 +526,23 @@ sub get_items {
 	my $i = 0;
 	my $chars = "";
 	for ($i = 0; $i < length($s); ++$i) {
-		if ($i>0 && $ch[$i] eq '-' && $ch[$i-1] ne "\\") {
+		if ($i>0 && $ch[$i] eq '-') {
 			dbg(4, "doing range fix for $ch[$i-1]-$ch[$i+1]\n");
-			for (my $c = ord($ch[$i-1])+1; $c <= ord($ch[$i+1]); ++$c) {
-				$chars .= chr($c);
+			if (ord($ch[$i-1]) > ord($ch[$i+1])) {
+				# jumbo john handles [6-0][9-0] also (i.e. count down).
+				# note, I do not think core handles this!!!
+				for (my $c = ord($ch[$i-1])-1; $c >= ord($ch[$i+1]); --$c) {
+					$chars .= chr($c);
+				}
+			} else {
+				# normal order
+				for (my $c = ord($ch[$i-1])+1; $c <= ord($ch[$i+1]); ++$c) {
+					$chars .= chr($c);
+				}
 			}
 			++$i;
 		} else {
-			if ($ch[$i] eq "\\") {
-				if ($ch[$i+1] eq "x") {
-					# \xhh escape, replace with 'real' character
-					$i += 2;
-					my $s = $ch[++$i]; $s .= $ch[$i];
-					($ch[$i]) = sscanf($s, "%X");
-					$ch[$i] = chr($ch[$i]);
-				} else {
-					# handles all other escaped characters.
-					++$i;
-				}
-			}
+			if ($ch[$i] eq '\\' && $ch[$i+1] eq '-') { ++$i; }
 			$chars .= $ch[$i];
 		}
 	}
@@ -437,7 +551,7 @@ sub get_items {
 		dbg(2, "get_item returning (no-dedupe): chars=$chars\n");
 		return $chars;
 	}
-	# we must 'unique' the data (jtr will do that)
+	# we must 'unique' this data.
 	$chars = reverse $chars;
 	$chars =~ s/(.)(?=.*?\1)//g;
 	$chars = reverse $chars;
@@ -445,12 +559,39 @@ sub get_items {
 	return $chars;
 }
 
+sub hexify_space_in_groups { my ($w) = (@_);
+	if (index($w, ' ') == -1) { return $w; }
+	my $pos = index($w, '[');
+	while ($pos > -1) {
+		if ($pos > 0 && substr($w, $pos-1, 1) eq '\\') {
+			$pos = index($w, '[', $pos+1);
+			next;
+		}
+		my $pos2 = index($w, ']', $pos);
+		while ($pos2 > 0 && substr($w, $pos2-1, 1) eq '\\') {
+			$pos2 = index($w, ']', $pos2+1);
+			next;
+		}
+		if ($pos2 > 0) {
+			my $s = substr($w, $pos, $pos2-$pos);
+			$s =~ s/ /\\x20/g;
+			substr($w, $pos, $pos2-$pos) = $s;
+			$pos += length($s);
+			$pos = index($w, '[', $pos);
+		} else { $pos = -1; }
+	}
+	return $w;
+}
+
 # preprocessor.  We have an array of rules that get built. Then
 # we keep count of which have been handled, so we eat them one
 # at a time, in order.
 sub jtr_rule_pp_init { my ($pre_pp_rule, $len, $max_cnt) = (@_);
 	$pp_idx = 0;
-	my $stripped = purge($pre_pp_rule,' ');
+	# removed all stray spaces. HOWEVER, we must preserve them within groups, so we
+	# first find all spaces in groups, and replace them with \x20 and then purge spaces.
+	my $stripped = hexify_space_in_groups($pre_pp_rule);
+	$stripped = purge($stripped,' ');
 	# normalize all \r\p[] or \r\px[] into \p\r[] and \px\r[]
 	$stripped =~ s/\\r\\p\[/\\p\\r\[/g;
 	$stripped =~ s/\\r\\p([0-9])\[/\\p\0\\r\[/g;

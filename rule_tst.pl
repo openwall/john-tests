@@ -8,8 +8,8 @@ use Storable;
 use jtr_rulez;
 use Text::Tabs;
 
-my $VERSION = "0.02-\x{3B1}";
-my $RELEASE_DATE = "March 24, 2016";
+my $VERSION = "0.90-\x{3B2}";
+my $RELEASE_DATE = "March 27, 2016";
 
 my $JOHN_PATH = "../run";
 # NOTE, john built on Windows 'may' need this lines changed to "$JOHN_PATH/john.exe" IF the script will not run properly.
@@ -24,8 +24,8 @@ my @rulesdata;
 my $show_stderr=0;
 my $last_line_len=0;
 my $core_only=0; # assume jumbo john. Actually at this time we ONLY work with jumbo.
-my $error_cnt = 0; my $done_cnt = 0; my $ret_val_non_zero_cnt = 0;
-my $max_pp = 5000;
+my $error_cnt = 0; my $done_cnt = 0; my $tot_rules = 0; my $ret_val_non_zero_cnt = 0;
+my $max_pp = 8200;
 my @startingTime;
 
 # Set these once and we don't have to care about them anymore
@@ -40,11 +40,11 @@ startTime();
 parseArgs();
 setup();
 readData();
-#filterPatterns();
 process();
 cleanup();
 unlink_restore();
 displaySummary();
+UpdateLocalConfig("", 1);
 exit $error_cnt+$ret_val_non_zero_cnt;
 
 ###############################################################################
@@ -58,9 +58,9 @@ sub displaySummary {
 	my $secs = timeToSecs(@timeEnd)-timeToSecs(@startingTime);
 	if ($error_cnt == 0 && $ret_val_non_zero_cnt == 0) {
 		if ($done_cnt == 0) { ScreenOutAlways ("NO tests were performed.  Time used was $secs seconds\n"); }
-		else { ScreenOutAlways ("All tests passed without error.  Performed $done_cnt tests.  Time used was $secs seconds\n"); }
+		else { ScreenOutAlways ("All tests passed without error.  Performed $done_cnt tests and created $tot_rules rules.\n Time used was $secs seconds\n"); }
 	} else {
-		my $s = "Some tests had Errors. Performed $done_cnt tests.";
+		my $s = "Some tests had Errors. Performed $done_cnt tests and created $tot_rules rules.";
 		unless ($error_cnt == 0) { $s = $s . "  $error_cnt errors"; }
 		unless ($ret_val_non_zero_cnt == 0) { $s = $s . "  $ret_val_non_zero_cnt runs had non-clean exit"; }
 		ScreenOutAlways ("$s\nTime used was $secs seconds\n");
@@ -90,6 +90,7 @@ sub parseArgs {
 		print "exiting, due to invalid option\n";
 		exit 1;
 	}
+	$opts{quiet} = 0; $opts{verbose} = 0;
 	if ($help) { usage($JOHN_PATH); }
 	if (@ARGV) {$opts{argv} = \@ARGV; }
 	if ($resume != 0) { ResumeState(); $opts{resume}=1; }
@@ -181,10 +182,8 @@ sub ScreenOutSemi {
 		print "\r$s\r";
 		$s = $_[0];
 		chomp $s;
-		$s = expand($s); # remove tabs
-		print $s;
-		$last_line_len = length($s);
-		print "\r";
+		print $s."\r";
+		$last_line_len = length( expand($s));
 	} else { ScreenOut(@_); }
 }
 # print verbose 'vv' messages
@@ -354,6 +353,10 @@ sub UpdateLocalConfig {
 			}
 		}
 	}
+	if (defined($_[1]) && $_[1] == 1) {
+		WriteTheFile("john-local.conf", @fixed);
+		return;
+	}
 	# add the cur_tst rule
 	push(@fixed, "[List.Rules:cur_tst]\n");
 	push(@fixed, "$_[0]\n");
@@ -400,6 +403,7 @@ sub build_files { my ($_rule) = (@_);
 		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
 		$s = ""; for (; $i < 255; $i++) { $s .= chr($i); }
 		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, 'a !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~', $sw, $sm, $last);
 		++$rule_cnt;
 		$rule = jtr_rule_pp_next();
 	}
@@ -504,6 +508,7 @@ sub process {
 			# POC, a simple diff test is just fine.
 			my $s = `diff tst-.out tst-.exp`;
 			++$done_cnt;
+			$tot_rules += $pp_cnt;
 			if (length($s) > 0) {
 				ScreenOutSemi(" ");
 				ScreenOutAlways("problem found with rule \"$ar[1]\" = $ar[0]\n");
