@@ -430,7 +430,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			$nums{$V} = $N-$M;
 			next;
 		}
-		print "\nDo not know how to handle character $c in $rule\n");
+		print "\nDo not know how to handle character $c in $rule\n";
 		exit(-1);
 	}
 	if (length($word) > 125) { return substr($word, 0, 125); }
@@ -594,7 +594,7 @@ sub jtr_rule_pp_init { my ($pre_pp_rule, $len, $max_cnt) = (@_);
 	$stripped = purge($stripped,' ');
 	# normalize all \r\p[] or \r\px[] into \p\r[] and \px\r[]
 	$stripped =~ s/\\r\\p\[/\\p\\r\[/g;
-	$stripped =~ s/\\r\\p([0-9])\[/\\p\0\\r\[/g;
+	$stripped =~ s/\\r\\p([0-9])\[/\\p\1\\r\[/g;
 	# strip out \\ etc outside of groups []
 	if (!defined($len) || $len==0) {$rules_max_length = 0;}
 	else {$rules_max_length = $len; }
