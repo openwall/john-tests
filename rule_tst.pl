@@ -8,7 +8,7 @@ use Storable;
 use jtr_rulez;
 use Text::Tabs;
 
-my $VERSION = "0.90-\x{3B2}";
+my $VERSION = "0.91-\x{3B2}";
 my $RELEASE_DATE = "March 27, 2016";
 
 my $JOHN_PATH = "../run";
@@ -25,7 +25,7 @@ my $show_stderr=0;
 my $last_line_len=0;
 my $core_only=0; # assume jumbo john. Actually at this time we ONLY work with jumbo.
 my $error_cnt = 0; my $done_cnt = 0; my $tot_rules = 0; my $ret_val_non_zero_cnt = 0;
-my $max_pp = 8200;
+my $max_pp = 15000;
 my @startingTime;
 
 # Set these once and we don't have to care about them anymore
@@ -35,7 +35,7 @@ binmode STDERR, ":utf8";
 ###############################################################################
 # MAIN (much code borrowed from jtrts.pl)
 ###############################################################################
-
+local $| = 1;  # forces non buffered line io on stdout.
 startTime();
 parseArgs();
 setup();
@@ -479,19 +479,27 @@ sub process {
 		}
 		# Ok, we try to reduce some overly bloated rules.  this allows many
 		# more to be tested side by side against JtR in this slow perl script
-		$ar[0] =~ s/\[0\-9\]/\[0\-2\]/g;
-		$ar[0] =~ s/\[A\-Z\]/\[A\-C\]/g;
-		$ar[0] =~ s/\[a\-z\]/\[a\-c\]/g;
-		UpdateLocalConfig($ar[0]);
+		my $rulez = $ar[0];
+		$rulez =~ s/\[0\-9\]/\[0\-2\]/g;
+		$rulez =~ s/\[0\-9A\-Z\]/\[0\-2AZ\]/g;
+		$rulez =~ s/\[A\-Z\]/\[A\-C\]/g;
+		$rulez =~ s/\[a\-z\]/\[a\-c\]/g;
+		$rulez =~ s/\[ \-~\]/\[ \-\\x24\]/g;
+		$rulez =~ s/\[0\-9A\-E\]/\[0\-4\]/g;
+		$rulez =~ s/\^&\(\)_\+\\-=\{\}\|\[\\\]\\\\;'":,\/<>\?`~\*/^&\\-{}|\[\\\]\\\\'"\//g;
+		$rulez =~ s/!\$\@#%.\^&\(\)_\+\\-=\{\}\|\[\\\]\\\\;'":,\/<>\?`~\*/^&\$\\-{}|\[\\\]\\\\'"\//g;
+		ScreenOutSemi(" ");
+		ScreenOutSemi("Testing Rule:  $ar[0]\n");
+		UpdateLocalConfig($rulez);
 		my $pp_cnt=0;
-		my $working = build_files($ar[0], $pp_cnt);
+		my $working = build_files($rulez, $pp_cnt);
 		my $cmd = $cmd_head;
 
 		if ($working == 0) {
 			ScreenOutSemi(" ");
-			print ("Skipped Rule ($pp_cnt PP items):  $ar[0]		($ar[1])\n");
+			print ("Skipped ($pp_cnt PP items):  $rulez\n");
 		} else {
-			ScreenOutSemi("Testing Rule:  $ar[0]		($ar[1])\n");
+			ScreenOutSemi("Testing Rule:  $ar[0]\n");
 			if ($show_stderr != 1) { $cmd .= " > tst-.out 2> /dev/null"; }
 			# this will switch stderr and stdout (vs joining them), so we can grab stderr BY ITSELF.
 			else { $cmd .= " > tst-.out 3>&1 1>&2 2>&3 >/dev/null"; }
