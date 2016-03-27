@@ -56,7 +56,7 @@ if (!defined($ENV{"GWS"})) { $ENV{"GWS"} = "64"; }
 ###############################################################################
 # MAIN
 ###############################################################################
-
+local $| = 1;  # force non buffered line io for stdout.
 startTime();
 parseArgs();
 setup();     # this function takes a while!!
