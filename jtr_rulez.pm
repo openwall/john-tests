@@ -8,15 +8,15 @@ my $stdout_rules = 0;
 my $failed = 0;
 my $rejected = 0;
 my $rules_max_length;
-my $l;
+my $l_num; my $p_num;
 my %nums;	# these hold variables a ... k (used in the v command, or in get_length)
 our @ISA= qw( Exporter );
 
 # these CAN be exported.
-our @EXPORT_OK = qw( debug stdout_rules failed rejected jtr_run_rule jtr_dbg_level jtr_rule_pp_init jtr_rule_pp_next );
+our @EXPORT_OK = qw( debug stdout_rules failed jtr_run_rule jtr_dbg_level jtr_rule_pp_init jtr_rule_pp_next jtr_rule_rejected );
 
 # these are exported by default.
-our @EXPORT = qw( jtr_run_rule  jtr_dbg_level jtr_std_out_rules_set jtr_rule_pp_init jtr_rule_pp_next );
+our @EXPORT = qw( jtr_run_rule  jtr_dbg_level jtr_std_out_rules_set jtr_rule_pp_init jtr_rule_pp_next jtr_rule_rejected );
 
 my $M="";
 my %cclass=(); load_classes();
@@ -33,6 +33,11 @@ sub dbg {
 }
 sub jtr_dbg_level {
 	$debug = $_[0];
+}
+sub jtr_rule_rejected {
+	my $r = $rejected;
+	$rejected = 0;
+	return $r;
 }
 sub jtr_std_out_rules_set {
 	$stdout_rules = 1;
@@ -173,10 +178,27 @@ sub find_any_chars {
 	$w =~ s/[^$c]*//g;
 	return length($w);
 }
+sub find_first_char {
+	# NOTE, this is used for / and % rejections, AND find_any_chars has already
+	# returned VALID information.  Now we simply want to know position offsets.
+	my ($off, $w, $c) = @_;
+	my $v = 0;
+	if ($off >= length($w)) { return length($w); }
+	$w = substr($w, $off, length($w)-$off);
+	my @wa = split('', $w);
+	my @ca = split('', $c);
+	foreach my $wc (@wa) {
+		foreach my $cc (@ca) {
+			if ($wc eq $cc) { return $off+$v; }
+		}
+		++$v;
+	}
+	return length($w);
+}
 sub jtr_run_rule { my ($rule, $word) = @_;
 	dbg(1, "jtr_run_rule called with debug level $debug\n");
 	$M = $word;  # memory
-	$l = length($M);
+	$l_num = length($M);
 	%nums = ( 'a'=>0,'b'=>0,'c'=>0,'d'=>0,'e'=>0,'f'=>0,'g'=>0,'h'=>0,'i'=>0,'k'=>0 );
 	$failed = 0;
 	$rejected = 0;
@@ -312,14 +334,16 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			}
 			next;
 		}
-		if ($c eq '/') { # /X  /?C  (rejection)
+		if ($c eq '/') { # /X  /?C  (rejection) reject UNLESS it contains.
 			my $chars;
 			if ($rc[++$i] eq '?') { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
 			if (!find_any_chars($word, $chars)) {
 				$rejected = 1;
+				$p_num = length;
 				return "";
 			}
+			$p_num = find_first_char(0, $word, $chars);
 			next;
 		}
 		if ($c eq '=') { # =NX  =N?C  (rejection)
@@ -365,7 +389,14 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			else { $chars = $rc[$i]; }
 			if (find_any_chars($word, $chars) < $n) {
 				$rejected = 1;
+				$p_num = length;
 				return "";
+			}
+			my $fnd = 0;
+			$p_num = 0;
+			while ($fnd < $n) {
+				$p_num = find_first_char($p_num, $word, $chars);
+				++$fnd;
 			}
 			next;
 		}
@@ -422,8 +453,8 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			next;
 		}
 		if ($c eq 'v') { # vVNM numeric handling
-			# first update $l
-			$l = length($word);
+			# first update $l_num
+			$l_num = length($word);
 			my $V = $rc[++$i];
 			my $N = get_num_val_raw($rc[++$i], $word);
 			my $M = get_num_val_raw($rc[++$i], $word);
@@ -470,7 +501,8 @@ sub get_num_val_raw { my ($p, $w) = (@_);
 	if ($p eq '+') { return $rules_max_length+1; }
 	if ($p eq 'a...k') { return $nums{$p}; }
 	if ($p eq 'z') {return length($w);}
-	if ($p eq 'l') { return $l; }
+	if ($p eq 'l') { return $l_num; }
+	if ($p eq 'p') { return $p_num; }
 	if ($p eq 'm') { my $m = length($M); if ($m>0){$m-=1;} return $m; }
 	print "ERROR, $p is NOT a valid length item\n";
 	return -1;
@@ -601,7 +633,7 @@ sub jtr_rule_pp_init { my ($pre_pp_rule, $len, $max_cnt) = (@_);
 	@pp_rules = ();
 	if (defined $max_cnt) {
 		my $cnt = pp_rule_cnt($stripped);
-		if ($cnt > $max_cnt) { $_[2] = $cnt; return ""; }
+		if ($max_cnt && $cnt > $max_cnt) { $_[2] = $cnt; return ""; }
 	}
 	dbg(4, "calling pp_rule() to prepare our rule:\n\n$pre_pp_rule\n\n");
 	pp_rule($stripped, 0, 0);

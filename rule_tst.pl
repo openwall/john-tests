@@ -404,6 +404,8 @@ sub build_files { my ($_rule) = (@_);
 		$s = ""; for (; $i < 255; $i++) { $s .= chr($i); }
 		one_rule($rule_cnt, $rule, "$s", $sw, $sm, $last);
 		one_rule($rule_cnt, $rule, 'a !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~', $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, 'xxxabd0987654321', $sw, $sm, $last);
+		one_rule($rule_cnt, $rule, '0985674321xxxabd', $sw, $sm, $last);
 		++$rule_cnt;
 		$rule = jtr_rule_pp_next();
 	}
@@ -488,8 +490,6 @@ sub process {
 		$rulez =~ s/\[0\-9A\-E\]/\[0\-4\]/g;
 		$rulez =~ s/\^&\(\)_\+\\-=\{\}\|\[\\\]\\\\;'":,\/<>\?`~\*/^&\\-{}|\[\\\]\\\\'"\//g;
 		$rulez =~ s/!\$\@#%.\^&\(\)_\+\\-=\{\}\|\[\\\]\\\\;'":,\/<>\?`~\*/^&\$\\-{}|\[\\\]\\\\'"\//g;
-		ScreenOutSemi(" ");
-		ScreenOutSemi("Testing Rule:  $ar[0]\n");
 		UpdateLocalConfig($rulez);
 		my $pp_cnt=0;
 		my $working = build_files($rulez, $pp_cnt);
