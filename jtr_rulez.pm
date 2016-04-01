@@ -141,7 +141,7 @@ sub pluralized { my ($word) = (@_);
 	if ($last eq 'd' && $last2 eq 'e')  { return $word; }
 	if ($last eq 'y') {
 		substr($word, length($word)-1,1) = 'i';
-	} elsif (find_any_chars("bgp", $last) && !find_any_chars("bgp", $last)) {
+	} elsif (find_any_chars("bgp", $last) && !find_any_chars("bgp", $last2)) {
 		$word .= $last;
 	}
 	if ($last eq 'e') {
@@ -159,8 +159,8 @@ sub pluralizing { my ($word) = (@_);
 	my $last2=substr($word, length($word)-2,1);
 	my $last3=substr($word, length($word)-3,1);
 	if ($last eq 'g' && $last2 eq 'n' && $last3 eq 'i')  { return $word; }
-	if (find_any_chars("aeiou", $last)) {
-		return substr($word,0,length($word)-2) . "ing";
+	if (find_any_chars("eaiou", $last)) {
+		return substr($word,0,length($word)-1) . "ing";
 	}
 	if (find_any_chars("bgp", $last) && !find_any_chars("bgp", $last2)) {
 		$word .= $last;
@@ -499,7 +499,7 @@ sub get_num_val_raw { my ($p, $w) = (@_);
 	if ($p eq '*') { return $rules_max_length; }
 	if ($p eq '-') { return $rules_max_length-1; }
 	if ($p eq '+') { return $rules_max_length+1; }
-	if ($p eq 'a...k') { return $nums{$p}; }
+	if (index('abcdefghijk',$p)>-1) { return $nums{$p}; }
 	if ($p eq 'z') {return length($w);}
 	if ($p eq 'l') { return $l_num; }
 	if ($p eq 'p') { return $p_num; }

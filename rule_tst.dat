@@ -48,12 +48,12 @@ s?WX	class replace W
 # Simple rules come first...
 :
 #-s x**
-x**
+#x**
 x39
 -c (?a c Q
 -c l Q
 #-s-c x** /?u l
--c x** /?u l
+#-c x** /?u l
 # These were not included in crackers I've seen, but are pretty efficient,
 # so I include them near the beginning
 #-<6 >6 '6
@@ -306,8 +306,8 @@ l Az"[1-90][0-9][0-9]" <+
 # crack -> cracked, crack -> cracking
 -[:c] <* >2 !?A \p1[lc] M [PI] Q
 # Try the second half of split passwords
--s x**
--s-c x** M l Q
+#-s x**
+#-s-c x** M l Q
 
 # Case toggler for cracking MD4-based NTLM hashes (with the contributed patch)
 # given already cracked DES-based LM hashes.
@@ -333,7 +333,7 @@ l Az"[1-90][0-9][0-9]" <+
 # an input of "PASSWORD" (assuming LM, which has halves of length 7).
 #[List.Rules:Split]
 :
--s x**
+#-s x**
 
 # Some Office <=2003 files have passwords truncated at 15
 #[List.Rules:OldOffice]
