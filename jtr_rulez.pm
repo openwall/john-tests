@@ -530,7 +530,12 @@ sub get_items {
 	while ($pos < $_[2] && substr($s, $_[2]-1, 1) eq "\\") {
 		$_[2] = index($s, ']', $_[2]+1);
 	}
-	if ($pos+2 >= $_[2])  { return ""; }
+	if ($pos+2 > $_[2])  { return ""; }
+	if ($pos+2 == $_[2])  {
+		# handle a 1 byte group [x] should return "x";
+		$s = substr($s, $pos+1, 1);
+		return $s;
+	}
 	$s = substr($s, $pos+1, $_[2]-$pos-1);
 	# remove escapes here \v and \xHH
 	my $idx = index($s, '\\x');
@@ -873,6 +878,7 @@ sub pp_rule_cnt{ my ($rules) = (@_);
 		if (($pos > 1 && substr($rules, $pos-2,2) eq "\\p")) { $skip = 1; }  # skip \p[]
 		if (($pos > 3 && substr($rules, $pos-4,4) eq "\\p\\r")) { $skip = 1; }  # skip \p\r[]
 		if (($pos > 2 && substr($rules, $pos-3,2) eq "\\p") && ord(substr($rules, $pos-1,1)) >= ord('0') && ord(substr($rules, $pos-1,1)) <= ord('9')) { $skip = 1; }  # skip \p0[] to \p9[]
+		if (($pos > 4 && substr($rules, $pos-5,2) eq "\\p") && ord(substr($rules, $pos-3,1)) >= ord('0') && ord(substr($rules, $pos-3,1)) <= ord('9')) { $skip = 1; }  # skip \p0\r[] to \p9\r[]
 		if ($skip==0) {
 			dbg(3, "    This string part of count multiplier: $Chars\n\n");
 			$total *= length($Chars);
