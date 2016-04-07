@@ -40,7 +40,7 @@ sub jtr_rule_rejected {
 	return $r;
 }
 sub jtr_std_out_rules_set {
-	$stdout_rules = 1;
+	$stdout_rules = $_[0];
 }
 sub case_all_words { # turn john or "JOHn THE ruppor$$abc" into "John The Ruppor$$Abc"
 	my $w = lc $_[0];
@@ -658,7 +658,7 @@ sub jtr_rule_pp_init { my ($pre_pp_rule, $len, $max_cnt) = (@_);
 		foreach my $s (@pp_rules) {
 			print "$s\n";
 		}
-		if ($debug>3||$stdout_rules) { exit(0); }
+		if ($debug>3||$stdout_rules==1) { exit(0); }
 	}
 
 	if (scalar @pp_rules > 0) {

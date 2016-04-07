@@ -2,30 +2,28 @@
 #  This is input data for the rule_tst.pl script. It provides rules,
 #  input data and expected results for testing jtr's rules engine.
 ######################################################################
-# format:   rule<tab>comment
-######################################################################
 
-:	Blank
-l	lower case
-u	lower case
-c	Upcase
-C	uPCASE
-t	ToGglE
-T[0-9]	toggle case of the character in position N
-r	reverse: "Fred" -> "derF"
-d	duplicate: "Fred" -> "FredFred"
-f	reflect: "Fred" -> "FredderF"
-{	rotate the word left: "jsmith" -> "smithj"
-}	rotate the word right: "smithj" -> "jsmith"
+:
+l
+u
+c
+C
+t
+T[0-9]
+r
+d
+f
+{
+}
 
 # class tests
-s??X	class replace ?
-s?vX	class replace v
-s?VX	class replace V
-s?cX	class replace c
-s?CX	class replace C
-s?wX	class replace w
-s?WX	class replace W
+s??X
+s?vX
+s?VX
+s?cX
+s?CX
+s?wX
+s?WX
 
 #[List.Rules:JumboSingle]
 /?d @?d >4

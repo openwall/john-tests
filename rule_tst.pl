@@ -82,7 +82,7 @@ sub parseArgs {
 		'stoponerror!'   ,#  => \$stop_on_error,
 		'showstderr!'    ,#  => \$show_stderr,
 		'full!'          ,#  => \$full,
-		'dump_rules!',   ,#  => \$dump_rules_only,
+		'dump_rules+',   ,#  => \$dump_rules_only,
 		'lib_dbg_lvl=i'  ,#  => \$lib_dbg_lvl
 		'resume!'            => \$resume,
 		);
@@ -90,7 +90,7 @@ sub parseArgs {
 		print "exiting, due to invalid option\n";
 		exit 1;
 	}
-	$opts{quiet} = 0; $opts{verbose} = 0;
+	$opts{quiet} = 0; $opts{verbose} = 0; $opts{dump_rules} = 0;
 	if ($help) { usage($JOHN_PATH); }
 	if (@ARGV) {$opts{argv} = \@ARGV; }
 	if ($resume != 0) { ResumeState(); $opts{resume}=1; }
@@ -103,7 +103,7 @@ sub parseArgs {
 		'stoponerror!'   ,#  => \$stop_on_error,
 		'showstderr!'    ,#  => \$show_stderr,
 		'full!'          ,#  => \$full,
-		'dump_rules!',   ,#  => \$dump_rules_only,
+		'dump_rules+',   ,#  => \$dump_rules_only,
 		'lib_dbg_lvl=i'  ,#  => \$lib_dbg_lvl
 		);
 
@@ -115,8 +115,9 @@ sub parseArgs {
 		$JOHN_EXE  = "$JOHN_PATH/john";
 	}
 	$verbosity = 2;
-	if (defined $opts{verbose}) { $verbosity += $opts{verbose} }
-	if (defined $opts{quiet})   { $verbosity -= $opts{quiet} }
+	if (defined $opts{verbose})   { $verbosity += $opts{verbose} }
+	if (defined $opts{quiet})     { $verbosity -= $opts{quiet} }
+	if (defined $opts{dump_rules}){ $verbosity -= $opts{dump_rules} }
 	my $cnt=0;
 }
 ###############################################################################
@@ -317,10 +318,7 @@ sub readData {
 		$line =~ s/[ \t\r]*$//;  # strip CR for non-Windows, and 'ltrim', so that blank lines (with white space) are skipped.
 		++$line_cnt;
 		if (length($line) > 0) {
-			#$line = "(*)" . $line;  # we have now added the "base", so there is no reason for this one.
-			my @ar = split('	', $line);
-			my $cnt = @ar;
-			if ($cnt == 2 || substr($line, 0, 1) eq "#") { push(@rulesdata, $line); }
+			if (substr($line, 0, 1) eq "#") { push(@rulesdata, $line); }
 			else { push(@rulesdata, $line."	line count: $line_cnt"); }
 		}
 	}
@@ -469,7 +467,8 @@ sub process {
 	my $line = "";
 
 	if (defined $opts{full}) { $max_pp = 99999999; }
-	if (defined $opts{dump_rules}) { jtr_std_out_rules_set(); }
+	if ($opts{dump_rules} > 0) { print "\n"; }
+	jtr_std_out_rules_set($opts{dump_rules});
 	if (defined $opts{lib_dbg_lvl}) { jtr_dbg_level($opts{lib_dbg_lvl}); }
 
 	#/^ s^[!@#$%&*()\-=_+\\|;:'",./?><]
@@ -497,6 +496,7 @@ sub process {
 			ScreenOutSemi("$line\n");
 			next;
 		}
+		ScreenOutSemi(" ");
 		# Ok, we try to reduce some overly bloated rules.  this allows many
 		# more to be tested side by side against JtR in this slow perl script
 		my $rulez = $ar[0];
@@ -514,7 +514,6 @@ sub process {
 		my $cmd = $cmd_head;
 
 		if ($working == 0) {
-			ScreenOutSemi(" ");
 			print ("Skipped ($pp_cnt PP items):  $rulez\n");
 		} else {
 			ScreenOutSemi("Testing Rule:  $ar[0]\n");
