@@ -1,11 +1,24 @@
 #!/bin/bash
 
 function do_Init(){
-    ../../run/john -form:cpu --list=format-tests | cut -f3 &> alltests.in
-    cp ../pw.dic pw.dic .
+    echo 'Preparing to run...'
+    cp ../pw.dic .
     cp ../rawsha256_tst.in .
     cp ../cisco4_tst.in .
     cp ../rawsha512_tst.in .
+    cp ../XSHA512_tst.in .
+
+    ../../run/john -form:cpu --list=format-tests 2> /dev/null | cut -f3 1> alltests.in
+
+    read CPU_DEV <<< $(../../run/john --list=opencl-devices -dev:cpu | \
+                        grep 'Device #' | sed -e 's/^[[:space:]]*//' | cut -d ' ' -f 3 | tr '()\n' ' ')
+    read GPU_DEV <<< $(../../run/john --list=opencl-devices -dev:gpu | \
+                        grep 'Device #' | sed -e 's/^[[:space:]]*//' | cut -d ' ' -f 3 | tr '()\n' ' ')
+    Device_List="$CPU_DEV $GPU_DEV"
+    #echo "--> CPUs: $CPU_DEV"
+    #echo "--> GPUs: $GPU_DEV"
+    #echo "--> Final: $Device_List"
+    clear
 }
 
 function do_Done(){
@@ -14,102 +27,138 @@ function do_Done(){
     rm rawsha256_tst.in
     rm cisco4_tst.in
     rm rawsha512_tst.in
-}
-
-function do_All_Devices(){
-    #TODO: do some parse and replace to dev=CPU+GPU
-    echo 'Checking all devices...'
-
-    if [ ${1:0:3} == "256" ]; then
-        for i in 0 1 2 3 4 6 7 ; do ../../run/john -form:raw-sha256-opencl    --test -dev:$i ; done
-        for i in 0 1 2 3 4 6 7 ; do ../../run/john -form:raw-sha256-opencl    --test --mask=?d?d?d?d###8 -dev:$i ; done
-    fi
-    if [ ${1:4:3} == "512" ]; then
-        for i in 0 1 2 3 4 6 7 ; do ../../run/john -form:raw-sha512-ng-opencl --test -dev:$i ; done
-        for i in 0 1 2 3 4 6 7 ; do ../../run/john -form:raw-sha512-ng-opencl --test --mask=?d?d?d?d###8 -dev:$i ; done
-    fi
+    rm XSHA512_tst.in
+    rm -f *.log
+    rm -f *.rec
 }
 
 function do_Test_Suite(){
-    echo 'Running Test Suite...'
+    #TODO: parse errors
+    echo 'Running raw-SHA256 Test Suite tests...'
 
     cd ..
-    ./jtrts.pl -type raw-sha256-opencl -passthru "-dev:0"
-    ./jtrts.pl -type raw-sha256-opencl -passthru "-dev:2"
-    ./jtrts.pl -type raw-sha256-opencl -passthru "-dev:7"
-    ./jtrts.pl -internal -type raw-sha256-opencl -passthru "-dev:0 --fork=2"
-    ./jtrts.pl -internal -type raw-sha256-opencl -passthru "-dev:2 --fork=2"
-    ./jtrts.pl -internal -type raw-sha256-opencl -passthru "-dev:7 --fork=2"
-    cd -
+    ./jtrts.pl -type raw-sha256-opencl -passthru "-dev:$TST_Device_1"
+    ./jtrts.pl -type raw-sha256-opencl -passthru "-dev:$TST_Device_2"
+    ./jtrts.pl -type raw-sha256-opencl -passthru "-dev:$TST_Device_3"
+    ./jtrts.pl -internal -type raw-sha256-opencl -passthru "-dev:$TST_Device_1 --fork=2"
+    ./jtrts.pl -internal -type raw-sha256-opencl -passthru "-dev:$TST_Device_2 --fork=3"
+    ./jtrts.pl -internal -type raw-sha256-opencl -passthru "-dev:$TST_Device_3 --fork=4"
+    Total_Tests=$((Total_Tests + 6))
+    cd - > /dev/null
 }
 
+function do_Test_Bench(){
+    TEMP=$(mktemp _tmp_output.XXXXXXXX)
+    TO_RUN="$3 ../../run/john $1 $2 &> $TEMP"
+    eval $TO_RUN
+    ret_code=$?
+
+    if [[ $ret_code -ne 0 ]]; then
+        echo "ERROR ($ret_code): $TO_RUN"
+        echo
+ 
+        cat $TEMP >> error.saved
+        Total_Erros=$((Total_Erros + 1))
+    else
+        awk '/Device/ { print $0 }' $TEMP
+        awk '/c\/s real/ { print $0 }' $TEMP
+        echo
+    fi
+    Total_Tests=$((Total_Tests + 1))
+    #-- Remove tmp files.
+    rm $TEMP
+} 
 
 function do_Test(){
+    TEMP=$(mktemp _tmp_output.XXXXXXXX)
     TO_RUN="$5 ../../run/john -ses=tst-cla -pot=tst-cla.pot $1 $2 $3 &> /dev/null"
     eval $TO_RUN
     ret_code=$?
 
-    if [ $ret_code != 0 -a $ret_code != 1 ]; then
-        echo "ERROR ($ret_code): $TO_RUN"
-        echo
+    if [[ $ret_code -ne 0 ]]; then
+        read MAX_TIME <<< $(echo $3 | awk '/-max-run/ { print 1 }')
+
+        if ! [[ $ret_code -eq 1 ]] && [[ "$MAX_TIME" == "1" ]]; then
+            echo "ERROR ($ret_code): $TO_RUN"
+            echo
  
-        exit 1
+            exit 1
+        fi
     fi
-    TO_SHOW="../../run/john -show=left -pot=tst-cla.pot $1 $2 &> tmp.cracked"
+    TO_SHOW="../../run/john -show=left -pot=tst-cla.pot $1 $2 &> $TEMP"
     eval $TO_SHOW
     ret_code=$?
 
-    if [ $ret_code != 0 ]; then
+    if [[ $ret_code -ne 0 ]]; then
         echo "ERROR ($ret_code): $TO_SHOW"
         echo
  
         exit 1
     fi
-    #cat tmp.cracked | awk '/password hash/ { print $1 }'
-    read CRACKED <<< $(cat tmp.cracked | awk '/password hash/ { print $1 }')
+    #cat $TEMP | awk '/password hash/ { print $1 }'
+    read CRACKED <<< $(cat $TEMP | awk '/password hash/ { print $1 }')
 
     #echo "DEBUG: ($CRACKED) $TO_RUN"
     #echo "DEBUG: ($CRACKED) $TO_SHOW"
 
-    if [ $CRACKED -ne $4 ]; then
+    if [[ $CRACKED -ne $4 ]]; then
         echo "ERROR: $TO_RUN"
         echo "Expected value: $4, value found: $CRACKED. $TO_SHOW"
         echo
  
         exit 1
     fi
+    Total_Tests=$((Total_Tests + 1))
     #-- Remove tmp files.
     rm tst-cla.pot
-    rm tmp.cracked
+    rm $TEMP
 } 
 
+function do_All_Devices(){
+
+    if [[ "$1" == "raw-sha256" ]] || [[ $# -eq 0 ]]; then
+        echo 'Evaluating raw-sha256 in all devices...'
+        for i in $Device_List ; do do_Test_Bench "-form:Raw-SHA256-opencl" "--test -dev:$i" "" ; done
+        for i in $Device_List ; do do_Test_Bench "-form:Raw-SHA256-opencl" "--test --mask=?d?d?d?d5678 -dev:$i" "" ; done 
+    fi
+
+    if [[ "$1" == "raw-sha512" ]] || [[ $# -eq 0 ]]; then
+        echo 'Evaluating raw-sha512 in all devices...'
+        for i in $Device_List ; do do_Test_Bench "-form:Raw-SHA512-opencl" "--test -dev:$i" "" ; done
+        for i in $Device_List ; do do_Test_Bench "-form:Raw-SHA512-opencl" "--test --mask=?d?d?d?d5678 -dev:$i" "" ; done 
+        for i in $Device_List ; do do_Test_Bench "-form:xSHA512-opencl" "--test -dev:$i" "" ; done
+        for i in $Device_List ; do do_Test_Bench "-form:xSHA512-opencl" "--test --mask=?d?d?d?d5678 -dev:$i" "" ; done 
+    fi
+}
+
 function sha256(){
-    echo 'Executing raw-SHA256 tests...'
-    do_Test "cisco4_tst.in"     "-form:Raw-SHA256-opencl" "-wo:pw.dic --rules=all --skip"         1500
-    do_Test "rawsha256_tst.in"  "-form:Raw-SHA256-opencl" "-wo:pw.dic --rules=all -dev=2"         1500
-    do_Test "alltests.in"       "-form=raw-SHA256-opencl" "-incremental -max-run=40 -fork=4 -dev=0"                                9
-    do_Test "alltests.in"       "-form=raw-SHA256-opencl" "-incremental -max-run=40 -fork=4 -dev=7"                                9
+    echo 'Running raw-SHA256 cracking tests...'
+    do_Test "cisco4_tst.in"    "-form:Raw-SHA256-opencl" "-wo:pw.dic --rules --skip"                                           1500
+    do_Test "rawsha256_tst.in" "-form:Raw-SHA256-opencl" "-wo:pw.dic --rules=all -dev:$TST_Device_2"                           1500
+    do_Test "alltests.in"      "-form=raw-SHA256-opencl" "-incremental -max-run=50 -fork=4 -dev:$TST_Device_1"                    9
+    do_Test "alltests.in"      "-form=raw-SHA256-opencl" "-incremental -max-run=40 -fork=4 -dev:$TST_Device_3"                    9
 
-    do_Test "alltests.in"       "-form=Raw-SHA256-opencl" "-mask:?l -min-len=4 -max-len=7"           2 
-    do_Test "alltests.in"       "-form=Raw-SHA256-opencl" "-mask:?d -min-len=1 -max-len=8"           4 "_GPU_MASK_CAND=0" 
-    do_Test "alltests.in"       "-form=raw-SHA256-opencl" "-mask=[Pp][Aa@][Ss5][Ss5][Ww][Oo0][Rr][Dd] -dev=0"                      2
-
+    do_Test "alltests.in"      "-form=Raw-SHA256-opencl" "-mask:?l -min-len=4 -max-len=7"           2 
+    do_Test "alltests.in"      "-form=Raw-SHA256-opencl" "-mask:?d -min-len=1 -max-len=8"           4 "_GPU_MASK_CAND=0" 
+    do_Test "alltests.in"      "-form=raw-SHA256-opencl" "-mask=[Pp][Aa@][Ss5][Ss5][Ww][Oo0][Rr][Dd] -dev:$TST_Device_1"          2
+    do_Test "alltests.in"      "-form=Raw-SHA256-opencl" "-mask:tes?a?a"                                                          3
 }
 
 function sha512(){
-    echo 'Executing raw-SHA512 tests...'
-    do_Test "rawsha512_tst.in" "-form=raw-SHA512-ng-opencl" "-wo:pw.dic --rules=all"                                             1500
-    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-incremental -max-run=40 -fork=2 -dev=0"                               3
-    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-incremental -max-run=40 -fork=4 -dev=7"                               3
+    echo 'Running raw-SHA512 cracking tests...'
+    do_Test "rawsha512_tst.in" "-form=raw-SHA512-ng-opencl" "-wo:pw.dic --rules=all --skip"                                   1500
+    do_Test "XSHA512_tst.in"   "-form=xSHA512-ng-opencl"    "-wo:pw.dic --rules"                                              1500
+    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-incremental -max-run=50 -fork=4 -dev:$TST_Device_1"                3
+    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-incremental -max-run=40 -fork=4 -dev:$TST_Device_3"                3
 
-    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask=[Pp][Aa@][Ss5][Ss5][Ww][Oo0][Rr][Dd] -dev=0"                     2
-    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask:?l?l?l?l?l?l?l --skip -dev=2"                                    1
+    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask=[Pp][Aa@][Ss5][Ss5][Ww][Oo0][Rr][Dd] -dev:$TST_Device_1"      2
+    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask:?l?l?l?l?l?l?l --skip -dev:$TST_Device_2"                     1
     do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask:?d2345?d?d?d"                                                    2
     do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask:1?d3?d5?d7?d90123?d5?d7?d90"                                     2
     do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask=?u?u?uCAPS"                                                      2
     do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx[x-z] -min=55 -max-l=55"  2
     do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask:TestTESTt3st"                                                    2
-    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask:john?a?l?l?lr  -dev=7"                                           2
+    do_Test "alltests.in"      "-form=raw-SHA512-ng-opencl" "-mask:john?a?l?l?lr  -dev:$TST_Device_3"                               2
 
     do_Test "alltests.in"      "-form=xSHA512-ng-opencl" "-mask:?l?l?l?l?l"                            1
     do_Test "alltests.in"      "-form=xSHA512-ng-opencl" "-mask=[Pp][Aa@][Ss5][Ss5][Ww][Oo0][Rr][Dd]"  1
@@ -126,47 +175,73 @@ function do_all(){
 function do_help(){
     echo 'Usage: ./test-claudio.sh [OPTIONS] [hash]'
     echo 
-    echo 'help:       prints this help info.'
-    echo 'basic:      do basic tests using all devices. You can filter using:'
-    echo '            ./test-claudio.sh basic 256,000'
-    echo '            ./test-claudio.sh basic basic 000,512'
-    echo '            ./test-claudio.sh basic basic 256,512'
-    echo 'raw-sha256: filter and execute only raw-sha256 tests.'
-    echo 'raw-sha512: filter and execute only raw-sha512 tests.'
+    echo '--help:      prints this help.'
+    echo '--version:   prints the version information.'
+    echo '--basic:     try all hashes on all available devices (CPU and GPU). To filter a hash, use:'
+    echo '              ./test-claudio.sh --basic [hash]'
+    echo '--ts:        execute the Test Suite recorded tests.'
+    echo ' '
+    echo 'Hashes available:'
+    echo '  raw-sha256: filter and execute only raw-sha256 tests.'
+    echo '  raw-sha512: filter and execute only raw-sha512 tests.'
     echo
 
     exit 0 
 }
 
-#-----------   Init   -----------
-if [ "$1" == "help" -o "$1" == "-help" -o "$1" == "--help" ]; then
-    do_help
-fi
+function do_version(){
+    echo 'Tester Sidekick, version 0.1-beta'
+    echo 
+    echo 'Copyright (C) 2016 Claudio André <claudioandre.br at gmail.com>'
+    echo 'License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>'
+    echo 'This program comes with ABSOLUTELY NO WARRANTY; express or implied.'
+    echo
 
-clear
+    exit 0 
+}
+
+#-----------   Helper   -----------
+case "$1" in
+    "help" | "--help" | "-h") 
+        do_help;;
+    "version" | "--version" | "-v") 
+        do_version;;
+esac
+
+#-----------   Init   -----------
+Total_Tests=0
+Total_Erros=0
+TST_Device_1=0
+TST_Device_2=2
+TST_Device_3=7
 do_Init
 
-if [ "$#" == "0" ]; then
+#-----------   Tests   -----------
+if [[ $# -eq 0 ]]; then
     do_all
 fi
 
-if [ "$1" == "basic" ]; then
-    do_All_Devices $2
-    do_Test_Suite
-fi
-
-if [ "$1" == "raw-sha256" ]; then
-    sha256
-fi
-
-if [ "$1" == "raw-sha512" ]; then
-    sha512
-fi
+case "$1" in
+    "--basic") 
+        do_All_Devices $2;;
+    "--ts") 
+        do_Test_Suite;;
+    "raw-sha256") 
+        sha256;;
+    "raw-sha512") 
+        sha512;;
+esac
 
 #-----------   Done  -----------
 do_Done
 
 #----------- The End -----------
 echo 
-echo 'All tests passed without error!'
-exit 0
+echo '--------------------------------------------------------------------------------'
+if [ $Total_Erros -eq 0 ]; then
+    echo "All tests passed without error! Performed $Total_Tests tests in $SECONDS seconds."
+else
+    echo "$Total_Erros tests FAILED! Performed $Total_Tests tests in $SECONDS seconds."
+fi
+echo '--------------------------------------------------------------------------------'
+
