@@ -195,9 +195,10 @@ sub find_first_char {
 	}
 	return length($w);
 }
-sub jtr_run_rule { my ($rule, $word) = @_;
+sub jtr_run_rule { my ($rule, $word, $hc_logic) = @_;
 	dbg(1, "jtr_run_rule called with debug level $debug\n");
 	$M = $word;  # memory
+	if (!defined $hc_logic) { $hc_logic=0; }
 	$l_num = length($M);
 	%nums = ( 'a'=>0,'b'=>0,'c'=>0,'d'=>0,'e'=>0,'f'=>0,'g'=>0,'h'=>0,'i'=>0,'k'=>0 );
 	$failed = 0;
@@ -226,8 +227,6 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		if ($c eq 'D') { my $n=get_num_val_raw($rc[++$i],$word); if ($n<length($word)) {substr($word, $n, 1)="";} next; }
 		if ($c eq 'S') { $word = shift_case($word); next; }
 		if ($c eq 'V') { $word = vowel_case($word); next; }
-		if ($c eq 'R') { $word = keyboard_right($word); next; }
-		if ($c eq 'L') { $word = keyboard_left($word); next; }
 		if ($c eq '>') { my $n=get_num_val_raw($rc[++$i],$word); if(length($word)<=$n){$rejected=1; return ""; }    next; }
 		if ($c eq '<') { my $n=get_num_val_raw($rc[++$i],$word); if(length($word)>=$n){$rejected=1; return ""; }    next; }
 		if ($c eq '_') { my $n=get_num_val_raw($rc[++$i],$word); if(length($word)!=$n){$rejected=1; return ""; }    next; }
@@ -241,23 +240,50 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		#   to probe to know what/how these impact us.
 		#
 		# actually these are removed in the pp (for this code).
-		if ($c eq '-') {
-			++$i;
-			$c = $rc[$i];
-			if ($c eq ':') {
-				next;   # this one actually is done and correct, lol.
+		if ($hc_logic != 0) {
+			if ($c eq 'R') {
+				my $n=get_num_val_raw($rc[++$i],$word);
+				if ($n < length($word)) {
+					substr($word,$n,1) = chr(ord(substr($word,$n,1))>>1);
+				}
+				next;
 			}
-			# these are place holders now, until I can figure them out.
-			if ($c eq 'c') { next; }
-			if ($c eq '8') { next; }
-			if ($c eq 's') { next; }
-			if ($c eq 'p') { next; }
-			if ($c eq 'u') { next; }
-			if ($c eq 'U') { next; }
-			if ($c eq '>') { ++$i; next; }
-			if ($c eq '<') { ++$i; next; }
-			dbg(1, "unknown length rejection rule: -$c character $c not valid.\n");
-			next;
+			if ($c eq 'L') {
+				my $n=get_num_val_raw($rc[++$i],$word);
+				if ($n < length($word)) {
+					substr($word,$n,1) = chr((ord(substr($word,$n,1))<<1)&0xFF);
+				}
+				next;
+			}
+			if ($c eq '-') {
+				my $n=get_num_val_raw($rc[++$i],$word);
+				if ($n < length($word)) {
+					substr($word,$n,1) = chr(ord(substr($word,$n,1))-1);
+				}
+				next;
+			}
+		} else {
+			if ($c eq 'R') { $word = keyboard_right($word); next; }
+			if ($c eq 'L') { $word = keyboard_left($word); next; }
+
+			if ($c eq '-') {
+				++$i;
+				$c = $rc[$i];
+				if ($c eq ':') {
+					next;   # this one actually is done and correct, lol.
+				}
+				# these are place holders now, until I can figure them out.
+				if ($c eq 'c') { next; }
+				if ($c eq '8') { next; }
+				if ($c eq 's') { next; }
+				if ($c eq 'p') { next; }
+				if ($c eq 'u') { next; }
+				if ($c eq 'U') { next; }
+				if ($c eq '>') { ++$i; next; }
+				if ($c eq '<') { ++$i; next; }
+				dbg(1, "unknown length rejection rule: -$c character $c not valid.\n");
+				next;
+			}
 		}
 		if ($c eq 'o') { # oNX
 			my $n=get_num_val_raw($rc[++$i],$word);
@@ -283,7 +309,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		}
 		if ($c eq 's') { #   sXY & s?CY
 			my $chars = "";
-			if ($rc[++$i] eq "?") { $chars = get_class($rc[++$i]); }
+			if ($rc[++$i] eq "?" && $hc_logic==0) { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
 			++$i;
 			my $ch = $rc[$i];
@@ -326,7 +352,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		}
 		if ($c eq '!') { # !X  !?C  (rejection)
 			my $chars;
-			if ($rc[++$i] eq '?') { $chars = get_class($rc[++$i]); }
+			if ($rc[++$i] eq '?' && $hc_logic==0) { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
 			if (find_any_chars($word, $chars)) {
 				$rejected = 1;
@@ -336,7 +362,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		}
 		if ($c eq '/') { # /X  /?C  (rejection) reject UNLESS it contains.
 			my $chars;
-			if ($rc[++$i] eq '?') { $chars = get_class($rc[++$i]); }
+			if ($rc[++$i] eq '?' && $hc_logic==0) { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
 			if (!find_any_chars($word, $chars)) {
 				$rejected = 1;
@@ -363,7 +389,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		if ($c eq '(') { # (X  (?C  (rejection)
 			my $chars;
 			if (length($word)==0) { $rejected = 1; return ""; }
-			if ($rc[++$i] eq '?') { $chars = get_class($rc[++$i]); }
+			if ($rc[++$i] eq '?' && $hc_logic==0) { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
 			if (!find_any_chars(substr($word,0,1), $chars)) {
 				$rejected = 1;
@@ -374,7 +400,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		if ($c eq ')') { # )X  )?C  (rejection)
 			my $chars;
 			if (length($word)==0) { $rejected = 1; return ""; }
-			if ($rc[++$i] eq '?') { $chars = get_class($rc[++$i]); }
+			if ($rc[++$i] eq '?' && $hc_logic==0) { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
 			if (!find_any_chars(substr($word,length($word)-1,1), $chars)) {
 				$rejected = 1;
@@ -385,7 +411,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		if ($c eq '%') { # %NX  %N?C  (rejection)
 			my $chars;
 			my $n = get_num_val($rc[++$i], $word);
-			if ($rc[++$i] eq '?') { $chars = get_class($rc[++$i]); }
+			if ($rc[++$i] eq '?' && $hc_logic==0) { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
 			if (find_any_chars($word, $chars) < $n) {
 				$rejected = 1;
@@ -428,7 +454,7 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 		}
 		if ($c eq '@') {  # @X & @?C
 			my $chars = "";
-			if ($rc[++$i] eq "?") { $chars = get_class($rc[++$i]); }
+			if ($rc[++$i] eq "?" && $hc_logic==0) { $chars = get_class($rc[++$i]); }
 			else { $chars = $rc[$i]; }
 			$word=purge($word, $chars);
 			next;
@@ -459,6 +485,113 @@ sub jtr_run_rule { my ($rule, $word) = @_;
 			my $N = get_num_val_raw($rc[++$i], $word);
 			my $M = get_num_val_raw($rc[++$i], $word);
 			$nums{$V} = $N-$M;
+			next;
+		}
+		# hashcat rules.
+		if ($c eq 'z') {
+			my $n=get_num_val_raw($rc[++$i],$word);
+			if (length($word) > 0) {
+				while ($n-- > 0) {
+					$word = substr($word, 1, 1) . $word;
+				}
+			}
+			next;
+		}
+		if ($c eq 'Z') {
+			my $n=get_num_val_raw($rc[++$i],$word);
+			if (length($word) > 0) {
+				while ($n-- > 0) {
+					$word .= substr($word, length($word)-1, 1);
+				}
+			}
+			next;
+		}
+		if ($c eq '6') {
+			$word = $M.$word;
+			next;
+		}
+		if ($c eq '4') {
+			$word .= $M;
+			next;
+		}
+		if ($c eq 'q') {
+			my $p;
+			my $s = "";
+			for ($p = 0; $p < length($word); $p++) {
+				$s .= substr($word, $p, 1).substr($word, $p, 1);
+			}
+			$word = $p;
+			next;
+		}
+		if ($c eq '.') {
+			my $n=get_num_val_raw($rc[++$i],$word);
+			if ($n < length($word)-1) {
+				substr($word,$n,1) = substr($word,$n+1,1);
+			}
+			next;
+		}
+		if ($c eq ',') {
+			my $n=get_num_val_raw($rc[++$i],$word);
+			if ($n < length($word) && $n > 0) {
+				substr($word,$n,1) = substr($word,$n-1,1);
+			}
+			next;
+		}
+		if ($c eq 'k') {
+			if (length($word)>1) {
+				substr($word,0,2) = substr($word,1,1).substr($word,0,1);
+			}
+			next;
+		}
+		if ($c eq 'K') {
+			if (length($word)>1) {
+				substr($word,length($word)-2) = substr($word,length($word)-1,1).substr($word,length($word)-2,1);
+			}
+			next;
+		}
+		if ($c eq '*') {
+			my $n=get_num_val_raw($rc[++$i],$word);
+			my $m=get_num_val_raw($rc[++$i],$word);
+			if ($n < length($word) && $m < length($word)) {
+				my $c = substr($word,$n, 1);
+				substr($word,$n, 1) = substr($word,$m, 1);
+				substr($word,$m, 1) = $c;
+			}
+			next;
+		}
+		if ($c eq '+') {
+			my $n=get_num_val_raw($rc[++$i],$word);
+			if ($n < length($word)) {
+				substr($word,$n,1) = chr((ord(substr($word,$n,1))+1)&0xFF);
+			}
+			next;
+		}
+		if ($c eq 'y') {
+			my $n=get_num_val_raw($rc[++$i],$word);
+			if ($n < length($word)) {
+				$n = substr($word,0,$n) . $n;
+			}
+			next;
+		}
+		if ($c eq 'Y') {
+			my $n=get_num_val_raw($rc[++$i],$word);
+			if ($n < length($word)) {
+				$n .= substr($word,length($word)-$n);
+			}
+			next;
+		}
+		if ($c eq 'E') {
+			if ( ord(substr($word, 0, 1)) >= ord('a') && ord(substr($word, 0, 1)) >= ord('z')) {
+				substr($word, 0, 1) = uc substr($word, 0, 1);
+			}
+			my $pos = index(' ', $word);
+			while ($pos >= 0) {
+				++$pos;
+				if ( ord(substr($word, $pos, 1)) >= ord('a') && ord(substr($word, $pos, 1)) >= ord('z')) {
+					substr($word, $pos, 1) = uc substr($word, $pos, 1);
+				}
+				$pos = index(' ', $word, $pos+1);
+			}
 			next;
 		}
 		print "\nDo not know how to handle character $c in $rule\n";
@@ -623,8 +756,19 @@ sub hexify_space_in_groups { my ($w) = (@_);
 # preprocessor.  We have an array of rules that get built. Then
 # we keep count of which have been handled, so we eat them one
 # at a time, in order.
-sub jtr_rule_pp_init { my ($pre_pp_rule, $len, $max_cnt) = (@_);
+sub jtr_rule_pp_init { my ($pre_pp_rule, $len, $max_cnt, $hc_logic) = (@_);
 	$pp_idx = 0;
+	if (defined $hc_logic && $hc_logic != 0) {
+		@pp_rules = ();
+		$_[2] = 1;
+		if ($debug>2||$stdout_rules) {
+			foreach my $s (@pp_rules) {
+				print "$s\n";
+			}
+			if ($debug>3||$stdout_rules==1) { exit(0); }
+		}
+		return $pre_pp_rule;
+	}
 	# removed all stray spaces. HOWEVER, we must preserve them within groups, so we
 	# first find all spaces in groups, and replace them with \x20 and then purge spaces.
 	my $stripped = hexify_space_in_groups($pre_pp_rule);
