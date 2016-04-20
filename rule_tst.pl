@@ -5,8 +5,12 @@
 use strict;
 use Getopt::Long 'GetOptionsFromArray';
 use Storable;
-use jtr_rulez;
 use Text::Tabs;
+
+use File::Basename;
+use lib dirname(__FILE__).'/';
+use lib dirname(__FILE__).'/../run';
+use jtr_rulez;
 
 my $VERSION = "0.92-\x{3B2}";
 my $RELEASE_DATE = "March 27, 2016";
