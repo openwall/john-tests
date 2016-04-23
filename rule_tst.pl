@@ -29,7 +29,7 @@ my $show_stderr=0;
 my $last_line_len=0;
 my $core_only=0; # assume jumbo john. Actually at this time we ONLY work with jumbo.
 my $error_cnt = 0; my $done_cnt = 0; my $tot_rules = 0; my $ret_val_non_zero_cnt = 0;
-my $max_pp = 15000;
+my $max_pp = 6000;
 my @startingTime;
 
 # Set these once and we don't have to care about them anymore
@@ -319,7 +319,7 @@ sub readData {
 	my $line_cnt = 0;
 	foreach my $line(@lines) {
 		chomp($line);
-		$line =~ s/[ \t\r]*$//;  # strip CR for non-Windows, and 'ltrim', so that blank lines (with white space) are skipped.
+		$line =~ s/[\r]*$//;  # strip CR for non-Windows, and 'ltrim', so that blank lines (with white space) are skipped.
 		++$line_cnt;
 		if (length($line) > 0) {
 			if (substr($line, 0, 1) eq "#") { push(@rulesdata, $line); }

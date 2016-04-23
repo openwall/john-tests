@@ -16,6 +16,28 @@ f
 {
 }
 
+# some HC rules (also 'raw' spaces for characters which are NEEDED)
+E
+p3p2
+$ p2E
+$ $1qE
+$s $y $ 
+o2 
+i2 
+$ ^ s x
+sx 
+^ ( 
+$ ^ ) ( 
+%1 
+e 
+k
+K
+y3
+Y2
+z3
+Z1
+e?pkKy3Y2z3Z1
+
 # class tests
 s??X
 s?vX
