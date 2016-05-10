@@ -1057,6 +1057,8 @@ sub process {
 		if ($orig_show_cnt == 0) { next LINE; }
 
 		# now do the .pot check.
+		my $ignored_pot_checks = 0;
+		my %uniq;
 		if (-f $pot) {
 			open(POTFILE,  $pot);
 			my @pot_lines = <POTFILE>;
@@ -1066,6 +1068,16 @@ sub process {
 			foreach my $line (@pot_lines) {
 				chomp $line;
 				my @elems = split(":", $line);
+				if ($uniq{$elems[0]}++) {
+					# Dupe hash, don't add
+					$ignored_pot_checks++;
+					next;
+				}
+				if ($elems[0] =~ m/\$SOURCE_HASH\$/) {
+					# Truncated pot lines can't be used for this test
+					$ignored_pot_checks++;
+					next;
+				}
 				if (scalar @elems == 2) {
 					print NEWFILE "$elems[1]:$elems[0]\n";
 				} else {
@@ -1074,6 +1086,11 @@ sub process {
 			}
 			close(NEWFILE);
 			unlink ("tst-pw3");
+
+			if ($orig_crack_cnt - $ignored_pot_checks == 0) {
+				next LINE;
+			}
+
 			my $cmd2 = sprintf("cut -f 2- -d: -s < $pot | $UNIQUE tst-pw3 > /dev/null");
 			system($cmd2);
 
@@ -1140,6 +1157,10 @@ sub process {
 					$valid_pass += 1;
 				}
 			}
+
+			# Ignore truncated pot entries
+			$orig_crack_cnt -= $ignored_pot_checks;
+
 			while (not defined $crack_xx[1]) { push (@crack_xx, "0"); }
 			my $orig_pot_cnt = $crack_xx[1];
 			while (not defined $crack_xx[4]) { push (@crack_xx, "N/A"); }
