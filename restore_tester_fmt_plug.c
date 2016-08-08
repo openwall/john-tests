@@ -249,6 +249,7 @@ struct fmt_main fmt_restore_tester = {
 		MAX_KEYS_PER_CRYPT,
 		FMT_CASE | FMT_8_BIT | FMT_OMP | FMT_NOT_EXACT,
 		{ NULL },
+		{ NULL },
 		tests
 	}, {
 		init,
@@ -298,6 +299,7 @@ struct fmt_main fmt_restore_tester_s = {
 		MAX_KEYS_PER_CRYPT,
 		FMT_CASE | FMT_8_BIT | FMT_OMP | FMT_NOT_EXACT,
 		{ NULL },
+		{ NULL },
 		tests_s
 	}, {
 		init,
@@ -345,6 +347,7 @@ struct fmt_main fmt_restore_tester_sh = {
 		MIN_KEYS_PER_CRYPT,
 		MAX_KEYS_PER_CRYPT,
 		FMT_CASE | FMT_8_BIT | FMT_OMP | FMT_NOT_EXACT,
+		{ NULL },
 		{ NULL },
 		tests_sh
 	}, {
