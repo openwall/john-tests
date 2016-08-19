@@ -173,6 +173,7 @@ sub parseArgs {
 }
 sub strip_pass_thru_to_show {
 	my $show_pass_thru = $_[0];
+	$show_pass_thru =~ s/--?nol[og]* ?//;
 	$show_pass_thru =~ s/--?fork[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?mkpc?[=:]\d+ ?//;
 	$show_pass_thru =~ s/--?sk[ip\-selft]* ?//;
@@ -365,7 +366,7 @@ sub setup {
 	# a core john. Then use this data to figure out what formats ARE and are NOT
 	# able to be run by this build (so we can later skip formats NOT built in
 	# this build.  Also check for how to do -utf8 or --encoding=utf8 (different syntax
-	# in different builds of john.  Also certain extra options like -nolog may
+	# in different builds of john.  Also certain extra options may
 	# be 'possible'.  We simply parse that screen (and also a john --subformat=LIST to
 	# get a list of dynamics, if we are in a jumbo), so we know HOW to proceed.
 
@@ -385,11 +386,6 @@ sub setup {
 	}
 	# load all the format strings we 'can' use.
 	loadAllValidFormatTypeStrings();
-	# can we use -nolog option
-	if (grepUsage("--nolog")) {
-		push(@caps, "nolog_valid");
-		ScreenOutV("--nolog option is valid\n");
-	}
 	# does this version handle --dupe-supression ?
 	if (grepUsage("--dupe-supression")) {
 		push(@caps, "dupe_suppression");
@@ -863,7 +859,6 @@ sub process {
 	my $line_num = 0;
 	my $cmd_head = "$JOHN_EXE -ses=tst- $pass_thru";
 	if ($skip) { $cmd_head .= " -skip" }
-	if (stringInArray("nolog_valid", @caps)) { $cmd_head = "$cmd_head -nolog"; }
 	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=john.conf"; }
 	if (stringInArray("local_pot_valid", @caps)) { $cmd_head .= $pot_opt = " -pot=tst-.pot"; }
 	else {
