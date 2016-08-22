@@ -647,7 +647,7 @@
 (base),(X),(jumbo),10000,eigrp_2,pw-new,eigrp_2_new_tst.in,eigrp,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,eigrp_3,pw-new,eigrp_3_new_tst.in,eigrp,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,zipmonster,pw-new,zipmonster_new_tst.in,zipmonster,N,X,(1500),(1500)
-(base)(mongodb_scram),(X),(jumbo),10000,mongodb_scram,pw-new,mongodb_scram_new_tst.in,scram,N,X,(1500),(1500)
+(base)(mongodb_scram),(X),(jumbo),30,mongodb_scram,pw-new,mongodb_scram_new_tst.in,scram,N,X,(1500),(1500)
 (base),(X),(jumbo),10000,has-160,pw-new,has160_new_tst.in,has-160,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,mdc2,pw-new,mdc2_new_tst.in,mdc2,Y,X,(1383),(1383)
 (base),(full),(jumbo),30,iwork,pw-new,iwork_new_tst.in,iwork,N,X,(1500),(1500)
