@@ -802,7 +802,8 @@ sub stripHi {
 	return if ($core_only || $is_8bit);
 	my @chars = split(//, $_[0]);
 	for (my $i = 0; $i < length($_[0]); ++$i) {
-		if (ord($chars[$i]) > ord('~')) { $chars[$i] = chr(ord($chars[$i])-0x80); }
+		#if (ord($chars[$i]) > ord('~')) { $chars[$i] = chr(ord($chars[$i])-0x80); }
+		$chars[$i] = chr(ord($chars[$i])&0x7f);
 	}
 	$_[0] = join('', @chars);
 }
