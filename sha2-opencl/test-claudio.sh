@@ -78,7 +78,7 @@ function do_Test(){
     if [[ $ret_code -ne 0 ]]; then
         read MAX_TIME <<< $(echo $3 | awk '/-max-run/ { print 1 }')
 
-        if ! [[ $ret_code -eq 1 ]] && [[ "$MAX_TIME" == "1" ]]; then
+        if ! [[ $ret_code -eq 1 && "$MAX_TIME" == "1" ]]; then
             echo "ERROR ($ret_code): $TO_RUN"
             echo
  
@@ -113,6 +113,14 @@ function do_Test(){
     rm tst-cla.pot
     rm $TEMP
 } 
+
+function do_Regressions(){
+    echo 'Regression testing...'
+    do_Test "alltests.in"       "-form:Raw-SHA256-opencl"     "-wo:pw.dic --skip"              7  #Skip self test segfaults
+    do_Test "XSHA512_tst.in"    "-form=xSHA512-ng-opencl"     "-wo:pw.dic --rules --skip"   1500  #Skip self test segfaults, other format
+    do_Test "crame_me.tst"      "-form:Raw-SHA512-ng-opencl"  "-mask=?l?l?l?l"                 6  #Can't handle more than a few hashes
+    do_Test "regression_1.tst"  "-form:Raw-SHA256-opencl"     ""                           12027  #Miss cracks
+}
 
 function do_All_Devices(){
 
@@ -175,13 +183,16 @@ function do_all(){
 function do_help(){
     echo 'Usage: ./test-claudio.sh [OPTIONS] [hash]'
     echo 
-    echo '--help:      prints this help.'
-    echo '--version:   prints the version information.'
-    echo '--basic:     try all hashes on all available devices (CPU and GPU). To filter a hash, use:'
-    echo '              ./test-claudio.sh --basic [hash]'
-    echo '--ts:        execute the Test Suite recorded tests.'
+    echo '--help:       prints this help.'
+    echo '--version:    prints the version information.'
+    echo '--basic:      tests hashes against all available devices (CPU and GPU). To filter a hash type, use:'
+    echo '               ./test-claudio.sh --basic [hash]'
+    echo '--cracking:   runs the cracking tests. To filter a hash type, use:'
+    echo '               ./test-claudio.sh [hash]'
+    echo '--regression: ensures fixed bugs were not reintroduced.'
+    echo '--ts:         executes the Test Suite.'
     echo ' '
-    echo 'Hashes available:'
+    echo 'Available hashes:'
     echo '  raw-sha256: filter and execute only raw-sha256 tests.'
     echo '  raw-sha512: filter and execute only raw-sha512 tests.'
     echo
@@ -190,7 +201,7 @@ function do_help(){
 }
 
 function do_version(){
-    echo 'Tester Sidekick, version 0.1-beta'
+    echo 'Tester Sidekick, version 0.2-beta'
     echo 
     echo 'Copyright (C) 2016 Claudio André <claudioandre.br at gmail.com>'
     echo 'License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>'
@@ -208,6 +219,10 @@ case "$1" in
         do_version;;
 esac
 
+if [[ $# -eq 0 ]]; then
+    do_help
+fi
+
 #-----------   Init   -----------
 Total_Tests=0
 Total_Erros=0
@@ -217,15 +232,16 @@ TST_Device_3=7
 do_Init
 
 #-----------   Tests   -----------
-if [[ $# -eq 0 ]]; then
-    do_all
-fi
 
 case "$1" in
     "--basic") 
         do_All_Devices $2;;
+    "--regression")
+        do_Regressions;;
     "--ts") 
         do_Test_Suite;;
+    "--cracking")
+        do_all;;
     "raw-sha256") 
         sha256;;
     "raw-sha512") 
