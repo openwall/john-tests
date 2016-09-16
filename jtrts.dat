@@ -511,6 +511,13 @@
 (new)(dynamic)(base),(X),(jumbo),10000,dynamic_2011,pw-new,dynamic_2011_new_tst.in,dynamic_2011,N,X,(1500),(1500)
 (dynamic)(base),(X),(jumbo),10000,dynamic_2014,pw,dynamic_2014_tst.in,dynamic_2014,N,X,(1500),(1500)
 (new)(dynamic)(base),(X),(jumbo),10000,dynamic_2014,pw-new,dynamic_2014_new_tst.in,dynamic_2014,N,X,(1500),(1500)
+
+
+(ascii_dic)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_ascii_90,ascii,dynamic_1590_ascii_dic_90.in,dynamic_1590,N,X,(1500),(1500)
+(ascii_dic)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_ascii-enc_90,ascii,dynamic_1590_ascii_dic_90.in,dynamic_1590,N,-enc=utf8,(1500),(1500)
+(utf8-2_dic)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_utf8-2_62,utf8-2,dynamic_1590_utf8-2_dic_62.in,dynamic_1590,N,-enc=utf8,(1500),(1500)
+(utf8-3_dic)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_utf8-3_41,utf8-3,dynamic_1590_utf8-3_dic_41.in,dynamic_1590,N,-enc=utf8,(1500),(1500)
+
 #
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5u,pw,rawmd5u_tst.in,raw-md5u,Y,X,(1500),(1500)
@@ -529,6 +536,8 @@
 ,(X),(jumbo),80,md5_smd5,pw,md5crypt-smd5_tst.in,md5crypt,Y,X,(1500),(1500)
 ,(X),(jumbo),80,aix_smd5,pw,md5crypt-smd5_tst.in,aix-smd5,Y,X,(1500),(1500)
 ,(X),(jumbo),220,aix_smd5_1,pw,md5_1_tst.in,aix-smd5,Y,X,(1500),(1500)
+
+(new),(X),(jumbo),10000,gpg,ascii,gpg_tst.in,gpg,Y,X,(2773),(2773)
 
 ,(X),(core),220,BSDI,pw,BSDI_tst.in,bsdi,N,X,(1500),(1500)
 ,(X),(core),200,BF,pw,BF_tst.in,bf,N,X,(1500),(1500)

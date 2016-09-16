@@ -358,7 +358,7 @@ sub setup {
 	unlink ("tst-JohnUsage.Scr");
 
 	ScreenOutAlways("-------------------------------------------------------------------------------\n");
-	ScreenOutAlways("- JtR-TestSuite (jtrts). Version $VERSION, $RELEASE_DATE.  By, Jim Fougeron & others\n");
+	ScreenOutAlways("- JtR-TestSuite (jtrts). Version $VERSION, $RELEASE_DATE.  By, JimF & others\n");
 	ScreenOutAlways("- Testing:  $johnUsageScreen[0]"); # note the line ends in a \n, so do not add one.
 	ScreenOutAlways("--------------------------------------------------------------------------------\n");
 	ScreenOut("\n");
