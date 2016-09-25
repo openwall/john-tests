@@ -518,6 +518,11 @@
 (utf8-2_dic)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_utf8-2_62,utf8-2,dynamic_1590_utf8-2_dic_62.in,dynamic_1590,N,-enc=utf8,(1500),(1500)
 (utf8-3_dic)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_utf8-3_41,utf8-3,dynamic_1590_utf8-3_dic_41.in,dynamic_1590,N,-enc=utf8,(1500),(1500)
 
+(ascii-utf8-2-3-combined)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_ascii_90c,ascii-utf8-2-3-combined,dynamic_1590_ascii_dic_90.in,dynamic_1590,N,X,(1500),(1500)
+(ascii-utf8-2-3-combined)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_ascii-enc_90c,ascii-utf8-2-3-combined,dynamic_1590_ascii_dic_90.in,dynamic_1590,N,-enc=utf8,(1500),(1500)
+(ascii-utf8-2-3-combined-2_dic)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_utf8-2_62c,ascii-utf8-2-3-combined,dynamic_1590_utf8-2_dic_62.in,dynamic_1590,N,-enc=utf8,(1500),(1500)
+(ascii-utf8-2-3-combined-3_dic)(dynamic)(base),(X),(jumbo),10000,dynamic_1590_utf8-3_41c,ascii-utf8-2-3-combined,dynamic_1590_utf8-3_dic_41.in,dynamic_1590,N,-enc=utf8,(1500),(1500)
+
 #
 (base),(X),(jumbo),10000,raw-md5u-raw,pw,rawmd5u_raw_tst.in,raw-md5u,Y,X,(1500),(1500)
 (base),(X),(jumbo),10000,raw-md5u,pw,rawmd5u_tst.in,raw-md5u,Y,X,(1500),(1500)
