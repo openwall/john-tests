@@ -671,7 +671,7 @@
 (base),(X),(jumbo),30,efs,pw-new,efs_new_tst.in,efs,Y,X,(1500),(1500)
 
 (new)(base),(X),(jumbo),40,agilekeychain,pw-new,agilekeychain_new_tst.in,agilekeychain,Y,X,(1500),(1500)
-(new)(opencl)(gpu),(X),(jumbo)&(opencl),40,agilekeychain-opencl,pw-new,agilekeychain_new_tst.in,agilekeychain-opencl,Y,X,(1200)(1500),(1200)(1500)
+(new)(opencl)(gpu),(X),(jumbo)&(opencl),40,agilekeychain-opencl,pw-new,agilekeychain_new_tst.in,agilekeychain-opencl,Y,X,(780)(1200)(1500),(780)(1200)(1500)
 (new)(base)(qnx_md5),(X),(jumbo),90,qnx_md5,pw-new,qnx_md5_new_tst.in,qnx,N,X,(1500),(1500)
 (new)(base)(qnx_sha256),(X),(jumbo),90,qnx_sha256,pw-new,qnx_sha256_new_tst.in,qnx,N,X,(1500),(1500)
 (new)(base)(qnx_sha512),(X),(jumbo),400,qnx_sha512,pw-new,qnx_sha512_new_tst.in,qnx,N,X,(1500),(1500)
