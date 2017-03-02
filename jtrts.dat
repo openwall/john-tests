@@ -1069,8 +1069,8 @@
 (gpumask)(opencl)(gpu),(X),(jumbo),10000,lm-opencl,pw,LM_tst.in,lm-opencl,Y,X,(1500)(-show3000),(1500)
 (gpumask)(opencl)(pwdump_lm)(gpu),(X),(jumbo),10000,pwdump_lm-opencl,pw,pwdump_tst.in,lm-opencl,Y,X,(986)(-show2760),(986)(646)
 
-(opencl)(gpu),(X),(core),40,Bcrypt-opencl,pw,BF_tst.in,bcrypt-opencl,Y,X,(1500),(1500)
-(opencl)(gpu),(X),(core),40,Bcrypt_broken-opencl,pw,BFx_tst.in,bcrypt-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(core),200,Bcrypt-opencl,pw,BF_tst.in,bcrypt-opencl,Y,X,(1500),(1500)
+(opencl)(gpu),(X),(core),200,Bcrypt_broken-opencl,pw,BFx_tst.in,bcrypt-opencl,Y,X,(1500),(1500)
 
 
 # This is a very slow, and VERY large input file hash.
