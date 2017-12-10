@@ -1,5 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
+use lib ".";
+
 use Getopt::Long;
 use jtrts_inc;
 use Digest::MD5;
