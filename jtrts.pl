@@ -821,6 +821,7 @@ sub pot_match_pass {
 	if (index($line, "Loaded ") == 0) { return 1; }
 	if (index($line, "Will run ") == 0 && index($line, "OpenMP") > 0) { return 1; }
 	if (index($line, "Node numbers ") == 0) { return 1; }
+	if (index($line, "Local worksize") == 0) { return 1; }
 	if (index($line, "guesses: ") == 0) { return 1; }
 	if (index($line, "../run/john") == 0) { return 1; }
 	my $idx = index($line, " (");
