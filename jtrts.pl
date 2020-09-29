@@ -229,8 +229,8 @@ sub grepUsage {
 }
 sub LoadFormatDetails {
 	# build the formatDetails hash (1 time)
-	my $res = `$JOHN_EXE $show_pass_thru -list=format-details`;
-	$res .= `$JOHN_EXE $show_pass_thru -list=format-details -format=dynamic-all`;
+	my $res = `$JOHN_EXE $show_pass_thru -list=format-details 2>/dev/null`;
+	$res .= `$JOHN_EXE $show_pass_thru -list=format-details -format=dynamic 2>/dev/null`;
 	my @details = split ("\n", $res);
 	foreach my $detail (@details) {
 		my @indiv = split("\t", $detail);
@@ -351,7 +351,7 @@ sub setup {
 		exit;
 	}
 
-	# we store a john error string to this file.  We will use this data in several ways, later.
+	# we store a john usage string to this file.  We will use this data in several ways, later.
 	system ("$JOHN_EXE >tst-JohnUsage.Scr 2>&1");
 	system ("$JOHN_EXE --list=hidden-options >>tst-JohnUsage.Scr 2>&1");
 	open(FILE, "<tst-JohnUsage.Scr") or die $!;
@@ -489,7 +489,7 @@ sub loadAllValidFormatTypeStrings {
 				if (index($line, ":") < 0) {
 					# new format layout does not use format names on usage
 					# screen. The new method forces us to use --list=formats
-					my @ar = `$JOHN_EXE --list=formats`;
+					my @ar = `$JOHN_EXE --list=formats 2>/dev/null`;
 					foreach $line (@ar) {
 						chomp $line; $line =~ s/\r$//;
 						$line =~ s/, /\//g;
@@ -534,7 +534,7 @@ sub loadAllValidFormatTypeStrings {
 		if (grepUsage("--list=WHAT") || grepUsage("--subformat=LIST")) {
 			my $more = 1;
 			if ($dyanmic_wanted eq "all") {
-				system ("$JOHN_EXE $show_pass_thru --list=formats --format=dynamic-all >JohnDynaUsage.Scr 2>/dev/null");
+				system ("$JOHN_EXE $show_pass_thru --list=formats --format=dynamic >JohnDynaUsage.Scr 2>/dev/null");
 				open(FILE, "<JohnDynaUsage.Scr") or die $!;
 				my @dyna = <FILE>;
 				close(FILE);
