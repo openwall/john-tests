@@ -351,13 +351,14 @@ sub setup {
 		exit;
 	}
 
-	# we store a john usage string to this file.  We will use this data in several ways, later.
-	system ("$JOHN_EXE >tst-JohnUsage.Scr 2>&1");
-	system ("$JOHN_EXE --list=hidden-options >>tst-JohnUsage.Scr 2>&1");
-	open(FILE, "<tst-JohnUsage.Scr") or die $!;
-	@johnUsageScreen = <FILE>;
-	close(FILE);
-	unlink ("tst-JohnUsage.Scr");
+	# we store a john usage string.  We will use this data in several ways, later.
+	@johnUsageScreen = `$JOHN_EXE 2>&1`;
+	if (grepUsage("Use --help")) {
+		@johnUsageScreen = `$JOHN_EXE --help 2>&1`;
+	}
+	if (grepUsage("--list=hidden-options")) {
+		push(@johnUsageScreen, `$JOHN_EXE --list=hidden-options 2>&1`);
+	}
 
 	ScreenOutAlways("-------------------------------------------------------------------------------\n");
 	ScreenOutAlways("- JtR-TestSuite (jtrts). Version $VERSION, $RELEASE_DATE.  By, JimF & others\n");
@@ -566,7 +567,7 @@ sub loadAllValidFormatTypeStrings {
 				unlink("JohnDynaUsage.Scr");
 				foreach my $line (@dyna) {
 					my @ar = split(/ /, $line);
-					if (index($ar[2], "dynamic_") == 0) {
+					if (defined $ar[2] && index($ar[2], "dynamic_") == 0) {
 						$fmt_str = $fmt_str . "/" . $ar[2];
 					}
 				}
