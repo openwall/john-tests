@@ -415,13 +415,7 @@ sub setup {
 	if (grepUsage("--encoding=NAME")) {
 		push(@caps, "encode_valid");
 		ScreenOutV("--encoding=NAME option is valid\n");
-		if (grepUsage("--encoding=LIST")) {
-			loadAllValidEncodings();
-		} else {
-			# 'hopefully' these are valid.
-			push(@encs, "utf8", "cp1252", "cp1251", "koi8r", "cp437", "cp737", "cp850", "cp858", "cp866", "iso8859-1", "iso8859-15" );
-			push(@caps, @encs );
-		}
+		loadAllValidEncodings();
 	}
 	# ok, now load the md5's of the ascii.chr and alnum.chr files. These end up being 'required' types for the inc to run.
 	my $file = $JOHN_PATH . "/ascii.chr";
@@ -486,7 +480,7 @@ sub loadAllValidFormatTypeStrings {
 	my $fmt_str="";
 	foreach my $line(@johnUsageScreen) {
 		if ($in_fmt == 0) {
-			if (index($line, "--format=NAME") == 0) {
+			if (index($line, "--format=[NAME") == 0 || index($line, "--format=NAME") == 0) {
 				if (index($line, ":") < 0) {
 					# new format layout does not use format names on usage
 					# screen. The new method forces us to use --list=formats
@@ -592,7 +586,7 @@ sub loadAllValidFormatTypeStrings {
 	}
 }
 sub loadAllValidEncodings {
-	ScreenOutV("--encoding=LIST is valid, so we get valid encodings from there\n");
+	ScreenOutV("Get valid encodings from --encoding=LIST\n");
 	system ("$JOHN_EXE --encoding=LIST >JohnEncUsage.Scr 2>&1");
 	open(FILE, "<JohnEncUsage.Scr") or die $!;
 	my @encodings = <FILE>;
