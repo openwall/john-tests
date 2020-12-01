@@ -394,7 +394,7 @@ sub setup {
 		push(@caps, "dupe_suppression");
 		ScreenOutV("--dupe-suppression option is valid\n");
 	}
-	# can we use --config=john.conf ?
+	# can we use --config=jtrts.conf ?
 	if (grepUsage("--config=FILE")) { push(@caps, "config_valid");
 		ScreenOutV("--config=FILE option is valid\n");
 	}
@@ -462,6 +462,8 @@ sub setup {
 	ScreenOutV("Capabilities in this build of john:\n");
 	ScreenOutV(@caps);
 	ScreenOutV("\n");
+
+	if (stringInArray("config_valid", @caps)) { $JOHN_EXE .= " -config=jtrts.conf"; }
 }
 
 ###############################################################################
@@ -858,7 +860,6 @@ sub process {
 	my $line_num = 0;
 	my $cmd_head = "$JOHN_EXE -ses=tst- $pass_thru";
 	if ($skip) { $cmd_head .= " -skip" }
-	#if (stringInArray("config_valid", @caps)) { $cmd_head = "$cmd_head -config=john.conf"; }
 	if (stringInArray("local_pot_valid", @caps)) { $cmd_head .= $pot_opt = " -pot=tst-.pot"; }
 	else {
 		# handle john 'core' behavior.  We save off existing john.pot, then it is overwritten
