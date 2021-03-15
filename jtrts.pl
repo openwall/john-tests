@@ -68,7 +68,7 @@ johnPrelims();
 if (defined $opts{internal} && $opts{internal} > 0) { doInternalMode(); unlink_restore(); }
 if (defined $opts{restore} && $opts{restore} > 0)  { doRestoreMode(); unlink_restore(); }
 filterPatterns();
-process(0);
+process(0, 0);
 cleanup();
 unlink_restore();
 displaySummary();
@@ -854,7 +854,7 @@ sub exit_cause {
 }
 
 sub process {
-	my $skip = shift(@_);
+	my ($skip, $int_mask) = @_;
 	my $pot = "tst-.pot";
 	my $pot_opt = "";
 	my $line_num = 0;
@@ -895,6 +895,9 @@ sub process {
 			$dict_name = "--incremental=" . substr($ar[5],10);
 		} else {
 			$dict_name = "--wordlist=$ar[5].dic";
+			if ($int_mask) {
+				$dict_name .= " --mask=?w?a";
+			}
 		}
 		my $cmd = "$cmd_head $ar[6]";
 		unless (-e $ar[6]) { next LINE; }
@@ -1300,7 +1303,7 @@ sub is_hash_salted {
 	return $details[11] > 0;
 }
 sub build_self_test_files {
-	my $type = $_[0];
+	my ($type, $int_mask) = @_;
 	my $cnt = 0;
 	my $mangle = does_hash_split_unifies_case($type);
 	my $cmd = "$JOHN_EXE -format=$type -list=format-tests $show_pass_thru 2>/dev/null";
@@ -1311,24 +1314,34 @@ sub build_self_test_files {
 	open (FILE2, "> tst-.dic") || die "problem creating tst-.dic\n";
 	# output some long format 'tester' input words.  We might improve this with time.
 	# sizes I could see:  55, 56, 64, 65, 80, 81, 119, 120, 125, 126 bytes long.
-	print FILE2 "12345678901234567890123456789012345678901234567890123456789012345678901234567890\n";
-	print FILE2 "123456789012345678901234567890123456789012345678901234567\n";
-	print FILE2 "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890\n";
+	if (!$int_mask) {
+		print FILE2 "12345678901234567890123456789012345678901234567890123456789012345678901234567890\n";
+		print FILE2 "123456789012345678901234567890123456789012345678901234567\n";
+		print FILE2 "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890\n";
+	}
 	foreach my $line (@ar1) {
 		my @dtls = split("\t", $line);
 		if (scalar (@dtls) >= 3) {
 			if ($dtls[2] !~ m/:/) { $dtls[2] = "vec_" . $dtls[1] . ":" . $dtls[2]; }
-			print FILE1 $dtls[2]."\n";
-			if (defined $dtls[3]) { print FILE2 $dtls[3]; }
+			if ($int_mask) {
+				if (defined $dtls[3] && length($dtls[3])) {
+					$cnt++;
+					print FILE1 $dtls[2]."\n";
+					print FILE2 substr($dtls[3], 0, -1);
+				}
+			} else {
+				$cnt++;
+				print FILE1 $dtls[2]."\n";
+				print FILE2 defined $dtls[3] ? $dtls[3] : "";
+			}
 			print FILE2 "\n";
-			if ($cnt < 3) {
+			if ($cnt < 3 && !$int_mask) {
 				print FILE2 "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234\n";
 			}
 			if (defined $opts{case_mangle} && $opts{case_mangle} > 0) {
 				print FILE1 PossiblyCaseMangle($dtls[2], "uprcase", not $mangle);
 				print FILE1 PossiblyCaseMangle($dtls[2], "lowcase", not $mangle);
 			}
-			$cnt += 1;
 		}
 	}
 	close(FILE2); close(FILE1);
@@ -1404,8 +1417,10 @@ sub doInternalMode {
 		if (scalar(@match) == 0) { $doit = 0; }
 
 		if ($doit == 1) {
+			my $int_mask = `$JOHN_EXE --format=$type $show_pass_thru --list=format-all-details 2>/dev/null | grep "Internal mask generation"`;
+			$int_mask = (defined $int_mask && $int_mask =~ m/yes/i) ? 1 : 0;
 			# first, build our dictionary/input files
-			my $cnt = build_self_test_files($type);
+			my $cnt = build_self_test_files($type, $int_mask);
 			# build the @tstdata array with 1 element
 			if (does_hash_split_unifies_case($type)) {
 				my $cnt3 = $cnt*3;
@@ -1415,7 +1430,7 @@ sub doInternalMode {
 			}
 			ScreenOutV("Preparing to run internal for type: $type\n");
 			ScreenOutV("tstdata = @tstdata\n\n");
-			process(1);
+			process(1, $int_mask);
 		}
 	}
 
