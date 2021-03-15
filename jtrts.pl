@@ -896,7 +896,7 @@ sub process {
 		} else {
 			$dict_name = "--wordlist=$ar[5].dic";
 			if ($int_mask) {
-				$dict_name .= " --mask=?w?a";
+				$dict_name .= " --mask=?w?b";
 			}
 		}
 		my $cmd = "$cmd_head $ar[6]";
@@ -1324,7 +1324,7 @@ sub build_self_test_files {
 		if (scalar (@dtls) >= 3) {
 			if ($dtls[2] !~ m/:/) { $dtls[2] = "vec_" . $dtls[1] . ":" . $dtls[2]; }
 			if ($int_mask) {
-				if (defined $dtls[3] && length($dtls[3])) {
+				if (defined $dtls[3] && length($dtls[3]) && !($dtls[3] =~ m/[0x80-0xff]$/)) {
 					$cnt++;
 					print FILE1 $dtls[2]."\n";
 					print FILE2 substr($dtls[3], 0, -1);
